@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> fb8b83f0 (Update README.md)
 =======
@@ -59,10 +60,19 @@
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> 75cf118f (docs: Update README.md)
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> fb8b83f0 (Update README.md)
+<<<<<<< HEAD
 >>>>>>> f714fec4 (Update README.md)
+=======
+=======
+=======
+>>>>>>> cb1e9982 (docs: Update README.md)
+>>>>>>> c22ad402 (docs: Update README.md)
+>>>>>>> 75cf118f (docs: Update README.md)
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 =======
 <<<<<<< HEAD
@@ -174,6 +184,12 @@
   <img alt="License" src="https://img.shields.io/badge/license-Apache%202-brightgreen.svg?logo=apache"/>
   <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>  
 <!-- <a href="https://pepy.tech/project/evadb">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c22ad402 (docs: Update README.md)
 =======
 
 <<<<<<< HEAD
@@ -194,6 +210,7 @@
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -210,6 +227,18 @@
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+
+<p align="center">
+  <a href="https://evadb.readthedocs.io">
+    <img src="https://raw.githubusercontent.com/georgia-tech-db/evadb/master/docs/images/evadb/evadb-full-logo.svg" width="500" alt="EvaDB">
+  </a>
+</p>
+
+#
+
+>>>>>>> cb1e9982 (docs: Update README.md)
+>>>>>>> c22ad402 (docs: Update README.md)
 <div align="center">
         <a href="https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/03-emotion-analysis.ipynb">
             <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Check out EvaDB on Colab"/>
@@ -229,6 +258,7 @@
         <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>     
 <!--         <a href="https://pepy.tech/project/evadb">
 >>>>>>> ad6dc032 (docs: Update README.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
@@ -550,6 +580,9 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 >>>>>>> 591e6cd1 (docs: Update README.md)
 =======
 =======
+<<<<<<< HEAD
+>>>>>>> 75cf118f (docs: Update README.md)
+=======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
@@ -562,6 +595,8 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> c22ad402 (docs: Update README.md)
 =======
 <p align="center">
 <a href="https://github.com/georgia-tech-db/evadb/fork" target="blank">
@@ -629,6 +664,7 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -656,9 +692,12 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 =======
 =======
 =======
+>>>>>>> 75cf118f (docs: Update README.md)
+=======
 >>>>>>> cd39ae6e (docs: Update README.md)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
@@ -675,6 +714,13 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> cb1e9982 (docs: Update README.md)
+>>>>>>> c22ad402 (docs: Update README.md)
+>>>>>>> 75cf118f (docs: Update README.md)
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
         </a> -->  
   <br />
