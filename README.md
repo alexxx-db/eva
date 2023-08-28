@@ -4,6 +4,7 @@
   </a>
 </p>
 
+<<<<<<< HEAD
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 
 <p align="center">
@@ -53,6 +54,35 @@
   <img alt="License" src="https://img.shields.io/badge/license-Apache%202-brightgreen.svg?logo=apache"/>
   <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>  
 <!-- <a href="https://pepy.tech/project/evadb">
+=======
+
+<p align="center">
+  <a href="https://evadb.readthedocs.io">
+    <img src="https://raw.githubusercontent.com/georgia-tech-db/evadb/master/docs/images/evadb/evadb-full-logo.svg" width="500" alt="EvaDB">
+  </a>
+</p>
+
+#
+
+<div align="center">
+        <a href="https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/03-emotion-analysis.ipynb">
+            <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Check out EvaDB on Colab"/>
+        </a>
+        <a href="https://join.slack.com/t/eva-db/shared_invite/zt-1i10zyddy-PlJ4iawLdurDv~aIAq90Dg">
+            <img alt="Slack" src="https://img.shields.io/badge/slack-evadb-ff69b4.svg?logo=slack">
+        </a>          
+        <a href="https://twitter.com/evadb_ai">
+            <img alt="Twitter" src="https://img.shields.io/badge/twitter-evadb-bde1ee.svg?logo=twitter">
+        </a>  
+        <a href="https://github.com/orgs/georgia-tech-db/projects/3">
+            <img src="https://img.shields.io/badge/evadb-roadmap-a6c096" alt="Roadmap"/>
+        </a>
+        <br>
+        <img alt="PyPI" src="https://img.shields.io/pypi/v/evadb.svg"/>
+        <img alt="License" src="https://img.shields.io/badge/license-Apache%202-brightgreen.svg?logo=apache"/>
+        <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>     
+<!--         <a href="https://pepy.tech/project/evadb">
+>>>>>>> ad6dc032 (docs: Update README.md)
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
         </a> -->  
   <br />
