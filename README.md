@@ -144,6 +144,7 @@
   </a>
 </p>
 
+<<<<<<< HEAD
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 
 <<<<<<< HEAD
@@ -371,6 +372,7 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
   <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>  
 <!-- <a href="https://pepy.tech/project/evadb">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -435,6 +437,18 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+=======
+
+<p align="center">
+  <a href="https://evadb.readthedocs.io">
+    <img src="https://raw.githubusercontent.com/georgia-tech-db/evadb/master/docs/images/evadb/evadb-full-logo.svg" width="500" alt="EvaDB">
+  </a>
+</p>
+
+#
+
+>>>>>>> a9f5280d (docs: Update README.md)
 <div align="center">
         <a href="https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/03-emotion-analysis.ipynb">
             <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Check out EvaDB on Colab"/>
@@ -454,6 +468,7 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
         <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>     
 <!--         <a href="https://pepy.tech/project/evadb">
 >>>>>>> ad6dc032 (docs: Update README.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -562,6 +577,8 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9f5280d (docs: Update README.md)
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
         </a> -->  
   <br />
