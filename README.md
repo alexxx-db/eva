@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> fb8b83f0 (Update README.md)
 =======
@@ -43,6 +44,8 @@
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> a8469c18 (docs: Update README.md)
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -52,6 +55,7 @@
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <p align="center"><i><b>Bring AI inside your database system and build AI-powered apps</b></i></p>
 >>>>>>> cd39ae6e (docs: Update README.md)
@@ -92,6 +96,10 @@
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+<p align="center"><i><b>Bring AI inside your database system and build AI-powered apps</b></i></p>
+>>>>>>> cd39ae6e (docs: Update README.md)
+>>>>>>> a8469c18 (docs: Update README.md)
 
 <p align="center">
 <a href="https://github.com/georgia-tech-db/evadb/fork" target="blank">
@@ -142,6 +150,7 @@
 <!-- <a href="https://pepy.tech/project/evadb">
 =======
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
@@ -156,6 +165,16 @@
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 
 <<<<<<< HEAD
+=======
+<p align="center">
+  <a href="https://evadb.readthedocs.io">
+    <img src="https://raw.githubusercontent.com/georgia-tech-db/evadb/master/docs/images/evadb/evadb-full-logo.svg" width="500" alt="EvaDB">
+  </a>
+</p>
+
+#
+
+>>>>>>> cd39ae6e (docs: Update README.md)
 <div align="center">
         <a href="https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/03-emotion-analysis.ipynb">
             <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Check out EvaDB on Colab"/>
@@ -175,6 +194,7 @@
         <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>     
 <!--         <a href="https://pepy.tech/project/evadb">
 >>>>>>> ad6dc032 (docs: Update README.md)
+<<<<<<< HEAD
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
         </a> -->  
   <br />
@@ -499,6 +519,9 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
+>>>>>>> a8469c18 (docs: Update README.md)
+=======
 <p align="center">
 <a href="https://github.com/georgia-tech-db/evadb/fork" target="blank">
 <img src="https://img.shields.io/github/forks/georgia-tech-db/evadb?style=for-the-badge" alt="EvaDB forks"/>
@@ -563,6 +586,7 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -599,6 +623,10 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 >>>>>>> a9f5280d (docs: Update README.md)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> cd39ae6e (docs: Update README.md)
+>>>>>>> a8469c18 (docs: Update README.md)
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
         </a> -->  
   <br />
