@@ -7,9 +7,13 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
+=======
+<p align="center"><i><b>Bring AI inside your database system and build AI-powered apps</b></i></p>
+>>>>>>> cd39ae6e (docs: Update README.md)
 
 <p align="center">
 <a href="https://github.com/georgia-tech-db/evadb/fork" target="blank">
@@ -71,6 +75,7 @@
 <!-- <a href="https://pepy.tech/project/evadb">
 =======
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <p align="center">
@@ -82,6 +87,16 @@
 <p align="center"><i><b>Bring AI inside your database system and build AI-powered apps</b></i></p>
 
 <<<<<<< HEAD
+=======
+<p align="center">
+  <a href="https://evadb.readthedocs.io">
+    <img src="https://raw.githubusercontent.com/georgia-tech-db/evadb/master/docs/images/evadb/evadb-full-logo.svg" width="500" alt="EvaDB">
+  </a>
+</p>
+
+#
+
+>>>>>>> cd39ae6e (docs: Update README.md)
 <div align="center">
         <a href="https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/03-emotion-analysis.ipynb">
             <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Check out EvaDB on Colab"/>
@@ -101,6 +116,7 @@
         <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>     
 <!--         <a href="https://pepy.tech/project/evadb">
 >>>>>>> ad6dc032 (docs: Update README.md)
+<<<<<<< HEAD
 =======
 <p align="center">
 <a href="https://github.com/georgia-tech-db/evadb/fork" target="blank">
@@ -161,6 +177,8 @@
   <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>  
 <!-- <a href="https://pepy.tech/project/evadb">
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> cd39ae6e (docs: Update README.md)
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
         </a> -->  
   <br />
