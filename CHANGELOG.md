@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### [Deprecated]
 ### [Removed]
 
+<<<<<<< HEAD
 ##  [0.3.8] - 2023-10-18
 
 * PR #1303: v0.3.8 - new release 
@@ -156,6 +157,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * PR #986: docs: Update README.md 
 * PR #983: doc: fix nav bar 
 
+=======
+>>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 ##  [0.3.3] - 2023-08-29
 
 * PR #983: doc: fix nav bar 
