@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -27,6 +28,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,6 +46,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 =======
 =======
+=======
+>>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
@@ -83,6 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
 =======
@@ -93,7 +99,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> eva-master
 =======
 >>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
+<<<<<<< HEAD
 >>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
+=======
+=======
+=======
+>>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+>>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+>>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 ##  [0.3.6] - 2023-09-21
 
 * PR #1181: releass: bump a version further to skip cached wheel 
@@ -178,6 +191,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -191,9 +205,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+=======
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -206,6 +223,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 >>>>>>> eva-master
 =======
 =======
@@ -216,7 +235,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+>>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
+>>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+>>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+>>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 ##  [0.3.3] - 2023-08-29
 
 * PR #983: doc: fix nav bar 
