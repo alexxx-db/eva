@@ -26,6 +26,7 @@ _MINOR = "3"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 _REVISION = "9"
 =======
 _REVISION = "8+dev"
@@ -81,6 +82,8 @@ _REVISION = "7"
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 _REVISION = "8"
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
@@ -105,11 +108,16 @@ _REVISION = "8+dev"
 _REVISION = "8+dev"
 >>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 =======
+_REVISION = "8+dev"
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
 _REVISION = "7"
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 _REVISION = "8"
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
@@ -236,6 +244,7 @@ _REVISION = "4+dev"
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
@@ -246,10 +255,15 @@ _REVISION = "4+dev"
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 _REVISION = "7"
 =======
 _REVISION = "3"
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
@@ -336,10 +350,26 @@ _REVISION = "4+dev"
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 >>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 >>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+=======
+=======
+=======
+_REVISION = "4+dev"
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 
 VERSION_SHORT = f"{_MAJOR}.{_MINOR}"
 VERSION = f"{_MAJOR}.{_MINOR}.{_REVISION}"

@@ -342,12 +342,15 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
       - file: source/overview/model-inference
         title: Model inference
       - file: source/overview/concepts
@@ -357,10 +360,14 @@ parts:
             title: Data Sources
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 =======
       - file: source/overview/concepts
         title: Concepts
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
@@ -369,6 +376,8 @@ parts:
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
         #- file: source/overview/faq
 
   - caption: Use Cases
@@ -377,10 +386,13 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
       - file: source/usecases/sentiment-analysis.rst
         title: Sentiment Analysis
       - file: source/usecases/question-answering.rst
@@ -573,10 +585,44 @@ parts:
         title: Home Rental Prediction
       # - file: source/usecases/privategpt.rst
       #   title: PrivateGPT
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+=======
+      - file: source/usecases/food-review.rst
+        title: Sentiment Analysis
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/similar-image-search.rst
+        title: Image Search
+      - file: source/usecases/qa-video.rst
+        title: Video Question Answering
+      - file: source/usecases/08-chatgpt.ipynb
+        title: ChatGPT-based Video Question Answering
+      - file: source/usecases/12-query-pdf.ipynb
+        title: PDF Question Answering
+      - file: source/usecases/02-object-detection.ipynb
+        title: Object Detection
+      - file: source/usecases/03-emotion-analysis.ipynb
+        title: Emotions Analysis
+      - file: source/usecases/07-object-segmentation-huggingface.ipynb
+        title: Image Segmentation
+      - file: source/usecases/13-privategpt.ipynb
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 
   - caption: User Reference
     chapters:
@@ -699,6 +745,16 @@ parts:
           - file: source/reference/evaql/delete
           - file: source/reference/evaql/rename
           - file: source/reference/evaql/use
+<<<<<<< HEAD
+=======
+
+      - file: source/reference/databases/index
+        title: Data Sources
+        sections: 
+          - file: source/reference/databases/postgres
+          - file: source/reference/databases/sqlite
+          - file: source/reference/databases/mysql
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 <<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))

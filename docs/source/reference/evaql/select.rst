@@ -81,11 +81,14 @@ Search for frames containing greater than 3 cars
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
@@ -124,8 +127,11 @@ SELECT WITH MULTIPLE FUNCTIONS
 SELECT TUPLES WITH MULTIPLE PREDICATES
 --------------------------------------
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 SELECT TUPLES WITH MULTIPLE PREDICATES
 --------------------------------------
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
@@ -141,8 +147,11 @@ SELECT WITH MULTIPLE FUNCTIONS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -175,9 +184,12 @@ SELECT WITH MULTIPLE FUNCTIONS
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 >>>>>>> eva-master
 =======
 SELECT TUPLES WITH MULTIPLE PREDICATES
@@ -270,9 +282,15 @@ SELECT WITH MULTIPLE FUNCTIONS
 SELECT TUPLES WITH MULTIPLE PREDICATES
 --------------------------------------
 =======
+=======
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
 SELECT WITH MULTIPLE UDFS
 -------------------------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -287,8 +305,17 @@ SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 
 Compose multiple user-defined functions in a single query to construct semantically complex queries.
 

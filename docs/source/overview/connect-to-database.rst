@@ -14,6 +14,7 @@ Connect to an Existing SQL Database System
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
@@ -25,6 +26,8 @@ Connect to an Existing SQL Database System
 >>>>>>> 9cc72b7b (docs: updates)
 <<<<<<< HEAD
 >>>>>>> d8799826 (docs: updates)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
 =======
 1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
@@ -43,6 +46,7 @@ Connect to an Existing SQL Database System
    };
 =======
 1. Use the `CREATE DATABASE` statement to connect to an existing SQL database.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -91,6 +95,11 @@ Connect to a SQL Database System
 
 <<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+
+.. code-block:: python
+
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
    cursor.query("""
         CREATE DATABASE restaurant_reviews 
         WITH ENGINE = 'postgres', 
@@ -101,6 +110,7 @@ Connect to a SQL Database System
             "port": "5432",
             "database": "restaurant_reviews"
      	   };""").df()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -251,11 +261,15 @@ You can also run native queries directly in the connected database system by the
 =======
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 
 .. note::
 
    Go over the :ref:`CREATE DATABASE<sql-create-database>` statement for more details. The :ref:`Databases<databases>` page lists all the database systems that EvaDB currently supports.
 
+<<<<<<< HEAD
 2. Preview the Available Data Using ``SELECT``
 
 You can now preview the available data in the ``restaurant_reviews`` database with a standard :ref:`SELECT<sql-select>` statement.
@@ -304,6 +318,7 @@ You can also run native queries directly in the connected database system by the
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
@@ -323,6 +338,37 @@ Connect to Object Store
 =======
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+2. Preview the Available Data Using `SELECT`
+
+You can now preview the available data in the `restaurant_reviews` database with a standard :ref:`SELECT<sql-select>` statement.
+
+.. code-block:: python
+
+   cursor.query("""
+      SELECT * 
+      FROM restaurant_reviews.food_review;
+      """).df()
+
+3. Run Native Queries in the Connected Database With `USE`
+
+You can also run native queries directly in the connected database system by the :ref:`USE<sql-use>` statement.
+
+.. code-block:: python
+
+   cursor.query(
+      """
+        USE restaurant_reviews {
+                INSERT INTO food_review (name, review) 
+                VALUES (
+                  'Customer 1', 
+                  'I ordered fried rice but it is too salty.'
+                )
+        };
+      """).df()
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 
 
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
@@ -343,14 +389,18 @@ You can load a collection of images obtained from Reddit from the local filesyst
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 .. code-block:: sql
 
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
@@ -358,12 +408,15 @@ You can load a collection of images obtained from Reddit from the local filesyst
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 .. code-block:: python
    
    cursor.query("""
       LOAD IMAGE 'reddit-images/*.jpg' 
       INTO reddit_dataset;
    """).df()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -393,6 +446,9 @@ You can load a collection of images obtained from Reddit from the local filesyst
 
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 
 2. Load Video from Cloud Bucket
 
@@ -409,14 +465,18 @@ EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You ca
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 .. code-block:: sql
 
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
@@ -425,12 +485,15 @@ EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You ca
 =======
 
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 .. code-block:: python
 
    cursor.query("""
       LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' 
       INTO MNISTVid;
    """).df()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -490,6 +553,9 @@ You can use the ``CREATE INDEX`` statement to connect to an existing vector data
 
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 
 .. note::
 
