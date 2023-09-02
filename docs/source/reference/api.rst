@@ -5,9 +5,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 Python API
 =======
 Basic API
@@ -17,6 +23,7 @@ Basic API
 =======
 Python API
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -24,6 +31,13 @@ Python API
 Python API
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
+=======
+Basic API
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 ==========
 
 To begin a querying session in EvaDB, obtain a connection with a cursor using ``connect`` and ``cursor`` functions. After getting the cursor, you can run queries with the ``query`` function in this manner:
@@ -67,15 +81,21 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/designs/design4.rst
 =======
 =======
 >>>>>>> e867f37e (docs: updated images)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> df4d8a35 (docs: updates)
+=======
+.. include:: ../shared/designs/design4.rst
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 EvaDBCursor Interface
 ---------------------
@@ -119,6 +139,7 @@ EvaDBQuery Interface
     ~evadb.EvaDBQuery.sql_query
     ~evadb.EvaDBQuery.execute
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
     ~evadb.EvaDBCursor.df
 
@@ -196,4 +217,9 @@ EvaDBQuery Interface
 =======
 .. include:: ../shared/designs/design4.rst
 >>>>>>> 08db5ebb (docs: updated images)
+<<<<<<< HEAD
 >>>>>>> e867f37e (docs: updated images)
+=======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))

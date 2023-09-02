@@ -109,12 +109,18 @@ notebook_libs = [
 qdrant_libs = ["qdrant_client"]  # cannot install on 3.11 due to grcpio
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 
 pinecone_libs = ["pinecone-client"]
 
 chromadb_libs = ["chromadb"]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 
@@ -123,10 +129,17 @@ pinecone_libs = ["pinecone-client"]
 chromadb_libs = ["chromadb"]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 
 pinecone_libs = ["pinecone-client"]
 
 chromadb_libs = ["chromadb"]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 postgres_libs = [
     "psycopg2",
@@ -134,6 +147,11 @@ postgres_libs = [
 
 ludwig_libs = ["ludwig[hyperopt,distributed]"]  # MODEL TRAIN AND FINE TUNING
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 
 sklearn_libs = ["scikit-learn"]
@@ -164,6 +182,12 @@ forecasting_libs = [
 ]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 
 sklearn_libs = ["scikit-learn"]
 
@@ -177,6 +201,8 @@ forecasting_libs = [
 imagegen_libs = [
     "replicate"
 ]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 ### NEEDED FOR DEVELOPER TESTING ONLY
 

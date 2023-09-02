@@ -77,6 +77,7 @@ The :ref:`Getting Started` page shows how you can use EvaDB for different AI tas
 
 The :ref:`User Guides<image classification>` section contains Jupyter Notebooks that demonstrate how to use various features of EvaDB. Each notebook includes a link to Google Colab, where you can run the code yourself.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 
     --- Lastly, we run the ChatGPT query for question answering 
     --- This query is based on the 'transcripts' table 
@@ -118,6 +119,8 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
     --- to get the transcript and persist it in a table called 'transcripts'
     CREATE TABLE transcripts AS 
         SELECT SpeechRecognizer(audio) from news_videos;
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 
     --- Lastly, we run the ChatGPT query for question answering 
     --- This query is based on the 'transcripts' table 
@@ -302,6 +305,22 @@ AI-Centric Query Optimization
 
 EvaDB optimizes the AI queries to save money spent on running models and reduce query execution time. It contains a novel `Cascades-style query optimizer <https://www.cse.iitb.ac.in/infolab/Data/Courses/CS632/Papers/Cascades-graefe.pdf>`__  tailored for AI queries.
 
+<<<<<<< HEAD
 Query optimization has powered SQL database systems for several decades. It is the bridge that connects the declarative query language to efficient query execution on hardware. EvaDB accelerates AI queries using a collection of optimizations detailed in the :ref:`optimizations<optimizations>` page.
 >>>>>>> 5f27824c (docs: updates)
+<<<<<<< HEAD
 >>>>>>> 9cc72b7b (docs: updates)
+=======
+=======
+<<<<<<< HEAD
+Query optimization has powered SQL database systems for several decades. It is the bridge that connects the declarative query language to efficient query execution on hardware. EvaDB accelerates AI queries using a collection of optimizations detailed in the :ref:`optimizations<optimizations>` page.
+=======
+    query2 = cursor.table("MNISTVideo")
+
+    # Here, we are also filtering based on the output of the function
+    query2 = query2.filter("MnistImageClassifier(data).label = '6' AND id < 10")
+    query2 = query2.select("data, MnistImageClassifier(data).label")
+    response = query2.df()
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
