@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1776 
 =======
 personal_ws-1.1 en 1467 
@@ -7,6 +8,12 @@ personal_ws-1.1 en 1467
 =======
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+personal_ws-1.1 en 1563 
+=======
+personal_ws-1.1 en 1467 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 ABCD
 ABCMeta
 ANYDIM
@@ -613,6 +620,7 @@ MyVideos
 MydbHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 MysqlHandler
 NBEATS
 NCHAR
@@ -621,6 +629,11 @@ NCHAR
 =======
 MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+MysqlHandler
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 NEQ
 NHITS
 NLP
@@ -803,14 +816,20 @@ SampleExecutorTest
 SamplePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 SampleTable
 SampleVideoTable
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 SampleTable
 SampleVideoTable
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 Scalability
 ScanPlan
 SchemaUtils
@@ -1296,12 +1315,18 @@ featureextractor
 feedstock
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 fetchall
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+fetchall
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 ffill
 ffmpeg
 fileFormat
@@ -1695,6 +1720,7 @@ singledispatchmethod
 sk
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 sklearn
 smallint
 =======
@@ -1702,6 +1728,11 @@ smallint
 =======
 smallint
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+smallint
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 smi
 softmax
 spacy
