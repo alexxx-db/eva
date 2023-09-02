@@ -6,8 +6,11 @@ Installation Options
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 EvaDB supports a wide range of installation options for extending its functionality.
 
 Computer Vision
@@ -65,6 +68,7 @@ This installation option enables more efficient query execution on CPUs and GPUs
     pip install evadb[ray]
 =======
 EvaDB provides the following additional installation options for extending its functionality.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 EvaDB supports a wide range of installation options for extending its functionality.
@@ -157,6 +161,8 @@ This installation option enables more efficient query execution on CPUs and GPUs
     pip install evadb[ray]
 >>>>>>> 5a56b01d (docs: updates)
 =======
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 * ``pip install evadb[vision]`` for installing computer vision packages. They enable use-cases including image classification, object detection, and emotion analysis.
 
@@ -164,6 +170,7 @@ This installation option enables more efficient query execution on CPUs and GPUs
 
 * ``pip install evadb[qdrant]`` for installing the Qdrant vector database system. It enables use-cases related to similarity search based on feature vectors.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 * ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tuning AI models.
@@ -178,8 +185,14 @@ This installation option enables more efficient query execution on CPUs and GPUs
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+* ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tunining AI models.
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 * ``pip install evadb[ray]`` for installing the Ray compute engine. It enables EvaDB to do more efficient query execution on CPUs and GPUs.
 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))

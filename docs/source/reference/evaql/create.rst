@@ -36,6 +36,7 @@ CREATE TABLE
 ------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 To create a table, we can specify the schema of the table.
 
 .. code-block::
@@ -49,10 +50,14 @@ Blew is an example:
 =======
 To create a table, specify the schema of the table.
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+To create a table, specify the schema of the table.
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 .. code:: mysql
 
    CREATE TABLE IF NOT EXISTS MyCSV (
+<<<<<<< HEAD
 <<<<<<< HEAD
      id INTEGER UNIQUE,
      frame_id INTEGER,
@@ -153,6 +158,8 @@ To register an user-defined function, specify the implementation details of the 
 
     CREATE FUNCTION IF NOT EXISTS FastRCNNObjectDetector
 =======
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
                    id INTEGER UNIQUE,
                    frame_id INTEGER,
                    video_id INTEGER,
@@ -162,6 +169,7 @@ To register an user-defined function, specify the implementation details of the 
                    object_id INTEGER
     );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -227,10 +235,21 @@ To register an user-defined function, specify the implementation details of the 
 =======
     CREATE FUNCTION IF NOT EXISTS FastRCNNObjectDetector
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+CREATE UDF
+----------
+
+To register an user-defined function, specify the implementation details of the UDF.
+
+.. code-block:: sql
+
+    CREATE UDF IF NOT EXISTS FastRCNNObjectDetector
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
     INPUT  (frame NDARRAY UINT8(3, ANYDIM, ANYDIM))
     OUTPUT (labels NDARRAY STR(ANYDIM), bboxes NDARRAY FLOAT32(ANYDIM, 4),
             scores NDARRAY FLOAT32(ANYDIM))
     TYPE  Classification
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     IMPL  'evadb/functions/fastrcnn_object_detector.py';
@@ -367,6 +386,25 @@ Where the `parameter` is ``key value`` pair.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+    IMPL  'evadb/udfs/fastrcnn_object_detector.py';
+
+.. _create-udf-train:
+
+CREATE UDF via Training
+-----------------------
+
+To register an user-defined function by training a predication model.
+
+.. code-block:: sql
+
+   CREATE UDF IF NOT EXISTS PredictHouseRent FROM
+   (SELECT * FROM HomeRentals)
+   TYPE Ludwig
+   'predict' 'rental_price'
+   'time_list' 120;
+   'tune_for_memory' False;
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 CREATE MATERIALIZED VIEW
 ------------------------
@@ -379,4 +417,7 @@ To create a view with materialized results -- like the outputs of deep learning 
     SELECT id, FastRCNNObjectDetector(frame).labels 
     FROM UADETRAC
     WHERE id<5;
+<<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))

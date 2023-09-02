@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -87,6 +88,12 @@
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+.. _getting-started:
+=======
+.. _Getting Started:
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 Getting Started
 =================
@@ -97,18 +104,24 @@ Install EvaDB
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 To install EvaDB, we recommend using the `pip` package manager. EvaDB only supports Python versions greater than or equal to `3.9`.
 =======
 To install EvaDB, we recommend using the `pip` package manager.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 To install EvaDB, we recommend using the `pip` package manager. EvaDB only supports Python versions greater than or equal to `3.9`.
 >>>>>>> 572f347e (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 1. Create a new `virtual environment <https://docs.python-guide.org
 /dev/virtualenvs/>`_ called `evadb-venv`.
@@ -119,6 +132,7 @@ To install EvaDB, we recommend using the `pip` package manager. EvaDB only suppo
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,10 +148,13 @@ To install EvaDB, we recommend using the `pip` package manager. EvaDB only suppo
 
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 .. warning::
 
     EvaDB only supports Python versions greater than or equal to `3.9`. You can check the version of your Python interpreter by running `python --version` on the terminal.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -148,6 +165,10 @@ To install EvaDB, we recommend using the `pip` package manager. EvaDB only suppo
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 Now, activate the virtual environment:
 
 .. code-block:: bash
@@ -168,8 +189,11 @@ Now, activate the virtual environment:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
    pip install --upgrade evadb
 =======
    pip install evadb --upgrade
@@ -212,6 +236,7 @@ Copy the following Python code to a file called `run_evadb.py`.
 The program runs a SQL query for listing all the built-in functions in EvaDB. It consists of importing and connecting to EvaDB, and then running the query. The query's result is returned as a Dataframe.
 =======
    pip install evadb
+<<<<<<< HEAD
 =======
 >>>>>>> 572f347e (docs: updates)
 
@@ -244,6 +269,8 @@ Copy the following Python code to a file called `run_evadb.py`.
 The program runs a SQL query for listing all the built-in functions in EvaDB. It consists of importing and connecting to EvaDB, and then running the query. The query's result is returned as a Dataframe.
 =======
    pip install evadb
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 4. Verify EvaDB installation
 
@@ -282,7 +309,7 @@ The program runs a SQL query for listing all the built-in functions in EvaDB. It
    cursor = evadb.connect().cursor()
 
    # List all the built-in functions in EvaDB
-   print(cursor.query("SHOW FUNCTIONS;").df())
+   print(cursor.query("SHOW UDFS;").df())
 
 Now, run the Python program:
 
@@ -295,14 +322,21 @@ You should see a list of built-in functions including but not limited to the fol
 .. code-block:: bash
 
             name                                             inputs  ...                                               impl metadata
+<<<<<<< HEAD
     0  ArrayCount   [Input_Array NDARRAY ANYTYPE (), Search_Key ANY]  ...  /home/jarulraj3/evadb/evadb/functions/ndarray/array...       []
     1        Crop  [Frame_Array NDARRAY UINT8 (3, None, None), bb...  ...   /home/jarulraj3/evadb/evadb/functions/ndarray/crop.py       []
     2     ChatGPT  [query NDARRAY STR (1,), content NDARRAY STR (...  ...        /home/jarulraj3/evadb/evadb/functions/chatgpt.py       []
+=======
+    0  ArrayCount   [Input_Array NDARRAY ANYTYPE (), Search_Key ANY]  ...  /home/jarulraj3/evadb/evadb/udfs/ndarray/array...       []
+    1        Crop  [Frame_Array NDARRAY UINT8 (3, None, None), bb...  ...   /home/jarulraj3/evadb/evadb/udfs/ndarray/crop.py       []
+    2     ChatGPT  [query NDARRAY STR (1,), content NDARRAY STR (...  ...        /home/jarulraj3/evadb/evadb/udfs/chatgpt.py       []
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
     [3 rows x 6 columns]
 
 .. note::
     Go over the :ref:`Python API<python-api>` to learn more about `connect()` and `cursor`.
+<<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Now, activate the virtual environment:
@@ -445,6 +479,21 @@ Here is an illustrative `MNIST image classification <https://en.wikipedia.org/wi
     LIMIT 5;
 
 <<<<<<< HEAD
+=======
+
+.. note::
+
+    EvaDB supports additional installation options for extending its functionality. Go over the :doc:`Installation Options <getting-started/installation-options>` for all the available options.
+
+Illustrative AI App
+-------------------
+
+Here is a simple, illustrative `MNIST image classification <https://en.wikipedia.org/wiki/MNIST_database>`_ AI app in EvaDB.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+
+.. code-block:: python
+
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
    # Import the EvaDB package 
    import evadb
 
@@ -477,6 +526,7 @@ Now, run the Python program:
 
 You should see a list of built-in functions (with different filenames) including but not limited to the following:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .. code-block:: bash
 
@@ -699,6 +749,8 @@ Now, run the Python program:
 You should see a list of built-in functions (with different filenames) including but not limited to the following:
 
 <<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 .. code-block:: bash
 
             name                                             inputs  ...                                               impl metadata
@@ -744,6 +796,7 @@ Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <h
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .. include:: ../shared/designs/design2.rst
 =======
@@ -775,11 +828,14 @@ Try out EvaDB by experimenting with this introductory notebook.
 =======
 Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_.
 
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 .. image:: ../../images/reference/mnist.png
 
 .. note::
     Go over the :ref:`Python API<python-api>` to learn more about the functions used in this app.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -857,3 +913,5 @@ Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <h
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))

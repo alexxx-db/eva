@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -89,6 +90,12 @@ Python API
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+Python API
+=======
+Basic API
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 ==========
 
 To begin a querying session in EvaDB, obtain a connection with a cursor using ``connect`` and ``cursor`` functions. After getting the cursor, you can run queries with the ``query`` function in this manner:
@@ -145,6 +152,7 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/designs/design4.rst
 =======
 =======
@@ -160,6 +168,10 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 .. include:: ../shared/designs/design4.rst
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
+=======
+.. include:: ../shared/designs/design4.rst
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 EvaDBCursor Interface
 ---------------------
 
@@ -202,6 +214,7 @@ EvaDBQuery Interface
     ~evadb.EvaDBQuery.sql_query
     ~evadb.EvaDBQuery.execute
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -369,3 +382,5 @@ EvaDBQuery Interface
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))

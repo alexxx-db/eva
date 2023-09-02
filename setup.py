@@ -110,6 +110,7 @@ qdrant_libs = ["qdrant_client"]  # cannot install on 3.11 due to grcpio
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -157,16 +158,21 @@ pinecone_libs = ["pinecone-client"]
 chromadb_libs = ["chromadb"]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 pinecone_libs = ["pinecone-client"]
 
 chromadb_libs = ["chromadb"]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 postgres_libs = [
     "psycopg2",
 ]
 
 ludwig_libs = ["ludwig[hyperopt,distributed]"]  # MODEL TRAIN AND FINE TUNING
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -215,6 +221,8 @@ forecasting_libs = [
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 sklearn_libs = ["scikit-learn"]
 
@@ -230,6 +238,7 @@ imagegen_libs = [
 ]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 
@@ -248,6 +257,8 @@ forecasting_libs = [
     "statsforecast", # MODEL TRAIN AND FINE TUNING
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
 ]
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 ### NEEDED FOR DEVELOPER TESTING ONLY
 

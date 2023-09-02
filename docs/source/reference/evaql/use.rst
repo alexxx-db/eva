@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 USE
 ===
 
@@ -10,6 +13,7 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 =======
 .. _sql-use:
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 =======
@@ -106,12 +110,20 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+USE
+===
+
+The USE statement allows us to run arbitary native queries in the connected database.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 .. code:: text
 
    USE [database_connection] { [native_query] };
 
 * [database_connection] is an external database connection instanced by the `CREATE DATABASE statement`.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -201,6 +213,12 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+* [native_query] is an arbitrary SQL query supported by the [database_connection]. 
+=======
+* [native_query] is an arbitary SQL query supprted by the [database_connection]. 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 .. warning::
 

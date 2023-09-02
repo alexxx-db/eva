@@ -6,14 +6,18 @@ SELECT
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 .. _select:
 
 SELECT TUPLES WITH PREDICATES
 =======
 SELECT FRAMES WITH PREDICATES
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 .. _select:
@@ -22,6 +26,8 @@ SELECT TUPLES WITH PREDICATES
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 -----------------------------
 
 Search for frames with a car
@@ -49,6 +55,7 @@ Search for frames containing greater than 3 cars
    WHERE ArrayCount(FastRCNNObjectDetector(data).label, 'car') > 3
    ORDER BY id;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -166,6 +173,14 @@ SELECT WITH MULTIPLE FUNCTIONS
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+SELECT TUPLES WITH MULTIPLE PREDICATES
+--------------------------------------
+=======
+SELECT WITH MULTIPLE UDFS
+-------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 Compose multiple user-defined functions in a single query to construct semantically complex queries.
 

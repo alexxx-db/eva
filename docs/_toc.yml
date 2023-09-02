@@ -10,6 +10,9 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
       - file: source/overview/concepts
         title: Concepts
       - file: source/overview/ai-queries
@@ -114,6 +117,7 @@ parts:
         title: Emotion Analysis
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       - file: source/overview/connect-to-database
         title: Connect to Database
@@ -135,10 +139,18 @@ parts:
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+=======
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+      - file: source/overview/concepts
+        title: Concepts
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
         #- file: source/overview/faq
 
   - caption: Use Cases
     chapters:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       - file: source/usecases/sentiment-analysis.rst
@@ -319,6 +331,29 @@ parts:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+      - file: source/usecases/food-review.rst
+        title: Sentiment Analysis
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/similar-image-search.rst
+        title: Image Search
+      - file: source/usecases/qa-video.rst
+        title: Video Question Answering
+      - file: source/usecases/08-chatgpt.ipynb
+        title: ChatGPT-based Video Question Answering
+      - file: source/usecases/12-query-pdf.ipynb
+        title: PDF Question Answering
+      - file: source/usecases/02-object-detection.ipynb
+        title: Object Detection
+      - file: source/usecases/03-emotion-analysis.ipynb
+        title: Emotions Analysis
+      - file: source/usecases/07-object-segmentation-huggingface.ipynb
+        title: Image Segmentation
+      - file: source/usecases/13-privategpt.ipynb
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
   - caption: User Reference
     chapters:
@@ -391,12 +426,30 @@ parts:
       - file: source/reference/api
         title: Python API
 
+<<<<<<< HEAD
+=======
+      - file: source/reference/evaql      
+        title: Eva Query Language 
+        sections:
+          - file: source/reference/evaql/load
+          - file: source/reference/evaql/select
+          - file: source/reference/evaql/explain
+          - file: source/reference/evaql/show
+          - file: source/reference/evaql/create
+          - file: source/reference/evaql/drop
+          - file: source/reference/evaql/insert
+          - file: source/reference/evaql/delete
+          - file: source/reference/evaql/rename
+          - file: source/reference/evaql/use
+
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
       - file: source/reference/databases/index
         title: Data Sources
         sections: 
           - file: source/reference/databases/postgres
           - file: source/reference/databases/sqlite
           - file: source/reference/databases/mysql
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
@@ -446,6 +499,13 @@ parts:
           - file: source/reference/databases/clickhouse
           - file: source/reference/databases/github
 <<<<<<< HEAD
+=======
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/clickhouse
+          - file: source/reference/databases/github
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
       - file: source/reference/vector_stores/index
         title: Vector Stores

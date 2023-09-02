@@ -2,18 +2,24 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
    :keywords: AI, database, SQL, LLM
 =======
    :keywords: database, AI, language models, SQL, video analytics
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
    :keywords: AI, database, SQL, LLM
 >>>>>>> 528b5434 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 Welcome to EvaDB!
 =================
@@ -23,8 +29,11 @@ Welcome to EvaDB!
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 .. raw:: html
 
     <br>
@@ -46,6 +55,7 @@ EvaDB is a **query engine** that makes it easy to:
 - 💰 **Save time and money** spent on AI apps via AI-centric query optimization and execution.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ..  rubric:: Bring AI inside your Database System
 =======
@@ -55,6 +65,28 @@ EvaDB is a **query engine** that makes it easy to:
 =======
 =======
 ..  rubric:: Bring AI inside your Database System
+=======
+=======
+..  rubric:: Bring AI inside your Database System
+
+----------
+
+EvaDB enables software developers to build AI apps in a few lines of code. Its powerful SQL API simplifies AI app development for both structured and unstructured data. EvaDB's benefits include:
+
+- 🔮 Easy to connect EvaDB with your SQL database system and build AI-powered apps with SQL queries
+- 🤝 Query your data with a pre-trained AI model from Hugging Face, OpenAI, YOLO, PyTorch, and other AI frameworks
+- ⚡️ Faster queries thanks to AI-centric query optimization
+- 💰 Save money spent on running models by efficient CPU/GPU use
+- 🔧 Fine-tune your AI models to achieve better results
+
+👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by:
+
+- 🐙 giving a ⭐ on our EvaDB repo on Github: https://github.com/georgia-tech-db/evadb
+- 📟 joining our Slack Community: https://evadb.ai/community
+- 🐦 following us on Twitter: https://twitter.com/evadb_ai
+- 📝 following us on Medium: https://medium.com/evadb-blog
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 ----------
 
@@ -143,6 +175,9 @@ EvaDB covers many AI applications, including regression, classification, image r
 Our target audience is software developers who may not necessarily have a background in AI but require AI capabilities to solve specific problems. We target programmers who write simple SQL queries inside their CRUD apps. With EvaDB, it is possible to easily add AI features to these apps by calling built-in AI functions in the queries.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 👋 If you are excited about our vision of bringing AI inside databases, consider:
 
@@ -153,6 +188,7 @@ Our target audience is software developers who may not necessarily have a backgr
 - 🖥️ contributing to EvaDB: https://evadb.ai/github
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 
@@ -165,6 +201,8 @@ Our target audience is software developers who may not necessarily have a backgr
 - 🖥️ contributing to EvaDB: https://evadb.ai/github
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 
 Getting Started
@@ -178,6 +216,7 @@ Getting Started
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <img src="_static/icons/code.png" width="24px" height="24px" />
                 <h3 style="font-size:20px;">Getting Started</h3>
 <<<<<<< HEAD
@@ -194,10 +233,17 @@ Getting Started
                 <img src="_static/icons/code.png" width="24px" height="24px" />
                 <h3 style="font-size:20px;">Getting Started</h3>
 =======
+                <img src="_static/icons/code.png" width="24px" height="24px" />
+                <h3 style="font-size:20px;">Getting Started</h3>
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
                 <img src="_static/icons/code.png" width="44px" height="44px" />
                 <h3 style="font-size:20px;">Learn Basics</h3>
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
             </div>
             <p class="only-light" style="color:#000000;">Understand how to use EvaDB to build AI apps.</p> 
             <p class="only-dark" style="color:#FFFFFF;">Understand how to use EvaDB to build AI apps.</p>    
@@ -209,8 +255,11 @@ Getting Started
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
                 <img src="_static/icons/download.png" width="24px" height="24px" />
                 <h3 style="font-size:20px;">Key Concepts</h3>
             </div>
@@ -222,11 +271,14 @@ Getting Started
 =======
                 <img src="_static/icons/download.png" width="44px" height="44px" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 <img src="_static/icons/download.png" width="24px" height="24px" />
 >>>>>>> c0ae0836 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
                 <h3 style="font-size:20px;">Key Concepts</h3>
             </div>
             <p class="only-light" style="color:#000000;">Learn the 
@@ -235,12 +287,15 @@ Getting Started
             Learn the high-level concepts related to EvaDB.</p>      
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             <p class="only-dark" style="color:#FFFFFF;">
             Learn the key concepts related to EvaDB.</p>      
 >>>>>>> f398c41b (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
             <p style="font-weight:600;">Learn more > </p>  
         </div> 
     </a>  
@@ -264,6 +319,7 @@ Getting Started
             <p style="font-weight:600;">Support > </p> 
     </div></a>
     </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -291,3 +347,9 @@ Getting Started
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+
+.. include:: source/shared/designs/design1.rst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))

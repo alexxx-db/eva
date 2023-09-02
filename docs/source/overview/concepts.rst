@@ -82,6 +82,9 @@ Here are some illustrative **AI queries** for a ChatGPT-based video question ans
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
     --- Define an AI function that wraps around a speech-to-text model 
     --- This model is hosted on Hugging Face which has built-in support in EvaDB
     --- After creating the function, we can use the function in any future query
@@ -424,6 +427,7 @@ EvaDB optimizes the AI queries to save money spent on running models and reduce 
 
 <<<<<<< HEAD
 Query optimization has powered SQL database systems for several decades. It is the bridge that connects the declarative query language to efficient query execution on hardware. EvaDB accelerates AI queries using a collection of optimizations detailed in the :ref:`optimizations<optimizations>` page.
+<<<<<<< HEAD
 >>>>>>> 5f27824c (docs: updates)
 <<<<<<< HEAD
 >>>>>>> 9cc72b7b (docs: updates)
@@ -485,6 +489,9 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 .. code-block:: python
 
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
     query2 = cursor.table("MNISTVideo")
 
     # Here, we are also filtering based on the output of the function
@@ -492,6 +499,7 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
     query2 = query2.select("data, MnistImageClassifier(data).label")
     response = query2.df()
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -525,3 +533,5 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))

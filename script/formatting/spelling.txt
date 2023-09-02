@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 061e9d6d (docs: updates)
@@ -111,6 +112,12 @@ personal_ws-1.1 en 1563
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+personal_ws-1.1 en 1776 
+=======
+personal_ws-1.1 en 1467 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 ABCD
 ABCMeta
 ANYDIM
@@ -366,6 +373,7 @@ DailyMail
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 DallE
 DallEFunction
 DallEFunctionTest
@@ -380,6 +388,11 @@ Dask
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+Dask
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 DataFrame
 DataFrameColumn
 DataFrameColumns
@@ -607,11 +620,14 @@ HashJoinProbePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 HelperFunction
 =======
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 Helvetica
 HomeData
 HomeForecast
@@ -622,6 +638,7 @@ HomeSaleForecast
 HomeSalesForecast
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 HomeRentals
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -632,6 +649,11 @@ HomeRentals
 HomeRentals
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+HomeRentals
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 HorizontalFlip
 HuggingFace
 HuggingFaceModel
@@ -814,6 +836,7 @@ MemoTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 MetaData
 Milvus
 Milvus's
@@ -829,6 +852,11 @@ MetaData
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+MetaData
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 MindsDB
 MiniLM
 MnistImageClassifier
@@ -871,11 +899,15 @@ MydbHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 MysqlHandler
 NBEATS
 NCHAR
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -950,6 +982,8 @@ MysqlHandler
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 NEQ
 NHITS
 NLP
@@ -1074,6 +1108,7 @@ PredictHouseRentLudwig
 PredictHouseRentSklearn
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 PredictRent
 PredictRentXgboost
 =======
@@ -1085,6 +1120,10 @@ PredictHouseRent
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 PrivateGPTTest
 ProgrammingError
 ProjectExecutor
@@ -1161,6 +1200,7 @@ SaliencyTests
 SampleExecutor
 SampleExecutorTest
 SamplePlan
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1254,6 +1294,12 @@ SampleVideoTable
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+SampleTable
+SampleVideoTable
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 Scalability
 ScanPlan
 SchemaUtils
@@ -1706,6 +1752,7 @@ distilbart
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 distilbert
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -1717,6 +1764,11 @@ distilbert
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+distilbert
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 dists
 distutils
 dml
@@ -1811,6 +1863,7 @@ feedstock
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -1883,6 +1936,11 @@ fetchall
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+fetchall
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 ffill
 ffmpeg
 fileFormat
@@ -2280,6 +2338,7 @@ repo
 repos
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 releaser
 relu
@@ -2292,6 +2351,8 @@ repos
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 repr
 req
 resnet
@@ -2319,6 +2380,9 @@ russia
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 saledate
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -2364,6 +2428,9 @@ sk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 sklearn
 =======
 =======
@@ -2384,6 +2451,7 @@ sklearn
 sklearn
 >>>>>>> 62080794 (ran spellchecker)
 smallint
+<<<<<<< HEAD
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 <<<<<<< HEAD
@@ -2456,6 +2524,10 @@ smallint
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 smi
 softmax
 spacy
@@ -2473,6 +2545,7 @@ sshleifer
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 sst
 stablediffusion
 =======
@@ -2485,6 +2558,11 @@ sst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+sst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 statementtoplanconverter
 staticmethod
 statsforecast

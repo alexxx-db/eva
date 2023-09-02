@@ -24,6 +24,7 @@ Required:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. note:: 
 
      If the ``database`` parameter is specified, EvaDB connects to the already existing ``sqlite`` database specified. Otherwise, it automatically creates a new ``sqlite`` database named ``evadb.db``.
@@ -41,6 +42,13 @@ Required:
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+.. warning:: 
+
+     If the ``database`` parameter is specified, EvaDB connects to the already existing ``sqlite`` database specified. Otherwise, it automatically creates a new ``sqlite`` database named ``evadb.db``.
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 
 Create Connection
 -----------------

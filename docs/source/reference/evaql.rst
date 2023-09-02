@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. _evaql:
 
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 EvaDB Query Language (EvaQL)
 ============================
 =======

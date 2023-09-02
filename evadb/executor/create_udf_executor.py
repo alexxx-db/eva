@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -75,6 +76,9 @@ import pickle
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+import os
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
 from pathlib import Path
 from typing import Dict, List
 
@@ -103,6 +107,7 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     try_to_import_forecast,
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -145,6 +150,8 @@ from evadb.utils.generic_utils import (
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
     try_to_import_ludwig,
     try_to_import_torch,
     try_to_import_ultralytics,
@@ -185,6 +192,7 @@ class CreateUDFExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Use Ludwig's auto_train engine to train/tune models.
 =======
         Use ludwig's auto_train engine to train/tune models.
@@ -230,6 +238,9 @@ class CreateUDFExecutor(AbstractExecutor):
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+        Use ludwig's auto_train engine to train/tune models.
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
         """
         try_to_import_ludwig()
         from ludwig.automl import auto_train
@@ -288,6 +299,7 @@ class CreateUDFExecutor(AbstractExecutor):
             self.node.metadata,
         )
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -469,6 +481,8 @@ class CreateUDFExecutor(AbstractExecutor):
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
     def handle_generic_udf(self):
         """Handle generic UDFs
 
@@ -509,6 +523,7 @@ class CreateUDFExecutor(AbstractExecutor):
             name, impl_path, udf_type, io_list, metadata = self.handle_ultralytics_udf()
         elif self.node.udf_type == "Ludwig":
             name, impl_path, udf_type, io_list, metadata = self.handle_ludwig_udf()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -563,6 +578,8 @@ class CreateUDFExecutor(AbstractExecutor):
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
         else:
             name, impl_path, udf_type, io_list, metadata = self.handle_generic_udf()
 
