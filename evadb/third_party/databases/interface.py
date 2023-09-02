@@ -22,15 +22,18 @@ from contextlib import contextmanager
 =======
 =======
 
+<<<<<<< HEAD
 from evadb.executor.executor_utils import ExecutorError
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.executor.executor_utils import ExecutorError
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -49,7 +52,16 @@ from evadb.executor.executor_utils import ExecutorError
 
 <<<<<<< HEAD
 from evadb.executor.executor_utils import ExecutorError
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +115,7 @@ def _get_database_handler(engine: str, **kwargs):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -131,7 +144,12 @@ def _get_database_handler(engine: str, **kwargs):
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
     elif engine == "mariadb":
         return mod.MariaDbHandler(engine, **kwargs)
     elif engine == "clickhouse":
@@ -182,8 +200,20 @@ def _get_database_handler(engine: str, **kwargs):
     elif engine == "github":
         return mod.GithubHandler(engine, **kwargs)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+    elif engine == "mariadb":
+        return mod.MariaDbHandler(engine, **kwargs)
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
     else:
         raise NotImplementedError(f"Engine {engine} is not supported")
 
@@ -200,6 +230,7 @@ def _get_database_handler(engine: str, **kwargs):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -207,6 +238,8 @@ def _get_database_handler(engine: str, **kwargs):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -216,7 +249,14 @@ def _get_database_handler(engine: str, **kwargs):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 @contextmanager
 def get_database_handler(engine: str, **kwargs):
     handler = _get_database_handler(engine, **kwargs)
@@ -234,18 +274,24 @@ def get_database_handler(engine: str, **kwargs):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -259,6 +305,8 @@ def get_database_handler(engine: str, **kwargs):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -267,7 +315,16 @@ def get_database_handler(engine: str, **kwargs):
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 def dynamic_import(handler_dir):
     import_path = f"evadb.third_party.databases.{handler_dir}.{handler_dir}_handler"
     return importlib.import_module(import_path)

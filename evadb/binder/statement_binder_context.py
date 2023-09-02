@@ -95,8 +95,11 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,8 +111,16 @@ class StatementBinderContext:
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -119,6 +130,7 @@ class StatementBinderContext:
                 table_obj = create_table_catalog_entry_for_data_source(
                     table_name, database_name, column_df
                 )
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
@@ -144,6 +156,11 @@ class StatementBinderContext:
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
             )
             handler.connect()
 
@@ -157,6 +174,7 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -166,6 +184,8 @@ class StatementBinderContext:
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
             ) as handler:
                 # Assemble columns.
@@ -190,7 +210,16 @@ class StatementBinderContext:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
         else:
             table_obj = self._catalog().get_table_catalog_entry(table_name)
 

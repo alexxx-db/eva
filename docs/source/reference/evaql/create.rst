@@ -162,8 +162,13 @@ To register an user-defined function, specify the implementation details of the 
                    object_id INTEGER
     );
 
+<<<<<<< HEAD
 CREATE INDEX
 ------------
+=======
+CREATE UDF
+----------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 The CREATE INDEX statement allows us to construct an EvaDB based index to accelerate semantic based searching.
 The index can be created on either a column of a table directly or outputs from a function running on a column of a table.
@@ -223,10 +228,22 @@ To register an user-defined function, specify the implementation details of the 
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 CREATE FUNCTION via Type
 ----------------------------
+=======
+.. _create-udf-train:
+
+CREATE UDF via Training
+-----------------------
+
+To register an user-defined function by training a predication model.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 .. code-block:: sql
 

@@ -54,12 +54,17 @@ class MysqlHandler(DBHandler):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
     def get_sqlalchmey_uri(self) -> str:
         return f"mysql+mysqlconnector://{self.user}:{self.password}@{self.host}:{self.port}/{self.database}"
 
@@ -76,13 +81,17 @@ class MysqlHandler(DBHandler):
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
     def get_sqlalchmey_uri(self) -> str:
         return f"mysql+mysqlconnector://{self.user}:{self.password}@{self.host}:{self.port}/{self.database}"
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -93,6 +102,8 @@ class MysqlHandler(DBHandler):
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -102,7 +113,14 @@ class MysqlHandler(DBHandler):
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
     def check_connection(self) -> DBHandlerStatus:
         if self.connection:
             return DBHandlerStatus(status=True)
@@ -152,12 +170,17 @@ class MysqlHandler(DBHandler):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
             res_df = pd.DataFrame(
                 res, columns=[desc[0].lower() for desc in cursor.description]
             )
@@ -175,13 +198,17 @@ class MysqlHandler(DBHandler):
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
             res_df = pd.DataFrame(
                 res, columns=[desc[0].lower() for desc in cursor.description]
             )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -192,6 +219,8 @@ class MysqlHandler(DBHandler):
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-master
 =======
             res_df = pd.DataFrame(res, columns=[desc[0] for desc in cursor.description])
@@ -202,7 +231,14 @@ class MysqlHandler(DBHandler):
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
             return res_df
         except mysql.connector.ProgrammingError as e:
             if str(e) == "no results to fetch":
