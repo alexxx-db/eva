@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -197,6 +198,8 @@ In the following query, we call the classifier on every image in the video. The 
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 .. _image-classification:
 =======
 .. _image classification:
@@ -372,12 +375,25 @@ In the following query, we call the classifier on every image in the video. The 
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 .. _image-classification:
+=======
+.. _image classification:
+
+Image Classification Pipeline using EvaDB
+=========================================
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Image Classification
 ====================
 
+<<<<<<< HEAD
 .. raw:: html
+=======
+1. Connect to EvaDB
+-------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
     <embed>
     <table align="left">
@@ -397,16 +413,22 @@ Introduction
 ------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 In this tutorial, we present how to use ``PyTorch`` models in EvaDB to classify images. In particular, we focus on classifying images from the ``MNIST`` dataset that contains ``digits``. EvaDB makes it easy to do image classification using its built-in support for ``PyTorch`` models.
 =======
 2. Register Image Classification Model as a Function in SQL
 -----------------------------------------------------------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 In this tutorial, we present how to use ``PyTorch`` models in EvaDB to classify images. In particular, we focus on classifying images from the ``MNIST`` dataset that contains ``digits``. EvaDB makes it easy to do image classification using its built-in support for ``PyTorch`` models.
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 In this tutorial, besides classifying images, we will also showcase a query where the model's output is used to retrieve images with the digit ``6``.
 
@@ -414,6 +436,7 @@ In this tutorial, besides classifying images, we will also showcase a query wher
 
 We will assume that the input ``MNIST`` video is loaded into ``EvaDB``. To download the video and load it into ``EvaDB``, see the complete `image classification notebook on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/master/tutorials/01-mnist.ipynb>`_.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Create Image Classification Function
@@ -425,8 +448,14 @@ Create Image Classification Function
 
 To create a custom ``MnistImageClassifier`` function, use the ``CREATE FUNCTION`` statement. The code for the custom classification model is available `here <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_.
 =======
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 Create Image Classification Function
 ------------------------------------
+=======
+3. Execute Image Classification through SQL
+-------------------------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 <<<<<<< HEAD
 To create a custom ``MnistImageClassifier`` function, use the ``CREATE FUNCTION`` statement. The code for the custom classification model is available `here <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_.
@@ -487,6 +516,7 @@ This query returns the label of all the images:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -512,6 +542,10 @@ This query returns the label of all the images:
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
     +------------------------------+
 =======
 =======
@@ -556,11 +590,15 @@ Like normal SQL, you can also specify conditions to filter out some frames of th
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
     +------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 =======
     +------------------------------+
@@ -618,6 +656,8 @@ Like normal SQL, you can also specify conditions to filter out some frames of th
     +------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 
 Filtering Based on AI Function
@@ -651,6 +691,7 @@ Now, the ``DataFrame`` only contains images of the digit ``6``.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -673,6 +714,8 @@ Now, the ``DataFrame`` only contains images of the digit ``6``.
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 .. include:: ../shared/footer.rst
 
 .. include:: ../shared/designs/design7.rst
@@ -686,13 +729,18 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 .. include:: ../shared/footer.rst
 =======
 Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_ for working example.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -764,3 +812,6 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))

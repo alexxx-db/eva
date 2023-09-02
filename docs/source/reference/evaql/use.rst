@@ -115,6 +115,7 @@ USE
 ===
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The USE statement allows us to run arbitary native queries in the connected database.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -123,13 +124,23 @@ The USE statement allows us to run arbitary native queries in the connected data
 =======
 The USE statement allows us to run arbitrary native queries in the connected database.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+The USE statement allows us to run arbitrary native queries in the connected database.
+=======
+The USE statement allows us to run arbitary native queries in the connected database.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 .. code:: text
 
    USE [database_connection] { [native_query] };
 
 * [database_connection] is an external database connection instanced by the `CREATE DATABASE statement`.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -164,10 +175,15 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 * [native_query] is an arbitrary SQL query supported by the [database_connection]. 
 =======
 * [native_query] is an arbitary SQL query supprted by the [database_connection]. 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -235,6 +251,13 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 * [native_query] is an arbitrary SQL query supported by the [database_connection]. 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+* [native_query] is an arbitrary SQL query supported by the [database_connection]. 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 .. warning::
 

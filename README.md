@@ -151,6 +151,7 @@
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
@@ -166,15 +167,23 @@
 
 <<<<<<< HEAD
 =======
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 <p align="center">
   <a href="https://evadb.readthedocs.io">
-    <img src="https://raw.githubusercontent.com/georgia-tech-db/evadb/master/docs/images/evadb/evadb-full-logo.svg" width="500" alt="EvaDB">
+    <img src="https://raw.githubusercontent.com/georgia-tech-db/evadb/master/docs/images/evadb/evadb-full-logo.svg" width="40%" alt="EvaDB">
   </a>
 </p>
 
-#
+<p align="center"><i><b>Bring AI inside your database system and build AI-powered apps</b></i></p>
 
+<<<<<<< HEAD
 >>>>>>> cd39ae6e (docs: Update README.md)
+=======
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 <div align="center">
         <a href="https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/03-emotion-analysis.ipynb">
             <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Check out EvaDB on Colab"/>
@@ -194,6 +203,7 @@
         <img alt="Coverage Status" src="https://coveralls.io/repos/github/georgia-tech-db/eva/badge.svg?branch=master"/>     
 <!--         <a href="https://pepy.tech/project/evadb">
 >>>>>>> ad6dc032 (docs: Update README.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
         </a> -->  
@@ -522,6 +532,11 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 <<<<<<< HEAD
 >>>>>>> a8469c18 (docs: Update README.md)
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
 <p align="center">
 <a href="https://github.com/georgia-tech-db/evadb/fork" target="blank">
 <img src="https://img.shields.io/github/forks/georgia-tech-db/evadb?style=for-the-badge" alt="EvaDB forks"/>
@@ -587,6 +602,7 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -627,6 +643,12 @@ More details on the optimizations in EvaDB is [available here](https://evadb.rea
 =======
 >>>>>>> cd39ae6e (docs: Update README.md)
 >>>>>>> a8469c18 (docs: Update README.md)
+=======
+=======
+>>>>>>> cd39ae6e (docs: Update README.md)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
           <img alt="Downloads" src="https://static.pepy.tech/badge/evadb"/>
         </a> -->  
   <br />
@@ -710,6 +732,7 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -765,6 +788,9 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 <<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 - [Quick Links](#quick-links)
 - [Documentation](#documentation)
 - [Why EvaDB](#why-evadb)
@@ -781,6 +807,9 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 - [Quick Links](#quick-links)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -796,6 +825,7 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 - [Star History](#star-history)
 - [License](#license)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -865,6 +895,15 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 - [Star History](#star-history)
 - [License](#license)
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+- [Documentation](#documentation)
+- [Why EvaDB](#why-evadb)
+- [How does EvaDB work](#how-does-evadb-work)
+- [Community and Support](#community-and-support)
+- [Illustrative Queries](#illustrative-queries)
+- [Illustrative Apps](#illustrative-apps)
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 ## Documentation
 
@@ -1023,6 +1062,7 @@ SELECT name FROM reddit_dataset ORDER BY
 
 Here are some illustrative AI apps built using EvaDB (each notebook can be opened on Google Colab):
 
+<<<<<<< HEAD
 <<<<<<< HEAD
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/13-privategpt.html">PrivateGPT</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/08-chatgpt.html">ChatGPT-based Video Question Answering</a>
@@ -1282,6 +1322,8 @@ SELECT name FROM reddit_dataset ORDER BY
 Here are some illustrative AI apps built using EvaDB (each notebook can be opened on Google Colab):
 
 <<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/13-privategpt.html">PrivateGPT</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/08-chatgpt.html">ChatGPT-based Video Question Answering</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/12-query-pdf.html">Querying PDF Documents</a>
@@ -1306,6 +1348,9 @@ Our target audience is software developers who may not necessarily have a backgr
 
 <details>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 <ul>
 <li>Connect EvaDB to your database system with the `CREATE DATABASE` statement.</li>
 <li>Write SQL queries with AI functions to get inference results:</li>
@@ -1317,6 +1362,7 @@ Our target audience is software developers who may not necessarily have a backgr
 </ul> 
   
 Follow the [getting started](https://evadb.readthedocs.io/en/stable/source/overview/getting-started.html) guide to get on-boarded as fast as possible.
+<<<<<<< HEAD
 =======
 
 <<<<<<< HEAD
@@ -1341,6 +1387,8 @@ TIME_LIMIT 120;
 ```
 
 >>>>>>> 6f08d5a3 (Update README.md)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 </details>
 
 ## Illustrative Queries
@@ -1348,6 +1396,9 @@ TIME_LIMIT 120;
 * Run the MNIST Image Classification model to obtain digit labels for each frame in the video.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 ```sql
 SELECT MnistImageClassifier(data).label FROM mnist_video;
 ```
@@ -1358,11 +1409,14 @@ SELECT MnistImageClassifier(data).label FROM mnist_video;
 CREATE INDEX reddit_sift_image_index
     ON reddit_dataset (SiftFeatureExtractor(data))
     USING FAISS
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 ```
 
 * Retrieve the top-5 most similar images for the given image using the index.
@@ -1382,6 +1436,7 @@ Here are some illustrative AI apps built using EvaDB (each notebook can be opene
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -1390,6 +1445,8 @@ Here are some illustrative AI apps built using EvaDB (each notebook can be opene
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/sentiment-analysis.html">Sentiment Analysis using LLM within PostgreSQL</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/question-answering.html">ChatGPT-based Video Question Answering</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/text-summarization.html">Text Summarization on PDF Documents</a>
@@ -1436,6 +1493,7 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 
 <details>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1490,10 +1548,17 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 =======
 * Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+* Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
+=======
+* Store the text returned by a Speech Recognition model on the audio component of a video in a table.
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 ```sql
 CREATE TABLE text_summary AS
     SELECT SpeechRecognizer(audio) FROM ukraine_video;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1512,11 +1577,15 @@ CREATE TABLE text_summary AS
 =======
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 ```
 
 * Run ChatGPT on the `text` column in a table.
 
 ```sql
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1543,10 +1612,14 @@ CREATE TABLE text_summary AS
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
     FROM text_summary;
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1565,6 +1638,8 @@ SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 * Train a classic ML model for prediction using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine.
 
 ```sql
@@ -1575,6 +1650,7 @@ PREDICT 'rental_price'
 TIME_LIMIT 120;
 =======
 * Train an ML model using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine to predict a column in a table.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1661,6 +1737,16 @@ TYPE Ludwig
 PREDICT 'rental_price'
 TIME_LIMIT 120;
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+
+```sql
+CREATE UDF IF NOT EXISTS PredictHouseRent FROM
+( SELECT * FROM HomeRentals )
+TYPE Ludwig
+'predict' 'rental_price'
+'time_limit' 120;
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 ```
 
 </details>
@@ -1677,6 +1763,7 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -1685,16 +1772,21 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
 =======
 2. AI Frameworks (Transform Unstructured Data to Structured Data, Unstructured data includes PDFs, images, podcasts, etc. stored on cloud buckets or local filesystem)
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
 >>>>>>> d40331e4 (Update README.md)
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 3. Vector Database Systems (Feature Embeddings)
 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))

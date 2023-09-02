@@ -5,12 +5,16 @@ SHOW
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 SHOW FUNCTIONS
 --------------
 =======
 SHOW UDFS
 ---------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 SHOW FUNCTIONS
 --------------
@@ -23,6 +27,8 @@ SHOW UDFS
 SHOW FUNCTIONS
 --------------
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 List the registered user-defined functions
 

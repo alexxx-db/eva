@@ -16,6 +16,7 @@ DROP TABLE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -62,6 +63,14 @@ DROP UDF
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+DROP FUNCTION
+-------------
+=======
+DROP UDF
+--------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 .. code:: mysql
 

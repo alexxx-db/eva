@@ -99,6 +99,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/ref
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -133,10 +134,16 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/ref
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = "github-dark"
@@ -253,11 +260,32 @@ nitpick_ignore_regex = [('py:class', r'.*')]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 =======
 =======
+=======
+=======
+
+
+for i in os.listdir("../tutorials"):
+    if i in [
+        "13-privategpt.ipynb",
+        "08-chatgpt.ipynb",
+        "12-query-pdf.ipynb",
+        "02-object-detection.ipynb",
+        "03-emotion-analysis.ipynb",
+        "07-object-segmentation-huggingface.ipynb",
+        "chatgpt.png",
+    ]:
+        shutil.copy(f"../tutorials/{i}", "./source/usecases/")
+
+nb_execution_mode = "off"
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 <<<<<<< HEAD
 
@@ -381,6 +409,7 @@ def setup(app):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -407,10 +436,15 @@ def setup(app):
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -427,9 +461,12 @@ def setup(app):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -481,3 +518,7 @@ def setup(app):
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))

@@ -1,6 +1,9 @@
 :orphan:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 Functions
 =========
@@ -9,6 +12,7 @@ SHOW FUNCTIONS
 --------------
 =======
 
+<<<<<<< HEAD
 Functions
 =========
 
@@ -33,6 +37,14 @@ SHOW UDFS
 SHOW FUNCTIONS
 --------------
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+UDF
+===
+
+SHOW UDFS
+---------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 Here is a list of built-in user-defined functions in EvaDB.
 
@@ -75,6 +87,7 @@ ArrayCount and Crop are utility functions for counting the number of objects in 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 =======
@@ -94,8 +107,14 @@ SELECT WITH MULTIPLE UDFS
 Here is a query that illustrates how to use multiple UDFs in a single query.
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
+=======
+SELECT WITH MULTIPLE UDFS
+-------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Here is a query that illustrates how to use multiple functions in a single query.
 >>>>>>> b87af508 (feat: sync master staging (#1050))

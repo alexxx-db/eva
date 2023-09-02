@@ -324,6 +324,7 @@ After registering ``MnistImageClassifier`` function, you can call the function i
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
@@ -344,6 +345,8 @@ After registering ``MnistImageClassifier`` function, you can call the function i
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
     --- Use the 'MnistImageClassifier' function's output to filter frames
     --- This query returns the frame ids of the frames with digit 6
     --- We limit to the first five frames containing digit 6
@@ -351,6 +354,7 @@ After registering ``MnistImageClassifier`` function, you can call the function i
     FROM MnistVideo  
     WHERE MnistImageClassifier(data).label = '6'
     LIMIT 5;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -454,6 +458,8 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 
 AI-Centric Query Optimization
 -----------------------------
@@ -469,11 +475,14 @@ Query optimization has powered SQL database systems for several decades. It is t
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 Query optimization has powered SQL database systems for several decades. It is the bridge that connects the declarative query language to efficient query execution on hardware. EvaDB accelerates AI queries using a collection of optimizations detailed in the :ref:`optimizations<optimizations>` page.
 =======
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 Save time and money
 ----------------------
@@ -524,9 +533,12 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 .. code-block:: python
 
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
     query2 = cursor.table("MNISTVideo")
 
     # Here, we are also filtering based on the output of the function
@@ -534,6 +546,7 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
     query2 = query2.select("data, MnistImageClassifier(data).label")
     response = query2.df()
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -575,3 +588,9 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
