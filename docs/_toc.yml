@@ -7,6 +7,7 @@ parts:
         sections:
           - file: source/overview/getting-started/installation-options
             title: Installation Options
+<<<<<<< HEAD
       - file: source/overview/concepts
         title: Concepts
       - file: source/overview/ai-queries
@@ -36,6 +37,36 @@ parts:
         title: Object Detection
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
+=======
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+      - file: source/overview/concepts
+        title: Concepts
+        #- file: source/overview/faq
+
+  - caption: Use Cases
+    chapters:
+      - file: source/usecases/food-review.rst
+        title: Sentiment Analysis
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/similar-image-search.rst
+        title: Image Search
+      - file: source/usecases/qa-video.rst
+        title: Video Question Answering
+      - file: source/usecases/08-chatgpt.ipynb
+        title: ChatGPT-based Video Question Answering
+      - file: source/usecases/12-query-pdf.ipynb
+        title: PDF Question Answering
+      - file: source/usecases/02-object-detection.ipynb
+        title: Object Detection
+      - file: source/usecases/03-emotion-analysis.ipynb
+        title: Emotions Analysis
+      - file: source/usecases/07-object-segmentation-huggingface.ipynb
+        title: Image Segmentation
+      - file: source/usecases/13-privategpt.ipynb
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
   - caption: User Reference
     chapters:
@@ -62,6 +93,16 @@ parts:
           - file: source/reference/evaql/delete_table
           - file: source/reference/evaql/rename
           - file: source/reference/evaql/use
+<<<<<<< HEAD
+=======
+
+      - file: source/reference/databases/index
+        title: Data Sources
+        sections: 
+          - file: source/reference/databases/postgres
+          - file: source/reference/databases/sqlite
+          - file: source/reference/databases/mysql
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
       - file: source/reference/api
         title: Python API

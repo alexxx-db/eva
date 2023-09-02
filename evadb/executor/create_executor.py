@@ -34,8 +34,16 @@ class CreateExecutor(AbstractExecutor):
         super().__init__(db, node)
 
     def exec(self, *args, **kwargs):
+<<<<<<< HEAD
         # create a table in the active database if set
         is_native_table = self.node.table_info.database_name is not None
+=======
+        if not handle_if_not_exists(
+            self.catalog(), self.node.table_info, self.node.if_not_exists
+        ):
+            create_table_done = False
+            logger.debug(f"Creating table {self.node.table_info}")
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
         check_if_exists = handle_if_not_exists(
             self.catalog(), self.node.table_info, self.node.if_not_exists
@@ -52,6 +60,7 @@ class CreateExecutor(AbstractExecutor):
             catalog_entry = self.catalog().create_and_insert_table_catalog_entry(
                 self.node.table_info, self.node.column_list
             )
+<<<<<<< HEAD
         else:
             catalog_entry = create_table_catalog_entry_for_native_table(
                 self.node.table_info, self.node.column_list
@@ -92,3 +101,26 @@ class CreateExecutor(AbstractExecutor):
             with contextlib.suppress(CatalogError):
                 self.catalog().delete_table_catalog_entry(catalog_entry)
             raise e
+=======
+            storage_engine = StorageEngine.factory(self.db, catalog_entry)
+            try:
+                storage_engine.create(table=catalog_entry)
+                create_table_done = True
+                if self.children != []:
+                    assert (
+                        len(self.children) == 1
+                    ), "Create table from query expects 1 child, finds {}".format(
+                        len(self.children)
+                    )
+                    child = self.children[0]
+
+                    # Populate the table
+                    for batch in child.exec():
+                        batch.drop_column_alias()
+                        storage_engine.write(catalog_entry, batch)
+            except Exception as e:
+                # rollback if the create call fails
+                if create_table_done:
+                    storage_engine.drop(catalog_entry)
+                raise e
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))

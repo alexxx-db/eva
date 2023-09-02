@@ -32,10 +32,18 @@ from evadb.catalog.models.utils import (
     TableCatalogEntry,
 )
 from evadb.catalog.sql_config import IDENTIFIER_COLUMN
+<<<<<<< HEAD
 from evadb.expression.function_expression import FunctionExpression
 from evadb.expression.tuple_value_expression import TupleValueExpression
 from evadb.parser.create_statement import ColConstraintInfo, ColumnDefinition
 from evadb.utils.generic_utils import get_str_hash
+=======
+from evadb.configuration.configuration_manager import ConfigurationManager
+from evadb.expression.function_expression import FunctionExpression
+from evadb.expression.tuple_value_expression import TupleValueExpression
+from evadb.parser.create_statement import ColConstraintInfo, ColumnDefinition
+from evadb.utils.generic_utils import get_str_hash, remove_directory_contents
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 
 def is_video_table(table: TableCatalogEntry):

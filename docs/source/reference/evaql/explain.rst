@@ -1,7 +1,12 @@
 EXPLAIN 
 ========
 
+<<<<<<< HEAD
 .. _explain:
+=======
+EXPLAIN QUERY
+-------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 List the query plan associated with a EvaDB query
 

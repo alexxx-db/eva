@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 .. _sqlite:
 
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 SQLite
 ==========
 
@@ -18,9 +21,12 @@ Required:
 
 * `database` is the path to the database file to be opened. You can pass ":memory:" to create an SQLite database existing only in memory, and open a connection to it.
 
+<<<<<<< HEAD
 .. note:: 
 
      If the ``database`` parameter is specified, EvaDB connects to the already existing ``sqlite`` database specified. Otherwise, it automatically creates a new ``sqlite`` database named ``evadb.db``.
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Create Connection
 -----------------

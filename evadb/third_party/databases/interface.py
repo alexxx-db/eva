@@ -16,8 +16,11 @@ import importlib
 import os
 from contextlib import contextmanager
 
+<<<<<<< HEAD
 from evadb.executor.executor_utils import ExecutorError
 
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 def _get_database_handler(engine: str, **kwargs):
     """
@@ -40,6 +43,7 @@ def _get_database_handler(engine: str, **kwargs):
         return mod.SQLiteHandler(engine, **kwargs)
     elif engine == "mysql":
         return mod.MysqlHandler(engine, **kwargs)
+<<<<<<< HEAD
     elif engine == "mariadb":
         return mod.MariaDbHandler(engine, **kwargs)
     elif engine == "clickhouse":
@@ -50,10 +54,13 @@ def _get_database_handler(engine: str, **kwargs):
         return mod.GithubHandler(engine, **kwargs)
     elif engine == "slack":
         return mod.SlackHandler(engine, **kwargs)
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
     else:
         raise NotImplementedError(f"Engine {engine} is not supported")
 
 
+<<<<<<< HEAD
 @contextmanager
 def get_database_handler(engine: str, **kwargs):
     handler = _get_database_handler(engine, **kwargs)
@@ -66,6 +73,8 @@ def get_database_handler(engine: str, **kwargs):
         handler.disconnect()
 
 
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 def dynamic_import(handler_dir):
     import_path = f"evadb.third_party.databases.{handler_dir}.{handler_dir}_handler"
     return importlib.import_module(import_path)

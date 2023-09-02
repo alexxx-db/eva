@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Text Summarization Benchmark 
 ============================
 
@@ -9,14 +10,27 @@ All the relevant files are located in the `text summarization benchmark folder o
 
 Prepare dataset
 ---------------
+=======
+Text summarization benchmark 
+============================
+In this benchmark, we compare the performance of text summarization between EvaDB and MindsDB on `CNN-DailyMail News <https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail>`_.
+
+1. Prepare dataset
+------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 .. code-block:: bash
 
    cd benchmark/text_summarization
    bash download_dataset.sh
 
+<<<<<<< HEAD
 Use EvaDB for Text Summarization
 --------------------------------
+=======
+2. Using EvaDB to summarize the CNN DailyMail News
+--------------------------------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 .. note::
  
@@ -29,6 +43,7 @@ Use EvaDB for Text Summarization
    python text_summarization_with_evadb.py
 
 
+<<<<<<< HEAD
 Loading Data Into EvaDB
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -76,6 +91,13 @@ Use MindsDB for Text Summarization
 
 Setup SQLite Database 
 ~~~~~~~~~~~~~~~~~~~~~~
+=======
+3. Using MindsDB to summarize the CNN DailyMail News
+----------------------------------------------------
+
+Prepare sqlite database for MindsDB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 .. code-block:: bash
 
@@ -88,11 +110,19 @@ Setup SQLite Database
 Install MindsDB
 ~~~~~~~~~~~~~~~
 
+<<<<<<< HEAD
 Follow the `MindsDB installation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 
 .. note::
 
    You will need to manually run ``pip install evaluate`` for the ``HuggingFace`` model to work in MindsDB.
+=======
+Follow the `Setup for Source Code via pip <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install mindsdb.
+
+.. note::
+
+   At the time of this documentation, we need to manually ``pip install evaluate`` for huggingface model to work in MindsDB.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 After installation, use the ``MySQL`` client for connecting to ``MindsDB``. Update the port number if needed.
 
@@ -100,8 +130,13 @@ After installation, use the ``MySQL`` client for connecting to ``MindsDB``. Upda
 
    mysql -h 127.0.0.1 --port 47335 -u mindsdb -p
 
+<<<<<<< HEAD
 Benchmark MindsDB 
 ~~~~~~~~~~~~~~~~~
+=======
+Run Experiment
+~~~~~~~~~~~~~~
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Connect ``MindsDB`` to the ``sqlite`` database we created before:
 
@@ -140,8 +175,14 @@ Use the ``text summarization`` model to summarize the CNN news dataset:
    );
 
 
+<<<<<<< HEAD
 Benchmarking Results
 --------------------
+=======
+4. Experiment results
+---------------------
+Below are numbers from a server with 56 Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz and two Quadro P6000 GPU.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Here are the key runtime metrics for the ``Text Summarization`` benchmark.
 

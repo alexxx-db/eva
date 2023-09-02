@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 personal_ws-1.1 en 1845 
+=======
+personal_ws-1.1 en 1467 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 ABCD
 ABCMeta
 ANYDIM
@@ -193,10 +197,13 @@ DESC
 DETRACVideo
 DFS
 DailyMail
+<<<<<<< HEAD
 DallE
 DallEFunction
 DallEFunctionTest
 Dask
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 DataFrame
 DataFrameColumn
 DataFrameColumns
@@ -318,7 +325,10 @@ FileExistsError
 FileFormatType
 FileNotFoundError
 Finetuning
+<<<<<<< HEAD
 Flaml
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 FlipTests
 ForecastModel
 ForeignKey
@@ -387,6 +397,7 @@ HashJoinBuildPlan
 HashJoinExecutor
 HashJoinPlan
 HashJoinProbePlan
+<<<<<<< HEAD
 HelperFunction
 Helvetica
 HomeData
@@ -396,6 +407,9 @@ HomeRentals
 HomeSale
 HomeSaleForecast
 HomeSalesForecast
+=======
+HomeRentals
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 HorizontalFlip
 HuggingFace
 HuggingFaceModel
@@ -569,11 +583,14 @@ MaterializedViewTest
 MaxPool
 MemeImages
 MemoTest
+<<<<<<< HEAD
 MetaData
 Milvus
 Milvus's
 MilvusClient
 MilvusVectorStore
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 MindsDB
 MiniLM
 MnistImageClassifier
@@ -596,9 +613,12 @@ MyVideo
 MyVideoCSV
 MyVideos
 MydbHandler
+<<<<<<< HEAD
 MysqlHandler
 NBEATS
 NCHAR
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 NEQ
 NHITS
 NLP
@@ -697,6 +717,7 @@ PostgresHandler
 PostgresNativeStorageEngineTest
 PredicateExecutor
 PredicatePlan
+<<<<<<< HEAD
 PredictEmployee
 PredictEmployeeXgboost
 PredictHouseRent
@@ -704,6 +725,9 @@ PredictHouseRentLudwig
 PredictHouseRentSklearn
 PredictRent
 PredictRentXgboost
+=======
+PredictHouseRent
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 PrivateGPTTest
 ProgrammingError
 ProjectExecutor
@@ -780,8 +804,11 @@ SaliencyTests
 SampleExecutor
 SampleExecutorTest
 SamplePlan
+<<<<<<< HEAD
 SampleTable
 SampleVideoTable
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 Scalability
 ScanPlan
 SchemaUtils
@@ -1105,7 +1132,10 @@ ci
 classmethod
 classname
 cli
+<<<<<<< HEAD
 clickhouse
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 cln
 clna
 clova
@@ -1196,7 +1226,10 @@ dir
 dirname
 diskcache
 distilbart
+<<<<<<< HEAD
 distilbert
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 dists
 distutils
 dml
@@ -1268,7 +1301,10 @@ fc
 featCol
 featureextractor
 feedstock
+<<<<<<< HEAD
 fetchall
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 ffill
 ffmpeg
 fileFormat
@@ -1458,7 +1494,10 @@ memeimages
 metaclass
 metafile
 metainfo
+<<<<<<< HEAD
 milvus
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 mindsdb
 miniconda
 mins
@@ -1481,7 +1520,10 @@ mvit
 mvitactionrecognition
 mxztt
 mydb
+<<<<<<< HEAD
 myfiles
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 myimages
 mypdf
 mypdfs
@@ -1613,7 +1655,10 @@ reindex
 releaser
 relu
 repo
+<<<<<<< HEAD
 repos
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 repr
 req
 resnet
@@ -1638,7 +1683,10 @@ runnable
 runpy
 runtime
 russia
+<<<<<<< HEAD
 saledate
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 saliency
 samsum
 scalable
@@ -1663,8 +1711,11 @@ simiarity
 singledispatch
 singledispatchmethod
 sk
+<<<<<<< HEAD
 sklearn
 smallint
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 smi
 softmax
 spacy
@@ -1679,8 +1730,11 @@ sqlengine
 sqlite
 src
 sshleifer
+<<<<<<< HEAD
 sst
 stablediffusion
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 statementtoplanconverter
 staticmethod
 statsforecast

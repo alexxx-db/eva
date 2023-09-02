@@ -107,18 +107,22 @@ notebook_libs = [
 ]
 
 qdrant_libs = ["qdrant_client"]  # cannot install on 3.11 due to grcpio
+<<<<<<< HEAD
 
 pinecone_libs = ["pinecone-client"]
 
 chromadb_libs = ["chromadb"]
 
 milvus_libs = ["pymilvus>=2.3.0"]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 postgres_libs = [
     "psycopg2",
 ]
 
 ludwig_libs = ["ludwig[hyperopt,distributed]"]  # MODEL TRAIN AND FINE TUNING
+<<<<<<< HEAD
 
 sklearn_libs = ["scikit-learn"]
 
@@ -132,6 +136,8 @@ forecasting_libs = [
 imagegen_libs = [
     "replicate"
 ]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 ### NEEDED FOR DEVELOPER TESTING ONLY
 
