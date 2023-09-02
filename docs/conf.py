@@ -95,7 +95,10 @@ author = u"EvaDB Team"
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/reference/README.md"]
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 # The name of the Pygments (syntax highlighting) style to use.
 # pygments_style = "lovelace"
@@ -158,6 +161,24 @@ html_css_files = [
 nitpicky = True
 # BUG: https://stackoverflow.com/questions/11417221/sphinx-autodoc-gives-warning-pyclass-reference-target-not-found-type-warning
 nitpick_ignore_regex = [('py:class', r'.*')]
+<<<<<<< HEAD
+=======
+
+
+for i in os.listdir("../tutorials"):
+    if i in [
+        "13-privategpt.ipynb",
+        "08-chatgpt.ipynb",
+        "12-query-pdf.ipynb",
+        "02-object-detection.ipynb",
+        "03-emotion-analysis.ipynb",
+        "07-object-segmentation-huggingface.ipynb",
+        "chatgpt.png",
+    ]:
+        shutil.copy(f"../tutorials/{i}", "./source/usecases/")
+
+nb_execution_mode = "off"
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 # -- Initialize Sphinx ----------------------------------------------
 def setup(app):
@@ -168,5 +189,8 @@ def setup(app):
     )
     # Custom JS
     app.add_js_file("js/top-navigation.js", defer="defer")
+<<<<<<< HEAD
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))

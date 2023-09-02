@@ -17,4 +17,8 @@ Create a .pypirc in your home directory. It should look like this:
     username=YOUR_USERNAME
     password=YOUR_PASSWORD
 
+<<<<<<< HEAD
 Then run ``chmod 600 ~/.pypirc`` so that only you can read/write the file.
+=======
+Then run ``chmod 600 ./.pypirc`` so that only you can read/write the file.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
