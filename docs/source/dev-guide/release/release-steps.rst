@@ -43,8 +43,11 @@ Build Wheel and Release
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     python script/releasing/releaser.py -n minor -u
 =======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
        git tag -a v0.0.6 -m "v0.0.6 release"
        git push origin v0.0.6
 
@@ -114,7 +117,10 @@ Build Wheel and Release
 
 Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.md>`_
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
     python script/releasing/releaser.py -n minor -u
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))

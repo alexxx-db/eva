@@ -29,12 +29,15 @@ class CreateDatabaseExecutor(AbstractExecutor):
 
     def exec(self, *args, **kwargs):
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
         # Check if database already exists.
         db_catalog_entry = self.catalog().get_database_catalog_entry(
             self.node.database_name
@@ -48,6 +51,7 @@ class CreateDatabaseExecutor(AbstractExecutor):
             else:
                 raise ExecutorError(f"{self.node.database_name} already exists.")
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -56,6 +60,11 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+=======
+        # TODO: handle if_not_exists
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
         logger.debug(
             f"Trying to connect to the provided engine {self.node.engine} with params {self.node.param_dict}"
@@ -68,10 +77,13 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         # Check the validity of database entry.
         with get_database_handler(self.node.engine, **self.node.param_dict):
             pass
 =======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
         # Check if database already exists.
         db_catalog_entry = self.catalog().get_database_catalog_entry(
             self.node.database_name
@@ -85,12 +97,15 @@ class CreateDatabaseExecutor(AbstractExecutor):
         if not resp.status:
             raise ExecutorError(f"Cannot establish connection due to {resp.error}")
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
         # Check the validity of database entry.
         with get_database_handler(self.node.engine, **self.node.param_dict):
             pass
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
         logger.debug(f"Creating database {self.node}")
         self.catalog().insert_database_catalog_entry(

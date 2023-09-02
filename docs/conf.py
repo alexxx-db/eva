@@ -96,13 +96,18 @@ author = u"EvaDB"
 # directories to ignore when looking for source files.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/reference/README.md"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = "github-dark"
@@ -158,6 +163,7 @@ intersphinx_mapping = {
 # Adding custom css file
 html_static_path = ["_static"]
 html_css_files = [
+<<<<<<< HEAD
     "custom.css", 
     "algolia.css",
     "https://cdn.jsdelivr.net/npm/@docsearch/css@3",
@@ -165,6 +171,12 @@ html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
 ]
+=======
+                    "custom.css", 
+                    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+                    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+                    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"]
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 # Check link: https://stackoverflow.com/questions/14492743/have-sphinx-report-broken-links/14735060#14735060
 nitpicky = True
@@ -173,7 +185,26 @@ nitpick_ignore_regex = [('py:class', r'.*')]
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+
+for i in os.listdir("../tutorials"):
+    if i in [
+        "13-privategpt.ipynb",
+        "08-chatgpt.ipynb",
+        "12-query-pdf.ipynb",
+        "02-object-detection.ipynb",
+        "03-emotion-analysis.ipynb",
+        "07-object-segmentation-huggingface.ipynb",
+        "chatgpt.png",
+    ]:
+        shutil.copy(f"../tutorials/{i}", "./source/usecases/")
+
+nb_execution_mode = "off"
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
 <<<<<<< HEAD
 
@@ -210,6 +241,7 @@ def setup(app):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
 =======
@@ -219,3 +251,6 @@ def setup(app):
     app.add_js_file("js/algolia.js",defer="defer")
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))

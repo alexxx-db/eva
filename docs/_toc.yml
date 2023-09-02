@@ -8,6 +8,7 @@ parts:
           - file: source/overview/getting-started/installation-options
             title: Installation Options
 <<<<<<< HEAD
+<<<<<<< HEAD
       - file: source/overview/connect-to-database
         title: Connect to Database
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ parts:
         title: Model inference
 =======
 >>>>>>> dc9069a2 (docs: updates)
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
       - file: source/overview/concepts
         title: Concepts
 <<<<<<< HEAD
@@ -86,6 +89,7 @@ parts:
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
 <<<<<<< HEAD
+<<<<<<< HEAD
       - file: source/usecases/homesale-forecast.rst
         title: Home Sale Forecasting
       - file: source/usecases/homerental-predict.rst
@@ -121,6 +125,38 @@ parts:
 >>>>>>> eva-master
 =======
 >>>>>>> 17103d35 (updates)
+=======
+=======
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+      - file: source/overview/concepts
+        title: Concepts
+        #- file: source/overview/faq
+
+  - caption: Use Cases
+    chapters:
+      - file: source/usecases/food-review.rst
+        title: Sentiment Analysis
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/similar-image-search.rst
+        title: Image Search
+      - file: source/usecases/qa-video.rst
+        title: Video Question Answering
+      - file: source/usecases/08-chatgpt.ipynb
+        title: ChatGPT-based Video Question Answering
+      - file: source/usecases/12-query-pdf.ipynb
+        title: PDF Question Answering
+      - file: source/usecases/02-object-detection.ipynb
+        title: Object Detection
+      - file: source/usecases/03-emotion-analysis.ipynb
+        title: Emotions Analysis
+      - file: source/usecases/07-object-segmentation-huggingface.ipynb
+        title: Image Segmentation
+      - file: source/usecases/13-privategpt.ipynb
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
   - caption: User Reference
     chapters:
@@ -153,12 +189,30 @@ parts:
       - file: source/reference/api
         title: Python API
 
+<<<<<<< HEAD
+=======
+      - file: source/reference/evaql      
+        title: Eva Query Language 
+        sections:
+          - file: source/reference/evaql/load
+          - file: source/reference/evaql/select
+          - file: source/reference/evaql/explain
+          - file: source/reference/evaql/show
+          - file: source/reference/evaql/create
+          - file: source/reference/evaql/drop
+          - file: source/reference/evaql/insert
+          - file: source/reference/evaql/delete
+          - file: source/reference/evaql/rename
+          - file: source/reference/evaql/use
+
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
       - file: source/reference/databases/index
         title: Data Sources
         sections: 
           - file: source/reference/databases/postgres
           - file: source/reference/databases/sqlite
           - file: source/reference/databases/mysql
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -196,6 +250,13 @@ parts:
 >>>>>>> eva-master
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+=======
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/clickhouse
+          - file: source/reference/databases/github
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
       - file: source/reference/vector_databases/index
         title: Vector Databases

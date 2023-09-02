@@ -63,9 +63,12 @@ def check_data_source_and_table_are_valid(
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
 =======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
     db_catalog_entry = catalog.get_database_catalog_entry(database_name)
 
     if db_catalog_entry is not None:
@@ -94,11 +97,14 @@ def check_data_source_and_table_are_valid(
             raise BinderError(error)
     else:
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
         error = "{} data source does not exist. Create the new database source using CREATE DATABASE.".format(
             database_name,
         )
@@ -120,6 +126,7 @@ def create_table_catalog_entry_for_data_source(
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     table_name: str, database_name: str, column_info: pd.DataFrame
 =======
     table_name: str, column_info: pd.DataFrame
@@ -128,6 +135,10 @@ def create_table_catalog_entry_for_data_source(
     table_name: str, database_name: str, column_info: pd.DataFrame
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+    table_name: str, column_info: pd.DataFrame
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 ):
     column_name_list = list(column_info["name"])
     column_type_list = [
@@ -141,6 +152,7 @@ def create_table_catalog_entry_for_data_source(
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
 =======
         column_list.append(ColumnCatalogEntry(name, dtype))
@@ -149,6 +161,10 @@ def create_table_catalog_entry_for_data_source(
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+        column_list.append(ColumnCatalogEntry(name, dtype))
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
@@ -185,12 +201,15 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 
     db_catalog_entry = catalog.get_database_catalog_entry(table_info.database_name)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
     with get_database_handler(
         db_catalog_entry.engine, **db_catalog_entry.params
     ) as handler:
@@ -200,8 +219,11 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
             table_info.table_name, table_info.database_name, column_df
         )
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
     handler = get_database_handler(db_catalog_entry.engine, **db_catalog_entry.params)
     handler.connect()
@@ -212,9 +234,12 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
         table_info.table_name, column_df
     )
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
 
 def bind_evadb_table_info(catalog: CatalogManager, table_info: TableInfo):

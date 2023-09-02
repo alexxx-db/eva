@@ -8,6 +8,10 @@ Dependency
 
 * mysql-connector-python
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 Parameters
 ----------
 
@@ -19,9 +23,12 @@ Required:
 * `port` is the port used to make TCP/IP connection.
 * `database` is the database name.
 
+<<<<<<< HEAD
 .. warning:: 
 
      Provide the parameters of an already running ``MySQL`` server. EvaDB only connects to an existing ``MySQL`` database.
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Create Connection
 -----------------

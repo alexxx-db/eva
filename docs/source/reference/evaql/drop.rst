@@ -10,6 +10,7 @@ DROP TABLE
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 DROP FUNCTION
 -------------
 =======
@@ -55,3 +56,11 @@ DROP DATABASE
     DROP DATABASE IF EXISTS postgres_db;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+DROP UDF
+--------
+
+.. code:: mysql
+
+    DROP UDF FastRCNNObjectDetector;
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))

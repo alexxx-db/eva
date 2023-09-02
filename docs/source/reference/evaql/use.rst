@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 USE
 ===
 
@@ -11,6 +12,7 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 The USE statement allows us to run arbitrary native queries in the connected database.
 =======
 The USE statement allows us to run arbitary native queries in the connected database.
@@ -19,6 +21,15 @@ The USE statement allows us to run arbitary native queries in the connected data
 The USE statement allows us to run arbitrary native queries in the connected database.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+.. _sql-use:
+
+USE
+===
+
+The USE statement allows us to run arbitary native queries in the connected database.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
 .. code:: text
 
@@ -30,6 +41,7 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [native_query] is an arbitrary SQL query supported by the [database_connection]. 
 =======
 * [native_query] is an arbitary SQL query supprted by the [database_connection]. 
@@ -38,6 +50,10 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 * [native_query] is an arbitrary SQL query supported by the [database_connection]. 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+* [native_query] is an arbitary SQL query supprted by the [database_connection]. 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
 .. warning::
 

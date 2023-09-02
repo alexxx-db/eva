@@ -40,15 +40,22 @@ class UseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 <<<<<<< HEAD
+=======
+
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
         handler = get_database_handler(
             db_catalog_entry.engine,
             **db_catalog_entry.params,
         )
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
         with get_database_handler(
             db_catalog_entry.engine, **db_catalog_entry.params

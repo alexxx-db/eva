@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
 <<<<<<< HEAD
@@ -19,6 +20,12 @@ personal_ws-1.1 en 1775
 =======
 personal_ws-1.1 en 1776 
 >>>>>>> 8379a400 (docs: updates)
+=======
+personal_ws-1.1 en 1776 
+=======
+personal_ws-1.1 en 1467 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 ABCD
 ABCMeta
 ANYDIM
@@ -204,7 +211,10 @@ DESC
 DETRACVideo
 DFS
 DailyMail
+<<<<<<< HEAD
 Dask
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 DataFrame
 DataFrameColumn
 DataFrameColumns
@@ -393,6 +403,7 @@ HashJoinBuildPlan
 HashJoinExecutor
 HashJoinPlan
 HashJoinProbePlan
+<<<<<<< HEAD
 Helvetica
 HomeData
 HomeForecast
@@ -401,6 +412,9 @@ HomeRentals
 HomeSale
 HomeSaleForecast
 HomeSalesForecast
+=======
+HomeRentals
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 HorizontalFlip
 HuggingFace
 HuggingFaceModel
@@ -570,7 +584,10 @@ MaterializedViewTest
 MaxPool
 MemeImages
 MemoTest
+<<<<<<< HEAD
 MetaData
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 MindsDB
 MiniLM
 MnistImageClassifier
@@ -609,7 +626,12 @@ MysqlHandler
 =======
 NBEATS
 NCHAR
+<<<<<<< HEAD
 >>>>>>> 62080794 (ran spellchecker)
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 NEQ
 NHITS
 NLP
@@ -707,8 +729,11 @@ PostgresNativeStorageEngineTest
 PredicateExecutor
 PredicatePlan
 PredictHouseRent
+<<<<<<< HEAD
 PredictHouseRentLudwig
 PredictHouseRentSklearn
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 PrivateGPTTest
 ProgrammingError
 ProjectExecutor
@@ -788,6 +813,7 @@ SampleVideoTable
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 SampleTable
 SampleVideoTable
 =======
@@ -797,6 +823,9 @@ SampleTable
 SampleVideoTable
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 Scalability
 ScanPlan
 SchemaUtils
@@ -1195,7 +1224,10 @@ dir
 dirname
 diskcache
 distilbart
+<<<<<<< HEAD
 distilbert
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 dists
 distutils
 dml
@@ -1272,6 +1304,7 @@ fetchall
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -1279,6 +1312,9 @@ fetchall
 fetchall
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 ffill
 ffmpeg
 fileFormat
@@ -1608,7 +1644,10 @@ reddit
 releaser
 relu
 repo
+<<<<<<< HEAD
 repos
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 repr
 req
 resnet
@@ -1632,7 +1671,10 @@ runnable
 runpy
 runtime
 russia
+<<<<<<< HEAD
 saledate
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 saliency
 samsum
 scikit
@@ -1657,11 +1699,15 @@ singledispatchmethod
 sk
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 sklearn
 >>>>>>> 62080794 (ran spellchecker)
 smallint
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 smallint
@@ -1671,6 +1717,9 @@ smallint
 smallint
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 smi
 softmax
 spacy
@@ -1685,7 +1734,10 @@ sqlengine
 sqlite
 src
 sshleifer
+<<<<<<< HEAD
 sst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 statementtoplanconverter
 staticmethod
 statsforecast
