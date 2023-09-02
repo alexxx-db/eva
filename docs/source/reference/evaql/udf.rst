@@ -1,10 +1,19 @@
 :orphan:
+<<<<<<< HEAD
 
 Functions
 =========
 
 SHOW FUNCTIONS
 --------------
+=======
+
+UDF
+===
+
+SHOW UDFS
+---------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Here is a list of built-in user-defined functions in EvaDB.
 
@@ -23,8 +32,13 @@ FastRCNNObjectDetector is a model for detecting objects. MVITActionRecognition i
 
 ArrayCount and Crop are utility functions for counting the number of objects in an array and cropping a bounding box from an image, respectively.
 
+<<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
+=======
+SELECT WITH MULTIPLE UDFS
+-------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 Here is a query that illustrates how to use multiple functions in a single query.
 

@@ -3,17 +3,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 personal_ws-1.1 en 1563 
+=======
+personal_ws-1.1 en 1776 
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
 personal_ws-1.1 en 1467 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 personal_ws-1.1 en 1775 
@@ -35,6 +40,14 @@ personal_ws-1.1 en 1467
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+personal_ws-1.1 en 1563 
+=======
+personal_ws-1.1 en 1467 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 ABCD
 ABCMeta
 ANYDIM
@@ -641,6 +654,7 @@ MyVideos
 MydbHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 MysqlHandler
 <<<<<<< HEAD
 =======
@@ -652,6 +666,7 @@ MysqlHandler
 =======
 MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
@@ -665,6 +680,13 @@ NCHAR
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+MysqlHandler
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 NEQ
 NHITS
 NLP
@@ -847,6 +869,9 @@ SampleExecutorTest
 SamplePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 SampleTable
 SampleVideoTable
 =======
@@ -857,10 +882,12 @@ SampleTable
 SampleVideoTable
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 SampleTable
 SampleVideoTable
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
@@ -868,6 +895,10 @@ SampleVideoTable
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 Scalability
 ScanPlan
 SchemaUtils
@@ -1353,6 +1384,7 @@ featureextractor
 feedstock
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 fetchall
 =======
 <<<<<<< HEAD
@@ -1365,12 +1397,20 @@ fetchall
 fetchall
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+fetchall
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 ffill
 ffmpeg
 fileFormat
@@ -1766,11 +1806,14 @@ sk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 sklearn
 >>>>>>> 62080794 (ran spellchecker)
 smallint
@@ -1785,12 +1828,20 @@ smallint
 smallint
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+smallint
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 smi
 softmax
 spacy

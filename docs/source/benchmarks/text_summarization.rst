@@ -4,11 +4,15 @@
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 Text Summarization Benchmark 
 ============================
 
@@ -25,6 +29,7 @@ Prepare dataset
 =======
 =======
 Text summarization benchmark 
+<<<<<<< HEAD
 =======
 Text Summarization Benchmark 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -44,6 +49,7 @@ All the relevant files are located in the `text summarization benchmark folder o
 Prepare dataset
 ---------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 =======
@@ -71,6 +77,16 @@ Prepare dataset
 ---------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+============================
+In this benchmark, we compare the performance of text summarization between EvaDB and MindsDB on `CNN-DailyMail News <https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail>`_.
+
+1. Prepare dataset
+------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 
 .. code-block:: bash
 
@@ -79,6 +95,9 @@ Prepare dataset
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 Use EvaDB for Text Summarization
 --------------------------------
 =======
@@ -91,10 +110,12 @@ Use EvaDB for Text Summarization
 2. Using EvaDB to summarize the CNN DailyMail News
 --------------------------------------------------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 Use EvaDB for Text Summarization
 --------------------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
@@ -104,6 +125,10 @@ Use EvaDB for Text Summarization
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 
 .. note::
  
@@ -119,6 +144,7 @@ Use EvaDB for Text Summarization
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Loading Data Into EvaDB
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -129,6 +155,8 @@ Loading Data Into EvaDB
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 Loading Data Into EvaDB
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -188,6 +216,8 @@ Prepare sqlite database for MindsDB
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 Loading Data Into EvaDB
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -241,6 +271,7 @@ Setup SQLite Database
 ~~~~~~~~~~~~~~~~~~~~~~
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
@@ -249,6 +280,18 @@ Setup SQLite Database
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+=======
+3. Using MindsDB to summarize the CNN DailyMail News
+----------------------------------------------------
+
+Prepare sqlite database for MindsDB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 
 .. code-block:: bash
 
@@ -265,12 +308,15 @@ Install MindsDB
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 Follow the `MindsDB installation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 >>>>>>> 62080794 (ran spellchecker)
 
@@ -285,12 +331,24 @@ Follow the `Setup for Source Code via pip <https://docs.mindsdb.com/setup/self-h
    At the time of this documentation, we need to manually ``pip install evaluate`` for huggingface model to work in MindsDB.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 
 .. note::
 
    You will need to manually run ``pip install evaluate`` for the ``HuggingFace`` model to work in MindsDB.
+<<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+=======
+Follow the `Setup for Source Code via pip <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install mindsdb.
+
+.. note::
+
+   At the time of this documentation, we need to manually ``pip install evaluate`` for huggingface model to work in MindsDB.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 
 =======
 <<<<<<< HEAD
@@ -324,6 +382,9 @@ After installation, use the ``MySQL`` client for connecting to ``MindsDB``. Upda
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 Benchmark MindsDB 
 ~~~~~~~~~~~~~~~~~
 =======
@@ -336,10 +397,12 @@ Benchmark MindsDB
 Run Experiment
 ~~~~~~~~~~~~~~
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 Benchmark MindsDB 
 ~~~~~~~~~~~~~~~~~
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
@@ -349,6 +412,10 @@ Run Experiment
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 
 Connect ``MindsDB`` to the ``sqlite`` database we created before:
 
@@ -389,6 +456,9 @@ Use the ``text summarization`` model to summarize the CNN news dataset:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 Benchmarking Results
 --------------------
 =======
@@ -406,18 +476,26 @@ Below are numbers from a server with 56 Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GH
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
 Benchmarking Results
 --------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
 
 Here are the key runtime metrics for the ``Text Summarization`` benchmark.
 

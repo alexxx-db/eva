@@ -32,6 +32,9 @@ class NativeQueryResponse:
 @pytest.mark.notparallel
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 class SQLiteNativeStorageEngineTest(unittest.TestCase):
 =======
 <<<<<<< HEAD
@@ -41,9 +44,11 @@ class SQLiteNativeStorageEngineTest(unittest.TestCase):
 =======
 class SQLiiteNativeStorageEngineTest(unittest.TestCase):
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 class SQLiteNativeStorageEngineTest(unittest.TestCase):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
@@ -52,6 +57,10 @@ class SQLiiteNativeStorageEngineTest(unittest.TestCase):
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
