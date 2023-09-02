@@ -57,8 +57,38 @@ def check_data_source_and_table_are_valid(
     Validate the database is valid and the requested table in database is
     also valid.
     """
+<<<<<<< HEAD
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
+=======
+    db_catalog_entry = catalog.get_database_catalog_entry(database_name)
+
+    if db_catalog_entry is not None:
+        handler = get_database_handler(
+            db_catalog_entry.engine, **db_catalog_entry.params
+        )
+        handler.connect()
+
+        # Get table definition.
+        resp = handler.get_tables()
+        if resp.error is not None:
+            error = "There is no table in data source {}. Create the table using native query.".format(
+                database_name,
+            )
+            logger.error(error)
+            raise BinderError(error)
+
+        # Check table existence.
+        table_df = resp.data
+        if table_name not in table_df["table_name"].values:
+            error = "Table {} does not exist in data source {}. Create the table using native query.".format(
+                table_name,
+                database_name,
+            )
+            logger.error(error)
+            raise BinderError(error)
+    else:
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
         error = "{} data source does not exist. Create the new database source using CREATE DATABASE.".format(
             database_name,
         )
@@ -75,7 +105,11 @@ def check_data_source_and_table_are_valid(
 
 
 def create_table_catalog_entry_for_data_source(
+<<<<<<< HEAD
     table_name: str, database_name: str, column_info: pd.DataFrame
+=======
+    table_name: str, column_info: pd.DataFrame
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 ):
     column_name_list = list(column_info["name"])
     column_type_list = [
@@ -84,7 +118,11 @@ def create_table_catalog_entry_for_data_source(
     ]
     column_list = []
     for name, dtype in zip(column_name_list, column_type_list):
+<<<<<<< HEAD
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+=======
+        column_list.append(ColumnCatalogEntry(name, dtype))
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
@@ -120,6 +158,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
     )
 
     db_catalog_entry = catalog.get_database_catalog_entry(table_info.database_name)
+<<<<<<< HEAD
     with get_database_handler(
         db_catalog_entry.engine, **db_catalog_entry.params
     ) as handler:
@@ -128,6 +167,16 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
         table_info.table_obj = create_table_catalog_entry_for_data_source(
             table_info.table_name, table_info.database_name, column_df
         )
+=======
+    handler = get_database_handler(db_catalog_entry.engine, **db_catalog_entry.params)
+    handler.connect()
+
+    # Assemble columns.
+    column_df = handler.get_columns(table_info.table_name).data
+    table_info.table_obj = create_table_catalog_entry_for_data_source(
+        table_info.table_name, column_df
+    )
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 
 def bind_evadb_table_info(catalog: CatalogManager, table_info: TableInfo):

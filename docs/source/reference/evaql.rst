@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 EvaDB Query Language (EvaQL)
 ============================
+=======
+EvaDB Query Language Reference
+===============================
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 EvaDB Query Language (EvaQL) is tailored for AI apps and is derived from SQL. 
 
