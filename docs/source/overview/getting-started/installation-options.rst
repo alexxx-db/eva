@@ -5,6 +5,9 @@ Installation Options
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 EvaDB supports a wide range of installation options for extending its functionality.
 
 Computer Vision
@@ -62,6 +65,7 @@ This installation option enables more efficient query execution on CPUs and GPUs
     pip install evadb[ray]
 =======
 EvaDB provides the following additional installation options for extending its functionality.
+<<<<<<< HEAD
 =======
 EvaDB supports a wide range of installation options for extending its functionality.
 >>>>>>> 5a56b01d (docs: updates)
@@ -152,3 +156,17 @@ This installation option enables more efficient query execution on CPUs and GPUs
 
     pip install evadb[ray]
 >>>>>>> 5a56b01d (docs: updates)
+=======
+
+* ``pip install evadb[vision]`` for installing computer vision packages. They enable use-cases including image classification, object detection, and emotion analysis.
+
+* ``pip install evadb[document]`` for installing natural language processing packages. They enable use-cases including text summarization, question answering, and sentiment analysis.
+
+* ``pip install evadb[qdrant]`` for installing the Qdrant vector database system. It enables use-cases related to similarity search based on feature vectors.
+
+* ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tunining AI models.
+
+* ``pip install evadb[ray]`` for installing the Ray compute engine. It enables EvaDB to do more efficient query execution on CPUs and GPUs.
+
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))

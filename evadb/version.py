@@ -9,6 +9,7 @@ _MINOR = "3"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 _REVISION = "9"
 =======
 _REVISION = "8+dev"
@@ -19,6 +20,9 @@ _REVISION = "8+dev"
 =======
 _REVISION = "8+dev"
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
+=======
+_REVISION = "8+dev"
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 _REVISION = "7"
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -64,12 +68,23 @@ _REVISION = "8"
 >>>>>>> bcb19939 (v0.3.8 - new release (#1303))
 =======
 =======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 _REVISION = "8"
 =======
 _REVISION = "3"
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 >>>>>>> a4989c0a ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+=======
+_REVISION = "4+dev"
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 
 VERSION_SHORT = f"{_MAJOR}.{_MINOR}"
 VERSION = f"{_MAJOR}.{_MINOR}.{_REVISION}"

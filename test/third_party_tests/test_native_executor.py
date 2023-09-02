@@ -138,6 +138,25 @@ class NativeExecutorTest(unittest.TestCase):
         self.assertEqual(res_batch.frames["derived_table.name"][1], "bb")
         self.assertEqual(res_batch.frames["derived_table.age"][1], 2)
 
+    def _create_evadb_table_using_select_query(self):
+        execute_query_fetch_all(
+            self.evadb,
+            """CREATE TABLE eva_table AS SELECT name, age FROM test_data_source.test_table;""",
+        )
+
+        # check if the create table is successful
+        res_batch = execute_query_fetch_all(self.evadb, "Select * from eva_table")
+        self.assertEqual(len(res_batch), 2)
+        self.assertEqual(res_batch.frames["eva_table.name"][0], "aa")
+        self.assertEqual(res_batch.frames["eva_table.age"][0], 1)
+        self.assertEqual(res_batch.frames["eva_table.name"][1], "bb")
+        self.assertEqual(res_batch.frames["eva_table.age"][1], 2)
+
+        execute_query_fetch_all(
+            self.evadb,
+            "DROP TABLE IF EXISTS eva_table;",
+        )
+
     def _execute_evadb_query(self):
         self._create_table_in_native_database()
         self._insert_value_into_native_database("aa", 1, "aaaa")
@@ -159,13 +178,20 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
         self._create_native_table_using_select_query()
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
         self._create_native_table_using_select_query()
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         self._create_native_table_using_select_query()
@@ -174,6 +200,12 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
         self._drop_table_in_native_database()
         self._drop_table_in_evadb_database()
 
@@ -245,6 +277,7 @@ class NativeExecutorTest(unittest.TestCase):
         self._raise_error_on_multiple_creation()
         self._raise_error_on_invalid_connection()
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -324,6 +357,14 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
     def test_should_run_query_in_mariadb(self):
         # Create database.
         params = {
@@ -367,8 +408,14 @@ class NativeExecutorTest(unittest.TestCase):
         params = {
             "database": f"{current_file_dir}/evadb.db",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
     def test_should_run_query_in_sqlite(self):
         # Create database.
@@ -376,8 +423,11 @@ class NativeExecutorTest(unittest.TestCase):
             "database": "evadb.db",
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
     def test_should_run_query_in_mariadb(self):
         # Create database.
@@ -404,7 +454,13 @@ class NativeExecutorTest(unittest.TestCase):
         params = {
             "database": f"{current_file_dir}/evadb.db",
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
         }
         query = f"""CREATE DATABASE test_data_source
                     WITH ENGINE = "sqlite",

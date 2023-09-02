@@ -39,6 +39,7 @@ class UseExecutor(AbstractExecutor):
             )
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -47,11 +48,28 @@ class UseExecutor(AbstractExecutor):
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
         handler = get_database_handler(
             db_catalog_entry.engine,
             **db_catalog_entry.params,
         )
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 
         with get_database_handler(
             db_catalog_entry.engine, **db_catalog_entry.params
