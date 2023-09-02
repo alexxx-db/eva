@@ -41,6 +41,9 @@ class UseExecutor(AbstractExecutor):
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
         handler = get_database_handler(
             db_catalog_entry.engine,
             **db_catalog_entry.params,

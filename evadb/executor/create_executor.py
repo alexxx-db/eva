@@ -36,6 +36,7 @@ class CreateExecutor(AbstractExecutor):
     def exec(self, *args, **kwargs):
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         # create a table in the active database if set
         is_native_table = self.node.table_info.database_name is not None
 =======
@@ -49,6 +50,17 @@ class CreateExecutor(AbstractExecutor):
         # create a table in the ative database if set
         is_native_table = self.node.table_info.database_name is not None
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+        # create a table in the ative database if set
+        is_native_table = self.node.table_info.database_name is not None
+=======
+        if not handle_if_not_exists(
+            self.catalog(), self.node.table_info, self.node.if_not_exists
+        ):
+            create_table_done = False
+            logger.debug(f"Creating table {self.node.table_info}")
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 
         check_if_exists = handle_if_not_exists(
             self.catalog(), self.node.table_info, self.node.if_not_exists
@@ -67,8 +79,11 @@ class CreateExecutor(AbstractExecutor):
             )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
         else:
             catalog_entry = create_table_catalog_entry_for_native_table(
                 self.node.table_info, self.node.column_list
@@ -122,6 +137,7 @@ class CreateExecutor(AbstractExecutor):
                         len(self.children)
                     )
                     child = self.children[0]
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
@@ -164,3 +180,16 @@ class CreateExecutor(AbstractExecutor):
                 self.catalog().delete_table_catalog_entry(catalog_entry)
             raise e
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+
+                    # Populate the table
+                    for batch in child.exec():
+                        batch.drop_column_alias()
+                        storage_engine.write(catalog_entry, batch)
+            except Exception as e:
+                # rollback if the create call fails
+                if create_table_done:
+                    storage_engine.drop(catalog_entry)
+                raise e
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))

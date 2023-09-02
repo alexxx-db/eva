@@ -108,6 +108,7 @@ notebook_libs = [
 
 qdrant_libs = ["qdrant_client"]  # cannot install on 3.11 due to grcpio
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 pinecone_libs = ["pinecone-client"]
 
@@ -116,16 +117,21 @@ chromadb_libs = ["chromadb"]
 milvus_libs = ["pymilvus>=2.3.0"]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 
 pinecone_libs = ["pinecone-client"]
 
 chromadb_libs = ["chromadb"]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 postgres_libs = [
     "psycopg2",
 ]
 
 ludwig_libs = ["ludwig[hyperopt,distributed]"]  # MODEL TRAIN AND FINE TUNING
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 sklearn_libs = ["scikit-learn"]
@@ -142,6 +148,8 @@ imagegen_libs = [
 ]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
 
 sklearn_libs = ["scikit-learn"]
 
@@ -149,6 +157,8 @@ forecasting_libs = [
     "statsforecast", # MODEL TRAIN AND FINE TUNING
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
 ]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 ### NEEDED FOR DEVELOPER TESTING ONLY
 
