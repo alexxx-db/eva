@@ -100,10 +100,14 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/ref
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -136,15 +140,25 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/ref
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = "github-dark"
@@ -222,8 +236,10 @@ html_css_files = [
 <<<<<<< HEAD
 =======
                     "custom.css", 
+<<<<<<< HEAD
                     "algolia.css",
                     "https://cdn.jsdelivr.net/npm/@docsearch/css@3",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -238,6 +254,10 @@ html_css_files = [
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"]
@@ -262,6 +282,7 @@ nitpick_ignore_regex = [('py:class', r'.*')]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -269,6 +290,26 @@ nitpick_ignore_regex = [('py:class', r'.*')]
 =======
 =======
 =======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+
+
+for i in os.listdir("../tutorials"):
+    if i in [
+        "13-privategpt.ipynb",
+        "08-chatgpt.ipynb",
+        "12-query-pdf.ipynb",
+        "02-object-detection.ipynb",
+        "03-emotion-analysis.ipynb",
+        "07-object-segmentation-huggingface.ipynb",
+        "chatgpt.png",
+    ]:
+        shutil.copy(f"../tutorials/{i}", "./source/usecases/")
+
+nb_execution_mode = "off"
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
 <<<<<<< HEAD
 
@@ -428,18 +469,23 @@ def setup(app):
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -452,6 +498,8 @@ def setup(app):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
 =======
@@ -491,12 +539,16 @@ def setup(app):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -505,10 +557,14 @@ def setup(app):
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -545,3 +601,6 @@ def setup(app):
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

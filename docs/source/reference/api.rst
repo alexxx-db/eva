@@ -23,17 +23,22 @@
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 Python API
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -46,6 +51,8 @@ Python API
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 Python API
 =======
 Basic API
@@ -67,6 +74,9 @@ Python API
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -75,15 +85,19 @@ Python API
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 >>>>>>> eva-master
 =======
 Basic API
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -136,6 +150,9 @@ Python API
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 ==========
 
 To begin a querying session in EvaDB, obtain a connection with a cursor using ``connect`` and ``cursor`` functions. After getting the cursor, you can run queries with the ``query`` function in this manner:
@@ -213,12 +230,17 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 .. include:: ../shared/designs/design4.rst
 =======
 =======
 >>>>>>> e867f37e (docs: updated images)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -235,6 +257,7 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 >>>>>>> df4d8a35 (docs: updates)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/designs/design4.rst
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
@@ -244,6 +267,11 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> f1e2bddc (docs: updates)
+=======
+.. include:: ../shared/designs/design4.rst
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 EvaDBCursor Interface
 ---------------------
 
@@ -289,6 +317,9 @@ EvaDBQuery Interface
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
     ~evadb.EvaDBCursor.df
 
@@ -380,10 +411,14 @@ EvaDBQuery Interface
 >>>>>>> 08db5ebb (docs: updated images)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 >>>>>>> e867f37e (docs: updated images)
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -492,3 +527,6 @@ EvaDBQuery Interface
 =======
 >>>>>>> e867f37e (docs: updated images)
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

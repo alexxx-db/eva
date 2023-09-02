@@ -40,17 +40,22 @@ Create a .pypirc in your home directory. It should look like this:
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 Then run ``chmod 600 ~/.pypirc`` so that only you can read/write the file.
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -63,6 +68,8 @@ Then run ``chmod 600 ~/.pypirc`` so that only you can read/write the file.
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 Then run ``chmod 600 ~/.pypirc`` so that only you can read/write the file.
 =======
 Then run ``chmod 600 ./.pypirc`` so that only you can read/write the file.
@@ -84,6 +91,9 @@ Then run ``chmod 600 ~/.pypirc`` so that only you can read/write the file.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -92,15 +102,19 @@ Then run ``chmod 600 ~/.pypirc`` so that only you can read/write the file.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 >>>>>>> eva-master
 =======
 Then run ``chmod 600 ./.pypirc`` so that only you can read/write the file.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -153,3 +167,6 @@ Then run ``chmod 600 ~/.pypirc`` so that only you can read/write the file.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

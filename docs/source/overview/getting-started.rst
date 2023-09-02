@@ -24,17 +24,22 @@
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 .. _getting-started:
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -43,6 +48,8 @@
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 .. _getting-started:
 =======
 .. _Getting Started:
@@ -64,6 +71,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -72,15 +82,19 @@
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 >>>>>>> eva-master
 =======
 .. _Getting Started:
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -133,6 +147,9 @@
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 Getting Started
 =================
@@ -145,12 +162,17 @@ Install EvaDB
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 899a029b (docs: updates)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 To install EvaDB, we recommend using the `pip` package manager. EvaDB only supports Python versions greater than or equal to `3.9`.
 =======
 To install EvaDB, we recommend using the `pip` package manager.
@@ -158,11 +180,15 @@ To install EvaDB, we recommend using the `pip` package manager.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 To install EvaDB, we recommend using the `pip` package manager. EvaDB only supports Python versions greater than or equal to `3.9`.
 >>>>>>> 572f347e (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
@@ -170,6 +196,8 @@ To install EvaDB, we recommend using the `pip` package manager. EvaDB only suppo
 To install EvaDB, we recommend using the `pip` package manager. EvaDB only supports Python versions greater than or equal to `3.9`.
 >>>>>>> 572f347e (docs: updates)
 >>>>>>> 899a029b (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 1. Create a new `virtual environment <https://docs.python-guide.org
 /dev/virtualenvs/>`_ called `evadb-venv`.
@@ -201,8 +229,17 @@ To install EvaDB, we recommend using the `pip` package manager. EvaDB only suppo
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 572f347e (docs: updates)
+<<<<<<< HEAD
 >>>>>>> 899a029b (docs: updates)
+=======
+=======
+>>>>>>> eva-master
+
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 .. warning::
 
     EvaDB only supports Python versions greater than or equal to `3.9`. You can check the version of your Python interpreter by running `python --version` on the terminal.
@@ -211,23 +248,32 @@ To install EvaDB, we recommend using the `pip` package manager. EvaDB only suppo
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 899a029b (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> 572f347e (docs: updates)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 899a029b (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 Now, activate the virtual environment:
 
 .. code-block:: bash
@@ -251,6 +297,7 @@ Now, activate the virtual environment:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -259,6 +306,10 @@ Now, activate the virtual environment:
 >>>>>>> 899a029b (docs: updates)
 =======
 >>>>>>> 32e513d7 (docs: updates)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
    pip install --upgrade evadb
 =======
    pip install evadb --upgrade
@@ -344,12 +395,15 @@ Copy the following Python code to a file called `run_evadb.py`.
 The program runs a SQL query for listing all the built-in functions in EvaDB. It consists of importing and connecting to EvaDB, and then running the query. The query's result is returned as a Dataframe.
 =======
    pip install evadb
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 572f347e (docs: updates)
 >>>>>>> 899a029b (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 4. Verify EvaDB installation
 
@@ -366,7 +420,11 @@ You should see a list of installed packages including but not limited to the fol
    aenum             3.1.15
    decorator         5.1.1
    diskcache         5.6.3
+<<<<<<< HEAD
    evadb             0.3.7
+=======
+   evadb             0.3.3
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
    greenlet          2.0.2
    lark              1.1.7
    numpy             1.25.2
@@ -375,7 +433,11 @@ You should see a list of installed packages including but not limited to the fol
 
 5. Run EvaDB
 
+<<<<<<< HEAD
 Copy the following Python code to a file called `run_evadb.py`.
+=======
+Copy the following Python program to a file called `run_evadb.py`.
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 The program runs a SQL query for listing all the built-in functions in EvaDB. It consists of importing and connecting to EvaDB, and then running the query. The query's result is returned as a Dataframe.
 
@@ -388,7 +450,7 @@ The program runs a SQL query for listing all the built-in functions in EvaDB. It
    cursor = evadb.connect().cursor()
 
    # List all the built-in functions in EvaDB
-   print(cursor.query("SHOW FUNCTIONS;").df())
+   print(cursor.query("SHOW UDFS;").df())
 
 Now, run the Python program:
 
@@ -396,8 +458,65 @@ Now, run the Python program:
 
     python -m run_evadb.py
 
+You should see a list of built-in functions including but not limited to the following:
+
+.. code-block:: bash
+
+            name                                             inputs  ...                                               impl metadata
+    0  ArrayCount   [Input_Array NDARRAY ANYTYPE (), Search_Key ANY]  ...  /home/jarulraj3/evadb/evadb/udfs/ndarray/array...       []
+    1        Crop  [Frame_Array NDARRAY UINT8 (3, None, None), bb...  ...   /home/jarulraj3/evadb/evadb/udfs/ndarray/crop.py       []
+    2     ChatGPT  [query NDARRAY STR (1,), content NDARRAY STR (...  ...        /home/jarulraj3/evadb/evadb/udfs/chatgpt.py       []
+
+    [3 rows x 6 columns]
+
+.. note::
+    Go over the :ref:`Python API<python-api>` to learn more about `connect()` and `cursor`.
+
+.. note::
+
+    EvaDB supports additional installation options for extending its functionality. Go over the :doc:`Installation Options <getting-started/installation-options>` for all the available options.
+
+Illustrative AI App
+-------------------
+
+Here is a simple, illustrative `MNIST image classification <https://en.wikipedia.org/wiki/MNIST_database>`_ AI app in EvaDB.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+
+.. code-block:: python
+
+   # Import the EvaDB package 
+   import evadb
+
+<<<<<<< HEAD
+   # Connect to EvaDB and get a database cursor for running queries
+   cursor = evadb.connect().cursor()
+
+   # List all the built-in functions in EvaDB
+   print(cursor.query("SHOW FUNCTIONS;").df())
+=======
+    # Load the MNIST video into EvaDB
+    # Each frame in the loaded MNIST video contains a digit
+    cursor.load("mnist.mp4", "MNISTVid", format="video").df()
+
+    # We now construct an AI pipeline to run the image classifier 
+    # over all the digit images in the video    
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+
+Now, run the Python program:
+
+<<<<<<< HEAD
+.. code-block:: bash
+=======
+    # Run the model on a subset of frames
+    # Here, id refers to the frame id
+    query = query.filter("id = 30 OR id = 50 OR id = 70 OR id = 0 OR id = 140")
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+
+    python -m run_evadb.py
+
 You should see a list of built-in functions (with different filenames) including but not limited to the following:
 
+<<<<<<< HEAD
 .. code-block:: bash
 
             name                                             inputs  ...                                               impl metadata
@@ -1065,16 +1184,22 @@ Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <h
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 .. include:: ../shared/designs/design2.rst
 =======
 Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_.
 
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> f1e2bddc (docs: updates)
 =======
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 .. image:: ../../images/reference/mnist.png
 
 .. note::
@@ -1083,8 +1208,11 @@ Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <h
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 The complete `MNIST notebook is available on Colab <https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_.
 Try out EvaDB by experimenting with this introductory notebook.
@@ -1161,10 +1289,14 @@ Try out EvaDB by experimenting with the complete `sentiment analysis notebook on
 >>>>>>> 08db5ebb (docs: updated images)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 >>>>>>> e867f37e (docs: updated images)
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -1260,3 +1392,6 @@ Try out EvaDB by experimenting with the complete `sentiment analysis notebook on
 =======
 >>>>>>> e867f37e (docs: updated images)
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

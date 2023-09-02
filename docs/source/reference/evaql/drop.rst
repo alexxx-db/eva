@@ -18,6 +18,7 @@ DROP TABLE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -25,6 +26,9 @@ DROP TABLE
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 <<<<<<< HEAD
 DROP FUNCTION
 -------------
@@ -32,10 +36,13 @@ DROP FUNCTION
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 DROP FUNCTION
 -------------
 =======
@@ -127,17 +134,24 @@ DROP DATABASE
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 DROP UDF
 --------
 
 .. code:: mysql
 
     DROP UDF FastRCNNObjectDetector;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -211,3 +225,7 @@ DROP FUNCTION
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

@@ -129,6 +129,7 @@ The :ref:`Getting Started` page shows how you can use EvaDB for different AI tas
 
 The :ref:`User Guides<image classification>` section contains Jupyter Notebooks that demonstrate how to use various features of EvaDB. Each notebook includes a link to Google Colab, where you can run the code yourself.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 
     --- Lastly, we run the ChatGPT query for question answering 
     --- This query is based on the 'transcripts' table 
@@ -173,10 +174,14 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
     CREATE TABLE transcripts AS 
         SELECT SpeechRecognizer(audio) from news_videos;
 =======
+<<<<<<< HEAD
 The :ref:`Getting Started` page shows how you can use EvaDB for different AI tasks and how you can easily extend EvaDB to support your custom deep learning model through user-defined functions.
 
 The :ref:`User Guides<image classification>` section contains Jupyter Notebooks that demonstrate how to use various features of EvaDB. Each notebook includes a link to Google Colab, where you can run the code yourself.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
     --- Lastly, we run the ChatGPT query for question answering 
     --- This query is based on the 'transcripts' table 
@@ -547,6 +552,7 @@ EvaDB optimizes the AI queries to save money spent on running models and reduce 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Query optimization has powered SQL database systems for several decades. It is the bridge that connects the declarative query language to efficient query execution on hardware. EvaDB accelerates AI queries using a collection of optimizations detailed in the :ref:`optimizations<optimizations>` page.
 <<<<<<< HEAD
 >>>>>>> 5f27824c (docs: updates)
@@ -683,7 +689,27 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 Query optimization has powered SQL database systems for several decades. It is the bridge that connects the declarative query language to efficient query execution on hardware. EvaDB accelerates AI queries using a collection of optimizations detailed in the :ref:`optimizations<optimizations>` page.
 >>>>>>> 5f27824c (docs: updates)
+<<<<<<< HEAD
 >>>>>>> 9cc72b7b (docs: updates)
+<<<<<<< HEAD
 >>>>>>> d8799826 (docs: updates)
+=======
+=======
+=======
+<<<<<<< HEAD
+Query optimization has powered SQL database systems for several decades. It is the bridge that connects the declarative query language to efficient query execution on hardware. EvaDB accelerates AI queries using a collection of optimizations detailed in the :ref:`optimizations<optimizations>` page.
+=======
+    query2 = cursor.table("MNISTVideo")
+
+    # Here, we are also filtering based on the output of the function
+    query2 = query2.filter("MnistImageClassifier(data).label = '6' AND id < 10")
+    query2 = query2.select("data, MnistImageClassifier(data).label")
+    response = query2.df()
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

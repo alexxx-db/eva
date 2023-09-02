@@ -102,6 +102,7 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -110,10 +111,16 @@ class StatementBinderContext:
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+=======
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -149,6 +156,9 @@ class StatementBinderContext:
 =======
 =======
 >>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -232,10 +242,13 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -295,6 +308,8 @@ class StatementBinderContext:
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -305,7 +320,9 @@ class StatementBinderContext:
                     table_name, database_name, column_df
                 )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -319,6 +336,13 @@ class StatementBinderContext:
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
         else:
             table_obj = self._catalog().get_table_catalog_entry(table_name)
 

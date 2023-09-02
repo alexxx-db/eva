@@ -7,6 +7,7 @@ SHOW
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
@@ -38,11 +39,16 @@ SHOW FUNCTIONS
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+SHOW UDFS
+---------
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 List the registered user-defined functions
 
 .. code:: sql
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     SHOW FUNCTIONS;
@@ -52,3 +58,6 @@ List the registered user-defined functions
 =======
     SHOW FUNCTIONS;
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+    SHOW UDFS;
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

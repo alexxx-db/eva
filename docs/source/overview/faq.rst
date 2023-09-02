@@ -3,10 +3,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 Frequently Asked Questions
 ==========================
 =======
@@ -26,6 +29,9 @@ Here are some frequently asked questions that we have seen pop up for EvaDB.
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 Frequently Asked Questions
@@ -37,10 +43,13 @@ Frequently Asked Questions
 FAQ
 ===
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 Frequently Asked Questions
 ==========================
 >>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 .. _faq:
 
@@ -48,8 +57,11 @@ Here are some frequently asked questions that we have seen pop up for EvaDB.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 .. note::
 
 >>>>>>> 35b99c88 (docs: updates)
@@ -67,12 +79,17 @@ Ensure that the Python interpreter's version is >= `3.9`.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 32e513d7 (docs: updates)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 Why am I not able to install EvaDB in my Python environment?
 ============================================================
@@ -80,16 +97,22 @@ Why am I not able to install EvaDB in my Python environment?
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 
 Where does EvaDB store all the data?
@@ -103,12 +126,17 @@ Why do I see no output from the server?
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 32e513d7 (docs: updates)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 ---------------------------------------
 =======
 =======================================
@@ -116,11 +144,15 @@ Why do I see no output from the server?
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 ---------------------------------------
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
@@ -128,6 +160,8 @@ Why do I see no output from the server?
 ---------------------------------------
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 If a query runs a complex AI task (e.g., sentiment analysis) on a large table, the query is expected to take a non-trivial amount of time to finish. You can check the status of the server by running ``top`` or ``pgrep``:
 
@@ -141,12 +175,17 @@ If a query runs a complex AI task (e.g., sentiment analysis) on a large table, t
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 32e513d7 (docs: updates)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 pip install ray fails because of grpcio
 =======================================
@@ -157,13 +196,19 @@ https://github.com/ray-project/ray/issues/33039
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

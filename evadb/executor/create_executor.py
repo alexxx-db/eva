@@ -36,15 +36,21 @@ class CreateExecutor(AbstractExecutor):
     def exec(self, *args, **kwargs):
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
         # create a table in the ative database if set
 =======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
         # create a table in the active database if set
 >>>>>>> 62080794 (ran spellchecker)
         is_native_table = self.node.table_info.database_name is not None
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -161,14 +167,23 @@ class CreateExecutor(AbstractExecutor):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         # create a table in the ative database if set
+=======
+        # create a table in the active database if set
+=======
+        # create a table in the ative database if set
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
         is_native_table = self.node.table_info.database_name is not None
 =======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
         if not handle_if_not_exists(
             self.catalog(), self.node.table_info, self.node.if_not_exists
         ):
             create_table_done = False
             logger.debug(f"Creating table {self.node.table_info}")
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -182,9 +197,12 @@ class CreateExecutor(AbstractExecutor):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
         # create a table in the ative database if set
         is_native_table = self.node.table_info.database_name is not None
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -195,6 +213,8 @@ class CreateExecutor(AbstractExecutor):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -218,7 +238,15 @@ class CreateExecutor(AbstractExecutor):
         is_native_table = self.node.table_info.database_name is not None
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
         check_if_exists = handle_if_not_exists(
             self.catalog(), self.node.table_info, self.node.if_not_exists
@@ -238,6 +266,10 @@ class CreateExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -253,6 +285,9 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -260,6 +295,7 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-master
@@ -310,6 +346,12 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
         else:
             catalog_entry = create_table_catalog_entry_for_native_table(
                 self.node.table_info, self.node.column_list
@@ -365,6 +407,9 @@ class CreateExecutor(AbstractExecutor):
             raise e
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -372,8 +417,11 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
             storage_engine = StorageEngine.factory(self.db, catalog_entry)
             try:
@@ -386,6 +434,7 @@ class CreateExecutor(AbstractExecutor):
                         len(self.children)
                     )
                     child = self.children[0]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -412,6 +461,10 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
@@ -457,6 +510,9 @@ class CreateExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 =======
 =======
@@ -507,6 +563,7 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-master
@@ -726,3 +783,20 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+
+                    # Populate the table
+                    for batch in child.exec():
+                        batch.drop_column_alias()
+                        storage_engine.write(catalog_entry, batch)
+            except Exception as e:
+                # rollback if the create call fails
+                if create_table_done:
+                    storage_engine.drop(catalog_entry)
+                raise e
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

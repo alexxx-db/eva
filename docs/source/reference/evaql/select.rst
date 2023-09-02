@@ -1,6 +1,9 @@
+.. _sql-select:
+
 SELECT
 ======
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -12,6 +15,10 @@ SELECT
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 .. _select:
 
 SELECT TUPLES WITH PREDICATES
@@ -21,13 +28,17 @@ SELECT FRAMES WITH PREDICATES
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 .. _select:
 
 SELECT TUPLES WITH PREDICATES
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -35,6 +46,10 @@ SELECT TUPLES WITH PREDICATES
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 -----------------------------
 
 Search for frames with a car
@@ -64,7 +79,10 @@ Search for frames containing greater than 3 cars
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
@@ -164,6 +182,7 @@ SELECT TUPLES WITH MULTIPLE PREDICATES
 >>>>>>> c2094b0c (docs: updated sql statement list)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 =======
 =======
@@ -239,6 +258,19 @@ SELECT WITH MULTIPLE FUNCTIONS
 =======
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+=======
+SELECT TUPLES WITH MULTIPLE PREDICATES
+--------------------------------------
+=======
+SELECT WITH MULTIPLE UDFS
+-------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 Compose multiple user-defined functions in a single query to construct semantically complex queries.
 

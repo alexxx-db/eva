@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+.. _image-classification:
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -192,6 +197,7 @@ In the following query, we call the classifier on every image in the video. The 
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
@@ -204,6 +210,10 @@ In the following query, we call the classifier on every image in the video. The 
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 .. _image-classification:
 =======
 .. _image classification:
@@ -211,20 +221,27 @@ In the following query, we call the classifier on every image in the video. The 
 Image Classification Pipeline using EvaDB
 =========================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 .. _image-classification:
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 Image Classification
 ====================
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 .. raw:: html
 =======
 1. Connect to EvaDB
 -------------------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 .. raw:: html
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
@@ -348,6 +365,8 @@ Image Classification
 1. Connect to EvaDB
 -------------------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
     <embed>
     <table align="left">
@@ -569,17 +588,22 @@ This query returns the label of all the images:
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
     +------------------------------+
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -592,14 +616,19 @@ This query returns the label of all the images:
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
     +------------------------------+
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
     +------------------------------+
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
     ... ...
 
@@ -638,10 +667,13 @@ Like normal SQL, you can also specify conditions to filter out some frames of th
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
     +------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -657,6 +689,7 @@ Like normal SQL, you can also specify conditions to filter out some frames of th
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -665,11 +698,16 @@ Like normal SQL, you can also specify conditions to filter out some frames of th
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
+=======
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
     +------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -713,6 +751,9 @@ Like normal SQL, you can also specify conditions to filter out some frames of th
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 
 
 Filtering Based on AI Function
@@ -740,7 +781,10 @@ Now, the ``DataFrame`` only contains images of the digit ``6``.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 .. include:: ../shared/footer.rst
 =======
 >>>>>>> e867f37e (docs: updated images)
@@ -899,5 +943,19 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 
 .. include:: ../shared/designs/design7.rst
 >>>>>>> 08db5ebb (docs: updated images)
+<<<<<<< HEAD
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+=======
+=======
+.. include:: ../shared/footer.rst
+
+.. include:: ../shared/designs/design7.rst
+=======
+Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_ for working example.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))

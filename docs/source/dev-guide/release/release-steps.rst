@@ -90,17 +90,22 @@ Build Wheel and Release
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
     python script/releasing/releaser.py -n minor -u
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -113,14 +118,19 @@ Build Wheel and Release
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
     python script/releasing/releaser.py -n minor -u
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
     python script/releasing/releaser.py -n minor -u
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
        git tag -a v0.0.6 -m "v0.0.6 release"
        git push origin v0.0.6
 
@@ -200,10 +210,13 @@ Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.m
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
     python script/releasing/releaser.py -n minor -u
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -219,6 +232,7 @@ Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.m
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -227,11 +241,16 @@ Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.m
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+=======
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
     python script/releasing/releaser.py -n minor -u
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -275,3 +294,6 @@ Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.m
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
