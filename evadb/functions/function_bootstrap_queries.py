@@ -49,6 +49,7 @@ DummyFeatureExtractor_function_query = """CREATE FUNCTION
     EvaDB_INSTALLATION_DIR
 )
 
+<<<<<<< HEAD
 DummyNoInputFunction_function_query = """CREATE FUNCTION
                   IF NOT EXISTS DummyNoInputFunction
                   IMPL '{}/../test/util.py';
@@ -63,6 +64,8 @@ DummyLLM_function_query = """CREATE FUNCTION
     EvaDB_INSTALLATION_DIR
 )
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 fuzzy_function_query = """CREATE FUNCTION IF NOT EXISTS FuzzDistance
                     INPUT (Input_Array1 NDARRAY ANYTYPE, Input_Array2 NDARRAY ANYTYPE)
                     OUTPUT (distance FLOAT(32, 7))
@@ -208,6 +211,7 @@ stablediffusion_function_query = """CREATE FUNCTION IF NOT EXISTS StableDiffusio
     EvaDB_INSTALLATION_DIR
 )
 
+<<<<<<< HEAD
 dalle_function_query = """CREATE FUNCTION IF NOT EXISTS DallE
         IMPL '{}/functions/dalle.py';
         """.format(
@@ -218,12 +222,21 @@ dalle_function_query = """CREATE FUNCTION IF NOT EXISTS DallE
 def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
     """Load the built-in functions into the system during system bootstrapping.
 
+=======
+def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
+    """Load the built-in functions into the system during system bootstrapping.
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     The function loads a set of pre-defined function queries based on the `mode` argument.
     In 'debug' mode, the function loads debug functions along with release functions.
     In 'release' mode, only release functions are loaded. In addition, in 'debug' mode,
     the function loads a smaller model to accelerate the test suite time.
 
+<<<<<<< HEAD
     Args:G
+=======
+    Args:
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         mode (str, optional): The mode for loading functions, either 'debug' or 'release'.
         Defaults to 'debug'.
 
@@ -259,8 +272,11 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
         # Mvit_function_query,
         Sift_function_query,
         Yolo_function_query,
+<<<<<<< HEAD
         stablediffusion_function_query,
         dalle_function_query,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     ]
 
     # if mode is 'debug', add debug functions
@@ -270,8 +286,11 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
                 DummyObjectDetector_function_query,
                 DummyMultiObjectDetector_function_query,
                 DummyFeatureExtractor_function_query,
+<<<<<<< HEAD
                 DummyNoInputFunction_function_query,
                 DummyLLM_function_query,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             ]
         )
 

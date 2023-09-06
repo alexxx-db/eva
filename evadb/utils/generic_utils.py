@@ -292,7 +292,11 @@ def try_to_import_ray():
         )
 
 
+<<<<<<< HEAD
 def try_to_import_statsforecast():
+=======
+def try_to_import_forecast():
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
@@ -302,6 +306,7 @@ def try_to_import_statsforecast():
         )
 
 
+<<<<<<< HEAD
 def try_to_import_neuralforecast():
     try:
         from neuralforecast import NeuralForecast  # noqa: F401
@@ -312,6 +317,8 @@ def try_to_import_neuralforecast():
         )
 
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 def is_ray_available() -> bool:
     try:
         try_to_import_ray()
@@ -351,6 +358,7 @@ def is_ludwig_available() -> bool:
 
 def is_forecast_available() -> bool:
     try:
+<<<<<<< HEAD
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
         return True
@@ -391,6 +399,9 @@ def try_to_import_xgboost():
 def is_xgboost_available() -> bool:
     try:
         try_to_import_xgboost()
+=======
+        try_to_import_forecast()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         return True
     except ValueError:  # noqa: E722
         return False

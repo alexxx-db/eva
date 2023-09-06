@@ -486,7 +486,11 @@ jobs:
               source test_evadb/bin/activate
               pip install --upgrade pip
               pip debug --verbose
+<<<<<<< HEAD
               pip install ".[dev,ludwig,qdrant,forecasting,pinecone,chromadb]"
+=======
+              pip install ".[dev,ludwig,qdrant,forecasting]"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
               source test_evadb/bin/activate
               bash script/test/test.sh -m "<< parameters.mode >>"
 

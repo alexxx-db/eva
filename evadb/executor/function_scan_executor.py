@@ -42,6 +42,18 @@ class FunctionScanExecutor(AbstractExecutor):
         if not lateral_input.empty():
             res = self.func_expr.evaluate(lateral_input)
 
+<<<<<<< HEAD
+=======
+            # persist stats of function expression
+            if self.func_expr.function_obj and self.func_expr._stats:
+                function_id = self.func_expr.function_obj.row_id
+                self.catalog().upsert_function_cost_catalog_entry(
+                    function_id,
+                    self.func_expr.function_obj.name,
+                    self.func_expr._stats.prev_cost,
+                )
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             if not res.empty():
                 if self.do_unnest:
                     res.unnest(res.columns)

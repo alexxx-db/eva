@@ -39,7 +39,11 @@ from evadb.expression.function_expression import FunctionExpression
 from evadb.expression.tuple_value_expression import TupleValueExpression
 from evadb.parser.create_function_statement import CreateFunctionStatement
 from evadb.parser.create_index_statement import CreateIndexStatement
+<<<<<<< HEAD
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+=======
+from evadb.parser.create_statement import CreateTableStatement
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.parser.delete_statement import DeleteTableStatement
 from evadb.parser.explain_statement import ExplainStatement
 from evadb.parser.rename_statement import RenameTableStatement
@@ -48,10 +52,14 @@ from evadb.parser.statement import AbstractStatement
 from evadb.parser.table_ref import TableRef
 from evadb.parser.types import FunctionType
 from evadb.third_party.huggingface.binder import assign_hf_function
+<<<<<<< HEAD
 from evadb.utils.generic_utils import (
     load_function_class_from_file,
     string_comparison_case_insensitive,
 )
+=======
+from evadb.utils.generic_utils import load_function_class_from_file
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.utils.logging_manager import logger
 
 
@@ -89,6 +97,7 @@ class StatementBinder:
                 node.query.target_list
             )
             arg_map = {key: value for key, value in node.metadata}
+<<<<<<< HEAD
             inputs, outputs = [], []
             if string_comparison_case_insensitive(node.function_type, "ludwig"):
                 assert (
@@ -136,11 +145,75 @@ class StatementBinder:
                 raise BinderError(
                     f"Unsupported type of function: {node.function_type}."
                 )
+=======
+            assert (
+                "predict" in arg_map
+            ), f"Creating {node.function_type} functions expects 'predict' metadata."
+            # We only support a single predict column for now
+            predict_columns = set([arg_map["predict"]])
+            inputs, outputs = [], []
+            for column in all_column_list:
+                if column.name in predict_columns:
+                    if node.function_type != "Forecasting":
+                        column.name = column.name + "_predictions"
+                    else:
+                        column.name = column.name
+                    outputs.append(column)
+                else:
+                    inputs.append(column)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             assert (
                 len(node.inputs) == 0 and len(node.outputs) == 0
             ), f"{node.function_type} functions' input and output are auto assigned"
             node.inputs, node.outputs = inputs, outputs
 
+<<<<<<< HEAD
+=======
+    @bind.register(CreateIndexStatement)
+    def _bind_create_index_statement(self, node: CreateIndexStatement):
+        self.bind(node.table_ref)
+        if node.function:
+            self.bind(node.function)
+
+        # TODO: create index currently only supports single numpy column.
+        assert len(node.col_list) == 1, "Index cannot be created on more than 1 column"
+
+        # TODO: create index currently only works on TableInfo, but will extend later.
+        assert node.table_ref.is_table_atom(), "Index can only be created on Tableinfo"
+        if not node.function:
+            # Feature table type needs to be float32 numpy array.
+            assert (
+                len(node.col_list) == 1
+            ), f"Index can be only created on one column, but instead {len(node.col_list)} are provided"
+            col_def = node.col_list[0]
+
+            table_ref_obj = node.table_ref.table.table_obj
+            col_list = [
+                col for col in table_ref_obj.columns if col.name == col_def.name
+            ]
+            assert (
+                len(col_list) == 1
+            ), f"Index is created on non-existent column {col_def.name}"
+
+            col = col_list[0]
+            assert (
+                col.array_type == NdArrayType.FLOAT32
+            ), "Index input needs to be float32."
+            assert len(col.array_dimensions) == 2
+        else:
+            # Output of the function should be 2 dimension and float32 type.
+            function_obj = self._catalog().get_function_catalog_entry_by_name(
+                node.function.name
+            )
+            for output in function_obj.outputs:
+                assert (
+                    output.array_type == NdArrayType.FLOAT32
+                ), "Index input needs to be float32."
+                assert (
+                    len(output.array_dimensions) == 2
+                ), "Index input needs to be 2 dimensional."
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     @bind.register(SelectStatement)
     def _bind_select_statement(self, node: SelectStatement):
         if node.from_table:
@@ -298,10 +371,17 @@ class StatementBinder:
             logger.error(err_msg)
             raise BinderError(err_msg)
 
+<<<<<<< HEAD
         if string_comparison_case_insensitive(function_obj.type, "HuggingFace"):
             node.function = assign_hf_function(function_obj)
 
         elif string_comparison_case_insensitive(function_obj.type, "Ludwig"):
+=======
+        if function_obj.type == "HuggingFace":
+            node.function = assign_hf_function(function_obj)
+
+        elif function_obj.type == "Ludwig":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             function_class = load_function_class_from_file(
                 function_obj.impl_file_path,
                 "GenericLudwigModel",

@@ -70,12 +70,16 @@ class CreateFunctionStatement(AbstractStatement):
         self._metadata = metadata
 
     def __str__(self) -> str:
+<<<<<<< HEAD
         s = "CREATE"
 
         if self._or_replace:
             s += " OR REPLACE"
 
         s += " " + "FUNCTION"
+=======
+        s = "CREATE FUNCTION"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
         if self._if_not_exists:
             s += " IF NOT EXISTS"

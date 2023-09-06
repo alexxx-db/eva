@@ -8,6 +8,7 @@ Question Answering
     <embed>
     <table align="left">
     <td>
+<<<<<<< HEAD
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -15,6 +16,15 @@ Question Answering
     </td>
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     </td>
     </table><br><br>
     </embed>
@@ -61,7 +71,11 @@ EvaDB has built-in support for ``ChatGPT`` function from ``OpenAI``. You will ne
 
 .. note::
     
+<<<<<<< HEAD
     EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`custom AI function<custom_ai_function>`.
+=======
+    EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`Custom function<udf>`.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 
     ChatGPT function is a wrapper around OpenAI API call. You can also switch to other LLM models that can run locally.
@@ -83,11 +97,19 @@ Here is the query's output ``DataFrame``:
 
 .. code-block:: 
 
+<<<<<<< HEAD
     +-------------------------------------------------------------------------------------------------------------------------+
     |                                                    text_summary.text                                                    |
     +-------------------------------------------------------------------------------------------------------------------------+
     | The war in Ukraine has been on for 415 days. Who is winning it? Not Russia. Certainly not Ukraine. It is the US oil ... |
     +-------------------------------------------------------------------------------------------------------------------------+
+=======
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | text_summary.text                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+    |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | The war in Ukraine has been on for 415 days. Who is winning it? Not Russia. Certainly not Ukraine. It is the US oil companies. US oil companies have reached $200 billion in pure profits. The earnings are still on. They are still milking this war and sharing the spoils. Let us look at how Exxon mobile has been doing. In 2022, the company made $56 billion in profits. Oil companies capitalized on instability and they are profiting from pain. American oil companies are masters of this art. You may remember the war in Iraq. The US went to war in Iraq by selling a lie. The Americans did not find any weapons of mass destruction but they did find lots of oil. And in the year since, American officials have admitted this. And this story is not over. It's repeating itself in Ukraine. They are feeding another war and filling the coffers of US oil companies. |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 Question Answering using ChatGPT
 --------------------------------
@@ -105,14 +127,25 @@ Here is the query's output ``DataFrame``:
 
 .. code-block:: 
 
+<<<<<<< HEAD
     +--------------------------------------------------------------------------------------------------------------------------+
     |                                                     chatgpt.response                                                     |
     +--------------------------------------------------------------------------------------------------------------------------+
     | No, the video summary provided does not appear to be related to the Ukraine-Russia war. It seems to be a conversatio ... |
     +--------------------------------------------------------------------------------------------------------------------------+
+=======
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+    | chatgpt.response                                                                                                                                                                                                                                      |
+    |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Based on the provided context, it seems that the video summary is related to the Ukraine-Russia war. It discusses how US oil companies are allegedly profiting from the war in Ukraine, similar to how they allegedly benefited from the war in Iraq. |
+    +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 .. include:: ../shared/nlp.rst
 
 .. include:: ../shared/footer.rst
+<<<<<<< HEAD
 
 .. include:: ../shared/designs/design1.rst
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

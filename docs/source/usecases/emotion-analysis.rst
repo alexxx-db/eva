@@ -8,6 +8,7 @@ Emotion Analysis
     <embed>
     <table align="left">
     <td>
+<<<<<<< HEAD
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/03-emotion-analysis.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -15,6 +16,15 @@ Emotion Analysis
     </td>
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/03-emotion-analysis.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/03-emotion-analysis.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/03-emotion-analysis.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/03-emotion-analysis.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     </td>
     </table><br><br>
     </embed>
@@ -37,7 +47,11 @@ To create custom ``FaceDetector`` and ``EmotionDetector`` functions, use the ``C
 
 .. code-block:: sql
 
+<<<<<<< HEAD
         CREATE FUNCTION IF NOT EXISTS FaceDetector
+=======
+        CREATE UDF IF NOT EXISTS FaceDetector
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             INPUT  (frame NDARRAY UINT8(3, ANYDIM, ANYDIM))
             OUTPUT (bboxes NDARRAY FLOAT32(ANYDIM, 4),
                     scores NDARRAY FLOAT32(ANYDIM))
@@ -72,6 +86,7 @@ This query returns the faces detected in the first ten frames of the video:
 
 .. code-block:: 
 
+<<<<<<< HEAD
     +----------+---------------------+-------------------------+
     | happy.id | facedetector.bboxes |   facedetector.scores   |
     +----------+---------------------+-------------------------+
@@ -91,6 +106,14 @@ This query returns the faces detected in the first ten frames of the video:
     |    9     | [[508  90 785 448]  | [0.99992466 0.7014416 ] |
     |          |  [235 309 325 412]] |                         |
     +----------+---------------------+-------------------------+
+=======
+   +-----------------------------------------------------------------------------------------------------+
+   | objectdetectionvideos.id              | yolo.labels                                                |
+   +--------------------------+-----------------------------------------------------------------+
+   | 0                        | [car, car, car, car, car, car, person, car, ...             |
+   | 1                        | [car, car, car, car, car, car, car, car, car, ...             |
+   +-----------------------------------------------------------------------------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 Chaining Functions in a Single AI Query 
 ---------------------------------------
@@ -110,6 +133,7 @@ Now, the ``DataFrame`` only contains the emotions of the detected faces:
 
 .. code-block:: 
 
+<<<<<<< HEAD
     +----------+-------------------+------------------------+------------------------+
     | happy.id |     Face.bbox     | emotiondetector.labels | emotiondetector.scores |
     +----------+-------------------+------------------------+------------------------+
@@ -135,5 +159,13 @@ Now, the ``DataFrame`` only contains the emotions of the detected faces:
     |    13    | [513  87 789 456] |         happy          |   0.9997060894966125   |
     |    14    | [515  88 790 454] |         happy          |   0.9997135996818542   |
     +----------+-------------------+------------------------+------------------------+
+=======
+    +------------------------------+
+    |  objectdetectionvideos.label |
+    |------------------------------|
+    |                            6 |
+    |                            6 |
+    +------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 .. include:: ../shared/footer.rst

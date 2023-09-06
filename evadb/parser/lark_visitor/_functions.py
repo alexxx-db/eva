@@ -30,7 +30,11 @@ class Functions:
     def function(self, tree):
         function_name = None
         function_output = None
+<<<<<<< HEAD
         function_args = []
+=======
+        function_args = None
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
         for child in tree.children:
             if isinstance(child, Token):
@@ -60,7 +64,10 @@ class Functions:
     # Create function
     def create_function(self, tree):
         function_name = None
+<<<<<<< HEAD
         or_replace = False
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         if_not_exists = False
         input_definitions = []
         output_definitions = []
@@ -74,8 +81,11 @@ class Functions:
             if isinstance(child, Tree):
                 if child.data == "function_name":
                     function_name = self.visit(child)
+<<<<<<< HEAD
                 elif child.data == "or_replace":
                     or_replace = True
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
                 elif child.data == "if_not_exists":
                     if_not_exists = True
                 elif child.data == "create_definitions":
@@ -106,7 +116,10 @@ class Functions:
 
         return CreateFunctionStatement(
             function_name,
+<<<<<<< HEAD
             or_replace,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             if_not_exists,
             impl_path,
             input_definitions,

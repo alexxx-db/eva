@@ -19,7 +19,10 @@ import sys
 import pytest
 
 from evadb.utils.generic_utils import (
+<<<<<<< HEAD
     is_chromadb_available,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     is_forecast_available,
     is_gpu_available,
     is_ludwig_available,
@@ -102,7 +105,10 @@ forecast_skip_marker = pytest.mark.skipif(
     is_forecast_available() is False,
     reason="Run only if forecasting packages available",
 )
+<<<<<<< HEAD
 
 stable_diffusion_skip_marker = pytest.mark.skipif(
     is_replicate_available() is False, reason="requires replicate"
 )
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

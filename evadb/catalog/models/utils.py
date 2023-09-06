@@ -201,7 +201,10 @@ class IndexCatalogEntry:
     row_id: int = None
     feat_column_id: int = None
     function_signature: str = None
+<<<<<<< HEAD
     index_def: str = None
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     feat_column: ColumnCatalogEntry = None
 
 

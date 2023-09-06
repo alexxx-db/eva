@@ -69,6 +69,19 @@ def apply_project(batch: Batch, project_list: List[AbstractExpression]):
         batches = [expr.evaluate(batch) for expr in project_list]
         batch = Batch.merge_column_wise(batches)
 
+<<<<<<< HEAD
+=======
+        # persist stats of function expression
+        for expr in project_list:
+            for func_expr in expr.find_all(FunctionExpression):
+                if func_expr.function_obj and func_expr._stats:
+                    function_id = func_expr.function_obj.row_id
+                    catalog.upsert_function_cost_catalog_entry(
+                        function_id,
+                        func_expr.function_obj.name,
+                        func_expr._stats.prev_cost,
+                    )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     return batch
 
 
@@ -78,6 +91,16 @@ def apply_predicate(batch: Batch, predicate: AbstractExpression) -> Batch:
         batch.drop_zero(outcomes)
         batch.reset_index()
 
+<<<<<<< HEAD
+=======
+        # persist stats of function expression
+        for func_expr in predicate.find_all(FunctionExpression):
+            if func_expr.function_obj and func_expr._stats:
+                function_id = func_expr.function_obj.row_id
+                catalog.upsert_function_cost_catalog_entry(
+                    function_id, func_expr.function_obj.name, func_expr._stats.prev_cost
+                )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     return batch
 
 

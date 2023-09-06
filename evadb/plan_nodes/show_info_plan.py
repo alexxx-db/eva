@@ -36,9 +36,13 @@ class ShowInfoPlan(AbstractPlan):
     def __str__(self):
         if self._show_type == ShowType.FUNCTIONS:
             return "ShowFunctionPlan"
+<<<<<<< HEAD
         if self._show_type == ShowType.DATABASES:
             return "ShowDatabasePlan"
         elif self._show_type == ShowType.TABLES:
+=======
+        else:
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             return "ShowTablePlan"
         elif self._show_type == ShowType.CONFIG:
             return "ShowConfigPlan"

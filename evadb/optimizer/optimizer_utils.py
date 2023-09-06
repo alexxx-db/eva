@@ -307,6 +307,7 @@ def enable_cache_on_expression_tree(
 
 
 def check_expr_validity_for_cache(expr: FunctionExpression):
+<<<<<<< HEAD
     valid = expr.name in CACHEABLE_FUNCTIONS and not expr.has_cache()
     if len(expr.children) == 1:
         # Normal function that only takes one parameter.
@@ -317,6 +318,14 @@ def check_expr_validity_for_cache(expr: FunctionExpression):
             expr.children[1], TupleValueExpression
         )
     return valid
+=======
+    return (
+        expr.name in CACHEABLE_FUNCTIONS
+        and not expr.has_cache()
+        and len(expr.children) <= 1
+        and isinstance(expr.children[0], TupleValueExpression)
+    )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 
 def get_expression_execution_cost(

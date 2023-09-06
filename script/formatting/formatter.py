@@ -461,6 +461,7 @@ if __name__ == "__main__":
 
         # CODESPELL
         #LOG.info("Codespell")
+<<<<<<< HEAD
         subprocess.check_output(""" codespell "evadb/*.py" """, 
                 shell=True, 
                 universal_newlines=True)
@@ -477,6 +478,24 @@ if __name__ == "__main__":
                 shell=True, 
                 universal_newlines=True)
         subprocess.check_output(""" codespell "evadb/*.md" """, 
+=======
+        subprocess.check_output("codespell 'evadb/*.py'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell 'evadb/*/*.py'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell 'docs/source/*/*.rst'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell 'docs/source/*.rst'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell '*.md'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell 'evadb/*.md'", 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
                 shell=True, 
                 universal_newlines=True)
 
