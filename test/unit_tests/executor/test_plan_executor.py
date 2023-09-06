@@ -183,13 +183,19 @@ class PlanExecutorTest(unittest.TestCase):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         tree = MagicMock(node=CreateFunctionPlan(None, False, False, [], [], None))
 =======
         tree = MagicMock(node=CreateFunctionPlan(None, False, [], [], None))
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
         tree = MagicMock(node=CreateFunctionPlan(None, False, False, [], [], None))
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         mock_build.return_value = tree
         actual = list(PlanExecutor(MagicMock(), None).execute_plan())
         tree.exec.assert_called_once()

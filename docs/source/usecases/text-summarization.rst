@@ -87,8 +87,11 @@ Here is the query's output ``DataFrame``:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     +--------------------------------------------------------------+--------------------------------------------------------------+
     |                         mypdfs.data                          |                 textsummarizer.summary_text                  |
     +--------------------------------------------------------------+--------------------------------------------------------------+
@@ -96,6 +99,9 @@ Here is the query's output ``DataFrame``:
     | PHYSICAL CHARACTERISTICS ( 1 )  COLOUR   -- Red  ( 2 )  ... | The temperature is 38° C / 100.4° F. The body weight is  ... |
     +--------------------------------------------------------------+--------------------------------------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
     +--------------------------------------------------------+--------------------------------------------------------+
     | mypdfs.data                                         | mypdfs.summary_text                             |
@@ -104,8 +110,11 @@ Here is the query's output ``DataFrame``:
     | PHYSICAL CHARACTERISTICS ( 1 ) COLOUR -- R...  | The temperature is 38° C / 100.4° F. The body ...  |
     +--------------------------------------------------------+--------------------------------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 
 
 .. include:: ../shared/nlp.rst

@@ -295,6 +295,7 @@ class CreateIndex:
         return CreateIndexStatement(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             index_name,
@@ -309,6 +310,12 @@ class CreateIndex:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+            index_name, if_not_exists, table_ref, col_list, vector_store_type, function
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         )
 
     def vector_store_type(self, tree):

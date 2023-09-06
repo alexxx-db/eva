@@ -41,13 +41,19 @@ from evadb.parser.create_function_statement import CreateFunctionStatement
 from evadb.parser.create_index_statement import CreateIndexStatement
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 =======
 from evadb.parser.create_statement import CreateTableStatement
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 from evadb.parser.delete_statement import DeleteTableStatement
 from evadb.parser.explain_statement import ExplainStatement
 from evadb.parser.rename_statement import RenameTableStatement
@@ -58,18 +64,27 @@ from evadb.parser.types import FunctionType
 from evadb.third_party.huggingface.binder import assign_hf_function
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 from evadb.utils.generic_utils import (
     load_function_class_from_file,
     string_comparison_case_insensitive,
 )
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 from evadb.utils.generic_utils import load_function_class_from_file
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+from evadb.utils.generic_utils import load_function_class_from_file
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 from evadb.utils.logging_manager import logger
 
 
@@ -109,6 +124,9 @@ class StatementBinder:
             arg_map = {key: value for key, value in node.metadata}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
             inputs, outputs = [], []
             if string_comparison_case_insensitive(node.function_type, "ludwig"):
                 assert (
@@ -216,7 +234,27 @@ class StatementBinder:
                 raise BinderError(
                     f"Unsupported type of function: {node.function_type}."
                 )
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+            assert (
+                "predict" in arg_map
+            ), f"Creating {node.function_type} functions expects 'predict' metadata."
+            # We only support a single predict column for now
+            predict_columns = set([arg_map["predict"]])
+            inputs, outputs = [], []
+            for column in all_column_list:
+                if column.name in predict_columns:
+                    if node.function_type != "Forecasting":
+                        column.name = column.name + "_predictions"
+                    else:
+                        column.name = column.name
+                    outputs.append(column)
+                else:
+                    inputs.append(column)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
             assert (
                 len(node.inputs) == 0 and len(node.outputs) == 0
             ), f"{node.function_type} functions' input and output are auto assigned"
@@ -224,6 +262,9 @@ class StatementBinder:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
     @bind.register(CreateIndexStatement)
     def _bind_create_index_statement(self, node: CreateIndexStatement):
@@ -270,8 +311,11 @@ class StatementBinder:
                 ), "Index input needs to be 2 dimensional."
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     @bind.register(SelectStatement)
     def _bind_select_statement(self, node: SelectStatement):
         if node.from_table:
@@ -431,6 +475,9 @@ class StatementBinder:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         if string_comparison_case_insensitive(function_obj.type, "HuggingFace"):
             node.function = assign_hf_function(function_obj)
 
@@ -441,12 +488,15 @@ class StatementBinder:
 
         elif function_obj.type == "Ludwig":
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
         if string_comparison_case_insensitive(function_obj.type, "HuggingFace"):
             node.function = assign_hf_function(function_obj)
 
         elif string_comparison_case_insensitive(function_obj.type, "Ludwig"):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
             function_class = load_function_class_from_file(
                 function_obj.impl_file_path,
                 "GenericLudwigModel",

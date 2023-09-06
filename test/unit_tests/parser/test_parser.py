@@ -126,6 +126,7 @@ class ParserTests(unittest.TestCase):
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
         # create if_not_exists
         expected_stmt = CreateIndexStatement(
             "testindex",
@@ -148,6 +149,7 @@ class ParserTests(unittest.TestCase):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         # create if_not_exists
         expected_stmt = CreateIndexStatement(
             "testindex",
@@ -168,6 +170,8 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(actual_stmt, expected_stmt)
         self.assertEqual(actual_stmt.index_def, create_index_query)
 
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
         # create index on Function expression
@@ -674,13 +678,19 @@ class ParserTests(unittest.TestCase):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 =======
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         evadb_stmt_list = parser.parse(query)
 
         # check stmt itself
@@ -794,8 +804,11 @@ class ParserTests(unittest.TestCase):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     def test_set_statement(self):
         parser = Parser()
         set_statement = """SET OPENAIKEY = 'ABCD'"""
@@ -1029,10 +1042,15 @@ class ParserTests(unittest.TestCase):
         create_func = CreateFunctionStatement(
             "func",
 <<<<<<< HEAD
+<<<<<<< HEAD
             False,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
             False,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             False,
             Path("data/fastrcnn.py"),
             [
@@ -1191,6 +1209,9 @@ class ParserTests(unittest.TestCase):
         self.assertNotEqual(table_ref, table_info)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 
     def test_lark(self):
@@ -1204,5 +1225,8 @@ class ParserTests(unittest.TestCase):
         parser = Parser()
         parser.parse(query)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
