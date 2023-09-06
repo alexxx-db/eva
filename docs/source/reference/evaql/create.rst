@@ -171,6 +171,7 @@ To register an user-defined function, specify the implementation details of the 
     );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 CREATE INDEX
 ------------
 =======
@@ -214,6 +215,11 @@ You can check out :ref:`similarity search use case<image-search>` about how to u
 CREATE FUNCTION
 ---------------
 
+=======
+CREATE FUNCTION
+---------------
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 To register an user-defined function, specify the implementation details of the function.
 
 .. code-block:: sql
@@ -242,14 +248,15 @@ CREATE FUNCTION via Type
 =======
 .. _create-udf-train:
 
-CREATE UDF via Training
------------------------
+CREATE FUNCTION via Training
+----------------------------
 
 To register an user-defined function by training a predication model.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 .. code-block:: sql
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -324,6 +331,8 @@ CREATE FUNCTION via Type
 
 .. code-block:: sql
 
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
    CREATE [OR REPALCE] FUNCTION [IF NOT EXISTS] function_name
    [ FROM ( select ) ]
    TYPE function_type
@@ -338,6 +347,14 @@ Where the `parameter` is ``key value`` pair.
 .. note::
 
    Go over :ref:`hf`, :ref:`ludwig`, and :ref:`forecast` to check examples for creating function via type.
+=======
+   CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
+   (SELECT * FROM HomeRentals)
+   TYPE Ludwig
+   PREDICT 'rental_price'
+   TIME_LIST 120;
+   TUNE_FOR_MEMORY False;
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 CREATE MATERIALIZED VIEW
 ------------------------

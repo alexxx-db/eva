@@ -411,11 +411,15 @@ class StatementBinderTests(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
     def test_bind_create_function_should_raise_without_predict_for_ludwig(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
@@ -432,8 +436,11 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
     def test_bind_create_function_should_raise_without_predict_for_ludwig(self):
         with patch.object(StatementBinder, "bind"):
@@ -441,11 +448,16 @@ class StatementBinderTests(unittest.TestCase):
             create_function_statement.function_type = "ludwig"
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
             create_function_statement.query.target_list = []
             create_function_statement.metadata = []
             binder = StatementBinder(StatementBinderContext(MagicMock()))
@@ -458,11 +470,15 @@ class StatementBinderTests(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
     def test_bind_create_function_should_drop_row_id_for_select_star(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
@@ -479,8 +495,11 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
     def test_bind_create_function_should_drop_row_id_for_select_star(self):
         with patch.object(StatementBinder, "bind"):
@@ -488,11 +507,16 @@ class StatementBinderTests(unittest.TestCase):
             create_function_statement.function_type = "ludwig"
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
             row_id_col_obj = ColumnCatalogEntry(
                 name=IDENTIFIER_COLUMN,
                 type=MagicMock(),
@@ -560,18 +584,24 @@ class StatementBinderTests(unittest.TestCase):
             self.assertEqual(create_function_statement.outputs, expected_outputs)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 
     def test_bind_create_function_should_bind_forecast_with_default_columns(self):
         with patch.object(StatementBinder, "bind"):
@@ -788,14 +818,18 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
@@ -804,3 +838,9 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))

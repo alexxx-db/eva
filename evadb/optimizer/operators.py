@@ -24,6 +24,7 @@ from evadb.catalog.models.function_metadata_catalog import FunctionMetadataCatal
 from evadb.catalog.models.table_catalog import TableCatalogEntry
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 <<<<<<< HEAD
@@ -36,12 +37,20 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 from evadb.catalog.models.utils import IndexCatalogEntry
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+from evadb.catalog.models.utils import IndexCatalogEntry
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 from evadb.expression.abstract_expression import AbstractExpression
 from evadb.expression.constant_value_expression import ConstantValueExpression
 from evadb.expression.function_expression import FunctionExpression
@@ -667,11 +676,15 @@ class LogicalCreateFunction(Operator):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
         or_replace: bool
             if true should overwrite if function with same name exists
         if_not_exists: bool
@@ -688,8 +701,11 @@ class LogicalCreateFunction(Operator):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
         or_replace: bool
             if true should overwrite if function with same name exists
@@ -697,11 +713,16 @@ class LogicalCreateFunction(Operator):
             if true should skip if function with same name exists
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
         inputs: List[FunctionIOCatalogEntry]
             function inputs, annotated list similar to table columns
         outputs: List[FunctionIOCatalogEntry]

@@ -1,5 +1,9 @@
 .. _udf:
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 Functions
 ======================
 

@@ -74,6 +74,7 @@ class PlanNodeTests(unittest.TestCase):
         function_name = "function"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         or_replace = False
 =======
 <<<<<<< HEAD
@@ -86,12 +87,20 @@ class PlanNodeTests(unittest.TestCase):
         or_replace = False
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+        or_replace = False
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
         if_not_exists = True
         functionIO = "functionIO"
         inputs = [functionIO, functionIO]
@@ -105,11 +114,15 @@ class PlanNodeTests(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
             function_name, or_replace, if_not_exists, inputs, outputs, impl_path, ty
         )
         self.assertEqual(node.opr_type, PlanOprType.CREATE_FUNCTION)
@@ -128,8 +141,11 @@ class PlanNodeTests(unittest.TestCase):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
             function_name, or_replace, if_not_exists, inputs, outputs, impl_path, ty
         )
@@ -138,11 +154,16 @@ class PlanNodeTests(unittest.TestCase):
         self.assertEqual(node.if_not_exists, if_not_exists)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
         self.assertEqual(node.inputs, [functionIO, functionIO])
         self.assertEqual(node.outputs, [functionIO])
         self.assertEqual(node.impl_path, impl_path)

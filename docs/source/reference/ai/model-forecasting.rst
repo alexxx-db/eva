@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 .. _forecast:
 
 =======
@@ -10,10 +13,12 @@
 
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 .. _forecast:
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
@@ -21,6 +26,10 @@
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 Time Series Forecasting
 ========================
 
@@ -48,11 +57,15 @@ First, we create a table to insert required data.
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 Next, we create a function of `TYPE Forecasting`. We must enter the column name on which we wish to forecast using `PREDICT`.
 
 .. code-block:: sql
@@ -72,8 +85,11 @@ Next, we create a UDF of `TYPE Forecasting`. We must enter the column name on wh
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 Next, we create a function of `TYPE Forecasting`. We must enter the column name on which we wish to forecast using `PREDICT`.
 
@@ -82,11 +98,16 @@ Next, we create a function of `TYPE Forecasting`. We must enter the column name 
    CREATE FUNCTION IF NOT EXISTS Forecast FROM
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
    (SELECT y FROM AirData)
    TYPE Forecasting
    PREDICT 'y';
@@ -101,10 +122,14 @@ This trains a forecasting model. The model can be called by providing the horizo
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
    SELECT Forecast(12);
 
 Here, the horizon is `12`, which represents the forecast 12 steps into the future.
@@ -150,6 +175,7 @@ Below is an example query specifying the above parameters:
    ID 'type'
    Frequency 'W';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
    SELECT Forecast(12) FROM AirData;
 
@@ -203,6 +229,8 @@ Below is an example query specifying the above parameters:
    Frequency 'W';
 =======
 >>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 
 Below is an example query with `neuralforecast` with `trend` column as exogenous and without automatic hyperparameter optimization:
 
@@ -229,14 +257,19 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
 =======
     FREQUENCY 'M';
 =======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
    SELECT Forecast(12) FROM AirData;
 
 Here, the horizon is `12`.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 =======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
    SELECT Forecast(12);
 
 Here, the horizon is `12`, which represents the forecast 12 steps into the future.
@@ -295,4 +328,9 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
     AUTO 'f'
     FREQUENCY 'M';
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
