@@ -399,6 +399,7 @@ def is_forecast_available() -> bool:
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 def try_to_import_flaml_automl():
     try:
         import flaml  # noqa: F401
@@ -417,6 +418,8 @@ def is_flaml_automl_available() -> bool:
         try_to_import_forecast()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 def try_to_import_sklearn():
     try:
         import sklearn  # noqa: F401
@@ -437,6 +440,8 @@ def is_sklearn_available() -> bool:
         return False
 
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ##############################
 ## VISION
 ##############################

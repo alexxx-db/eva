@@ -75,8 +75,11 @@ This query returns the label of all the images:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
     | objectdetectionvideos.id |          yolo.labels           |          yolo.bboxes           |          yolo.scores           |
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -87,6 +90,9 @@ This query returns the label of all the images:
     |            4             | ['car', 'car', 'car', 'car ... | [[843.2254028320312, 280.8 ... | [0.9, 0.85, 0.83, 0.8, 0.7 ... |
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
     +-----------------------------------------------------------------------------------------------------+
     | objectdetectionvideos.id              | yolo.labels                                                |
@@ -95,8 +101,11 @@ This query returns the label of all the images:
     | 1                        | [car, car, car, car, car, car, car, car, car, ...             |
     +-----------------------------------------------------------------------------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 
 Filtering Based on YOLO Function
 --------------------------------
@@ -107,6 +116,9 @@ In the following query, we use the output of the object detector to retrieve a s
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     SELECT id, Yolo(data).labels
         FROM ObjectDetectionVideos 
         WHERE ['person', 'car'] <@ Yolo(data).labels
@@ -116,12 +128,15 @@ In the following query, we use the output of the object detector to retrieve a s
         FROM ObjectDetectionVideos 
         WHERE ['pedestrian', 'car'] <@ Yolo(data).label;
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
     SELECT id, Yolo(data).labels
         FROM ObjectDetectionVideos 
         WHERE ['person', 'car'] <@ Yolo(data).labels
         LIMIT 5;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 
 Now, the ``DataFrame`` only contains frames with the desired objects:
 
@@ -129,8 +144,11 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     +--------------------------+--------------------------------------------------------------+
     | objectdetectionvideos.id |                         yolo.labels                          |
     +--------------------------+--------------------------------------------------------------+
@@ -141,6 +159,17 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
     |            4             | ['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car', ... |
     +--------------------------+--------------------------------------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+    +------------------------------+
+    |  objectdetectionvideos.label |
+    |------------------------------|
+    |                            6 |
+    |                            6 |
+    +------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 
 .. include:: ../shared/footer.rst
 

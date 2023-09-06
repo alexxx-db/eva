@@ -85,13 +85,19 @@ class ChatGPT(AbstractFunction):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 =======
     @setup(cacheable=False, function_type="chat-completion", batchable=True)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     def setup(
         self,
         model="gpt-3.5-turbo",

@@ -11,7 +11,12 @@ We will assume that you have a :ref:`PostgreSQL<postgresql>` database running lo
 
 EvaDB lets you connect to your favorite databases, data warehouses, data lakes, etc., via the ``CREATE DATABASE`` statement. In this query, we connect EvaDB to an existing ``PostgreSQL`` server:
 
+<<<<<<< HEAD
 .. code-block::
+=======
+<<<<<<< HEAD
+.. code-block:: text
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 
     CREATE DATABASE postgres_data 
     WITH ENGINE = 'postgres', 
@@ -23,6 +28,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
         "database": "evadb"
     }
 =======
+<<<<<<< HEAD
 We will assume that you have a ``PostgreSQL`` database server running locally that contains the data needed for analysis. Follow these instructions to install `PostgreSQL <https://www.postgresql.org/download/>`_.
 
 EvaDB lets you connect to your favorite databases, data warehouses, data lakes, etc., via the ``CREATE DATABASE`` statement. In this query, we connect EvaDB to an existing ``PostgreSQL`` server:
@@ -30,6 +36,12 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 .. code-block:: text
 
 <<<<<<< HEAD
+=======
+.. tab-set::
+    
+    .. tab-item:: Python
+
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         .. code-block:: python
 
             params = {
@@ -58,6 +70,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
                 "database": "evadb"
             }
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
     CREATE DATABASE postgres_data 
     WITH ENGINE = 'postgres', 
@@ -69,3 +82,5 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
         "database": "evadb"
     }
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))

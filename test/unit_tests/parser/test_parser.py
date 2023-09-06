@@ -128,6 +128,7 @@ class ParserTests(unittest.TestCase):
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
         # create if_not_exists
         expected_stmt = CreateIndexStatement(
             "testindex",
@@ -150,6 +151,7 @@ class ParserTests(unittest.TestCase):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         # create if_not_exists
         expected_stmt = CreateIndexStatement(
             "testindex",
@@ -170,6 +172,8 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(actual_stmt, expected_stmt)
         self.assertEqual(actual_stmt.index_def, create_index_query)
 
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
         # create index on Function expression
@@ -780,13 +784,19 @@ class ParserTests(unittest.TestCase):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 =======
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         evadb_stmt_list = parser.parse(query)
 
         # check stmt itself
@@ -900,8 +910,11 @@ class ParserTests(unittest.TestCase):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     def test_set_statement(self):
         parser = Parser()
         set_statement = """SET OPENAIKEY = 'ABCD'"""
@@ -1135,10 +1148,15 @@ class ParserTests(unittest.TestCase):
         create_func = CreateFunctionStatement(
             "func",
 <<<<<<< HEAD
+<<<<<<< HEAD
             False,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
             False,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             False,
             Path("data/fastrcnn.py"),
             [
@@ -1296,6 +1314,7 @@ class ParserTests(unittest.TestCase):
         self.assertNotEqual(join_node, table_ref)
         self.assertNotEqual(table_ref, table_info)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     def test_create_job(self):
@@ -1315,6 +1334,10 @@ class ParserTests(unittest.TestCase):
         """
 
 =======
+=======
+=======
+
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     def test_lark(self):
         query = """CREATE FUNCTION FaceDetector
                   INPUT  (frame NDARRAY UINT8(3, ANYDIM, ANYDIM))
@@ -1323,6 +1346,7 @@ class ParserTests(unittest.TestCase):
                   TYPE  FaceDetection
                   IMPL  'evadb/functions/face_detector.py';
                   """
+<<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
         parser = Parser()
         job_stmt = parser.parse(job_query)[0]
@@ -1336,3 +1360,8 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(job_stmt.repeat_period, "hour")
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+        parser = Parser()
+        parser.parse(query)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))

@@ -13,12 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 <<<<<<< HEAD
+<<<<<<< HEAD
 import hashlib
 import os
 import pickle
 =======
 import os
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+import hashlib
+import os
+import pickle
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 from pathlib import Path
 from typing import Dict, List
 
@@ -42,9 +48,13 @@ from evadb.utils.errors import UDFIODefinitionError
 from evadb.utils.generic_utils import (
     load_udf_class_from_file,
 <<<<<<< HEAD
+<<<<<<< HEAD
     try_to_import_forecast,
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+    try_to_import_forecast,
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     try_to_import_ludwig,
     try_to_import_torch,
     try_to_import_ultralytics,
@@ -80,10 +90,14 @@ class CreateUDFExecutor(AbstractExecutor):
         """Handle ludwig UDFs
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         Use Ludwig's auto_train engine to train/tune models.
 =======
         Use ludwig's auto_train engine to train/tune models.
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+        Use Ludwig's auto_train engine to train/tune models.
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         """
         try_to_import_ludwig()
         from ludwig.automl import auto_train
@@ -143,6 +157,9 @@ class CreateUDFExecutor(AbstractExecutor):
         )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     def handle_forecasting_udf(self):
         """Handle forecasting UDFs"""
         aggregated_batch_list = []
@@ -256,8 +273,11 @@ class CreateUDFExecutor(AbstractExecutor):
             metadata_here,
         )
 
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     def handle_generic_udf(self):
         """Handle generic UDFs
 
@@ -299,10 +319,15 @@ class CreateUDFExecutor(AbstractExecutor):
         elif self.node.udf_type == "Ludwig":
             name, impl_path, udf_type, io_list, metadata = self.handle_ludwig_udf()
 <<<<<<< HEAD
+<<<<<<< HEAD
         elif self.node.udf_type == "Forecasting":
             name, impl_path, udf_type, io_list, metadata = self.handle_forecasting_udf()
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+        elif self.node.udf_type == "Forecasting":
+            name, impl_path, udf_type, io_list, metadata = self.handle_forecasting_udf()
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         else:
             name, impl_path, udf_type, io_list, metadata = self.handle_generic_udf()
 

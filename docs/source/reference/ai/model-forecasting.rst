@@ -1,9 +1,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 .. _forecast:
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 Time Series Forecasting
 ========================
 
@@ -33,11 +38,21 @@ First, we create a table to insert required data.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 Next, we create a function of `TYPE Forecasting`. We must enter the column name on which we wish to forecast using `PREDICT`.
 
 .. code-block:: sql
    
    CREATE FUNCTION IF NOT EXISTS Forecast FROM
+=======
+Next, we create a UDF of `TYPE Forecasting`. We must enter the column name on which we wish to forecast using `predict`. Other options include `id` and `time` (they represent the unique id of the items and the time data if available).
+
+.. code-block:: sql
+   
+   CREATE UDF IF NOT EXISTS Forecast FROM
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
    (SELECT y FROM AirData)
    TYPE Forecasting
    HORIZON 12
@@ -59,6 +74,7 @@ This trains a forecasting model. The model can be called by providing the horizo
 
 .. code-block:: sql
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
    SELECT Forecast();
@@ -134,6 +150,8 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
 Here, the horizon is `12`.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
    SELECT Forecast(12);
 
 Here, the horizon is `12`, which represents the forecast 12 steps into the future.
@@ -178,6 +196,7 @@ Below is an example query specifying the above parameters:
    TIME 'saledate'
    ID 'type'
    Frequency 'W';
+<<<<<<< HEAD
 
 Below is an example query with `neuralforecast` with `trend` column as exogenous and without automatic hyperparameter optimization:
 
@@ -192,3 +211,10 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
     AUTO 'f'
     FREQUENCY 'M';
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+   SELECT Forecast(12) FROM AirData;
+
+Here, the horizon is `12`.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))

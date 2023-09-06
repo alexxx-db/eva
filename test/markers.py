@@ -21,6 +21,7 @@ import pytest
 from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     is_chromadb_available,
     is_flaml_automl_available,
 =======
@@ -33,7 +34,11 @@ from evadb.utils.generic_utils import (
     is_qdrant_available,
     is_replicate_available,
 =======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
     is_chromadb_available,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     is_forecast_available,
     is_gpu_available,
     is_ludwig_available,
