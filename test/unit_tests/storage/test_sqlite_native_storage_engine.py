@@ -36,6 +36,7 @@ class NativeQueryResponse:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -46,6 +47,12 @@ class NativeQueryResponse:
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 class SQLiteNativeStorageEngineTest(unittest.TestCase):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -60,8 +67,11 @@ class SQLiiteNativeStorageEngineTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 class SQLiteNativeStorageEngineTest(unittest.TestCase):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -96,8 +106,19 @@ class SQLiiteNativeStorageEngineTest(unittest.TestCase):
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+class SQLiteNativeStorageEngineTest(unittest.TestCase):
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 

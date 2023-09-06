@@ -13,11 +13,14 @@ DROP TABLE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 <<<<<<< HEAD
 DROP FUNCTION
 -------------
@@ -25,6 +28,8 @@ DROP FUNCTION
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 DROP FUNCTION
 -------------
 =======
@@ -36,7 +41,10 @@ DROP FUNCTION
 -------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 DROP FUNCTION
@@ -46,15 +54,32 @@ DROP UDF
 --------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 
 .. code:: mysql
 
     DROP FUNCTION FastRCNNObjectDetector;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 
 DROP DATABASE
 -------------
@@ -62,6 +87,7 @@ DROP DATABASE
 .. code:: mysql
 
     DROP DATABASE postgres_db;
+<<<<<<< HEAD
 <<<<<<< HEAD
     DROP DATABASE IF EXISTS postgres_db;
 =======
@@ -105,4 +131,12 @@ DROP DATABASE
     DROP DATABASE postgres_db;
     DROP DATABASE IF EXISTS postgres_db;
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+    DROP DATABASE IF EXISTS postgres_db;
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))

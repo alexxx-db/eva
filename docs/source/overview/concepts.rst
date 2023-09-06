@@ -235,7 +235,11 @@ EvaDB accelerates AI queries using a collection of optimizations inspired by SQL
 AI Functions
 ------------
 
+<<<<<<< HEAD
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
+=======
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 To register an user-defined function, use the ``CREATE FUNCTION`` statement:
 
@@ -283,12 +287,19 @@ After registering ``MnistImageClassifier`` function, you can call the function i
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
     --- Use the 'MnistImageClassifier' function's output to filter frames
     --- This query returns the frame ids of the frames with digit 6
     --- We limit to the first five frames containing digit 6
@@ -296,6 +307,7 @@ After registering ``MnistImageClassifier`` function, you can call the function i
     FROM MnistVideo  
     WHERE MnistImageClassifier(data).label = '6'
     LIMIT 5;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -393,6 +405,8 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 
 AI-Centric Query Optimization
 -----------------------------
@@ -411,6 +425,8 @@ Query optimization has powered SQL database systems for several decades. It is t
 =======
 =======
 =======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
 Save time and money
 ----------------------
 
@@ -469,6 +485,7 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -482,8 +499,20 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 =======
 =======
 =======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
