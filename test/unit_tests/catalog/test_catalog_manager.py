@@ -151,12 +151,17 @@ class CatalogManagerTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
         function_mock.return_value.insert_entry.assert_called_with(
             "function",
             "sample.py",
@@ -175,8 +180,11 @@ class CatalogManagerTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
         function_mock.return_value.insert_entry.assert_called_with(
             "function",
@@ -187,12 +195,17 @@ class CatalogManagerTests(unittest.TestCase):
             function_metadata_list,
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
         )
         checksum_mock.assert_called_with("sample.py")
         self.assertEqual(actual, function_mock.return_value.insert_entry.return_value)

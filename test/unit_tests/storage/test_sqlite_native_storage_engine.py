@@ -41,12 +41,16 @@ class NativeQueryResponse:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -64,6 +68,11 @@ class SQLiteNativeStorageEngineTest(unittest.TestCase):
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
+=======
+class SQLiteNativeStorageEngineTest(unittest.TestCase):
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -105,8 +114,11 @@ class SQLiteNativeStorageEngineTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -116,12 +128,17 @@ class SQLiteNativeStorageEngineTest(unittest.TestCase):
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 class SQLiiteNativeStorageEngineTest(unittest.TestCase):
@@ -129,10 +146,14 @@ class SQLiiteNativeStorageEngineTest(unittest.TestCase):
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -183,6 +204,9 @@ class SQLiteNativeStorageEngineTest(unittest.TestCase):
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 

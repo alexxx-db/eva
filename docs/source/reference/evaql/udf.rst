@@ -61,17 +61,23 @@ SHOW FUNCTIONS
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 
-UDF
-===
+Functions
+=========
 
+<<<<<<< HEAD
 SHOW UDFS
 ---------
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+SHOW FUNCTIONS
+--------------
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 Here is a list of built-in user-defined functions in EvaDB.
 
 .. code:: mysql
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -98,19 +104,28 @@ Here is a list of built-in user-defined functions in EvaDB.
     SHOW FUNCTIONS;
 
     id   name                    impl
+=======
+    SHOW FUNCTIONS;
+
+    id   name                    impl
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     0    FastRCNNObjectDetector  evadb/functions/fastrcnn_object_detector.p
     1    MVITActionRecognition   evadb/functions/mvit_action_recognition.py
     2    ArrayCount              evadb/functions/ndarray/array_count.py
     3    Crop                    evadb/evadb/functions/ndarray/crop.py
+<<<<<<< HEAD
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 
 FastRCNNObjectDetector is a model for detecting objects. MVITActionRecognition is a model for recognizing actions. 
 
 ArrayCount and Crop are utility functions for counting the number of objects in an array and cropping a bounding box from an image, respectively.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -159,6 +174,12 @@ Here is a query that illustrates how to use multiple functions in a single query
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+
+Here is a query that illustrates how to use multiple functions in a single query.
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 .. code:: sql
 

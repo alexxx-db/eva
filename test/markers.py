@@ -36,7 +36,9 @@ from evadb.utils.generic_utils import (
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
     is_chromadb_available,
     is_flaml_automl_available,
@@ -56,10 +58,13 @@ from evadb.utils.generic_utils import (
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -68,12 +73,15 @@ from evadb.utils.generic_utils import (
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     is_chromadb_available,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
     is_chromadb_available,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,6 +116,8 @@ from evadb.utils.generic_utils import (
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
     is_chromadb_available,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -122,6 +132,7 @@ from evadb.utils.generic_utils import (
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -137,6 +148,14 @@ from evadb.utils.generic_utils import (
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     is_forecast_available,
     is_gpu_available,
     is_ludwig_available,
@@ -278,16 +297,22 @@ forecast_skip_marker = pytest.mark.skipif(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 >>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 stable_diffusion_skip_marker = pytest.mark.skipif(
     is_replicate_available() is False, reason="requires replicate"
@@ -296,20 +321,29 @@ stable_diffusion_skip_marker = pytest.mark.skipif(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))

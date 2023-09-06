@@ -845,8 +845,17 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 
 We would love to learn about your AI app. Please complete this 1-minute form: https://v0fbgcue0cm.typeform.com/to/BZHZWeZm
 
+👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by: 
+<ul>
+  <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
+  <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
+  <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
+  <li> 🐦 following us on <a href="https://medium.com/evadb-blog">Medium</a>
+</ul>
+
 ## Quick Links
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -925,13 +934,23 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 =======
 =======
 =======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 - [Quick Links](#quick-links)
 - [Documentation](#documentation)
 - [Why EvaDB](#why-evadb)
@@ -986,6 +1005,7 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 - [Quick Links](#quick-links)
@@ -1078,15 +1098,34 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 =======
+=======
+=======
+- [Quick Links](#quick-links)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 - [Documentation](#documentation)
 - [Why EvaDB](#why-evadb)
 - [How does EvaDB work](#how-does-evadb-work)
-- [Community and Support](#community-and-support)
 - [Illustrative Queries](#illustrative-queries)
 - [Illustrative Apps](#illustrative-apps)
+<<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+- [More Illustrative Queries](#more-illustrative-queries)
+- [Architecture of EvaDB](#architecture-of-evadb)
+- [Community and Support](#community-and-support)
+- [Contributing](#contributing)
+- [Star History](#star-history)
+- [License](#license)
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 ## Documentation
 
@@ -2111,14 +2150,25 @@ TIME_LIMIT 120;
 =======
 
 ```sql
-CREATE UDF IF NOT EXISTS PredictHouseRent FROM
+CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
 ( SELECT * FROM HomeRentals )
 TYPE Ludwig
+<<<<<<< HEAD
 'predict' 'rental_price'
 'time_limit' 120;
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+PREDICT 'rental_price'
+TIME_LIMIT 120;
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 ```
 
 </details>

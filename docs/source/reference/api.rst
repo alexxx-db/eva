@@ -11,12 +11,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -34,6 +38,11 @@ Python API
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
+=======
+Python API
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -75,8 +84,11 @@ Python API
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -86,12 +98,17 @@ Python API
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 Basic API
@@ -99,10 +116,14 @@ Basic API
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -153,6 +174,9 @@ Python API
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 ==========
 
 To begin a querying session in EvaDB, obtain a connection with a cursor using ``connect`` and ``cursor`` functions. After getting the cursor, you can run queries with the ``query`` function in this manner:
@@ -171,12 +195,17 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 0d46eb7c (docs: updated outdated reference to SHOW UDF)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     print(cursor.query("SHOW FUNCTIONS;").df())
 =======
     print(cursor.query("SHOW UDFS;").df())
@@ -184,11 +213,15 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
     print(cursor.query("SHOW FUNCTIONS;").df())
 >>>>>>> aed2d9cf (docs: updated outdated reference to SHOW UDF)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -196,6 +229,8 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
     print(cursor.query("SHOW FUNCTIONS;").df())
 >>>>>>> aed2d9cf (docs: updated outdated reference to SHOW UDF)
 >>>>>>> 0d46eb7c (docs: updated outdated reference to SHOW UDF)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 
 .. autosummary:: 
@@ -318,8 +353,11 @@ EvaDBQuery Interface
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
     ~evadb.EvaDBCursor.df
 
@@ -420,12 +458,18 @@ EvaDBQuery Interface
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     ~evadb.EvaDBCursor.df
 
 .. warning::
@@ -434,6 +478,7 @@ EvaDBQuery Interface
 
     ``cursor.query("...")`` only construct the query and not run the query. ``cursor.query("...").df()`` will both construct and run the query.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -530,3 +575,8 @@ EvaDBQuery Interface
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))

@@ -7,8 +7,11 @@ Concepts
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d8799826 (docs: updates)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 EvaDB is designed around three key concepts: 
 =======
 Here is a list of key concepts in EvaDB. If you have any questions, ask the community on `Slack <https://evadb.ai/community>`__.
@@ -16,10 +19,14 @@ Here is a list of key concepts in EvaDB. If you have any questions, ask the comm
 EvaDB is designed around three key concepts: 
 >>>>>>> 9cc72b7b (docs: updates)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 EvaDB is designed around three key concepts: 
 =======
 Here is a list of key concepts in EvaDB. If you have any questions, ask the community on `Slack <https://evadb.ai/community>`__.
+<<<<<<< HEAD
 =======
 EvaDB is designed around three key concepts: 
 =======
@@ -27,11 +34,30 @@ Here is a list of key concepts in EvaDB. If you have any questions, ask the comm
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> d8799826 (docs: updates)
+=======
+
+EvaQL: AI-Centric Query Language
+--------------------------------
+
+EvaDB supports a SQL-like query language, called ``EvaQL``, designed to assist software developers in bringing AI into their applications.
+
+Here is set of illustrative EvaQL queries for a ChatGPT-based video question answering app. This EvaDB app connects to collection of news videos stored in a folder and runs an AI query for extracting audio transcripts from the videos using a Hugging Face model, followed by another AI query for question answering using ChatGPT.
+
+.. code-block::sql
+
+    --- Load a collection of news videos into the 'news_videos' table
+    --- This command returns a Pandas Dataframe with the query's output
+    --- In this case, the output indicates the number of loaded videos
+    LOAD VIDEO 'news_videos/*.mp4' INTO VIDEOS;
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 (1) AI Queries
 (2) AI Functions
 (3) AI-Centric Query Optimization
 
+<<<<<<< HEAD
 .. note::
 
     Have a question or want to give feedback? Join us on `Slack <https://evadb.ai/community>`__!
@@ -237,11 +263,17 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
     --- The function's implementation is in the 'mnist_image_classifier.py' file
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9cc72b7b (docs: updates)
 =======
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 9cc72b7b (docs: updates)
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     --- Define an AI function that wraps around a speech-to-text model 
     --- This model is hosted on Hugging Face which has built-in support in EvaDB
     --- After creating the function, we can use the function in any future query
@@ -260,6 +292,7 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
     --- This query is based on the 'transcripts' table 
     --- The 'transcripts' table has a column called 'text' with the transcript text
     --- Since ChatGPT is a built-in function in EvaDB, we don't have to define it
+<<<<<<< HEAD
     --- We can directly use ChatGPT() in any query
     --- We will only need to set the OPENAI_KEY as an environment variable
     SELECT ChatGPT('Is this video summary related to Ukraine russia war', text) 
@@ -268,10 +301,26 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
 By reducing the complexity of the AI app to a few short, simple queries, EvaDB helps in writing **more maintainable, extensible, and scalable** AI apps. 
 
 You can build on top of AI queries written by other developers. You can **chain together** multiple AI models in a single query to accomplish complicated tasks with minimal programming.
+=======
+    --- We can directly use it in any query
+    --- We need to set the OPENAI_KEY as an environment variable
+    SELECT ChatGPT('Is this video summary related to Ukraine russia war', text) 
+        FROM TEXT_SUMMARY;
+
+EvaQL reduces the complexity of the app, leading to more maintainable code that allows developers to build on top of each other's queries. A single AI query can use multiple AI models to accomplish complicated tasks with minimal programming.
+
+AI-Centric Query Optimization 
+-----------------------------
+
+EvaDB optimizes the AI queries to save money spent on running models and reduce query execution time. It contains a novel `Cascades-style extensible query optimizer <https://www.cse.iitb.ac.in/infolab/Data/Courses/CS632/Papers/Cascades-graefe.pdf>`__  tailored for AI queries. Query optimization has powered traditional SQL database systems for several decades. It is the bridge that connects the declarative query language to efficient query execution on hardware.
+
+EvaDB accelerates AI queries using a collection of optimizations inspired by SQL database systems including cost-based function predicate reordering, function caching, sampling, etc.
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 AI Functions
 ------------
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -328,10 +377,16 @@ In EvaDB, ``functions`` are typically thin wrappers around AI models and are ext
 Here is an `illustrative AI function for classifying the digit in MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
 
 To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-function>` statement:
+=======
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
+
+To register an user-defined function, use the ``CREATE FUNCTION`` statement:
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 .. code-block:: sql
 
     --- Create an MNIST image classifier function
+<<<<<<< HEAD
 <<<<<<< HEAD
     --- The function's implementation code is in 'mnist_image_classifier.py'
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -345,6 +400,11 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
     --- The function's implementation is in the 'mnist_image_classifier.py' file
 >>>>>>> 9cc72b7b (docs: updates)
 >>>>>>> d8799826 (docs: updates)
+=======
+    --- The function's implementation code is in 'mnist_image_classifier.py'
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     CREATE FUNCTION MnistImageClassifier
         IMPL 'mnist_image_classifier.py'
 
@@ -357,12 +417,17 @@ After registering ``MnistImageClassifier`` function, you can call the function i
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> d8799826 (docs: updates)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     --- Get the output of 'MnistImageClassifier' on the 30th video frame (id=30)
 =======
     --- Get the output of 'MnistImageClassifier' on frame id 30
@@ -370,11 +435,15 @@ After registering ``MnistImageClassifier`` function, you can call the function i
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
     --- Get the output of 'MnistImageClassifier' on the 30th video frame (id=30)
 >>>>>>> 9cc72b7b (docs: updates)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -382,6 +451,8 @@ After registering ``MnistImageClassifier`` function, you can call the function i
     --- Get the output of 'MnistImageClassifier' on the 30th video frame (id=30)
 >>>>>>> 9cc72b7b (docs: updates)
 >>>>>>> d8799826 (docs: updates)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     --- This query returns the results of the image classification function
     --- In this case, it is the digit in the 30th frame in the video
     SELECT data, id, MnistImageClassifier(data).label 
@@ -426,6 +497,7 @@ After registering ``MnistImageClassifier`` function, you can call the function i
     FROM MnistVideo  
     WHERE MnistImageClassifier(data).label = '6'
     LIMIT 5;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -532,6 +604,7 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 >>>>>>> eva-master
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
@@ -544,6 +617,10 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> d8799826 (docs: updates)
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 AI-Centric Query Optimization
 -----------------------------
@@ -710,6 +787,17 @@ Query optimization has powered SQL database systems for several decades. It is t
     query2 = query2.select("data, MnistImageClassifier(data).label")
     response = query2.df()
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))

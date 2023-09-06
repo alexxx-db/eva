@@ -189,12 +189,17 @@ EvaQL supports the ``ORDER BY`` and ``LIMIT`` clauses to retrieve the ``top-k`` 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
 
 EvaDB's query optimizer automatically picks the correct vector index to accelerate a given EvaQL query. It uses the vector index created in the prior step to accelerate the following image search query:
@@ -214,11 +219,15 @@ EvaDB contains a built-in ``Similarity(x, y)`` function that computets the Eucli
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -226,6 +235,8 @@ EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclid
 EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
 >>>>>>> 5b27053e (ran spellchecker)
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 EvaDB's query optimizer automatically picks the correct vector index to accelerate a given EvaQL query. It uses the vector index created in the prior step to accelerate the following image search query:
 
@@ -306,12 +317,17 @@ This query returns the top-5 most similar images in a ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 .. include:: ../shared/footer.rst
 
 .. include:: ../shared/designs/design8.rst
@@ -321,13 +337,17 @@ This query returns the top-5 most similar images in a ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 .. include:: ../shared/footer.rst
 
 .. include:: ../shared/designs/design8.rst
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -335,3 +355,7 @@ This query returns the top-5 most similar images in a ``DataFrame``:
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))

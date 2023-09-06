@@ -278,6 +278,7 @@ class CreateIndexExecutor(AbstractExecutor):
         # Get feature tables.
         feat_tb_catalog_entry = self.table_ref.table.table_obj
 
+<<<<<<< HEAD
         # Get feature column.
         feat_col_name = self.col_list[0].name
         feat_col_catalog_entry = [
@@ -308,6 +309,21 @@ class CreateIndexExecutor(AbstractExecutor):
                             self.vector_store_type, index_path
                         ),
                     )
+=======
+            # Add features to index.
+            # TODO: batch size is hardcoded for now.
+            input_dim = -1
+            storage_engine = StorageEngine.factory(self.db, feat_catalog_entry)
+            for input_batch in storage_engine.read(feat_catalog_entry):
+                if self.node.function:
+                    # Create index through function expression.
+                    # Function(input column) -> 2 dimension feature vector.
+                    input_batch.modify_column_alias(feat_catalog_entry.name.lower())
+                    feat_batch = self.node.function.evaluate(input_batch)
+                    feat_batch.drop_column_alias()
+                    input_batch.drop_column_alias()
+                    feat = feat_batch.column_as_numpy_array("features")
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
                 else:
                     # Skip index update if CREATE INDEX runs on a different index.
                     logger.warn(msg)
@@ -723,16 +739,22 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
 >>>>>>> a590a82c (feat: insertion update index (#1246))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
             if index_catalog_entry is None:
                 self.catalog().insert_index_catalog_entry(
                     self.name,
@@ -746,8 +768,11 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a590a82c (feat: insertion update index (#1246))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
             self.catalog().insert_index_catalog_entry(
                 self.node.name,
@@ -763,10 +788,14 @@ class CreateIndexExecutor(AbstractExecutor):
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 =======
             self.catalog().insert_index_catalog_entry(
                 self.node.name,
+<<<<<<< HEAD
                 index_path,
                 self.node.vector_store_type,
                 feat_column,
@@ -793,6 +822,15 @@ class CreateIndexExecutor(AbstractExecutor):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> a590a82c (feat: insertion update index (#1246))
+=======
+                self.index_path,
+                self.node.vector_store_type,
+                feat_column,
+                self.node.function.signature() if self.node.function else None,
+            )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
         except Exception as e:
             # Delete index.
             if index:

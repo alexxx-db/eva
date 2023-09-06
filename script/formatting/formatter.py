@@ -466,12 +466,17 @@ if __name__ == "__main__":
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
         subprocess.check_output(""" codespell "evadb/*.py" """, 
                 shell=True, 
                 universal_newlines=True)
@@ -493,6 +498,9 @@ if __name__ == "__main__":
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
         subprocess.check_output(""" codespell "evadb/*.py" """, 
 >>>>>>> 5b27053e (ran spellchecker)
@@ -517,6 +525,7 @@ if __name__ == "__main__":
         subprocess.check_output(""" codespell "evadb/*.md" """, 
 >>>>>>> 5b27053e (ran spellchecker)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -551,6 +560,25 @@ if __name__ == "__main__":
         subprocess.check_output(""" codespell "evadb/*.md" """, 
 >>>>>>> 5b27053e (ran spellchecker)
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell 'evadb/*/*.py'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell 'docs/source/*/*.rst'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell 'docs/source/*.rst'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell '*.md'", 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output("codespell 'evadb/*.md'", 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
                 shell=True, 
                 universal_newlines=True)
 

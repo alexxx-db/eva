@@ -157,6 +157,7 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
 .. include:: ../shared/nlp.rst
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/footer.rst
 <<<<<<< HEAD
 =======
@@ -245,6 +246,9 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 >>>>>>> ad7bb302 (docs: updates)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 >>>>>>> 572f347e (docs: updates)
 =======
 =======
@@ -252,6 +256,7 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 =======
 Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`__ for working example.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -308,3 +313,7 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 =======
 >>>>>>> 572f347e (docs: updates)
 >>>>>>> 899a029b (docs: updates)
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))

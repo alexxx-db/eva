@@ -196,19 +196,24 @@ To register an user-defined function, specify the implementation details of the 
 <<<<<<< HEAD
 =======
 
-CREATE UDF
-----------
+CREATE FUNCTION
+---------------
 
-To register an user-defined function, specify the implementation details of the UDF.
+To register an user-defined function, specify the implementation details of the function.
 
 .. code-block:: sql
 
+<<<<<<< HEAD
     CREATE UDF IF NOT EXISTS FastRCNNObjectDetector
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+    CREATE FUNCTION IF NOT EXISTS FastRCNNObjectDetector
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
     INPUT  (frame NDARRAY UINT8(3, ANYDIM, ANYDIM))
     OUTPUT (labels NDARRAY STR(ANYDIM), bboxes NDARRAY FLOAT32(ANYDIM, 4),
             scores NDARRAY FLOAT32(ANYDIM))
     TYPE  Classification
+<<<<<<< HEAD
 <<<<<<< HEAD
     IMPL  'evadb/functions/fastrcnn_object_detector.py';
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
@@ -571,23 +576,32 @@ Where the `parameter` is ``key value`` pair.
 =======
 =======
     IMPL  'evadb/udfs/fastrcnn_object_detector.py';
+=======
+    IMPL  'evadb/functions/fastrcnn_object_detector.py';
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 
 .. _create-udf-train:
 
-CREATE UDF via Training
------------------------
+CREATE FUNCTION via Training
+----------------------------
 
 To register an user-defined function by training a predication model.
 
 .. code-block:: sql
 
-   CREATE UDF IF NOT EXISTS PredictHouseRent FROM
+   CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
    (SELECT * FROM HomeRentals)
    TYPE Ludwig
+<<<<<<< HEAD
    'predict' 'rental_price'
    'time_list' 120;
    'tune_for_memory' False;
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+   PREDICT 'rental_price'
+   TIME_LIST 120;
+   TUNE_FOR_MEMORY False;
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 CREATE MATERIALIZED VIEW
 ------------------------

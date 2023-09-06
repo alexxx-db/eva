@@ -212,6 +212,7 @@ class IndexCatalogEntry:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -220,6 +221,8 @@ class IndexCatalogEntry:
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     index_def: str = None
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -238,6 +241,7 @@ class IndexCatalogEntry:
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -257,6 +261,8 @@ class IndexCatalogEntry:
     index_def: str = None
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
     feat_column: ColumnCatalogEntry = None
 
 

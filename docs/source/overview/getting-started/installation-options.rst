@@ -195,6 +195,7 @@ This installation option enables more efficient query execution on CPUs and GPUs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tuning AI models.
 
 * ``pip install evadb[forecasting]`` for installing the statsforecast forecasting framework. It enables use-cases related to time series forecasting.
@@ -299,6 +300,9 @@ This installation option enables more efficient query execution on CPUs and GPUs
 >>>>>>> 87857fed (docs: updates)
 =======
 * ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tunining AI models.
+=======
+* ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tuning AI models.
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 
 * ``pip install evadb[ray]`` for installing the Ray compute engine. It enables EvaDB to do more efficient query execution on CPUs and GPUs.
 
