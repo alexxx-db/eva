@@ -10,12 +10,15 @@ SHOW
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 SHOW FUNCTIONS
 --------------
 =======
@@ -25,12 +28,16 @@ SHOW UDFS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 =======
 SHOW FUNCTIONS
 --------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 SHOW UDFS
@@ -54,6 +61,8 @@ SHOW FUNCTIONS
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 
 List the registered user-defined functions
 

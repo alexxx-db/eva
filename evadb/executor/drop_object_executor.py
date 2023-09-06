@@ -48,8 +48,11 @@ class DropObjectExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 =======
@@ -117,15 +120,24 @@ class DropObjectExecutor(AbstractExecutor):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 
         elif self.node.object_type == ObjectType.DATABASE:
             yield self._handle_drop_database(self.node.name, self.node.if_exists)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 
         elif self.node.object_type == ObjectType.DATABASE:
             yield self._handle_drop_database(self.node.name, self.node.if_exists)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     def _handle_drop_table(self, table_name: str, if_exists: bool):
         if not self.catalog().check_table_exists(table_name):

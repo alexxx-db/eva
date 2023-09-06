@@ -197,6 +197,7 @@ To register an user-defined function, specify the implementation details of the 
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 CREATE INDEX
 ------------
 =======
@@ -240,6 +241,11 @@ You can check out :ref:`similarity search use case<image-search>` about how to u
 CREATE FUNCTION
 ---------------
 
+=======
+CREATE FUNCTION
+---------------
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 To register an user-defined function, specify the implementation details of the function.
 
 .. code-block:: sql
@@ -441,8 +447,11 @@ CREATE FUNCTION via Type
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 >>>>>>> 5b27053e (ran spellchecker)
@@ -538,6 +547,7 @@ CREATE FUNCTION via Type
 
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
@@ -552,6 +562,8 @@ CREATE FUNCTION via Type
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
    CREATE [OR REPALCE] FUNCTION [IF NOT EXISTS] function_name
    [ FROM ( select ) ]
    TYPE function_type
@@ -569,10 +581,13 @@ Where the `parameter` is ``key value`` pair.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 =======
    CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
    (SELECT * FROM HomeRentals)
@@ -581,6 +596,7 @@ Where the `parameter` is ``key value`` pair.
    TIME_LIST 120;
    TUNE_FOR_MEMORY False;
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -684,6 +700,8 @@ Where the `parameter` is ``key value`` pair.
 
    Go over :ref:`hf`, :ref:`ludwig`, and :ref:`forecast` to check examples for creating function via type.
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 
 CREATE MATERIALIZED VIEW
 ------------------------

@@ -82,6 +82,7 @@ Search for frames containing greater than 3 cars
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -89,6 +90,8 @@ Search for frames containing greater than 3 cars
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 <<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
@@ -128,10 +131,15 @@ SELECT TUPLES WITH MULTIPLE PREDICATES
 --------------------------------------
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 SELECT TUPLES WITH MULTIPLE PREDICATES
 --------------------------------------
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
@@ -283,6 +291,8 @@ SELECT TUPLES WITH MULTIPLE PREDICATES
 --------------------------------------
 =======
 =======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
@@ -290,6 +300,7 @@ SELECT WITH MULTIPLE FUNCTIONS
 SELECT WITH MULTIPLE UDFS
 -------------------------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -314,8 +325,23 @@ SELECT WITH MULTIPLE FUNCTIONS
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+=======
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 
 Compose multiple user-defined functions in a single query to construct semantically complex queries.
 

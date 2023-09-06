@@ -622,6 +622,7 @@ def is_forecast_available() -> bool:
         return False
 
 
+<<<<<<< HEAD
 def try_to_import_sklearn():
     try:
         import sklearn  # noqa: F401
@@ -849,8 +850,11 @@ def is_xgboost_available() -> bool:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -860,6 +864,9 @@ def is_xgboost_available() -> bool:
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 =======
@@ -867,6 +874,7 @@ def is_xgboost_available() -> bool:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -874,6 +882,8 @@ def is_xgboost_available() -> bool:
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 >>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
 ##############################
 ## VISION
 ##############################
