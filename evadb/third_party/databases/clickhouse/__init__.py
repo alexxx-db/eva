@@ -12,4 +12,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+<<<<<<<< HEAD:evadb/third_party/databases/clickhouse/__init__.py
 """Clickhouse integrations"""
+========
+"""user defined test functions operating on ndarrays functions"""
+>>>>>>>> 2dacff69 (feat: sync master staging (#1050)):test/integration_tests/long/functions/ndarray/__init__.py

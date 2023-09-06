@@ -93,8 +93,12 @@ def load_function_class_from_file(filepath, classname=None):
         err_msg = f"FileNotFoundError : Couldn't load function from {filepath} : {str(e)}. This might be because the function implementation file does not exist. Please ensure the file exists at {abs_path}"
         raise FileNotFoundError(err_msg)
     except Exception as e:
+<<<<<<< HEAD
         # Default exception, we don't know what exactly went wrong so we just output the error message
         err_msg = f"Couldn't load function from {filepath} : {str(e)}."
+=======
+        err_msg = f"Couldn't load function from {filepath} : {str(e)}. This might be due to a missing Python package, or because the function implementation file does not exist, or it is not a valid Python file."
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         raise RuntimeError(err_msg)
 
     # Try to load the specified class by name
@@ -108,7 +112,11 @@ def load_function_class_from_file(filepath, classname=None):
         if obj.__module__ == module.__name__
     ]
     if len(classes) != 1:
+<<<<<<< HEAD
         raise ImportError(
+=======
+        raise RuntimeError(
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             f"{filepath} contains {len(classes)} classes, please specify the correct class to load by naming the function with the same name in the CREATE query."
         )
     return classes[0]
@@ -303,7 +311,11 @@ def try_to_import_ray():
         )
 
 
+<<<<<<< HEAD
 def try_to_import_statsforecast():
+=======
+def try_to_import_forecast():
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
@@ -313,6 +325,7 @@ def try_to_import_statsforecast():
         )
 
 
+<<<<<<< HEAD
 def try_to_import_neuralforecast():
     try:
         from neuralforecast import NeuralForecast  # noqa: F401
@@ -323,6 +336,8 @@ def try_to_import_neuralforecast():
         )
 
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 def is_ray_available() -> bool:
     try:
         try_to_import_ray()
@@ -362,6 +377,7 @@ def is_ludwig_available() -> bool:
 
 def is_forecast_available() -> bool:
     try:
+<<<<<<< HEAD
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
         return True
@@ -383,6 +399,9 @@ def try_to_import_flaml_automl():
 def is_flaml_automl_available() -> bool:
     try:
         try_to_import_flaml_automl()
+=======
+        try_to_import_forecast()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         return True
     except ValueError:  # noqa: E722
         return False

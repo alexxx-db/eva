@@ -18,7 +18,10 @@ from typing import TYPE_CHECKING
 
 from evadb.catalog.catalog_type import TableType, VectorStoreType
 from evadb.catalog.catalog_utils import is_video_table
+<<<<<<< HEAD
 from evadb.catalog.models.utils import IndexCatalogEntry
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.constants import CACHEABLE_FUNCTIONS
 from evadb.executor.execution_context import Context
 from evadb.expression.expression_utils import (
@@ -571,6 +574,7 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 
         # Get column catalog entry and function_signature.
         column_catalog_entry = tv_expr.col_object
+<<<<<<< HEAD
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -594,6 +598,19 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
                 save_file_path="",
                 type=VectorStoreType.PGVECTOR,
                 feat_column=column_catalog_entry,
+=======
+        function_signature = (
+            None
+            if isinstance(base_func_expr, TupleValueExpression)
+            else base_func_expr.signature()
+        )
+
+        # Get index catalog. Check if an index exists for matching
+        # function signature and table columns.
+        index_catalog_entry = (
+            catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+                column_catalog_entry, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             )
 
         # Construct the Vector index scan plan.
@@ -832,8 +849,12 @@ class LogicalCreateIndexToVectorIndex(Rule):
             before.table_ref,
             before.col_list,
             before.vector_store_type,
+<<<<<<< HEAD
             before.project_expr_list,
             before.index_def,
+=======
+            before.function,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
         child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
 

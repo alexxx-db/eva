@@ -24,6 +24,10 @@ from evadb.catalog.catalog_type import (
     VideoColumnName,
 )
 from evadb.catalog.catalog_utils import (
+<<<<<<< HEAD
+=======
+    cleanup_storage,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     construct_function_cache_catalog_entry,
     get_document_table_column_definitions,
     get_image_table_column_definitions,
@@ -48,9 +52,12 @@ from evadb.catalog.models.utils import (
     truncate_catalog_tables,
 )
 from evadb.catalog.services.column_catalog_service import ColumnCatalogService
+<<<<<<< HEAD
 from evadb.catalog.services.configuration_catalog_service import (
     ConfigurationCatalogService,
 )
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.catalog.services.database_catalog_service import DatabaseCatalogService
 from evadb.catalog.services.function_cache_catalog_service import (
     FunctionCacheCatalogService,
@@ -64,8 +71,11 @@ from evadb.catalog.services.function_metadata_catalog_service import (
     FunctionMetadataCatalogService,
 )
 from evadb.catalog.services.index_catalog_service import IndexCatalogService
+<<<<<<< HEAD
 from evadb.catalog.services.job_catalog_service import JobCatalogService
 from evadb.catalog.services.job_history_catalog_service import JobHistoryCatalogService
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.catalog.services.table_catalog_service import TableCatalogService
 from evadb.catalog.sql_config import IDENTIFIER_COLUMN, SQLConfig
 from evadb.expression.function_expression import FunctionExpression
@@ -494,6 +504,7 @@ class CatalogManager(object):
 
         checksum = get_file_checksum(impl_file_path)
         function_entry = self._function_service.insert_entry(
+<<<<<<< HEAD
             name,
             impl_file_path,
             type,
@@ -501,6 +512,16 @@ class CatalogManager(object):
             function_io_list,
             function_metadata_list,
         )
+=======
+            name, impl_file_path, type, checksum
+        )
+        for function_io in function_io_list:
+            function_io.function_id = function_entry.row_id
+        self._function_io_service.insert_entries(function_io_list)
+        for function_metadata in function_metadata_list:
+            function_metadata.function_id = function_entry.row_id
+        self._function_metadata_service.insert_entries(function_metadata_list)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         return function_entry
 
     def get_function_catalog_entry_by_name(self, name: str) -> FunctionCatalogEntry:
@@ -567,6 +588,7 @@ class CatalogManager(object):
         vector_store_type: VectorStoreType,
         feat_column: ColumnCatalogEntry,
         function_signature: str,
+<<<<<<< HEAD
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
@@ -576,6 +598,11 @@ class CatalogManager(object):
             feat_column,
             function_signature,
             index_def,
+=======
+    ) -> IndexCatalogEntry:
+        index_catalog_entry = self._index_service.insert_entry(
+            name, save_file_path, vector_store_type, feat_column, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
         return index_catalog_entry
 
@@ -598,7 +625,11 @@ class CatalogManager(object):
     """ Function Cache related"""
 
     def insert_function_cache_catalog_entry(self, func_expr: FunctionExpression):
+<<<<<<< HEAD
         cache_dir = self.get_configuration_catalog_value("cache_dir")
+=======
+        cache_dir = self._config.get_value("storage", "cache_dir")
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         entry = construct_function_cache_catalog_entry(func_expr, cache_dir=cache_dir)
         return self._function_cache_service.insert_entry(entry)
 

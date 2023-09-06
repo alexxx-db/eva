@@ -43,6 +43,18 @@ class ApplyAndMergeExecutor(AbstractExecutor):
         for batch in child_executor.exec(**kwargs):
             func_result = self.func_expr.evaluate(batch)
 
+<<<<<<< HEAD
+=======
+            # persist stats of function expression
+            if self.func_expr.function_obj and self.func_expr._stats:
+                function_id = self.func_expr.function_obj.row_id
+                self.catalog().upsert_function_cost_catalog_entry(
+                    function_id,
+                    self.func_expr.function_obj.name,
+                    self.func_expr._stats.prev_cost,
+                )
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             output = Batch.merge_column_wise([batch, func_result])
             if self.do_unnest:
                 output.unnest(func_result.columns)

@@ -59,6 +59,7 @@ class DropObject:
                     if_exists = True
 
         return DropObjectStatement(ObjectType.FUNCTION, function_name, if_exists)
+<<<<<<< HEAD
 
     # Drop Database
     def drop_database(self, tree):
@@ -87,3 +88,5 @@ class DropObject:
                     job_name = self.visit(child)
 
         return DropObjectStatement(ObjectType.JOB, job_name, if_exists)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

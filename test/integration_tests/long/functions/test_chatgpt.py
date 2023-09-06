@@ -60,7 +60,11 @@ class ChatGPTTest(unittest.TestCase):
 
     @chatgpt_skip_marker
     def test_openai_chat_completion_function(self):
+<<<<<<< HEAD
         function_name = "ChatGPT"
+=======
+        function_name = "OpenAIChatCompletion"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         execute_query_fetch_all(self.evadb, f"DROP FUNCTION IF EXISTS {function_name};")
 
         create_function_query = f"""CREATE FUNCTION IF NOT EXISTS{function_name}

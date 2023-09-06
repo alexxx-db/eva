@@ -167,6 +167,7 @@ class FunctionExecutorTest(unittest.TestCase):
         )
         self.assertEqual(actual, expected)
 
+<<<<<<< HEAD
     def test_create_or_replace(self):
         function_name = "DummyObjectDetector"
         execute_query_fetch_all(self.evadb, f"DROP FUNCTION IF EXISTS {function_name};")
@@ -191,6 +192,8 @@ class FunctionExecutorTest(unittest.TestCase):
         expected = Batch(pd.DataFrame([f"Function {function_name} overwritten."]))
         self.assertEqual(actual, expected)
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     def test_should_create_function_with_metadata(self):
         function_name = "DummyObjectDetector"
         execute_query_fetch_all(self.evadb, f"DROP FUNCTION {function_name};")
@@ -199,11 +202,16 @@ class FunctionExecutorTest(unittest.TestCase):
                   OUTPUT (label NDARRAY STR(10))
                   TYPE  Classification
                   IMPL  'test/util.py'
+<<<<<<< HEAD
                   CACHE TRUE
                   BATCH FALSE
                   INT_VAL 1
                   FLOAT_VAL 1.5
                   STR_VAL "gg";
+=======
+                  CACHE 'TRUE'
+                  BATCH 'FALSE';
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         """
         execute_query_fetch_all(self.evadb, create_function_query.format(function_name))
 
@@ -211,6 +219,7 @@ class FunctionExecutorTest(unittest.TestCase):
         entries = self.evadb.catalog().get_function_metadata_entries_by_function_name(
             function_name
         )
+<<<<<<< HEAD
         self.assertEqual(len(entries), 5)
         metadata = [(entry.key, entry.value) for entry in entries]
 
@@ -222,6 +231,13 @@ class FunctionExecutorTest(unittest.TestCase):
             ("float_val", 1.5),
             ("str_val", "gg"),
         ]
+=======
+        self.assertEqual(len(entries), 2)
+        metadata = [(entry.key, entry.value) for entry in entries]
+
+        # metadata ultimately stored as lowercase string literals in metadata
+        expected_metadata = [("cache", "TRUE"), ("batch", "FALSE")]
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         self.assertEqual(set(metadata), set(expected_metadata))
 
     def test_should_return_empty_metadata_list_for_missing_function(self):
@@ -318,7 +334,11 @@ class FunctionExecutorTest(unittest.TestCase):
                 "SELECT id,DummyObjectDetector(data) FROM MyVideo ORDER BY id;"
             )
 
+<<<<<<< HEAD
             # disabling warning for function modification for now
+=======
+            # disabling warning for function modificiation for now
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             # with self.assertRaises(AssertionError):
             execute_query_fetch_all(self.evadb, select_query)
 

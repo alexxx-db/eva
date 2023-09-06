@@ -51,6 +51,7 @@ class ModulePathTest(unittest.TestCase):
         assert vl.__qualname__ == DecordReader.__qualname__
 
     def test_should_raise_on_missing_file(self):
+<<<<<<< HEAD
         # Asserting on the error message, but that's brittle
         with self.assertRaises(FileNotFoundError):
             load_function_class_from_file("evadb/readers/opencv_reader_abdfdsfds.py")
@@ -63,6 +64,10 @@ class ModulePathTest(unittest.TestCase):
 
         # Cleanup
         Path("/tmp/empty_file.py").unlink()
+=======
+        with self.assertRaises(RuntimeError):
+            load_function_class_from_file("evadb/readers/opencv_reader_abdfdsfds.py")
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     def test_should_raise_if_class_does_not_exists(self):
         with self.assertRaises(ImportError):

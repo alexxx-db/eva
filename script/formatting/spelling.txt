@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1845 
 =======
 personal_ws-1.1 en 1467 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+personal_ws-1.1 en 1563 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ABCD
 ABCMeta
 ANYDIM
@@ -39,11 +43,14 @@ AbstractUDF
 AbstractUDFTest
 AggregationExpression
 AggregationExpressionsTest
+<<<<<<< HEAD
 AirData
 AirDataPanel
 AirForecast
 AirPanelForecast
 AirPassengersPanel
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 AliExpress
 Anirudh
 AnnotateTests
@@ -145,10 +152,13 @@ CommandHandlerTests
 CommonClauses
 ComparisonExpression
 ComparisonExpressionsTest
+<<<<<<< HEAD
 Concats
 ConfigurationCatalog
 ConfigurationCatalogEntry
 ConfigurationCatalogService
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ConfigurationFileTests
 ConfigurationManager
 ConfigurationManager's
@@ -163,11 +173,14 @@ CreateDatabaseStatement
 CreateDatabaseTest
 CreateExecutor
 CreateFromSelectPlan
+<<<<<<< HEAD
 CreateFunctionExecutor
 CreateFunctionExecutorTest
 CreateFunctionPlan
 CreateFunctionStatement
 CreateIndex
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 CreateIndexExecutor
 CreateIndexPlan
 CreateIndexStatement
@@ -225,7 +238,10 @@ DeleteExecutorTest
 DeletePlan
 DeleteTableStatement
 DemoDB
+<<<<<<< HEAD
 DemoFunc
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 DemoTable
 DemoUDF
 Deserialize
@@ -372,11 +388,14 @@ GaussianBlur
 GaussianBlurTests
 GenericHuggingfaceModel
 GenericLudwigModel
+<<<<<<< HEAD
 GenericSklearnModel
 GenericUtilsTests
 GenericXGBoostModel
 GithubDataSourceTest
 GithubHandler
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 GroupBy
 GroupByExecutor
 GroupByPlan
@@ -428,7 +447,10 @@ ImageColumnName
 ImageDownloadUDF
 ImageDraw
 ImageFeatureExtractor
+<<<<<<< HEAD
 ImageGen
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ImageHFModel
 ImageStorageEngine
 ImportError
@@ -565,7 +587,10 @@ LogicalVectorIndexScan
 LogicalVectorIndexScanToPhysical
 LordDarkula
 LudwigModel
+<<<<<<< HEAD
 MILVUS
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 MLP
 MNIST
 MNISTVid
@@ -606,7 +631,10 @@ MyMeta
 MyPDF
 MyPDFs
 MySQLNativeStorageEngineTest
+<<<<<<< HEAD
 MyTable
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 MyTextCSV
 MyUDF
 MyVideo
@@ -614,11 +642,15 @@ MyVideoCSV
 MyVideos
 MydbHandler
 <<<<<<< HEAD
+<<<<<<< HEAD
 MysqlHandler
 NBEATS
 NCHAR
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+MysqlHandler
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 NEQ
 NHITS
 NLP
@@ -805,10 +837,15 @@ SampleExecutor
 SampleExecutorTest
 SamplePlan
 <<<<<<< HEAD
+<<<<<<< HEAD
 SampleTable
 SampleVideoTable
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+SampleTable
+SampleVideoTable
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 Scalability
 ScanPlan
 SchemaUtils
@@ -909,14 +946,20 @@ TestSuite
 TestTable
 TestTextHFModel
 TestUDF
+<<<<<<< HEAD
 TextClassifier
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 TextFilterKeyword
 TextFilteringTests
 TextHFModel
 TextLoader
 TextPickleType
 TextProcessing
+<<<<<<< HEAD
 TextSummarizer
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 TextTestRunner
 TimeoutError
 TimerTests
@@ -1282,9 +1325,13 @@ exog
 expr
 expresssion
 exprs
+<<<<<<< HEAD
 extname
 extractOne
 extrator
+=======
+extractOne
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 f'LOAD
 facebook
 facedetector
@@ -1302,9 +1349,13 @@ featCol
 featureextractor
 feedstock
 <<<<<<< HEAD
+<<<<<<< HEAD
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+fetchall
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ffill
 ffmpeg
 fileFormat
@@ -1343,7 +1394,10 @@ gaurav
 gaussianBlur
 gb
 gc
+<<<<<<< HEAD
 gcp
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 gdp
 georgia
 geq
@@ -1432,7 +1486,10 @@ integrations
 intergration
 intp
 invaid
+<<<<<<< HEAD
 inviter
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 io
 ipynb
 iq
@@ -1596,7 +1653,10 @@ plangenerator
 pluggable
 png
 poolclass
+<<<<<<< HEAD
 popitem
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 popleft
 pos
 posix
@@ -1628,7 +1688,10 @@ ptype
 pushdown
 px
 py
+<<<<<<< HEAD
 pymilvus
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 pymupdfs
 pypi
 pypirc
@@ -1712,10 +1775,14 @@ singledispatch
 singledispatchmethod
 sk
 <<<<<<< HEAD
+<<<<<<< HEAD
 sklearn
 smallint
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+smallint
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 smi
 softmax
 spacy
@@ -1799,7 +1866,10 @@ textsummarizer
 th
 thefuzz
 timm
+<<<<<<< HEAD
 tinyint
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 tmp
 toGrayscale
 toc
@@ -1845,7 +1915,10 @@ url
 urllib
 urlparse
 urls
+<<<<<<< HEAD
 usecase
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 usecases
 usecols
 utf

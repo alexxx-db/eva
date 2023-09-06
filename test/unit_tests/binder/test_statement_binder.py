@@ -184,7 +184,11 @@ class StatementBinderTests(unittest.TestCase):
                 call2.args[0], TupleValueExpression(name=tvp2[1], table_alias=tvp2[0])
             )
 
+<<<<<<< HEAD
     @patch("evadb.binder.function_expression_binder.load_function_class_from_file")
+=======
+    @patch("evadb.binder.statement_binder.load_function_class_from_file")
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     def test_bind_func_expr(self, mock_load_function_class_from_file):
         # setup
         func_expr = MagicMock(
@@ -333,6 +337,7 @@ class StatementBinderTests(unittest.TestCase):
             with self.assertRaises(AssertionError):
                 binder._bind_create_index_statement(create_index_statement)
 
+<<<<<<< HEAD
             col_def = MagicMock()
             col_def.name = "a"
             create_index_statement.col_list = [col_def]
@@ -349,6 +354,12 @@ class StatementBinderTests(unittest.TestCase):
                 FunctionExpression(MagicMock(), name="a"),
                 TupleValueExpression(name="*"),
             ]
+=======
+            create_index_statement.col_list = ["foo"]
+            function_obj = MagicMock()
+            output = MagicMock()
+            function_obj.outputs = [output]
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
             with patch.object(
                 catalog(),
@@ -363,7 +374,17 @@ class StatementBinderTests(unittest.TestCase):
                 output.array_dimensions = [1, 100]
                 binder._bind_create_index_statement(create_index_statement)
 
+<<<<<<< HEAD
             create_index_statement.project_expr_list = [TupleValueExpression(name="*")]
+=======
+            create_index_statement.function = None
+            col_def = MagicMock()
+            col_def.name = "a"
+            create_index_statement.col_list = [col_def]
+            col = MagicMock()
+            col.name = "a"
+            create_index_statement.table_ref.table.table_obj.columns = [col]
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
             with self.assertRaises(AssertionError):
                 binder._bind_create_index_statement(create_index_statement)
@@ -373,20 +394,32 @@ class StatementBinderTests(unittest.TestCase):
             col.array_dimensions = [1, 10]
             binder._bind_create_index_statement(create_index_statement)
 
+<<<<<<< HEAD
     def test_bind_create_function_should_raise_without_predict_for_ludwig(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
             create_function_statement.function_type = "ludwig"
+=======
+    def test_bind_create_function_should_raise(self):
+        with patch.object(StatementBinder, "bind"):
+            create_function_statement = MagicMock()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             create_function_statement.query.target_list = []
             create_function_statement.metadata = []
             binder = StatementBinder(StatementBinderContext(MagicMock()))
             with self.assertRaises(AssertionError):
                 binder._bind_create_function_statement(create_function_statement)
 
+<<<<<<< HEAD
     def test_bind_create_function_should_drop_row_id_for_select_star(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
             create_function_statement.function_type = "ludwig"
+=======
+    def test_bind_create_function_should_drop_row_id(self):
+        with patch.object(StatementBinder, "bind"):
+            create_function_statement = MagicMock()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             row_id_col_obj = ColumnCatalogEntry(
                 name=IDENTIFIER_COLUMN,
                 type=MagicMock(),
@@ -452,6 +485,7 @@ class StatementBinderTests(unittest.TestCase):
             ]
             self.assertEqual(create_function_statement.inputs, expected_inputs)
             self.assertEqual(create_function_statement.outputs, expected_outputs)
+<<<<<<< HEAD
 
     def test_bind_create_function_should_bind_forecast_with_default_columns(self):
         with patch.object(StatementBinder, "bind"):
@@ -643,3 +677,5 @@ class StatementBinderTests(unittest.TestCase):
 
             err_msg = "Missing required {'ma'} columns for forecasting function."
             self.assertEqual(str(cm.exception), err_msg)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

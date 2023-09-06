@@ -21,7 +21,10 @@ from evadb.executor.create_database_executor import CreateDatabaseExecutor
 from evadb.executor.create_executor import CreateExecutor
 from evadb.executor.create_function_executor import CreateFunctionExecutor
 from evadb.executor.create_index_executor import CreateIndexExecutor
+<<<<<<< HEAD
 from evadb.executor.create_job_executor import CreateJobExecutor
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.executor.delete_executor import DeleteExecutor
 from evadb.executor.drop_object_executor import DropObjectExecutor
 from evadb.executor.exchange_executor import ExchangeExecutor

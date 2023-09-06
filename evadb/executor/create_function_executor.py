@@ -12,6 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+<<<<<<< HEAD
 import contextlib
 import hashlib
 import locale
@@ -23,6 +24,12 @@ from pathlib import Path
 from typing import Dict, List
 
 import numpy as np
+=======
+import os
+from pathlib import Path
+from typing import Dict, List
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 import pandas as pd
 
 from evadb.catalog.catalog_utils import get_metadata_properties
@@ -30,11 +37,15 @@ from evadb.catalog.models.function_catalog import FunctionCatalogEntry
 from evadb.catalog.models.function_io_catalog import FunctionIOCatalogEntry
 from evadb.catalog.models.function_metadata_catalog import FunctionMetadataCatalogEntry
 from evadb.configuration.constants import (
+<<<<<<< HEAD
     DEFAULT_SKLEARN_TRAIN_MODEL,
     DEFAULT_TRAIN_REGRESSION_METRIC,
     DEFAULT_TRAIN_TIME_LIMIT,
     DEFAULT_XGBOOST_TASK,
     SKLEARN_SUPPORTED_MODELS,
+=======
+    DEFAULT_TRAIN_TIME_LIMIT,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     EvaDB_INSTALLATION_DIR,
 )
 from evadb.database import EvaDBDatabase
@@ -46,17 +57,22 @@ from evadb.third_party.huggingface.create import gen_hf_io_catalog_entries
 from evadb.utils.errors import FunctionIODefinitionError
 from evadb.utils.generic_utils import (
     load_function_class_from_file,
+<<<<<<< HEAD
     string_comparison_case_insensitive,
     try_to_import_flaml_automl,
     try_to_import_ludwig,
     try_to_import_neuralforecast,
     try_to_import_statsforecast,
+=======
+    try_to_import_ludwig,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     try_to_import_torch,
     try_to_import_ultralytics,
 )
 from evadb.utils.logging_manager import logger
 
 
+<<<<<<< HEAD
 def root_mean_squared_error(y_true, y_pred):
     return np.sqrt(np.mean(np.square(y_pred - y_true)))
 
@@ -86,16 +102,25 @@ def set_env(**environ):
         os.environ.update(old_environ)
 
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 class CreateFunctionExecutor(AbstractExecutor):
     def __init__(self, db: EvaDBDatabase, node: CreateFunctionPlan):
         super().__init__(db, node)
         self.function_dir = Path(EvaDB_INSTALLATION_DIR) / "functions"
 
     def handle_huggingface_function(self):
+<<<<<<< HEAD
         """Handle HuggingFace functions
 
         HuggingFace functions are special functions that are not loaded from a file.
         So we do not need to call the setup method on them like we do for other functions.
+=======
+        """Handle HuggingFace Functions
+
+        HuggingFace Functions are special Functions that are not loaded from a file.
+        So we do not need to call the setup method on them like we do for other Functions.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         """
         # We need at least one deep learning framework for HuggingFace
         # Torch or Tensorflow
@@ -111,9 +136,15 @@ class CreateFunctionExecutor(AbstractExecutor):
         )
 
     def handle_ludwig_function(self):
+<<<<<<< HEAD
         """Handle ludwig functions
 
         Use Ludwig's auto_train engine to train/tune models.
+=======
+        """Handle ludwig Functions
+
+        Use ludwig's auto_train engine to train/tune models.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         """
         try_to_import_ludwig()
         from ludwig.automl import auto_train
@@ -132,12 +163,16 @@ class CreateFunctionExecutor(AbstractExecutor):
         aggregated_batch.drop_column_alias()
 
         arg_map = {arg.key: arg.value for arg in self.node.metadata}
+<<<<<<< HEAD
         start_time = int(time.time())
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         auto_train_results = auto_train(
             dataset=aggregated_batch.frames,
             target=arg_map["predict"],
             tune_for_memory=arg_map.get("tune_for_memory", False),
             time_limit_s=arg_map.get("time_limit", DEFAULT_TRAIN_TIME_LIMIT),
+<<<<<<< HEAD
             output_directory=self.db.catalog().get_configuration_catalog_value(
                 "tmp_dir"
             ),
@@ -149,6 +184,14 @@ class CreateFunctionExecutor(AbstractExecutor):
         )
         auto_train_results.best_model.save(model_path)
         best_score = auto_train_results.experiment_analysis.best_result["metric_score"]
+=======
+            output_directory=self.db.config.get_value("storage", "tmp_dir"),
+        )
+        model_path = os.path.join(
+            self.db.config.get_value("storage", "model_dir"), self.node.name
+        )
+        auto_train_results.best_model.save(model_path)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         self.node.metadata.append(
             FunctionMetadataCatalogEntry("model_path", model_path)
         )
@@ -161,6 +204,7 @@ class CreateFunctionExecutor(AbstractExecutor):
             self.node.function_type,
             io_list,
             self.node.metadata,
+<<<<<<< HEAD
             best_score,
             train_time,
         )
@@ -303,6 +347,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 
     def handle_ultralytics_function(self):
         """Handle Ultralytics functions"""
+=======
+        )
+
+    def handle_ultralytics_function(self):
+        """Handle Ultralytics Functions"""
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         try_to_import_ultralytics()
 
         impl_path = (
@@ -320,6 +370,7 @@ class CreateFunctionExecutor(AbstractExecutor):
             self.node.metadata,
         )
 
+<<<<<<< HEAD
     def handle_forecasting_function(self):
         """Handle forecasting functions"""
         aggregated_batch_list = []
@@ -697,6 +748,12 @@ class CreateFunctionExecutor(AbstractExecutor):
         """Handle generic functions
 
         Generic functions are loaded from a file. We check for inputs passed by the user during CREATE or try to load io from decorators.
+=======
+    def handle_generic_function(self):
+        """Handle generic Functions
+
+        Generic Functions are loaded from a file. We check for inputs passed by the user during CREATE or try to load io from decorators.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         """
         impl_path = self.node.impl_path.absolute().as_posix()
         function = self._try_initializing_function(impl_path)
@@ -715,6 +772,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         Calls the catalog to insert a function catalog entry.
         """
+<<<<<<< HEAD
         assert (
             self.node.if_not_exists and self.node.or_replace
         ) is False, (
@@ -724,12 +782,15 @@ class CreateFunctionExecutor(AbstractExecutor):
         overwrite = False
         best_score = False
         train_time = False
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         # check catalog if it already has this function entry
         if self.catalog().get_function_catalog_entry_by_name(self.node.name):
             if self.node.if_not_exists:
                 msg = f"Function {self.node.name} already exists, nothing added."
                 yield Batch(pd.DataFrame([msg]))
                 return
+<<<<<<< HEAD
             elif self.node.or_replace:
                 # We use DropObjectExecutor to avoid bookkeeping the code. The drop function should be moved to catalog.
                 from evadb.executor.drop_object_executor import DropObjectExecutor
@@ -741,13 +802,19 @@ class CreateFunctionExecutor(AbstractExecutor):
                     pass
                 else:
                     overwrite = True
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             else:
                 msg = f"Function {self.node.name} already exists."
                 logger.error(msg)
                 raise RuntimeError(msg)
 
         # if it's a type of HuggingFaceModel, override the impl_path
+<<<<<<< HEAD
         if string_comparison_case_insensitive(self.node.function_type, "HuggingFace"):
+=======
+        if self.node.function_type == "HuggingFace":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             (
                 name,
                 impl_path,
@@ -755,7 +822,11 @@ class CreateFunctionExecutor(AbstractExecutor):
                 io_list,
                 metadata,
             ) = self.handle_huggingface_function()
+<<<<<<< HEAD
         elif string_comparison_case_insensitive(self.node.function_type, "ultralytics"):
+=======
+        elif self.node.function_type == "ultralytics":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             (
                 name,
                 impl_path,
@@ -763,13 +834,18 @@ class CreateFunctionExecutor(AbstractExecutor):
                 io_list,
                 metadata,
             ) = self.handle_ultralytics_function()
+<<<<<<< HEAD
         elif string_comparison_case_insensitive(self.node.function_type, "Ludwig"):
+=======
+        elif self.node.function_type == "Ludwig":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             (
                 name,
                 impl_path,
                 function_type,
                 io_list,
                 metadata,
+<<<<<<< HEAD
                 best_score,
                 train_time,
             ) = self.handle_ludwig_function()
@@ -801,6 +877,9 @@ class CreateFunctionExecutor(AbstractExecutor):
                 io_list,
                 metadata,
             ) = self.handle_forecasting_function()
+=======
+            ) = self.handle_ludwig_function()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         else:
             (
                 name,
@@ -813,6 +892,7 @@ class CreateFunctionExecutor(AbstractExecutor):
         self.catalog().insert_function_catalog_entry(
             name, impl_path, function_type, io_list, metadata
         )
+<<<<<<< HEAD
 
         if overwrite:
             msg = f"Function {self.node.name} overwritten."
@@ -830,6 +910,13 @@ class CreateFunctionExecutor(AbstractExecutor):
             )
         else:
             yield Batch(pd.DataFrame([msg]))
+=======
+        yield Batch(
+            pd.DataFrame(
+                [f"Function {self.node.name} successfully added to the database."]
+            )
+        )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     def _try_initializing_function(
         self, impl_path: str, function_args: Dict = {}
@@ -838,6 +925,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         Args:
             impl_path (str): The file path of the function implementation file.
+<<<<<<< HEAD
             function_args (Dict, optional): Dictionary of arguments to pass to the function. Defaults to {}.
 
         Returns:
@@ -845,6 +933,15 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         Raises:
             RuntimeError: If an error occurs while initializing the function.
+=======
+            function_args (Dict, optional): Dictionary of arguments to pass to the Function. Defaults to {}.
+
+        Returns:
+            FunctionCatalogEntry: A FunctionCatalogEntry object that represents the initialized Function.
+
+        Raises:
+            RuntimeError: If an error occurs while initializing the Function.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         """
 
         # load the function class from the file
@@ -854,7 +951,11 @@ class CreateFunctionExecutor(AbstractExecutor):
             # initializing the function class calls the setup method internally
             function(**function_args)
         except Exception as e:
+<<<<<<< HEAD
             err_msg = f"Error creating function {self.node.name}: {str(e)}"
+=======
+            err_msg = f"Error creating Function: {str(e)}"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             # logger.error(err_msg)
             raise RuntimeError(err_msg)
 
@@ -863,7 +964,11 @@ class CreateFunctionExecutor(AbstractExecutor):
     def _resolve_function_io(
         self, function: FunctionCatalogEntry
     ) -> List[FunctionIOCatalogEntry]:
+<<<<<<< HEAD
         """Private method that resolves the input/output definitions for a given function.
+=======
+        """Private method that resolves the input/output definitions for a given Function.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         It first searches for the input/outputs in the CREATE statement. If not found, it resolves them using decorators. If not found there as well, it raises an error.
 
         Args:
@@ -871,7 +976,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         Returns:
             A List of FunctionIOCatalogEntry objects that represent the resolved input and
+<<<<<<< HEAD
             output definitions for the function.
+=======
+            output definitions for the Function.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
         Raises:
             RuntimeError: If an error occurs while resolving the function input/output
@@ -897,7 +1006,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         except FunctionIODefinitionError as e:
             err_msg = (
+<<<<<<< HEAD
                 f"Error creating function, input/output definition incorrect: {str(e)}"
+=======
+                f"Error creating Function, input/output definition incorrect: {str(e)}"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             )
             logger.error(err_msg)
             raise RuntimeError(err_msg)

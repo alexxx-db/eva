@@ -132,7 +132,11 @@ class CatalogManagerTests(unittest.TestCase):
     def test_insert_function(
         self, checksum_mock, functionmetadata_mock, functionio_mock, function_mock
     ):
+<<<<<<< HEAD
         catalog = CatalogManager(MagicMock())
+=======
+        catalog = CatalogManager(MagicMock(), MagicMock())
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         function_io_list = [MagicMock()]
         function_metadata_list = [MagicMock()]
         actual = catalog.insert_function_catalog_entry(
@@ -142,6 +146,7 @@ class CatalogManagerTests(unittest.TestCase):
             function_io_list,
             function_metadata_list,
         )
+<<<<<<< HEAD
         function_mock.return_value.insert_entry.assert_called_with(
             "function",
             "sample.py",
@@ -149,17 +154,30 @@ class CatalogManagerTests(unittest.TestCase):
             checksum_mock.return_value,
             function_io_list,
             function_metadata_list,
+=======
+        functionio_mock.return_value.insert_entries.assert_called_with(function_io_list)
+        functionmetadata_mock.return_value.insert_entries.assert_called_with(
+            function_metadata_list
+        )
+        function_mock.return_value.insert_entry.assert_called_with(
+            "function", "sample.py", "classification", checksum_mock.return_value
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
         checksum_mock.assert_called_with("sample.py")
         self.assertEqual(actual, function_mock.return_value.insert_entry.return_value)
 
     @mock.patch("evadb.catalog.catalog_manager.FunctionCatalogService")
     def test_get_function_catalog_entry_by_name(self, function_mock):
+<<<<<<< HEAD
         catalog = CatalogManager(MagicMock())
+=======
+        catalog = CatalogManager(MagicMock(), MagicMock())
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         actual = catalog.get_function_catalog_entry_by_name("name")
         function_mock.return_value.get_entry_by_name.assert_called_with("name")
         self.assertEqual(
             actual, function_mock.return_value.get_entry_by_name.return_value
+<<<<<<< HEAD
         )
 
     @mock.patch("evadb.catalog.catalog_manager.FunctionCatalogService")
@@ -179,4 +197,31 @@ class CatalogManagerTests(unittest.TestCase):
         mock_func = function_mock.return_value.get_input_entries_by_function_id
         function_obj = MagicMock(spec=FunctionCatalogEntry)
         CatalogManager(MagicMock()).get_function_io_catalog_input_entries(function_obj)
+=======
+        )
+
+    @mock.patch("evadb.catalog.catalog_manager.FunctionCatalogService")
+    def test_delete_function(self, function_mock):
+        CatalogManager(MagicMock(), MagicMock()).delete_function_catalog_entry_by_name(
+            "name"
+        )
+        function_mock.return_value.delete_entry_by_name.assert_called_with("name")
+
+    @mock.patch("evadb.catalog.catalog_manager.FunctionIOCatalogService")
+    def test_get_function_outputs(self, function_mock):
+        mock_func = function_mock.return_value.get_output_entries_by_function_id
+        function_obj = MagicMock(spec=FunctionCatalogEntry)
+        CatalogManager(MagicMock(), MagicMock()).get_function_io_catalog_output_entries(
+            function_obj
+        )
+        mock_func.assert_called_once_with(function_obj.row_id)
+
+    @mock.patch("evadb.catalog.catalog_manager.FunctionIOCatalogService")
+    def test_get_function_inputs(self, function_mock):
+        mock_func = function_mock.return_value.get_input_entries_by_function_id
+        function_obj = MagicMock(spec=FunctionCatalogEntry)
+        CatalogManager(MagicMock(), MagicMock()).get_function_io_catalog_input_entries(
+            function_obj
+        )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         mock_func.assert_called_once_with(function_obj.row_id)

@@ -258,12 +258,19 @@ class CreateIndex:
                 elif child.data == "index_elem":
                     index_elem = self.visit(child)
 
+<<<<<<< HEAD
         # Projection list of child of index creation.
         project_expr_list = []
 
         # Parse either a single function call or column list.
         if not isinstance(index_elem, list):
             project_expr_list += [index_elem]
+=======
+        # Parse either a single function call or column list.
+        col_list, function = None, None
+        if not isinstance(index_elem, list):
+            function = index_elem
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
             # Traverse to the tuple value expression.
             while not isinstance(index_elem, TupleValueExpression):
@@ -278,12 +285,16 @@ class CreateIndex:
             col_list += [ColumnDefinition(tv_expr.name, None, None, None)]
 
         return CreateIndexStatement(
+<<<<<<< HEAD
             index_name,
             if_not_exists,
             table_ref,
             col_list,
             vector_store_type,
             project_expr_list,
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
 
     def vector_store_type(self, tree):

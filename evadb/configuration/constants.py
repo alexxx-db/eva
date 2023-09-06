@@ -21,7 +21,11 @@ EvaDB_ROOT_DIR = Path(evadb.__file__).parent.parent
 EvaDB_DATABASE_DIR = "evadb_data"
 EvaDB_APPS_DIR = "apps"
 EvaDB_DATASET_DIR = "evadb_datasets"
+<<<<<<< HEAD
 EvaDB_CONFIG_FILE = "evadb_config.py"
+=======
+EvaDB_CONFIG_FILE = "evadb.yml"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 FUNCTION_DIR = "functions"
 MODEL_DIR = "models"
 CATALOG_DIR = "catalog"

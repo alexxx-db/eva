@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 .. _forecast:
 
 Time Series Forecasting
 ========================
 
 A Time Series is a series of data points recorded at different time intervals. Time series forecasting involves estimating future values of a time series by analyzing historical data.
+=======
+Time Series Forecasting
+========================
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 You can train a forecasting model easily in EvaDB.
 
 .. note::
@@ -22,6 +28,7 @@ First, we create a table to insert required data.
    LOAD CSV 'data/forecasting/air-passengers.csv' INTO AirData;
 
 
+<<<<<<< HEAD
 Next, we create a function of `TYPE Forecasting`. We must enter the column name on which we wish to forecast using `PREDICT`.
 
 .. code-block:: sql
@@ -30,12 +37,22 @@ Next, we create a function of `TYPE Forecasting`. We must enter the column name 
    (SELECT y FROM AirData)
    TYPE Forecasting
    HORIZON 12
+=======
+Next, we create a UDF of `TYPE Forecasting`. We must enter the column name on which we wish to forecast using `predict`. Other options include `id` and `time` (they represent the unique id of the items and the time data if available).
+
+.. code-block:: sql
+   
+   CREATE UDF IF NOT EXISTS Forecast FROM
+   (SELECT y FROM AirData)
+   TYPE Forecasting
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
    PREDICT 'y';
 
 This trains a forecasting model. The model can be called by providing the horizon for forecasting.
 
 .. code-block:: sql
 
+<<<<<<< HEAD
    SELECT Forecast();
 
 
@@ -103,3 +120,8 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
     LIBRARY 'neuralforecast'
     AUTO 'f'
     FREQUENCY 'M';
+=======
+   SELECT Forecast(12) FROM AirData;
+
+Here, the horizon is `12`.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

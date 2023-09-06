@@ -17,6 +17,10 @@ import numpy as np
 import pandas as pd
 from numpy.typing import ArrayLike
 
+<<<<<<< HEAD
+=======
+from evadb.configuration.configuration_manager import ConfigurationManager
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.functions.abstract.abstract_function import (
     AbstractClassifierFunction,
     AbstractTransformationFunction,

@@ -20,6 +20,10 @@ import pandas as pd
 from retry import retry
 
 from evadb.catalog.catalog_type import NdArrayType
+<<<<<<< HEAD
+=======
+from evadb.configuration.configuration_manager import ConfigurationManager
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import forward, setup
 from evadb.functions.decorators.io_descriptors.data_types import PandasDataframe
@@ -79,7 +83,11 @@ class ChatGPT(AbstractFunction):
     def name(self) -> str:
         return "ChatGPT"
 
+<<<<<<< HEAD
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
+=======
+    @setup(cacheable=False, function_type="chat-completion", batchable=True)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     def setup(
         self,
         model="gpt-3.5-turbo",

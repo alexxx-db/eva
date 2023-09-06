@@ -8,6 +8,7 @@ Text Summarization
     <embed>
     <table align="left">
     <td>
+<<<<<<< HEAD
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/12-query-pdf.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -15,6 +16,15 @@ Text Summarization
     </td>
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/12-query-pdf.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/12-query-pdf.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/12-query-pdf.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/12-query-pdf.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     </td>
     </table><br><br>
     </embed>
@@ -75,16 +85,28 @@ Here is the query's output ``DataFrame``:
 
 .. code-block:: 
 
+<<<<<<< HEAD
     +--------------------------------------------------------------+--------------------------------------------------------------+
     |                         mypdfs.data                          |                 textsummarizer.summary_text                  |
     +--------------------------------------------------------------+--------------------------------------------------------------+
     | DEFINATION  Specialized connective tissue with          ... | Specialized connective tissue with fluid matrix. Erythro ... |
     | PHYSICAL CHARACTERISTICS ( 1 )  COLOUR   -- Red  ( 2 )  ... | The temperature is 38° C / 100.4° F. The body weight is  ... |
     +--------------------------------------------------------------+--------------------------------------------------------------+
+=======
+    +--------------------------------------------------------+--------------------------------------------------------+
+    | mypdfs.data                                         | mypdfs.summary_text                             |
+    +--------------------------------------------------------+--------------------------------------------------------+
+    | DEFINATION  Specialized connective tissue wit...  | Specialized connective tissue with fluid matri... |
+    | PHYSICAL CHARACTERISTICS ( 1 ) COLOUR -- R...  | The temperature is 38° C / 100.4° F. The body ...  |
+    +--------------------------------------------------------+--------------------------------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 
 .. include:: ../shared/nlp.rst
 
 .. include:: ../shared/footer.rst
+<<<<<<< HEAD
 
 .. include:: ../shared/designs/design2.rst
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

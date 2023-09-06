@@ -29,7 +29,10 @@ CATALOG_TABLES = [
     "column_catalog",
     "table_catalog",
     "database_catalog",
+<<<<<<< HEAD
     "configuration_catalog",
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     "depend_column_and_function_cache",
     "function_cache",
     "function_catalog",
@@ -38,8 +41,11 @@ CATALOG_TABLES = [
     "functionio_catalog",
     "function_cost_catalog",
     "function_metadata_catalog",
+<<<<<<< HEAD
     "job_catalog",
     "job_history_catalog",
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ]
 # Add all keywords that are restricted by EvaDB
 

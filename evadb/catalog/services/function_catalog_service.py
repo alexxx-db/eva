@@ -12,12 +12,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+<<<<<<< HEAD
 from typing import List
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import select
 
 from evadb.catalog.models.function_catalog import FunctionCatalog, FunctionCatalogEntry
+<<<<<<< HEAD
 from evadb.catalog.models.utils import (
     FunctionIOCatalogEntry,
     FunctionMetadataCatalogEntry,
@@ -28,12 +32,16 @@ from evadb.catalog.services.function_metadata_catalog_service import (
     FunctionMetadataCatalogService,
 )
 from evadb.utils.errors import CatalogError
+=======
+from evadb.catalog.services.base_service import BaseService
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.utils.logging_manager import logger
 
 
 class FunctionCatalogService(BaseService):
     def __init__(self, db_session: Session):
         super().__init__(FunctionCatalog, db_session)
+<<<<<<< HEAD
         self._function_io_service = FunctionIOCatalogService(db_session)
         self._function_metadata_service = FunctionMetadataCatalogService(db_session)
 
@@ -45,6 +53,11 @@ class FunctionCatalogService(BaseService):
         checksum: str,
         function_io_list: List[FunctionIOCatalogEntry],
         function_metadata_list: List[FunctionMetadataCatalogEntry],
+=======
+
+    def insert_entry(
+        self, name: str, impl_path: str, type: str, checksum: str
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     ) -> FunctionCatalogEntry:
         """Insert a new function entry
 
@@ -59,6 +72,7 @@ class FunctionCatalogService(BaseService):
         """
         function_obj = self.model(name, impl_path, type, checksum)
         function_obj = function_obj.save(self.session)
+<<<<<<< HEAD
 
         for function_io in function_io_list:
             function_io.function_id = function_obj._row_id
@@ -84,6 +98,9 @@ class FunctionCatalogService(BaseService):
             raise CatalogError(e)
         else:
             return function_obj.as_dataclass()
+=======
+        return function_obj.as_dataclass()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     def get_entry_by_name(self, name: str) -> FunctionCatalogEntry:
         """return the function entry that matches the name provided.

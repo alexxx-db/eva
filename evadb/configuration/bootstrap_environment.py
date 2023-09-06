@@ -24,6 +24,10 @@ from evadb.configuration.constants import (
     MODEL_DIR,
     S3_DOWNLOAD_DIR,
     TMP_DIR,
+<<<<<<< HEAD
+=======
+    EvaDB_CONFIG_FILE,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     EvaDB_DATASET_DIR,
 )
 from evadb.evadb_config import BASE_EVADB_CONFIG
@@ -103,6 +107,7 @@ def create_directories_and_get_default_config_values(
         model_dir.mkdir(parents=True, exist_ok=True)
 
     config_obj = {}
+<<<<<<< HEAD
     config_obj["evadb_installation_dir"] = str(default_install_dir.resolve())
     config_obj["datasets_dir"] = str(dataset_location.resolve())
     config_obj["catalog_database_uri"] = get_default_db_uri(evadb_dir)
@@ -112,6 +117,23 @@ def create_directories_and_get_default_config_values(
     config_obj["tmp_dir"] = str(tmp_dir.resolve())
     config_obj["function_dir"] = str(function_dir.resolve())
     config_obj["model_dir"] = str(model_dir.resolve())
+=======
+    config_obj["core"] = {}
+    config_obj["storage"] = {}
+    config_obj["core"]["evadb_installation_dir"] = str(default_install_dir.resolve())
+    config_obj["core"]["datasets_dir"] = str(dataset_location.resolve())
+    config_obj["core"]["catalog_database_uri"] = get_default_db_uri(evadb_dir)
+    config_obj["storage"]["index_dir"] = str(index_dir.resolve())
+    config_obj["storage"]["cache_dir"] = str(cache_dir.resolve())
+    config_obj["storage"]["s3_download_dir"] = str(s3_dir.resolve())
+    config_obj["storage"]["tmp_dir"] = str(tmp_dir.resolve())
+    config_obj["storage"]["function_dir"] = str(function_dir.resolve())
+    config_obj["storage"]["model_dir"] = str(model_dir.resolve())
+    if category and key:
+        return config_obj.get(category, {}).get(key, None)
+    elif category:
+        return config_obj.get(category, {})
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     return config_obj
 
 

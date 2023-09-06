@@ -332,14 +332,28 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 - [License](#license)
 =======
 
+👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by: 
+<ul>
+  <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
+  <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
+  <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
+  <li> 🐦 following us on <a href="https://medium.com/evadb-blog">Medium</a>
+</ul>
+
 ## Quick Links
 
+- [Quick Links](#quick-links)
 - [Documentation](#documentation)
 - [Why EvaDB](#why-evadb)
 - [How does EvaDB work](#how-does-evadb-work)
-- [Community and Support](#community-and-support)
 - [Illustrative Queries](#illustrative-queries)
 - [Illustrative Apps](#illustrative-apps)
+- [More Illustrative Queries](#more-illustrative-queries)
+- [Architecture of EvaDB](#architecture-of-evadb)
+- [Community and Support](#community-and-support)
+- [Contributing](#contributing)
+- [Star History](#star-history)
+- [License](#license)
 
 ## Documentation
 
@@ -533,11 +547,11 @@ SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
 * Train an ML model using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine to predict a column in a table.
 
 ```sql
-CREATE UDF IF NOT EXISTS PredictHouseRent FROM
+CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
 ( SELECT * FROM HomeRentals )
 TYPE Ludwig
-'predict' 'rental_price'
-'time_limit' 120;
+PREDICT 'rental_price'
+TIME_LIMIT 120;
 ```
 
 </details>

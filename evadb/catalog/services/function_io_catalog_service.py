@@ -69,8 +69,18 @@ class FunctionIOCatalogService(BaseService):
             logger.error(error)
             raise RuntimeError(error)
 
+<<<<<<< HEAD
     def create_entries(self, io_list: List[FunctionIOCatalogEntry]):
         io_objs = []
+=======
+    def insert_entries(self, io_list: List[FunctionIOCatalogEntry]):
+        """Commit entries to the function_io table
+
+        Arguments:
+            io_list (List[FunctionIOCatalogEntry]): List of io info io be added
+        """
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         for io in io_list:
             io_obj = FunctionIOCatalog(
                 name=io.name,
