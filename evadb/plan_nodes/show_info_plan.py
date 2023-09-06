@@ -39,17 +39,23 @@ class ShowInfoPlan(AbstractPlan):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
         if self._show_type == ShowType.DATABASES:
             return "ShowDatabasePlan"
         elif self._show_type == ShowType.TABLES:
 =======
         else:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
         elif self._show_type == ShowType.TABLES:
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
             return "ShowTablePlan"
         elif self._show_type == ShowType.CONFIG:
             return "ShowConfigPlan"

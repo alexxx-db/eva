@@ -25,6 +25,7 @@ class Show:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if isinstance(token, str) and str.upper(token) == "FUNCTIONS":
             return ShowStatement(show_type=ShowType.FUNCTIONS)
         elif isinstance(token, str) and str.upper(token) == "TABLES":
@@ -37,9 +38,16 @@ class Show:
         elif isinstance(token, str) and str.upper(token) == "DATABASES":
             return ShowStatement(show_type=ShowType.DATABASES)
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
         if isinstance(token, str) and str.upper(token) == "FUNCTIONS":
             return ShowStatement(show_type=ShowType.FUNCTIONS)
         elif isinstance(token, str) and str.upper(token) == "TABLES":
+=======
+        if str.upper(token) == "FUNCTIONS":
+            return ShowStatement(show_type=ShowType.FUNCTIONS)
+        elif str.upper(token) == "TABLES":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             return ShowStatement(show_type=ShowType.TABLES)
 <<<<<<< HEAD
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))

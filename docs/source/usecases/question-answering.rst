@@ -10,6 +10,9 @@ Question Answering
     <td>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -19,6 +22,7 @@ Question Answering
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
 =======
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+<<<<<<< HEAD
 =======
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
 >>>>>>> fbfc3ace (docs: updates)
@@ -33,6 +37,15 @@ Question Answering
 =======
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
 >>>>>>> fbfc3ace (docs: updates)
+=======
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/08-chatgpt.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     </td>
     </table><br><br>
     </embed>
@@ -80,8 +93,10 @@ EvaDB has built-in support for ``ChatGPT`` function from ``OpenAI``. You will ne
 
 .. note::
     
+<<<<<<< HEAD
     EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`custom AI function<custom_ai_function>`.
 =======
+<<<<<<< HEAD
     os.environ["OPENAI_KEY"] = "sk-..."
 
 .. note::
@@ -92,6 +107,10 @@ EvaDB has built-in support for ``ChatGPT`` function from ``OpenAI``. You will ne
 =======
     EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`custom AI function<custom_ai_function>`.
 >>>>>>> 35b99c88 (docs: updates)
+=======
+    EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`Custom function<udf>`.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 
 
     ChatGPT function is a wrapper around OpenAI API call. You can also switch to other LLM models that can run locally.
@@ -116,15 +135,25 @@ Here is the query's output ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     +-------------------------------------------------------------------------------------------------------------------------+
     |                                                    text_summary.text                                                    |
     +-------------------------------------------------------------------------------------------------------------------------+
@@ -132,11 +161,18 @@ Here is the query's output ``DataFrame``:
     +-------------------------------------------------------------------------------------------------------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
     +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | text_summary.text                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -146,6 +182,7 @@ Here is the query's output ``DataFrame``:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -154,6 +191,13 @@ Here is the query's output ``DataFrame``:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 
 Question Answering using ChatGPT
 --------------------------------
@@ -174,15 +218,25 @@ Here is the query's output ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     +--------------------------------------------------------------------------------------------------------------------------+
     |                                                     chatgpt.response                                                     |
     +--------------------------------------------------------------------------------------------------------------------------+
@@ -190,11 +244,18 @@ Here is the query's output ``DataFrame``:
     +--------------------------------------------------------------------------------------------------------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
     +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | chatgpt.response                                                                                                                                                                                                                                      |
@@ -204,6 +265,7 @@ Here is the query's output ``DataFrame``:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -212,17 +274,30 @@ Here is the query's output ``DataFrame``:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 
 .. include:: ../shared/nlp.rst
 
 .. include:: ../shared/footer.rst
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 
 .. include:: ../shared/designs/design1.rst
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 
 .. include:: ../shared/designs/design1.rst
 >>>>>>> e867f37e (docs: updated images)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))

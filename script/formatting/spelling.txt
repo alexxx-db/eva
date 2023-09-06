@@ -2,11 +2,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 061e9d6d (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
@@ -52,12 +55,23 @@ personal_ws-1.1 en 1776
 >>>>>>> 061e9d6d (docs: updates)
 =======
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 personal_ws-1.1 en 1776 
 =======
 personal_ws-1.1 en 1467 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+=======
+personal_ws-1.1 en 1563 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 ABCD
 ABCMeta
 ANYDIM
@@ -96,18 +110,26 @@ AggregationExpression
 AggregationExpressionsTest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 AirData
 AirDataPanel
 AirForecast
 AirPanelForecast
 AirPassengersPanel
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 AliExpress
 Anirudh
 AnnotateTests
@@ -245,18 +267,26 @@ CreateExecutor
 CreateFromSelectPlan
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 CreateFunctionExecutor
 CreateFunctionExecutorTest
 CreateFunctionPlan
 CreateFunctionStatement
 CreateIndex
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 CreateIndexExecutor
 CreateIndexPlan
 CreateIndexStatement
@@ -326,12 +356,18 @@ DeleteTableStatement
 DemoDB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 DemoFunc
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 DemoFunc
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+DemoFunc
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 DemoTable
 DemoUDF
 Deserialize
@@ -480,6 +516,7 @@ GenericHuggingfaceModel
 GenericLudwigModel
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 GenericSklearnModel
 GenericUtilsTests
 GenericXGBoostModel
@@ -488,11 +525,18 @@ GithubHandler
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 GenericSklearnModel
 GenericUtilsTests
 GithubDataSourceTest
 GithubHandler
+<<<<<<< HEAD
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 GroupBy
 GroupByExecutor
 GroupByPlan
@@ -755,18 +799,25 @@ MyPDFs
 MySQLNativeStorageEngineTest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 MyTable
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 MyTable
 >>>>>>> 061e9d6d (docs: updates)
+=======
+MyTable
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 MyTextCSV
 MyUDF
 MyVideo
 MyVideoCSV
 MyVideos
 MydbHandler
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -780,6 +831,8 @@ NCHAR
 MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 MysqlHandler
 <<<<<<< HEAD
 =======
@@ -793,8 +846,11 @@ MysqlHandler
 MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 NBEATS
@@ -808,7 +864,12 @@ NCHAR
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 NEQ
 NHITS
 NLP
@@ -1018,11 +1079,16 @@ SamplePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+SampleTable
+SampleVideoTable
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1042,16 +1108,24 @@ SampleVideoTable
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 Scalability
 ScanPlan
 SchemaUtils
@@ -1160,12 +1234,18 @@ TestTextHFModel
 TestUDF
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 TextClassifier
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 TextClassifier
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+TextClassifier
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 TextFilterKeyword
 TextFilteringTests
 TextHFModel
@@ -1174,12 +1254,18 @@ TextPickleType
 TextProcessing
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 TextSummarizer
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 TextSummarizer
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+TextSummarizer
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 TextTestRunner
 TimeoutError
 TimerTests
@@ -1557,17 +1643,23 @@ expresssion
 exprs
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 extname
 extractOne
 extrator
 =======
 extractOne
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 extname
 extractOne
 extrator
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 f'LOAD
 facebook
 facedetector
@@ -1588,9 +1680,13 @@ feedstock
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+fetchall
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1604,6 +1700,7 @@ fetchall
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 fetchall
 =======
@@ -1612,11 +1709,18 @@ fetchall
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 ffill
 ffmpeg
 fileFormat
@@ -1657,12 +1761,18 @@ gb
 gc
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 gcp
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 gcp
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+gcp
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 gdp
 georgia
 geq
@@ -1753,12 +1863,18 @@ intp
 invaid
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 inviter
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 inviter
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+inviter
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 io
 ipynb
 iq
@@ -1924,12 +2040,18 @@ png
 poolclass
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 popitem
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 popitem
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+popitem
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 popleft
 pos
 posix
@@ -2077,13 +2199,18 @@ sk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 sklearn
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 sklearn
 >>>>>>> 62080794 (ran spellchecker)
 smallint
@@ -2104,6 +2231,7 @@ smallint
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 smallint
 =======
@@ -2112,11 +2240,18 @@ smallint
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 smi
 softmax
 spacy
@@ -2215,12 +2350,18 @@ thefuzz
 timm
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 tinyint
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 tinyint
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+tinyint
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 tmp
 toGrayscale
 toc
@@ -2268,12 +2409,18 @@ urlparse
 urls
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 usecase
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 usecase
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+usecase
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 usecases
 usecols
 utf

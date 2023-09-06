@@ -314,16 +314,22 @@ def try_to_import_ray():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 def try_to_import_statsforecast():
 =======
 def try_to_import_forecast():
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 def try_to_import_statsforecast():
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 def try_to_import_statsforecast():
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
@@ -336,10 +342,13 @@ def try_to_import_statsforecast():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 def try_to_import_neuralforecast():
     try:
         from neuralforecast import NeuralForecast  # noqa: F401
@@ -352,12 +361,17 @@ def try_to_import_neuralforecast():
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 def is_ray_available() -> bool:
     try:
         try_to_import_ray()
@@ -400,11 +414,14 @@ def is_forecast_available() -> bool:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
         return True
@@ -491,8 +508,17 @@ def try_to_import_xgboost():
 def is_xgboost_available() -> bool:
     try:
         try_to_import_xgboost()
+<<<<<<< HEAD
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+=======
+        try_to_import_forecast()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
         return True
     except ValueError:  # noqa: E722
         return False

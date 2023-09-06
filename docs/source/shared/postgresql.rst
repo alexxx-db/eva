@@ -14,7 +14,10 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. code-block::
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 =======
@@ -26,6 +29,8 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 .. code-block::
 >>>>>>> aeb9a3be (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 >>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
@@ -39,6 +44,11 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
         "port": "5432",
         "database": "evadb"
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 We will assume that you have a ``PostgreSQL`` database server running locally that contains the data needed for analysis. Follow these instructions to install `PostgreSQL <https://www.postgresql.org/download/>`_.
@@ -48,6 +58,8 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 .. code-block:: text
 
 <<<<<<< HEAD
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 .. tab-set::
     
@@ -84,8 +96,11 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 .. code-block:: text
 
@@ -101,7 +116,13 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
     }
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))

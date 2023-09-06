@@ -26,6 +26,7 @@ from evadb.utils.generic_utils import (
     is_chromadb_available,
     is_flaml_automl_available,
 =======
+<<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
     is_forecast_available,
     is_gpu_available,
@@ -39,12 +40,24 @@ from evadb.utils.generic_utils import (
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     is_chromadb_available,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
     is_chromadb_available,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     is_forecast_available,
     is_gpu_available,
     is_ludwig_available,
@@ -149,14 +162,22 @@ forecast_skip_marker = pytest.mark.skipif(
 )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 
 stable_diffusion_skip_marker = pytest.mark.skipif(
     is_replicate_available() is False, reason="requires replicate"
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))

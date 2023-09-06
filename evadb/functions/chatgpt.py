@@ -88,9 +88,15 @@ class ChatGPT(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 =======
     @setup(cacheable=False, function_type="chat-completion", batchable=True)
@@ -100,6 +106,7 @@ class ChatGPT(AbstractFunction):
 =======
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -107,6 +114,13 @@ class ChatGPT(AbstractFunction):
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+    @setup(cacheable=False, function_type="chat-completion", batchable=True)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     def setup(
         self,
         model="gpt-3.5-turbo",

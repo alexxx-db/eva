@@ -45,6 +45,9 @@ class ApplyAndMergeExecutor(AbstractExecutor):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
             # persist stats of function expression
             if self.func_expr.function_obj and self.func_expr._stats:
@@ -56,8 +59,11 @@ class ApplyAndMergeExecutor(AbstractExecutor):
                 )
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
             output = Batch.merge_column_wise([batch, func_result])
             if self.do_unnest:
                 output.unnest(func_result.columns)
