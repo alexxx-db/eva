@@ -49,6 +49,7 @@ DummyFeatureExtractor_function_query = """CREATE FUNCTION
     EvaDB_INSTALLATION_DIR
 )
 
+<<<<<<< HEAD
 DummyNoInputFunction_function_query = """CREATE FUNCTION
                   IF NOT EXISTS DummyNoInputFunction
                   IMPL '{}/../test/util.py';
@@ -63,6 +64,8 @@ DummyLLM_function_query = """CREATE FUNCTION
     EvaDB_INSTALLATION_DIR
 )
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 fuzzy_function_query = """CREATE FUNCTION IF NOT EXISTS FuzzDistance
                     INPUT (Input_Array1 NDARRAY ANYTYPE, Input_Array2 NDARRAY ANYTYPE)
                     OUTPUT (distance FLOAT(32, 7))
@@ -211,7 +214,11 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
     In 'release' mode, only release functions are loaded. In addition, in 'debug' mode,
     the function loads a smaller model to accelerate the test suite time.
 
+<<<<<<< HEAD
     Args:G
+=======
+    Args:
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         mode (str, optional): The mode for loading functions, either 'debug' or 'release'.
         Defaults to 'debug'.
 
@@ -256,8 +263,11 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
                 DummyObjectDetector_function_query,
                 DummyMultiObjectDetector_function_query,
                 DummyFeatureExtractor_function_query,
+<<<<<<< HEAD
                 DummyNoInputFunction_function_query,
                 DummyLLM_function_query,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             ]
         )
 

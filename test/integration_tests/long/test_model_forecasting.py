@@ -37,6 +37,7 @@ class ModelTrainTests(unittest.TestCase):
             y INTEGER);"""
         execute_query_fetch_all(cls.evadb, create_table_query)
 
+<<<<<<< HEAD
         create_table_query = """
             CREATE TABLE HomeData (\
             saledate TEXT(30),\
@@ -45,29 +46,42 @@ class ModelTrainTests(unittest.TestCase):
             bedrooms INTEGER);"""
         execute_query_fetch_all(cls.evadb, create_table_query)
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         path = f"{EvaDB_ROOT_DIR}/data/forecasting/air-passengers.csv"
         load_query = f"LOAD CSV '{path}' INTO AirData;"
         execute_query_fetch_all(cls.evadb, load_query)
 
+<<<<<<< HEAD
         path = f"{EvaDB_ROOT_DIR}/data/forecasting/home_sales.csv"
         load_query = f"LOAD CSV '{path}' INTO HomeData;"
         execute_query_fetch_all(cls.evadb, load_query)
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     @classmethod
     def tearDownClass(cls):
         shutdown_ray()
 
         # clean up
+<<<<<<< HEAD
         execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS AirData;")
         execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS HomeData;")
 
         execute_query_fetch_all(cls.evadb, "DROP FUNCTION IF EXISTS AirForecast;")
         execute_query_fetch_all(cls.evadb, "DROP FUNCTION IF EXISTS HomeForecast;")
+=======
+        execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS HomeRentals;")
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     @forecast_skip_marker
     def test_forecast(self):
         create_predict_udf = """
+<<<<<<< HEAD
             CREATE FUNCTION AirForecast FROM
+=======
+            CREATE FUNCTION Forecast FROM
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             (SELECT unique_id, ds, y FROM AirData)
             TYPE Forecasting
             PREDICT 'y';
@@ -75,6 +89,7 @@ class ModelTrainTests(unittest.TestCase):
         execute_query_fetch_all(self.evadb, create_predict_udf)
 
         predict_query = """
+<<<<<<< HEAD
             SELECT AirForecast(12) order by y;
         """
         result = execute_query_fetch_all(self.evadb, predict_query)
@@ -108,6 +123,12 @@ class ModelTrainTests(unittest.TestCase):
             result.columns,
             ["homeforecast.type", "homeforecast.saledate", "homeforecast.ma"],
         )
+=======
+            SELECT Forecast(12) FROM AirData;
+        """
+        result = execute_query_fetch_all(self.evadb, predict_query)
+        self.assertEqual(int(list(result.frames.iloc[:, -1])[-1]), 459)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 
 if __name__ == "__main__":

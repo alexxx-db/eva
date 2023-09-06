@@ -1,10 +1,14 @@
 .. _python-api:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Python API
 =======
 Basic API
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Python API
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ==========
 
 To begin a querying session in EvaDB, obtain a connection with a cursor using ``connect`` and ``cursor`` functions. After getting the cursor, you can run queries with the ``query`` function in this manner:
@@ -35,6 +39,7 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 
     ``cursor.query("...")`` only construct the query and not run the query. ``cursor.query("...").df()`` will both construct and run the query.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 EvaDBCursor Interface
@@ -79,3 +84,5 @@ EvaDBQuery Interface
     ~evadb.EvaDBQuery.sql_query
     ~evadb.EvaDBQuery.execute
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

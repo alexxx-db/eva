@@ -325,6 +325,7 @@ def is_forecast_available() -> bool:
         return False
 
 
+<<<<<<< HEAD
 def try_to_import_sklearn():
     try:
         import sklearn  # noqa: F401
@@ -344,6 +345,8 @@ def is_sklearn_available() -> bool:
         return False
 
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ##############################
 ## VISION
 ##############################

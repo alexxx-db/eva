@@ -420,7 +420,11 @@ class SelectExecutorTest(unittest.TestCase):
             self.evadb,
             "SELECT id FROM MyVideo WHERE DummyMultiObjectDetector(data).labels @> ['person'];",
         )
+<<<<<<< HEAD
         signature = next(plan.find_all(LogicalFilter)).predicate.children[0].signature()
+=======
+        signature = plan.target_list[0].signature()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         function_id = (
             self.evadb.catalog()
             .get_function_catalog_entry_by_name("DummyMultiObjectDetector")

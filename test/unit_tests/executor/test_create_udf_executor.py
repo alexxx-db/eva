@@ -57,6 +57,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
             {"key1": "value1", "key2": "value2"},
         )
 
+<<<<<<< HEAD
     def test_should_raise_or_replace_if_not_exists(self):
         plan = type(
             "CreateFunctionPlan",
@@ -80,11 +81,20 @@ class CreateFunctionExecutorTest(unittest.TestCase):
     def test_should_skip_if_not_exists(self, load_function_class_from_file_mock):
         catalog_instance = MagicMock()
         catalog_instance().get_function_catalog_entry_by_name.return_value = True
+=======
+    @patch("evadb.executor.create_function_executor.load_function_class_from_file")
+    def test_should_raise_error_on_incorrect_io_definition(
+        self, load_function_class_from_file_mock
+    ):
+        catalog_instance = MagicMock()
+        catalog_instance().get_function_catalog_entry_by_name.return_value = None
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         catalog_instance().insert_function_catalog_entry.return_value = "function"
         impl_path = MagicMock()
         abs_path = impl_path.absolute.return_value = MagicMock()
         abs_path.as_posix.return_value = "test.py"
         load_function_class_from_file_mock.return_value.return_value = "mock_class"
+<<<<<<< HEAD
         plan = type(
             "CreateFunctionPlan",
             (),
@@ -200,6 +210,8 @@ class CreateFunctionExecutorTest(unittest.TestCase):
         abs_path = impl_path.absolute.return_value = MagicMock()
         abs_path.as_posix.return_value = "test.py"
         load_function_class_from_file_mock.return_value.return_value = "mock_class"
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         incorrect_input_definition = PandasDataframe(
             columns=["Frame_Array", "Frame_Array_2"],
             column_types=[NdArrayType.UINT8],
@@ -229,7 +241,11 @@ class CreateFunctionExecutorTest(unittest.TestCase):
         with self.assertRaises(RuntimeError) as exc:
             next(create_function_executor.exec())
         self.assertIn(
+<<<<<<< HEAD
             "Error creating function, input/output definition incorrect:",
+=======
+            "Error creating Function, input/output definition incorrect:",
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             str(exc.exception),
         )
 

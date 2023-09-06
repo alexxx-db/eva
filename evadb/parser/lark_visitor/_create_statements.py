@@ -271,7 +271,11 @@ class CreateIndex:
         ]
 
         return CreateIndexStatement(
+<<<<<<< HEAD
             index_name, if_not_exists, table_ref, col_list, vector_store_type, function
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
 
     def vector_store_type(self, tree):

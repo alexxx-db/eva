@@ -132,6 +132,7 @@ class StatementToOprTest(unittest.TestCase):
         converter._visit_projection.assert_not_called()
         converter._visit_select_predicate.assert_not_called()
 
+<<<<<<< HEAD
     def test_visit_select_without_table_ref(self):
         converter = StatementToPlanConverter()
         converter.visit_table_ref = MagicMock()
@@ -153,6 +154,8 @@ class StatementToOprTest(unittest.TestCase):
         converter._visit_orderby.assert_not_called()
         converter._visit_limit.assert_not_called()
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     @patch("evadb.optimizer.statement_to_opr_converter.LogicalCreateFunction")
     @patch(
         "evadb.optimizer.\
@@ -317,7 +320,10 @@ statement_to_opr_converter.metadata_definition_to_function_metadata"
         extract_object_plan = LogicalExtractObject(
             MagicMock(), MagicMock(), MagicMock(), MagicMock()
         )
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         create_plan.append_child(create_function_plan)
 
         plans.append(dummy_plan)

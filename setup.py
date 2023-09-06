@@ -130,6 +130,10 @@ forecasting_libs = [
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
+forecasting_libs = [
+    "statsforecast" # MODEL TRAIN AND FINE TUNING
+]
+
 ### NEEDED FOR DEVELOPER TESTING ONLY
 
 dev_libs = [
@@ -169,10 +173,16 @@ EXTRA_REQUIRES = {
     "chromadb": chromadb_libs,
     "postgres": postgres_libs,
     "ludwig": ludwig_libs,
+<<<<<<< HEAD
     "sklearn": sklearn_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+=======
+    "forecasting": forecasting_libs,
+    # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 }
 
 setup(
