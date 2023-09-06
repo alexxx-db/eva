@@ -225,14 +225,18 @@ parts:
         sections:
           - file: source/overview/concepts/data-sources
             title: Data Sources
+<<<<<<< HEAD
 =======
       - file: source/overview/concepts
         title: Concepts
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         #- file: source/overview/faq
 
   - caption: Use Cases
     chapters:
+<<<<<<< HEAD
 <<<<<<< HEAD
       - file: source/usecases/sentiment-analysis.rst
         title: Sentiment Analysis
@@ -276,24 +280,23 @@ parts:
 =======
 =======
       - file: source/usecases/food-review.rst
+=======
+      - file: source/usecases/sentiment-analysis.rst
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         title: Sentiment Analysis
+      - file: source/usecases/question-answering.rst
+        title: Question Answering
+      - file: source/usecases/text-summarization.rst
+        title: Text Summarization
       - file: source/usecases/image-classification.rst
         title: Image Classification
-      - file: source/usecases/similar-image-search.rst
+      - file: source/usecases/image-search.rst
         title: Image Search
-      - file: source/usecases/qa-video.rst
-        title: Video Question Answering
-      - file: source/usecases/08-chatgpt.ipynb
-        title: ChatGPT-based Video Question Answering
-      - file: source/usecases/12-query-pdf.ipynb
-        title: PDF Question Answering
-      - file: source/usecases/02-object-detection.ipynb
+      - file: source/usecases/object-detection.rst
         title: Object Detection
-      - file: source/usecases/03-emotion-analysis.ipynb
-        title: Emotions Analysis
-      - file: source/usecases/07-object-segmentation-huggingface.ipynb
-        title: Image Segmentation
-      - file: source/usecases/13-privategpt.ipynb
+      - file: source/usecases/emotion-analysis.rst
+        title: Emotion Analysis
+      - file: source/usecases/privategpt.rst
         title: PrivateGPT
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -368,6 +371,9 @@ parts:
 <<<<<<< HEAD
 =======
 
+      - file: source/reference/api
+        title: Python API
+
       - file: source/reference/databases/index
         title: Data Sources
         sections: 
@@ -377,8 +383,11 @@ parts:
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
       - file: source/reference/api
         title: Python API
 
@@ -528,11 +537,21 @@ parts:
             title: Model Training with Sklearn
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           - file: source/reference/ai/model-train-xgboost
             title: Model Training with XGBoost
 =======
 <<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+          - file: source/reference/ai/model-train-xgboost
+            title: Model Training with XGBoost
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -542,8 +561,11 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -555,6 +577,7 @@ parts:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
           - file: source/reference/ai/model-train
             title: Model Training
@@ -563,6 +586,8 @@ parts:
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
           - file: source/reference/ai/model-train-xgboost
@@ -594,7 +619,17 @@ parts:
             title: Model Training with Sklearn
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+          - file: source/reference/ai/model-train
+            title: Model Training
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
           - file: source/reference/ai/model-forecasting
             title: Time Series Forecasting
           - file: source/reference/ai/hf
@@ -603,6 +638,7 @@ parts:
             title: OpenAI 
           - file: source/reference/ai/yolo
             title: YOLO 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -627,6 +663,8 @@ parts:
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
@@ -634,21 +672,43 @@ parts:
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
           - file: source/reference/ai/stablediffusion
             title: Stable Diffusion
 >>>>>>> bf022329 (Add stable diffusion integration (#1240))
 
       - file: source/reference/ai/custom-ai-function
         title: Bring Your Own AI Function
+<<<<<<< HEAD
 >>>>>>> c952858c (docs: updates)
+<<<<<<< HEAD
 >>>>>>> 35b99c88 (docs: updates)
+=======
+=======
+=======
+          - file: source/reference/ai/custom
+            title: Custom Model
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 
       - file: source/reference/optimizations
         title: Optimizations
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
           - file: source/reference/ai/custom
             title: Custom Model
+=======
+=======
+<<<<<<< HEAD
+          - file: source/reference/ai/custom
+            title: Custom Model
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -666,12 +726,15 @@ parts:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
           - file: source/reference/ai/custom
@@ -690,7 +753,15 @@ parts:
         title: Optimizations
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
         
       # - file: source/reference/io
       #   title: IO Descriptors

@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -25,6 +26,12 @@
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 import hashlib
 import os
 import pickle
@@ -55,8 +62,19 @@ import pickle
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+import hashlib
+import os
+import pickle
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
 from pathlib import Path
 from typing import Dict, List
 
@@ -84,6 +102,7 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     try_to_import_forecast,
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -98,6 +117,8 @@ from evadb.utils.generic_utils import (
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
     try_to_import_forecast,
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -112,7 +133,18 @@ from evadb.utils.generic_utils import (
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+    try_to_import_forecast,
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+    try_to_import_forecast,
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
     try_to_import_ludwig,
     try_to_import_torch,
     try_to_import_ultralytics,
@@ -152,6 +184,7 @@ class CreateUDFExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Use Ludwig's auto_train engine to train/tune models.
 =======
         Use ludwig's auto_train engine to train/tune models.
@@ -164,6 +197,8 @@ class CreateUDFExecutor(AbstractExecutor):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
         Use Ludwig's auto_train engine to train/tune models.
 =======
         Use ludwig's auto_train engine to train/tune models.
@@ -178,12 +213,23 @@ class CreateUDFExecutor(AbstractExecutor):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
         Use Ludwig's auto_train engine to train/tune models.
 =======
         Use ludwig's auto_train engine to train/tune models.
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+        Use Ludwig's auto_train engine to train/tune models.
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
         """
         try_to_import_ludwig()
         from ludwig.automl import auto_train
@@ -247,6 +293,7 @@ class CreateUDFExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -257,10 +304,19 @@ class CreateUDFExecutor(AbstractExecutor):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
     def handle_forecasting_udf(self):
         """Handle forecasting UDFs"""
         aggregated_batch_list = []
@@ -378,6 +434,7 @@ class CreateUDFExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -390,6 +447,8 @@ class CreateUDFExecutor(AbstractExecutor):
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
@@ -400,7 +459,16 @@ class CreateUDFExecutor(AbstractExecutor):
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
     def handle_generic_udf(self):
         """Handle generic UDFs
 
@@ -446,6 +514,7 @@ class CreateUDFExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         elif self.node.udf_type == "Forecasting":
             name, impl_path, udf_type, io_list, metadata = self.handle_forecasting_udf()
 =======
@@ -459,6 +528,8 @@ class CreateUDFExecutor(AbstractExecutor):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
         elif self.node.udf_type == "Forecasting":
             name, impl_path, udf_type, io_list, metadata = self.handle_forecasting_udf()
 =======
@@ -474,12 +545,24 @@ class CreateUDFExecutor(AbstractExecutor):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
         elif self.node.udf_type == "Forecasting":
             name, impl_path, udf_type, io_list, metadata = self.handle_forecasting_udf()
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+        elif self.node.udf_type == "Forecasting":
+            name, impl_path, udf_type, io_list, metadata = self.handle_forecasting_udf()
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
         else:
             name, impl_path, udf_type, io_list, metadata = self.handle_generic_udf()
 
