@@ -30,10 +30,14 @@ class ShowInfoExecutor(AbstractExecutor):
         show_entries = []
 
         assert (
+<<<<<<< HEAD
             self.node.show_type is ShowType.FUNCTIONS
             or ShowType.TABLES
             or ShowType.DATABASES
             or ShowType.CONFIG
+=======
+            self.node.show_type is ShowType.FUNCTIONS or ShowType.TABLES
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         ), f"Show command does not support type {self.node.show_type}"
 
         if self.node.show_type is ShowType.FUNCTIONS:

@@ -71,18 +71,22 @@ class CreateFunctionStatement(AbstractStatement):
 
     def __str__(self) -> str:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         s = "CREATE"
 
         if self._or_replace:
             s += " OR REPLACE"
 
         s += " " + "FUNCTION"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -92,6 +96,11 @@ class CreateFunctionStatement(AbstractStatement):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+=======
+        s = "CREATE FUNCTION"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 
         if self._if_not_exists:
             s += " IF NOT EXISTS"

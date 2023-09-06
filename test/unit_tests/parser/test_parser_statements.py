@@ -80,7 +80,10 @@ class ParserStatementTests(unittest.TestCase):
             """,
             "SHOW TABLES;",
             "SHOW FUNCTIONS;",
+<<<<<<< HEAD
             "SHOW DATABASES;",
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             "EXPLAIN SELECT a FROM foo;",
             "SELECT HomeRentalForecast(12);",
             """SELECT data FROM MyVideo WHERE id < 5

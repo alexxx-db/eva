@@ -32,7 +32,11 @@ class CreateIndexStatement(AbstractStatement):
         table_ref: TableRef,
         col_list: List[ColumnDefinition],
         vector_store_type: VectorStoreType,
+<<<<<<< HEAD
         project_expr_list: List[AbstractStatement],
+=======
+        function: FunctionExpression = None,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     ):
         super().__init__(StatementType.CREATE_INDEX)
         self._name = name
@@ -40,6 +44,7 @@ class CreateIndexStatement(AbstractStatement):
         self._table_ref = table_ref
         self._col_list = col_list
         self._vector_store_type = vector_store_type
+<<<<<<< HEAD
         self._project_expr_list = project_expr_list
 
         # Definition of CREATE INDEX.
@@ -85,11 +90,25 @@ class CreateIndexStatement(AbstractStatement):
         print_str += f" USING {self._vector_store_type};"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
+=======
+=======
+        self._function = function
+
+    def __str__(self) -> str:
+        print_str = "CREATE INDEX {} ON {} ({}{}) ".format(
+            self._name,
+            self._table_ref,
+            "" if self._function else self._function,
+            tuple(self._col_list),
+        )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         return print_str
 
     @property
@@ -113,6 +132,7 @@ class CreateIndexStatement(AbstractStatement):
         return self._vector_store_type
 
     @property
+<<<<<<< HEAD
     def project_expr_list(self):
         return self._project_expr_list
 
@@ -123,6 +143,10 @@ class CreateIndexStatement(AbstractStatement):
     @property
     def index_def(self):
         return self._index_def
+=======
+    def function(self):
+        return self._function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     def __eq__(self, other):
         if not isinstance(other, CreateIndexStatement):
@@ -133,8 +157,12 @@ class CreateIndexStatement(AbstractStatement):
             and self._table_ref == other.table_ref
             and self.col_list == other.col_list
             and self._vector_store_type == other.vector_store_type
+<<<<<<< HEAD
             and self._project_expr_list == other.project_expr_list
             and self._index_def == other.index_def
+=======
+            and self._function == other.function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
 
     def __hash__(self) -> int:
@@ -146,7 +174,11 @@ class CreateIndexStatement(AbstractStatement):
                 self._table_ref,
                 tuple(self.col_list),
                 self._vector_store_type,
+<<<<<<< HEAD
                 tuple(self._project_expr_list),
                 self._index_def,
+=======
+                self._function,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             )
         )

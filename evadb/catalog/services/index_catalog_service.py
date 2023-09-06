@@ -35,6 +35,7 @@ class IndexCatalogService(BaseService):
         type: VectorStoreType,
         feat_column: ColumnCatalogEntry,
         function_signature: str,
+<<<<<<< HEAD
         index_def: str,
     ) -> IndexCatalogEntry:
         index_entry = IndexCatalog(
@@ -44,6 +45,11 @@ class IndexCatalogService(BaseService):
             feat_column.row_id,
             function_signature,
             index_def,
+=======
+    ) -> IndexCatalogEntry:
+        index_entry = IndexCatalog(
+            name, save_file_path, type, feat_column.row_id, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
         index_entry = index_entry.save(self.session)
         return index_entry.as_dataclass()

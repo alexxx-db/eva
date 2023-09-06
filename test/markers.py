@@ -24,6 +24,7 @@ from evadb.utils.generic_utils import (
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     is_chromadb_available,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -31,6 +32,9 @@ from evadb.utils.generic_utils import (
     is_chromadb_available,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
     is_forecast_available,
     is_gpu_available,
     is_ludwig_available,
@@ -113,7 +117,10 @@ forecast_skip_marker = pytest.mark.skipif(
     is_forecast_available() is False,
     reason="Run only if forecasting packages available",
 )
+<<<<<<< HEAD
 
 stable_diffusion_skip_marker = pytest.mark.skipif(
     is_replicate_available() is False, reason="requires replicate"
 )
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

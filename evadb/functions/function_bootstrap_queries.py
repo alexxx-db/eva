@@ -50,12 +50,15 @@ DummyFeatureExtractor_function_query = """CREATE FUNCTION
 )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 DummyNoInputFunction_function_query = """CREATE FUNCTION
                   IF NOT EXISTS DummyNoInputFunction
                   IMPL '{}/../test/util.py';
@@ -71,6 +74,7 @@ DummyLLM_function_query = """CREATE FUNCTION
 )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -78,6 +82,10 @@ DummyLLM_function_query = """CREATE FUNCTION
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 fuzzy_function_query = """CREATE FUNCTION IF NOT EXISTS FuzzDistance
                     INPUT (Input_Array1 NDARRAY ANYTYPE, Input_Array2 NDARRAY ANYTYPE)
                     OUTPUT (distance FLOAT(32, 7))
@@ -223,6 +231,7 @@ stablediffusion_function_query = """CREATE FUNCTION IF NOT EXISTS StableDiffusio
     EvaDB_INSTALLATION_DIR
 )
 
+<<<<<<< HEAD
 dalle_function_query = """CREATE FUNCTION IF NOT EXISTS DallE
         IMPL '{}/functions/dalle.py';
         """.format(
@@ -233,6 +242,11 @@ dalle_function_query = """CREATE FUNCTION IF NOT EXISTS DallE
 def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
     """Load the built-in functions into the system during system bootstrapping.
 
+=======
+def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
+    """Load the built-in functions into the system during system bootstrapping.
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     The function loads a set of pre-defined function queries based on the `mode` argument.
     In 'debug' mode, the function loads debug functions along with release functions.
     In 'release' mode, only release functions are loaded. In addition, in 'debug' mode,
@@ -243,6 +257,7 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Args:G
 =======
     Args:
@@ -251,6 +266,10 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
     Args:G
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+    Args:
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         mode (str, optional): The mode for loading functions, either 'debug' or 'release'.
         Defaults to 'debug'.
 
@@ -286,8 +305,11 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
         # Mvit_function_query,
         Sift_function_query,
         Yolo_function_query,
+<<<<<<< HEAD
         stablediffusion_function_query,
         dalle_function_query,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     ]
 
     # if mode is 'debug', add debug functions
@@ -303,6 +325,7 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 DummyNoInputFunction_function_query,
                 DummyLLM_function_query,
 =======
@@ -312,6 +335,9 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
                 DummyLLM_function_query,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
             ]
         )
 

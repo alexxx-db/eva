@@ -23,6 +23,7 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -30,6 +31,9 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 from evadb.catalog.models.utils import IndexCatalogEntry
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 from evadb.constants import CACHEABLE_FUNCTIONS
 from evadb.executor.execution_context import Context
 from evadb.expression.expression_utils import (
@@ -583,9 +587,12 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
         # Get column catalog entry and function_signature.
         column_catalog_entry = tv_expr.col_object
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -615,6 +622,7 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
             if isinstance(base_func_expr, TupleValueExpression)
             else base_func_expr.signature()
         )
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
@@ -627,6 +635,15 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
                 if isinstance(base_func_expr, TupleValueExpression)
                 else base_func_expr.signature()
 <<<<<<< HEAD
+=======
+
+        # Get index catalog. Check if an index exists for matching
+        # function signature and table columns.
+        index_catalog_entry = (
+            catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+                column_catalog_entry, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
             )
 
             # Get index catalog. Check if an index exists for matching
@@ -902,8 +919,12 @@ class LogicalCreateIndexToVectorIndex(Rule):
             before.table_ref,
             before.col_list,
             before.vector_store_type,
+<<<<<<< HEAD
             before.project_expr_list,
             before.index_def,
+=======
+            before.function,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
         child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
         batch_mem_size = context.db.config.get_value("executor", "batch_mem_size")

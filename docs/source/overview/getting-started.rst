@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. _getting-started:
 =======
 <<<<<<< HEAD
@@ -11,11 +12,14 @@
 =======
 .. _getting-started:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 .. _Getting Started:
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 
 Getting Started
 =================
@@ -147,7 +151,7 @@ Now, run the Python program:
 =======
 
    # List all the built-in functions in EvaDB
-   print(cursor.query("SHOW UDFS;").df())
+   print(cursor.query("SHOW FUNCTIONS;").df())
 
 Now, run the Python program:
 
@@ -160,9 +164,9 @@ You should see a list of built-in functions including but not limited to the fol
 .. code-block:: bash
 
             name                                             inputs  ...                                               impl metadata
-    0  ArrayCount   [Input_Array NDARRAY ANYTYPE (), Search_Key ANY]  ...  /home/jarulraj3/evadb/evadb/udfs/ndarray/array...       []
-    1        Crop  [Frame_Array NDARRAY UINT8 (3, None, None), bb...  ...   /home/jarulraj3/evadb/evadb/udfs/ndarray/crop.py       []
-    2     ChatGPT  [query NDARRAY STR (1,), content NDARRAY STR (...  ...        /home/jarulraj3/evadb/evadb/udfs/chatgpt.py       []
+    0  ArrayCount   [Input_Array NDARRAY ANYTYPE (), Search_Key ANY]  ...  /home/jarulraj3/evadb/evadb/functions/ndarray/array...       []
+    1        Crop  [Frame_Array NDARRAY UINT8 (3, None, None), bb...  ...   /home/jarulraj3/evadb/evadb/functions/ndarray/crop.py       []
+    2     ChatGPT  [query NDARRAY STR (1,), content NDARRAY STR (...  ...        /home/jarulraj3/evadb/evadb/functions/chatgpt.py       []
 
     [3 rows x 6 columns]
 
@@ -173,14 +177,27 @@ You should see a list of built-in functions including but not limited to the fol
 
     EvaDB supports additional installation options for extending its functionality. Go over the :doc:`Installation Options <getting-started/installation-options>` for all the available options.
 
-Illustrative AI App
--------------------
+Illustrative AI Query
+---------------------
 
+<<<<<<< HEAD
 Here is a simple, illustrative `MNIST image classification <https://en.wikipedia.org/wiki/MNIST_database>`_ AI app in EvaDB.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Here is an illustrative `MNIST image classification <https://en.wikipedia.org/wiki/MNIST_database>`_ AI query in EvaDB.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
-.. code-block:: python
+.. code-block:: sql
+    
+    --- This AI query retrieves images in the loaded MNIST video with label 4
+    --- We constrain the query to only search through the first 100 frames
+    --- We limit the query to only return the first five frames with label 4
+    SELECT data, id, MnistImageClassifier(data) 
+    FROM MnistVideo 
+    WHERE MnistImageClassifier(data) = '4' AND id < 100
+    LIMIT 5;
 
+<<<<<<< HEAD
    # Import the EvaDB package 
    import evadb
 
@@ -398,10 +415,14 @@ Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <h
     Go over the :ref:`Python API<python-api>` to learn more about the functions used in this app.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 The complete `MNIST notebook is available on Colab <https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_.
 Try out EvaDB by experimenting with this introductory notebook.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 The complete `Sentiment Analysis notebook is available on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`_. Try out EvaDB by experimenting with this notebook :)
@@ -422,3 +443,5 @@ Try out EvaDB by experimenting with the complete `sentiment analysis notebook on
 >>>>>>> 08db5ebb (docs: updated images)
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))

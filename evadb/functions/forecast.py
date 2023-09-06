@@ -19,17 +19,23 @@ import pickle
 import pandas as pd
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import setup
 
 
 class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 from evadb.catalog.catalog_type import NdArrayType
 from evadb.udfs.abstract.abstract_udf import AbstractUDF
@@ -39,6 +45,7 @@ from evadb.udfs.decorators.io_descriptors.data_types import PandasDataframe
 
 class ForecastModel(AbstractUDF):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import setup
@@ -47,10 +54,13 @@ from evadb.functions.decorators.decorators import setup
 class ForecastModel(AbstractFunction):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
     @property
     def name(self) -> str:
         return "ForecastModel"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -58,6 +68,8 @@ class ForecastModel(AbstractFunction):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
     @setup(cacheable=False, function_type="Forecasting", batchable=True)
     def setup(
         self,
@@ -75,6 +87,7 @@ class ForecastModel(AbstractFunction):
     ):
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     ):
 =======
     @setup(cacheable=False, udf_type="Forecasting", batchable=True)
@@ -86,11 +99,17 @@ class ForecastModel(AbstractFunction):
     ):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+    @setup(cacheable=False, udf_type="Forecasting", batchable=True)
+    def setup(self, model_name: str, model_path: str):
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         f = open(model_path, "rb")
         loaded_model = pickle.load(f)
         f.close()
         self.model = loaded_model
         self.model_name = model_name
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -126,6 +145,8 @@ class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
 =======
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         self.predict_column_rename = predict_column_rename
         self.time_column_rename = time_column_rename
         self.id_column_rename = id_column_rename
@@ -159,12 +180,34 @@ class ForecastModel(AbstractFunction):
         return forecast_df
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
         )
 =======
         )[: self.horizon * forecast_df["unique_id"].nunique()]
 >>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
         return forecast_df
 =======
+=======
+
+    @forward(
+        input_signatures=[],
+        output_signatures=[
+            PandasDataframe(
+                columns=["y"],
+                column_types=[
+                    NdArrayType.FLOAT32,
+                ],
+                column_shapes=[(None,)],
+            )
+        ],
+    )
+    def forward(self, data) -> pd.DataFrame:
+        horizon = list(data.iloc[:, -1])[0]
+        assert (
+            type(horizon) is int
+        ), "Forecast UDF expects integral horizon in parameter."
+        forecast_df = self.model.predict(h=horizon)
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         forecast_df = forecast_df.rename(columns={self.model_name: "y"})
         return pd.DataFrame(
             forecast_df,
@@ -173,8 +216,11 @@ class ForecastModel(AbstractFunction):
             ],
         )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
         )[: self.horizon * forecast_df["unique_id"].nunique()]
         return forecast_df
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))

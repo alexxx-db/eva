@@ -77,6 +77,7 @@ class PlanNodeTests(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         or_replace = False
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -84,6 +85,9 @@ class PlanNodeTests(unittest.TestCase):
         or_replace = False
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         if_not_exists = True
         functionIO = "functionIO"
         inputs = [functionIO, functionIO]
@@ -92,23 +96,30 @@ class PlanNodeTests(unittest.TestCase):
         ty = "classification"
         node = CreateFunctionPlan(
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
             function_name, or_replace, if_not_exists, inputs, outputs, impl_path, ty
         )
         self.assertEqual(node.opr_type, PlanOprType.CREATE_FUNCTION)
         self.assertEqual(node.or_replace, or_replace)
         self.assertEqual(node.if_not_exists, if_not_exists)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
             function_name, if_not_exists, inputs, outputs, impl_path, ty
         )
         self.assertEqual(node.opr_type, PlanOprType.CREATE_FUNCTION)
         self.assertEqual(node.if_not_exists, True)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
             function_name, or_replace, if_not_exists, inputs, outputs, impl_path, ty
         )
@@ -117,6 +128,8 @@ class PlanNodeTests(unittest.TestCase):
         self.assertEqual(node.if_not_exists, if_not_exists)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         self.assertEqual(node.inputs, [functionIO, functionIO])
         self.assertEqual(node.outputs, [functionIO])
         self.assertEqual(node.impl_path, impl_path)

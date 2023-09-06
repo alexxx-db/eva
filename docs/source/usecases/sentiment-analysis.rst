@@ -8,6 +8,7 @@ Sentiment Analysis
     <embed>
     <table align="left">
     <td>
+<<<<<<< HEAD
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -15,6 +16,15 @@ Sentiment Analysis
     </td>
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     </td>
     </table><br><br>
     </embed>
@@ -92,6 +102,7 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
 .. include:: ../shared/nlp.rst
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/footer.rst
 =======
 Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`__ for working example.
@@ -109,3 +120,9 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 =======
 .. include:: ../shared/designs/design3.rst
 >>>>>>> ad7bb302 (docs: updates)
+=======
+.. include:: ../shared/designs/design3.rst
+=======
+Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`__ for working example.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))

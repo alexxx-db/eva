@@ -257,12 +257,19 @@ class CreateIndex:
                 elif child.data == "index_elem":
                     index_elem = self.visit(child)
 
+<<<<<<< HEAD
         # Projection list of child of index creation.
         project_expr_list = []
 
         # Parse either a single function call or column list.
         if not isinstance(index_elem, list):
             project_expr_list += [index_elem]
+=======
+        # Parse either a single function call or column list.
+        col_list, function = None, None
+        if not isinstance(index_elem, list):
+            function = index_elem
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
             # Traverse to the tuple value expression.
             while not isinstance(index_elem, TupleValueExpression):
@@ -279,6 +286,7 @@ class CreateIndex:
         return CreateIndexStatement(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -290,6 +298,8 @@ class CreateIndex:
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
             index_name,
             if_not_exists,
             table_ref,
@@ -298,11 +308,17 @@ class CreateIndex:
             project_expr_list,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
+=======
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         )
 
     def vector_store_type(self, tree):

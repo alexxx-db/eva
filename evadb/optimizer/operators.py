@@ -27,6 +27,7 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -34,6 +35,9 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 from evadb.catalog.models.utils import IndexCatalogEntry
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 from evadb.expression.abstract_expression import AbstractExpression
 from evadb.expression.constant_value_expression import ConstantValueExpression
 from evadb.expression.function_expression import FunctionExpression
@@ -654,21 +658,28 @@ class LogicalCreateFunction(Operator):
         name: str
             function_name provided by the user required
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         or_replace: bool
             if true should overwrite if function with same name exists
         if_not_exists: bool
             if true should skip if function with same name exists
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
         if_not_exists: bool
             if true should throw an error if function with same name exists
             else will replace the existing
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
         or_replace: bool
             if true should overwrite if function with same name exists
@@ -676,6 +687,8 @@ class LogicalCreateFunction(Operator):
             if true should skip if function with same name exists
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         inputs: List[FunctionIOCatalogEntry]
             function inputs, annotated list similar to table columns
         outputs: List[FunctionIOCatalogEntry]
@@ -1125,8 +1138,12 @@ class LogicalCreateIndex(Operator):
         table_ref: TableRef,
         col_list: List[ColumnDefinition],
         vector_store_type: VectorStoreType,
+<<<<<<< HEAD
         project_expr_list: List[AbstractExpression],
         index_def: str,
+=======
+        function: FunctionExpression = None,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         children: List = None,
     ):
         super().__init__(OperatorType.LOGICALCREATEINDEX, children)
@@ -1135,8 +1152,12 @@ class LogicalCreateIndex(Operator):
         self._table_ref = table_ref
         self._col_list = col_list
         self._vector_store_type = vector_store_type
+<<<<<<< HEAD
         self._project_expr_list = project_expr_list
         self._index_def = index_def
+=======
+        self._function = function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     @property
     def name(self):
@@ -1159,12 +1180,17 @@ class LogicalCreateIndex(Operator):
         return self._vector_store_type
 
     @property
+<<<<<<< HEAD
     def project_expr_list(self):
         return self._project_expr_list
 
     @property
     def index_def(self):
         return self._index_def
+=======
+    def function(self):
+        return self._function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     def __eq__(self, other):
         is_subtree_equal = super().__eq__(other)
@@ -1177,8 +1203,12 @@ class LogicalCreateIndex(Operator):
             and self.table_ref == other.table_ref
             and self.col_list == other.col_list
             and self.vector_store_type == other.vector_store_type
+<<<<<<< HEAD
             and self.project_expr_list == other.project_expr_list
             and self.index_def == other.index_def
+=======
+            and self.function == other.function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
 
     def __hash__(self) -> int:
@@ -1190,8 +1220,12 @@ class LogicalCreateIndex(Operator):
                 self.table_ref,
                 tuple(self.col_list),
                 self.vector_store_type,
+<<<<<<< HEAD
                 tuple(self.project_expr_list),
                 self.index_def,
+=======
+                self.function,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             )
         )
 

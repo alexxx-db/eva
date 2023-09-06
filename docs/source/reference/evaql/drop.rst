@@ -11,6 +11,7 @@ DROP TABLE
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 DROP FUNCTION
 -------------
 =======
@@ -64,3 +65,11 @@ DROP UDF
 
     DROP UDF FastRCNNObjectDetector;
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+DROP FUNCTION
+-------------
+
+.. code:: mysql
+
+    DROP FUNCTION FastRCNNObjectDetector;
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))

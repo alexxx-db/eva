@@ -35,16 +35,20 @@ from evadb.configuration.constants import EvaDB_DATABASE_DIR, EvaDB_INSTALLATION
 from evadb.database import init_evadb_instance
 from evadb.expression.function_expression import FunctionExpression
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 from evadb.functions.abstract.abstract_function import (
     AbstractClassifierFunction,
     AbstractFunction,
 )
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -54,6 +58,11 @@ from evadb.functions.abstract.abstract_function import AbstractClassifierFunctio
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+=======
+from evadb.functions.abstract.abstract_function import AbstractClassifierFunction
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 from evadb.functions.decorators import decorators
 from evadb.functions.decorators.io_descriptors.data_types import (
     NumpyArray,

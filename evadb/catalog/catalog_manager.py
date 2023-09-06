@@ -355,6 +355,7 @@ class CatalogManager(object):
 
         checksum = get_file_checksum(impl_file_path)
         function_entry = self._function_service.insert_entry(
+<<<<<<< HEAD
             name,
             impl_file_path,
             type,
@@ -362,6 +363,16 @@ class CatalogManager(object):
             function_io_list,
             function_metadata_list,
         )
+=======
+            name, impl_file_path, type, checksum
+        )
+        for function_io in function_io_list:
+            function_io.function_id = function_entry.row_id
+        self._function_io_service.insert_entries(function_io_list)
+        for function_metadata in function_metadata_list:
+            function_metadata.function_id = function_entry.row_id
+        self._function_metadata_service.insert_entries(function_metadata_list)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         return function_entry
 
     def get_function_catalog_entry_by_name(self, name: str) -> FunctionCatalogEntry:
@@ -428,6 +439,7 @@ class CatalogManager(object):
         vector_store_type: VectorStoreType,
         feat_column: ColumnCatalogEntry,
         function_signature: str,
+<<<<<<< HEAD
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
@@ -437,6 +449,11 @@ class CatalogManager(object):
             feat_column,
             function_signature,
             index_def,
+=======
+    ) -> IndexCatalogEntry:
+        index_catalog_entry = self._index_service.insert_entry(
+            name, save_file_path, vector_store_type, feat_column, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
         return index_catalog_entry
 

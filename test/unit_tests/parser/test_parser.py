@@ -121,6 +121,7 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(actual_stmt, expected_stmt)
         self.assertEqual(actual_stmt.index_def, create_index_query)
 
+<<<<<<< HEAD
         # create if_not_exists
         expected_stmt = CreateIndexStatement(
             "testindex",
@@ -143,6 +144,7 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(actual_stmt.index_def, create_index_query)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
         # create if_not_exists
@@ -160,6 +162,10 @@ class ParserTests(unittest.TestCase):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         # create index on Function expression
         create_index_query = (
             "CREATE INDEX testindex ON MyVideo (FeatureExtractor(featCol)) USING FAISS;"
@@ -667,6 +673,7 @@ class ParserTests(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 =======
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable"
@@ -675,6 +682,10 @@ class ParserTests(unittest.TestCase):
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+        query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         evadb_stmt_list = parser.parse(query)
 
         # check stmt itself
@@ -787,12 +798,15 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(delete_stmt, expected_stmt)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
     def test_set_statement(self):
         parser = Parser()
         set_statement = """SET OPENAIKEY = 'ABCD'"""
@@ -882,12 +896,18 @@ class ParserTests(unittest.TestCase):
     def test_create_function_statement(self):
         parser = Parser()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
     def test_create_function_statement(self):
         parser = Parser()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
         create_func_query = """CREATE FUNCTION IF NOT EXISTS FastRCNN
                   INPUT  (Frame_Array NDARRAY UINT8(3, 256, 256))
                   OUTPUT (Labels NDARRAY STR(10), Bbox NDARRAY UINT8(10, 4))
@@ -1026,13 +1046,18 @@ class ParserTests(unittest.TestCase):
         create_func = CreateFunctionStatement(
             "func",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
             False,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
             False,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             False,
             Path("data/fastrcnn.py"),
             [
@@ -1193,7 +1218,10 @@ class ParserTests(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 
     def test_lark(self):
         query = """CREATE FUNCTION FaceDetector
@@ -1206,6 +1234,9 @@ class ParserTests(unittest.TestCase):
         parser = Parser()
         parser.parse(query)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))

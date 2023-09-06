@@ -31,8 +31,12 @@ class CreateIndexPlan(AbstractPlan):
         table_ref: TableRef,
         col_list: List[ColumnDefinition],
         vector_store_type: VectorStoreType,
+<<<<<<< HEAD
         project_expr_list: List[AbstractExpression],
         index_def: str,
+=======
+        function: FunctionExpression = None,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     ):
         super().__init__(PlanOprType.CREATE_INDEX)
         self._name = name
@@ -40,8 +44,12 @@ class CreateIndexPlan(AbstractPlan):
         self._table_ref = table_ref
         self._col_list = col_list
         self._vector_store_type = vector_store_type
+<<<<<<< HEAD
         self._project_expr_list = project_expr_list
         self._index_def = index_def
+=======
+        self._function = function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     @property
     def name(self):
@@ -64,12 +72,17 @@ class CreateIndexPlan(AbstractPlan):
         return self._vector_store_type
 
     @property
+<<<<<<< HEAD
     def project_expr_list(self):
         return self._project_expr_list
 
     @property
     def index_def(self):
         return self._index_def
+=======
+    def function(self):
+        return self._function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
     def __str__(self):
         function_expr = None
@@ -86,7 +99,11 @@ class CreateIndexPlan(AbstractPlan):
             self._table_ref,
             tuple(self._col_list),
             self._vector_store_type,
+<<<<<<< HEAD
             "" if function_expr is None else "function={}".format(function_expr),
+=======
+            "" if not self._function else "function={}".format(self._function),
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
 
     def __hash__(self) -> int:
@@ -98,7 +115,11 @@ class CreateIndexPlan(AbstractPlan):
                 self.table_ref,
                 tuple(self.col_list),
                 self.vector_store_type,
+<<<<<<< HEAD
                 tuple(self.project_expr_list),
                 self.index_def,
+=======
+                self.function,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             )
         )

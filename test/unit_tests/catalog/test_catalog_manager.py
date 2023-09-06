@@ -142,6 +142,7 @@ class CatalogManagerTests(unittest.TestCase):
             function_io_list,
             function_metadata_list,
         )
+<<<<<<< HEAD
         function_mock.return_value.insert_entry.assert_called_with(
             "function",
             "sample.py",
@@ -149,6 +150,14 @@ class CatalogManagerTests(unittest.TestCase):
             checksum_mock.return_value,
             function_io_list,
             function_metadata_list,
+=======
+        functionio_mock.return_value.insert_entries.assert_called_with(function_io_list)
+        functionmetadata_mock.return_value.insert_entries.assert_called_with(
+            function_metadata_list
+        )
+        function_mock.return_value.insert_entry.assert_called_with(
+            "function", "sample.py", "classification", checksum_mock.return_value
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         )
         checksum_mock.assert_called_with("sample.py")
         self.assertEqual(actual, function_mock.return_value.insert_entry.return_value)
