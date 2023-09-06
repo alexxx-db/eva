@@ -176,8 +176,11 @@ To register an user-defined function, specify the implementation details of the 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 CREATE INDEX
 ------------
 =======
@@ -331,14 +334,15 @@ CREATE FUNCTION via Type
 =======
 .. _create-udf-train:
 
-CREATE UDF via Training
------------------------
+CREATE FUNCTION via Training
+----------------------------
 
 To register an user-defined function by training a predication model.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 .. code-block:: sql
 
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 =======
@@ -394,6 +398,9 @@ CREATE FUNCTION via Type
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
    CREATE [OR REPALCE] FUNCTION [IF NOT EXISTS] function_name
    [ FROM ( select ) ]
    TYPE function_type
@@ -409,6 +416,9 @@ Where the `parameter` is ``key value`` pair.
 
    Go over :ref:`hf`, :ref:`ludwig`, and :ref:`forecast` to check examples for creating function via type.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
    CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
    (SELECT * FROM HomeRentals)
@@ -417,6 +427,7 @@ Where the `parameter` is ``key value`` pair.
    TIME_LIST 120;
    TUNE_FOR_MEMORY False;
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -465,6 +476,8 @@ Where the `parameter` is ``key value`` pair.
 
    Go over :ref:`hf`, :ref:`ludwig`, and :ref:`forecast` to check examples for creating function via type.
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 CREATE MATERIALIZED VIEW
 ------------------------

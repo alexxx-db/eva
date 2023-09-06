@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 061e9d6d (docs: updates)
@@ -33,6 +34,8 @@ personal_ws-1.1 en 1845
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 personal_ws-1.1 en 1776 
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
@@ -47,21 +50,28 @@ personal_ws-1.1 en 1563
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 personal_ws-1.1 en 1563 
 =======
 personal_ws-1.1 en 1467 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 =======
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
@@ -138,6 +148,8 @@ personal_ws-1.1 en 1563
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 ABCD
 ABCMeta
 ANYDIM
@@ -966,12 +978,15 @@ MydbHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 MysqlHandler
 NBEATS
 NCHAR
@@ -1042,11 +1057,14 @@ MysqlHandler
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 MysqlHandler
 =======
@@ -1055,6 +1073,7 @@ MysqlHandler
 MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
@@ -1066,6 +1085,8 @@ MysqlHandler
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 NEQ
 NHITS
 NLP
@@ -1298,6 +1319,7 @@ SamplePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -1328,10 +1350,17 @@ SampleVideoTable
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 SampleTable
 SampleVideoTable
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1351,6 +1380,10 @@ SampleVideoTable
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 SampleTable
 SampleVideoTable
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -1361,10 +1394,14 @@ SampleVideoTable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -1410,6 +1447,8 @@ SampleVideoTable
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 Scalability
 ScanPlan
 SchemaUtils
@@ -1994,6 +2033,7 @@ feedstock
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -2015,6 +2055,10 @@ fetchall
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -2028,13 +2072,17 @@ fetchall
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -2084,6 +2132,10 @@ fetchall
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 ffill
 ffmpeg
 fileFormat
@@ -2592,6 +2644,7 @@ sk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
@@ -2636,6 +2689,11 @@ sklearn
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+sklearn
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 smallint
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -2649,13 +2707,17 @@ smallint
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 smallint
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -2704,6 +2766,10 @@ smallint
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 smi
 softmax
 spacy

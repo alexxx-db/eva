@@ -20,10 +20,13 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 .. code-block::
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -235,6 +238,8 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 =======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
 .. code-block:: text
 
     CREATE DATABASE postgres_data 
@@ -246,5 +251,44 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
         "port": "5432",
         "database": "evadb"
     }
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+.. tab-set::
+    
+    .. tab-item:: Python
+
+        .. code-block:: python
+
+            params = {
+                "user": "eva",
+                "password": "password",
+                "host": "localhost",
+                "port": "5432",
+                "database": "evadb",
+            }
+            query = f"CREATE DATABASE postgres_data 
+                      WITH ENGINE = 'postgres', 
+                      PARAMETERS = {params};"
+            cursor.query(query).df()
+
+    .. tab-item:: SQL 
+
+        .. code-block:: text
+
+            CREATE DATABASE postgres_data 
+            WITH ENGINE = 'postgres', 
+            PARAMETERS = {
+                "user": "eva",
+                "password": "password",
+                "host": "localhost",
+                "port": "5432",
+                "database": "evadb"
+            }
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))

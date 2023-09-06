@@ -262,6 +262,7 @@ forecasting_libs = [
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
+<<<<<<< HEAD
 sklearn_libs = ["scikit-learn"]
 
 forecasting_libs = [
@@ -283,6 +284,11 @@ forecasting_libs = [
 ]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+forecasting_libs = [
+    "statsforecast" # MODEL TRAIN AND FINE TUNING
+]
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 ### NEEDED FOR DEVELOPER TESTING ONLY
 
@@ -390,6 +396,7 @@ EXTRA_REQUIRES = {
     "ludwig": ludwig_libs,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "sklearn": sklearn_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
@@ -408,6 +415,7 @@ EXTRA_REQUIRES = {
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -415,10 +423,14 @@ EXTRA_REQUIRES = {
 =======
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
     "sklearn": sklearn_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -449,11 +461,15 @@ EXTRA_REQUIRES = {
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 =======
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -482,6 +498,9 @@ EXTRA_REQUIRES = {
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 }
 
 setup(

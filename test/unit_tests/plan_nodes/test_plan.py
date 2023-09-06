@@ -81,6 +81,7 @@ class PlanNodeTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -100,6 +101,8 @@ class PlanNodeTests(unittest.TestCase):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         or_replace = False
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -112,11 +115,15 @@ class PlanNodeTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
         or_replace = False
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -163,6 +170,8 @@ class PlanNodeTests(unittest.TestCase):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         if_not_exists = True
         functionIO = "functionIO"
         inputs = [functionIO, functionIO]
@@ -179,6 +188,7 @@ class PlanNodeTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -219,6 +229,10 @@ class PlanNodeTests(unittest.TestCase):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
             function_name, or_replace, if_not_exists, inputs, outputs, impl_path, ty
         )
         self.assertEqual(node.opr_type, PlanOprType.CREATE_FUNCTION)
@@ -249,6 +263,7 @@ class PlanNodeTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -270,12 +285,15 @@ class PlanNodeTests(unittest.TestCase):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
             function_name, or_replace, if_not_exists, inputs, outputs, impl_path, ty
         )
         self.assertEqual(node.opr_type, PlanOprType.CREATE_FUNCTION)
         self.assertEqual(node.or_replace, or_replace)
         self.assertEqual(node.if_not_exists, if_not_exists)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -322,6 +340,10 @@ class PlanNodeTests(unittest.TestCase):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         self.assertEqual(node.inputs, [functionIO, functionIO])
         self.assertEqual(node.outputs, [functionIO])
         self.assertEqual(node.impl_path, impl_path)

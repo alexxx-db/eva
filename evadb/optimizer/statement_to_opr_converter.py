@@ -64,6 +64,7 @@ from evadb.parser.statement import AbstractStatement
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -82,6 +83,10 @@ from evadb.parser.statement import AbstractStatement
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 from evadb.parser.table_ref import JoinNode, TableRef, TableValuedExpression
 from evadb.parser.types import FunctionType, JoinType
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -106,6 +111,7 @@ from evadb.parser.types import FunctionType
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -117,9 +123,12 @@ from evadb.parser.types import FunctionType
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 from evadb.parser.table_ref import JoinNode, TableRef, TableValuedExpression
 from evadb.parser.types import FunctionType, JoinType
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -169,6 +178,10 @@ from evadb.parser.types import FunctionType
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 from evadb.utils.logging_manager import logger
 
 

@@ -43,12 +43,15 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -69,6 +72,7 @@ class ModelTrainTests(unittest.TestCase):
             ylagged INTEGER);"""
         execute_query_fetch_all(cls.evadb, create_table_query)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -113,6 +117,10 @@ class ModelTrainTests(unittest.TestCase):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         create_table_query = """
             CREATE TABLE HomeData (\
             saledate TEXT(30),\
@@ -128,6 +136,7 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -149,6 +158,8 @@ class ModelTrainTests(unittest.TestCase):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -158,10 +169,14 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -207,6 +222,8 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         path = f"{EvaDB_ROOT_DIR}/data/forecasting/air-passengers.csv"
         load_query = f"LOAD CSV '{path}' INTO AirData;"
         execute_query_fetch_all(cls.evadb, load_query)
@@ -222,6 +239,9 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -282,6 +302,7 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -310,6 +331,10 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         path = f"{EvaDB_ROOT_DIR}/data/forecasting/home_sales.csv"
         load_query = f"LOAD CSV '{path}' INTO HomeData;"
         execute_query_fetch_all(cls.evadb, load_query)
@@ -321,6 +346,7 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -342,6 +368,8 @@ class ModelTrainTests(unittest.TestCase):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -351,10 +379,14 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -400,6 +432,8 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
     @classmethod
     def tearDownClass(cls):
         shutdown_ray()
@@ -411,6 +445,7 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -463,6 +498,12 @@ class ModelTrainTests(unittest.TestCase):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS AirData;")
         execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS HomeData;")
 
@@ -475,6 +516,7 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -496,10 +538,13 @@ class ModelTrainTests(unittest.TestCase):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
         execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS HomeRentals;")
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -520,9 +565,12 @@ class ModelTrainTests(unittest.TestCase):
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 =======
         execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS HomeRentals;")
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -559,6 +607,9 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
     @forecast_skip_marker
     def test_forecast(self):
@@ -572,6 +623,7 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
@@ -617,6 +669,14 @@ class ModelTrainTests(unittest.TestCase):
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+            CREATE FUNCTION AirForecast FROM
+=======
+            CREATE FUNCTION Forecast FROM
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
             (SELECT unique_id, ds, y FROM AirData)
             TYPE Forecasting
             HORIZON 12
@@ -677,6 +737,7 @@ class ModelTrainTests(unittest.TestCase):
         execute_query_fetch_all(self.evadb, create_predict_udf)
 
         predict_query = """
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -855,7 +916,12 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
             SELECT AirForecast() order by y;
+=======
+            SELECT AirForecast(12) order by y;
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
         """
         result = execute_query_fetch_all(self.evadb, predict_query)
         self.assertEqual(len(result), 12)
@@ -926,6 +992,7 @@ class ModelTrainTests(unittest.TestCase):
         result = execute_query_fetch_all(self.evadb, predict_query)
         self.assertEqual(int(list(result.frames.iloc[:, -1])[-1]), 459)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -975,6 +1042,8 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
             SELECT AirForecast() order by y;
         """
         result = execute_query_fetch_all(self.evadb, predict_query)
@@ -1032,7 +1101,12 @@ class ModelTrainTests(unittest.TestCase):
             ["homeforecast.type", "homeforecast.saledate", "homeforecast.ma"],
         )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 
 if __name__ == "__main__":

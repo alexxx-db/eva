@@ -127,6 +127,7 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -152,10 +153,15 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
             CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
 =======
             CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -223,6 +229,13 @@ class ModelTrainTests(unittest.TestCase):
             CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+            CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
             ( SELECT * FROM HomeRentals )
             TYPE Ludwig
             PREDICT 'rental_price'

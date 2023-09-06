@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -34,10 +35,15 @@
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 .. _forecast:
 
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,9 +52,12 @@
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 .. _forecast:
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -95,6 +104,10 @@
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 Time Series Forecasting
 ========================
 
@@ -131,6 +144,7 @@ First, we create a table to insert required data.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -171,6 +185,10 @@ First, we create a table to insert required data.
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 Next, we create a function of `TYPE Forecasting`. We must enter the column name on which we wish to forecast using `PREDICT`.
 
 .. code-block:: sql
@@ -200,6 +218,7 @@ Next, we create a UDF of `TYPE Forecasting`. We must enter the column name on wh
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
@@ -211,12 +230,15 @@ Next, we create a UDF of `TYPE Forecasting`. We must enter the column name on wh
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 Next, we create a function of `TYPE Forecasting`. We must enter the column name on which we wish to forecast using `PREDICT`.
 
 .. code-block:: sql
    
    CREATE FUNCTION IF NOT EXISTS Forecast FROM
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -256,6 +278,10 @@ Next, we create a function of `TYPE Forecasting`. We must enter the column name 
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
    (SELECT y FROM AirData)
    TYPE Forecasting
    HORIZON 12
@@ -279,6 +305,7 @@ This trains a forecasting model. The model can be called by providing the horizo
 
 .. code-block:: sql
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -400,6 +427,10 @@ Here, the horizon is `12`.
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
    SELECT Forecast(12);
 
 Here, the horizon is `12`, which represents the forecast 12 steps into the future.
@@ -447,6 +478,9 @@ Below is an example query specifying the above parameters:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 Below is an example query with `neuralforecast` with `trend` column as exogenous and without automatic hyperparameter optimization:
 
@@ -470,10 +504,13 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
    SELECT Forecast(12) FROM AirData;
 
 Here, the horizon is `12`.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -585,6 +622,8 @@ Here, the horizon is `12`.
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
    SELECT Forecast(12);
 
 Here, the horizon is `12`, which represents the forecast 12 steps into the future.
@@ -646,6 +685,7 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -668,3 +708,7 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))

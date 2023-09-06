@@ -121,6 +121,7 @@ Here is the query's output ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -173,12 +174,19 @@ Here is the query's output ``DataFrame``:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
     +--------------------------------------------------------------+--------------------------------------------------------------+
     |                         mypdfs.data                          |                 textsummarizer.summary_text                  |
     +--------------------------------------------------------------+--------------------------------------------------------------+
     | DEFINATION  Specialized connective tissue with          ... | Specialized connective tissue with fluid matrix. Erythro ... |
     | PHYSICAL CHARACTERISTICS ( 1 )  COLOUR   -- Red  ( 2 )  ... | The temperature is 38° C / 100.4° F. The body weight is  ... |
     +--------------------------------------------------------------+--------------------------------------------------------------+
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -212,6 +220,10 @@ Here is the query's output ``DataFrame``:
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
     +--------------------------------------------------------+--------------------------------------------------------+
     | mypdfs.data                                         | mypdfs.summary_text                             |
@@ -228,10 +240,14 @@ Here is the query's output ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -283,6 +299,8 @@ Here is the query's output ``DataFrame``:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 
 .. include:: ../shared/nlp.rst

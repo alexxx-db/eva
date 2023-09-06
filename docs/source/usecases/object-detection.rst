@@ -125,6 +125,7 @@ This query returns the label of all the images:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -177,6 +178,12 @@ This query returns the label of all the images:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
     | objectdetectionvideos.id |          yolo.labels           |          yolo.bboxes           |          yolo.scores           |
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -193,6 +200,7 @@ This query returns the label of all the images:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -220,6 +228,10 @@ This query returns the label of all the images:
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
     +-----------------------------------------------------------------------------------------------------+
     | objectdetectionvideos.id              | yolo.labels                                                |
     +--------------------------+-----------------------------------------------------------------+
@@ -235,10 +247,14 @@ This query returns the label of all the images:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -290,6 +306,8 @@ This query returns the label of all the images:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 Filtering Based on YOLO Function
 --------------------------------
@@ -307,6 +325,7 @@ In the following query, we use the output of the object detector to retrieve a s
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -347,6 +366,10 @@ In the following query, we use the output of the object detector to retrieve a s
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
     SELECT id, Yolo(data).labels
         FROM ObjectDetectionVideos 
         WHERE ['person', 'car'] <@ Yolo(data).labels
@@ -375,6 +398,7 @@ In the following query, we use the output of the object detector to retrieve a s
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -395,6 +419,8 @@ In the following query, we use the output of the object detector to retrieve a s
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
     SELECT id, Yolo(data).labels
         FROM ObjectDetectionVideos 
@@ -407,6 +433,7 @@ In the following query, we use the output of the object detector to retrieve a s
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -447,6 +474,10 @@ In the following query, we use the output of the object detector to retrieve a s
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 Now, the ``DataFrame`` only contains frames with the desired objects:
 
@@ -458,6 +489,7 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -510,6 +542,12 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
     +--------------------------+--------------------------------------------------------------+
     | objectdetectionvideos.id |                         yolo.labels                          |
     +--------------------------+--------------------------------------------------------------+
@@ -523,6 +561,7 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -539,6 +578,9 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
     +------------------------------+
     |  objectdetectionvideos.label |
     |------------------------------|
@@ -546,6 +588,7 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
     |                            6 |
     +------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -582,6 +625,9 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 .. include:: ../shared/footer.rst
 

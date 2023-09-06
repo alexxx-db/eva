@@ -31,6 +31,7 @@ from evadb.catalog.models.table_catalog import TableCatalogEntry
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -50,6 +51,8 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -62,11 +65,15 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -113,6 +120,8 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 from evadb.expression.abstract_expression import AbstractExpression
 from evadb.expression.constant_value_expression import ConstantValueExpression
 from evadb.expression.function_expression import FunctionExpression
@@ -741,6 +750,7 @@ class LogicalCreateFunction(Operator):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -781,6 +791,10 @@ class LogicalCreateFunction(Operator):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         or_replace: bool
             if true should overwrite if function with same name exists
         if_not_exists: bool
@@ -809,6 +823,7 @@ class LogicalCreateFunction(Operator):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -830,11 +845,14 @@ class LogicalCreateFunction(Operator):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
         or_replace: bool
             if true should overwrite if function with same name exists
         if_not_exists: bool
             if true should skip if function with same name exists
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -881,6 +899,10 @@ class LogicalCreateFunction(Operator):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
         inputs: List[FunctionIOCatalogEntry]
             function inputs, annotated list similar to table columns
         outputs: List[FunctionIOCatalogEntry]

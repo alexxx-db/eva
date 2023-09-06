@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -39,10 +40,17 @@ Python API
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 Python API
 =======
 Basic API
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -113,11 +121,21 @@ Python API
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 =======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
 Python API
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+=======
+Python API
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 ==========
 
 To begin a querying session in EvaDB, obtain a connection with a cursor using ``connect`` and ``cursor`` functions. After getting the cursor, you can run queries with the ``query`` function in this manner:
@@ -310,11 +328,15 @@ EvaDBQuery Interface
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -431,3 +453,5 @@ EvaDBQuery Interface
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))

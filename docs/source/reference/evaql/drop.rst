@@ -17,6 +17,7 @@ DROP TABLE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -33,6 +34,8 @@ DROP FUNCTION
 <<<<<<< HEAD
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 DROP FUNCTION
 -------------
 =======
@@ -43,6 +46,7 @@ DROP UDF
 DROP FUNCTION
 -------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -71,10 +75,13 @@ DROP UDF
 --------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 .. code:: mysql
 
     DROP FUNCTION FastRCNNObjectDetector;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -92,6 +99,8 @@ DROP UDF
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
 DROP DATABASE
 -------------
@@ -99,6 +108,7 @@ DROP DATABASE
 .. code:: mysql
 
     DROP DATABASE postgres_db;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     DROP DATABASE IF EXISTS postgres_db;
@@ -185,3 +195,8 @@ DROP FUNCTION
 =======
     DROP DATABASE IF EXISTS postgres_db;
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+    DROP DATABASE IF EXISTS postgres_db;
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))

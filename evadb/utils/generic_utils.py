@@ -523,6 +523,7 @@ def is_forecast_available() -> bool:
         return False
 
 
+<<<<<<< HEAD
 def try_to_import_sklearn():
     try:
         import sklearn  # noqa: F401
@@ -669,6 +670,7 @@ def is_xgboost_available() -> bool:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -684,6 +686,10 @@ def is_xgboost_available() -> bool:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
 ##############################
 ## VISION
 ##############################
