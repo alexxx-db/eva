@@ -5,6 +5,7 @@ Concepts
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 EvaDB is designed around three key concepts: 
 =======
 Here is a list of key concepts in EvaDB. If you have any questions, ask the community on `Slack <https://evadb.ai/community>`__.
@@ -15,6 +16,11 @@ EvaDB is designed around three key concepts:
 EvaDB is designed around three key concepts: 
 =======
 Here is a list of key concepts in EvaDB. If you have any questions, ask the community on `Slack <https://evadb.ai/community>`__.
+=======
+EvaDB is designed around three key concepts: 
+=======
+Here is a list of key concepts in EvaDB. If you have any questions, ask the community on `Slack <https://evadb.ai/community>`__.
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 EvaQL: AI-Centric Query Language
 --------------------------------
@@ -30,12 +36,16 @@ Here is set of illustrative EvaQL queries for a ChatGPT-based video question ans
     --- In this case, the output indicates the number of loaded videos
     LOAD VIDEO 'news_videos/*.mp4' INTO VIDEOS;
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 (1) AI Queries
 (2) AI Functions
 (3) AI-Centric Query Optimization
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .. note::
 
@@ -61,6 +71,8 @@ Here are some illustrative **AI queries** for a ChatGPT-based video question ans
 (3) AI-Centric Query Optimization
 
 <<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 .. note::
 
     Have a question or want to give feedback? Join us on `Slack <https://evadb.ai/community>`__!
@@ -205,8 +217,11 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
 =======
     --- The function's implementation is in the 'mnist_image_classifier.py' file
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9cc72b7b (docs: updates)
 =======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
     --- Define an AI function that wraps around a speech-to-text model 
     --- This model is hosted on Hugging Face which has built-in support in EvaDB
@@ -245,6 +260,7 @@ AI Functions
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
 =======
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
@@ -252,6 +268,9 @@ AI Functions
 =======
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 To register an user-defined function, use the ``CREATE FUNCTION`` statement:
 
@@ -260,7 +279,10 @@ To register an user-defined function, use the ``CREATE FUNCTION`` statement:
     --- Create an MNIST image classifier function
     --- The function's implementation code is in 'mnist_image_classifier.py'
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     CREATE FUNCTION MnistImageClassifier
         IMPL 'mnist_image_classifier.py'
 
@@ -271,18 +293,24 @@ After registering ``MnistImageClassifier`` function, you can call the function i
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     --- Get the output of 'MnistImageClassifier' on the 30th video frame (id=30)
 =======
     --- Get the output of 'MnistImageClassifier' on frame id 30
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     --- Get the output of 'MnistImageClassifier' on the 30th video frame (id=30)
 >>>>>>> 9cc72b7b (docs: updates)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     --- This query returns the results of the image classification function
     --- In this case, it is the digit in the 30th frame in the video
     SELECT data, id, MnistImageClassifier(data).label 
@@ -319,6 +347,7 @@ After registering ``MnistImageClassifier`` function, you can call the function i
     FROM MnistVideo  
     WHERE MnistImageClassifier(data).label = '6'
     LIMIT 5;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -419,6 +448,8 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 AI-Centric Query Optimization
 -----------------------------
@@ -503,6 +534,7 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -535,3 +567,7 @@ That's it! You can now use the newly registered UDF anywhere in the query -- in 
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))

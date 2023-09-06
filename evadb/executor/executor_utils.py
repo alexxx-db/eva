@@ -83,8 +83,11 @@ def apply_project(batch: Batch, project_list: List[AbstractExpression]):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
         # persist stats of function expression
         for expr in project_list:
@@ -98,10 +101,13 @@ def apply_project(batch: Batch, project_list: List[AbstractExpression]):
                     )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     return batch
 
 
@@ -114,8 +120,11 @@ def apply_predicate(batch: Batch, predicate: AbstractExpression) -> Batch:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
         # persist stats of function expression
         for func_expr in predicate.find_all(FunctionExpression):
@@ -126,10 +135,13 @@ def apply_predicate(batch: Batch, predicate: AbstractExpression) -> Batch:
                 )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     return batch
 
 

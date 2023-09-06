@@ -20,18 +20,24 @@ from evadb.catalog.models.base_model import BaseModel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 from evadb.catalog.models.utils import FunctionMetadataCatalogEntry, TextPickleType
 =======
 from evadb.catalog.models.utils import FunctionMetadataCatalogEntry
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 from evadb.catalog.models.utils import FunctionMetadataCatalogEntry, TextPickleType
 >>>>>>> e0596f63 (feat: function_metadata supports boolean and float  (#1296))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 
 class FunctionMetadataCatalog(BaseModel):
@@ -51,18 +57,24 @@ class FunctionMetadataCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     _value = Column("value", TextPickleType())
 =======
     _value = Column("value", String(100))
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     _value = Column("value", TextPickleType())
 >>>>>>> e0596f63 (feat: function_metadata supports boolean and float  (#1296))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     _function_id = Column(
         "function_id", Integer, ForeignKey("function_catalog._row_id")
     )

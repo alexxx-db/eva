@@ -260,6 +260,10 @@ forecasting_libs = [
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 
+forecasting_libs = [
+    "statsforecast" # MODEL TRAIN AND FINE TUNING
+]
+
 ### NEEDED FOR DEVELOPER TESTING ONLY
 
 dev_libs = [
@@ -305,6 +309,7 @@ EXTRA_REQUIRES = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -331,6 +336,8 @@ EXTRA_REQUIRES = {
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     "sklearn": sklearn_libs,
     "xgboost": xgboost_libs,
     "forecasting": forecasting_libs,
@@ -339,6 +346,7 @@ EXTRA_REQUIRES = {
 <<<<<<< HEAD
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 <<<<<<< HEAD
@@ -347,10 +355,13 @@ EXTRA_REQUIRES = {
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 =======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
     "postgres": postgres_libs,
     "ludwig": ludwig_libs,
@@ -438,6 +449,8 @@ EXTRA_REQUIRES = {
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 }
 
 setup(

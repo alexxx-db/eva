@@ -72,8 +72,11 @@ class FunctionIOCatalogService(BaseService):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     def create_entries(self, io_list: List[FunctionIOCatalogEntry]):
         io_objs = []
 =======
@@ -86,12 +89,15 @@ class FunctionIOCatalogService(BaseService):
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     def create_entries(self, io_list: List[FunctionIOCatalogEntry]):
         io_objs = []
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         for io in io_list:
             io_obj = FunctionIOCatalog(
                 name=io.name,

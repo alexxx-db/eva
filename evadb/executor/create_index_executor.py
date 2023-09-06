@@ -210,6 +210,9 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         # Get feature column.
         feat_col_name = self.col_list[0].name
         feat_col_catalog_entry = [
@@ -241,6 +244,7 @@ class CreateIndexExecutor(AbstractExecutor):
                         ),
                     )
 =======
+<<<<<<< HEAD
 =======
             # Find function expression.
             function_expression = None
@@ -372,6 +376,11 @@ class CreateIndexExecutor(AbstractExecutor):
 =======
 <<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+            # Add features to index.
+            # TODO: batch size is hardcoded for now.
+            input_dim = -1
+>>>>>>> b87af508 (feat: sync master staging (#1050))
             storage_engine = StorageEngine.factory(self.db, feat_catalog_entry)
             for input_batch in storage_engine.read(feat_catalog_entry):
                 if self.node.function:
@@ -514,10 +523,13 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
             if index_catalog_entry is None:
                 self.catalog().insert_index_catalog_entry(
                     self.name,
@@ -529,6 +541,7 @@ class CreateIndexExecutor(AbstractExecutor):
                 )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             self.catalog().insert_index_catalog_entry(
                 self.node.name,
@@ -557,6 +570,17 @@ class CreateIndexExecutor(AbstractExecutor):
             )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+            self.catalog().insert_index_catalog_entry(
+                self.node.name,
+                self.index_path,
+                self.node.vector_store_type,
+                feat_column,
+                self.node.function.signature() if self.node.function else None,
+            )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         except Exception as e:
             # Delete index.
             if index:

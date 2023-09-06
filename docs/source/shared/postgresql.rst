@@ -18,6 +18,9 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 .. code-block::
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -66,6 +69,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
         "port": "5432",
         "database": "evadb"
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -176,6 +180,8 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 =======
 =======
 =======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
 .. tab-set::
     
     .. tab-item:: Python
@@ -208,6 +214,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
                 "database": "evadb"
             }
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -220,3 +227,5 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))

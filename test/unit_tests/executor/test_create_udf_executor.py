@@ -61,6 +61,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -107,6 +108,8 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     def test_should_raise_or_replace_if_not_exists(self):
         plan = type(
             "CreateFunctionPlan",
@@ -136,6 +139,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -163,6 +167,9 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     @patch("evadb.executor.create_function_executor.load_function_class_from_file")
     def test_should_raise_error_on_incorrect_io_definition(
         self, load_function_class_from_file_mock
@@ -176,6 +183,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -225,6 +233,8 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         catalog_instance().insert_function_catalog_entry.return_value = "function"
         impl_path = MagicMock()
         abs_path = impl_path.absolute.return_value = MagicMock()
@@ -234,6 +244,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -280,6 +291,8 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         plan = type(
             "CreateFunctionPlan",
             (),
@@ -410,6 +423,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
         abs_path.as_posix.return_value = "test.py"
         load_function_class_from_file_mock.return_value.return_value = "mock_class"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
@@ -424,6 +438,10 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         incorrect_input_definition = PandasDataframe(
             columns=["Frame_Array", "Frame_Array_2"],
             column_types=[NdArrayType.UINT8],
@@ -453,6 +471,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
         with self.assertRaises(RuntimeError) as exc:
             next(create_function_executor.exec())
         self.assertIn(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -542,6 +561,12 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+            "Error creating function, input/output definition incorrect:",
+=======
+            "Error creating Function, input/output definition incorrect:",
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
             str(exc.exception),
         )
 

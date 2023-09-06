@@ -63,6 +63,7 @@ rename_table: RENAME TABLE table_name TO table_name
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -109,10 +110,13 @@ rename_table: RENAME TABLE table_name TO table_name
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 create_function: CREATE or_replace? FUNCTION if_not_exists? function_name INPUT create_definitions OUTPUT create_definitions TYPE function_type IMPL function_impl function_metadata*
 	| CREATE or_replace? FUNCTION if_not_exists? function_name IMPL function_impl function_metadata* 
 	| CREATE or_replace? FUNCTION if_not_exists? function_name TYPE function_type function_metadata*
 	| CREATE or_replace? FUNCTION if_not_exists? function_name FROM LR_BRACKET select_statement RR_BRACKET TYPE function_type function_metadata*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -140,6 +144,8 @@ create_function: CREATE or_replace? FUNCTION if_not_exists? function_name INPUT 
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_definitions OUTPUT create_definitions TYPE function_type IMPL function_impl function_metadata*
 	| CREATE FUNCTION if_not_exists? function_name IMPL function_impl function_metadata* 
@@ -152,6 +158,7 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -201,6 +208,8 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 // Details
 function_name: uid
@@ -216,18 +225,24 @@ function_metadata_key: uid
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 function_metadata_value: constant
 =======
 function_metadata_value: string_literal | decimal_literal
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 function_metadata_value: constant
 >>>>>>> e0596f63 (feat: function_metadata supports boolean and float  (#1296))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 <<<<<<< HEAD
 vector_store_type: USING (FAISS | QDRANT | PINECONE | PGVECTOR | CHROMADB | MILVUS)
@@ -370,12 +385,16 @@ help_statement: HELP STRING_LITERAL
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 show_statement: SHOW (FUNCTIONS | TABLES | uid | DATABASES)
 =======
 show_statement: SHOW (FUNCTIONS | TABLES)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 show_statement: SHOW (FUNCTIONS | TABLES | uid)
@@ -385,6 +404,8 @@ show_statement: SHOW (FUNCTIONS | TABLES | uid | DATABASES)
 >>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 explain_statement: EXPLAIN explainable_statement
 
@@ -492,6 +513,7 @@ function_call: function         ->function_call
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -574,6 +596,12 @@ function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+=======
+function: simple_id "(" (STAR | function_args) ")" dotted_id?
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     
 aggregate_windowed_function: aggregate_function_name "(" function_arg ")"
                            | COUNT "(" (STAR | function_arg) ")"

@@ -43,12 +43,15 @@ Here is an example where we first define a function wrapping around the FastRCNN
 
 This page presents a list of all the EvaDB statements that you can leverage in your Jupyter Notebooks.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 EvaDB Query Language (EvaQL) Reference
 ======================================
 
 EvaDB Query Language (EvaQL) is tailored for AI apps and is derived from SQL. Deep learning models are simply function calls in a SQL query. This page lists all the EvaDB statements that you can leverage in your applications/notebooks.
 >>>>>>> ae8238d8 (docs: update references to UDFs)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 .. tableofcontents::
 

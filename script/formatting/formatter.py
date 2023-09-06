@@ -464,8 +464,11 @@ if __name__ == "__main__":
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         subprocess.check_output(""" codespell "evadb/*.py" """, 
                 shell=True, 
                 universal_newlines=True)
@@ -485,6 +488,7 @@ if __name__ == "__main__":
 =======
         subprocess.check_output("codespell 'evadb/*.py'", 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         subprocess.check_output(""" codespell "evadb/*.py" """, 
 >>>>>>> 5b27053e (ran spellchecker)
@@ -509,6 +513,8 @@ if __name__ == "__main__":
         subprocess.check_output(""" codespell "evadb/*.md" """, 
 >>>>>>> 5b27053e (ran spellchecker)
 =======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
                 shell=True, 
                 universal_newlines=True)
         subprocess.check_output("codespell 'evadb/*/*.py'", 
@@ -525,7 +531,10 @@ if __name__ == "__main__":
                 universal_newlines=True)
         subprocess.check_output("codespell 'evadb/*.md'", 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
                 shell=True, 
                 universal_newlines=True)
 

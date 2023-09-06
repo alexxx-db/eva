@@ -33,8 +33,11 @@ class ShowInfoExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
             self.node.show_type is ShowType.FUNCTIONS
             or ShowType.TABLES
             or ShowType.DATABASES
@@ -42,6 +45,7 @@ class ShowInfoExecutor(AbstractExecutor):
 =======
             self.node.show_type is ShowType.FUNCTIONS or ShowType.TABLES
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             self.node.show_type is ShowType.FUNCTIONS
@@ -51,6 +55,8 @@ class ShowInfoExecutor(AbstractExecutor):
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         ), f"Show command does not support type {self.node.show_type}"
 
         if self.node.show_type is ShowType.FUNCTIONS:

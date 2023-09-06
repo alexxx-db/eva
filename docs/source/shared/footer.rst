@@ -5,8 +5,11 @@ What's Next?
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 👋 If you are excited about our vision of bringing AI inside databases, consider:
 
 - 📟 joining our Slack: https://evadb.ai/slack
@@ -16,6 +19,7 @@ What's Next?
 - 🖥️ contributing to EvaDB: https://evadb.ai/github
 =======
 👋 EvaDB's vision is to bring AI inside your database system and make it easy to build fast AI-powered apps. If you liked this tutorial and are excited about our vision, show some ❤️ by:
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 👋 EvaDB makes it easy to build fast AI-powered apps.
@@ -44,6 +48,8 @@ If you liked this tutorial and are excited about our vision, show some ❤️ by
 - 🖥️ contributing to EvaDB: https://evadb.ai/github
 >>>>>>> 5102321c (docs: updates)
 =======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 - 🐙 giving a ⭐ for the EvaDB repository on Github: https://github.com/georgia-tech-db/evadb
 - 📟 engaging with the EvaDB community on Slack to ask questions and share your ideas and thoughts: https://evadb.ai/community
@@ -52,4 +58,7 @@ If you liked this tutorial and are excited about our vision, show some ❤️ by
 - 📝 following us on Medium: https://medium.com/evadb-blog
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))

@@ -38,16 +38,20 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         project_expr_list: List[AbstractStatement],
 =======
         function: FunctionExpression = None,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -66,6 +70,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     ):
         super().__init__(StatementType.CREATE_INDEX)
         self._name = name
@@ -79,6 +85,7 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -94,6 +101,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         self._project_expr_list = project_expr_list
 
         # Definition of CREATE INDEX.
@@ -131,6 +140,7 @@ class CreateIndexStatement(AbstractStatement):
 
     def __str__(self) -> str:
         print_str = "CREATE INDEX {} ON {} ({}{}) ".format(
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -147,11 +157,14 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
         print_str = "CREATE INDEX {} {} ON {} ({}{}) ".format(
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
             self._name,
             self._table_ref,
             "" if self._function else self._function,
             tuple(self._col_list),
         )
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
@@ -252,6 +265,9 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         return print_str
 
     @property
@@ -281,6 +297,7 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -296,6 +313,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     def project_expr_list(self):
         return self._project_expr_list
 
@@ -311,6 +330,7 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -318,9 +338,12 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
     def function(self):
         return self._function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -336,6 +359,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
     def __eq__(self, other):
         if not isinstance(other, CreateIndexStatement):
@@ -352,17 +377,21 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
             and self._project_expr_list == other.project_expr_list
             and self._index_def == other.index_def
 =======
             and self._function == other.function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -386,6 +415,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
         )
 
     def __hash__(self) -> int:
@@ -403,17 +434,21 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
                 tuple(self._project_expr_list),
                 self._index_def,
 =======
                 self._function,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -437,5 +472,7 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
             )
         )

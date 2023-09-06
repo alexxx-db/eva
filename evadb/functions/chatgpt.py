@@ -90,6 +90,7 @@ class ChatGPT(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -172,6 +173,12 @@ class ChatGPT(AbstractFunction):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+    @setup(cacheable=True, function_type="chat-completion", batchable=True)
+=======
+    @setup(cacheable=False, function_type="chat-completion", batchable=True)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     def setup(
         self,
         model="gpt-3.5-turbo",

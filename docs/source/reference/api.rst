@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -31,10 +32,13 @@ Python API
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 Python API
 =======
 Basic API
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -96,6 +100,11 @@ Python API
 Basic API
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+Python API
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 ==========
 
 To begin a querying session in EvaDB, obtain a connection with a cursor using ``connect`` and ``cursor`` functions. After getting the cursor, you can run queries with the ``query`` function in this manner:
@@ -112,18 +121,24 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     print(cursor.query("SHOW FUNCTIONS;").df())
 =======
     print(cursor.query("SHOW UDFS;").df())
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     print(cursor.query("SHOW FUNCTIONS;").df())
 >>>>>>> aed2d9cf (docs: updated outdated reference to SHOW UDF)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 
 .. autosummary:: 
@@ -135,10 +150,13 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 173efea8 (Remove table names from column names for `df()` call (#1256))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     ~evadb.EvaDBQuery.df
 
 .. warning::
@@ -278,6 +296,7 @@ EvaDBQuery Interface
     ~evadb.EvaDBQuery.execute
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 =======
@@ -304,6 +323,8 @@ EvaDBQuery Interface
 =======
 =======
 =======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
     ~evadb.EvaDBCursor.df
 
 .. warning::
@@ -312,6 +333,7 @@ EvaDBQuery Interface
 
     ``cursor.query("...")`` only construct the query and not run the query. ``cursor.query("...").df()`` will both construct and run the query.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -384,3 +406,6 @@ EvaDBQuery Interface
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))

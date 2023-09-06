@@ -173,6 +173,7 @@ To register an user-defined function, specify the implementation details of the 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CREATE INDEX
 ------------
 =======
@@ -238,17 +239,26 @@ To register an user-defined function, specify the implementation details of the 
 =======
 CREATE UDF
 ----------
+=======
+CREATE FUNCTION
+---------------
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
-To register an user-defined function, specify the implementation details of the UDF.
+To register an user-defined function, specify the implementation details of the function.
 
 .. code-block:: sql
 
+<<<<<<< HEAD
     CREATE UDF IF NOT EXISTS FastRCNNObjectDetector
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+    CREATE FUNCTION IF NOT EXISTS FastRCNNObjectDetector
+>>>>>>> b87af508 (feat: sync master staging (#1050))
     INPUT  (frame NDARRAY UINT8(3, ANYDIM, ANYDIM))
     OUTPUT (labels NDARRAY STR(ANYDIM), bboxes NDARRAY FLOAT32(ANYDIM, 4),
             scores NDARRAY FLOAT32(ANYDIM))
     TYPE  Classification
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -388,23 +398,32 @@ Where the `parameter` is ``key value`` pair.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
     IMPL  'evadb/udfs/fastrcnn_object_detector.py';
+=======
+    IMPL  'evadb/functions/fastrcnn_object_detector.py';
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 .. _create-udf-train:
 
-CREATE UDF via Training
------------------------
+CREATE FUNCTION via Training
+----------------------------
 
 To register an user-defined function by training a predication model.
 
 .. code-block:: sql
 
-   CREATE UDF IF NOT EXISTS PredictHouseRent FROM
+   CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
    (SELECT * FROM HomeRentals)
    TYPE Ludwig
+<<<<<<< HEAD
    'predict' 'rental_price'
    'time_list' 120;
    'tune_for_memory' False;
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+   PREDICT 'rental_price'
+   TIME_LIST 120;
+   TUNE_FOR_MEMORY False;
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 CREATE MATERIALIZED VIEW
 ------------------------

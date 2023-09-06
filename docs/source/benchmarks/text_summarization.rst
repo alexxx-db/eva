@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -44,6 +45,8 @@
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 Text Summarization Benchmark 
 ============================
 
@@ -193,13 +196,29 @@ Prepare dataset
 =======
 =======
 Text summarization benchmark 
+=======
+Text Summarization Benchmark 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ============================
-In this benchmark, we compare the performance of text summarization between EvaDB and MindsDB on `CNN-DailyMail News <https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail>`_.
 
+<<<<<<< HEAD
 1. Prepare dataset
 ------------------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+In this benchmark, we compare the runtime performance of EvaDB and MindsDB on 
+a text summarization application operating on a news dataset. In particular, 
+we focus on the `CNN-DailyMail News <https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail>`_ dataset.
+
+All the relevant files are located in the `text summarization benchmark folder on Github <https://github.com/georgia-tech-db/evadb/tree/staging/benchmark/text_summarization>`_.
+
+Prepare dataset
+---------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 .. code-block:: bash
 
@@ -214,6 +233,7 @@ In this benchmark, we compare the performance of text summarization between EvaD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -230,6 +250,8 @@ In this benchmark, we compare the performance of text summarization between EvaD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 Use EvaDB for Text Summarization
 --------------------------------
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -253,6 +275,7 @@ Use EvaDB for Text Summarization
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -262,9 +285,12 @@ Use EvaDB for Text Summarization
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
 Use EvaDB for Text Summarization
 --------------------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -311,6 +337,8 @@ Use EvaDB for Text Summarization
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 .. note::
  
@@ -323,6 +351,7 @@ Use EvaDB for Text Summarization
    python text_summarization_with_evadb.py
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -354,6 +383,8 @@ Loading Data Into EvaDB
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 Loading Data Into EvaDB
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -411,6 +442,7 @@ Prepare sqlite database for MindsDB
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
@@ -501,6 +533,8 @@ Prepare sqlite database for MindsDB
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 =======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
 Loading Data Into EvaDB
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -549,6 +583,7 @@ Use MindsDB for Text Summarization
 Setup SQLite Database 
 ~~~~~~~~~~~~~~~~~~~~~~
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-master
@@ -636,6 +671,8 @@ Setup SQLite Database
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 .. code-block:: bash
 
@@ -658,8 +695,11 @@ Install MindsDB
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 Follow the `MindsDB installation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 =======
 =======
@@ -698,17 +738,22 @@ Follow the `Setup for Source Code via pip <https://docs.mindsdb.com/setup/self-h
    At the time of this documentation, we need to manually ``pip install evaluate`` for huggingface model to work in MindsDB.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 
 .. note::
 
    You will need to manually run ``pip install evaluate`` for the ``HuggingFace`` model to work in MindsDB.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -768,6 +813,9 @@ Follow the `Setup for Source Code via pip <https://docs.mindsdb.com/setup/self-h
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 After installation, use the ``MySQL`` client for connecting to ``MindsDB``. Update the port number if needed.
 
@@ -775,6 +823,7 @@ After installation, use the ``MySQL`` client for connecting to ``MindsDB``. Upda
 
    mysql -h 127.0.0.1 --port 47335 -u mindsdb -p
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -799,6 +848,8 @@ After installation, use the ``MySQL`` client for connecting to ``MindsDB``. Upda
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 Benchmark MindsDB 
 ~~~~~~~~~~~~~~~~~
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -822,6 +873,7 @@ Run Experiment
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -831,9 +883,12 @@ Run Experiment
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
 Benchmark MindsDB 
 ~~~~~~~~~~~~~~~~~
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -880,6 +935,8 @@ Run Experiment
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 Connect ``MindsDB`` to the ``sqlite`` database we created before:
 
@@ -926,6 +983,7 @@ Use the ``text summarization`` model to summarize the CNN news dataset:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -950,6 +1008,8 @@ Benchmarking Results
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 Benchmarking Results
 --------------------
 =======
@@ -971,6 +1031,7 @@ Below are numbers from a server with 56 Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GH
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -990,9 +1051,12 @@ Below are numbers from a server with 56 Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GH
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
 Benchmarking Results
 --------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1036,6 +1100,8 @@ Benchmarking Results
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 Here are the key runtime metrics for the ``Text Summarization`` benchmark.
 

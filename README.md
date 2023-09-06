@@ -658,8 +658,17 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 
 We would love to learn about your AI app. Please complete this 1-minute form: https://v0fbgcue0cm.typeform.com/to/BZHZWeZm
 
+👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by: 
+<ul>
+  <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
+  <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
+  <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
+  <li> 🐦 following us on <a href="https://medium.com/evadb-blog">Medium</a>
+</ul>
+
 ## Quick Links
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -720,6 +729,8 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 - [Quick Links](#quick-links)
 - [Documentation](#documentation)
 - [Why EvaDB](#why-evadb)
@@ -733,6 +744,7 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 - [Star History](#star-history)
 - [License](#license)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -799,13 +811,26 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 =======
+=======
+=======
+- [Quick Links](#quick-links)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 - [Documentation](#documentation)
 - [Why EvaDB](#why-evadb)
 - [How does EvaDB work](#how-does-evadb-work)
-- [Community and Support](#community-and-support)
 - [Illustrative Queries](#illustrative-queries)
 - [Illustrative Apps](#illustrative-apps)
+<<<<<<< HEAD
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+- [More Illustrative Queries](#more-illustrative-queries)
+- [Architecture of EvaDB](#architecture-of-evadb)
+- [Community and Support](#community-and-support)
+- [Contributing](#contributing)
+- [Star History](#star-history)
+- [License](#license)
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 
 ## Documentation
 
@@ -1564,12 +1589,17 @@ TIME_LIMIT 120;
 * Train an ML model using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine to predict a column in a table.
 
 ```sql
-CREATE UDF IF NOT EXISTS PredictHouseRent FROM
+CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
 ( SELECT * FROM HomeRentals )
 TYPE Ludwig
+<<<<<<< HEAD
 'predict' 'rental_price'
 'time_limit' 120;
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+PREDICT 'rental_price'
+TIME_LIMIT 120;
+>>>>>>> b87af508 (feat: sync master staging (#1050))
 ```
 
 </details>

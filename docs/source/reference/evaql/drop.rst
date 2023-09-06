@@ -15,6 +15,7 @@ DROP TABLE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -160,3 +161,11 @@ DROP DATABASE
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+DROP FUNCTION
+-------------
+
+.. code:: mysql
+
+    DROP FUNCTION FastRCNNObjectDetector;
+>>>>>>> b87af508 (feat: sync master staging (#1050))
