@@ -60,9 +60,15 @@ from evadb.parser.create_index_statement import CreateIndexStatement
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 =======
 from evadb.parser.create_statement import CreateTableStatement
@@ -72,6 +78,7 @@ from evadb.parser.create_statement import CreateTableStatement
 =======
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -79,6 +86,13 @@ from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+from evadb.parser.create_statement import CreateTableStatement
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 from evadb.parser.delete_statement import DeleteTableStatement
 from evadb.parser.explain_statement import ExplainStatement
 from evadb.parser.rename_statement import RenameTableStatement
@@ -90,21 +104,36 @@ from evadb.third_party.huggingface.binder import assign_hf_function
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 from evadb.utils.generic_utils import (
     load_function_class_from_file,
     string_comparison_case_insensitive,
 )
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -114,13 +143,21 @@ from evadb.utils.generic_utils import load_function_class_from_file
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 from evadb.utils.generic_utils import load_function_class_from_file
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 from evadb.utils.logging_manager import logger
 
 
@@ -162,10 +199,18 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
             inputs, outputs = [], []
             if string_comparison_case_insensitive(node.function_type, "ludwig"):
                 assert (
@@ -219,6 +264,7 @@ class StatementBinder:
             ), f"Creating {node.function_type} functions expects 'predict' metadata."
             # We only support a single predict column for now
             predict_columns = set([arg_map["predict"]])
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             inputs, outputs = [], []
@@ -234,11 +280,25 @@ class StatementBinder:
                         outputs.append(column)
                     else:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+            inputs, outputs = [], []
+            for column in all_column_list:
+                if column.name in predict_columns:
+                    if node.function_type != "Forecasting":
+                        column.name = column.name + "_predictions"
+                    else:
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
                         column.name = column.name
                     outputs.append(column)
                 else:
                     inputs.append(column)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
                         inputs.append(column)
             elif string_comparison_case_insensitive(node.function_type, "sklearn"):
@@ -284,6 +344,7 @@ class StatementBinder:
             predict_columns = set([arg_map["predict"]])
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
             inputs, outputs = [], []
             if string_comparison_case_insensitive(node.function_type, "ludwig"):
                 assert (
@@ -341,6 +402,11 @@ class StatementBinder:
                 )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
             assert (
                 len(node.inputs) == 0 and len(node.outputs) == 0
             ), f"{node.function_type} functions' input and output are auto assigned"
@@ -351,10 +417,18 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
     @bind.register(CreateIndexStatement)
     def _bind_create_index_statement(self, node: CreateIndexStatement):
         self.bind(node.table_ref)
@@ -402,6 +476,7 @@ class StatementBinder:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -410,6 +485,13 @@ class StatementBinder:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     @bind.register(SelectStatement)
     def _bind_select_statement(self, node: SelectStatement):
         if node.from_table:
@@ -571,14 +653,31 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
         if string_comparison_case_insensitive(function_obj.type, "HuggingFace"):
             node.function = assign_hf_function(function_obj)
 
         elif string_comparison_case_insensitive(function_obj.type, "Ludwig"):
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
         if function_obj.type == "HuggingFace":
             node.function = assign_hf_function(function_obj)
@@ -587,8 +686,11 @@ class StatementBinder:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
         if string_comparison_case_insensitive(function_obj.type, "HuggingFace"):
             node.function = assign_hf_function(function_obj)
@@ -596,10 +698,16 @@ class StatementBinder:
         elif string_comparison_case_insensitive(function_obj.type, "Ludwig"):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
             function_class = load_function_class_from_file(
                 function_obj.impl_file_path,
                 "GenericLudwigModel",

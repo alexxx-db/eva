@@ -10,15 +10,20 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. code-block::
 =======
 >>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 .. code-block:: text
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 .. code-block::
 >>>>>>> aeb9a3be (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 >>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
@@ -32,6 +37,14 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
         "port": "5432",
         "database": "evadb"
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 .. tab-set::
     
@@ -65,6 +78,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
                 "database": "evadb"
             }
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -85,6 +99,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 .. tab-set::
@@ -123,3 +138,8 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))

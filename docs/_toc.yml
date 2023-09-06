@@ -218,29 +218,28 @@ parts:
         title: Connect to Database
       - file: source/overview/concepts
         title: Concepts
+        sections:
+          - file: source/overview/concepts/data-sources
+            title: Data Sources
         #- file: source/overview/faq
 
   - caption: Use Cases
     chapters:
-      - file: source/usecases/food-review.rst
+      - file: source/usecases/sentiment-analysis.rst
         title: Sentiment Analysis
+      - file: source/usecases/question-answering.rst
+        title: Question Answering
+      - file: source/usecases/text-summarization.rst
+        title: Text Summarization
       - file: source/usecases/image-classification.rst
         title: Image Classification
-      - file: source/usecases/similar-image-search.rst
+      - file: source/usecases/image-search.rst
         title: Image Search
-      - file: source/usecases/qa-video.rst
-        title: Video Question Answering
-      - file: source/usecases/08-chatgpt.ipynb
-        title: ChatGPT-based Video Question Answering
-      - file: source/usecases/12-query-pdf.ipynb
-        title: PDF Question Answering
-      - file: source/usecases/02-object-detection.ipynb
+      - file: source/usecases/object-detection.rst
         title: Object Detection
-      - file: source/usecases/03-emotion-analysis.ipynb
-        title: Emotions Analysis
-      - file: source/usecases/07-object-segmentation-huggingface.ipynb
-        title: Image Segmentation
-      - file: source/usecases/13-privategpt.ipynb
+      - file: source/usecases/emotion-analysis.rst
+        title: Emotion Analysis
+      - file: source/usecases/privategpt.rst
         title: PrivateGPT
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -306,8 +305,10 @@ parts:
 
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
       - file: source/reference/evaql      
-        title: Eva Query Language 
+        title: EvaQL
         sections:
           - file: source/reference/evaql/load
           - file: source/reference/evaql/select
@@ -320,7 +321,13 @@ parts:
           - file: source/reference/evaql/rename
           - file: source/reference/evaql/use
 
+<<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+      - file: source/reference/api
+        title: Python API
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
       - file: source/reference/databases/index
         title: Data Sources
         sections: 
@@ -414,6 +421,7 @@ parts:
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 
+<<<<<<< HEAD
       - file: source/reference/vector_databases/index
         title: Vector Databases
         sections: 
@@ -471,8 +479,21 @@ parts:
 =======
           - file: source/reference/ai/model-train-xgboost
             title: Model Training with XGBoost
+<<<<<<< HEAD
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+=======
+      - file: source/reference/ai/index
+        title: AI Engines
+        sections:
+          - file: source/reference/ai/model-train
+            title: Model Training
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
           - file: source/reference/ai/model-forecasting
             title: Time Series Forecasting
           - file: source/reference/ai/hf
@@ -481,6 +502,7 @@ parts:
             title: OpenAI 
           - file: source/reference/ai/yolo
             title: YOLO 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -502,11 +524,15 @@ parts:
 =======
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
           - file: source/reference/ai/stablediffusion
             title: Stable Diffusion
 >>>>>>> bf022329 (Add stable diffusion integration (#1240))
@@ -523,6 +549,14 @@ parts:
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+      - file: source/reference/optimizations
+        title: Optimizations
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 
@@ -530,11 +564,20 @@ parts:
         title: Optimizations
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+          - file: source/reference/ai/custom
+            title: Custom Model
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
         
       # - file: source/reference/io
       #   title: IO Descriptors
@@ -552,13 +595,19 @@ parts:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
   - caption: Contribution Guide
 =======
   - caption: Developer Reference
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
   - caption: Contribution Guide
 >>>>>>> f398c41b (docs: updates)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     chapters:
       - file: source/dev-guide/contribute
         title: Contributing to EvaDB

@@ -120,6 +120,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/ref
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
+
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = "github-dark"
 
@@ -205,6 +206,7 @@ nitpick_ignore_regex = [('py:class', r'.*')]
 =======
 =======
 
+<<<<<<< HEAD
 
 for i in os.listdir("../tutorials"):
     if i in [
@@ -222,6 +224,7 @@ nb_execution_mode = "off"
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 for i in os.listdir("../tutorials"):
@@ -260,6 +263,8 @@ nb_execution_mode = "off"
 
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 # -- Initialize Sphinx ----------------------------------------------

@@ -4,11 +4,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+Python API
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +28,7 @@ Basic API
 Python API
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -32,12 +37,19 @@ Python API
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-master
 =======
 Basic API
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 ==========
 
 To begin a querying session in EvaDB, obtain a connection with a cursor using ``connect`` and ``cursor`` functions. After getting the cursor, you can run queries with the ``query`` function in this manner:
@@ -53,13 +65,19 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
     # List all the built-in functions in EvaDB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
     print(cursor.query("SHOW FUNCTIONS;").df())
 =======
     print(cursor.query("SHOW UDFS;").df())
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
     print(cursor.query("SHOW FUNCTIONS;").df())
 >>>>>>> aed2d9cf (docs: updated outdated reference to SHOW UDF)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 
 
 .. autosummary:: 
@@ -139,6 +157,7 @@ EvaDBQuery Interface
     ~evadb.EvaDBQuery.sql_query
     ~evadb.EvaDBQuery.execute
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     ~evadb.EvaDBCursor.df
@@ -222,4 +241,19 @@ EvaDBQuery Interface
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+=======
+    ~evadb.EvaDBCursor.df
+
+.. warning::
+
+    It is important to call ``df`` to run the actual query and get the output dataframe.
+
+    ``cursor.query("...")`` only construct the query and not run the query. ``cursor.query("...").df()`` will both construct and run the query.
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
