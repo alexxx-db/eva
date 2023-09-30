@@ -987,6 +987,7 @@ Our target audience is software developers who may not necessarily have a backgr
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <li>Connect EvaDB to your database system with the `CREATE DATABASE` statement.</li>
 =======
@@ -996,11 +997,19 @@ Our target audience is software developers who may not necessarily have a backgr
 <li>Connect EvaDB to your SQL and vector database systems with the <a href="https://evadb.readthedocs.io/en/stable/source/reference/databases/postgres.html">`CREATE DATABASE`</a> and <a href="https://evadb.readthedocs.io/en/stable/source/reference/evaql/create.html#create-index">`CREATE INDEX`</a> statements.</li>
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> efdfee93 (Update README.md)
 <li>Connect EvaDB to your SQL and vector database systems with the <a href="https://evadb.readthedocs.io/en/stable/source/reference/databases/postgres.html">`CREATE DATABASE`</a> and <a href="https://evadb.readthedocs.io/en/stable/source/reference/evaql/create.html#create-index">`CREATE INDEX`</a> statements.</li>
 =======
 <li>Connect EvaDB to your SQL and vector database systems with the `CREATE DATABASE` and `CREATE INDEX` statements.</li>
 >>>>>>> 08f14335 (Update README.md)
+<<<<<<< HEAD
 >>>>>>> 710cd748 (Update README.md)
+=======
+=======
+<li>Connect EvaDB to your SQL and vector database systems with the <a href="https://evadb.readthedocs.io/en/stable/source/reference/databases/postgres.html">`CREATE DATABASE`</a> and <a href="https://evadb.readthedocs.io/en/stable/source/reference/evaql/create.html#create-index">`CREATE INDEX`</a> statements.</li>
+>>>>>>> f5a7c929 (Update README.md)
+>>>>>>> efdfee93 (Update README.md)
 <li>Write SQL queries with AI functions to get inference results:</li>
    <ul>
    <li>Pick a pre-trained AI model from Hugging Face, Open AI, Ultralytics, PyTorch, and built-in AI frameworks for generative AI, NLP, and vision applications;</li>  
@@ -1479,11 +1488,14 @@ Follow the [getting started](https://evadb.readthedocs.io/en/stable/source/overv
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 
 <<<<<<< HEAD
 >>>>>>> 304c4a34 (Update README.md)
+=======
+>>>>>>> efdfee93 (Update README.md)
 * Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
 
 ```sql
@@ -1686,8 +1698,17 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 =======
 * Store the text returned by a Speech Recognition model on the audio component of a video in a table. Run ChatGPT on the `text` column in a table.
 >>>>>>> b250207e (Update README.md)
+<<<<<<< HEAD
 >>>>>>> 6f08d5a3 (Update README.md)
+<<<<<<< HEAD
 >>>>>>> 304c4a34 (Update README.md)
+=======
+=======
+=======
+* Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
+>>>>>>> f5a7c929 (Update README.md)
+>>>>>>> d40331e4 (Update README.md)
+>>>>>>> efdfee93 (Update README.md)
 
 ```sql
 CREATE TABLE text_summary AS
@@ -1769,6 +1790,7 @@ SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d40331e4 (Update README.md)
 =======
@@ -1783,6 +1805,10 @@ SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 304c4a34 (Update README.md)
+=======
+=======
+>>>>>>> d40331e4 (Update README.md)
+>>>>>>> efdfee93 (Update README.md)
 * Train a classic ML model for prediction using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine.
 
 ```sql
@@ -1918,6 +1944,7 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -1928,10 +1955,13 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> efdfee93 (Update README.md)
 2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
 =======
 2. AI Frameworks (Transform Unstructured Data to Structured Data, Unstructured data includes PDFs, images, podcasts, etc. stored on cloud buckets or local filesystem)
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1941,6 +1971,11 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
+>>>>>>> d40331e4 (Update README.md)
+>>>>>>> efdfee93 (Update README.md)
 3. Vector Database Systems (Feature Embeddings)
 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
