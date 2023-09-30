@@ -621,6 +621,7 @@ class StatementBinderTests(unittest.TestCase):
             self.assertEqual(create_function_statement.outputs, expected_outputs)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     def test_bind_create_function_should_raise_forecast_with_unexpected_columns(self):
@@ -671,6 +672,8 @@ class StatementBinderTests(unittest.TestCase):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
     def test_bind_create_function_should_raise_forecast_missing_required_columns(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()

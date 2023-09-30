@@ -134,7 +134,8 @@ ludwig_libs = ["ludwig[hyperopt,distributed]"]  # MODEL TRAIN AND FINE TUNING
 sklearn_libs = ["scikit-learn"]
 
 forecasting_libs = [
-    "statsforecast" # MODEL TRAIN AND FINE TUNING
+    "statsforecast", # MODEL TRAIN AND FINE TUNING
+    "neuralforecast" # MODEL TRAIN AND FINE TUNING
 ]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
