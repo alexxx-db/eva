@@ -1,6 +1,7 @@
 _MAJOR = "0"
 _MINOR = "3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 _REVISION = "8+dev"
 =======
 <<<<<<< HEAD
@@ -17,6 +18,9 @@ _REVISION = "4+dev"
 _REVISION = "8+dev"
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+_REVISION = "8+dev"
+>>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
 
 VERSION_SHORT = f"{_MAJOR}.{_MINOR}"
 VERSION = f"{_MAJOR}.{_MINOR}.{_REVISION}"
