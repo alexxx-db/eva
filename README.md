@@ -501,7 +501,11 @@ Our target audience is software developers who may not necessarily have a backgr
 
 <details>
 <ul>
+<<<<<<< HEAD
 <li>Connect EvaDB to your SQL and vector database systems with the <a href="https://evadb.readthedocs.io/en/stable/source/reference/databases/postgres.html">`CREATE DATABASE`</a> and <a href="https://evadb.readthedocs.io/en/stable/source/reference/evaql/create.html#create-index">`CREATE INDEX`</a> statements.</li>
+=======
+<li>Connect EvaDB to your SQL and vector database systems with the `CREATE DATABASE` and `CREATE INDEX` statements.</li>
+>>>>>>> 08f14335 (Update README.md)
 <li>Write SQL queries with AI functions to get inference results:</li>
    <ul>
    <li>Pick a pre-trained AI model from Hugging Face, Open AI, Ultralytics, PyTorch, and built-in AI frameworks for generative AI, NLP, and vision applications;</li>  
