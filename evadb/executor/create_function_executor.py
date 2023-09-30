@@ -79,8 +79,11 @@ from evadb.utils.generic_utils import (
     try_to_import_neuralforecast,
     try_to_import_sklearn,
 <<<<<<< HEAD
+<<<<<<< HEAD
     try_to_import_statsforecast,
 =======
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 =======
     try_to_import_ludwig,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -94,7 +97,14 @@ from evadb.utils.generic_utils import (
     try_to_import_sklearn,
     try_to_import_statsforecast,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+    try_to_import_statsforecast,
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
     try_to_import_torch,
     try_to_import_ultralytics,
     try_to_import_xgboost,
@@ -409,6 +419,7 @@ class CreateFunctionExecutor(AbstractExecutor):
     def handle_forecasting_function(self):
         """Handle forecasting functions"""
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
+<<<<<<< HEAD
 =======
     def handle_forecasting_function(self):
         """Handle forecasting functions"""
@@ -417,7 +428,13 @@ class CreateFunctionExecutor(AbstractExecutor):
         """Handle forecasting functions"""
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         aggregated_batch_list = []
         child = self.children[0]
         for batch in child.exec():
@@ -627,7 +644,11 @@ class CreateFunctionExecutor(AbstractExecutor):
             if int(x.split("horizon")[1].split(".pkl")[0]) >= horizon
         ]
         if len(existing_model_files) == 0:
+<<<<<<< HEAD
             logger.info("Training, please wait...")
+=======
+            print("Training, please wait...")
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
             if library == "neuralforecast":
                 model.fit(df=data, val_size=horizon)
             else:

@@ -143,6 +143,7 @@ xgboost_libs = ["flaml[automl]"]
 forecasting_libs = [
     "statsforecast", # MODEL TRAIN AND FINE TUNING
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
+<<<<<<< HEAD
 ]
 
 imagegen_libs = [
@@ -158,6 +159,8 @@ sklearn_libs = ["scikit-learn"]
 forecasting_libs = [
     "statsforecast", # MODEL TRAIN AND FINE TUNING
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 ]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))

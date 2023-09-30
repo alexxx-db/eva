@@ -62,6 +62,15 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         create_table_query = """
+            CREATE TABLE AirDataPanel (\
+            unique_id TEXT(30),\
+            ds TEXT(30),\
+            y INTEGER,\
+            trend INTEGER,\
+            ylagged INTEGER);"""
+        execute_query_fetch_all(cls.evadb, create_table_query)
+
+        create_table_query = """
             CREATE TABLE HomeData (\
             saledate TEXT(30),\
             ma INTEGER,
@@ -93,21 +102,38 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         path = f"{EvaDB_ROOT_DIR}/data/forecasting/AirPassengersPanel.csv"
         load_query = f"LOAD CSV '{path}' INTO AirDataPanel;"
         execute_query_fetch_all(cls.evadb, load_query)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         path = f"{EvaDB_ROOT_DIR}/data/forecasting/home_sales.csv"
         load_query = f"LOAD CSV '{path}' INTO HomeData;"
         execute_query_fetch_all(cls.evadb, load_query)
@@ -213,12 +239,21 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             SELECT AirForecast() order by y;
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
             SELECT AirForecast(12) order by y;
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+            SELECT AirForecast() order by y;
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         """
         result = execute_query_fetch_all(self.evadb, predict_query)
         self.assertEqual(len(result), 12)
