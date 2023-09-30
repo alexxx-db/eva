@@ -1227,10 +1227,13 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
 =======
 <<<<<<< HEAD
     def test_bind_create_function_should_raise_forecast_with_unexpected_columns(self):
@@ -1283,12 +1286,16 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
 >>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -1300,6 +1307,8 @@ class StatementBinderTests(unittest.TestCase):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
     def test_bind_create_function_should_raise_forecast_missing_required_columns(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()

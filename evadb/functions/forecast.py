@@ -297,6 +297,10 @@ class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
         horizon: int,
         library: str,
 =======
@@ -571,6 +575,9 @@ class ForecastModel(AbstractFunction):
         self.horizon = int(horizon)
         self.library = library
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 
 =======
 
@@ -588,6 +595,7 @@ class ForecastModel(AbstractFunction):
     )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
     def forward(self, data) -> pd.DataFrame:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         horizon = list(data.iloc[:, -1])[0]
@@ -826,11 +834,15 @@ class ForecastModel(AbstractFunction):
 =======
 <<<<<<< HEAD
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
         if self.library == "statsforecast":
             forecast_df = self.model.predict(h=self.horizon)
         else:
             forecast_df = self.model.predict()
 =======
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         horizon = list(data.iloc[:, -1])[0]
         assert (
             type(horizon) is int
@@ -848,12 +860,24 @@ class ForecastModel(AbstractFunction):
         self.library = library
 
     def forward(self, data) -> pd.DataFrame:
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
         if self.library == "statsforecast":
             forecast_df = self.model.predict(h=self.horizon)
         else:
             forecast_df = self.model.predict()
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         forecast_df.reset_index(inplace=True)
         forecast_df = forecast_df.rename(
             columns={
@@ -862,11 +886,18 @@ class ForecastModel(AbstractFunction):
                 self.model_name: self.predict_column_rename,
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         )[: self.horizon * forecast_df["unique_id"].nunique()]
 =======
 <<<<<<< HEAD
         )
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+        )[: self.horizon * forecast_df["unique_id"].nunique()]
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         return forecast_df
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

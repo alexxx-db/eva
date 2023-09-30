@@ -280,8 +280,11 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
     try_to_import_statsforecast,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -305,6 +308,8 @@ from evadb.utils.generic_utils import (
 =======
 =======
 =======
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 =======
     try_to_import_ludwig,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -353,8 +358,18 @@ from evadb.utils.generic_utils import (
     try_to_import_sklearn,
     try_to_import_statsforecast,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+    try_to_import_statsforecast,
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
     try_to_import_torch,
     try_to_import_ultralytics,
     try_to_import_xgboost,
@@ -1359,9 +1374,12 @@ class CreateFunctionExecutor(AbstractExecutor):
         """Handle forecasting functions"""
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -1387,6 +1405,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -1403,6 +1422,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
         aggregated_batch_list = []
         child = self.children[0]
         for batch in child.exec():
@@ -2079,7 +2106,15 @@ class CreateFunctionExecutor(AbstractExecutor):
             if int(x.split("horizon")[1].split(".pkl")[0]) >= horizon
         ]
         if len(existing_model_files) == 0:
+<<<<<<< HEAD
             print("Training, please wait...")
+=======
+<<<<<<< HEAD
+            logger.info("Training, please wait...")
+=======
+            print("Training, please wait...")
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
             if library == "neuralforecast":
                 model.fit(df=data, val_size=horizon)
             else:

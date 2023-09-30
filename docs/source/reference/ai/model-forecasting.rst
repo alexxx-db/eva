@@ -497,11 +497,19 @@ EvaDB's default forecast framework is `statsforecast <https://nixtla.github.io/s
    * - LIBRARY (str, default: 'statsforecast')
      - We can select one of `statsforecast` (default) or `neuralforecast`. `statsforecast` provides access to statistical forecasting methods, while `neuralforecast` gives access to deep-learning based forecasting methods.
    * - MODEL (str, default: 'ARIMA')
+<<<<<<< HEAD
      - If LIBRARY is `statsforecast`, we can select one of ARIMA, ting, ETS, Theta. The default is ARIMA. Check `Automatic Forecasting <https://nixtla.github.io/statsforecast/src/core/models_intro.html#automatic-forecasting>`_ to learn details about these models. If LIBRARY is `neuralforecast`, we can select one of NHITS or NBEATS. The default is NBEATS. Check `NBEATS docs <https://nixtla.github.io/neuralforecast/models.nbeats.html>`_ for details.
    * - AUTO (str, default: 'T')
      - If set to 'T', it enables automatic hyperparameter optimization. Must be set to 'T' for `statsforecast` library. One may set this parameter to `false` if LIBRARY is `neuralforecast` for faster (but less reliable) results.
    * - Frequency (str, default: 'auto')
      - A string indicating the frequency of the data. The common used ones are D, W, M, Y, which respectively represents day-, week-, month- and year- end frequency. The default value is M. Check `pandas available frequencies <https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases>`_ for all available frequencies. If it is not provided, the frequency is attempted to be determined automatically.
+=======
+     - If LIBRARY is `statsforecast`, we can select one of ARIMA, CES, ETS, Theta. The default is ARIMA. Check `Automatic Forecasting <https://nixtla.github.io/statsforecast/src/core/models_intro.html#automatic-forecasting>`_ to learn details about these models. If LIBRARY is `neuralforecast`, we can select one of NHITS or NBEATS. The default is NBEATS. Check `NBEATS docs <https://nixtla.github.io/neuralforecast/models.nbeats.html>`_ for details.
+   * - AUTO (str, default: 'T')
+     - If set to 'T', it enables automatic hyperparameter optimization. Must be set to 'T' for `statsforecast` library. One may set this parameter to `false` if LIBRARY is `neuralforecast` for faster (but less reliable) results.
+   * - Frequency (str, default: 'auto')
+     - A string indicating the frequency of the data. The common used ones are D, W, M, Y, which repestively represents day-, week-, month- and year- end frequency. The default value is M. Check `pandas available frequencies <https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases>`_ for all available frequencies. If it is not provided, the frequency is attempted to be determined automatically.
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 
 Note: If columns other than the ones required as mentioned above are passed while creating the function, they will be treated as exogenous variables if LIBRARY is `neuralforecast`. Otherwise, they would be ignored.
 
@@ -521,8 +529,11 @@ Below is an example query specifying the above parameters:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
 
 Below is an example query with `neuralforecast` with `trend` column as exogenous and without automatic hyperparameter optimization:
 
@@ -547,6 +558,8 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 =======
    SELECT Forecast(12) FROM AirData;
 
@@ -715,6 +728,8 @@ Below is an example query specifying the above parameters:
    TIME 'saledate'
    ID 'type'
    Frequency 'W';
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
 
 Below is an example query with `neuralforecast` with `trend` column as exogenous and without automatic hyperparameter optimization:
 
@@ -727,6 +742,7 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
     PREDICT 'y'
     LIBRARY 'neuralforecast'
     AUTO 'f'
+<<<<<<< HEAD
     FREQUENCY 'M';
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -750,6 +766,7 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -766,3 +783,17 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    FREQUENCY 'M';
+=======
+    FREQUENCY 'M';
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+=======
+    FREQUENCY 'M';
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+>>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
