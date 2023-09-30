@@ -85,10 +85,17 @@ from evadb.utils.generic_utils import (
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     string_comparison_case_insensitive,
+<<<<<<< HEAD
     try_to_import_flaml_automl,
     try_to_import_ludwig,
     try_to_import_neuralforecast,
     try_to_import_statsforecast,
+=======
+    try_to_import_ludwig,
+    try_to_import_neuralforecast,
+    try_to_import_sklearn,
+<<<<<<< HEAD
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 =======
     try_to_import_ludwig,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -101,6 +108,7 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
     try_to_import_statsforecast,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
     try_to_import_ludwig,
@@ -110,6 +118,12 @@ from evadb.utils.generic_utils import (
     try_to_import_statsforecast,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+    try_to_import_statsforecast,
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
     try_to_import_torch,
     try_to_import_ultralytics,
 )
@@ -529,6 +543,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+    def handle_forecasting_function(self):
+        """Handle forecasting functions"""
+        os.environ["CUDA_VISIBLE_DEVICES"] = ""
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+<<<<<<< HEAD
+=======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -539,6 +559,12 @@ class CreateFunctionExecutor(AbstractExecutor):
         """Handle forecasting functions"""
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         aggregated_batch_list = []
         child = self.children[0]
         for batch in child.exec():
@@ -646,6 +672,7 @@ class CreateFunctionExecutor(AbstractExecutor):
         if library == "neuralforecast":
             try_to_import_neuralforecast()
             from neuralforecast import NeuralForecast
+<<<<<<< HEAD
             from neuralforecast.auto import (
                 AutoDeepAR,
                 AutoFEDformer,
@@ -669,12 +696,17 @@ class CreateFunctionExecutor(AbstractExecutor):
             )
 
             # from neuralforecast.models import Autoformer as AFormer
+=======
+            from neuralforecast.auto import AutoNBEATS, AutoNHITS
+            from neuralforecast.models import NBEATS, NHITS
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 
             model_dict = {
                 "AutoNBEATS": AutoNBEATS,
                 "AutoNHITS": AutoNHITS,
                 "NBEATS": NBEATS,
                 "NHITS": NHITS,
+<<<<<<< HEAD
                 "PatchTST": PatchTST,
                 "AutoPatchTST": AutoPatchTST,
                 "DeepAR": DeepAR,
@@ -691,6 +723,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 
             if "model" not in arg_map.keys():
                 arg_map["model"] = "TFT"
+=======
+            }
+
+            if "model" not in arg_map.keys():
+                arg_map["model"] = "NBEATS"
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 
             if "auto" not in arg_map.keys() or (
                 arg_map["auto"].lower()[0] == "t"
@@ -710,7 +748,11 @@ class CreateFunctionExecutor(AbstractExecutor):
                 model_args["input_size"] = 2 * horizon
                 model_args["early_stop_patience_steps"] = 20
             else:
+<<<<<<< HEAD
                 model_args_config = {
+=======
+                model_args["config"] = {
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
                     "input_size": 2 * horizon,
                     "early_stop_patience_steps": 20,
                 }
@@ -722,6 +764,7 @@ class CreateFunctionExecutor(AbstractExecutor):
                 if "auto" not in arg_map["model"].lower():
                     model_args["hist_exog_list"] = exogenous_columns
                 else:
+<<<<<<< HEAD
                     model_args_config["hist_exog_list"] = exogenous_columns
 
             if "auto" in arg_map["model"].lower():
@@ -734,6 +777,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 
             model_args["h"] = horizon
             model_args["loss"] = MQLoss(level=[conf])
+=======
+                    model_args["config"]["hist_exog_list"] = exogenous_columns
+
+            model_args["h"] = horizon
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 
             model = NeuralForecast(
                 [model_here(**model_args)],
@@ -778,21 +826,30 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         data["ds"] = pd.to_datetime(data["ds"])
 
+<<<<<<< HEAD
         model_save_dir_name = (
             library + "_" + arg_map["model"] + "_" + new_freq
             if "statsforecast" in library
             else library + "_" + str(conf) + "_" + arg_map["model"] + "_" + new_freq
         )
+=======
+        model_save_dir_name = library + "_" + arg_map["model"] + "_" + new_freq
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         if len(data.columns) >= 4 and library == "neuralforecast":
             model_save_dir_name += "_exogenous_" + str(sorted(exogenous_columns))
 
         model_dir = os.path.join(
+<<<<<<< HEAD
             self.db.catalog().get_configuration_catalog_value("model_dir"),
+=======
+            self.db.config.get_value("storage", "model_dir"),
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
             "tsforecasting",
             model_save_dir_name,
             str(hashlib.sha256(data.to_string().encode()).hexdigest()),
         )
         Path(model_dir).mkdir(parents=True, exist_ok=True)
+<<<<<<< HEAD
 
         model_save_name = "horizon" + str(horizon) + ".pkl"
 
@@ -850,6 +907,33 @@ class CreateFunctionExecutor(AbstractExecutor):
                         data = data._append(
                             [data[data["unique_id"] == col]], ignore_index=True
                         )
+=======
+
+        model_save_name = "horizon" + str(horizon) + ".pkl"
+
+        model_path = os.path.join(model_dir, model_save_name)
+
+        existing_model_files = sorted(
+            os.listdir(model_dir),
+            key=lambda x: int(x.split("horizon")[1].split(".pkl")[0]),
+        )
+        existing_model_files = [
+            x
+            for x in existing_model_files
+            if int(x.split("horizon")[1].split(".pkl")[0]) >= horizon
+        ]
+        if len(existing_model_files) == 0:
+            print("Training, please wait...")
+            if library == "neuralforecast":
+                model.fit(df=data, val_size=horizon)
+            else:
+                model.fit(df=data[["ds", "y", "unique_id"]])
+            f = open(model_path, "wb")
+            pickle.dump(model, f)
+            f.close()
+        elif not Path(model_path).exists():
+            model_path = os.path.join(model_dir, existing_model_files[-1])
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 
                 model.fit(df=data[["ds", "y", "unique_id"]])
                 hypers = ""
@@ -900,8 +984,13 @@ class CreateFunctionExecutor(AbstractExecutor):
             ),
             FunctionMetadataCatalogEntry("horizon", horizon),
             FunctionMetadataCatalogEntry("library", library),
+<<<<<<< HEAD
             FunctionMetadataCatalogEntry("conf", conf),
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
         ]
+
+        os.environ.pop("CUDA_VISIBLE_DEVICES", None)
 
         return (
             self.node.name,

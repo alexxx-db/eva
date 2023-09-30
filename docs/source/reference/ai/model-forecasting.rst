@@ -217,6 +217,7 @@ Below is an example query specifying the above parameters:
    ID 'type'
    Frequency 'W';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Below is an example query with `neuralforecast` with `trend` column as exogenous and without automatic hyperparameter optimization:
 
@@ -232,6 +233,8 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
     FREQUENCY 'M';
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
 =======
    SELECT Forecast(12) FROM AirData;
 
@@ -285,6 +288,8 @@ Below is an example query specifying the above parameters:
    TIME 'saledate'
    ID 'type'
    Frequency 'W';
+=======
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
 
 Below is an example query with `neuralforecast` with `trend` column as exogenous and without automatic hyperparameter optimization:
 
@@ -297,6 +302,19 @@ Below is an example query with `neuralforecast` with `trend` column as exogenous
     PREDICT 'y'
     LIBRARY 'neuralforecast'
     AUTO 'f'
+<<<<<<< HEAD
     FREQUENCY 'M';
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    FREQUENCY 'M';
+=======
+    FREQUENCY 'M';
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+=======
+    FREQUENCY 'M';
+>>>>>>> e8a181c5 (Add support for Neuralforecast (#1115))
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))

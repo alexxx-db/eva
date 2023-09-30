@@ -143,6 +143,7 @@ sklearn_libs = ["scikit-learn"]
 xgboost_libs = ["flaml[automl]"]
 
 forecasting_libs = [
+<<<<<<< HEAD
     "statsforecast",  # MODEL TRAIN AND FINE TUNING
     "neuralforecast",  # MODEL TRAIN AND FINE TUNING
 ]
@@ -158,6 +159,8 @@ imagegen_libs = [
 sklearn_libs = ["scikit-learn"]
 
 forecasting_libs = [
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
     "statsforecast", # MODEL TRAIN AND FINE TUNING
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
 ]
