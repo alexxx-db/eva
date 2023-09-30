@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -89,10 +90,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 =======
 =======
+>>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -108,6 +112,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
+>>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
+>>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
 ##  [0.3.7] - 2023-09-30
 
 * PR #1239: release 0.3.7 
@@ -148,6 +163,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
@@ -173,10 +189,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 =======
 =======
+>>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
+=======
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -186,6 +206,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
+>>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
+>>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
 ##  [0.3.6] - 2023-09-21
 
 * PR #1181: releass: bump a version further to skip cached wheel 
