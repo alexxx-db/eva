@@ -265,6 +265,7 @@ Follow the [getting started](https://evadb.readthedocs.io/en/stable/source/overv
 ## Illustrative Queries
 
 * Get insights about Github stargazers using GPT4.
+<<<<<<< HEAD
 
 ```sql
 SELECT name, country, email, programming_languages, social_media, GPT4(prompt,topics_of_interest)
@@ -360,19 +361,35 @@ The input row [enterpreneurship, startups, venture capital] must generate the ou
 * Build a vector index on the feature embeddings returned by the SIFT Feature Extractor on a collection of Reddit images. Return the top-5 similar images for a given image.
 =======
 * Run the MNIST Image Classification model to obtain digit labels for each frame in the video.
+=======
+>>>>>>> b250207e (Update README.md)
 
 ```sql
-SELECT MnistImageClassifier(data).label FROM mnist_video;
+SELECT name, country, email, programming_languages, social_media, GPT4(prompt,topics_of_interest)
+FROM gpt4all_StargazerInsights;
+
+--- Prompt to GPT-4
+You are given 10 rows of input, each row is separated by two new line characters.
+Categorize the topics listed in each row into one or more of the following 3 technical areas - Machine Learning, Databases, and Web development. If the topics listed are not related to any of these 3 areas, output a single N/A. Do not miss any input row. Do not add any additional text or numbers to your output.
+The output rows must be separated by two new line characters. Each input row must generate exactly one output row. For example, the input row [Recommendation systems, Deep neural networks, Postgres] must generate only the output row [Machine Learning, Databases].
+The input row [enterpreneurship, startups, venture capital] must generate the output row N/A.
 ```
 
+<<<<<<< HEAD
 * Build a vector index on the feature embeddings returned by the SIFT Feature Extractor on a collection of Reddit images.
 >>>>>>> eva-master
+=======
+* Build a vector index on the feature embeddings returned by the SIFT Feature Extractor on a collection of Reddit images. Return the top-5 similar images for a given image.
+>>>>>>> b250207e (Update README.md)
 
 ```sql
 CREATE INDEX reddit_sift_image_index
     ON reddit_dataset (SiftFeatureExtractor(data))
     USING FAISS
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b250207e (Update README.md)
 
 SELECT name FROM reddit_dataset ORDER BY
     Similarity(
@@ -398,6 +415,7 @@ Here are some illustrative AI apps built using EvaDB (each notebook can be opene
 
 <details>
 
+<<<<<<< HEAD
 * Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
 
 ```sql
@@ -494,24 +512,22 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 <details>
 
 * Store the text returned by a Speech Recognition model on the audio component of a video in a table.
+=======
+* Store the text returned by a Speech Recognition model on the audio component of a video in a table. Run ChatGPT on the `text` column in a table.
+>>>>>>> b250207e (Update README.md)
 
 ```sql
 CREATE TABLE text_summary AS
     SELECT SpeechRecognizer(audio) FROM ukraine_video;
-```
-
-* Run ChatGPT on the `text` column in a table.
-
-```sql
 SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
     FROM text_summary;
 ```
 
-* Train an ML model using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine to predict a column in a table.
+* Train a classic ML model for predicting a column using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine.
 
 ```sql
 CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
-( SELECT * FROM HomeRentals )
+(SELECT * FROM HomeRentals)
 TYPE Ludwig
 PREDICT 'rental_price'
 TIME_LIMIT 120;
