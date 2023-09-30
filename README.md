@@ -9,6 +9,7 @@
 </p>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 =======
 <<<<<<< HEAD
@@ -18,6 +19,9 @@
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+<p align="center"><i><b>Database system for AI-powered apps</b></i></p>
+>>>>>>> 2022f2c9 (Update README.md)
 
 <p align="center">
 <a href="https://github.com/georgia-tech-db/evadb/fork" target="blank">
