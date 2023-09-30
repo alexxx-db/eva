@@ -502,10 +502,14 @@ Our target audience is software developers who may not necessarily have a backgr
 <details>
 <ul>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <li>Connect EvaDB to your SQL and vector database systems with the <a href="https://evadb.readthedocs.io/en/stable/source/reference/databases/postgres.html">`CREATE DATABASE`</a> and <a href="https://evadb.readthedocs.io/en/stable/source/reference/evaql/create.html#create-index">`CREATE INDEX`</a> statements.</li>
 =======
 <li>Connect EvaDB to your SQL and vector database systems with the `CREATE DATABASE` and `CREATE INDEX` statements.</li>
 >>>>>>> 08f14335 (Update README.md)
+=======
+<li>Connect EvaDB to your SQL and vector database systems with the <a href="https://evadb.readthedocs.io/en/stable/source/reference/databases/postgres.html">`CREATE DATABASE`</a> and <a href="https://evadb.readthedocs.io/en/stable/source/reference/evaql/create.html#create-index">`CREATE INDEX`</a> statements.</li>
+>>>>>>> f5a7c929 (Update README.md)
 <li>Write SQL queries with AI functions to get inference results:</li>
    <ul>
    <li>Pick a pre-trained AI model from Hugging Face, Open AI, Ultralytics, PyTorch, and built-in AI frameworks for generative AI, NLP, and vision applications;</li>  
@@ -706,6 +710,7 @@ Follow the [getting started](https://evadb.readthedocs.io/en/stable/source/overv
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
 
 ```sql
@@ -817,7 +822,13 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 =======
 * Store the text returned by a Speech Recognition model on the audio component of a video in a table. Run ChatGPT on the `text` column in a table.
 >>>>>>> b250207e (Update README.md)
+<<<<<<< HEAD
 >>>>>>> 6f08d5a3 (Update README.md)
+=======
+=======
+* Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
+>>>>>>> f5a7c929 (Update README.md)
+>>>>>>> d40331e4 (Update README.md)
 
 ```sql
 CREATE TABLE text_summary AS
@@ -839,6 +850,9 @@ SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d40331e4 (Update README.md)
 * Train a classic ML model for prediction using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine.
 
 ```sql
@@ -875,10 +889,14 @@ TIME_LIMIT 120;
 EvaDB's AI-centric query optimizer takes a query as input and generates a query plan. The query engine takes the query plan and hits the relevant backends to efficiently process the query:
 1. SQL Database Systems (Structured Data)
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
 =======
 2. AI Frameworks (Transform Unstructured Data to Structured Data, Unstructured data includes PDFs, images, podcasts, etc. stored on cloud buckets or local filesystem)
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
+>>>>>>> d40331e4 (Update README.md)
 3. Vector Database Systems (Feature Embeddings)
 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
