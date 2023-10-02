@@ -93,6 +93,18 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            ) as handler:
+                # Assemble columns.
+                response = handler.get_columns(table_name)
+                if response.error is not None:
+                    raise BinderError(response.error)
+                column_df = response.data
+                table_obj = create_table_catalog_entry_for_data_source(
+                    table_name, database_name, column_df
+                )
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======

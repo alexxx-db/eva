@@ -233,6 +233,7 @@ class CatalogManager(object):
 
             if resp.error is not None:
 <<<<<<< HEAD
+<<<<<<< HEAD
                 raise Exception(resp.error)
 =======
 <<<<<<< HEAD
@@ -240,7 +241,14 @@ class CatalogManager(object):
 =======
                 raise Exception(resp.error)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+                raise Exception(resp.error)
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 
             # Check table existence.
             table_df = resp.data
