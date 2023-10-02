@@ -130,6 +130,7 @@ class ParserTests(unittest.TestCase):
             VectorStoreType.FAISS,
             [TupleValueExpression(name="featCol")],
         )
+<<<<<<< HEAD
         create_index_query = (
             "CREATE INDEX IF NOT EXISTS testindex ON MyVideo (featCol) USING FAISS;"
         )
@@ -143,6 +144,8 @@ class ParserTests(unittest.TestCase):
 =======
 <<<<<<< HEAD
         # create if_not_exists
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
         create_index_query = (
             "CREATE INDEX IF NOT EXISTS testindex ON MyVideo (featCol) USING FAISS;"
         )
@@ -150,6 +153,7 @@ class ParserTests(unittest.TestCase):
         actual_stmt = evadb_stmt_list[0]
         expected_stmt._if_not_exists = True
         self.assertEqual(actual_stmt, expected_stmt)
+        self.assertEqual(actual_stmt.index_def, create_index_query)
 
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))

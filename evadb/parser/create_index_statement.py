@@ -46,6 +46,7 @@ class CreateIndexStatement(AbstractStatement):
 
     def __str__(self) -> str:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
         print_str = "CREATE INDEX {} {} ON {} ({}{}) ".format(
@@ -57,6 +58,8 @@ class CreateIndexStatement(AbstractStatement):
         )
 =======
 >>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
         function_expr = None
         for project_expr in self._project_expr_list:
             if isinstance(project_expr, FunctionExpression):
@@ -74,9 +77,12 @@ class CreateIndexStatement(AbstractStatement):
             print_str += f" ({function_expr.name}({self.col_list[0].name}))"
         print_str += f" USING {self._vector_store_type};"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
         return print_str
 
     @property
