@@ -128,6 +128,7 @@ parts:
 >>>>>>> eva-master
           - file: source/reference/databases/mariadb
           - file: source/reference/databases/github
+<<<<<<< HEAD
 
       - file: source/reference/vector_stores/index
         title: Vector Stores
@@ -153,6 +154,8 @@ parts:
           - file: source/reference/databases/mysql
           - file: source/reference/databases/mariadb
 >>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
 
       - file: source/reference/ai/index
         title: AI Engines

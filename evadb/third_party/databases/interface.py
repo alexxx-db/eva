@@ -65,6 +65,7 @@ def _get_database_handler(engine: str, **kwargs):
 <<<<<<< HEAD
     elif engine == "mariadb":
         return mod.MariaDbHandler(engine, **kwargs)
+<<<<<<< HEAD
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
@@ -77,6 +78,10 @@ def _get_database_handler(engine: str, **kwargs):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+    elif engine == "github":
+        return mod.GithubHandler(engine, **kwargs)
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
     else:
         raise NotImplementedError(f"Engine {engine} is not supported")
 
