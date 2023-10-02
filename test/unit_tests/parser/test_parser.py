@@ -141,6 +141,7 @@ class ParserTests(unittest.TestCase):
             VectorStoreType.FAISS,
             [TupleValueExpression(name="featCol")],
         )
+<<<<<<< HEAD
         create_index_query = (
             "CREATE INDEX IF NOT EXISTS testindex ON MyVideo (featCol) USING FAISS;"
         )
@@ -153,6 +154,7 @@ class ParserTests(unittest.TestCase):
 
 <<<<<<< HEAD
         # create if_not_exists
+<<<<<<< HEAD
         expected_stmt = CreateIndexStatement(
             "testindex",
             True,
@@ -163,6 +165,10 @@ class ParserTests(unittest.TestCase):
             VectorStoreType.FAISS,
             [TupleValueExpression(name="featCol")],
         )
+=======
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
         create_index_query = (
             "CREATE INDEX IF NOT EXISTS testindex ON MyVideo (featCol) USING FAISS;"
         )
@@ -171,6 +177,7 @@ class ParserTests(unittest.TestCase):
         expected_stmt._if_not_exists = True
         self.assertEqual(actual_stmt, expected_stmt)
         self.assertEqual(actual_stmt.index_def, create_index_query)
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
@@ -194,6 +201,8 @@ class ParserTests(unittest.TestCase):
         expected_stmt._if_not_exists = True
         self.assertEqual(actual_stmt, expected_stmt)
         self.assertEqual(actual_stmt.index_def, create_index_query)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
 
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))

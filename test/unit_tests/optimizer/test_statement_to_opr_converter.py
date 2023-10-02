@@ -320,11 +320,18 @@ statement_to_opr_converter.metadata_definition_to_function_metadata"
         )
         create_index_plan = LogicalCreateIndex(
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
             MagicMock(), MagicMock(), MagicMock(), MagicMock(), MagicMock(), MagicMock()
 =======
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
             MagicMock(),
             MagicMock(),
             MagicMock(),
@@ -333,9 +340,16 @@ statement_to_opr_converter.metadata_definition_to_function_metadata"
             MagicMock(),
             MagicMock(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
         )
         delete_plan = LogicalDelete(MagicMock())
         insert_plan = LogicalInsert(
