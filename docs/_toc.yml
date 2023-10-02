@@ -183,6 +183,7 @@ parts:
 =======
           - file: source/reference/databases/mariadb
           - file: source/reference/databases/github
+<<<<<<< HEAD
 
       - file: source/reference/vector_stores/index
         title: Vector Stores
@@ -213,6 +214,7 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
           - file: source/reference/databases/mariadb
+<<<<<<< HEAD
           - file: source/reference/databases/clickhouse
           - file: source/reference/databases/github
 =======
@@ -240,6 +242,11 @@ parts:
           - file: source/reference/vector_databases/qdrant
           - file: source/reference/vector_databases/pgvector
           - file: source/reference/vector_databases/pinecone
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 
       - file: source/reference/ai/index
         title: AI Engines

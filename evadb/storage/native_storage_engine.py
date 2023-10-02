@@ -163,6 +163,7 @@ class NativeStorageEngine(AbstractStorageEngine):
             raise Exception(err_msg)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     def read(
         self, table: TableCatalogEntry, batch_mem_size: int = 30000000
     ) -> Iterator[Batch]:
@@ -174,12 +175,22 @@ class NativeStorageEngine(AbstractStorageEngine):
         self, table: TableCatalogEntry, batch_mem_size: int = 30000000
     ) -> Iterator[Batch]:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+    def read(
+        self, table: TableCatalogEntry, batch_mem_size: int = 30000000
+    ) -> Iterator[Batch]:
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
         try:
             db_catalog_entry = self._get_database_catalog_entry(table.database_name)
             with get_database_handler(
                 db_catalog_entry.engine, **db_catalog_entry.params
             ) as handler:
+<<<<<<< HEAD
 <<<<<<< HEAD
                 handler_response = handler.select(table.name)
                 # we prefer the generator/iterator when available
@@ -192,6 +203,21 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
                 uri = handler.get_sqlalchmey_uri()
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                uri = handler.get_sqlalchmey_uri()
+=======
+                handler_response = handler.select(table.name)
+                # we prefer the generator/iterator when available
+                result = []
+                if handler_response.data_generator:
+                    result = handler_response.data_generator
+                elif handler_response.data:
+                    result = handler_response.data
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 
                 if handler.is_sqlalchmey_compatible():
                     # For sql data source, we can deserialize sql rows into numpy array
@@ -210,6 +236,7 @@ class NativeStorageEngine(AbstractStorageEngine):
                     )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 for df in rebatch(result, batch_mem_size):
                     yield Batch(pd.DataFrame(df))
 =======
@@ -219,6 +246,12 @@ class NativeStorageEngine(AbstractStorageEngine):
 
 <<<<<<< HEAD
 =======
+=======
+                for data_batch in result:
+                    yield Batch(pd.DataFrame([data_batch]))
+
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
             if data_batch:
                 yield Batch(pd.DataFrame(data_batch))
 
@@ -252,7 +285,13 @@ class NativeStorageEngine(AbstractStorageEngine):
                     yield Batch(pd.DataFrame([data_batch]))
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
         except Exception as e:
             err_msg = f"Failed to read the table {table.name} in data source {table.database_name} with exception {str(e)}"
             logger.exception(err_msg)
