@@ -31,6 +31,7 @@ from evadb.binder.binder_utils import (
 )
 from evadb.binder.statement_binder_context import StatementBinderContext
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.catalog.catalog_type import ColumnType, TableType
 =======
 <<<<<<< HEAD
@@ -38,7 +39,14 @@ from evadb.catalog.catalog_type import ColumnType, TableType, VideoColumnName
 =======
 from evadb.catalog.catalog_type import ColumnType, TableType
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+from evadb.catalog.catalog_type import ColumnType, TableType
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
 from evadb.catalog.catalog_utils import get_metadata_properties, is_document_table
 from evadb.catalog.sql_config import RESTRICTED_COL_NAMES
 from evadb.configuration.constants import EvaDB_INSTALLATION_DIR

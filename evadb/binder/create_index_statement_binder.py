@@ -13,10 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.binder.binder_utils import BinderError, create_row_num_tv_expr
 from evadb.binder.statement_binder import StatementBinder
 from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
 from evadb.expression.function_expression import FunctionExpression
+=======
+<<<<<<< HEAD
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 <<<<<<< HEAD
 from evadb.binder.binder_utils import BinderError
@@ -28,7 +32,17 @@ from evadb.binder.statement_binder import StatementBinder
 from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
 from evadb.expression.function_expression import FunctionExpression
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+from evadb.binder.binder_utils import BinderError, create_row_num_tv_expr
+from evadb.binder.statement_binder import StatementBinder
+from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
+from evadb.expression.function_expression import FunctionExpression
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
 from evadb.parser.create_index_statement import CreateIndexStatement
 from evadb.third_party.databases.interface import get_database_handler
 
@@ -36,12 +50,19 @@ from evadb.third_party.databases.interface import get_database_handler
 def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
     binder.bind(node.table_ref)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     if node.function:
         binder.bind(node.function)
 =======
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
 
     # Bind all projection expressions.
     func_project_expr = None
@@ -53,9 +74,16 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
     # Append ROW_NUM_COLUMN.
     node.project_expr_list += [create_row_num_tv_expr(node.table_ref.alias)]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
 
     # TODO: create index currently only supports single numpy column.
     assert len(node.col_list) == 1, "Index cannot be created on more than 1 column"
@@ -88,6 +116,7 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
         return
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     # Index can be only created on single column.
     assert (
         len(node.col_list) == 1
@@ -96,6 +125,9 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 
     if func_project_expr is None:
         # Feature table type needs to be float32 numpy array.
+=======
+<<<<<<< HEAD
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 <<<<<<< HEAD
     if not node.function:
@@ -115,7 +147,21 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
     if func_project_expr is None:
         # Feature table type needs to be float32 numpy array.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+    # Index can be only created on single column.
+    assert (
+        len(node.col_list) == 1
+    ), f"Index can be only created on one column, but instead {len(node.col_list)} are provided"
+    col_def = node.col_list[0]
+
+    if func_project_expr is None:
+        # Feature table type needs to be float32 numpy array.
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
         table_ref_obj = node.table_ref.table.table_obj
         col_list = [col for col in table_ref_obj.columns if col.name == col_def.name]
         assert (
@@ -134,6 +180,7 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
         # Output of the function should be 2 dimension and float32 type.
         function_obj = binder._catalog().get_function_catalog_entry_by_name(
 <<<<<<< HEAD
+<<<<<<< HEAD
             func_project_expr.name
 =======
 <<<<<<< HEAD
@@ -141,7 +188,14 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 =======
             func_project_expr.name
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+            func_project_expr.name
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
         )
         for output in function_obj.outputs:
             assert (

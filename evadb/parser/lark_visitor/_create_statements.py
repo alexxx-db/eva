@@ -301,10 +301,24 @@ class CreateIndex:
         return CreateIndexStatement(
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
             index_name,
             if_not_exists,
             table_ref,
@@ -312,11 +326,13 @@ class CreateIndex:
             vector_store_type,
             project_expr_list,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -336,6 +352,11 @@ class CreateIndex:
             project_expr_list,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
         )
 
     def vector_store_type(self, tree):
