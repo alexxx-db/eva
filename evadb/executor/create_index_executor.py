@@ -28,10 +28,13 @@ from evadb.plan_nodes.create_index_plan import CreateIndexPlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 =======
 <<<<<<< HEAD
 from evadb.storage.storage_engine import StorageEngine
@@ -40,12 +43,16 @@ from evadb.storage.storage_engine import StorageEngine
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -57,6 +64,8 @@ from evadb.storage.storage_engine import StorageEngine
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 from evadb.third_party.databases.interface import get_database_handler
 from evadb.third_party.vector_stores.types import FeaturePayload
 from evadb.third_party.vector_stores.utils import VectorStoreFactory
@@ -486,8 +495,16 @@ class CreateIndexExecutor(AbstractExecutor):
             # Add features to index.
             # TODO: batch size is hardcoded for now.
             input_dim = -1
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
             for input_batch in self.children[0].exec():
                 input_batch.drop_column_alias()
                 feat = input_batch.column_as_numpy_array(feat_col_name)
@@ -505,16 +522,22 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 >>>>>>> eva-master
 =======
             for input_batch in self.children[0].exec():
                 input_batch.drop_column_alias()
                 feat = input_batch.column_as_numpy_array(feat_col_name)
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
@@ -525,6 +548,9 @@ class CreateIndexExecutor(AbstractExecutor):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
                 row_num = input_batch.column_as_numpy_array(ROW_NUM_COLUMN)
 
                 for i in range(len(input_batch)):

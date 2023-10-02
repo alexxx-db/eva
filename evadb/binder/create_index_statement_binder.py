@@ -16,13 +16,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 from evadb.binder.binder_utils import BinderError, create_row_num_tv_expr
 from evadb.binder.statement_binder import StatementBinder
 from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
 from evadb.expression.function_expression import FunctionExpression
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
@@ -33,6 +37,11 @@ from evadb.expression.function_expression import FunctionExpression
 <<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+<<<<<<< HEAD
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 from evadb.binder.binder_utils import BinderError
 from evadb.binder.statement_binder import StatementBinder
 from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
@@ -81,13 +90,26 @@ from evadb.expression.function_expression import FunctionExpression
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+from evadb.binder.binder_utils import BinderError, create_row_num_tv_expr
+from evadb.binder.statement_binder import StatementBinder
+from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
+from evadb.expression.function_expression import FunctionExpression
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 from evadb.parser.create_index_statement import CreateIndexStatement
 from evadb.third_party.databases.interface import get_database_handler
 
@@ -98,10 +120,13 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 =======
 <<<<<<< HEAD
     if node.function:
@@ -110,12 +135,16 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -127,6 +156,8 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 
     # Bind all projection expressions.
     func_project_expr = None
@@ -141,6 +172,7 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -154,8 +186,12 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 =======
 =======
 =======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -163,6 +199,13 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 
     # TODO: create index currently only supports single numpy column.
     assert len(node.col_list) == 1, "Index cannot be created on more than 1 column"
@@ -198,8 +241,11 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
     # Index can be only created on single column.
     assert (
         len(node.col_list) == 1
@@ -211,6 +257,7 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 <<<<<<< HEAD
@@ -219,6 +266,11 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+<<<<<<< HEAD
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
     if not node.function:
         # Feature table type needs to be float32 numpy array.
         assert (
@@ -283,13 +335,30 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+    # Index can be only created on single column.
+    assert (
+        len(node.col_list) == 1
+    ), f"Index can be only created on one column, but instead {len(node.col_list)} are provided"
+    col_def = node.col_list[0]
+
+    if func_project_expr is None:
+        # Feature table type needs to be float32 numpy array.
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
         table_ref_obj = node.table_ref.table.table_obj
         col_list = [col for col in table_ref_obj.columns if col.name == col_def.name]
         assert (
@@ -311,10 +380,13 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
             func_project_expr.name
 =======
 <<<<<<< HEAD
@@ -325,14 +397,20 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
 >>>>>>> eva-master
 =======
             func_project_expr.name
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
@@ -343,6 +421,9 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
         )
         for output in function_obj.outputs:
             assert (
