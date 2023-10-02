@@ -254,10 +254,13 @@ class CatalogManager(object):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
                 raise Exception(resp.error)
 =======
 <<<<<<< HEAD
@@ -268,14 +271,20 @@ class CatalogManager(object):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
 >>>>>>> eva-master
 =======
                 raise Exception(resp.error)
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
@@ -286,6 +295,9 @@ class CatalogManager(object):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
 
             # Check table existence.
             table_df = resp.data

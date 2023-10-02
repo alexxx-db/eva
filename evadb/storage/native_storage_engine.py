@@ -182,10 +182,13 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
     def read(
         self, table: TableCatalogEntry, batch_mem_size: int = 30000000
     ) -> Iterator[Batch]:
@@ -200,16 +203,22 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
 >>>>>>> eva-master
 =======
     def read(
         self, table: TableCatalogEntry, batch_mem_size: int = 30000000
     ) -> Iterator[Batch]:
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
@@ -220,6 +229,9 @@ class NativeStorageEngine(AbstractStorageEngine):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
         try:
             db_catalog_entry = self._get_database_catalog_entry(table.database_name)
             with get_database_handler(
@@ -229,8 +241,11 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
                 handler_response = handler.select(table.name)
                 # we prefer the generator/iterator when available
                 result = []
@@ -243,9 +258,13 @@ class NativeStorageEngine(AbstractStorageEngine):
                 uri = handler.get_sqlalchmey_uri()
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -260,6 +279,7 @@ class NativeStorageEngine(AbstractStorageEngine):
                     result = handler_response.data
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
 
                 if handler.is_sqlalchmey_compatible():
                     # For sql data source, we can deserialize sql rows into numpy array
@@ -318,6 +338,8 @@ class NativeStorageEngine(AbstractStorageEngine):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
 
                 if handler.is_sqlalchmey_compatible():
                     # For sql data source, we can deserialize sql rows into numpy array
@@ -336,6 +358,7 @@ class NativeStorageEngine(AbstractStorageEngine):
                     )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 for df in rebatch(result, batch_mem_size):
                     yield Batch(pd.DataFrame(df))
 =======
@@ -345,6 +368,7 @@ class NativeStorageEngine(AbstractStorageEngine):
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -363,6 +387,14 @@ class NativeStorageEngine(AbstractStorageEngine):
 =======
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+                for data_batch in result:
+                    yield Batch(pd.DataFrame([data_batch]))
+
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
             if data_batch:
                 yield Batch(pd.DataFrame(data_batch))
 
@@ -415,8 +447,17 @@ class NativeStorageEngine(AbstractStorageEngine):
                     yield Batch(pd.DataFrame([data_batch]))
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
         except Exception as e:
             err_msg = f"Failed to read the table {table.name} in data source {table.database_name} with exception {str(e)}"
             logger.exception(err_msg)

@@ -101,6 +101,7 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -145,6 +146,9 @@ class StatementBinderContext:
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -159,6 +163,9 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

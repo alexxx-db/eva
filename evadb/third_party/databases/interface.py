@@ -221,14 +221,30 @@ def _get_database_handler(engine: str, **kwargs):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
     elif engine == "mariadb":
         return mod.MariaDbHandler(engine, **kwargs)
+<<<<<<< HEAD
     elif engine == "clickhouse":
         return mod.ClickHouseHandler(engine, **kwargs)
     elif engine == "github":
         return mod.GithubHandler(engine, **kwargs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+    elif engine == "mariadb":
+        return mod.MariaDbHandler(engine, **kwargs)
+    elif engine == "github":
+        return mod.GithubHandler(engine, **kwargs)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -318,6 +334,7 @@ def _get_database_handler(engine: str, **kwargs):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -331,6 +348,15 @@ def _get_database_handler(engine: str, **kwargs):
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+    elif engine == "github":
+        return mod.GithubHandler(engine, **kwargs)
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
     else:
         raise NotImplementedError(f"Engine {engine} is not supported")
 
