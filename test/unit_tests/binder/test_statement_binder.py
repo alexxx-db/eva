@@ -344,6 +344,7 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -361,6 +362,10 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             col_def = MagicMock()
             col_def.name = "a"
             create_index_statement.col_list = [col_def]
@@ -373,6 +378,7 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -381,6 +387,8 @@ class StatementBinderTests(unittest.TestCase):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             function_obj = MagicMock()
             output = MagicMock()
             function_obj.outputs = [output]
@@ -400,6 +408,7 @@ class StatementBinderTests(unittest.TestCase):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
             create_index_statement.col_list = ["foo"]
@@ -410,6 +419,8 @@ class StatementBinderTests(unittest.TestCase):
 =======
             create_index_statement.col_list = ["foo"]
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             function_obj = MagicMock()
             output = MagicMock()
             function_obj.outputs = [output]
@@ -434,6 +445,11 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+
+            create_index_statement.project_expr_list = [
+                FunctionExpression(MagicMock(), name="a"),
+                TupleValueExpression(name="*"),
+            ]
 
             with patch.object(
                 catalog(),
@@ -455,6 +471,7 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -463,6 +480,8 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             create_index_statement.project_expr_list = [TupleValueExpression(name="*")]
 =======
             create_index_statement.function = None
@@ -473,6 +492,7 @@ class StatementBinderTests(unittest.TestCase):
             col.name = "a"
             create_index_statement.table_ref.table.table_obj.columns = [col]
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -494,6 +514,11 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+            create_index_statement.project_expr_list = [TupleValueExpression(name="*")]
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
             with self.assertRaises(AssertionError):
                 binder._bind_create_index_statement(create_index_statement)
@@ -503,6 +528,7 @@ class StatementBinderTests(unittest.TestCase):
             col.array_dimensions = [1, 10]
             binder._bind_create_index_statement(create_index_statement)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -549,6 +575,8 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def test_bind_create_function_should_raise_without_predict_for_ludwig(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
@@ -576,6 +604,7 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -595,11 +624,14 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
     def test_bind_create_function_should_raise_without_predict_for_ludwig(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
             create_function_statement.function_type = "ludwig"
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -643,6 +675,8 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             create_function_statement.query.target_list = []
             create_function_statement.metadata = []
             binder = StatementBinder(StatementBinderContext(MagicMock()))
@@ -657,6 +691,7 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -695,6 +730,8 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def test_bind_create_function_should_drop_row_id_for_select_star(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
@@ -722,6 +759,7 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -741,11 +779,14 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
     def test_bind_create_function_should_drop_row_id_for_select_star(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
             create_function_statement.function_type = "ludwig"
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -789,6 +830,8 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             row_id_col_obj = ColumnCatalogEntry(
                 name=IDENTIFIER_COLUMN,
                 type=MagicMock(),
@@ -859,6 +902,7 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -907,6 +951,10 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
     def test_bind_create_function_should_bind_forecast_with_default_columns(self):
         with patch.object(StatementBinder, "bind"):
@@ -1188,6 +1236,7 @@ class StatementBinderTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1207,9 +1256,12 @@ class StatementBinderTests(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1262,3 +1314,5 @@ class StatementBinderTests(unittest.TestCase):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)

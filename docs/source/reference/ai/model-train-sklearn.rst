@@ -26,15 +26,21 @@ In the above query, you are creating a new customized function by training a mod
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 The ``rental_price`` column will be the target column for predication, while the rest columns from the ``SELECT`` query are the inputs. 
 =======
 The ``rental_price`` column will be the target column for predication, while the rest columns from the ``SELET`` query are the inputs. 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 The ``rental_price`` column will be the target column for predication, while the rest columns from the ``SELECT`` query are the inputs. 
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)

@@ -439,6 +439,7 @@ class SimilarityTests(unittest.TestCase):
             execute_query_fetch_all(self.evadb, drop_query)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     def _helper_for_auto_update_during_insertion_with_faiss(self, if_exists: bool):
         for i, img_path in enumerate(self.img_path_list):
@@ -474,6 +475,8 @@ class SimilarityTests(unittest.TestCase):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
     def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
         create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"

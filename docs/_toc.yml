@@ -123,8 +123,11 @@ parts:
         title: Connect to Database
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
       - file: source/overview/model-inference
         title: Model inference
       - file: source/overview/concepts
@@ -174,6 +177,7 @@ parts:
         title: Object Detection
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
+<<<<<<< HEAD
 <<<<<<< HEAD
       - file: source/usecases/privategpt.rst
         title: PrivateGPT
@@ -285,12 +289,18 @@ parts:
 =======
 =======
 =======
+      - file: source/usecases/privategpt.rst
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
       - file: source/usecases/homesale-forecast.rst
         title: Home Sale Forecasting
       - file: source/usecases/homerental-predict.rst
         title: Home Rental Prediction
       # - file: source/usecases/privategpt.rst
       #   title: PrivateGPT
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -360,6 +370,9 @@ parts:
         title: PrivateGPT
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
   - caption: User Reference
     chapters:
@@ -465,6 +478,7 @@ parts:
           - file: source/reference/databases/mysql
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
           - file: source/reference/databases/mariadb
@@ -514,12 +528,30 @@ parts:
           - file: source/reference/databases/github
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
           - file: source/reference/databases/mariadb
           - file: source/reference/databases/clickhouse
           - file: source/reference/databases/github
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/github
+
+      - file: source/reference/vector_stores/index
+        title: Vector Stores
+        sections: 
+          - file: source/reference/vector_stores/faiss
+          - file: source/reference/vector_stores/chromadb
+          - file: source/reference/vector_stores/qdrant
+          - file: source/reference/vector_stores/pgvector
+          - file: source/reference/vector_stores/pinecone
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
       - file: source/reference/vector_stores/index
@@ -761,10 +793,20 @@ parts:
       - file: source/reference/ai/index
         title: AI Engines
         sections:
+<<<<<<< HEAD
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+          - file: source/reference/ai/model-train-ludwig
+            title: Model Training with Ludwig
+          - file: source/reference/ai/model-train-sklearn
+            title: Model Training with Sklearn
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
           - file: source/reference/ai/model-forecasting
             title: Time Series Forecasting
           - file: source/reference/ai/hf
@@ -927,8 +969,17 @@ parts:
 =======
           - file: source/reference/ai/custom
             title: Custom Model
+<<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+
+      - file: source/reference/optimizations
+        title: Optimizations
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         
       # - file: source/reference/io
       #   title: IO Descriptors

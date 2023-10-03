@@ -167,6 +167,10 @@ chromadb_libs = ["chromadb"]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
+pinecone_libs = ["pinecone-client"]
+
+chromadb_libs = ["chromadb"]
+
 postgres_libs = [
     "psycopg2",
 ]
@@ -260,8 +264,11 @@ forecasting_libs = [
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 
+sklearn_libs = ["scikit-learn"]
+
 forecasting_libs = [
-    "statsforecast" # MODEL TRAIN AND FINE TUNING
+    "statsforecast", # MODEL TRAIN AND FINE TUNING
+    "neuralforecast" # MODEL TRAIN AND FINE TUNING
 ]
 
 ### NEEDED FOR DEVELOPER TESTING ONLY
@@ -310,6 +317,7 @@ EXTRA_REQUIRES = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -338,6 +346,8 @@ EXTRA_REQUIRES = {
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     "sklearn": sklearn_libs,
     "xgboost": xgboost_libs,
     "forecasting": forecasting_libs,
@@ -380,6 +390,7 @@ EXTRA_REQUIRES = {
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
@@ -388,10 +399,14 @@ EXTRA_REQUIRES = {
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     "sklearn": sklearn_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -451,6 +466,9 @@ EXTRA_REQUIRES = {
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 }
 
 setup(

@@ -42,6 +42,7 @@ from evadb.parser.set_statement import SetStatement
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.parser.show_statement import ShowStatement
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -53,6 +54,11 @@ from evadb.parser.show_statement import ShowStatement
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+from evadb.parser.show_statement import ShowStatement
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from evadb.parser.statement import AbstractStatement, StatementType
 from evadb.parser.table_ref import JoinNode, TableInfo, TableRef, TableValuedExpression
 from evadb.parser.types import (
@@ -139,6 +145,7 @@ class ParserTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -146,6 +153,30 @@ class ParserTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 =======
+=======
+=======
+
+        # create if_not_exists
+        expected_stmt = CreateIndexStatement(
+            "testindex",
+            True,
+            TableRef(TableInfo("MyVideo")),
+            [
+                ColumnDefinition("featCol", None, None, None),
+            ],
+            VectorStoreType.FAISS,
+            [TupleValueExpression(name="featCol")],
+        )
+        create_index_query = (
+            "CREATE INDEX IF NOT EXISTS testindex ON MyVideo (featCol) USING FAISS;"
+        )
+        evadb_stmt_list = parser.parse(create_index_query)
+        actual_stmt = evadb_stmt_list[0]
+        expected_stmt._if_not_exists = True
+        self.assertEqual(actual_stmt, expected_stmt)
+        self.assertEqual(actual_stmt.index_def, create_index_query)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
         # create if_not_exists
@@ -905,6 +936,7 @@ class ParserTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -928,10 +960,13 @@ class ParserTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 =======
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -993,6 +1028,11 @@ class ParserTests(unittest.TestCase):
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+        query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         evadb_stmt_list = parser.parse(query)
 
         # check stmt itself
@@ -1109,6 +1149,7 @@ class ParserTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -1157,6 +1198,10 @@ class ParserTests(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def test_set_statement(self):
         parser = Parser()
         set_statement = """SET OPENAIKEY = 'ABCD'"""
@@ -1193,10 +1238,13 @@ class ParserTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def test_show_config_statement(self):
         parser = Parser()
         show_config_statement = """SHOW OPENAIKEY"""
@@ -1214,6 +1262,7 @@ class ParserTests(unittest.TestCase):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -1222,6 +1271,10 @@ class ParserTests(unittest.TestCase):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def test_create_predict_function_statement(self):
         parser = Parser()
         create_func_query = """
@@ -1466,6 +1519,7 @@ class ParserTests(unittest.TestCase):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
             False,
+            False,
             Path("data/fastrcnn.py"),
             [
                 ColumnDefinition(
@@ -1628,6 +1682,7 @@ class ParserTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     def test_create_job(self):
@@ -1679,6 +1734,8 @@ class ParserTests(unittest.TestCase):
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
 
 >>>>>>> b87af508 (feat: sync master staging (#1050))
     def test_lark(self):
@@ -1708,6 +1765,7 @@ class ParserTests(unittest.TestCase):
         parser = Parser()
         parser.parse(query)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1764,3 +1822,7 @@ class ParserTests(unittest.TestCase):
         parser.parse(query)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)

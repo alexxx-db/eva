@@ -16,18 +16,24 @@ import unittest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from test.markers import ludwig_skip_marker, sklearn_skip_marker, xgboost_skip_marker
 =======
 from test.markers import ludwig_skip_marker, sklearn_skip_marker
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 from test.markers import ludwig_skip_marker, sklearn_skip_marker, xgboost_skip_marker
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from test.util import get_evadb_for_testing, shutdown_ray
 
 import pytest
@@ -120,6 +126,7 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -143,10 +150,13 @@ class ModelTrainTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
 =======
             CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -208,6 +218,11 @@ class ModelTrainTests(unittest.TestCase):
             CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+            CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             ( SELECT * FROM HomeRentals )
             TYPE Ludwig
             PREDICT 'rental_price'
@@ -246,6 +261,7 @@ class ModelTrainTests(unittest.TestCase):
 
         predict_query = """
             SELECT PredictHouseRentSklearn(number_of_rooms, number_of_bathrooms, days_on_market, rental_price) FROM HomeRentals LIMIT 10;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         """
@@ -296,6 +312,8 @@ class ModelTrainTests(unittest.TestCase):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         """
         result = execute_query_fetch_all(self.evadb, predict_query)
         self.assertEqual(len(result.columns), 1)

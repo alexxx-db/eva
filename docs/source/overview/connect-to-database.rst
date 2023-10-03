@@ -9,6 +9,7 @@ Connect to a SQL Database System
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
 
 .. code-block::
@@ -33,9 +34,13 @@ Connect to a SQL Database System
 <<<<<<< HEAD
 =======
 1. Use the `CREATE DATABASE` statement to connect to an existing SQL database.
+=======
+1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
-.. code-block:: python
+.. code-block::
 
+<<<<<<< HEAD
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
    cursor.query("""
         CREATE DATABASE restaurant_reviews 
@@ -50,6 +55,8 @@ Connect to a SQL Database System
 <<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
    CREATE DATABASE restaurant_reviews 
    WITH ENGINE = 'postgres', 
    PARAMETERS = {
@@ -59,14 +66,18 @@ Connect to a SQL Database System
        "port": "5432",
        "database": "restaurant_reviews"
    };
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
 .. note::
 
    Go over the :ref:`CREATE DATABASE<sql-create-database>` statement for more details. The :ref:`Databases<databases>` page lists all the database systems that EvaDB currently supports.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,22 +123,23 @@ You can also run native queries directly in the connected database system by the
 <<<<<<< HEAD
 =======
 2. Preview the Available Data Using `SELECT`
+=======
+2. Preview the Available Data Using ``SELECT``
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
-You can now preview the available data in the `restaurant_reviews` database with a standard :ref:`SELECT<sql-select>` statement.
+You can now preview the available data in the ``restaurant_reviews`` database with a standard :ref:`SELECT<sql-select>` statement.
 
-.. code-block:: python
+.. code-block:: sql
 
-   cursor.query("""
-      SELECT * 
-      FROM restaurant_reviews.food_review;
-      """).df()
+   SELECT * FROM restaurant_reviews.food_review;
 
-3. Run Native Queries in the Connected Database With `USE`
+3. Run Native Queries in the Connected Database With ``USE``
 
 You can also run native queries directly in the connected database system by the :ref:`USE<sql-use>` statement.
 
-.. code-block:: python
+.. code-block::
 
+<<<<<<< HEAD
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
    cursor.query(
       """
@@ -142,6 +154,8 @@ You can also run native queries directly in the connected database system by the
 <<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
    USE restaurant_reviews {
        INSERT INTO food_review (name, review) 
        VALUES (
@@ -149,9 +163,12 @@ You can also run native queries directly in the connected database system by the
            'I ordered fried rice but it is too salty.'
        )
    };
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
 
 Load Unstructured Data
@@ -163,6 +180,7 @@ EvaDB supports diverse types of unstructured data. Here are some examples:
 
 You can load a collection of images obtained from Reddit from the local filesystem into EvaDB using the :ref:`LOAD<sql-load>` statement.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -187,11 +205,17 @@ You can load a collection of images obtained from Reddit from the local filesyst
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+.. code-block:: sql
+
+   LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
 2. Load Video from Cloud Bucket
 
 You can load a video from an S3 cloud bucket into EvaDB using the :ref:`LOAD<sql-load>` statement.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -216,6 +240,11 @@ You can load a video from an S3 cloud bucket into EvaDB using the :ref:`LOAD<sql
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+.. code-block:: sql
+
+   LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
 .. note::
 

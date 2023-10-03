@@ -278,6 +278,7 @@ ChatGPTTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ChromaDB
 ChromaDBVectorStore
 ClickHouseHandler
@@ -287,9 +288,14 @@ ChromaDB
 ChromaDBVectorStore
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+ChromaDB
+ChromaDBVectorStore
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
 CHROMADB
 ChromaDB
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ChromaDB
@@ -297,6 +303,8 @@ ChromaDBVectorStore
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 ColConstraintInfo
 Colab
 ColorSpace
@@ -1126,8 +1134,11 @@ PickleSerializer
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
@@ -1136,6 +1147,7 @@ PINECONE
 Pinecone
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Pinecone
 PineconeVectorStore
@@ -1143,6 +1155,8 @@ PipImportRedirectingFinder
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 PlanExecutor
 PlanExecutorTest
 PlanGenerator

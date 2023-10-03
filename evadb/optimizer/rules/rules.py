@@ -26,6 +26,7 @@ from evadb.catalog.catalog_utils import is_video_table
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -43,12 +44,15 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 from evadb.catalog.models.utils import IndexCatalogEntry
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +107,8 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from evadb.constants import CACHEABLE_FUNCTIONS
 from evadb.executor.execution_context import Context
 from evadb.expression.expression_utils import (
@@ -663,6 +669,7 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -700,6 +707,8 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -729,6 +738,7 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
             if isinstance(base_func_expr, TupleValueExpression)
             else base_func_expr.signature()
         )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -789,15 +799,39 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
                 if isinstance(base_func_expr, TupleValueExpression)
                 else base_func_expr.signature()
 =======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
-        # Get index catalog. Check if an index exists for matching
-        # function signature and table columns.
-        index_catalog_entry = (
-            catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+            )
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
                 column_catalog_entry, function_signature
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
             )
+<<<<<<< HEAD
+=======
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
             # Get index catalog. Check if an index exists for matching
             # function signature and table columns.
@@ -1145,6 +1179,7 @@ class LogicalCreateIndexToVectorIndex(Rule):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             before.project_expr_list,
             before.index_def,
 =======
@@ -1183,11 +1218,17 @@ class LogicalCreateIndexToVectorIndex(Rule):
 =======
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             before.project_expr_list,
             before.index_def,
 =======
             before.function,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            before.project_expr_list,
+            before.index_def,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         )
         child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
         batch_mem_size = context.db.config.get_value("executor", "batch_mem_size")

@@ -26,6 +26,7 @@ from mock import patch
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -43,12 +44,15 @@ from evadb.executor.executor_utils import ExecutorError
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from evadb.executor.executor_utils import ExecutorError
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 from evadb.executor.executor_utils import ExecutorError
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +107,8 @@ from evadb.executor.executor_utils import ExecutorError
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from evadb.server.command_handler import execute_query_fetch_all
 
 

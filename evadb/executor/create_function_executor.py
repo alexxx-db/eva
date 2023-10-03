@@ -20,6 +20,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import contextlib
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -38,6 +39,8 @@ import contextlib
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 import hashlib
 import locale
 import os
@@ -71,13 +74,17 @@ import os
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 import hashlib
 import os
 import pickle
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -116,6 +123,8 @@ import os
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from pathlib import Path
 from typing import Dict, List
 
@@ -166,6 +175,7 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -184,6 +194,8 @@ from evadb.utils.generic_utils import (
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     string_comparison_case_insensitive,
 <<<<<<< HEAD
     try_to_import_flaml_automl,
@@ -296,7 +308,13 @@ from evadb.utils.generic_utils import (
 =======
     try_to_import_xgboost,
 =======
+=======
+    string_comparison_case_insensitive,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     try_to_import_ludwig,
+    try_to_import_neuralforecast,
+    try_to_import_sklearn,
+    try_to_import_statsforecast,
     try_to_import_torch,
     try_to_import_ultralytics,
 >>>>>>> b87af508 (feat: sync master staging (#1050))
@@ -351,6 +369,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -389,6 +408,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         """Handle HuggingFace functions
 
         HuggingFace functions are special functions that are not loaded from a file.
@@ -417,6 +438,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -436,11 +458,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
         """Handle HuggingFace functions
 
         HuggingFace functions are special functions that are not loaded from a file.
         So we do not need to call the setup method on them like we do for other functions.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -484,6 +509,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         """
         # We need at least one deep learning framework for HuggingFace
         # Torch or Tensorflow
@@ -507,6 +534,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -532,6 +560,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         """Handle ludwig functions
 
         Use Ludwig's auto_train engine to train/tune models.
@@ -555,6 +585,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -574,10 +605,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
         """Handle ludwig functions
 
         Use Ludwig's auto_train engine to train/tune models.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -621,6 +655,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         """
         try_to_import_ludwig()
         from ludwig.automl import auto_train
@@ -685,6 +721,7 @@ class CreateFunctionExecutor(AbstractExecutor):
             train_time,
         )
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     def handle_sklearn_function(self):
@@ -875,6 +912,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def handle_sklearn_function(self):
         """Handle sklearn functions
 
@@ -930,11 +971,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def handle_xgboost_function(self):
         """Handle xgboost functions
 
@@ -1021,6 +1065,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
@@ -1079,6 +1124,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+    def handle_ultralytics_function(self):
+        """Handle Ultralytics functions"""
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         try_to_import_ultralytics()
 
         impl_path = (
@@ -1104,6 +1155,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -1119,6 +1171,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def handle_forecasting_function(self):
         """Handle forecasting functions"""
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
@@ -1165,6 +1221,7 @@ class CreateFunctionExecutor(AbstractExecutor):
             aggregated_batch_list.append(batch)
         aggregated_batch = Batch.concat(aggregated_batch_list, copy=False)
         aggregated_batch.drop_column_alias()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1630,6 +1687,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
         arg_map = {arg.key: arg.value for arg in self.node.metadata}
         if not self.node.impl_path:
@@ -1890,6 +1949,7 @@ class CreateFunctionExecutor(AbstractExecutor):
         Generic Functions are loaded from a file. We check for inputs passed by the user during CREATE or try to load io from decorators.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -1932,6 +1992,255 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+
+        arg_map = {arg.key: arg.value for arg in self.node.metadata}
+        if not self.node.impl_path:
+            impl_path = Path(f"{self.function_dir}/forecast.py").absolute().as_posix()
+        else:
+            impl_path = self.node.impl_path.absolute().as_posix()
+        library = "statsforecast"
+        supported_libraries = ["statsforecast", "neuralforecast"]
+
+        if "horizon" not in arg_map.keys():
+            raise ValueError(
+                "Horizon must be provided while creating function of type FORECASTING"
+            )
+        try:
+            horizon = int(arg_map["horizon"])
+        except Exception as e:
+            err_msg = f"{str(e)}. HORIZON must be integral."
+            logger.error(err_msg)
+            raise FunctionIODefinitionError(err_msg)
+
+        if "library" in arg_map.keys():
+            try:
+                assert arg_map["library"].lower() in supported_libraries
+            except Exception:
+                err_msg = (
+                    "EvaDB currently supports " + str(supported_libraries) + " only."
+                )
+                logger.error(err_msg)
+                raise FunctionIODefinitionError(err_msg)
+
+            library = arg_map["library"].lower()
+
+        """
+        The following rename is needed for statsforecast/neuralforecast, which requires the column name to be the following:
+        - The unique_id (string, int or category) represents an identifier for the series.
+        - The ds (datestamp) column should be of a format expected by Pandas, ideally YYYY-MM-DD for a date or YYYY-MM-DD HH:MM:SS for a timestamp.
+        - The y (numeric) represents the measurement we wish to forecast.
+        For reference: https://nixtla.github.io/statsforecast/docs/getting-started/getting_started_short.html
+        """
+        aggregated_batch.rename(columns={arg_map["predict"]: "y"})
+        if "time" in arg_map.keys():
+            aggregated_batch.rename(columns={arg_map["time"]: "ds"})
+        if "id" in arg_map.keys():
+            aggregated_batch.rename(columns={arg_map["id"]: "unique_id"})
+
+        data = aggregated_batch.frames
+        if "unique_id" not in list(data.columns):
+            data["unique_id"] = [1 for x in range(len(data))]
+
+        if "ds" not in list(data.columns):
+            data["ds"] = [x + 1 for x in range(len(data))]
+
+        """
+            Set or infer data frequency
+        """
+
+        if "frequency" not in arg_map.keys() or arg_map["frequency"] == "auto":
+            arg_map["frequency"] = pd.infer_freq(data["ds"])
+        frequency = arg_map["frequency"]
+        if frequency is None:
+            raise RuntimeError(
+                f"Can not infer the frequency for {self.node.name}. Please explictly set it."
+            )
+
+        season_dict = {  # https://pandas.pydata.org/docs/user_guide/timeseries.html#timeseries-offset-aliases
+            "H": 24,
+            "M": 12,
+            "Q": 4,
+            "SM": 24,
+            "BM": 12,
+            "BMS": 12,
+            "BQ": 4,
+            "BH": 24,
+        }
+
+        new_freq = (
+            frequency.split("-")[0] if "-" in frequency else frequency
+        )  # shortens longer frequencies like Q-DEC
+        season_length = season_dict[new_freq] if new_freq in season_dict else 1
+
+        """
+            Neuralforecast implementation
+        """
+        if library == "neuralforecast":
+            try_to_import_neuralforecast()
+            from neuralforecast import NeuralForecast
+            from neuralforecast.auto import AutoNBEATS, AutoNHITS
+            from neuralforecast.models import NBEATS, NHITS
+
+            model_dict = {
+                "AutoNBEATS": AutoNBEATS,
+                "AutoNHITS": AutoNHITS,
+                "NBEATS": NBEATS,
+                "NHITS": NHITS,
+            }
+
+            if "model" not in arg_map.keys():
+                arg_map["model"] = "NBEATS"
+
+            if "auto" not in arg_map.keys() or (
+                arg_map["auto"].lower()[0] == "t"
+                and "auto" not in arg_map["model"].lower()
+            ):
+                arg_map["model"] = "Auto" + arg_map["model"]
+
+            try:
+                model_here = model_dict[arg_map["model"]]
+            except Exception:
+                err_msg = "Supported models: " + str(model_dict.keys())
+                logger.error(err_msg)
+                raise FunctionIODefinitionError(err_msg)
+            model_args = {}
+
+            if "auto" not in arg_map["model"].lower():
+                model_args["input_size"] = 2 * horizon
+                model_args["early_stop_patience_steps"] = 20
+            else:
+                model_args["config"] = {
+                    "input_size": 2 * horizon,
+                    "early_stop_patience_steps": 20,
+                }
+
+            if len(data.columns) >= 4:
+                exogenous_columns = [
+                    x for x in list(data.columns) if x not in ["ds", "y", "unique_id"]
+                ]
+                if "auto" not in arg_map["model"].lower():
+                    model_args["hist_exog_list"] = exogenous_columns
+                else:
+                    model_args["config"]["hist_exog_list"] = exogenous_columns
+
+            model_args["h"] = horizon
+
+            model = NeuralForecast(
+                [model_here(**model_args)],
+                freq=new_freq,
+            )
+
+        # """
+        #     Statsforecast implementation
+        # """
+        else:
+            if "auto" in arg_map.keys() and arg_map["auto"].lower()[0] != "t":
+                raise RuntimeError(
+                    "Statsforecast implementation only supports automatic hyperparameter optimization. Please set AUTO to true."
+                )
+            try_to_import_statsforecast()
+            from statsforecast import StatsForecast
+            from statsforecast.models import AutoARIMA, AutoCES, AutoETS, AutoTheta
+
+            model_dict = {
+                "AutoARIMA": AutoARIMA,
+                "AutoCES": AutoCES,
+                "AutoETS": AutoETS,
+                "AutoTheta": AutoTheta,
+            }
+
+            if "model" not in arg_map.keys():
+                arg_map["model"] = "ARIMA"
+
+            if "auto" not in arg_map["model"].lower():
+                arg_map["model"] = "Auto" + arg_map["model"]
+
+            try:
+                model_here = model_dict[arg_map["model"]]
+            except Exception:
+                err_msg = "Supported models: " + str(model_dict.keys())
+                logger.error(err_msg)
+                raise FunctionIODefinitionError(err_msg)
+
+            model = StatsForecast(
+                [model_here(season_length=season_length)], freq=new_freq
+            )
+
+        data["ds"] = pd.to_datetime(data["ds"])
+
+        model_save_dir_name = library + "_" + arg_map["model"] + "_" + new_freq
+        if len(data.columns) >= 4 and library == "neuralforecast":
+            model_save_dir_name += "_exogenous_" + str(sorted(exogenous_columns))
+
+        model_dir = os.path.join(
+            self.db.config.get_value("storage", "model_dir"),
+            "tsforecasting",
+            model_save_dir_name,
+            str(hashlib.sha256(data.to_string().encode()).hexdigest()),
+        )
+        Path(model_dir).mkdir(parents=True, exist_ok=True)
+
+        model_save_name = "horizon" + str(horizon) + ".pkl"
+
+        model_path = os.path.join(model_dir, model_save_name)
+
+        existing_model_files = sorted(
+            os.listdir(model_dir),
+            key=lambda x: int(x.split("horizon")[1].split(".pkl")[0]),
+        )
+        existing_model_files = [
+            x
+            for x in existing_model_files
+            if int(x.split("horizon")[1].split(".pkl")[0]) >= horizon
+        ]
+        if len(existing_model_files) == 0:
+            print("Training, please wait...")
+            if library == "neuralforecast":
+                model.fit(df=data, val_size=horizon)
+            else:
+                model.fit(df=data[["ds", "y", "unique_id"]])
+            f = open(model_path, "wb")
+            pickle.dump(model, f)
+            f.close()
+        elif not Path(model_path).exists():
+            model_path = os.path.join(model_dir, existing_model_files[-1])
+
+        io_list = self._resolve_function_io(None)
+
+        metadata_here = [
+            FunctionMetadataCatalogEntry("model_name", arg_map["model"]),
+            FunctionMetadataCatalogEntry("model_path", model_path),
+            FunctionMetadataCatalogEntry(
+                "predict_column_rename", arg_map.get("predict", "y")
+            ),
+            FunctionMetadataCatalogEntry(
+                "time_column_rename", arg_map.get("time", "ds")
+            ),
+            FunctionMetadataCatalogEntry(
+                "id_column_rename", arg_map.get("id", "unique_id")
+            ),
+            FunctionMetadataCatalogEntry("horizon", horizon),
+            FunctionMetadataCatalogEntry("library", library),
+        ]
+
+        os.environ.pop("CUDA_VISIBLE_DEVICES", None)
+
+        return (
+            self.node.name,
+            impl_path,
+            self.node.function_type,
+            io_list,
+            metadata_here,
+        )
+
+    def handle_generic_function(self):
+        """Handle generic functions
+
+        Generic functions are loaded from a file. We check for inputs passed by the user during CREATE or try to load io from decorators.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         """
         impl_path = self.node.impl_path.absolute().as_posix()
         function = self._try_initializing_function(impl_path)
@@ -1955,6 +2264,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -2003,6 +2313,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         assert (
             self.node.if_not_exists and self.node.or_replace
         ) is False, (
@@ -2010,6 +2324,7 @@ class CreateFunctionExecutor(AbstractExecutor):
         )
 
         overwrite = False
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2037,9 +2352,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2092,6 +2410,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         # check catalog if it already has this function entry
         if self.catalog().get_function_catalog_entry_by_name(self.node.name):
             if self.node.if_not_exists:
@@ -2103,6 +2423,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -2151,6 +2472,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             elif self.node.or_replace:
                 # We use DropObjectExecutor to avoid bookkeeping the code. The drop function should be moved to catalog.
                 from evadb.executor.drop_object_executor import DropObjectExecutor
@@ -2158,8 +2483,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
                 drop_executor = DropObjectExecutor(self.db, None)
                 try:
                     drop_executor._handle_drop_function(self.node.name, if_exists=False)
@@ -2169,6 +2497,7 @@ class CreateFunctionExecutor(AbstractExecutor):
                     drop_exectuor._handle_drop_function(self.node.name, if_exists=False)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 drop_executor = DropObjectExecutor(self.db, None)
                 try:
@@ -2176,6 +2505,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
                 except RuntimeError:
                     pass
                 else:
@@ -2186,6 +2517,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -2205,9 +2537,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2260,6 +2595,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             else:
                 msg = f"Function {self.node.name} already exists."
                 logger.error(msg)
@@ -2274,6 +2611,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -2297,10 +2635,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         if string_comparison_case_insensitive(self.node.function_type, "HuggingFace"):
 =======
         if self.node.function_type == "HuggingFace":
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2362,6 +2703,11 @@ class CreateFunctionExecutor(AbstractExecutor):
         if self.node.function_type == "HuggingFace":
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+        if string_comparison_case_insensitive(self.node.function_type, "HuggingFace"):
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             (
                 name,
                 impl_path,
@@ -2377,6 +2723,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -2400,10 +2747,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         elif string_comparison_case_insensitive(self.node.function_type, "ultralytics"):
 =======
         elif self.node.function_type == "ultralytics":
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2465,6 +2815,11 @@ class CreateFunctionExecutor(AbstractExecutor):
         elif self.node.function_type == "ultralytics":
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+        elif string_comparison_case_insensitive(self.node.function_type, "ultralytics"):
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             (
                 name,
                 impl_path,
@@ -2480,6 +2835,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -2503,10 +2859,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         elif string_comparison_case_insensitive(self.node.function_type, "Ludwig"):
 =======
         elif self.node.function_type == "Ludwig":
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2568,6 +2927,11 @@ class CreateFunctionExecutor(AbstractExecutor):
         elif self.node.function_type == "Ludwig":
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+        elif string_comparison_case_insensitive(self.node.function_type, "Ludwig"):
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             (
                 name,
                 impl_path,
@@ -2581,6 +2945,7 @@ class CreateFunctionExecutor(AbstractExecutor):
                 train_time,
             ) = self.handle_ludwig_function()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
@@ -2628,6 +2993,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 <<<<<<< HEAD
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         elif string_comparison_case_insensitive(self.node.function_type, "Sklearn"):
             (
                 name,
@@ -2653,6 +3023,7 @@ class CreateFunctionExecutor(AbstractExecutor):
             ) = self.handle_xgboost_function()
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
             ) = self.handle_sklearn_function()
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -2661,6 +3032,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         elif string_comparison_case_insensitive(self.node.function_type, "Forecasting"):
             (
                 name,
@@ -2669,6 +3043,7 @@ class CreateFunctionExecutor(AbstractExecutor):
                 io_list,
                 metadata,
             ) = self.handle_forecasting_function()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2755,6 +3130,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         else:
             (
                 name,
@@ -2767,6 +3148,7 @@ class CreateFunctionExecutor(AbstractExecutor):
         self.catalog().insert_function_catalog_entry(
             name, impl_path, function_type, io_list, metadata
         )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2820,6 +3202,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
         if overwrite:
             msg = f"Function {self.node.name} overwritten."
@@ -2847,6 +3233,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
@@ -2877,12 +3264,15 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
         yield Batch(
             pd.DataFrame(
                 [f"Function {self.node.name} successfully added to the database."]
             )
         )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2941,6 +3331,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
     def _try_initializing_function(
         self, impl_path: str, function_args: Dict = {}
@@ -2957,6 +3351,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -2995,6 +3390,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             function_args (Dict, optional): Dictionary of arguments to pass to the function. Defaults to {}.
 
         Returns:
@@ -3120,14 +3517,24 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 =======
             function_args (Dict, optional): Dictionary of arguments to pass to the Function. Defaults to {}.
+=======
+            function_args (Dict, optional): Dictionary of arguments to pass to the function. Defaults to {}.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
         Returns:
-            FunctionCatalogEntry: A FunctionCatalogEntry object that represents the initialized Function.
+            FunctionCatalogEntry: A FunctionCatalogEntry object that represents the initialized function.
 
         Raises:
+<<<<<<< HEAD
             RuntimeError: If an error occurs while initializing the Function.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+            RuntimeError: If an error occurs while initializing the function.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         """
 
         # load the function class from the file
@@ -3145,6 +3552,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -3168,10 +3576,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             err_msg = f"Error creating function {self.node.name}: {str(e)}"
 =======
             err_msg = f"Error creating Function: {str(e)}"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3233,6 +3644,11 @@ class CreateFunctionExecutor(AbstractExecutor):
             err_msg = f"Error creating Function: {str(e)}"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+            err_msg = f"Error creating function {self.node.name}: {str(e)}"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             # logger.error(err_msg)
             raise RuntimeError(err_msg)
 
@@ -3249,6 +3665,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -3272,10 +3689,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         """Private method that resolves the input/output definitions for a given function.
 =======
         """Private method that resolves the input/output definitions for a given Function.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3337,6 +3757,11 @@ class CreateFunctionExecutor(AbstractExecutor):
         """Private method that resolves the input/output definitions for a given Function.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+        """Private method that resolves the input/output definitions for a given function.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         It first searches for the input/outputs in the CREATE statement. If not found, it resolves them using decorators. If not found there as well, it raises an error.
 
         Args:
@@ -3352,6 +3777,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -3375,10 +3801,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             output definitions for the function.
 =======
             output definitions for the Function.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3440,6 +3869,11 @@ class CreateFunctionExecutor(AbstractExecutor):
             output definitions for the Function.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+            output definitions for the function.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
         Raises:
             RuntimeError: If an error occurs while resolving the function input/output
@@ -3473,6 +3907,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -3496,10 +3931,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
                 f"Error creating function, input/output definition incorrect: {str(e)}"
 =======
                 f"Error creating Function, input/output definition incorrect: {str(e)}"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3561,6 +3999,11 @@ class CreateFunctionExecutor(AbstractExecutor):
                 f"Error creating Function, input/output definition incorrect: {str(e)}"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+                f"Error creating function, input/output definition incorrect: {str(e)}"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             )
             logger.error(err_msg)
             raise RuntimeError(err_msg)

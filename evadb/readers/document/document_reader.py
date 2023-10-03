@@ -19,16 +19,20 @@ from evadb.catalog.sql_config import ROW_NUM_COLUMN
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f9e9f8b3 (fix: improve testcase (#1294))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from evadb.configuration.constants import (
     DEFAULT_DOCUMENT_CHUNK_OVERLAP,
     DEFAULT_DOCUMENT_CHUNK_SIZE,
 )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -37,6 +41,10 @@ from evadb.configuration.constants import (
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 from evadb.readers.abstract_reader import AbstractReader
 from evadb.readers.document.registry import (
     _lazy_import_loader,

@@ -115,6 +115,7 @@ class PostgresHandler(DBHandler):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -153,6 +154,8 @@ class PostgresHandler(DBHandler):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             query = f"SELECT column_name as name, data_type as dtype, udt_name FROM information_schema.columns WHERE table_name='{table_name}'"
             columns_df = pd.read_sql_query(query, self.connection)
             columns_df["dtype"] = columns_df.apply(
@@ -181,6 +184,7 @@ class PostgresHandler(DBHandler):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -200,12 +204,15 @@ class PostgresHandler(DBHandler):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
             query = f"SELECT column_name as name, data_type as dtype, udt_name FROM information_schema.columns WHERE table_name='{table_name}'"
             columns_df = pd.read_sql_query(query, self.connection)
             columns_df["dtype"] = columns_df.apply(
                 lambda x: self._pg_to_python_types(x["dtype"], x["udt_name"]), axis=1
             )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -249,6 +256,8 @@ class PostgresHandler(DBHandler):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             return DBHandlerResponse(data=columns_df)
         except psycopg2.Error as e:
             return DBHandlerResponse(data=None, error=str(e))
@@ -302,6 +311,7 @@ class PostgresHandler(DBHandler):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -318,6 +328,8 @@ class PostgresHandler(DBHandler):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     def _pg_to_python_types(self, pg_type: str, udt_name: str):
         primitive_type_mapping = {
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -341,6 +353,7 @@ class PostgresHandler(DBHandler):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -350,9 +363,12 @@ class PostgresHandler(DBHandler):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
     def _pg_to_python_types(self, pg_type: str, udt_name: str):
         primitive_type_mapping = {
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -399,6 +415,8 @@ class PostgresHandler(DBHandler):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
             "integer": int,
             "bigint": int,
             "smallint": int,
@@ -417,6 +435,7 @@ class PostgresHandler(DBHandler):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -465,6 +484,10 @@ class PostgresHandler(DBHandler):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         user_defined_type_mapping = {
             "vector": np.ndarray
             # Handle user defined types constructed by Postgres extension.
@@ -480,6 +503,7 @@ class PostgresHandler(DBHandler):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -505,9 +529,12 @@ class PostgresHandler(DBHandler):
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
         if pg_type in mapping:
             return mapping[pg_type]
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -566,6 +593,10 @@ class PostgresHandler(DBHandler):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
         else:
             raise Exception(
                 f"Unsupported column {pg_type} encountered in the postgres table. Please raise a feature request!"

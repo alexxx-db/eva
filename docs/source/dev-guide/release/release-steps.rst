@@ -28,18 +28,24 @@ Setup Credentials
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 Please check :ref:`setup_pypi_account` about how to setup PyPI account.
 =======
 Please check :ref:`setup_pypi_account` about how to setup PyPi account.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 Please check :ref:`setup_pypi_account` about how to setup PyPI account.
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 
 Setup Github token. You can obtain a personal token from Github.
 
@@ -52,6 +58,7 @@ Build Wheel and Release
 
 .. code-block:: bash
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -83,6 +90,8 @@ Build Wheel and Release
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
     python script/releasing/releaser.py -n minor -u
 =======
 =======
@@ -167,6 +176,7 @@ Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.m
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     python script/releasing/releaser.py -n minor -u
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -224,3 +234,8 @@ Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.m
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+    python script/releasing/releaser.py -n minor -u
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
