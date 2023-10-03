@@ -30,13 +30,19 @@ from evadb.storage.abstract_storage_engine import AbstractStorageEngine
 from evadb.third_party.databases.interface import get_database_handler
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 from evadb.utils.generic_utils import PickleSerializer, rebatch
 =======
 from evadb.utils.generic_utils import PickleSerializer
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 from evadb.utils.generic_utils import PickleSerializer, rebatch
 >>>>>>> 3d009af6 (Reenable batch for release (#1302))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 from evadb.utils.logging_manager import logger
 
 
@@ -285,8 +291,13 @@ class NativeStorageEngine(AbstractStorageEngine):
                         _deserialize_sql_row(row, ordered_columns) for row in result
                     )
 
+<<<<<<< HEAD
                 for df in rebatch(result, batch_mem_size):
                     yield Batch(pd.DataFrame(df))
+=======
+                for data_batch in result:
+                    yield Batch(pd.DataFrame([data_batch]))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD

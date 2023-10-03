@@ -124,8 +124,11 @@ class CreateTableTest(unittest.TestCase):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
     def test_create_table_with_restricted_keywords(self):
         create_table = "CREATE TABLE hello (_row_id INTEGER, price TEXT);"
         with self.assertRaises(AssertionError):
@@ -136,10 +139,15 @@ class CreateTableTest(unittest.TestCase):
             execute_query_fetch_all(self.evadb, create_table)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
 if __name__ == "__main__":
     unittest.main()
