@@ -50,10 +50,14 @@ Supported Tables
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -62,6 +66,8 @@ Supported Tables
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 * ``stargazers``: Lists the people that have starred the repository. Check `table_column_info.py <https://github.com/georgia-tech-db/evadb/blob/staging/evadb/third_party/databases/github/table_column_info.py>`_ for all the available columns in the table.
 =======
 * ``stargazers``: Lists the people that have starred the repository. Check `evadb/third_party/databases/github/table_column_info.py` for all the available columns in the table.
@@ -71,8 +77,11 @@ Supported Tables
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 * ``stargazers``: Lists the people that have starred the repository. Check `evadb/third_party/databases/github/table_column_info.py` for all the available columns in the table.
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -87,6 +96,7 @@ Supported Tables
 * ``stargazers``: Lists the people that have starred the repository. Check `evadb/third_party/databases/github/table_column_info.py` for all the available columns in the table.
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -97,6 +107,8 @@ Supported Tables
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 
 .. code-block:: sql
 
@@ -124,10 +136,14 @@ Here is the query output:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -136,6 +152,8 @@ Here is the query output:
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
    Looking for another table from Github? You can add a table mapping in `github_handler.py <https://github.com/georgia-tech-db/evadb/blob/staging/evadb/third_party/databases/github/github_handler.py>`_, or simply raise a `Feature Request <https://github.com/georgia-tech-db/evadb/issues/new/choose>`_.
 =======
    Looking for another table from Github? You can add a table mapping in `evadb/third_party/databases/github/github_handler.py`, or simply raise a `Feature Request <https://github.com/georgia-tech-db/evadb/issues/new/choose>`_.
@@ -145,8 +163,11 @@ Here is the query output:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
    Looking for another table from Github? You can add a table mapping in `evadb/third_party/databases/github/github_handler.py`, or simply raise a `Feature Request <https://github.com/georgia-tech-db/evadb/issues/new/choose>`_.
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -161,6 +182,7 @@ Here is the query output:
    Looking for another table from Github? You can add a table mapping in `evadb/third_party/databases/github/github_handler.py`, or simply raise a `Feature Request <https://github.com/georgia-tech-db/evadb/issues/new/choose>`_.
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -171,3 +193,5 @@ Here is the query output:
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)

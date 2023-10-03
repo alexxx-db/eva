@@ -42,12 +42,16 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -63,6 +67,10 @@ class IndexCatalog(BaseModel):
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     `_index_def:` the original SQL statement that is used to create this index. We record this to rerun create index
                 on updated table.
 =======
@@ -92,6 +100,7 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -99,16 +108,24 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
     `_index_def:` the original SQL statement that is used to create this index. We record this to rerun create index
                 on updated table.
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -124,6 +141,10 @@ class IndexCatalog(BaseModel):
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     """
 
     __tablename__ = "index_catalog"
@@ -146,10 +167,14 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -160,6 +185,8 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     _index_def = Column("index_def", String, default=None)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -171,8 +198,11 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
     _index_def = Column("index_def", String, default=None)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -190,6 +220,7 @@ class IndexCatalog(BaseModel):
     _index_def = Column("index_def", String, default=None)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
     _index_def = Column("index_def", String, default=None)
 =======
@@ -208,6 +239,8 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 
     _feat_column = relationship(
         "ColumnCatalog",
@@ -232,10 +265,14 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -246,6 +283,8 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
         index_def: str = None,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -257,8 +296,11 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
         index_def: str = None,
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -276,6 +318,7 @@ class IndexCatalog(BaseModel):
         index_def: str = None,
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
         index_def: str = None,
 =======
@@ -294,6 +337,8 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     ):
         self._name = name
         self._save_file_path = save_file_path
@@ -311,10 +356,14 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -325,6 +374,8 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
         self._index_def = index_def
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -336,8 +387,11 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
         self._index_def = index_def
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -355,6 +409,7 @@ class IndexCatalog(BaseModel):
         self._index_def = index_def
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
         self._index_def = index_def
 =======
@@ -373,6 +428,8 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 
     def as_dataclass(self) -> "IndexCatalogEntry":
         feat_column = self._feat_column.as_dataclass() if self._feat_column else None
@@ -394,10 +451,14 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -408,6 +469,8 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
             index_def=self._index_def,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -419,8 +482,11 @@ class IndexCatalog(BaseModel):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
             index_def=self._index_def,
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -438,6 +504,7 @@ class IndexCatalog(BaseModel):
             index_def=self._index_def,
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
             index_def=self._index_def,
 =======
@@ -456,5 +523,7 @@ class IndexCatalog(BaseModel):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
             feat_column=feat_column,
         )

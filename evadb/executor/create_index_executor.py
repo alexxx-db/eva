@@ -29,12 +29,17 @@ from evadb.plan_nodes.create_index_plan import CreateIndexPlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 from evadb.storage.storage_engine import StorageEngine
@@ -44,8 +49,11 @@ from evadb.storage.storage_engine import StorageEngine
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
@@ -53,6 +61,9 @@ from evadb.storage.storage_engine import StorageEngine
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
 =======
@@ -61,11 +72,14 @@ from evadb.storage.storage_engine import StorageEngine
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 from evadb.third_party.databases.interface import get_database_handler
 from evadb.third_party.vector_stores.types import FeaturePayload
 from evadb.third_party.vector_stores.utils import VectorStoreFactory
@@ -345,6 +359,7 @@ class CreateIndexExecutor(AbstractExecutor):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         # Get feature column.
         feat_col_name = self.col_list[0].name
         feat_col_catalog_entry = [
@@ -376,9 +391,21 @@ class CreateIndexExecutor(AbstractExecutor):
                         ),
                     )
 =======
+=======
+            # Find function expression.
+            function_expression = None
+            for project_expr in self.node.project_expr_list:
+                if isinstance(project_expr, FunctionExpression):
+                    function_expression = project_expr
+
+            if function_expression is not None:
+                feat_col_name = function_expression.output_objs[0].name
+
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
             # Add features to index.
             # TODO: batch size is hardcoded for now.
             input_dim = -1
+<<<<<<< HEAD
             storage_engine = StorageEngine.factory(self.db, feat_catalog_entry)
             for input_batch in storage_engine.read(feat_catalog_entry):
                 if self.node.function:
@@ -402,6 +429,7 @@ class CreateIndexExecutor(AbstractExecutor):
         else:
             index = None
 
+<<<<<<< HEAD
         try:
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -592,10 +620,14 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
             # Add features to index.
             # TODO: batch size is hardcoded for now.
@@ -606,6 +638,8 @@ class CreateIndexExecutor(AbstractExecutor):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
             storage_engine = StorageEngine.factory(self.db, feat_catalog_entry)
             for input_batch in storage_engine.read(feat_catalog_entry):
                 if self.node.function:
@@ -684,10 +718,15 @@ class CreateIndexExecutor(AbstractExecutor):
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
             for input_batch in self.children[0].exec():
                 input_batch.drop_column_alias()
                 feat = input_batch.column_as_numpy_array(feat_col_name)
@@ -696,14 +735,20 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
             for input_batch in self.children[0].exec():
@@ -712,18 +757,24 @@ class CreateIndexExecutor(AbstractExecutor):
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 >>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
                 row_num = input_batch.column_as_numpy_array(ROW_NUM_COLUMN)
 
                 for i in range(len(input_batch)):

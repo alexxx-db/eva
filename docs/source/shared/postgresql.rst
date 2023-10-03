@@ -26,6 +26,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -72,6 +73,8 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 .. code-block::
 =======
 >>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
@@ -81,6 +84,8 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 .. code-block:: text
 <<<<<<< HEAD
@@ -105,8 +110,20 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 .. code-block::
 >>>>>>> aeb9a3be (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+<<<<<<< HEAD
 >>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+<<<<<<< HEAD
 >>>>>>> 25352b39 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+=======
+=======
+=======
+.. code-block::
+=======
+.. code-block:: text
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 
     CREATE DATABASE postgres_data 
     WITH ENGINE = 'postgres', 
@@ -300,14 +317,20 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
 .. code-block:: text
 
     CREATE DATABASE postgres_data 
@@ -322,6 +345,9 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -437,6 +463,18 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
             }
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)

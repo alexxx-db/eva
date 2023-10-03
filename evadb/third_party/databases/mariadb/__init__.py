@@ -18,28 +18,40 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 """mariadb integrations"""
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 <<<<<<<< HEAD:evadb/third_party/databases/mariadb/__init__.py
 """mariadb integrations"""
 ========
@@ -52,12 +64,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 <<<<<<<< HEAD:evadb/third_party/databases/mariadb/__init__.py
@@ -68,11 +86,15 @@
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 <<<<<<<< HEAD:evadb/third_party/databases/mariadb/__init__.py
 """mariadb integrations"""
@@ -85,3 +107,5 @@
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)

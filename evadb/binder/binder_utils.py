@@ -70,10 +70,13 @@ def check_data_source_and_table_are_valid(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -89,6 +92,7 @@ def check_data_source_and_table_are_valid(
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -101,6 +105,14 @@ def check_data_source_and_table_are_valid(
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -183,12 +195,15 @@ def check_data_source_and_table_are_valid(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -205,6 +220,8 @@ def check_data_source_and_table_are_valid(
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -216,6 +233,7 @@ def check_data_source_and_table_are_valid(
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
@@ -232,9 +250,12 @@ def check_data_source_and_table_are_valid(
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -255,6 +276,8 @@ def check_data_source_and_table_are_valid(
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 =======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -273,6 +296,7 @@ def check_data_source_and_table_are_valid(
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -280,6 +304,10 @@ def check_data_source_and_table_are_valid(
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -298,6 +326,9 @@ def check_data_source_and_table_are_valid(
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
@@ -307,6 +338,7 @@ def check_data_source_and_table_are_valid(
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
@@ -325,6 +357,8 @@ def check_data_source_and_table_are_valid(
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
         error = "{} data source does not exist. Create the new database source using CREATE DATABASE.".format(
             database_name,
         )
@@ -354,10 +388,13 @@ def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -373,6 +410,7 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -383,6 +421,14 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     table_name: str, database_name: str, column_info: pd.DataFrame
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -424,15 +470,21 @@ def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     table_name: str, database_name: str, column_info: pd.DataFrame
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -496,6 +548,7 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
@@ -543,9 +596,24 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+    table_name: str, database_name: str, column_info: pd.DataFrame
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 ):
     column_name_list = list(column_info["name"])
     column_type_list = [
@@ -567,10 +635,13 @@ def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -586,6 +657,7 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -596,6 +668,14 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -637,15 +717,21 @@ def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -709,6 +795,7 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
@@ -756,9 +843,24 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
@@ -797,6 +899,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -853,6 +956,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
@@ -903,9 +1007,23 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     with get_database_handler(
         db_catalog_entry.engine, **db_catalog_entry.params
     ) as handler:
@@ -914,6 +1032,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
         table_info.table_obj = create_table_catalog_entry_for_data_source(
             table_info.table_name, table_info.database_name, column_df
         )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -956,9 +1075,12 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
 =======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -980,6 +1102,10 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     handler = get_database_handler(db_catalog_entry.engine, **db_catalog_entry.params)
     handler.connect()
 
@@ -1002,6 +1128,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
@@ -1012,6 +1139,8 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -1036,6 +1165,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -1046,6 +1176,8 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
@@ -1070,6 +1202,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 =======
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
@@ -1105,12 +1238,29 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 
 
 def bind_evadb_table_info(catalog: CatalogManager, table_info: TableInfo):

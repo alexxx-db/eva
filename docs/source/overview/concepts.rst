@@ -330,6 +330,7 @@ AI Functions
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
@@ -343,10 +344,13 @@ AI Functions
 >>>>>>> 9cc72b7b (docs: updates)
 <<<<<<< HEAD
 >>>>>>> d8799826 (docs: updates)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
 =======
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -390,6 +394,11 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 
 To register an user-defined function, use the ``CREATE FUNCTION`` statement:
 >>>>>>> f431fb09 (feat: sync master staging (#1050))

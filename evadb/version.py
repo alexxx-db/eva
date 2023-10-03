@@ -27,6 +27,7 @@ _MINOR = "3"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 _REVISION = "9"
 =======
 _REVISION = "8+dev"
@@ -84,6 +85,8 @@ _REVISION = "7"
 >>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 _REVISION = "8"
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
@@ -111,6 +114,9 @@ _REVISION = "8+dev"
 _REVISION = "8+dev"
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
+_REVISION = "8+dev"
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
 _REVISION = "7"
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -118,8 +124,13 @@ _REVISION = "7"
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 _REVISION = "8"
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+_REVISION = "7"
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 _REVISION = "3"
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
@@ -140,10 +151,13 @@ _REVISION = "8+dev"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -180,12 +194,15 @@ _REVISION = "4+dev"
 >>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 >>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 _REVISION = "8+dev"
@@ -245,12 +262,17 @@ _REVISION = "4+dev"
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
 =======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -278,6 +300,7 @@ _REVISION = "3"
 _REVISION = "4+dev"
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
@@ -367,9 +390,21 @@ _REVISION = "4+dev"
 _REVISION = "4+dev"
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 
 VERSION_SHORT = f"{_MAJOR}.{_MINOR}"
 VERSION = f"{_MAJOR}.{_MINOR}.{_REVISION}"

@@ -214,6 +214,10 @@ chromadb_libs = ["chromadb"]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
+pinecone_libs = ["pinecone-client"]
+
+chromadb_libs = ["chromadb"]
+
 postgres_libs = [
     "psycopg2",
 ]
@@ -378,8 +382,11 @@ forecasting_libs = [
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
+sklearn_libs = ["scikit-learn"]
+
 forecasting_libs = [
-    "statsforecast" # MODEL TRAIN AND FINE TUNING
+    "statsforecast", # MODEL TRAIN AND FINE TUNING
+    "neuralforecast" # MODEL TRAIN AND FINE TUNING
 ]
 
 ### NEEDED FOR DEVELOPER TESTING ONLY
@@ -459,6 +466,7 @@ EXTRA_REQUIRES = {
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -503,6 +511,8 @@ EXTRA_REQUIRES = {
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
     "sklearn": sklearn_libs,
     "xgboost": xgboost_libs,
     "forecasting": forecasting_libs,
@@ -621,12 +631,16 @@ EXTRA_REQUIRES = {
 >>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     "sklearn": sklearn_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -673,6 +687,7 @@ EXTRA_REQUIRES = {
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -746,9 +761,22 @@ EXTRA_REQUIRES = {
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 }
 
 setup(
