@@ -113,9 +113,31 @@ class ParserTests(unittest.TestCase):
                 ColumnDefinition("featCol", None, None, None),
             ],
             VectorStoreType.FAISS,
+            [TupleValueExpression(name="featCol")],
         )
         actual_stmt = evadb_stmt_list[0]
         self.assertEqual(actual_stmt, expected_stmt)
+        self.assertEqual(actual_stmt.index_def, create_index_query)
+
+        # create if_not_exists
+        expected_stmt = CreateIndexStatement(
+            "testindex",
+            True,
+            TableRef(TableInfo("MyVideo")),
+            [
+                ColumnDefinition("featCol", None, None, None),
+            ],
+            VectorStoreType.FAISS,
+            [TupleValueExpression(name="featCol")],
+        )
+        create_index_query = (
+            "CREATE INDEX IF NOT EXISTS testindex ON MyVideo (featCol) USING FAISS;"
+        )
+        evadb_stmt_list = parser.parse(create_index_query)
+        actual_stmt = evadb_stmt_list[0]
+        expected_stmt._if_not_exists = True
+        self.assertEqual(actual_stmt, expected_stmt)
+        self.assertEqual(actual_stmt.index_def, create_index_query)
 
 <<<<<<< HEAD
         # create if_not_exists
@@ -150,10 +172,11 @@ class ParserTests(unittest.TestCase):
                 ColumnDefinition("featCol", None, None, None),
             ],
             VectorStoreType.FAISS,
-            func_expr,
+            [func_expr],
         )
         actual_stmt = evadb_stmt_list[0]
         self.assertEqual(actual_stmt, expected_stmt)
+        self.assertEqual(actual_stmt.index_def, create_index_query)
 
     @unittest.skip("Skip parser exception handling testcase, moved to binder")
     def test_create_index_exception_statement(self):
@@ -586,10 +609,14 @@ class ParserTests(unittest.TestCase):
         parser = Parser()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 =======
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         evadb_stmt_list = parser.parse(query)
 
         # check stmt itself
@@ -702,6 +729,9 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(delete_stmt, expected_stmt)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     def test_set_statement(self):
         parser = Parser()
         set_statement = """SET OPENAIKEY = 'ABCD'"""
@@ -921,6 +951,7 @@ class ParserTests(unittest.TestCase):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
             False,
+            False,
             Path("data/fastrcnn.py"),
             [
                 ColumnDefinition(
@@ -1077,6 +1108,7 @@ class ParserTests(unittest.TestCase):
         self.assertNotEqual(join_node, table_ref)
         self.assertNotEqual(table_ref, table_info)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     def test_lark(self):
@@ -1090,3 +1122,5 @@ class ParserTests(unittest.TestCase):
         parser = Parser()
         parser.parse(query)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

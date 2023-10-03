@@ -39,6 +39,7 @@ Build Wheel and Release
 .. code-block:: bash
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     python script/releasing/releaser.py -n minor -u
 =======
        git tag -a v0.0.6 -m "v0.0.6 release"
@@ -110,3 +111,6 @@ Build Wheel and Release
 
 Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.md>`_
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+    python script/releasing/releaser.py -n minor -u
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

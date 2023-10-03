@@ -34,6 +34,8 @@ from evadb.catalog.sql_config import IDENTIFIER_COLUMN
 if TYPE_CHECKING:
     from evadb.binder.statement_binder_context import StatementBinderContext
     from evadb.catalog.catalog_manager import CatalogManager
+
+from evadb.catalog.sql_config import ROW_NUM_COLUMN
 from evadb.expression.abstract_expression import AbstractExpression, ExpressionType
 from evadb.expression.function_expression import FunctionExpression
 from evadb.expression.tuple_value_expression import TupleValueExpression
@@ -55,6 +57,7 @@ def check_data_source_and_table_are_valid(
     Validate the database is valid and the requested table in database is
     also valid.
     """
+<<<<<<< HEAD
 <<<<<<< HEAD
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
@@ -87,6 +90,10 @@ def check_data_source_and_table_are_valid(
             raise BinderError(error)
     else:
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+    error = None
+    if catalog.get_database_catalog_entry(database_name) is None:
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         error = "{} data source does not exist. Create the new database source using CREATE DATABASE.".format(
             database_name,
         )
@@ -104,10 +111,14 @@ def check_data_source_and_table_are_valid(
 
 def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
+<<<<<<< HEAD
     table_name: str, database_name: str, column_info: pd.DataFrame
 =======
     table_name: str, column_info: pd.DataFrame
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+    table_name: str, database_name: str, column_info: pd.DataFrame
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 ):
     column_name_list = list(column_info["name"])
     column_type_list = [
@@ -117,10 +128,14 @@ def create_table_catalog_entry_for_data_source(
     column_list = []
     for name, dtype in zip(column_name_list, column_type_list):
 <<<<<<< HEAD
+<<<<<<< HEAD
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
 =======
         column_list.append(ColumnCatalogEntry(name, dtype))
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
@@ -157,6 +172,9 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 
     db_catalog_entry = catalog.get_database_catalog_entry(table_info.database_name)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     with get_database_handler(
         db_catalog_entry.engine, **db_catalog_entry.params
     ) as handler:
@@ -165,6 +183,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
         table_info.table_obj = create_table_catalog_entry_for_data_source(
             table_info.table_name, table_info.database_name, column_df
         )
+<<<<<<< HEAD
 =======
     handler = get_database_handler(db_catalog_entry.engine, **db_catalog_entry.params)
     handler.connect()
@@ -175,6 +194,8 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
         table_info.table_name, column_df
     )
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 
 def bind_evadb_table_info(catalog: CatalogManager, table_info: TableInfo):
@@ -218,6 +239,16 @@ def extend_star(
         ]
     )
     return target_list
+
+
+def create_row_num_tv_expr(table_alias):
+    tv_expr = TupleValueExpression(name=ROW_NUM_COLUMN)
+    tv_expr.table_alias = table_alias
+    tv_expr.col_alias = f"{table_alias}.{ROW_NUM_COLUMN.lower()}"
+    tv_expr.col_object = ColumnCatalogEntry(
+        name=ROW_NUM_COLUMN, type=ColumnType.INTEGER
+    )
+    return tv_expr
 
 
 def check_groupby_pattern(table_ref: TableRef, groupby_string: str) -> None:

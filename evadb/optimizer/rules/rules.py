@@ -19,9 +19,13 @@ from typing import TYPE_CHECKING
 from evadb.catalog.catalog_type import TableType, VectorStoreType
 from evadb.catalog.catalog_utils import is_video_table
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+from evadb.catalog.models.utils import IndexCatalogEntry
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.constants import CACHEABLE_FUNCTIONS
 from evadb.executor.execution_context import Context
 from evadb.expression.expression_utils import (
@@ -575,6 +579,7 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
         # Get column catalog entry and function_signature.
         column_catalog_entry = tv_expr.col_object
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -604,14 +609,36 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
             if isinstance(base_func_expr, TupleValueExpression)
             else base_func_expr.signature()
         )
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
-        # Get index catalog. Check if an index exists for matching
-        # function signature and table columns.
-        index_catalog_entry = (
-            catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+            )
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
                 column_catalog_entry, function_signature
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
             )
+<<<<<<< HEAD
+=======
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
         # Construct the Vector index scan plan.
         vector_index_scan_node = LogicalVectorIndexScan(
@@ -849,8 +876,19 @@ class LogicalCreateIndexToVectorIndex(Rule):
             before.table_ref,
             before.col_list,
             before.vector_store_type,
-            before.function,
+            before.project_expr_list,
+            before.index_def,
         )
+        child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
+        batch_mem_size = context.db.config.get_value("executor", "batch_mem_size")
+        child.append_child(
+            StoragePlan(
+                before.table_ref.table.table_obj,
+                before.table_ref,
+                batch_mem_size=batch_mem_size,
+            )
+        )
+        after.append_child(child)
         yield after
 
 

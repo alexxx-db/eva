@@ -30,7 +30,11 @@ from evadb.binder.binder_utils import (
     resolve_alias_table_value_expression,
 )
 from evadb.binder.statement_binder_context import StatementBinderContext
+<<<<<<< HEAD
 from evadb.catalog.catalog_type import ColumnType, TableType, VideoColumnName
+=======
+from evadb.catalog.catalog_type import ColumnType, TableType
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.catalog.catalog_utils import get_metadata_properties, is_document_table
 from evadb.configuration.constants import EvaDB_INSTALLATION_DIR
 from evadb.expression.abstract_expression import AbstractExpression, ExpressionType
@@ -39,10 +43,14 @@ from evadb.expression.tuple_value_expression import TupleValueExpression
 from evadb.parser.create_function_statement import CreateFunctionStatement
 from evadb.parser.create_index_statement import CreateIndexStatement
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 =======
 from evadb.parser.create_statement import CreateTableStatement
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.parser.delete_statement import DeleteTableStatement
 from evadb.parser.explain_statement import ExplainStatement
 from evadb.parser.rename_statement import RenameTableStatement
@@ -52,13 +60,19 @@ from evadb.parser.table_ref import TableRef
 from evadb.parser.types import FunctionType
 from evadb.third_party.huggingface.binder import assign_hf_function
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.utils.generic_utils import (
     load_function_class_from_file,
     string_comparison_case_insensitive,
 )
+<<<<<<< HEAD
 =======
 from evadb.utils.generic_utils import load_function_class_from_file
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.utils.logging_manager import logger
 
 
@@ -96,6 +110,7 @@ class StatementBinder:
                 node.query.target_list
             )
             arg_map = {key: value for key, value in node.metadata}
+<<<<<<< HEAD
 <<<<<<< HEAD
             inputs, outputs = [], []
             if string_comparison_case_insensitive(node.function_type, "ludwig"):
@@ -152,22 +167,67 @@ class StatementBinder:
             ), f"Creating {node.function_type} functions expects 'predict' metadata."
             # We only support a single predict column for now
             predict_columns = set([arg_map["predict"]])
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             inputs, outputs = [], []
-            for column in all_column_list:
-                if column.name in predict_columns:
-                    if node.function_type != "Forecasting":
+            if string_comparison_case_insensitive(node.function_type, "ludwig"):
+                assert (
+                    "predict" in arg_map
+                ), f"Creating {node.function_type} functions expects 'predict' metadata."
+                # We only support a single predict column for now
+                predict_columns = set([arg_map["predict"]])
+                for column in all_column_list:
+                    if column.name in predict_columns:
                         column.name = column.name + "_predictions"
+                        outputs.append(column)
                     else:
+<<<<<<< HEAD
                         column.name = column.name
                     outputs.append(column)
                 else:
                     inputs.append(column)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+                        inputs.append(column)
+            elif string_comparison_case_insensitive(node.function_type, "sklearn"):
+                assert (
+                    "predict" in arg_map
+                ), f"Creating {node.function_type} functions expects 'predict' metadata."
+                # We only support a single predict column for now
+                predict_columns = set([arg_map["predict"]])
+                for column in all_column_list:
+                    if column.name in predict_columns:
+                        outputs.append(column)
+                    else:
+                        inputs.append(column)
+            elif string_comparison_case_insensitive(node.function_type, "forecasting"):
+                # Forecasting models have only one input column which is horizon
+                inputs = [ColumnDefinition("horizon", ColumnType.INTEGER, None, None)]
+                # Currently, we only support univariate forecast which should have three output columns, unique_id, ds, and y.
+                # The y column is required. unique_id and ds will be auto generated if not found.
+                required_columns = set([arg_map.get("predict", "y")])
+                for column in all_column_list:
+                    if column.name == arg_map.get("id", "unique_id"):
+                        outputs.append(column)
+                    elif column.name == arg_map.get("time", "ds"):
+                        outputs.append(column)
+                    elif column.name == arg_map.get("predict", "y"):
+                        outputs.append(column)
+                        required_columns.remove(column.name)
+                assert (
+                    len(required_columns) == 0
+                ), f"Missing required {required_columns} columns for forecasting function."
+            else:
+                raise BinderError(
+                    f"Unsupported type of function: {node.function_type}."
+                )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             assert (
                 len(node.inputs) == 0 and len(node.outputs) == 0
             ), f"{node.function_type} functions' input and output are auto assigned"
             node.inputs, node.outputs = inputs, outputs
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     @bind.register(CreateIndexStatement)
@@ -215,6 +275,8 @@ class StatementBinder:
                 ), "Index input needs to be 2 dimensional."
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     @bind.register(SelectStatement)
     def _bind_select_statement(self, node: SelectStatement):
         if node.from_table:
@@ -335,16 +397,9 @@ class StatementBinder:
 
     @bind.register(TupleValueExpression)
     def _bind_tuple_expr(self, node: TupleValueExpression):
-        table_alias, col_obj = self._binder_context.get_binded_column(
-            node.name, node.table_alias
-        )
-        node.table_alias = table_alias
-        if node.name == VideoColumnName.audio:
-            self._binder_context.enable_audio_retrieval()
-        if node.name == VideoColumnName.data:
-            self._binder_context.enable_video_retrieval()
-        node.col_alias = "{}.{}".format(table_alias, node.name.lower())
-        node.col_object = col_obj
+        from evadb.binder.tuple_value_expression_binder import bind_tuple_expr
+
+        bind_tuple_expr(self, node)
 
     @bind.register(FunctionExpression)
     def _bind_func_expr(self, node: FunctionExpression):
@@ -374,6 +429,7 @@ class StatementBinder:
             raise BinderError(err_msg)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if string_comparison_case_insensitive(function_obj.type, "HuggingFace"):
             node.function = assign_hf_function(function_obj)
 
@@ -384,6 +440,12 @@ class StatementBinder:
 
         elif function_obj.type == "Ludwig":
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        if string_comparison_case_insensitive(function_obj.type, "HuggingFace"):
+            node.function = assign_hf_function(function_obj)
+
+        elif string_comparison_case_insensitive(function_obj.type, "Ludwig"):
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             function_class = load_function_class_from_file(
                 function_obj.impl_file_path,
                 "GenericLudwigModel",

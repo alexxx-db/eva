@@ -194,7 +194,12 @@ def setup(app):
     # Custom JS
     app.add_js_file("js/top-navigation.js", defer="defer")
 <<<<<<< HEAD
+<<<<<<< HEAD
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+    app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
+    app.add_js_file("js/algolia.js",defer="defer")
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
