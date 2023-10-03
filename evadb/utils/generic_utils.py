@@ -21,7 +21,7 @@ import shutil
 import sys
 import uuid
 from pathlib import Path
-from typing import List
+from typing import Iterator, List
 from urllib.parse import urlparse
 
 from aenum import AutoEnum, unique
@@ -173,6 +173,28 @@ def get_size(obj, seen=None):
     return size
 
 
+def rebatch(it: Iterator, batch_mem_size: int = 30000000) -> Iterator:
+    """
+    Utility function to rebatch the rows
+    Args:
+        it (Iterator): an iterator for rows, every row is a dictionary
+        batch_mem_size (int): the maximum batch memory size
+    Yields:
+        data_batch (List): a list of rows, every row is a dictionary
+    """
+    data_batch = []
+    row_size = None
+    for row in it:
+        data_batch.append(row)
+        if row_size is None:
+            row_size = get_size(data_batch)
+        if len(data_batch) * row_size >= batch_mem_size:
+            yield data_batch
+            data_batch = []
+    if data_batch:
+        yield data_batch
+
+
 def get_str_hash(s: str) -> str:
     return hashlib.md5(s.encode("utf-8")).hexdigest()
 
@@ -201,6 +223,7 @@ def parse_config_yml():
 
     f = open(Path(EvaDB_INSTALLATION_DIR) / "evadb.yml", "r+")
     config_obj = yaml.load(f, Loader=yaml.FullLoader)
+    f.close()
     return config_obj
 
 
@@ -269,13 +292,23 @@ def try_to_import_ray():
         )
 
 
-def try_to_import_forecast():
+def try_to_import_statsforecast():
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
         raise ValueError(
             """Could not import StatsForecast python package.
                 Please install it with `pip install statsforecast`."""
+        )
+
+
+def try_to_import_neuralforecast():
+    try:
+        from neuralforecast import NeuralForecast  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import NeuralForecast python package.
+                Please install it with `pip install neuralforecast`."""
         )
 
 
@@ -304,7 +337,7 @@ def try_to_import_ludwig():
     except ImportError:
         raise ValueError(
             """Could not import ludwig.
-                Please install it with `pip install ludwig[full]`."""
+                Please install it with `pip install evadb[ludwig]`."""
         )
 
 
@@ -318,7 +351,27 @@ def is_ludwig_available() -> bool:
 
 def is_forecast_available() -> bool:
     try:
-        try_to_import_forecast()
+        try_to_import_statsforecast()
+        try_to_import_neuralforecast()
+        return True
+    except ValueError:  # noqa: E722
+        return False
+
+
+def try_to_import_sklearn():
+    try:
+        import sklearn  # noqa: F401
+        from sklearn.linear_model import LinearRegression  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import sklearn.
+                Please install it with `pip install scikit-learn`."""
+        )
+
+
+def is_sklearn_available() -> bool:
+    try:
+        try_to_import_sklearn()
         return True
     except ValueError:  # noqa: E722
         return False
@@ -489,9 +542,45 @@ def try_to_import_qdrant_client():
         )
 
 
+def try_to_import_pinecone_client():
+    try:
+        import pinecone  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import pinecone_client python package.
+                Please install it with 'pip install pinecone_client`."""
+        )
+
+
+def try_to_import_chromadb_client():
+    try:
+        import chromadb  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import chromadb python package.
+                Please install it with 'pip install chromadb`."""
+        )
+
+
 def is_qdrant_available() -> bool:
     try:
         try_to_import_qdrant_client()
+        return True
+    except ValueError:  # noqa: E722
+        return False
+
+
+def is_pinecone_available() -> bool:
+    try:
+        try_to_import_pinecone_client()
+        return True
+    except ValueError:  # noqa: E722
+        return False
+
+
+def is_chromadb_available() -> bool:
+    try:
+        try_to_import_chromadb_client()
         return True
     except ValueError:  # noqa: E722
         return False
@@ -520,3 +609,23 @@ def try_to_import_fitz():
             """Could not import fitz python package.
                 Please install it with `pip install pymupdfs`."""
         )
+
+
+def string_comparison_case_insensitive(string_1, string_2) -> bool:
+    """
+    Case insensitive string comparison for two strings which gives
+    a bool response whether the strings are the same or not
+
+    Arguments:
+        string_1 (str)
+        string_2 (str)
+
+    Returns:
+        True/False (bool): Returns True if the strings are same, false otherwise
+    """
+
+    # Does not make sense in case of null strings
+    if string_1 is None or string_2 is None:
+        return False
+
+    return string_1.lower() == string_2.lower()

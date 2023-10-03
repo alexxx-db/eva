@@ -232,19 +232,12 @@ class CreateTable:
         dimensions = self.dimension_helper(tree)
         return dimensions
 
-    def vector_store_type(self, tree):
-        vector_store_type = None
-        token = tree.children[1]
 
-        if str.upper(token) == "FAISS":
-            vector_store_type = VectorStoreType.FAISS
-        elif str.upper(token) == "QDRANT":
-            vector_store_type = VectorStoreType.QDRANT
-        return vector_store_type
-
-    # INDEX CREATION
+# INDEX CREATION
+class CreateIndex:
     def create_index(self, tree):
         index_name = None
+        if_not_exists = False
         table_name = None
         vector_store_type = None
         index_elem = None
@@ -253,6 +246,8 @@ class CreateTable:
             if isinstance(child, Tree):
                 if child.data == "uid":
                     index_name = self.visit(child)
+                if child.data == "if_not_exists":
+                    if_not_exists = True
                 elif child.data == "table_name":
                     table_name = self.visit(child)
                     table_ref = TableRef(table_name)
@@ -261,23 +256,49 @@ class CreateTable:
                 elif child.data == "index_elem":
                     index_elem = self.visit(child)
 
+        # Projection list of child of index creation.
+        project_expr_list = []
+
         # Parse either a single function call or column list.
-        col_list, function = None, None
         if not isinstance(index_elem, list):
-            function = index_elem
+            project_expr_list += [index_elem]
 
             # Traverse to the tuple value expression.
             while not isinstance(index_elem, TupleValueExpression):
                 index_elem = index_elem.children[0]
             index_elem = [index_elem]
+        else:
+            project_expr_list += index_elem
 
-        col_list = [
-            ColumnDefinition(tv_expr.name, None, None, None) for tv_expr in index_elem
-        ]
+        # Add tv_expr for projected columns.
+        col_list = []
+        for tv_expr in index_elem:
+            col_list += [ColumnDefinition(tv_expr.name, None, None, None)]
 
         return CreateIndexStatement(
-            index_name, table_ref, col_list, vector_store_type, function
+            index_name,
+            if_not_exists,
+            table_ref,
+            col_list,
+            vector_store_type,
+            project_expr_list,
         )
+
+    def vector_store_type(self, tree):
+        vector_store_type = None
+        token = tree.children[1]
+
+        if str.upper(token) == "FAISS":
+            vector_store_type = VectorStoreType.FAISS
+        elif str.upper(token) == "QDRANT":
+            vector_store_type = VectorStoreType.QDRANT
+        elif str.upper(token) == "PINECONE":
+            vector_store_type = VectorStoreType.PINECONE
+        elif str.upper(token) == "PGVECTOR":
+            vector_store_type = VectorStoreType.PGVECTOR
+        elif str.upper(token) == "CHROMADB":
+            vector_store_type = VectorStoreType.CHROMADB
+        return vector_store_type
 
 
 class CreateDatabase:

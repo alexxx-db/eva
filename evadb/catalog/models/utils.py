@@ -137,6 +137,7 @@ class TableCatalogEntry:
     identifier_column: str = "id"
     columns: List[ColumnCatalogEntry] = field(compare=False, default_factory=list)
     row_id: int = None
+    database_name: str = "EvaDB"
 
 
 @dataclass(unsafe_hash=True)
@@ -200,6 +201,7 @@ class IndexCatalogEntry:
     row_id: int = None
     feat_column_id: int = None
     function_signature: str = None
+    index_def: str = None
     feat_column: ColumnCatalogEntry = None
 
 

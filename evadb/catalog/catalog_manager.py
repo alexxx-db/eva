@@ -66,6 +66,7 @@ from evadb.expression.function_expression import FunctionExpression
 from evadb.parser.create_statement import ColumnDefinition
 from evadb.parser.table_ref import TableInfo
 from evadb.parser.types import FileFormatType
+from evadb.third_party.databases.interface import get_database_handler
 from evadb.utils.generic_utils import generate_file_path, get_file_checksum
 from evadb.utils.logging_manager import logger
 
@@ -160,9 +161,7 @@ class CatalogManager(object):
 
         return table_entry
 
-    def delete_database_catalog_entry(
-        self, database_entry: DatabaseCatalogEntry
-    ) -> bool:
+    def drop_database_catalog_entry(self, database_entry: DatabaseCatalogEntry) -> bool:
         """
         This method deletes the database from  catalog.
 
@@ -175,6 +174,32 @@ class CatalogManager(object):
         # todo: do we need to remove also the associated tables etc or that will be
         # taken care by the underlying db
         return self._db_catalog_service.delete_entry(database_entry)
+
+    def check_native_table_exists(self, table_name: str, database_name: str):
+        """
+        Validate the database is valid and the requested table in database is
+        also valid.
+        """
+        db_catalog_entry = self.get_database_catalog_entry(database_name)
+
+        if db_catalog_entry is None:
+            return False
+
+        with get_database_handler(
+            db_catalog_entry.engine, **db_catalog_entry.params
+        ) as handler:
+            # Get table definition.
+            resp = handler.get_tables()
+
+            if resp.error is not None:
+                raise Exception(resp.error)
+
+            # Check table existence.
+            table_df = resp.data
+            if table_name not in table_df["table_name"].values:
+                return False
+
+        return True
 
     "Table catalog services"
 
@@ -251,13 +276,15 @@ class CatalogManager(object):
         return self._table_catalog_service.rename_entry(curr_table, new_name.table_name)
 
     def check_table_exists(self, table_name: str, database_name: str = None):
-        table_entry = self._table_catalog_service.get_entry_by_name(
-            database_name, table_name
-        )
-        if table_entry is None:
-            return False
+        is_native_table = database_name is not None
+
+        if is_native_table:
+            return self.check_native_table_exists(table_name, database_name)
         else:
-            return True
+            table_entry = self._table_catalog_service.get_entry_by_name(
+                database_name, table_name
+            )
+            return table_entry is not None
 
     def get_all_table_catalog_entries(self):
         return self._table_catalog_service.get_all_entries()
@@ -387,9 +414,15 @@ class CatalogManager(object):
         vector_store_type: VectorStoreType,
         feat_column: ColumnCatalogEntry,
         function_signature: str,
+        index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
-            name, save_file_path, vector_store_type, feat_column, function_signature
+            name,
+            save_file_path,
+            vector_store_type,
+            feat_column,
+            function_signature,
+            index_def,
         )
         return index_catalog_entry
 

@@ -16,8 +16,9 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from evadb.catalog.catalog_type import TableType
+from evadb.catalog.catalog_type import TableType, VectorStoreType
 from evadb.catalog.catalog_utils import is_video_table
+from evadb.catalog.models.utils import IndexCatalogEntry
 from evadb.constants import CACHEABLE_FUNCTIONS
 from evadb.executor.execution_context import Context
 from evadb.expression.expression_utils import (
@@ -551,6 +552,15 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
         if not func_orderby_expr or func_orderby_expr.name != "Similarity":
             return
 
+        # Traverse to the LogicalGet operator.
+        tb_catalog_entry = list(sub_tree_root.opr.find_all(LogicalGet))[0].table_obj
+        db_catalog_entry = catalog_manager().get_database_catalog_entry(
+            tb_catalog_entry.database_name
+        )
+        is_postgres_data_source = (
+            db_catalog_entry is not None and db_catalog_entry.engine == "postgres"
+        )
+
         # Check if there exists an index on table and column.
         query_func_expr, base_func_expr = func_orderby_expr.children
 
@@ -561,26 +571,34 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 
         # Get column catalog entry and function_signature.
         column_catalog_entry = tv_expr.col_object
-        function_signature = (
-            None
-            if isinstance(base_func_expr, TupleValueExpression)
-            else base_func_expr.signature()
-        )
 
-        # Get index catalog. Check if an index exists for matching
-        # function signature and table columns.
-        index_catalog_entry = (
-            catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+            )
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
                 column_catalog_entry, function_signature
             )
-        )
-        if not index_catalog_entry:
-            return
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
 
         # Construct the Vector index scan plan.
         vector_index_scan_node = LogicalVectorIndexScan(
-            index_catalog_entry.name,
-            index_catalog_entry.type,
+            index_catalog_entry,
             limit_node.limit_count,
             query_func_expr,
         )
@@ -755,6 +773,7 @@ class LogicalCreateFunctionToPhysical(Rule):
     def apply(self, before: LogicalCreateFunction, context: OptimizerContext):
         after = CreateFunctionPlan(
             before.name,
+            before.or_replace,
             before.if_not_exists,
             before.inputs,
             before.outputs,
@@ -782,6 +801,7 @@ class LogicalCreateFunctionFromSelectToPhysical(Rule):
     def apply(self, before: LogicalCreateFunction, context: OptimizerContext):
         after = CreateFunctionPlan(
             before.name,
+            before.or_replace,
             before.if_not_exists,
             before.inputs,
             before.outputs,
@@ -808,11 +828,23 @@ class LogicalCreateIndexToVectorIndex(Rule):
     def apply(self, before: LogicalCreateIndex, context: OptimizerContext):
         after = CreateIndexPlan(
             before.name,
+            before.if_not_exists,
             before.table_ref,
             before.col_list,
             before.vector_store_type,
-            before.function,
+            before.project_expr_list,
+            before.index_def,
         )
+        child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
+        batch_mem_size = context.db.config.get_value("executor", "batch_mem_size")
+        child.append_child(
+            StoragePlan(
+                before.table_ref.table.table_obj,
+                before.table_ref,
+                batch_mem_size=batch_mem_size,
+            )
+        )
+        after.append_child(child)
         yield after
 
 
@@ -1176,6 +1208,22 @@ class LogicalProjectToPhysical(Rule):
         yield after
 
 
+class LogicalProjectNoTableToPhysical(Rule):
+    def __init__(self):
+        pattern = Pattern(OperatorType.LOGICALPROJECT)
+        super().__init__(RuleType.LOGICAL_PROJECT_NO_TABLE_TO_PHYSICAL, pattern)
+
+    def promise(self):
+        return Promise.LOGICAL_PROJECT_NO_TABLE_TO_PHYSICAL
+
+    def check(self, grp_id: int, context: OptimizerContext):
+        return True
+
+    def apply(self, before: LogicalProject, context: OptimizerContext):
+        after = ProjectPlan(before.target_list)
+        yield after
+
+
 class LogicalShowToPhysical(Rule):
     def __init__(self):
         pattern = Pattern(OperatorType.LOGICAL_SHOW)
@@ -1244,8 +1292,7 @@ class LogicalVectorIndexScanToPhysical(Rule):
 
     def apply(self, before: LogicalVectorIndexScan, context: OptimizerContext):
         after = VectorIndexScanPlan(
-            before.index_name,
-            before.vector_store_type,
+            before.index,
             before.limit_count,
             before.search_query_expr,
         )

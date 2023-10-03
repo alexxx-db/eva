@@ -9,6 +9,8 @@ parts:
             title: Installation Options
       - file: source/overview/connect-to-database
         title: Connect to Database
+      - file: source/overview/model-inference
+        title: Model inference
       - file: source/overview/concepts
         title: Concepts
         sections:
@@ -32,8 +34,12 @@ parts:
         title: Object Detection
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
-      - file: source/usecases/privategpt.rst
-        title: PrivateGPT
+      - file: source/usecases/homesale-forecast.rst
+        title: Home Sale Forecasting
+      - file: source/usecases/homerental-predict.rst
+        title: Home Rental Prediction
+      # - file: source/usecases/privategpt.rst
+      #   title: PrivateGPT
 
   - caption: User Reference
     chapters:
@@ -60,12 +66,25 @@ parts:
           - file: source/reference/databases/postgres
           - file: source/reference/databases/sqlite
           - file: source/reference/databases/mysql
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/github
+
+      - file: source/reference/vector_stores/index
+        title: Vector Stores
+        sections: 
+          - file: source/reference/vector_stores/faiss
+          - file: source/reference/vector_stores/chromadb
+          - file: source/reference/vector_stores/qdrant
+          - file: source/reference/vector_stores/pgvector
+          - file: source/reference/vector_stores/pinecone
 
       - file: source/reference/ai/index
         title: AI Engines
         sections:
-          - file: source/reference/ai/model-train
-            title: Model Training
+          - file: source/reference/ai/model-train-ludwig
+            title: Model Training with Ludwig
+          - file: source/reference/ai/model-train-sklearn
+            title: Model Training with Sklearn
           - file: source/reference/ai/model-forecasting
             title: Time Series Forecasting
           - file: source/reference/ai/hf
@@ -76,6 +95,9 @@ parts:
             title: YOLO 
           - file: source/reference/ai/custom
             title: Custom Model
+
+      - file: source/reference/optimizations
+        title: Optimizations
         
       # - file: source/reference/io
       #   title: IO Descriptors

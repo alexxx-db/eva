@@ -41,6 +41,7 @@ class StatementType(EvaDBEnum):
     CREATE_INDEX  # noqa: F821
     CREATE_DATABASE  # noqa: F821
     USE  # noqa: F821
+    SET  # noqa: F821
     # add other types
 
 
@@ -79,3 +80,4 @@ class ObjectType(EvaDBEnum):
     TABLE  # noqa: F821
     FUNCTION  # noqa: F821
     INDEX  # noqa: F821
+    DATABASE  # noqa: F821
