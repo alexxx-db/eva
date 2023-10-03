@@ -12,8 +12,11 @@ We will assume that you have a :ref:`PostgreSQL<postgresql>` database running lo
 EvaDB lets you connect to your favorite databases, data warehouses, data lakes, etc., via the ``CREATE DATABASE`` statement. In this query, we connect EvaDB to an existing ``PostgreSQL`` server:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. code-block::
 =======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 .. code-block:: text
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -71,7 +74,13 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
             }
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+=======
+.. code-block:: text
+
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     CREATE DATABASE postgres_data 
     WITH ENGINE = 'postgres', 
     PARAMETERS = {
@@ -82,5 +91,8 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
         "database": "evadb"
     }
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)

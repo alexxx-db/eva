@@ -260,12 +260,16 @@ class CreateIndex:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         # Projection list of child of index creation.
         project_expr_list = []
 
         # Parse either a single function call or column list.
         if not isinstance(index_elem, list):
             project_expr_list += [index_elem]
+<<<<<<< HEAD
 =======
 =======
         # Projection list of child of index creation.
@@ -280,6 +284,8 @@ class CreateIndex:
 =======
             project_expr_list += [index_elem]
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
             # Traverse to the tuple value expression.
             while not isinstance(index_elem, TupleValueExpression):
@@ -294,6 +300,7 @@ class CreateIndex:
             col_list += [ColumnDefinition(tv_expr.name, None, None, None)]
 
         return CreateIndexStatement(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -312,11 +319,24 @@ class CreateIndex:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
             index_name, if_not_exists, table_ref, col_list, vector_store_type, function
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+            index_name,
+            if_not_exists,
+            table_ref,
+            col_list,
+            vector_store_type,
+            project_expr_list,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         )
 
     def vector_store_type(self, tree):

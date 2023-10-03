@@ -20,10 +20,14 @@ Required:
 Optional:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * ``github_token`` is not required for public repositories. However, the rate limit is lower without a valid github_token. Check the `Rate limits page <https://docs.github.com/en/rest/overview/rate-limits-for-the-rest-api?apiVersion=2022-11-28>`_ to learn more about how to check your rate limit status. Check `Managing your personal access tokens page <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>`_ to learn how to create personal access tokens.
 =======
 * ``github_token`` is not required for public repositories. However, the rate limit is lower without a valid github_token. Check `Rate limits page <https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limits>`_ to learn more about how to check your rate limit status. Check `Managing your personal access tokens page <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>`_ to learn how to create personal access tokens.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+* ``github_token`` is not required for public repositories. However, the rate limit is lower without a valid github_token. Check `Rate limits page <https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limits>`_ to learn more about how to check your rate limit status. Check `Managing your personal access tokens page <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>`_ to learn how to create personal access tokens.
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
 Create Connection
 -----------------
@@ -39,10 +43,14 @@ Supported Tables
 ----------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * ``stargazers``: Lists the people that have starred the repository. Check `table_column_info.py <https://github.com/georgia-tech-db/evadb/blob/staging/evadb/third_party/databases/github/table_column_info.py>`_ for all the available columns in the table.
 =======
 * ``stargazers``: Lists the people that have starred the repository. Check `evadb/third_party/databases/github/table_column_info.py` for all the available columns in the table.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+* ``stargazers``: Lists the people that have starred the repository. Check `evadb/third_party/databases/github/table_column_info.py` for all the available columns in the table.
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
 .. code-block:: sql
 
@@ -63,7 +71,11 @@ Here is the query output:
 .. note::
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    Looking for another table from Github? You can add a table mapping in `github_handler.py <https://github.com/georgia-tech-db/evadb/blob/staging/evadb/third_party/databases/github/github_handler.py>`_, or simply raise a `Feature Request <https://github.com/georgia-tech-db/evadb/issues/new/choose>`_.
 =======
    Looking for another table from Github? You can add a table mapping in `evadb/third_party/databases/github/github_handler.py`, or simply raise a `Feature Request <https://github.com/georgia-tech-db/evadb/issues/new/choose>`_.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+   Looking for another table from Github? You can add a table mapping in `evadb/third_party/databases/github/github_handler.py`, or simply raise a `Feature Request <https://github.com/georgia-tech-db/evadb/issues/new/choose>`_.
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
