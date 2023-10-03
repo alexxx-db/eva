@@ -21,6 +21,9 @@ from evadb.catalog.catalog_utils import is_video_table
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 <<<<<<< HEAD
@@ -34,6 +37,7 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -42,11 +46,18 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 from evadb.constants import CACHEABLE_FUNCTIONS
 from evadb.executor.execution_context import Context
 from evadb.expression.expression_utils import (
@@ -602,6 +613,7 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -612,7 +624,12 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -645,8 +662,11 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
@@ -712,16 +732,40 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 =======
 =======
 =======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
-        # Get index catalog. Check if an index exists for matching
-        # function signature and table columns.
-        index_catalog_entry = (
-            catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+            )
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
                 column_catalog_entry, function_signature
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
             )
+<<<<<<< HEAD
+=======
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
             # Get index catalog. Check if an index exists for matching
             # function signature and table columns.
@@ -981,6 +1025,7 @@ class LogicalCreateIndexToVectorIndex(Rule):
             before.vector_store_type,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             before.project_expr_list,
             before.index_def,
 =======
@@ -990,6 +1035,10 @@ class LogicalCreateIndexToVectorIndex(Rule):
             before.project_expr_list,
             before.index_def,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+            before.project_expr_list,
+            before.index_def,
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         )
         child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
         batch_mem_size = context.db.config.get_value("executor", "batch_mem_size")

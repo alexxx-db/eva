@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30,6 +31,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 ##  [0.3.7] - 2023-09-30
 
 * PR #1239: release 0.3.7 
@@ -67,6 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
@@ -76,6 +85,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 ##  [0.3.6] - 2023-09-21
 
 * PR #1181: releass: bump a version further to skip cached wheel 
@@ -161,6 +177,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -168,9 +185,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
 =======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
@@ -182,10 +204,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
 =======
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 ##  [0.3.3] - 2023-08-29
 
 * PR #983: doc: fix nav bar 

@@ -37,6 +37,7 @@ class IndexCatalogService(BaseService):
         function_signature: str,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         index_def: str,
     ) -> IndexCatalogEntry:
         index_entry = IndexCatalog(
@@ -55,13 +56,21 @@ class IndexCatalogService(BaseService):
         index_def: str,
     ) -> IndexCatalogEntry:
         index_entry = IndexCatalog(
+=======
+        index_def: str,
+    ) -> IndexCatalogEntry:
+        index_entry = IndexCatalog(
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
             name,
             save_file_path,
             type,
             feat_column.row_id,
             function_signature,
             index_def,
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         )
         index_entry = index_entry.save(self.session)
         return index_entry.as_dataclass()

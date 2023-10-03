@@ -172,12 +172,17 @@ To register an user-defined function, specify the implementation details of the 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 CREATE INDEX
 ------------
 =======
 CREATE UDF
 ----------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+CREATE INDEX
+------------
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 The CREATE INDEX statement allows us to construct an EvaDB based index to accelerate semantic based searching.
 The index can be created on either a column of a table directly or outputs from a function running on a column of a table.
@@ -241,6 +246,7 @@ To register an user-defined function, specify the implementation details of the 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 CREATE FUNCTION via Type
@@ -261,6 +267,8 @@ To register an user-defined function by training a predication model.
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 CREATE FUNCTION via Type
 ----------------------------
 =======
@@ -282,6 +290,7 @@ CREATE FUNCTION via Type
 .. code-block:: sql
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
    CREATE [OR REPALCE] FUNCTION [IF NOT EXISTS] function_name
 =======
@@ -333,6 +342,8 @@ CREATE FUNCTION via Type
 
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
    CREATE [OR REPALCE] FUNCTION [IF NOT EXISTS] function_name
    [ FROM ( select ) ]
    TYPE function_type
@@ -347,6 +358,7 @@ Where the `parameter` is ``key value`` pair.
 .. note::
 
    Go over :ref:`hf`, :ref:`ludwig`, and :ref:`forecast` to check examples for creating function via type.
+<<<<<<< HEAD
 =======
    CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
    (SELECT * FROM HomeRentals)
@@ -355,6 +367,8 @@ Where the `parameter` is ``key value`` pair.
    TIME_LIST 120;
    TUNE_FOR_MEMORY False;
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 CREATE MATERIALIZED VIEW
 ------------------------

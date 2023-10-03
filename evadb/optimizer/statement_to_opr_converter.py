@@ -58,8 +58,11 @@ from evadb.parser.statement import AbstractStatement
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 from evadb.parser.table_ref import JoinNode, TableRef, TableValuedExpression
 from evadb.parser.types import FunctionType, JoinType
 =======
@@ -73,10 +76,14 @@ from evadb.parser.table_ref import TableRef
 from evadb.parser.types import FunctionType
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 from evadb.parser.table_ref import JoinNode, TableRef, TableValuedExpression
 from evadb.parser.types import FunctionType, JoinType
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
@@ -91,6 +98,12 @@ from evadb.parser.types import FunctionType
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 from evadb.utils.logging_manager import logger
 
 
@@ -400,6 +413,7 @@ class StatementToPlanConverter:
             statement.vector_store_type,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             statement.project_expr_list,
             statement.index_def,
 =======
@@ -409,6 +423,10 @@ class StatementToPlanConverter:
             statement.project_expr_list,
             statement.index_def,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+            statement.project_expr_list,
+            statement.index_def,
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         )
         self._plan = create_index_opr
 

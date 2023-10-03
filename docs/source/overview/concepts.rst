@@ -145,10 +145,14 @@ AI Functions
 ------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
 =======
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 To register an user-defined function, use the ``CREATE FUNCTION`` statement:
 

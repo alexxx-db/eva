@@ -22,6 +22,9 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     is_chromadb_available,
 =======
 <<<<<<< HEAD
@@ -35,6 +38,7 @@ from evadb.utils.generic_utils import (
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -43,11 +47,18 @@ from evadb.utils.generic_utils import (
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
     is_chromadb_available,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
     is_forecast_available,
     is_gpu_available,
     is_ludwig_available,

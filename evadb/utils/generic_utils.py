@@ -294,6 +294,7 @@ def try_to_import_ray():
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 def try_to_import_statsforecast():
 =======
 def try_to_import_forecast():
@@ -301,6 +302,9 @@ def try_to_import_forecast():
 =======
 def try_to_import_statsforecast():
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+def try_to_import_statsforecast():
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
@@ -312,8 +316,11 @@ def try_to_import_statsforecast():
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 def try_to_import_neuralforecast():
     try:
         from neuralforecast import NeuralForecast  # noqa: F401
@@ -325,10 +332,13 @@ def try_to_import_neuralforecast():
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 def is_ray_available() -> bool:
     try:
         try_to_import_ray()
@@ -370,10 +380,34 @@ def is_forecast_available() -> bool:
     try:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
+=======
+        try_to_import_statsforecast()
+        try_to_import_neuralforecast()
+        return True
+    except ValueError:  # noqa: E722
+        return False
+
+
+def try_to_import_sklearn():
+    try:
+        import sklearn  # noqa: F401
+        from sklearn.linear_model import LinearRegression  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import sklearn.
+                Please install it with `pip install scikit-learn`."""
+        )
+
+
+def is_sklearn_available() -> bool:
+    try:
+        try_to_import_sklearn()
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         return True
     except ValueError:  # noqa: E722
         return False

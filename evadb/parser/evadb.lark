@@ -38,6 +38,7 @@ rename_table: RENAME TABLE table_name TO table_name
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,11 +55,19 @@ rename_table: RENAME TABLE table_name TO table_name
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 create_function: CREATE or_replace? FUNCTION if_not_exists? function_name INPUT create_definitions OUTPUT create_definitions TYPE function_type IMPL function_impl function_metadata*
 	| CREATE or_replace? FUNCTION if_not_exists? function_name IMPL function_impl function_metadata* 
 	| CREATE or_replace? FUNCTION if_not_exists? function_name TYPE function_type function_metadata*
 	| CREATE or_replace? FUNCTION if_not_exists? function_name FROM LR_BRACKET select_statement RR_BRACKET TYPE function_type function_metadata*
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -71,8 +80,12 @@ create_function: CREATE or_replace? FUNCTION if_not_exists? function_name INPUT 
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_definitions OUTPUT create_definitions TYPE function_type IMPL function_impl function_metadata*
 	| CREATE FUNCTION if_not_exists? function_name IMPL function_impl function_metadata* 
@@ -82,6 +95,7 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
@@ -93,10 +107,19 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 
 // Details
 function_name: uid
@@ -347,8 +370,11 @@ function_call: function         ->function_call
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 =======
 <<<<<<< HEAD
@@ -358,6 +384,7 @@ function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 =======
 function: simple_id "(" (STAR | function_args) ")" dotted_id?
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 function: simple_id "(" (STAR | function_args)? ")" dotted_id?
@@ -374,7 +401,15 @@ function: simple_id "(" (STAR | function_args) ")" dotted_id?
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
     
 aggregate_windowed_function: aggregate_function_name "(" function_arg ")"
                            | COUNT "(" (STAR | function_arg) ")"

@@ -45,8 +45,11 @@ Build Wheel and Release
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     python script/releasing/releaser.py -n minor -u
 =======
 <<<<<<< HEAD
@@ -128,6 +131,7 @@ Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.m
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     python script/releasing/releaser.py -n minor -u
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -141,8 +145,18 @@ Credits: `Snorkel <https://github.com/snorkel-team/snorkel/blob/main/RELEASING.m
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
     python script/releasing/releaser.py -n minor -u
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+=======
+=======
+    python script/releasing/releaser.py -n minor -u
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)

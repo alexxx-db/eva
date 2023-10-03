@@ -39,6 +39,7 @@ class CreateExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         # create a table in the ative database if set
 =======
 =======
@@ -47,6 +48,8 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
         # create a table in the active database if set
 >>>>>>> 62080794 (ran spellchecker)
         is_native_table = self.node.table_info.database_name is not None
@@ -82,6 +85,8 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         # create a table in the ative database if set
         is_native_table = self.node.table_info.database_name is not None
 =======
@@ -91,8 +96,18 @@ class CreateExecutor(AbstractExecutor):
             create_table_done = False
             logger.debug(f"Creating table {self.node.table_info}")
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+=======
+=======
+        # create a table in the ative database if set
+        is_native_table = self.node.table_info.database_name is not None
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 
         check_if_exists = handle_if_not_exists(
             self.catalog(), self.node.table_info, self.node.if_not_exists
@@ -112,6 +127,7 @@ class CreateExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -128,7 +144,14 @@ class CreateExecutor(AbstractExecutor):
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
         else:
             catalog_entry = create_table_catalog_entry_for_native_table(
                 self.node.table_info, self.node.column_list
@@ -196,8 +219,11 @@ class CreateExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
@@ -293,16 +319,55 @@ class CreateExecutor(AbstractExecutor):
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
-                    # Populate the table
-                    for batch in child.exec():
-                        batch.drop_column_alias()
-                        storage_engine.write(catalog_entry, batch)
-            except Exception as e:
-                # rollback if the create call fails
+        try:
+            storage_engine.create(table=catalog_entry)
+            create_table_done = True
+
+            msg = f"The table {name} has been successfully created"
+            if self.children != []:
+                assert (
+                    len(self.children) == 1
+                ), "Create table from query expects 1 child, finds {}".format(
+                    len(self.children)
+                )
+                child = self.children[0]
+
+                rows = 0
+                # Populate the table
+                for batch in child.exec():
+                    batch.drop_column_alias()
+                    storage_engine.write(catalog_entry, batch)
+                    rows += len(batch)
+
+                msg = (
+                    f"The table {name} has been successfully created with {rows} rows."
+                )
+
+            yield Batch(pd.DataFrame([msg]))
+        except Exception as e:
+            # rollback if the create call fails
+            with contextlib.suppress(CatalogError):
                 if create_table_done:
                     storage_engine.drop(catalog_entry)
+<<<<<<< HEAD
                 raise e
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+=======
+=======
+            # rollback catalog entry, suppress any errors raised by catalog
+            with contextlib.suppress(CatalogError):
+                self.catalog().delete_table_catalog_entry(catalog_entry)
+            raise e
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)

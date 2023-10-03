@@ -89,12 +89,15 @@ class DBHandler:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
     def is_sqlalchmey_compatible(self) -> bool:
         """
 <<<<<<< HEAD
@@ -102,6 +105,13 @@ class DBHandler:
 =======
         Return  whether the data source is sqlaclemy compatible
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+    def is_sqlalchmey_compatible(self) -> bool:
+        """
+        Return  whether the data source is sqlaclemy compatible
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
         Returns:
             A True / False boolean value..
@@ -115,11 +125,17 @@ class DBHandler:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
     def check_connection(self) -> DBHandlerStatus:
         """
         Checks the status of the database connection.

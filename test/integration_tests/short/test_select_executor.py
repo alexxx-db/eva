@@ -433,8 +433,11 @@ class SelectExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         signature = next(plan.find_all(LogicalFilter)).predicate.children[0].signature()
 =======
 <<<<<<< HEAD
@@ -444,6 +447,7 @@ class SelectExecutorTest(unittest.TestCase):
 =======
         signature = plan.target_list[0].signature()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         signature = next(plan.find_all(LogicalFilter)).predicate.children[0].signature()
@@ -460,7 +464,15 @@ class SelectExecutorTest(unittest.TestCase):
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+=======
+        signature = next(plan.find_all(LogicalFilter)).predicate.children[0].signature()
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
         function_id = (
             self.evadb.catalog()
             .get_function_catalog_entry_by_name("DummyMultiObjectDetector")
