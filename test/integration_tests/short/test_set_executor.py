@@ -36,8 +36,12 @@ class SetExecutorTest(unittest.TestCase):
     # integration test
     def test_set_execution(self):
         execute_query_fetch_all(self.evadb, "SET OPENAIKEY = 'ABCD';")
+<<<<<<< HEAD
         current_config_value = self.evadb.catalog().get_configuration_catalog_value(
             "OPENAIKEY"
         )
+=======
+        current_config_value = self.evadb.config.get_value("default", "OPENAIKEY")
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
         self.assertEqual("ABCD", current_config_value)

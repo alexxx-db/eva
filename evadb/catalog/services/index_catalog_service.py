@@ -36,6 +36,7 @@ class IndexCatalogService(BaseService):
         feat_column: ColumnCatalogEntry,
         function_signature: str,
 <<<<<<< HEAD
+<<<<<<< HEAD
         index_def: str,
     ) -> IndexCatalogEntry:
         index_entry = IndexCatalog(
@@ -50,6 +51,17 @@ class IndexCatalogService(BaseService):
         index_entry = IndexCatalog(
             name, save_file_path, type, feat_column.row_id, function_signature
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        index_def: str,
+    ) -> IndexCatalogEntry:
+        index_entry = IndexCatalog(
+            name,
+            save_file_path,
+            type,
+            feat_column.row_id,
+            function_signature,
+            index_def,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         )
         index_entry = index_entry.save(self.session)
         return index_entry.as_dataclass()

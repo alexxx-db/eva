@@ -15,7 +15,10 @@
 from evadb.catalog.catalog_type import VectorStoreType
 from evadb.third_party.vector_stores.chromadb import ChromaDBVectorStore
 from evadb.third_party.vector_stores.faiss import FaissVectorStore
+<<<<<<< HEAD
 from evadb.third_party.vector_stores.milvus import MilvusVectorStore
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.third_party.vector_stores.pinecone import PineconeVectorStore
 from evadb.third_party.vector_stores.qdrant import QdrantVectorStore
 from evadb.utils.generic_utils import validate_kwargs
@@ -42,7 +45,10 @@ class VectorStoreFactory:
             from evadb.third_party.vector_stores.pinecone import required_params
 
             validate_kwargs(kwargs, required_params, required_params)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             return PineconeVectorStore(index_name, **kwargs)
 
         elif vector_store_type == VectorStoreType.CHROMADB:
@@ -51,6 +57,7 @@ class VectorStoreFactory:
             validate_kwargs(kwargs, required_params, required_params)
             return ChromaDBVectorStore(index_name, **kwargs)
 
+<<<<<<< HEAD
         elif vector_store_type == VectorStoreType.MILVUS:
             from evadb.third_party.vector_stores.milvus import (
                 allowed_params,
@@ -59,5 +66,7 @@ class VectorStoreFactory:
 
             validate_kwargs(kwargs, allowed_params, required_params)
             return MilvusVectorStore(index_name, **kwargs)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         else:
             raise Exception(f"Vector store {vector_store_type} not supported")

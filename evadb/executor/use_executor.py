@@ -40,6 +40,7 @@ class UseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
         handler = get_database_handler(
             db_catalog_entry.engine,
             **db_catalog_entry.params,
@@ -51,6 +52,13 @@ class UseExecutor(AbstractExecutor):
         ) as handler:
             resp = handler.execute_native_query(self._query_string)
 
+=======
+        with get_database_handler(
+            db_catalog_entry.engine, **db_catalog_entry.params
+        ) as handler:
+            resp = handler.execute_native_query(self._query_string)
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         if resp and resp.error is None:
             yield Batch(resp.data)
         else:

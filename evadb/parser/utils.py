@@ -38,7 +38,10 @@ from evadb.parser.use_statement import UseStatement
 # directly to the executor.
 SKIP_BINDER_AND_OPTIMIZER_STATEMENTS = (
     CreateDatabaseStatement,
+<<<<<<< HEAD
     CreateJobStatement,
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     UseStatement,
     SetStatement,
 )

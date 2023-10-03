@@ -2,6 +2,7 @@ _MAJOR = "0"
 _MINOR = "3"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 _REVISION = "9"
 =======
 _REVISION = "3"
@@ -9,6 +10,9 @@ _REVISION = "3"
 =======
 _REVISION = "4+dev"
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+_REVISION = "8+dev"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 VERSION_SHORT = f"{_MAJOR}.{_MINOR}"
 VERSION = f"{_MAJOR}.{_MINOR}.{_REVISION}"

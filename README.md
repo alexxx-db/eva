@@ -65,7 +65,7 @@
   </a>
 </p>
 
-<p align="center"><i><b>Bring AI inside your database system and build AI-powered apps</b></i></p>
+<p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 
 <<<<<<< HEAD
 <div align="center">
@@ -306,8 +306,12 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 
 👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by: 
 <ul>
+<<<<<<< HEAD
   <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+  <li> ⭐ starring our <a href="https://github.com/georgia-tech-db/evadb">GitHub 🐙 Repo</a>
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
   <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
   <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
   <li> 📝 following us on <a href="https://medium.com/evadb-blog">Medium</a>
@@ -331,14 +335,6 @@ We would love to learn about your AI app. Please complete this 1-minute form: ht
 - [Star History](#star-history)
 - [License](#license)
 =======
-
-👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by: 
-<ul>
-  <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
-  <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
-  <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
-  <li> 🐦 following us on <a href="https://medium.com/evadb-blog">Medium</a>
-</ul>
 
 ## Quick Links
 
@@ -371,7 +367,7 @@ Our target audience is software developers who may not necessarily have a backgr
 
 <details>
 <ul>
-<li>Connect EvaDB to your database system with the `CREATE DATABASE` statement.</li>
+<li>Connect EvaDB to your SQL and vector database systems with the <a href="https://evadb.readthedocs.io/en/stable/source/reference/databases/postgres.html">`CREATE DATABASE`</a> and <a href="https://evadb.readthedocs.io/en/stable/source/reference/evaql/create.html#create-index">`CREATE INDEX`</a> statements.</li>
 <li>Write SQL queries with AI functions to get inference results:</li>
    <ul>
    <li>Pick a pre-trained AI model from Hugging Face, Open AI, Ultralytics, PyTorch, and built-in AI frameworks for generative AI, NLP, and vision applications;</li>  
@@ -385,23 +381,26 @@ Follow the [getting started](https://evadb.readthedocs.io/en/stable/source/overv
 
 ## Illustrative Queries
 
-* Run the MNIST Image Classification model to obtain digit labels for each frame in the video.
+* Get insights about Github stargazers using GPT4.
 
 ```sql
-SELECT MnistImageClassifier(data).label FROM mnist_video;
+SELECT name, country, email, programming_languages, social_media, GPT4(prompt,topics_of_interest)
+FROM gpt4all_StargazerInsights;
+
+--- Prompt to GPT-4
+You are given 10 rows of input, each row is separated by two new line characters.
+Categorize the topics listed in each row into one or more of the following 3 technical areas - Machine Learning, Databases, and Web development. If the topics listed are not related to any of these 3 areas, output a single N/A. Do not miss any input row. Do not add any additional text or numbers to your output.
+The output rows must be separated by two new line characters. Each input row must generate exactly one output row. For example, the input row [Recommendation systems, Deep neural networks, Postgres] must generate only the output row [Machine Learning, Databases].
+The input row [enterpreneurship, startups, venture capital] must generate the output row N/A.
 ```
 
-* Build a vector index on the feature embeddings returned by the SIFT Feature Extractor on a collection of Reddit images.
+* Build a vector index on the feature embeddings returned by the SIFT Feature Extractor on a collection of Reddit images. Return the top-5 similar images for a given image.
 
 ```sql
 CREATE INDEX reddit_sift_image_index
     ON reddit_dataset (SiftFeatureExtractor(data))
     USING FAISS
-```
 
-* Retrieve the top-5 most similar images for the given image using the index.
-
-```sql
 SELECT name FROM reddit_dataset ORDER BY
     Similarity(
         SiftFeatureExtractor(Open('reddit-images/g1074_d4mxztt.jpg')),
@@ -414,6 +413,7 @@ SELECT name FROM reddit_dataset ORDER BY
 
 Here are some illustrative AI apps built using EvaDB (each notebook can be opened on Google Colab):
 
+<<<<<<< HEAD
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/13-privategpt.html">PrivateGPT</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/08-chatgpt.html">ChatGPT-based Video Question Answering</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/12-query-pdf.html">Querying PDF Documents</a>
@@ -421,6 +421,14 @@ Here are some illustrative AI apps built using EvaDB (each notebook can be opene
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/03-emotion-analysis.html">Examining Emotions of Movie</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/07-object-segmentation-huggingface.html">Image Segmentation with Hugging Face</a>
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+ * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/sentiment-analysis.html">Sentiment Analysis using LLM within PostgreSQL</a>
+ * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/question-answering.html">ChatGPT-based Video Question Answering</a>
+ * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/text-summarization.html">Text Summarization on PDF Documents</a>
+ * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/object-detection.html">Analysing Traffic Flow with YOLO</a>
+ * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/emotion-analysis.html">Examining Emotions of Movie</a>
+ * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/image-search.html">Image Similarity Search</a>
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 
 <<<<<<< HEAD
@@ -530,25 +538,20 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 
 <details>
 
-* Store the text returned by a Speech Recognition model on the audio component of a video in a table.
+* Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
 
 ```sql
 CREATE TABLE text_summary AS
     SELECT SpeechRecognizer(audio) FROM ukraine_video;
-```
-
-* Run ChatGPT on the `text` column in a table.
-
-```sql
 SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
     FROM text_summary;
 ```
 
-* Train an ML model using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine to predict a column in a table.
+* Train a classic ML model for prediction using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine.
 
 ```sql
 CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
-( SELECT * FROM HomeRentals )
+(SELECT * FROM HomeRentals)
 TYPE Ludwig
 PREDICT 'rental_price'
 TIME_LIMIT 120;
@@ -561,7 +564,7 @@ TIME_LIMIT 120;
 <details>	
 EvaDB's AI-centric query optimizer takes a query as input and generates a query plan. The query engine takes the query plan and hits the relevant backends to efficiently process the query:
 1. SQL Database Systems (Structured Data)
-2. AI Frameworks (Transform Unstructured Data to Structured Data, Unstructured data includes PDFs, images, podcasts, etc. stored on cloud buckets or local filesystem)
+2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
 3. Vector Database Systems (Feature Embeddings)
 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))

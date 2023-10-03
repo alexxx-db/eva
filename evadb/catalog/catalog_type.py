@@ -117,7 +117,10 @@ class VectorStoreType(EvaDBEnum):
     PINECONE  # noqa: F821
     PGVECTOR  # noqa: F821
     CHROMADB  # noqa: F821
+<<<<<<< HEAD
     MILVUS  # noqa: F821
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 
 class VideoColumnName(EvaDBEnum):

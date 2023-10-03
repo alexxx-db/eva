@@ -52,6 +52,9 @@ class DropObjectExecutor(AbstractExecutor):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
+        elif self.node.object_type == ObjectType.DATABASE:
+            yield self._handle_drop_database(self.node.name, self.node.if_exists)
+
     def _handle_drop_table(self, table_name: str, if_exists: bool):
         if not self.catalog().check_table_exists(table_name):
             err_msg = "Table: {} does not exist".format(table_name)
@@ -166,6 +169,7 @@ class DropObjectExecutor(AbstractExecutor):
                 index=[0],
             )
         )
+<<<<<<< HEAD
 
     def _handle_drop_job(self, job_name: str, if_exists: bool):
         job_catalog_entry = self.catalog().get_job_catalog_entry(job_name)
@@ -187,3 +191,5 @@ class DropObjectExecutor(AbstractExecutor):
                 index=[0],
             )
         )
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

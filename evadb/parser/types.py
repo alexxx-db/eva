@@ -42,7 +42,10 @@ class StatementType(EvaDBEnum):
     CREATE_DATABASE  # noqa: F821
     USE  # noqa: F821
     SET  # noqa: F821
+<<<<<<< HEAD
     CREATE_JOB  # noqa: F821
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     # add other types
 
 
@@ -84,4 +87,7 @@ class ObjectType(EvaDBEnum):
     FUNCTION  # noqa: F821
     INDEX  # noqa: F821
     DATABASE  # noqa: F821
+<<<<<<< HEAD
     JOB  # noqa: F821
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

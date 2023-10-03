@@ -259,6 +259,7 @@ class CreateIndex:
                     index_elem = self.visit(child)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         # Projection list of child of index creation.
         project_expr_list = []
 
@@ -266,11 +267,19 @@ class CreateIndex:
         if not isinstance(index_elem, list):
             project_expr_list += [index_elem]
 =======
+=======
+        # Projection list of child of index creation.
+        project_expr_list = []
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         # Parse either a single function call or column list.
-        col_list, function = None, None
         if not isinstance(index_elem, list):
+<<<<<<< HEAD
             function = index_elem
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            project_expr_list += [index_elem]
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
             # Traverse to the tuple value expression.
             while not isinstance(index_elem, TupleValueExpression):
@@ -286,15 +295,21 @@ class CreateIndex:
 
         return CreateIndexStatement(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             index_name,
             if_not_exists,
             table_ref,
             col_list,
             vector_store_type,
             project_expr_list,
+<<<<<<< HEAD
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         )
 
     def vector_store_type(self, tree):
@@ -311,8 +326,11 @@ class CreateIndex:
             vector_store_type = VectorStoreType.PGVECTOR
         elif str.upper(token) == "CHROMADB":
             vector_store_type = VectorStoreType.CHROMADB
+<<<<<<< HEAD
         elif str.upper(token) == "MILVUS":
             vector_store_type = VectorStoreType.MILVUS
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         return vector_store_type
 
 

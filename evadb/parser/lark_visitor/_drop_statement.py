@@ -60,6 +60,9 @@ class DropObject:
 
         return DropObjectStatement(ObjectType.FUNCTION, function_name, if_exists)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     # Drop Database
     def drop_database(self, tree):
@@ -74,6 +77,7 @@ class DropObject:
                     database_name = self.visit(child)
 
         return DropObjectStatement(ObjectType.DATABASE, database_name, if_exists)
+<<<<<<< HEAD
 
     # Drop Job
     def drop_job(self, tree):
@@ -90,3 +94,5 @@ class DropObject:
         return DropObjectStatement(ObjectType.JOB, job_name, if_exists)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

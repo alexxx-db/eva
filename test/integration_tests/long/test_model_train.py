@@ -13,7 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import unittest
+<<<<<<< HEAD
 from test.markers import ludwig_skip_marker, sklearn_skip_marker, xgboost_skip_marker
+=======
+from test.markers import ludwig_skip_marker, sklearn_skip_marker
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from test.util import get_evadb_for_testing, shutdown_ray
 
 import pytest
@@ -72,19 +76,25 @@ class ModelTrainTests(unittest.TestCase):
 
         # clean up
         execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS HomeRentals;")
+<<<<<<< HEAD
         execute_query_fetch_all(cls.evadb, "DROP TABLE IF EXISTS Employee;")
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         execute_query_fetch_all(
             cls.evadb, "DROP FUNCTION IF EXISTS PredictHouseRentLudwig;"
         )
         execute_query_fetch_all(
             cls.evadb, "DROP FUNCTION IF EXISTS PredictHouseRentSklearn;"
         )
+<<<<<<< HEAD
         execute_query_fetch_all(
             cls.evadb, "DROP FUNCTION IF EXISTS PredictRentXgboost;"
         )
         execute_query_fetch_all(
             cls.evadb, "DROP FUNCTION IF EXISTS PredictEmployeeXgboost;"
         )
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     @pytest.mark.skip(
         reason="Model training intergration test takes too long to complete."
@@ -93,10 +103,14 @@ class ModelTrainTests(unittest.TestCase):
     def test_ludwig_automl(self):
         create_predict_function = """
 <<<<<<< HEAD
+<<<<<<< HEAD
             CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
 =======
             CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             ( SELECT * FROM HomeRentals )
             TYPE Ludwig
             PREDICT 'rental_price'
@@ -111,23 +125,31 @@ class ModelTrainTests(unittest.TestCase):
         self.assertEqual(len(result.columns), 1)
         self.assertEqual(len(result), 10)
 
+<<<<<<< HEAD
     @pytest.mark.skip(
         reason="Model training intergration test takes too long to complete."
     )
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     @sklearn_skip_marker
     def test_sklearn_regression(self):
         create_predict_function = """
             CREATE OR REPLACE FUNCTION PredictHouseRentSklearn FROM
             ( SELECT number_of_rooms, number_of_bathrooms, days_on_market, rental_price FROM HomeRentals )
             TYPE Sklearn
+<<<<<<< HEAD
             PREDICT 'rental_price'
             MODEL 'extra_tree'
             METRIC 'r2';
+=======
+            PREDICT 'rental_price';
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         """
         execute_query_fetch_all(self.evadb, create_predict_function)
 
         predict_query = """
             SELECT PredictHouseRentSklearn(number_of_rooms, number_of_bathrooms, days_on_market, rental_price) FROM HomeRentals LIMIT 10;
+<<<<<<< HEAD
         """
         result = execute_query_fetch_all(self.evadb, predict_query)
         self.assertEqual(len(result.columns), 1)
@@ -172,6 +194,8 @@ class ModelTrainTests(unittest.TestCase):
 
         predict_query = """
             SELECT PredictEmployeeXgboost(payment_tier, age, gender, experience_in_current_domain, leave_or_not) FROM Employee LIMIT 10;
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         """
         result = execute_query_fetch_all(self.evadb, predict_query)
         self.assertEqual(len(result.columns), 1)

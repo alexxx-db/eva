@@ -15,12 +15,16 @@
 import os
 import time
 import unittest
+<<<<<<< HEAD
 from test.markers import (
     chromadb_skip_marker,
     milvus_skip_marker,
     pinecone_skip_marker,
     qdrant_skip_marker,
 )
+=======
+from test.markers import chromadb_skip_marker, pinecone_skip_marker, qdrant_skip_marker
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from test.util import (
     create_sample_image,
     get_evadb_for_testing,
@@ -135,6 +139,7 @@ class SimilarityTests(unittest.TestCase):
         os.environ["PINECONE_API_KEY"] = "657e4fae-7208-4555-b0f2-9847dfa5b818"
         os.environ["PINECONE_ENV"] = "gcp-starter"
 
+<<<<<<< HEAD
         self.original_milvus_uri = os.environ.get("MILVUS_URI")
         self.original_milvus_db_name = os.environ.get("MILVUS_DB_NAME")
 
@@ -142,6 +147,8 @@ class SimilarityTests(unittest.TestCase):
         # use default Milvus database for testing
         os.environ["MILVUS_DB_NAME"] = "default"
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     def tearDown(self):
         shutdown_ray()
 
@@ -160,6 +167,7 @@ class SimilarityTests(unittest.TestCase):
             os.environ["PINECONE_ENV"] = self.original_pinecone_env
         else:
             del os.environ["PINECONE_ENV"]
+<<<<<<< HEAD
         if self.original_milvus_uri:
             os.environ["MILVUS_URI"] = self.original_milvus_uri
         else:
@@ -168,6 +176,8 @@ class SimilarityTests(unittest.TestCase):
             os.environ["MILVUS_DB_NAME"] = self.original_milvus_db_name
         else:
             del os.environ["MILVUS_DB_NAME"]
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     def test_similarity_should_work_in_order(self):
         ###############################################
@@ -427,6 +437,7 @@ class SimilarityTests(unittest.TestCase):
             # Cleanup
             drop_query = "DROP INDEX testFaissIndexImageDataset"
             execute_query_fetch_all(self.evadb, drop_query)
+<<<<<<< HEAD
 
     def _helper_for_auto_update_during_insertion_with_faiss(self, if_exists: bool):
         for i, img_path in enumerate(self.img_path_list):
@@ -458,6 +469,8 @@ class SimilarityTests(unittest.TestCase):
         execute_query_fetch_all(self.evadb, drop_query)
         execute_query_fetch_all(self.evadb, create_query)
         self._helper_for_auto_update_during_insertion_with_faiss(True)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     @qdrant_skip_marker
     def test_end_to_end_index_scan_should_work_correctly_on_image_dataset_qdrant(self):
@@ -550,6 +563,7 @@ class SimilarityTests(unittest.TestCase):
 
             drop_index_query = "DROP INDEX testpineconeindeximagedataset;"
             execute_query_fetch_all(self.evadb, drop_index_query)
+<<<<<<< HEAD
 
     @pytest.mark.skip(reason="Requires running local Milvus instance")
     @milvus_skip_marker
@@ -580,3 +594,5 @@ class SimilarityTests(unittest.TestCase):
             # Cleanup
             drop_query = "DROP INDEX testMilvusIndexImageDataset"
             execute_query_fetch_all(self.evadb, drop_query)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

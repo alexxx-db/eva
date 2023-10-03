@@ -102,9 +102,13 @@ class VectorIndexScanExecutor(AbstractExecutor):
         self.index = VectorStoreFactory.init_vector_store(
             self.vector_store_type,
             self.index_name,
+<<<<<<< HEAD
             **handle_vector_store_params(
                 self.vector_store_type, self.index_path, self.db.catalog
             ),
+=======
+            **handle_vector_store_params(self.vector_store_type, self.index_path),
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         )
 
         search_feat = self._get_search_query_results()
@@ -114,6 +118,10 @@ class VectorIndexScanExecutor(AbstractExecutor):
         # todo support queries over distance as well
         # distance_list = index_result.similarities
         row_num_np = index_result.ids
+<<<<<<< HEAD
+=======
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         # Load projected columns from disk and join with search results.
         row_num_col_name = None
 
@@ -129,6 +137,7 @@ class VectorIndexScanExecutor(AbstractExecutor):
         res_data_list = []
         row_num_df = pd.DataFrame({"row_num_np": row_num_np})
         for batch in self.children[0].exec(**kwargs):
+<<<<<<< HEAD
             if not row_num_col_name:
                 column_list = batch.columns
                 row_num_alias = get_row_num_column_alias(column_list)
@@ -136,6 +145,21 @@ class VectorIndexScanExecutor(AbstractExecutor):
 
             if not batch.frames[row_num_col_name].isin(row_num_df["row_num_np"]).any():
                 continue
+=======
+            column_list = batch.columns
+            if not row_num_col_name:
+                row_num_alias = get_row_num_column_alias(column_list)
+                row_num_col_name = "{}.{}".format(row_num_alias, ROW_NUM_COLUMN)
+
+            # Nested join.
+            for _, row in batch.frames.iterrows():
+                for idx, row_num in enumerate(row_num_np):
+                    if row_num == row[row_num_col_name]:
+                        res_row = dict()
+                        for col_name in column_list:
+                            res_row[col_name] = row[col_name]
+                        res_row_list[idx] = res_row
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
             for index, row in batch.frames.iterrows():
                 row_dict = row.to_dict()

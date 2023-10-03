@@ -60,16 +60,22 @@ rename_table: RENAME TABLE table_name TO table_name
     
 // Create Functions 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 create_function: CREATE or_replace? FUNCTION if_not_exists? function_name INPUT create_definitions OUTPUT create_definitions TYPE function_type IMPL function_impl function_metadata*
 	| CREATE or_replace? FUNCTION if_not_exists? function_name IMPL function_impl function_metadata* 
 	| CREATE or_replace? FUNCTION if_not_exists? function_name TYPE function_type function_metadata*
 	| CREATE or_replace? FUNCTION if_not_exists? function_name FROM LR_BRACKET select_statement RR_BRACKET TYPE function_type function_metadata*
+<<<<<<< HEAD
 =======
 create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_definitions OUTPUT create_definitions TYPE function_type IMPL function_impl function_metadata*
 	| CREATE FUNCTION if_not_exists? function_name IMPL function_impl function_metadata* 
 	| CREATE FUNCTION if_not_exists? function_name TYPE function_type function_metadata*
 	| CREATE FUNCTION if_not_exists? function_name FROM LR_BRACKET select_statement RR_BRACKET TYPE function_type function_metadata*
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 // Details
 function_name: uid
@@ -88,7 +94,11 @@ function_metadata_value: constant
 function_metadata_value: string_literal | decimal_literal
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
+<<<<<<< HEAD
 vector_store_type: USING (FAISS | QDRANT | PINECONE | PGVECTOR | CHROMADB | MILVUS)
+=======
+vector_store_type: USING (FAISS | QDRANT | PINECONE | PGVECTOR | CHROMADB)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 index_elem: ("(" uid_list ")"
           | "(" function_call ")")
@@ -124,7 +134,11 @@ set_statement: SET config_name (EQUAL_SYMBOL | TO) config_value
 
 config_name: uid
 
+<<<<<<< HEAD
 config_value: constant
+=======
+config_value: (string_literal | decimal_literal | boolean_literal | real_literal)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 // Data Manipulation Language
 
@@ -323,10 +337,14 @@ function_call: function         ->function_call
     | aggregate_windowed_function   ->aggregate_function_call
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 =======
 function: simple_id "(" (STAR | function_args) ")" dotted_id?
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     
 aggregate_windowed_function: aggregate_function_name "(" function_arg ")"
                            | COUNT "(" (STAR | function_arg) ")"
@@ -476,7 +494,10 @@ QDRANT:                              "QDRANT"i
 PINECONE:                            "PINECONE"i
 PGVECTOR:                            "PGVECTOR"i
 CHROMADB:                            "CHROMADB"i
+<<<<<<< HEAD
 MILVUS:                              "MILVUS"i
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 // Computer vision tasks
 

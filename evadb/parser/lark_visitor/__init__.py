@@ -20,7 +20,10 @@ from evadb.parser.lark_visitor._common_clauses_ids import CommonClauses
 from evadb.parser.lark_visitor._create_statements import (
     CreateDatabase,
     CreateIndex,
+<<<<<<< HEAD
     CreateJob,
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     CreateTable,
 )
 from evadb.parser.lark_visitor._delete_statement import Delete

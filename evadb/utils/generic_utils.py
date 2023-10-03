@@ -312,10 +312,14 @@ def try_to_import_ray():
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 def try_to_import_statsforecast():
 =======
 def try_to_import_forecast():
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+def try_to_import_statsforecast():
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
@@ -326,6 +330,9 @@ def try_to_import_forecast():
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 def try_to_import_neuralforecast():
     try:
         from neuralforecast import NeuralForecast  # noqa: F401
@@ -336,8 +343,11 @@ def try_to_import_neuralforecast():
         )
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 def is_ray_available() -> bool:
     try:
         try_to_import_ray()
@@ -378,6 +388,9 @@ def is_ludwig_available() -> bool:
 def is_forecast_available() -> bool:
     try:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
         return True
@@ -385,6 +398,7 @@ def is_forecast_available() -> bool:
         return False
 
 
+<<<<<<< HEAD
 def try_to_import_flaml_automl():
     try:
         import flaml  # noqa: F401
@@ -402,6 +416,22 @@ def is_flaml_automl_available() -> bool:
 =======
         try_to_import_forecast()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+def try_to_import_sklearn():
+    try:
+        import sklearn  # noqa: F401
+        from sklearn.linear_model import LinearRegression  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import sklearn.
+                Please install it with `pip install scikit-learn`."""
+        )
+
+
+def is_sklearn_available() -> bool:
+    try:
+        try_to_import_sklearn()
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         return True
     except ValueError:  # noqa: E722
         return False
@@ -592,6 +622,7 @@ def try_to_import_chromadb_client():
         )
 
 
+<<<<<<< HEAD
 def try_to_import_milvus_client():
     try:
         import pymilvus  # noqa: F401
@@ -602,6 +633,8 @@ def try_to_import_milvus_client():
         )
 
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 def is_qdrant_available() -> bool:
     try:
         try_to_import_qdrant_client()
@@ -626,6 +659,7 @@ def is_chromadb_available() -> bool:
         return False
 
 
+<<<<<<< HEAD
 def is_milvus_available() -> bool:
     try:
         try_to_import_milvus_client()
@@ -634,6 +668,8 @@ def is_milvus_available() -> bool:
         return False
 
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 ##############################
 ## UTILS
 ##############################
@@ -677,6 +713,7 @@ def string_comparison_case_insensitive(string_1, string_2) -> bool:
         return False
 
     return string_1.lower() == string_2.lower()
+<<<<<<< HEAD
 
 
 def try_to_import_replicate():
@@ -695,3 +732,5 @@ def is_replicate_available():
         return True
     except ValueError:
         return False
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

@@ -39,7 +39,10 @@ from evadb.parser.parser import Parser
 from evadb.parser.rename_statement import RenameTableStatement
 from evadb.parser.select_statement import SelectStatement
 from evadb.parser.set_statement import SetStatement
+<<<<<<< HEAD
 from evadb.parser.show_statement import ShowStatement
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.parser.statement import AbstractStatement, StatementType
 from evadb.parser.table_ref import JoinNode, TableInfo, TableRef, TableValuedExpression
 from evadb.parser.types import (
@@ -122,6 +125,29 @@ class ParserTests(unittest.TestCase):
         actual_stmt = evadb_stmt_list[0]
         self.assertEqual(actual_stmt, expected_stmt)
         self.assertEqual(actual_stmt.index_def, create_index_query)
+<<<<<<< HEAD
+=======
+
+        # create if_not_exists
+        expected_stmt = CreateIndexStatement(
+            "testindex",
+            True,
+            TableRef(TableInfo("MyVideo")),
+            [
+                ColumnDefinition("featCol", None, None, None),
+            ],
+            VectorStoreType.FAISS,
+            [TupleValueExpression(name="featCol")],
+        )
+        create_index_query = (
+            "CREATE INDEX IF NOT EXISTS testindex ON MyVideo (featCol) USING FAISS;"
+        )
+        evadb_stmt_list = parser.parse(create_index_query)
+        actual_stmt = evadb_stmt_list[0]
+        expected_stmt._if_not_exists = True
+        self.assertEqual(actual_stmt, expected_stmt)
+        self.assertEqual(actual_stmt.index_def, create_index_query)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
         # create if_not_exists
@@ -753,10 +779,14 @@ class ParserTests(unittest.TestCase):
         parser = Parser()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
 =======
         query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        query = "SELECT DemoFunc(*) FROM DemoDB.DemoTable;"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         evadb_stmt_list = parser.parse(query)
 
         # check stmt itself
@@ -869,6 +899,9 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(delete_stmt, expected_stmt)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     def test_set_statement(self):
         parser = Parser()
         set_statement = """SET OPENAIKEY = 'ABCD'"""
@@ -902,6 +935,7 @@ class ParserTests(unittest.TestCase):
 
         self.assertEqual(set_stmt, expected_stmt)
 
+<<<<<<< HEAD
     def test_show_config_statement(self):
         parser = Parser()
         show_config_statement = """SHOW OPENAIKEY"""
@@ -917,6 +951,8 @@ class ParserTests(unittest.TestCase):
 
         self.assertEqual(show_config_stmt, expected_stmt)
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     def test_create_predict_function_statement(self):
         parser = Parser()
         create_func_query = """
@@ -1103,6 +1139,7 @@ class ParserTests(unittest.TestCase):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
             False,
+            False,
             Path("data/fastrcnn.py"),
             [
                 ColumnDefinition(
@@ -1258,6 +1295,7 @@ class ParserTests(unittest.TestCase):
         self.assertNotEqual(tuple_frame, table_ref)
         self.assertNotEqual(join_node, table_ref)
         self.assertNotEqual(table_ref, table_info)
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     def test_create_job(self):
@@ -1296,3 +1334,5 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(job_stmt.end_time, "2023-05-01")
         self.assertEqual(job_stmt.repeat_interval, 2)
         self.assertEqual(job_stmt.repeat_period, "hour")
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

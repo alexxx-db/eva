@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### [Removed]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ##  [0.3.8] - 2023-10-18
 
 * PR #1303: v0.3.8 - new release 
@@ -42,6 +43,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * PR #1241: Bump Version to v0.3.8+dev 
 * PR #1239: release 0.3.7 
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 ##  [0.3.7] - 2023-09-30
 
 * PR #1239: release 0.3.7 
@@ -157,8 +160,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * PR #986: docs: Update README.md 
 * PR #983: doc: fix nav bar 
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 ##  [0.3.3] - 2023-08-29
 
 * PR #983: doc: fix nav bar 

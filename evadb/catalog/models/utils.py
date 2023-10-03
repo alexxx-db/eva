@@ -204,9 +204,13 @@ class IndexCatalogEntry:
     feat_column_id: int = None
     function_signature: str = None
 <<<<<<< HEAD
+<<<<<<< HEAD
     index_def: str = None
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    index_def: str = None
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     feat_column: ColumnCatalogEntry = None
 
 

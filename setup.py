@@ -117,6 +117,10 @@ milvus_libs = ["pymilvus>=2.3.0"]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
+pinecone_libs = ["pinecone-client"]
+
+chromadb_libs = ["chromadb"]
+
 postgres_libs = [
     "psycopg2",
 ]
@@ -139,8 +143,11 @@ imagegen_libs = [
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
+sklearn_libs = ["scikit-learn"]
+
 forecasting_libs = [
-    "statsforecast" # MODEL TRAIN AND FINE TUNING
+    "statsforecast", # MODEL TRAIN AND FINE TUNING
+    "neuralforecast" # MODEL TRAIN AND FINE TUNING
 ]
 
 ### NEEDED FOR DEVELOPER TESTING ONLY
@@ -180,6 +187,7 @@ EXTRA_REQUIRES = {
     "qdrant": qdrant_libs,
     "pinecone": pinecone_libs,
     "chromadb": chromadb_libs,
+<<<<<<< HEAD
     "milvus": milvus_libs,
     "postgres": postgres_libs,
     "ludwig": ludwig_libs,
@@ -194,6 +202,14 @@ EXTRA_REQUIRES = {
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    "postgres": postgres_libs,
+    "ludwig": ludwig_libs,
+    "sklearn": sklearn_libs,
+    "forecasting": forecasting_libs,
+    # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 }
 
 setup(

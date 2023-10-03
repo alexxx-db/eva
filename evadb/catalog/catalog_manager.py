@@ -83,11 +83,15 @@ from evadb.parser.create_statement import ColumnDefinition
 from evadb.parser.table_ref import TableInfo
 from evadb.parser.types import FileFormatType
 from evadb.third_party.databases.interface import get_database_handler
+<<<<<<< HEAD
 from evadb.utils.generic_utils import (
     generate_file_path,
     get_file_checksum,
     remove_directory_contents,
 )
+=======
+from evadb.utils.generic_utils import generate_file_path, get_file_checksum
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.utils.logging_manager import logger
 
 
@@ -191,9 +195,12 @@ class CatalogManager(object):
 
         return table_entry
 
+<<<<<<< HEAD
     def get_all_database_catalog_entries(self):
         return self._db_catalog_service.get_all_entries()
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     def drop_database_catalog_entry(self, database_entry: DatabaseCatalogEntry) -> bool:
         """
         This method deletes the database from  catalog.
@@ -234,6 +241,7 @@ class CatalogManager(object):
 
         return True
 
+<<<<<<< HEAD
     "Job catalog services"
 
     def insert_job_catalog_entry(
@@ -365,6 +373,8 @@ class CatalogManager(object):
             job_id, execution_start_time, execution_end_time
         )
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     "Table catalog services"
 
     def insert_table_catalog_entry(
@@ -589,6 +599,7 @@ class CatalogManager(object):
         feat_column: ColumnCatalogEntry,
         function_signature: str,
 <<<<<<< HEAD
+<<<<<<< HEAD
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
@@ -603,6 +614,17 @@ class CatalogManager(object):
         index_catalog_entry = self._index_service.insert_entry(
             name, save_file_path, vector_store_type, feat_column, function_signature
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        index_def: str,
+    ) -> IndexCatalogEntry:
+        index_catalog_entry = self._index_service.insert_entry(
+            name,
+            save_file_path,
+            vector_store_type,
+            feat_column,
+            function_signature,
+            index_def,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         )
         return index_catalog_entry
 

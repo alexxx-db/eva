@@ -52,7 +52,11 @@ from evadb.executor.union_executor import UnionExecutor
 from evadb.executor.use_executor import UseExecutor
 from evadb.executor.vector_index_scan_executor import VectorIndexScanExecutor
 from evadb.models.storage.batch import Batch
+<<<<<<< HEAD
 from evadb.parser.create_statement import CreateDatabaseStatement, CreateJobStatement
+=======
+from evadb.parser.create_statement import CreateDatabaseStatement
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.parser.set_statement import SetStatement
 from evadb.parser.statement import AbstractStatement
 from evadb.parser.use_statement import UseStatement
@@ -97,8 +101,11 @@ class PlanExecutor:
             return UseExecutor(db=self._db, node=plan)
         elif isinstance(plan, SetStatement):
             return SetExecutor(db=self._db, node=plan)
+<<<<<<< HEAD
         elif isinstance(plan, CreateJobStatement):
             return CreateJobExecutor(db=self._db, node=plan)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
         # Get plan node type
         plan_opr_type = plan.opr_type

@@ -130,10 +130,15 @@ CatalogManagerTests
 CatalogModelsTest
 ChatGPT
 ChatGPTTest
+<<<<<<< HEAD
 ChromaDB
 ChromaDBVectorStore
 ClickHouseHandler
 ClickHouseNativeStorageEngineTest
+=======
+CHROMADB
+ChromaDB
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 ColConstraintInfo
 Colab
 ColorSpace
@@ -736,9 +741,14 @@ PathFinder
 PermissionDenied
 PersistentClient
 PickleSerializer
+<<<<<<< HEAD
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
+=======
+PINECONE
+Pinecone
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 PlanExecutor
 PlanExecutorTest
 PlanGenerator

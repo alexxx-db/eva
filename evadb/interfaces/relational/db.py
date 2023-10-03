@@ -268,7 +268,11 @@ class EvaDBCursor(object):
             index_name (str): Name of the index.
             table_name (str): Name of the table.
             expr (str): Expression used to build the vector index.
+<<<<<<< HEAD
             using (str): Method used for indexing, can be `FAISS` or `QDRANT` or `PINECONE` or `CHROMADB` or `MILVUS`.
+=======
+            using (str): Method used for indexing, can be `FAISS` or `QDRANT` or `PINECONE` or `CHROMADB`.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
         Returns:
             EvaDBCursor: The EvaDBCursor object.

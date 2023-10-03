@@ -58,18 +58,31 @@ Compose multiple user-defined functions in a single query to construct semantica
    FROM HAPPY JOIN LATERAL UNNEST(FaceDetector(data)) AS Face(bbox, conf)  
    WHERE id < 15;
 
+<<<<<<< HEAD
 SELECT TUPLES WITHOUT TABLE
 ---------------------------
+=======
+SELECT WITHOUT TABLE
+--------------------
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 In EvaDB, we can compose a query that does not have a table source. This type of queries are usually expressions.
 
 .. code:: sql
 
    SELECT 1;
+<<<<<<< HEAD
    SELECT 1 > 2;
+=======
+   SELECT 1>2;
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
    SELECT HomeRentalForecast(12);
 
 .. note::
 
+<<<<<<< HEAD
    If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
+=======
+   Go over :ref:`forecast` for forecasting function support in EvaDB.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 

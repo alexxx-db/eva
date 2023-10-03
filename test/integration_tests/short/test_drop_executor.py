@@ -113,13 +113,19 @@ class DropObjectExecutorTest(unittest.TestCase):
             )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         # we should be able to re-create the table
         execute_query_fetch_all(self.evadb, query)
         # clean up
         execute_query_fetch_all(self.evadb, drop_query)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     def run_create_function_query(self):
         create_function_query = """CREATE FUNCTION DummyObjectDetector
             INPUT  (Frame_Array NDARRAY UINT8(3, 256, 256))
@@ -145,6 +151,9 @@ class DropObjectExecutorTest(unittest.TestCase):
         self.assertTrue(function is None)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         # We should be able to re-create the function
         self.run_create_function_query()
         # clean up
@@ -260,6 +269,7 @@ class DropObjectExecutorTest(unittest.TestCase):
         result = execute_query_fetch_all(
             self.evadb, f"DROP DATABASE IF EXISTS {database_name}"
         )
+<<<<<<< HEAD
 
     def test_should_drop_job(self):
         # Create database.
@@ -296,3 +306,5 @@ class DropObjectExecutorTest(unittest.TestCase):
 
         # clean up
         result = execute_query_fetch_all(self.evadb, f"DROP JOB IF EXISTS {job_name}")
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

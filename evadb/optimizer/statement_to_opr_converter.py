@@ -56,12 +56,17 @@ from evadb.parser.select_statement import SelectStatement
 from evadb.parser.show_statement import ShowStatement
 from evadb.parser.statement import AbstractStatement
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.parser.table_ref import JoinNode, TableRef, TableValuedExpression
 from evadb.parser.types import FunctionType, JoinType
 =======
 from evadb.parser.table_ref import TableRef
 from evadb.parser.types import FunctionType
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+from evadb.parser.table_ref import JoinNode, TableRef, TableValuedExpression
+from evadb.parser.types import FunctionType, JoinType
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.utils.logging_manager import logger
 
 
@@ -370,11 +375,16 @@ class StatementToPlanConverter:
             statement.col_list,
             statement.vector_store_type,
 <<<<<<< HEAD
+<<<<<<< HEAD
             statement.project_expr_list,
             statement.index_def,
 =======
             statement.function,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            statement.project_expr_list,
+            statement.index_def,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         )
         self._plan = create_index_opr
 
