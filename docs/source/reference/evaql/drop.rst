@@ -74,6 +74,7 @@ DROP UDF
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
@@ -122,6 +123,9 @@ DROP FUNCTION
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
 
 DROP DATABASE
 -------------
@@ -129,6 +133,7 @@ DROP DATABASE
 .. code:: mysql
 
     DROP DATABASE postgres_db;
+<<<<<<< HEAD
     DROP DATABASE IF EXISTS postgres_db;
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -138,5 +143,14 @@ DROP DATABASE
     DROP DATABASE IF EXISTS postgres_db;
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+=======
+    DROP DATABASE IF EXISTS postgres_db;
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
