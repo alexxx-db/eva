@@ -196,6 +196,42 @@ To register an user-defined function, specify the implementation details of the 
 <<<<<<< HEAD
 =======
 
+CREATE INDEX
+------------
+
+The CREATE INDEX statement allows us to construct an EvaDB based index to accelerate semantic based searching.
+The index can be created on either a column of a table directly or outputs from a function running on a column of a table.
+
+.. code:: sql
+   
+   CREATE INDEX [index_name]
+      ON [table_name] ([column_name])
+      USING [index_method]
+
+   CREATE INDEX [index_name]
+      ON [table_name] ([function_name]([column_name]))
+      USING [index_method]
+
+* [index_name] is the name the of constructed index.
+* [table_name] is the name of the table, on which the index is created.
+* [column_name] is the name of one of the column in the table. We currently only support creating index on single column of a table.
+* [function_name] is an optional parameter that can be added if the index needs to be construsted on results of a funciton.
+
+Examples
+~~~~~~~~
+
+.. code:: sql
+
+   CREATE INDEX reddit_index
+   ON reddit_dataset (data)
+   USING FAISS
+
+   CREATE INDEX func_reddit_index
+   ON reddit_dataset (SiftFeatureExtractor(data))
+   USING QDRANT
+
+You can check out :ref:`similarity search use case<image-search>` about how to use index automatically.
+
 CREATE FUNCTION
 ---------------
 
@@ -218,6 +254,7 @@ To register an user-defined function, specify the implementation details of the 
     IMPL  'evadb/functions/fastrcnn_object_detector.py';
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -301,6 +338,13 @@ CREATE FUNCTION
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 To register an user-defined function, specify the implementation details of the function.
+=======
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+CREATE FUNCTION via Type
+----------------------------
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 .. code-block:: sql
 
@@ -583,12 +627,14 @@ Where the `parameter` is ``key value`` pair.
 .. _create-udf-train:
 
 CREATE FUNCTION via Training
+=======
+CREATE FUNCTION via Type
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 ----------------------------
-
-To register an user-defined function by training a predication model.
 
 .. code-block:: sql
 
+<<<<<<< HEAD
    CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
    (SELECT * FROM HomeRentals)
    TYPE Ludwig
@@ -602,6 +648,22 @@ To register an user-defined function by training a predication model.
    TIME_LIST 120;
    TUNE_FOR_MEMORY False;
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+   CREATE [OR REPALCE] FUNCTION [IF NOT EXISTS] function_name
+   [ FROM ( select ) ]
+   TYPE function_type
+   [ parameter [ ...] ]
+
+Where the `parameter` is ``key value`` pair.
+
+.. warning::
+
+   For one ``CREATE FUNCTION`` query, we can specify ``OR REPLACE`` or ``IF NOT EXISTS`` or neither, but not both.
+
+.. note::
+
+   Go over :ref:`hf`, :ref:`ludwig`, and :ref:`forecast` to check examples for creating function via type.
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 CREATE MATERIALIZED VIEW
 ------------------------

@@ -34,10 +34,13 @@ import pandas as pd
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -48,6 +51,7 @@ import pandas as pd
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
@@ -55,6 +59,8 @@ import pandas as pd
 =======
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
@@ -62,10 +68,14 @@ import pandas as pd
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -94,6 +104,9 @@ import pandas as pd
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import setup
 
@@ -136,22 +149,29 @@ class ForecastModel(AbstractUDF):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 =======
@@ -168,6 +188,8 @@ class ForecastModel(AbstractUDF):
 =======
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import setup
 
@@ -183,10 +205,13 @@ class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -201,16 +226,21 @@ class ForecastModel(AbstractFunction):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -240,6 +270,9 @@ class ForecastModel(AbstractFunction):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     @property
     def name(self) -> str:
         return "ForecastModel"
@@ -256,12 +289,15 @@ class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -331,8 +367,17 @@ class ForecastModel(AbstractFunction):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     @setup(cacheable=False, function_type="Forecasting", batchable=True)
     def setup(
         self,
@@ -350,6 +395,11 @@ class ForecastModel(AbstractFunction):
 >>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
         horizon: int,
         library: str,
+<<<<<<< HEAD
+=======
+    ):
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -549,6 +599,7 @@ class ForecastModel(AbstractFunction):
 =======
 =======
 =======
+<<<<<<< HEAD
         horizon: int,
         library: str,
     ):
@@ -590,8 +641,17 @@ class ForecastModel(AbstractFunction):
     def setup(self, model_name: str, model_path: str):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         f = open(model_path, "rb")
         loaded_model = pickle.load(f)
         f.close()
@@ -617,6 +677,7 @@ class ForecastModel(AbstractFunction):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
@@ -632,11 +693,22 @@ class ForecastModel(AbstractFunction):
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         self.predict_column_rename = predict_column_rename
         self.time_column_rename = time_column_rename
         self.id_column_rename = id_column_rename
@@ -644,8 +716,11 @@ class ForecastModel(AbstractFunction):
         self.library = library
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
 =======
 
@@ -965,6 +1040,7 @@ class ForecastModel(AbstractFunction):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         )
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -1009,21 +1085,17 @@ class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
 =======
 =======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 
-    @forward(
-        input_signatures=[],
-        output_signatures=[
-            PandasDataframe(
-                columns=["y"],
-                column_types=[
-                    NdArrayType.FLOAT32,
-                ],
-                column_shapes=[(None,)],
-            )
-        ],
-    )
     def forward(self, data) -> pd.DataFrame:
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
         horizon = list(data.iloc[:, -1])[0]
         assert (
             type(horizon) is int
@@ -1047,6 +1119,7 @@ class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 =======
@@ -1055,6 +1128,8 @@ class ForecastModel(AbstractFunction):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
         if self.library == "statsforecast":
             forecast_df = self.model.predict(h=self.horizon)
@@ -1082,6 +1157,8 @@ class ForecastModel(AbstractFunction):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
         )[: self.horizon * forecast_df["unique_id"].nunique()]
         return forecast_df
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -1094,5 +1171,28 @@ class ForecastModel(AbstractFunction):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+        if self.library == "statsforecast":
+            forecast_df = self.model.predict(h=self.horizon)
+        else:
+            forecast_df = self.model.predict()
+        forecast_df.reset_index(inplace=True)
+        forecast_df = forecast_df.rename(
+            columns={
+                "unique_id": self.id_column_rename,
+                "ds": self.time_column_rename,
+                self.model_name: self.predict_column_rename,
+            }
+        )[: self.horizon * forecast_df["unique_id"].nunique()]
+        return forecast_df
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)

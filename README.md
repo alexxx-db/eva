@@ -31,6 +31,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> fb8b83f0 (Update README.md)
 =======
@@ -39,6 +44,7 @@
 >>>>>>> c22ad402 (docs: Update README.md)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 30130f52 (docs: Update README.md)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -76,6 +82,14 @@
 >>>>>>> cb1e9982 (docs: Update README.md)
 >>>>>>> c22ad402 (docs: Update README.md)
 >>>>>>> 75cf118f (docs: Update README.md)
+=======
+>>>>>>> cb1e9982 (docs: Update README.md)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 =======
 <<<<<<< HEAD
@@ -779,6 +793,7 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
@@ -786,11 +801,18 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
   <li> ⭐ starring our <a href="https://github.com/georgia-tech-db/evadb">GitHub 🐙 Repo</a>
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
   <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   <li> ⭐ starring our <a href="https://github.com/georgia-tech-db/evadb">GitHub 🐙 Repo</a>
@@ -836,7 +858,15 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+  <li> ⭐ starring our <a href="https://github.com/georgia-tech-db/evadb">GitHub 🐙 Repo</a>
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
   <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
   <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
   <li> 📝 following us on <a href="https://medium.com/evadb-blog">Medium</a>
@@ -844,14 +874,6 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 <<<<<<< HEAD
 
 We would love to learn about your AI app. Please complete this 1-minute form: https://v0fbgcue0cm.typeform.com/to/BZHZWeZm
-
-👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by: 
-<ul>
-  <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
-  <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
-  <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
-  <li> 🐦 following us on <a href="https://medium.com/evadb-blog">Medium</a>
-</ul>
 
 ## Quick Links
 
@@ -1152,6 +1174,7 @@ Our target audience is software developers who may not necessarily have a backgr
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <li>Connect EvaDB to your database system with the `CREATE DATABASE` statement.</li>
 =======
@@ -1178,6 +1201,13 @@ Our target audience is software developers who may not necessarily have a backgr
 =======
 <li>Connect EvaDB to your database system with the `CREATE DATABASE` statement.</li>
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+<li>Connect EvaDB to your database system with the `CREATE DATABASE` statement.</li>
+=======
+<li>Connect EvaDB to your SQL and vector database systems with the <a href="https://evadb.readthedocs.io/en/stable/source/reference/databases/postgres.html">`CREATE DATABASE`</a> and <a href="https://evadb.readthedocs.io/en/stable/source/reference/evaql/create.html#create-index">`CREATE INDEX`</a> statements.</li>
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <li>Write SQL queries with AI functions to get inference results:</li>
    <ul>
    <li>Pick a pre-trained AI model from Hugging Face, Open AI, Ultralytics, PyTorch, and built-in AI frameworks for generative AI, NLP, and vision applications;</li>  
@@ -1192,8 +1222,12 @@ Follow the [getting started](https://evadb.readthedocs.io/en/stable/source/overv
 ## Illustrative Queries
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Get insights about Github stargazers using GPT4.
 <<<<<<< HEAD
+=======
+* Get insights about Github stargazers using GPT4.
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 ```sql
 SELECT name, country, email, programming_languages, social_media, GPT4(prompt,topics_of_interest)
@@ -1213,6 +1247,9 @@ CREATE INDEX reddit_sift_image_index
     ON reddit_dataset (SiftFeatureExtractor(data))
     USING FAISS
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 SELECT name FROM reddit_dataset ORDER BY
     Similarity(
@@ -1242,6 +1279,7 @@ Here are some illustrative AI apps built using EvaDB (each notebook can be opene
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/emotion-analysis.html">Examining Emotions of Movie</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/image-search.html">Image Similarity Search</a>
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -1386,6 +1424,8 @@ Here are some illustrative AI apps built using EvaDB (each notebook can be opene
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 
 <<<<<<< HEAD
@@ -1828,12 +1868,18 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 * Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 * Store the text returned by a Speech Recognition model on the audio component of a video in a table.
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1857,11 +1903,15 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 * Get a transcript from a video stored in a table using a Speech Recognition model. Then, ask questions on the extracted transcript using ChatGPT.
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -1905,10 +1955,14 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 ```sql
 CREATE TABLE text_summary AS
     SELECT SpeechRecognizer(audio) FROM ukraine_video;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1926,10 +1980,13 @@ CREATE TABLE text_summary AS
 =======
 >>>>>>> 304c4a34 (Update README.md)
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
@@ -1939,6 +1996,8 @@ CREATE TABLE text_summary AS
 =======
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 ```
 
 * Run ChatGPT on the `text` column in a table.
@@ -1984,8 +2043,16 @@ CREATE TABLE text_summary AS
 >>>>>>> 6f08d5a3 (Update README.md)
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
     FROM text_summary;
 ```
@@ -2002,12 +2069,16 @@ SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> d40331e4 (Update README.md)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -2025,6 +2096,10 @@ SELECT ChatGPT('Is this video summary related to Ukraine russia war', text)
 >>>>>>> efdfee93 (Update README.md)
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 * Train a classic ML model for prediction using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine.
 
 ```sql
@@ -2041,10 +2116,13 @@ TIME_LIMIT 120;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 304c4a34 (Update README.md)
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 * Train a classic ML model for predicting a column using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine.
 >>>>>>> 6f08d5a3 (Update README.md)
@@ -2063,10 +2141,15 @@ TIME_LIMIT 120;
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
+=======
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 * Train a classic ML model for prediction using the <a href="https://ludwig.ai/latest/">Ludwig AI</a> engine.
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -2188,10 +2271,14 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
@@ -2204,6 +2291,8 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
 =======
 2. AI Frameworks (Transform Unstructured Data to Structured Data, Unstructured data includes PDFs, images, podcasts, etc. stored on cloud buckets or local filesystem)
@@ -2232,11 +2321,17 @@ EvaDB's AI-centric query optimizer takes a query as input and generates a query 
 =======
 2. AI Frameworks (Transform Unstructured Data to Structured Data, Unstructured data includes PDFs, images, podcasts, etc. stored on cloud buckets or local filesystem)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+2. AI Frameworks (Transform Unstructured Data to Structured Data; Unstructured data includes PDFs, text, images, etc. stored locally or on the cloud)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 3. Vector Database Systems (Feature Embeddings)
 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))

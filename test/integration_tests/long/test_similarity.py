@@ -440,6 +440,7 @@ class SimilarityTests(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     def _helper_for_auto_update_during_insertion_with_faiss(self, if_exists: bool):
         for i, img_path in enumerate(self.img_path_list):
@@ -477,6 +478,8 @@ class SimilarityTests(unittest.TestCase):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
     def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
         create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"
@@ -503,6 +506,8 @@ class SimilarityTests(unittest.TestCase):
         self.assertEqual(res_batch.frames["testindexautoupdate._row_id"][0], 5)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
     def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
         create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"
@@ -527,6 +532,8 @@ class SimilarityTests(unittest.TestCase):
 
         res_batch = execute_query_fetch_all(self.evadb, select_query)
         self.assertEqual(res_batch.frames["testindexautoupdate._row_id"][0], 5)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     @qdrant_skip_marker
     def test_end_to_end_index_scan_should_work_correctly_on_image_dataset_qdrant(self):

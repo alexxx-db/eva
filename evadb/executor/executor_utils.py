@@ -281,12 +281,17 @@ def create_table_catalog_entry_for_native_table(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
 =======
     column_catalog_entires = xform_column_definitions_to_catalog_entries(column_list)
@@ -294,11 +299,15 @@ def create_table_catalog_entry_for_native_table(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
     column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -306,6 +315,8 @@ def create_table_catalog_entry_for_native_table(
     column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
 >>>>>>> 5b27053e (ran spellchecker)
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
@@ -317,12 +328,17 @@ def create_table_catalog_entry_for_native_table(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         columns=column_catalog_entries,
 =======
         columns=column_catalog_entires,
@@ -330,11 +346,15 @@ def create_table_catalog_entry_for_native_table(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
         columns=column_catalog_entries,
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -342,6 +362,8 @@ def create_table_catalog_entry_for_native_table(
         columns=column_catalog_entries,
 >>>>>>> 5b27053e (ran spellchecker)
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         database_name=table_info.database_name,
     )
     return table_catalog_entry

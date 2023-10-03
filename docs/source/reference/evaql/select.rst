@@ -303,12 +303,17 @@ Compose multiple user-defined functions in a single query to construct semantica
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 SELECT TUPLES WITHOUT TABLE
 ---------------------------
 =======
@@ -318,12 +323,16 @@ SELECT WITHOUT TABLE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 SELECT TUPLES WITHOUT TABLE
 ---------------------------
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -331,6 +340,10 @@ SELECT TUPLES WITHOUT TABLE
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 In EvaDB, we can compose a query that does not have a table source. This type of queries are usually expressions.
 
@@ -342,12 +355,17 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
    SELECT 1 > 2;
 =======
    SELECT 1>2;
@@ -355,11 +373,15 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
    SELECT 1 > 2;
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -367,6 +389,8 @@ In EvaDB, we can compose a query that does not have a table source. This type of
    SELECT 1 > 2;
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
    SELECT HomeRentalForecast(12);
 
 .. note::
@@ -376,12 +400,17 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
    If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
 =======
    Go over :ref:`forecast` for forecasting function support in EvaDB.
@@ -389,11 +418,15 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
    If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -401,4 +434,6 @@ In EvaDB, we can compose a query that does not have a table source. This type of
    If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 >>>>>>> 5651b7e2 (docs: updated sql statement list)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 

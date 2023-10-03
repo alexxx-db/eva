@@ -23,11 +23,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import contextlib
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -81,6 +84,11 @@ import numpy as np
 =======
 <<<<<<< HEAD
 =======
+import hashlib
+import os
+import pickle
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -112,6 +120,7 @@ import hashlib
 import os
 import pickle
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -151,6 +160,8 @@ import os
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -171,13 +182,23 @@ import os
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 =======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 import os
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 from pathlib import Path
 from typing import Dict, List
 
@@ -246,8 +267,12 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -398,7 +423,12 @@ from evadb.utils.generic_utils import (
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
     string_comparison_case_insensitive,
     try_to_import_ludwig,
     try_to_import_neuralforecast,
@@ -451,7 +481,13 @@ from evadb.utils.generic_utils import (
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 =======
+=======
+    string_comparison_case_insensitive,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     try_to_import_ludwig,
+    try_to_import_neuralforecast,
+    try_to_import_sklearn,
+    try_to_import_statsforecast,
     try_to_import_torch,
     try_to_import_ultralytics,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -510,10 +546,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -524,6 +563,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
@@ -531,6 +571,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
@@ -538,10 +580,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -570,6 +616,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         """Handle HuggingFace functions
 
         HuggingFace functions are special functions that are not loaded from a file.
@@ -608,22 +657,29 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 =======
@@ -640,6 +696,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         """Handle HuggingFace functions
 
         HuggingFace functions are special functions that are not loaded from a file.
@@ -654,10 +712,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -672,16 +733,21 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -711,6 +777,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         """
         # We need at least one deep learning framework for HuggingFace
         # Torch or Tensorflow
@@ -737,12 +806,16 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -755,13 +828,18 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         """Handle ludwig functions
 
         Use Ludwig's auto_train engine to train/tune models.
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -811,22 +889,29 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 =======
@@ -843,10 +928,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         """Handle ludwig functions
 
         Use Ludwig's auto_train engine to train/tune models.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -861,6 +949,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -874,16 +964,21 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -913,6 +1008,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         """
         try_to_import_ludwig()
         from ludwig.automl import auto_train
@@ -1135,6 +1233,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -1202,8 +1301,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     def handle_sklearn_function(self):
         """Handle sklearn functions
 
@@ -1239,17 +1347,25 @@ class CreateFunctionExecutor(AbstractExecutor):
         )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
         # Pass the prediction column name to sklearn.py
         self.node.metadata.append(
             FunctionMetadataCatalogEntry("predict_col", arg_map["predict"])
         )
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
         impl_path = Path(f"{self.function_dir}/sklearn.py").absolute().as_posix()
         io_list = self._resolve_function_io(None)
@@ -1268,6 +1384,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
@@ -1279,8 +1396,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
     def handle_xgboost_function(self):
         """Handle xgboost functions
 
@@ -1519,6 +1645,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 =======
@@ -1528,6 +1655,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -1535,14 +1664,24 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 =======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
     def handle_ultralytics_function(self):
         """Handle Ultralytics Functions"""
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         try_to_import_ultralytics()
 
         impl_path = (
@@ -1571,6 +1710,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -1582,9 +1722,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
@@ -1598,6 +1741,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     def handle_forecasting_function(self):
         """Handle forecasting functions"""
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
@@ -1667,6 +1816,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 =======
@@ -1674,6 +1826,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 
         arg_map = {arg.key: arg.value for arg in self.node.metadata}
         if not self.node.impl_path:
@@ -2132,6 +2285,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
         arg_map = {arg.key: arg.value for arg in self.node.metadata}
         if not self.node.impl_path:
@@ -2413,6 +2568,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -2452,6 +2608,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -2467,6 +2625,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
+=======
+=======
+>>>>>>> eva-master
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
         arg_map = {arg.key: arg.value for arg in self.node.metadata}
         if not self.node.impl_path:
@@ -2715,12 +2880,15 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -2734,8 +2902,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         """
         impl_path = self.node.impl_path.absolute().as_posix()
         function = self._try_initializing_function(impl_path)
@@ -2766,12 +2943,15 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -2841,8 +3021,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         assert (
             self.node.if_not_exists and self.node.or_replace
         ) is False, (
@@ -2852,9 +3041,11 @@ class CreateFunctionExecutor(AbstractExecutor):
         overwrite = False
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2879,6 +3070,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 =======
@@ -2893,9 +3085,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2912,6 +3107,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -2921,6 +3118,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -2929,6 +3127,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 =======
@@ -2936,10 +3138,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -2975,6 +3181,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         # check catalog if it already has this function entry
         if self.catalog().get_function_catalog_entry_by_name(self.node.name):
             if self.node.if_not_exists:
@@ -2993,12 +3202,15 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -3068,12 +3280,22 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             elif self.node.or_replace:
                 # We use DropObjectExecutor to avoid bookkeeping the code. The drop function should be moved to catalog.
                 from evadb.executor.drop_object_executor import DropObjectExecutor
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3085,6 +3307,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
                 drop_executor = DropObjectExecutor(self.db, None)
                 try:
                     drop_executor._handle_drop_function(self.node.name, if_exists=False)
@@ -3096,13 +3322,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
                 drop_executor = DropObjectExecutor(self.db, None)
                 try:
                     drop_executor._handle_drop_function(self.node.name, if_exists=False)
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -3110,15 +3340,21 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
                 except RuntimeError:
                     pass
                 else:
                     overwrite = True
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3141,6 +3377,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 =======
@@ -3155,9 +3392,12 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3174,6 +3414,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -3183,6 +3425,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -3191,6 +3434,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 =======
@@ -3198,10 +3445,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -3237,6 +3488,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             else:
                 msg = f"Function {self.node.name} already exists."
                 logger.error(msg)
@@ -3254,12 +3508,16 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -3277,6 +3535,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+        if string_comparison_case_insensitive(self.node.function_type, "HuggingFace"):
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3318,8 +3581,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -3329,12 +3595,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
         if self.node.function_type == "HuggingFace":
@@ -3342,10 +3613,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -3396,6 +3671,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             (
                 name,
                 impl_path,
@@ -3414,12 +3692,16 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -3437,6 +3719,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+        elif string_comparison_case_insensitive(self.node.function_type, "ultralytics"):
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3478,8 +3765,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -3489,12 +3779,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
         elif self.node.function_type == "ultralytics":
@@ -3502,10 +3797,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -3556,6 +3855,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             (
                 name,
                 impl_path,
@@ -3574,12 +3876,16 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -3597,6 +3903,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+        elif string_comparison_case_insensitive(self.node.function_type, "Ludwig"):
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3638,8 +3949,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -3649,12 +3963,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
         elif self.node.function_type == "Ludwig":
@@ -3662,10 +3981,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -3716,6 +4039,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             (
                 name,
                 impl_path,
@@ -3736,6 +4062,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
@@ -3808,8 +4135,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         elif string_comparison_case_insensitive(self.node.function_type, "Sklearn"):
             (
                 name,
@@ -3823,8 +4159,11 @@ class CreateFunctionExecutor(AbstractExecutor):
             ) = self.handle_sklearn_function()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
         elif string_comparison_case_insensitive(self.node.function_type, "XGBoost"):
             (
                 name,
@@ -3837,6 +4176,7 @@ class CreateFunctionExecutor(AbstractExecutor):
                 train_time,
             ) = self.handle_xgboost_function()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3847,6 +4187,7 @@ class CreateFunctionExecutor(AbstractExecutor):
             ) = self.handle_xgboost_function()
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -3855,6 +4196,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 >>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         elif string_comparison_case_insensitive(self.node.function_type, "Forecasting"):
             (
                 name,
@@ -3865,9 +4211,11 @@ class CreateFunctionExecutor(AbstractExecutor):
             ) = self.handle_forecasting_function()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3883,6 +4231,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -3890,9 +4239,15 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 =======
             ) = self.handle_ludwig_function()
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -3911,6 +4266,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
@@ -3936,6 +4292,10 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 =======
@@ -3943,10 +4303,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -3988,6 +4352,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         else:
             (
                 name,
@@ -4012,12 +4379,15 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -4087,8 +4457,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
         if overwrite:
             msg = f"Function {self.node.name} overwritten."
@@ -4112,6 +4491,7 @@ class CreateFunctionExecutor(AbstractExecutor):
         yield Batch(pd.DataFrame([msg]))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -4166,12 +4546,15 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
         yield Batch(
             pd.DataFrame(
                 [f"Function {self.node.name} successfully added to the database."]
             )
         )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4221,6 +4604,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -4258,12 +4643,24 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 =======
 =======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
     def _try_initializing_function(
         self, impl_path: str, function_args: Dict = {}
@@ -4284,10 +4681,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -4298,6 +4698,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
@@ -4305,6 +4706,8 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
@@ -4312,10 +4715,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -4344,6 +4751,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             function_args (Dict, optional): Dictionary of arguments to pass to the function. Defaults to {}.
 
         Returns:
@@ -4428,6 +4838,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 =======
             function_args (Dict, optional): Dictionary of arguments to pass to the Function. Defaults to {}.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             function_args (Dict, optional): Dictionary of arguments to pass to the function. Defaults to {}.
@@ -4531,16 +4942,34 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
+=======
+=======
+            function_args (Dict, optional): Dictionary of arguments to pass to the function. Defaults to {}.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
         Returns:
-            FunctionCatalogEntry: A FunctionCatalogEntry object that represents the initialized Function.
+            FunctionCatalogEntry: A FunctionCatalogEntry object that represents the initialized function.
 
         Raises:
+<<<<<<< HEAD
             RuntimeError: If an error occurs while initializing the Function.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+            RuntimeError: If an error occurs while initializing the function.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         """
 
         # load the function class from the file
@@ -4561,12 +4990,16 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -4584,6 +5017,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+            err_msg = f"Error creating function {self.node.name}: {str(e)}"
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4625,8 +5063,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -4636,12 +5077,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
             err_msg = f"Error creating Function: {str(e)}"
@@ -4649,10 +5095,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -4703,6 +5153,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             # logger.error(err_msg)
             raise RuntimeError(err_msg)
 
@@ -4722,12 +5175,16 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -4745,6 +5202,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+        """Private method that resolves the input/output definitions for a given function.
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4786,8 +5248,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -4797,12 +5262,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
         """Private method that resolves the input/output definitions for a given Function.
@@ -4810,10 +5280,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -4864,6 +5338,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         It first searches for the input/outputs in the CREATE statement. If not found, it resolves them using decorators. If not found there as well, it raises an error.
 
         Args:
@@ -4882,12 +5359,16 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -4905,6 +5386,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+            output definitions for the function.
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4946,8 +5432,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -4957,12 +5446,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
             output definitions for the Function.
@@ -4970,10 +5464,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -5024,6 +5522,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
         Raises:
             RuntimeError: If an error occurs while resolving the function input/output
@@ -5060,12 +5561,16 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -5083,6 +5588,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+                f"Error creating function, input/output definition incorrect: {str(e)}"
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5124,8 +5634,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -5135,12 +5648,17 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
                 f"Error creating Function, input/output definition incorrect: {str(e)}"
@@ -5148,10 +5666,14 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -5202,6 +5724,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             )
             logger.error(err_msg)
             raise RuntimeError(err_msg)

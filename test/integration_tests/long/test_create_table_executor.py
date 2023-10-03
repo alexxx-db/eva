@@ -127,16 +127,22 @@ class CreateTableTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 >>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     def test_create_table_with_restricted_keywords(self):
         create_table = "CREATE TABLE hello (_row_id INTEGER, price TEXT);"
         with self.assertRaises(AssertionError):
@@ -150,23 +156,32 @@ class CreateTableTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 if __name__ == "__main__":
     unittest.main()

@@ -34,12 +34,17 @@ class GenericSklearnModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     def setup(self, model_path: str, predict_col: str, **kwargs):
         try_to_import_flaml_automl()
 
@@ -60,6 +65,9 @@ class GenericSklearnModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
     def setup(self, model_path: str, predict_col: str, **kwargs):
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
@@ -76,6 +84,7 @@ class GenericSklearnModel(AbstractFunction):
         # We need to rename the column of the output dataframe. For this we
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -101,6 +110,19 @@ class GenericSklearnModel(AbstractFunction):
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+        try_to_import_sklearn()
+
+        self.model = pickle.load(open(model_path, "rb"))
+
+    def forward(self, frames: pd.DataFrame) -> pd.DataFrame:
+        # The last column is the predictor variable column. Hence we do not
+        # pass that column in the predict method for sklearn.
+        predictions = self.model.predict(frames.iloc[:, :-1])
+        predict_df = pd.DataFrame(predictions)
+        # We need to rename the column of the output dataframe. For this we
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         # shall rename it to the column name same as that of the last column of
         # frames. This is because the last column of frames corresponds to the
         # variable we want to predict.
@@ -109,13 +131,17 @@ class GenericSklearnModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
         # shall rename it to the column name same as that of the predict column
         # passed in the training frames in EVA query.
         predict_df.rename(columns={0: self.predict_col}, inplace=True)
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -123,6 +149,10 @@ class GenericSklearnModel(AbstractFunction):
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         return predict_df
 
     def to_device(self, device: str):

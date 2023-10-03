@@ -328,6 +328,7 @@ AI Functions
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
@@ -379,6 +380,9 @@ Here is an `illustrative AI function for classifying the digit in MNIST images <
 To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-function>` statement:
 =======
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
+=======
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 To register an user-defined function, use the ``CREATE FUNCTION`` statement:
 >>>>>>> f431fb09 (feat: sync master staging (#1050))

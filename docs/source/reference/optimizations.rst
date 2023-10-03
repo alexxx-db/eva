@@ -29,12 +29,17 @@ These built-in optimizations ensure superior performance and responsiveness in E
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 .. include:: ../shared/designs/design6.rst
 =======
 Optimizations
@@ -75,6 +80,9 @@ EvaDB optimizes the evaluation of user-defined functions in three manifolds.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> e1643547 (updates)
 =======
@@ -100,6 +108,7 @@ These built-in optimizations ensure superior performance and responsiveness in E
 >>>>>>> e867f37e (docs: updated images)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -121,3 +130,5 @@ These built-in optimizations ensure superior performance and responsiveness in E
 .. include:: ../shared/designs/design6.rst
 >>>>>>> e867f37e (docs: updated images)
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)

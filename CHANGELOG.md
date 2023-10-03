@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -95,6 +96,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 =======
@@ -120,6 +123,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 =======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -134,8 +139,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 =======
 >>>>>>> a4989c0a ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 >>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 ##  [0.3.7] - 2023-09-30
 
 * PR #1239: release 0.3.7 
@@ -309,9 +324,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -334,6 +351,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
 =======
 =======
@@ -348,9 +366,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -367,6 +388,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 =======
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
@@ -376,6 +399,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -384,6 +408,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 =======
@@ -391,10 +419,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> a4989c0a ([RELEASE]: v0.3.3 (#984))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -430,6 +462,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 >>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 ##  [0.3.3] - 2023-08-29
 
 * PR #983: doc: fix nav bar 

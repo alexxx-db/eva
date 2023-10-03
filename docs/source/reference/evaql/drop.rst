@@ -172,6 +172,7 @@ DROP FUNCTION
     DROP FUNCTION FastRCNNObjectDetector;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -246,6 +247,24 @@ DROP FUNCTION
 .. code:: mysql
 
     DROP FUNCTION FastRCNNObjectDetector;
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+
+DROP DATABASE
+-------------
+
+.. code:: mysql
+
+    DROP DATABASE postgres_db;
+    DROP DATABASE IF EXISTS postgres_db;
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)

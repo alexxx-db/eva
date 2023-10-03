@@ -341,10 +341,13 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
       - file: source/overview/model-inference
         title: Model inference
       - file: source/overview/concepts
@@ -392,6 +395,7 @@ parts:
         title: Object Detection
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
+<<<<<<< HEAD
 <<<<<<< HEAD
       - file: source/usecases/privategpt.rst
         title: PrivateGPT
@@ -548,12 +552,31 @@ parts:
         title: Object Detection
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
       - file: source/usecases/privategpt.rst
         title: PrivateGPT
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+      - file: source/usecases/homesale-forecast.rst
+        title: Home Sale Forecasting
+      - file: source/usecases/homerental-predict.rst
+        title: Home Rental Prediction
+      # - file: source/usecases/privategpt.rst
+      #   title: PrivateGPT
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
   - caption: User Reference
     chapters:
@@ -690,6 +713,7 @@ parts:
           - file: source/reference/databases/postgres
           - file: source/reference/databases/sqlite
           - file: source/reference/databases/mysql
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -937,13 +961,34 @@ parts:
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
 =======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
           - file: source/reference/databases/mariadb
           - file: source/reference/databases/clickhouse
           - file: source/reference/databases/github
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+=======
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/github
+
+      - file: source/reference/vector_stores/index
+        title: Vector Stores
+        sections: 
+          - file: source/reference/vector_stores/faiss
+          - file: source/reference/vector_stores/chromadb
+          - file: source/reference/vector_stores/qdrant
+          - file: source/reference/vector_stores/pgvector
+          - file: source/reference/vector_stores/pinecone
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
       - file: source/reference/vector_databases/index
@@ -1077,6 +1122,7 @@ parts:
         title: AI Engines
         sections:
 <<<<<<< HEAD
+<<<<<<< HEAD
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -1153,12 +1199,29 @@ parts:
       - file: source/reference/ai/index
         title: AI Engines
         sections:
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+          - file: source/reference/ai/model-train-ludwig
+            title: Model Training with Ludwig
+          - file: source/reference/ai/model-train-sklearn
+            title: Model Training with Sklearn
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
           - file: source/reference/ai/model-forecasting
             title: Time Series Forecasting
           - file: source/reference/ai/hf
@@ -1350,6 +1413,7 @@ parts:
             title: Custom Model
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
@@ -1404,10 +1468,26 @@ parts:
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+
+      - file: source/reference/optimizations
+        title: Optimizations
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         
       # - file: source/reference/io
       #   title: IO Descriptors

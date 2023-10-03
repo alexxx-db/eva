@@ -42,10 +42,14 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -58,6 +62,8 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         project_expr_list: List[AbstractStatement],
 =======
         function: FunctionExpression = None,
@@ -67,8 +73,11 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
         project_expr_list: List[AbstractStatement],
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -85,6 +94,7 @@ class CreateIndexStatement(AbstractStatement):
         project_expr_list: List[AbstractStatement],
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -100,6 +110,8 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     ):
         super().__init__(StatementType.CREATE_INDEX)
         self._name = name
@@ -117,12 +129,15 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -136,6 +151,7 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -150,6 +166,8 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         self._project_expr_list = project_expr_list
 
         # Definition of CREATE INDEX.
@@ -160,10 +178,13 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
     def __str__(self) -> str:
         function_expr = None
@@ -215,6 +236,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 =======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
     def __str__(self) -> str:
 <<<<<<< HEAD
@@ -396,9 +419,38 @@ class CreateIndexStatement(AbstractStatement):
             tuple(self._col_list),
         )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+
+    def __str__(self) -> str:
+        function_expr = None
+        for project_expr in self._project_expr_list:
+            if isinstance(project_expr, FunctionExpression):
+                function_expr = project_expr
+
+        print_str = "CREATE INDEX"
+        if self._if_not_exists:
+            print_str += " IF NOT EXISTS"
+        print_str += f" {self._name}"
+        print_str += " ON"
+        print_str += f" {self._table_ref.table.table_name}"
+        if function_expr is None:
+            print_str += f" ({self.col_list[0].name})"
+        else:
+            print_str += f" ({function_expr.name}({self.col_list[0].name}))"
+        print_str += f" USING {self._vector_store_type};"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         return print_str
 
     @property
@@ -432,12 +484,15 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -451,6 +506,7 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -465,6 +521,8 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     def project_expr_list(self):
         return self._project_expr_list
 
@@ -484,11 +542,15 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
@@ -501,6 +563,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     def function(self):
         return self._function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -509,8 +573,11 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -524,6 +591,7 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -538,6 +606,8 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
     def __eq__(self, other):
         if not isinstance(other, CreateIndexStatement):
@@ -558,10 +628,14 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -574,11 +648,14 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             and self._project_expr_list == other.project_expr_list
             and self._index_def == other.index_def
 =======
             and self._function == other.function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -591,9 +668,14 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
             and self._project_expr_list == other.project_expr_list
             and self._index_def == other.index_def
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -602,6 +684,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
             and self._project_expr_list == other.project_expr_list
             and self._index_def == other.index_def
@@ -613,6 +697,7 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -625,6 +710,8 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         )
 
     def __hash__(self) -> int:
@@ -646,10 +733,14 @@ class CreateIndexStatement(AbstractStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -662,11 +753,14 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
                 tuple(self._project_expr_list),
                 self._index_def,
 =======
                 self._function,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -679,9 +773,14 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
                 tuple(self._project_expr_list),
                 self._index_def,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -690,6 +789,8 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
                 tuple(self._project_expr_list),
                 self._index_def,
@@ -701,6 +802,7 @@ class CreateIndexStatement(AbstractStatement):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -713,5 +815,7 @@ class CreateIndexStatement(AbstractStatement):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             )
         )

@@ -118,14 +118,19 @@ class StatementBinderContext:
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -159,6 +164,10 @@ class StatementBinderContext:
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -174,8 +183,11 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -211,6 +223,7 @@ class StatementBinderContext:
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
@@ -223,6 +236,8 @@ class StatementBinderContext:
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             )
             handler.connect()
 
@@ -243,12 +258,15 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -261,10 +279,13 @@ class StatementBinderContext:
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -288,6 +309,7 @@ class StatementBinderContext:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -343,6 +365,9 @@ class StatementBinderContext:
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         else:
             table_obj = self._catalog().get_table_catalog_entry(table_name)
 

@@ -29,9 +29,15 @@ third_party:
   PINECONE_ENV: ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   REPLICATE_API_TOKEN: ""
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
   REPLICATE_API_TOKEN: ""
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+  REPLICATE_API_TOKEN: ""
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)

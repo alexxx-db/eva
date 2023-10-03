@@ -148,6 +148,7 @@ class DBHandler:
         Return  whether the data source is sqlaclemy compatible
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -173,6 +174,8 @@ class DBHandler:
         Return  whether the data source is sqlaclchemy compatible
 >>>>>>> 5b27053e (ran spellchecker)
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
         Returns:
             A True / False boolean value..

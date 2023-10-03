@@ -202,6 +202,7 @@ This installation option enables more efficient query execution on CPUs and GPUs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
@@ -303,6 +304,8 @@ This installation option enables more efficient query execution on CPUs and GPUs
 =======
 * ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tuning AI models.
 >>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
 * ``pip install evadb[ray]`` for installing the Ray compute engine. It enables EvaDB to do more efficient query execution on CPUs and GPUs.
 

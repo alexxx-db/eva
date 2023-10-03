@@ -435,12 +435,17 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             # Vector type specific check.
 =======
             # Vector type speciic check.
@@ -448,11 +453,15 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
             # Vector type specific check.
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
@@ -460,6 +469,8 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
             # Vector type specific check.
 >>>>>>> 5b27053e (ran spellchecker)
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
             if node.vector_store_type == VectorStoreType.FAISS:
                 assert (
                     output.array_type == NdArrayType.FLOAT32

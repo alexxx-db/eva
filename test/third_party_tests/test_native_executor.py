@@ -79,6 +79,9 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 =======
@@ -86,8 +89,11 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
     def _create_evadb_table_using_select_query(self):
         execute_query_fetch_all(
@@ -121,14 +127,20 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 
     def _create_evadb_table_using_select_query(self):
         execute_query_fetch_all(
@@ -158,25 +170,6 @@ class NativeExecutorTest(unittest.TestCase):
         self.assertEqual(res_batch.frames["derived_table.age"][0], 1)
         self.assertEqual(res_batch.frames["derived_table.name"][1], "bb")
         self.assertEqual(res_batch.frames["derived_table.age"][1], 2)
-
-    def _create_evadb_table_using_select_query(self):
-        execute_query_fetch_all(
-            self.evadb,
-            """CREATE TABLE eva_table AS SELECT name, age FROM test_data_source.test_table;""",
-        )
-
-        # check if the create table is successful
-        res_batch = execute_query_fetch_all(self.evadb, "Select * from eva_table")
-        self.assertEqual(len(res_batch), 2)
-        self.assertEqual(res_batch.frames["eva_table.name"][0], "aa")
-        self.assertEqual(res_batch.frames["eva_table.age"][0], 1)
-        self.assertEqual(res_batch.frames["eva_table.name"][1], "bb")
-        self.assertEqual(res_batch.frames["eva_table.age"][1], 2)
-
-        execute_query_fetch_all(
-            self.evadb,
-            "DROP TABLE IF EXISTS eva_table;",
-        )
 
     def _execute_evadb_query(self):
         self._create_table_in_native_database()
@@ -205,10 +198,14 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
@@ -222,6 +219,11 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
 =======
+=======
+        self._create_native_table_using_select_query()
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -252,12 +254,15 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 =======
         self._create_native_table_using_select_query()
 =======
@@ -269,6 +274,7 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -277,16 +283,24 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -324,6 +338,9 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         self._drop_table_in_native_database()
         self._drop_table_in_evadb_database()
 
@@ -395,6 +412,7 @@ class NativeExecutorTest(unittest.TestCase):
         self._raise_error_on_multiple_creation()
         self._raise_error_on_invalid_connection()
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -492,8 +510,12 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
 <<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -502,10 +524,14 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -528,6 +554,9 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
     def test_should_run_query_in_mariadb(self):
         # Create database.
         params = {
@@ -687,6 +716,7 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
@@ -754,6 +784,10 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
     def test_should_run_query_in_mariadb(self):
         # Create database.
         params = {
@@ -780,6 +814,7 @@ class NativeExecutorTest(unittest.TestCase):
             "database": f"{current_file_dir}/evadb.db",
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
@@ -789,7 +824,17 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
         }
         query = f"""CREATE DATABASE test_data_source
                     WITH ENGINE = "sqlite",
