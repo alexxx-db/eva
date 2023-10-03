@@ -1,3 +1,103 @@
+<<<<<<< HEAD
+.. _image-classification:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+.. _image-classification:
+=======
+.. _image classification:
+
+Image Classification Pipeline using EvaDB
+=========================================
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> eva-master
+
+Image Classification
+====================
+
+<<<<<<< HEAD
+.. raw:: html
+=======
+<<<<<<< HEAD
+.. raw:: html
+=======
+1. Connect to EvaDB
+-------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> eva-master
+
+    <embed>
+    <table align="left">
+    <td>
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/01-mnist.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/01-mnist.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/01-mnist.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+    </td>
+    </table><br><br>
+    </embed>
+
+Introduction
+------------
+
+<<<<<<< HEAD
+In this tutorial, we present how to use ``PyTorch`` models in EvaDB to classify images. In particular, we focus on classifying images from the ``MNIST`` dataset that contains ``digits``. EvaDB makes it easy to do image classification using its built-in support for ``PyTorch`` models.
+=======
+<<<<<<< HEAD
+In this tutorial, we present how to use ``PyTorch`` models in EvaDB to classify images. In particular, we focus on classifying images from the ``MNIST`` dataset that contains ``digits``. EvaDB makes it easy to do image classification using its built-in support for ``PyTorch`` models.
+=======
+2. Register Image Classification Model as a Function in SQL
+-----------------------------------------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> eva-master
+
+In this tutorial, besides classifying images, we will also showcase a query where the model's output is used to retrieve images with the digit ``6``.
+
+.. include:: ../shared/evadb.rst
+
+We will assume that the input ``MNIST`` video is loaded into ``EvaDB``. To download the video and load it into ``EvaDB``, see the complete `image classification notebook on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/master/tutorials/01-mnist.ipynb>`_.
+
+<<<<<<< HEAD
+Create Image Classification Function
+------------------------------------
+=======
+<<<<<<< HEAD
+Create Image Classification Function
+------------------------------------
+=======
+3. Execute Image Classification through SQL
+-------------------------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> eva-master
+
+To create a custom ``MnistImageClassifier`` function, use the ``CREATE FUNCTION`` statement. The code for the custom classification model is available `here <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_.
+
+We will assume that the file is downloaded and stored as ``mnist_image_classifier.py``. Now, run the following query to register the AI function:
+
+.. code-block:: sql
+
+        CREATE FUNCTION 
+        IF NOT EXISTS MnistImageClassifier 
+        IMPL 'mnist_image_classifier.py';
+
+Image Classification Queries
+----------------------------
+
+After the function is registered in ``EvaDB``, you can use it subsequent SQL queries in different ways. 
+
+In the following query, we call the classifier on every image in the video. The output of the function is stored in the ``label`` column (i.e., the digit associated with the given frame) of the output ``DataFrame``.
+
+.. code-block:: sql
+
+    SELECT MnistImageClassifier(data).label 
+    FROM mnist_video;
+
+<<<<<<< HEAD
+=======
+=======
 .. _image-classification:
 
 Image Classification
@@ -55,6 +155,8 @@ In the following query, we call the classifier on every image in the video. The 
     SELECT MnistImageClassifier(data).label 
     FROM mnist_video;
 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 This query returns the label of all the images:
 
 .. code-block:: 
@@ -70,7 +172,45 @@ This query returns the label of all the images:
     |                          ... |
     |                            4 |
     |                            4 |
+<<<<<<< HEAD
     +------------------------------+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    +------------------------------+
+=======
+
+    ... ...
+
+4. Optional: Process Only Segments of Videos based on Conditions
+-----------------------------------------------------------------
+
+Like normal SQL, you can also specify conditions to filter out some frames of the video.
+
+.. tab-set::
+    
+    .. tab-item:: Python
+
+        .. code-block:: python
+
+            query = cursor.table("mnist_video") \
+                        .filter("id < 2") \
+                        .select("MnistImageClassifier(data).label")
+            
+            # Return results in a DataFrame.
+            query.df()
+
+    .. tab-item:: SQL
+
+        .. code-block:: sql
+
+            SELECT MnistImageClassifier(data).label FROM mnist_video 
+                WHERE id < 2
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+    +------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 
 
 Filtering Based on AI Function
@@ -95,4 +235,16 @@ Now, the ``DataFrame`` only contains images of the digit ``6``.
     |                            6 |
     +------------------------------+
 
+<<<<<<< HEAD
 .. include:: ../shared/footer.rst
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+.. include:: ../shared/footer.rst
+=======
+Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_ for working example.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+.. include:: ../shared/footer.rst
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master

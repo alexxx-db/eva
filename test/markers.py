@@ -19,7 +19,18 @@ import sys
 import pytest
 
 from evadb.utils.generic_utils import (
+<<<<<<< HEAD
     is_chromadb_available,
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    is_chromadb_available,
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    is_chromadb_available,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     is_forecast_available,
     is_gpu_available,
     is_ludwig_available,

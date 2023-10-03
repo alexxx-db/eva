@@ -192,7 +192,15 @@ class CatalogManager(object):
             resp = handler.get_tables()
 
             if resp.error is not None:
+<<<<<<< HEAD
                 raise Exception(resp.error)
+=======
+<<<<<<< HEAD
+                return False
+=======
+                raise Exception(resp.error)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
             # Check table existence.
             table_df = resp.data

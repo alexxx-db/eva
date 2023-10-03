@@ -45,6 +45,18 @@ class CreateIndexStatement(AbstractStatement):
         self._index_def = self.__str__()
 
     def __str__(self) -> str:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        print_str = "CREATE INDEX {} {} ON {} ({}{}) ".format(
+            self._name,
+            "IF NOT EXISTS" if self._if_not_exists else "",
+            self._table_ref,
+            "" if self._function else self._function,
+            tuple(self._col_list),
+        )
+=======
+>>>>>>> eva-master
         function_expr = None
         for project_expr in self._project_expr_list:
             if isinstance(project_expr, FunctionExpression):
@@ -61,6 +73,10 @@ class CreateIndexStatement(AbstractStatement):
         else:
             print_str += f" ({function_expr.name}({self.col_list[0].name}))"
         print_str += f" USING {self._vector_store_type};"
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         return print_str
 
     @property

@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
 Text Summarization Benchmark 
 ============================
 
@@ -9,14 +14,53 @@ All the relevant files are located in the `text summarization benchmark folder o
 
 Prepare dataset
 ---------------
+<<<<<<< HEAD
+=======
+=======
+Text summarization benchmark 
+=======
+Text Summarization Benchmark 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+============================
+
+<<<<<<< HEAD
+1. Prepare dataset
+------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+In this benchmark, we compare the runtime performance of EvaDB and MindsDB on 
+a text summarization application operating on a news dataset. In particular, 
+we focus on the `CNN-DailyMail News <https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail>`_ dataset.
+
+All the relevant files are located in the `text summarization benchmark folder on Github <https://github.com/georgia-tech-db/evadb/tree/staging/benchmark/text_summarization>`_.
+
+Prepare dataset
+---------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 
 .. code-block:: bash
 
    cd benchmark/text_summarization
    bash download_dataset.sh
 
+<<<<<<< HEAD
 Use EvaDB for Text Summarization
 --------------------------------
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Use EvaDB for Text Summarization
+--------------------------------
+=======
+2. Using EvaDB to summarize the CNN DailyMail News
+--------------------------------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Use EvaDB for Text Summarization
+--------------------------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 
 .. note::
  
@@ -29,6 +73,13 @@ Use EvaDB for Text Summarization
    python text_summarization_with_evadb.py
 
 
+<<<<<<< HEAD
+Loading Data Into EvaDB
+~~~~~~~~~~~~~~~~~~~~~~~
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 Loading Data Into EvaDB
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -76,6 +127,66 @@ Use MindsDB for Text Summarization
 
 Setup SQLite Database 
 ~~~~~~~~~~~~~~~~~~~~~~
+=======
+3. Using MindsDB to summarize the CNN DailyMail News
+----------------------------------------------------
+
+Prepare sqlite database for MindsDB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Loading Data Into EvaDB
+~~~~~~~~~~~~~~~~~~~~~~~
+
+>>>>>>> eva-master
+.. code-block:: sql
+
+    CREATE TABLE IF NOT EXISTS cnn_news_test(
+        id TEXT(128),
+        article TEXT(4096),
+        highlights TEXT(1024)
+      );
+
+Creating Text Summarization Function in EvaDB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: sql
+
+   CREATE UDF IF NOT EXISTS TextSummarizer
+         TYPE HuggingFace
+         TASK 'summarization'
+         MODEL 'sshleifer/distilbart-cnn-12-6'
+         MIN_LENGTH 5
+         MAX_LENGTH 100;
+
+
+Tuning EvaDB for Maximum GPU Utilization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+   cursor._evadb.config.update_value("executor", "batch_mem_size", 300000)
+   cursor._evadb.config.update_value("executor", "gpu_ids", [0,1])
+   cursor._evadb.config.update_value("experimental", "ray", True)
+
+
+Text Summarization Query in EvaDB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: sql
+
+    CREATE TABLE IF NOT EXISTS cnn_news_summary AS
+    SELECT TextSummarizer(article) FROM cnn_news_test;
+
+Use MindsDB for Text Summarization
+-----------------------------------
+
+Setup SQLite Database 
+~~~~~~~~~~~~~~~~~~~~~~
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 
 .. code-block:: bash
 
@@ -88,20 +199,60 @@ Setup SQLite Database
 Install MindsDB
 ~~~~~~~~~~~~~~~
 
+<<<<<<< HEAD
 Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 
 .. note::
 
    You will need to manually run ``pip install evaluate`` for the ``HuggingFace`` model to work in MindsDB.
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
+
+.. note::
+
+   You will need to manually run ``pip install evaluate`` for the ``HuggingFace`` model to work in MindsDB.
+=======
+Follow the `Setup for Source Code via pip <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install mindsdb.
+
+.. note::
+
+   At the time of this documentation, we need to manually ``pip install evaluate`` for huggingface model to work in MindsDB.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
+
+.. note::
+
+   You will need to manually run ``pip install evaluate`` for the ``HuggingFace`` model to work in MindsDB.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+
+>>>>>>> eva-master
 After installation, use the ``MySQL`` client for connecting to ``MindsDB``. Update the port number if needed.
 
 .. code-block:: bash
 
    mysql -h 127.0.0.1 --port 47335 -u mindsdb -p
 
+<<<<<<< HEAD
 Benchmark MindsDB 
 ~~~~~~~~~~~~~~~~~
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Benchmark MindsDB 
+~~~~~~~~~~~~~~~~~
+=======
+Run Experiment
+~~~~~~~~~~~~~~
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Benchmark MindsDB 
+~~~~~~~~~~~~~~~~~
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 
 Connect ``MindsDB`` to the ``sqlite`` database we created before:
 
@@ -140,8 +291,24 @@ Use the ``text summarization`` model to summarize the CNN news dataset:
    );
 
 
+<<<<<<< HEAD
 Benchmarking Results
 --------------------
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Benchmarking Results
+--------------------
+=======
+4. Experiment results
+---------------------
+Below are numbers from a server with 56 Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz and two Quadro P6000 GPU.
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Benchmarking Results
+--------------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 
 Here are the key runtime metrics for the ``Text Summarization`` benchmark.
 

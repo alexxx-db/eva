@@ -75,12 +75,33 @@ Here is the query's output ``DataFrame``:
 
 .. code-block:: 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     +--------------------------------------------------------------+--------------------------------------------------------------+
     |                         mypdfs.data                          |                 textsummarizer.summary_text                  |
     +--------------------------------------------------------------+--------------------------------------------------------------+
     | DEFINATION  Specialized connective tissue with          ... | Specialized connective tissue with fluid matrix. Erythro ... |
     | PHYSICAL CHARACTERISTICS ( 1 )  COLOUR   -- Red  ( 2 )  ... | The temperature is 38° C / 100.4° F. The body weight is  ... |
     +--------------------------------------------------------------+--------------------------------------------------------------+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    +--------------------------------------------------------+--------------------------------------------------------+
+    | mypdfs.data                                         | mypdfs.summary_text                             |
+    +--------------------------------------------------------+--------------------------------------------------------+
+    | DEFINATION  Specialized connective tissue wit...  | Specialized connective tissue with fluid matri... |
+    | PHYSICAL CHARACTERISTICS ( 1 ) COLOUR -- R...  | The temperature is 38° C / 100.4° F. The body ...  |
+    +--------------------------------------------------------+--------------------------------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
 
 .. include:: ../shared/nlp.rst

@@ -373,20 +373,58 @@ class StatementBinderTests(unittest.TestCase):
             col.array_dimensions = [1, 10]
             binder._bind_create_index_statement(create_index_statement)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
     def test_bind_create_function_should_raise_without_predict_for_ludwig(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
             create_function_statement.function_type = "ludwig"
+<<<<<<< HEAD
+=======
+=======
+    def test_bind_create_function_should_raise(self):
+        with patch.object(StatementBinder, "bind"):
+            create_function_statement = MagicMock()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    def test_bind_create_function_should_raise_without_predict_for_ludwig(self):
+        with patch.object(StatementBinder, "bind"):
+            create_function_statement = MagicMock()
+            create_function_statement.function_type = "ludwig"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             create_function_statement.query.target_list = []
             create_function_statement.metadata = []
             binder = StatementBinder(StatementBinderContext(MagicMock()))
             with self.assertRaises(AssertionError):
                 binder._bind_create_function_statement(create_function_statement)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
     def test_bind_create_function_should_drop_row_id_for_select_star(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
             create_function_statement.function_type = "ludwig"
+<<<<<<< HEAD
+=======
+=======
+    def test_bind_create_function_should_drop_row_id(self):
+        with patch.object(StatementBinder, "bind"):
+            create_function_statement = MagicMock()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    def test_bind_create_function_should_drop_row_id_for_select_star(self):
+        with patch.object(StatementBinder, "bind"):
+            create_function_statement = MagicMock()
+            create_function_statement.function_type = "ludwig"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             row_id_col_obj = ColumnCatalogEntry(
                 name=IDENTIFIER_COLUMN,
                 type=MagicMock(),
@@ -452,6 +490,13 @@ class StatementBinderTests(unittest.TestCase):
             ]
             self.assertEqual(create_function_statement.inputs, expected_inputs)
             self.assertEqual(create_function_statement.outputs, expected_outputs)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
     def test_bind_create_function_should_bind_forecast_with_default_columns(self):
         with patch.object(StatementBinder, "bind"):
@@ -575,6 +620,57 @@ class StatementBinderTests(unittest.TestCase):
             self.assertEqual(create_function_statement.inputs, expected_inputs)
             self.assertEqual(create_function_statement.outputs, expected_outputs)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    def test_bind_create_function_should_raise_forecast_with_unexpected_columns(self):
+        with patch.object(StatementBinder, "bind"):
+            create_function_statement = MagicMock()
+            create_function_statement.function_type = "forecasting"
+            id_col_obj = ColumnCatalogEntry(
+                name="type",
+                type=MagicMock(),
+                array_type=MagicMock(),
+                array_dimensions=MagicMock(),
+            )
+            ds_col_obj = ColumnCatalogEntry(
+                name="saledate",
+                type=MagicMock(),
+                array_type=MagicMock(),
+                array_dimensions=MagicMock(),
+            )
+            y_col_obj = ColumnCatalogEntry(
+                name="ma",
+                type=MagicMock(),
+                array_type=MagicMock(),
+                array_dimensions=MagicMock(),
+            )
+            create_function_statement.query.target_list = [
+                TupleValueExpression(
+                    name=id_col_obj.name, table_alias="a", col_object=id_col_obj
+                ),
+                TupleValueExpression(
+                    name=ds_col_obj.name, table_alias="a", col_object=ds_col_obj
+                ),
+                TupleValueExpression(
+                    name=y_col_obj.name, table_alias="a", col_object=y_col_obj
+                ),
+            ]
+            create_function_statement.metadata = [
+                ("predict", "ma"),
+                ("time", "saledate"),
+            ]
+            binder = StatementBinder(StatementBinderContext(MagicMock()))
+
+            with self.assertRaises(BinderError) as cm:
+                binder._bind_create_function_statement(create_function_statement)
+
+            err_msg = "Unexpected column type found for forecasting function."
+            self.assertEqual(str(cm.exception), err_msg)
+
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     def test_bind_create_function_should_raise_forecast_missing_required_columns(self):
         with patch.object(StatementBinder, "bind"):
             create_function_statement = MagicMock()
@@ -611,3 +707,11 @@ class StatementBinderTests(unittest.TestCase):
 
             err_msg = "Missing required {'ma'} columns for forecasting function."
             self.assertEqual(str(cm.exception), err_msg)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master

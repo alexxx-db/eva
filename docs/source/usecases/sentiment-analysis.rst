@@ -81,6 +81,22 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
     | Dear [Customer's Name], Thank you for bringing this issue to our attention. We apologize for the inconvenience caused by the missing chicken sandwich in your takeout order. We understand how frustrating it can be when an item is missing from your meal. To address this concern, we ... |
     +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+<<<<<<< HEAD
 .. include:: ../shared/nlp.rst
 
 .. include:: ../shared/footer.rst
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+.. include:: ../shared/nlp.rst
+
+.. include:: ../shared/footer.rst
+=======
+Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`__ for working example.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+.. include:: ../shared/nlp.rst
+
+.. include:: ../shared/footer.rst
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master

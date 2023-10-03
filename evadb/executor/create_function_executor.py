@@ -12,9 +12,25 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+<<<<<<< HEAD
 import hashlib
 import os
 import pickle
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+import hashlib
+import os
+import pickle
+=======
+import os
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+import hashlib
+import os
+import pickle
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 from pathlib import Path
 from typing import Dict, List
 
@@ -37,11 +53,28 @@ from evadb.third_party.huggingface.create import gen_hf_io_catalog_entries
 from evadb.utils.errors import FunctionIODefinitionError
 from evadb.utils.generic_utils import (
     load_function_class_from_file,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    string_comparison_case_insensitive,
+    try_to_import_forecast,
+    try_to_import_ludwig,
+    try_to_import_sklearn,
+=======
+    try_to_import_ludwig,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
     string_comparison_case_insensitive,
     try_to_import_ludwig,
     try_to_import_neuralforecast,
     try_to_import_sklearn,
     try_to_import_statsforecast,
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     try_to_import_torch,
     try_to_import_ultralytics,
 )
@@ -54,10 +87,30 @@ class CreateFunctionExecutor(AbstractExecutor):
         self.function_dir = Path(EvaDB_INSTALLATION_DIR) / "functions"
 
     def handle_huggingface_function(self):
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
         """Handle HuggingFace functions
 
         HuggingFace functions are special functions that are not loaded from a file.
         So we do not need to call the setup method on them like we do for other functions.
+<<<<<<< HEAD
+=======
+=======
+        """Handle HuggingFace Functions
+
+        HuggingFace Functions are special Functions that are not loaded from a file.
+        So we do not need to call the setup method on them like we do for other Functions.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        """Handle HuggingFace functions
+
+        HuggingFace functions are special functions that are not loaded from a file.
+        So we do not need to call the setup method on them like we do for other functions.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         """
         # We need at least one deep learning framework for HuggingFace
         # Torch or Tensorflow
@@ -73,9 +126,27 @@ class CreateFunctionExecutor(AbstractExecutor):
         )
 
     def handle_ludwig_function(self):
+<<<<<<< HEAD
         """Handle ludwig functions
 
         Use Ludwig's auto_train engine to train/tune models.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        """Handle ludwig functions
+
+        Use Ludwig's auto_train engine to train/tune models.
+=======
+        """Handle ludwig Functions
+
+        Use ludwig's auto_train engine to train/tune models.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        """Handle ludwig functions
+
+        Use Ludwig's auto_train engine to train/tune models.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         """
         try_to_import_ludwig()
         from ludwig.automl import auto_train
@@ -119,6 +190,13 @@ class CreateFunctionExecutor(AbstractExecutor):
             self.node.metadata,
         )
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     def handle_sklearn_function(self):
         """Handle sklearn functions
 
@@ -163,8 +241,22 @@ class CreateFunctionExecutor(AbstractExecutor):
             self.node.metadata,
         )
 
+<<<<<<< HEAD
     def handle_ultralytics_function(self):
         """Handle Ultralytics functions"""
+=======
+<<<<<<< HEAD
+    def handle_ultralytics_function(self):
+        """Handle Ultralytics functions"""
+=======
+    def handle_ultralytics_function(self):
+        """Handle Ultralytics Functions"""
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    def handle_ultralytics_function(self):
+        """Handle Ultralytics functions"""
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         try_to_import_ultralytics()
 
         impl_path = (
@@ -182,15 +274,154 @@ class CreateFunctionExecutor(AbstractExecutor):
             self.node.metadata,
         )
 
+<<<<<<< HEAD
     def handle_forecasting_function(self):
         """Handle forecasting functions"""
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    def handle_forecasting_function(self):
+        """Handle forecasting functions"""
+=======
+    def handle_forecasting_function(self):
+        """Handle forecasting functions"""
+        os.environ["CUDA_VISIBLE_DEVICES"] = ""
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         aggregated_batch_list = []
         child = self.children[0]
         for batch in child.exec():
             aggregated_batch_list.append(batch)
         aggregated_batch = Batch.concat(aggregated_batch_list, copy=False)
         aggregated_batch.drop_column_alias()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+        arg_map = {arg.key: arg.value for arg in self.node.metadata}
+        if not self.node.impl_path:
+            impl_path = Path(f"{self.function_dir}/forecast.py").absolute().as_posix()
+        else:
+            impl_path = self.node.impl_path.absolute().as_posix()
+
+        if "model" not in arg_map.keys():
+            arg_map["model"] = "AutoARIMA"
+
+        model_name = arg_map["model"]
+
+        """
+        The following rename is needed for statsforecast, which requires the column name to be the following:
+        - The unique_id (string, int or category) represents an identifier for the series.
+        - The ds (datestamp) column should be of a format expected by Pandas, ideally YYYY-MM-DD for a date or YYYY-MM-DD HH:MM:SS for a timestamp.
+        - The y (numeric) represents the measurement we wish to forecast.
+        For reference: https://nixtla.github.io/statsforecast/docs/getting-started/getting_started_short.html
+        """
+        aggregated_batch.rename(columns={arg_map["predict"]: "y"})
+        if "time" in arg_map.keys():
+            aggregated_batch.rename(columns={arg_map["time"]: "ds"})
+        if "id" in arg_map.keys():
+            aggregated_batch.rename(columns={arg_map["id"]: "unique_id"})
+
+        data = aggregated_batch.frames
+        if "unique_id" not in list(data.columns):
+            data["unique_id"] = [1 for x in range(len(data))]
+
+        if "ds" not in list(data.columns):
+            data["ds"] = [x + 1 for x in range(len(data))]
+
+        if "frequency" not in arg_map.keys():
+            arg_map["frequency"] = pd.infer_freq(data["ds"])
+        frequency = arg_map["frequency"]
+        if frequency is None:
+            raise RuntimeError(
+                f"Can not infer the frequency for {self.node.name}. Please explictly set it."
+            )
+
+        try_to_import_forecast()
+        from statsforecast import StatsForecast
+        from statsforecast.models import AutoARIMA, AutoCES, AutoETS, AutoTheta
+
+        model_dict = {
+            "AutoARIMA": AutoARIMA,
+            "AutoCES": AutoCES,
+            "AutoETS": AutoETS,
+            "AutoTheta": AutoTheta,
+        }
+
+        season_dict = {  # https://pandas.pydata.org/docs/user_guide/timeseries.html#timeseries-offset-aliases
+            "H": 24,
+            "M": 12,
+            "Q": 4,
+            "SM": 24,
+            "BM": 12,
+            "BMS": 12,
+            "BQ": 4,
+            "BH": 24,
+        }
+
+        new_freq = (
+            frequency.split("-")[0] if "-" in frequency else frequency
+        )  # shortens longer frequencies like Q-DEC
+        season_length = season_dict[new_freq] if new_freq in season_dict else 1
+        model = StatsForecast(
+            [model_dict[model_name](season_length=season_length)], freq=new_freq
+        )
+
+        model_dir = os.path.join(
+            self.db.config.get_value("storage", "model_dir"), self.node.name
+        )
+        Path(model_dir).mkdir(parents=True, exist_ok=True)
+        model_path = os.path.join(
+            self.db.config.get_value("storage", "model_dir"),
+            self.node.name,
+            str(hashlib.sha256(data.to_string().encode()).hexdigest()) + ".pkl",
+        )
+
+        weight_file = Path(model_path)
+        data["ds"] = pd.to_datetime(data["ds"])
+        if not weight_file.exists():
+            model.fit(data)
+            f = open(model_path, "wb")
+            pickle.dump(model, f)
+            f.close()
+
+        io_list = self._resolve_function_io(None)
+
+        metadata_here = [
+            FunctionMetadataCatalogEntry("model_name", model_name),
+            FunctionMetadataCatalogEntry("model_path", model_path),
+            FunctionMetadataCatalogEntry(
+                "predict_column_rename", arg_map.get("predict", "y")
+            ),
+            FunctionMetadataCatalogEntry(
+                "time_column_rename", arg_map.get("time", "ds")
+            ),
+            FunctionMetadataCatalogEntry(
+                "id_column_rename", arg_map.get("id", "unique_id")
+            ),
+        ]
+
+        return (
+            self.node.name,
+            impl_path,
+            self.node.function_type,
+            io_list,
+            metadata_here,
+        )
+
+    def handle_generic_function(self):
+        """Handle generic functions
+
+        Generic functions are loaded from a file. We check for inputs passed by the user during CREATE or try to load io from decorators.
+=======
+    def handle_generic_function(self):
+        """Handle generic Functions
+
+        Generic Functions are loaded from a file. We check for inputs passed by the user during CREATE or try to load io from decorators.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
 
         arg_map = {arg.key: arg.value for arg in self.node.metadata}
         if not self.node.impl_path:
@@ -436,6 +667,10 @@ class CreateFunctionExecutor(AbstractExecutor):
         """Handle generic functions
 
         Generic functions are loaded from a file. We check for inputs passed by the user during CREATE or try to load io from decorators.
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         """
         impl_path = self.node.impl_path.absolute().as_posix()
         function = self._try_initializing_function(impl_path)
@@ -454,6 +689,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         Calls the catalog to insert a function catalog entry.
         """
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         assert (
             self.node.if_not_exists and self.node.or_replace
         ) is False, (
@@ -461,12 +703,27 @@ class CreateFunctionExecutor(AbstractExecutor):
         )
 
         overwrite = False
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         # check catalog if it already has this function entry
         if self.catalog().get_function_catalog_entry_by_name(self.node.name):
             if self.node.if_not_exists:
                 msg = f"Function {self.node.name} already exists, nothing added."
                 yield Batch(pd.DataFrame([msg]))
                 return
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             elif self.node.or_replace:
                 # We use DropObjectExecutor to avoid bookkeeping the code. The drop function should be moved to catalog.
                 from evadb.executor.drop_object_executor import DropObjectExecutor
@@ -478,13 +735,33 @@ class CreateFunctionExecutor(AbstractExecutor):
                     pass
                 else:
                     overwrite = True
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             else:
                 msg = f"Function {self.node.name} already exists."
                 logger.error(msg)
                 raise RuntimeError(msg)
 
         # if it's a type of HuggingFaceModel, override the impl_path
+<<<<<<< HEAD
         if string_comparison_case_insensitive(self.node.function_type, "HuggingFace"):
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        if string_comparison_case_insensitive(self.node.function_type, "HuggingFace"):
+=======
+        if self.node.function_type == "HuggingFace":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        if string_comparison_case_insensitive(self.node.function_type, "HuggingFace"):
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             (
                 name,
                 impl_path,
@@ -492,7 +769,19 @@ class CreateFunctionExecutor(AbstractExecutor):
                 io_list,
                 metadata,
             ) = self.handle_huggingface_function()
+<<<<<<< HEAD
         elif string_comparison_case_insensitive(self.node.function_type, "ultralytics"):
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        elif string_comparison_case_insensitive(self.node.function_type, "ultralytics"):
+=======
+        elif self.node.function_type == "ultralytics":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        elif string_comparison_case_insensitive(self.node.function_type, "ultralytics"):
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             (
                 name,
                 impl_path,
@@ -500,7 +789,19 @@ class CreateFunctionExecutor(AbstractExecutor):
                 io_list,
                 metadata,
             ) = self.handle_ultralytics_function()
+<<<<<<< HEAD
         elif string_comparison_case_insensitive(self.node.function_type, "Ludwig"):
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        elif string_comparison_case_insensitive(self.node.function_type, "Ludwig"):
+=======
+        elif self.node.function_type == "Ludwig":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        elif string_comparison_case_insensitive(self.node.function_type, "Ludwig"):
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             (
                 name,
                 impl_path,
@@ -508,6 +809,13 @@ class CreateFunctionExecutor(AbstractExecutor):
                 io_list,
                 metadata,
             ) = self.handle_ludwig_function()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         elif string_comparison_case_insensitive(self.node.function_type, "Sklearn"):
             (
                 name,
@@ -524,6 +832,14 @@ class CreateFunctionExecutor(AbstractExecutor):
                 io_list,
                 metadata,
             ) = self.handle_forecasting_function()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         else:
             (
                 name,
@@ -536,12 +852,32 @@ class CreateFunctionExecutor(AbstractExecutor):
         self.catalog().insert_function_catalog_entry(
             name, impl_path, function_type, io_list, metadata
         )
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
         if overwrite:
             msg = f"Function {self.node.name} overwritten."
         else:
             msg = f"Function {self.node.name} added to the database."
         yield Batch(pd.DataFrame([msg]))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        yield Batch(
+            pd.DataFrame(
+                [f"Function {self.node.name} successfully added to the database."]
+            )
+        )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
     def _try_initializing_function(
         self, impl_path: str, function_args: Dict = {}
@@ -550,6 +886,11 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         Args:
             impl_path (str): The file path of the function implementation file.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
             function_args (Dict, optional): Dictionary of arguments to pass to the function. Defaults to {}.
 
         Returns:
@@ -557,6 +898,25 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         Raises:
             RuntimeError: If an error occurs while initializing the function.
+<<<<<<< HEAD
+=======
+=======
+            function_args (Dict, optional): Dictionary of arguments to pass to the Function. Defaults to {}.
+=======
+            function_args (Dict, optional): Dictionary of arguments to pass to the function. Defaults to {}.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+
+        Returns:
+            FunctionCatalogEntry: A FunctionCatalogEntry object that represents the initialized function.
+
+        Raises:
+<<<<<<< HEAD
+            RuntimeError: If an error occurs while initializing the Function.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            RuntimeError: If an error occurs while initializing the function.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         """
 
         # load the function class from the file
@@ -566,7 +926,19 @@ class CreateFunctionExecutor(AbstractExecutor):
             # initializing the function class calls the setup method internally
             function(**function_args)
         except Exception as e:
+<<<<<<< HEAD
             err_msg = f"Error creating function {self.node.name}: {str(e)}"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            err_msg = f"Error creating function {self.node.name}: {str(e)}"
+=======
+            err_msg = f"Error creating Function: {str(e)}"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            err_msg = f"Error creating function {self.node.name}: {str(e)}"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             # logger.error(err_msg)
             raise RuntimeError(err_msg)
 
@@ -575,7 +947,19 @@ class CreateFunctionExecutor(AbstractExecutor):
     def _resolve_function_io(
         self, function: FunctionCatalogEntry
     ) -> List[FunctionIOCatalogEntry]:
+<<<<<<< HEAD
         """Private method that resolves the input/output definitions for a given function.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        """Private method that resolves the input/output definitions for a given function.
+=======
+        """Private method that resolves the input/output definitions for a given Function.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        """Private method that resolves the input/output definitions for a given function.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         It first searches for the input/outputs in the CREATE statement. If not found, it resolves them using decorators. If not found there as well, it raises an error.
 
         Args:
@@ -583,7 +967,19 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         Returns:
             A List of FunctionIOCatalogEntry objects that represent the resolved input and
+<<<<<<< HEAD
             output definitions for the function.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            output definitions for the function.
+=======
+            output definitions for the Function.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            output definitions for the function.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
         Raises:
             RuntimeError: If an error occurs while resolving the function input/output
@@ -609,7 +1005,19 @@ class CreateFunctionExecutor(AbstractExecutor):
 
         except FunctionIODefinitionError as e:
             err_msg = (
+<<<<<<< HEAD
                 f"Error creating function, input/output definition incorrect: {str(e)}"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                f"Error creating function, input/output definition incorrect: {str(e)}"
+=======
+                f"Error creating Function, input/output definition incorrect: {str(e)}"
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+                f"Error creating function, input/output definition incorrect: {str(e)}"
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             )
             logger.error(err_msg)
             raise RuntimeError(err_msg)

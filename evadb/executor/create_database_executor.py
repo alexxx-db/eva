@@ -28,6 +28,13 @@ class CreateDatabaseExecutor(AbstractExecutor):
         super().__init__(db, node)
 
     def exec(self, *args, **kwargs):
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         # Check if database already exists.
         db_catalog_entry = self.catalog().get_database_catalog_entry(
             self.node.database_name
@@ -40,14 +47,50 @@ class CreateDatabaseExecutor(AbstractExecutor):
                 return
             else:
                 raise ExecutorError(f"{self.node.database_name} already exists.")
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        # TODO: handle if_not_exists
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
         logger.debug(
             f"Trying to connect to the provided engine {self.node.engine} with params {self.node.param_dict}"
         )
 
+<<<<<<< HEAD
         # Check the validity of database entry.
         with get_database_handler(self.node.engine, **self.node.param_dict):
             pass
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        # Check the validity of database entry.
+        with get_database_handler(self.node.engine, **self.node.param_dict):
+            pass
+=======
+        # Check if database already exists.
+        db_catalog_entry = self.catalog().get_database_catalog_entry(
+            self.node.database_name
+        )
+        if db_catalog_entry is not None:
+            raise ExecutorError(f"{self.node.database_name} already exists.")
+
+        # Check the validity of database entry.
+        handler = get_database_handler(self.node.engine, **self.node.param_dict)
+        resp = handler.connect()
+        if not resp.status:
+            raise ExecutorError(f"Cannot establish connection due to {resp.error}")
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+        # Check the validity of database entry.
+        with get_database_handler(self.node.engine, **self.node.param_dict):
+            pass
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
         logger.debug(f"Creating database {self.node}")
         self.catalog().insert_database_catalog_entry(

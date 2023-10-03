@@ -42,6 +42,15 @@ class DropObjectExecutor(AbstractExecutor):
 
         elif self.node.object_type == ObjectType.FUNCTION:
             yield self._handle_drop_function(self.node.name, self.node.if_exists)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+        elif self.node.object_type == ObjectType.DATABASE:
+            yield self._handle_drop_database(self.node.name, self.node.if_exists)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 
         elif self.node.object_type == ObjectType.DATABASE:
             yield self._handle_drop_database(self.node.name, self.node.if_exists)

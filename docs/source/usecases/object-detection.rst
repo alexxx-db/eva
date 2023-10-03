@@ -59,6 +59,13 @@ This query returns the label of all the images:
 
 .. code-block:: 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
     | objectdetectionvideos.id |          yolo.labels           |          yolo.bboxes           |          yolo.scores           |
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -68,6 +75,20 @@ This query returns the label of all the images:
     |            3             | ['car', 'car', 'car', 'car ... | [[839.319580078125, 279.92 ... | [0.91, 0.84, 0.82, 0.81, 0 ... |
     |            4             | ['car', 'car', 'car', 'car ... | [[843.2254028320312, 280.8 ... | [0.9, 0.85, 0.83, 0.8, 0.7 ... |
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    +-----------------------------------------------------------------------------------------------------+
+    | objectdetectionvideos.id              | yolo.labels                                                |
+    +--------------------------+-----------------------------------------------------------------+
+    | 0                        | [car, car, car, car, car, car, person, car, ...             |
+    | 1                        | [car, car, car, car, car, car, car, car, car, ...             |
+    +-----------------------------------------------------------------------------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
 Filtering Based on YOLO Function
 --------------------------------
@@ -76,15 +97,41 @@ In the following query, we use the output of the object detector to retrieve a s
 
 .. code-block:: sql
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
     SELECT id, Yolo(data).labels
         FROM ObjectDetectionVideos 
         WHERE ['person', 'car'] <@ Yolo(data).labels
         LIMIT 5;
+<<<<<<< HEAD
+=======
+=======
+    SELECT id
+        FROM ObjectDetectionVideos 
+        WHERE ['pedestrian', 'car'] <@ Yolo(data).label;
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    SELECT id, Yolo(data).labels
+        FROM ObjectDetectionVideos 
+        WHERE ['person', 'car'] <@ Yolo(data).labels
+        LIMIT 5;
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
 Now, the ``DataFrame`` only contains frames with the desired objects:
 
 .. code-block:: 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     +--------------------------+--------------------------------------------------------------+
     | objectdetectionvideos.id |                         yolo.labels                          |
     +--------------------------+--------------------------------------------------------------+
@@ -94,5 +141,19 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
     |            3             | ['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car', ... |
     |            4             | ['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car', ... |
     +--------------------------+--------------------------------------------------------------+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    +------------------------------+
+    |  objectdetectionvideos.label |
+    |------------------------------|
+    |                            6 |
+    |                            6 |
+    +------------------------------+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
 .. include:: ../shared/footer.rst

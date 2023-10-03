@@ -377,6 +377,31 @@ def is_sklearn_available() -> bool:
         return False
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+def try_to_import_sklearn():
+    try:
+        import sklearn  # noqa: F401
+        from sklearn.linear_model import LinearRegression  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import sklearn.
+                Please install it with `pip install scikit-learn`."""
+        )
+
+
+def is_sklearn_available() -> bool:
+    try:
+        try_to_import_sklearn()
+        return True
+    except ValueError:  # noqa: E722
+        return False
+
+
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 ##############################
 ## VISION
 ##############################

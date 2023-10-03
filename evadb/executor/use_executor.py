@@ -37,12 +37,34 @@ class UseExecutor(AbstractExecutor):
             raise ExecutorError(
                 f"{self._database_name} data source does not exist. Use CREATE DATABASE to add a new data source."
             )
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+        handler = get_database_handler(
+            db_catalog_entry.engine,
+            **db_catalog_entry.params,
+        )
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> eva-master
 
         with get_database_handler(
             db_catalog_entry.engine, **db_catalog_entry.params
         ) as handler:
             resp = handler.execute_native_query(self._query_string)
 
+<<<<<<< HEAD
+=======
+=======
+        with get_database_handler(
+            db_catalog_entry.engine, **db_catalog_entry.params
+        ) as handler:
+            resp = handler.execute_native_query(self._query_string)
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         if resp and resp.error is None:
             yield Batch(resp.data)
         else:

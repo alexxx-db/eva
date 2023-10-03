@@ -55,6 +55,13 @@ class ReuseTest(unittest.TestCase):
         self.evadb.catalog().reset()
         ua_detrac = f"{EvaDB_ROOT_DIR}/data/ua_detrac/ua_detrac.mp4"
         execute_query_fetch_all(self.evadb, f"LOAD VIDEO '{ua_detrac}' INTO DETRAC;")
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         execute_query_fetch_all(self.evadb, "CREATE TABLE fruitTable (data TEXT(100))")
         data_list = [
             "The color of apple is red",
@@ -64,6 +71,14 @@ class ReuseTest(unittest.TestCase):
             execute_query_fetch_all(
                 self.evadb, f"INSERT INTO fruitTable (data) VALUES ('{data}')"
             )
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         load_functions_for_testing(self.evadb)
         self._load_hf_model()
 

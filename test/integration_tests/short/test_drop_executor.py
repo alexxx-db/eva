@@ -112,11 +112,26 @@ class DropObjectExecutorTest(unittest.TestCase):
                 self.evadb, drop_query, do_not_print_exceptions=True
             )
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         # we should be able to re-create the table
         execute_query_fetch_all(self.evadb, query)
         # clean up
         execute_query_fetch_all(self.evadb, drop_query)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     def run_create_function_query(self):
         create_function_query = """CREATE FUNCTION DummyObjectDetector
             INPUT  (Frame_Array NDARRAY UINT8(3, 256, 256))
@@ -141,6 +156,13 @@ class DropObjectExecutorTest(unittest.TestCase):
         )
         self.assertTrue(function is None)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         # We should be able to re-create the function
         self.run_create_function_query()
         # clean up
@@ -155,6 +177,20 @@ class DropObjectExecutorTest(unittest.TestCase):
         )
         self.assertTrue(function is not None)
 
+<<<<<<< HEAD
+=======
+=======
+    def test_drop_wrong_function_name(self):
+        self.run_create_function_query()
+        right_function_name = "DummyObjectDetector"
+        wrong_function_name = "FakeDummyObjectDetector"
+        function = self.evadb.catalog().get_function_catalog_entry_by_name(
+            right_function_name
+        )
+        self.assertTrue(function is not None)
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
         # Test that dropping the wrong FUNCTION:
         # - does not affect FUNCTIONs in the catalog
         # - raises an appropriate exception

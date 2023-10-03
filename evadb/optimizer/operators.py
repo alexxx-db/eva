@@ -22,7 +22,18 @@ from evadb.catalog.models.column_catalog import ColumnCatalogEntry
 from evadb.catalog.models.function_io_catalog import FunctionIOCatalogEntry
 from evadb.catalog.models.function_metadata_catalog import FunctionMetadataCatalogEntry
 from evadb.catalog.models.table_catalog import TableCatalogEntry
+<<<<<<< HEAD
 from evadb.catalog.models.utils import IndexCatalogEntry
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+from evadb.catalog.models.utils import IndexCatalogEntry
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+from evadb.catalog.models.utils import IndexCatalogEntry
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 from evadb.expression.abstract_expression import AbstractExpression
 from evadb.expression.constant_value_expression import ConstantValueExpression
 from evadb.expression.function_expression import FunctionExpression
@@ -642,10 +653,29 @@ class LogicalCreateFunction(Operator):
     Attributes:
         name: str
             function_name provided by the user required
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
         or_replace: bool
             if true should overwrite if function with same name exists
         if_not_exists: bool
             if true should skip if function with same name exists
+<<<<<<< HEAD
+=======
+=======
+        if_not_exists: bool
+            if true should throw an error if function with same name exists
+            else will replace the existing
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        or_replace: bool
+            if true should overwrite if function with same name exists
+        if_not_exists: bool
+            if true should skip if function with same name exists
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         inputs: List[FunctionIOCatalogEntry]
             function inputs, annotated list similar to table columns
         outputs: List[FunctionIOCatalogEntry]

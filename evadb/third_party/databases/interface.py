@@ -15,10 +15,29 @@
 import importlib
 import os
 from contextlib import contextmanager
+<<<<<<< HEAD
 
 from evadb.executor.executor_utils import ExecutorError
+=======
+<<<<<<< HEAD
+=======
 
+from evadb.executor.executor_utils import ExecutorError
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
+<<<<<<< HEAD
+from evadb.executor.executor_utils import ExecutorError
+>>>>>>> eva-master
+
+<<<<<<< HEAD
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 def _get_database_handler(engine: str, **kwargs):
     """
     Return the database handler. User should modify this function for
@@ -40,14 +59,35 @@ def _get_database_handler(engine: str, **kwargs):
         return mod.SQLiteHandler(engine, **kwargs)
     elif engine == "mysql":
         return mod.MysqlHandler(engine, **kwargs)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    elif engine == "mariadb":
+        return mod.MariaDbHandler(engine, **kwargs)
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-master
     elif engine == "mariadb":
         return mod.MariaDbHandler(engine, **kwargs)
     elif engine == "github":
         return mod.GithubHandler(engine, **kwargs)
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     else:
         raise NotImplementedError(f"Engine {engine} is not supported")
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 @contextmanager
 def get_database_handler(engine: str, **kwargs):
     handler = _get_database_handler(engine, **kwargs)
@@ -60,6 +100,11 @@ def get_database_handler(engine: str, **kwargs):
         handler.disconnect()
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 def dynamic_import(handler_dir):
     import_path = f"evadb.third_party.databases.{handler_dir}.{handler_dir}_handler"
     return importlib.import_module(import_path)

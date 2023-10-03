@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 personal_ws-1.1 en 1563 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+personal_ws-1.1 en 1563 
+=======
+personal_ws-1.1 en 1467 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+personal_ws-1.1 en 1563 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 ABCD
 ABCMeta
 ANYDIM
@@ -485,7 +497,18 @@ MyVideo
 MyVideoCSV
 MyVideos
 MydbHandler
+<<<<<<< HEAD
 MysqlHandler
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+MysqlHandler
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+MysqlHandler
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 NEQ
 NLP
 NOTNULL
@@ -638,8 +661,21 @@ SaliencyTests
 SampleExecutor
 SampleExecutorTest
 SamplePlan
+<<<<<<< HEAD
 SampleTable
 SampleVideoTable
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+SampleTable
+SampleVideoTable
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+SampleTable
+SampleVideoTable
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 Scalability
 ScanPlan
 SchemaUtils
@@ -1073,7 +1109,18 @@ fc
 featCol
 featureextractor
 feedstock
+<<<<<<< HEAD
 fetchall
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+fetchall
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+fetchall
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 ffill
 ffmpeg
 filepath
@@ -1406,7 +1453,18 @@ simiarity
 singledispatch
 singledispatchmethod
 sk
+<<<<<<< HEAD
 smallint
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+smallint
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+smallint
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
 smi
 softmax
 spacy

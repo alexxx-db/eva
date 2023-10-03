@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### [Deprecated]
 ### [Removed]
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
 ##  [0.3.7] - 2023-09-30
 
 * PR #1239: release 0.3.7 
@@ -44,6 +50,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * PR #1182: Bump Version to v0.3.7+dev 
 * PR #1181: releass: bump a version further to skip cached wheel 
 
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 ##  [0.3.6] - 2023-09-21
 
 * PR #1181: releass: bump a version further to skip cached wheel 
@@ -125,6 +135,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * PR #986: docs: Update README.md 
 * PR #983: doc: fix nav bar 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 ##  [0.3.3] - 2023-08-29
 
 * PR #983: doc: fix nav bar 

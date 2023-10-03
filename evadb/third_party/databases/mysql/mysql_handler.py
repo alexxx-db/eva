@@ -49,9 +49,24 @@ class MysqlHandler(DBHandler):
         if self.connection:
             self.connection.close()
 
+<<<<<<< HEAD
     def get_sqlalchmey_uri(self) -> str:
         return f"mysql+mysqlconnector://{self.user}:{self.password}@{self.host}:{self.port}/{self.database}"
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    def get_sqlalchmey_uri(self) -> str:
+        return f"mysql+mysqlconnector://{self.user}:{self.password}@{self.host}:{self.port}/{self.database}"
+
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+    def get_sqlalchmey_uri(self) -> str:
+        return f"mysql+mysqlconnector://{self.user}:{self.password}@{self.host}:{self.port}/{self.database}"
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
     def check_connection(self) -> DBHandlerStatus:
         if self.connection:
             return DBHandlerStatus(status=True)
@@ -96,9 +111,25 @@ class MysqlHandler(DBHandler):
             res = cursor.fetchall()
             if not res:
                 return pd.DataFrame({"status": ["success"]})
+<<<<<<< HEAD
             res_df = pd.DataFrame(
                 res, columns=[desc[0].lower() for desc in cursor.description]
             )
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            res_df = pd.DataFrame(
+                res, columns=[desc[0].lower() for desc in cursor.description]
+            )
+=======
+            res_df = pd.DataFrame(res, columns=[desc[0] for desc in cursor.description])
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+            res_df = pd.DataFrame(
+                res, columns=[desc[0].lower() for desc in cursor.description]
+            )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             return res_df
         except mysql.connector.ProgrammingError as e:
             if str(e) == "no results to fetch":

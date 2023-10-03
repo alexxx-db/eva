@@ -63,7 +63,19 @@ class ModelTrainTests(unittest.TestCase):
     @ludwig_skip_marker
     def test_ludwig_automl(self):
         create_predict_function = """
+<<<<<<< HEAD
             CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
+=======
+            CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            CREATE OR REPLACE FUNCTION PredictHouseRentLudwig FROM
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             ( SELECT * FROM HomeRentals )
             TYPE Ludwig
             PREDICT 'rental_price'

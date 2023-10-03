@@ -28,10 +28,29 @@ class CreateFunctionPlan(AbstractPlan):
     Attributes:
         name: str
             function_name provided by the user required
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
         or_replace: bool
             if true should overwrite if function with same name exists
         if_not_exists: bool
             if true should skip if function with same name exists
+<<<<<<< HEAD
+=======
+=======
+        if_not_exists: bool
+            if true should throw an error if function with same name exists
+            else will replace the existing
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        or_replace: bool
+            if true should overwrite if function with same name exists
+        if_not_exists: bool
+            if true should skip if function with same name exists
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         inputs: List[FunctionIOCatalogEntry]
             function inputs, annotated list similar to table columns
         outputs: List[FunctionIOCatalogEntry]
@@ -97,7 +116,18 @@ class CreateFunctionPlan(AbstractPlan):
 
     def __str__(self):
         return "CreateFunctionPlan(name={}, \
+<<<<<<< HEAD
             or_replace={}, \
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            or_replace={}, \
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            or_replace={}, \
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
             if_not_exists={}, \
             inputs={}, \
             outputs={}, \

@@ -18,7 +18,18 @@ from typing import TYPE_CHECKING
 
 from evadb.catalog.catalog_type import TableType, VectorStoreType
 from evadb.catalog.catalog_utils import is_video_table
+<<<<<<< HEAD
 from evadb.catalog.models.utils import IndexCatalogEntry
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+from evadb.catalog.models.utils import IndexCatalogEntry
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+from evadb.catalog.models.utils import IndexCatalogEntry
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 from evadb.constants import CACHEABLE_FUNCTIONS
 from evadb.executor.execution_context import Context
 from evadb.expression.expression_utils import (
@@ -571,6 +582,10 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 
         # Get column catalog entry and function_signature.
         column_catalog_entry = tv_expr.col_object
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -594,7 +609,62 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
                 save_file_path="",
                 type=VectorStoreType.PGVECTOR,
                 feat_column=column_catalog_entry,
+=======
+        function_signature = (
+            None
+            if isinstance(base_func_expr, TupleValueExpression)
+            else base_func_expr.signature()
+        )
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+<<<<<<< HEAD
             )
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+                column_catalog_entry, function_signature
+            )
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+=======
+            )
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+                column_catalog_entry, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+            )
+<<<<<<< HEAD
+=======
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
         # Construct the Vector index scan plan.
         vector_index_scan_node = LogicalVectorIndexScan(

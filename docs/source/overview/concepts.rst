@@ -54,7 +54,19 @@ EvaDB accelerates AI queries using a collection of optimizations inspired by SQL
 AI Functions
 ------------
 
+<<<<<<< HEAD
 ``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
+=======
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_. 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+``Functions`` are typically thin wrappers around AI models and are extensively used in queries. Here is an `illustrative AI function for classifying MNIST images <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_. 
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 
 To register an user-defined function, use the ``CREATE FUNCTION`` statement:
 
@@ -76,6 +88,13 @@ After registering ``MnistImageClassifier`` function, you can call the function i
     FROM MnistVideo  
     WHERE id = 30;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
     --- Use the 'MnistImageClassifier' function's output to filter frames
     --- This query returns the frame ids of the frames with digit 6
     --- We limit to the first five frames containing digit 6
@@ -83,3 +102,65 @@ After registering ``MnistImageClassifier`` function, you can call the function i
     FROM MnistVideo  
     WHERE MnistImageClassifier(data).label = '6'
     LIMIT 5;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+Save time and money
+----------------------
+
+EvaDB automatically optimizes the queries to save inference cost and query execution time using its Cascades-style extensible query optimizer. EvaDB's optimizer is tailored for AI pipelines. The Cascades query optimization framework has worked well in SQL database systems for several decades. Query optimization in EvaDB is the bridge that connects the declarative query language to efficient execution.
+
+EvaDB accelerates AI pipelines using a collection of optimizations inspired by SQL database systems including function caching, sampling, and cost-based operator reordering.
+
+EvaDB supports an AI-oriented query language for analyzing both structured and unstructured data. Here are some illustrative apps:
+
+
+The :ref:`Getting Started` page shows how you can use EvaDB for different AI tasks and how you can easily extend EvaDB to support your custom deep learning model through user-defined functions.
+
+The :ref:`User Guides<image classification>` section contains Jupyter Notebooks that demonstrate how to use various features of EvaDB. Each notebook includes a link to Google Colab, where you can run the code yourself.
+
+
+
+
+User-Defined Function (UDF) or Function
+------------------------------------------
+
+User-defined functions are thin wrappers around deep learning models. They 
+allow us to use deep learning models in AI queries.
+
+Here is an illustrative UDF for classifying MNIST images.
+
+.. code-block:: bash
+
+    !wget -nc https://raw.githubusercontent.com/georgia-tech-db/evadb/master/evadb/udfs/mnist_image_classifier.py
+
+.. code-block:: python
+
+    cursor.create_function("MnistImageClassifier", True, 'mnist_image_classifier.py')
+    response = cursor.df()
+    print(response)
+
+That's it! You can now use the newly registered UDF anywhere in the query -- in the ``select`` or ``filter`` calls.
+
+.. code-block:: python
+
+    query = cursor.table("MNISTVideo")
+    query = query.filter("id = 30 OR id = 50 OR id = 70")
+
+    # Here, we are selecting the output of the function
+    query = query.select("data, MnistImageClassifier(data).label")
+    response = query.df()
+
+.. code-block:: python
+
+    query2 = cursor.table("MNISTVideo")
+
+    # Here, we are also filtering based on the output of the function
+    query2 = query2.filter("MnistImageClassifier(data).label = '6' AND id < 10")
+    query2 = query2.select("data, MnistImageClassifier(data).label")
+    response = query2.df()
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master

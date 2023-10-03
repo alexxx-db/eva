@@ -107,6 +107,16 @@ notebook_libs = [
 ]
 
 qdrant_libs = ["qdrant_client"]  # cannot install on 3.11 due to grcpio
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+pinecone_libs = ["pinecone-client"]
+
+chromadb_libs = ["chromadb"]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> eva-master
 
 pinecone_libs = ["pinecone-client"]
 
@@ -117,6 +127,18 @@ postgres_libs = [
 ]
 
 ludwig_libs = ["ludwig[hyperopt,distributed]"]  # MODEL TRAIN AND FINE TUNING
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+sklearn_libs = ["scikit-learn"]
+
+forecasting_libs = [
+    "statsforecast" # MODEL TRAIN AND FINE TUNING
+]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> eva-master
 
 sklearn_libs = ["scikit-learn"]
 
@@ -164,10 +186,29 @@ EXTRA_REQUIRES = {
     "chromadb": chromadb_libs,
     "postgres": postgres_libs,
     "ludwig": ludwig_libs,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
     "sklearn": sklearn_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+<<<<<<< HEAD
+=======
+=======
+    "forecasting": forecasting_libs,
+    # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    "sklearn": sklearn_libs,
+    "forecasting": forecasting_libs,
+    # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
 }
 
 setup(

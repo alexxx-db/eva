@@ -276,12 +276,26 @@ class CreateIndex:
             col_list += [ColumnDefinition(tv_expr.name, None, None, None)]
 
         return CreateIndexStatement(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            index_name, if_not_exists, table_ref, col_list, vector_store_type, function
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
             index_name,
             if_not_exists,
             table_ref,
             col_list,
             vector_store_type,
             project_expr_list,
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         )
 
     def vector_store_type(self, tree):

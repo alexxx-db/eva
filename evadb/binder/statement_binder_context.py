@@ -87,6 +87,28 @@ class StatementBinderContext:
             db_catalog_entry = self._catalog().get_database_catalog_entry(database_name)
             with get_database_handler(
                 db_catalog_entry.engine, **db_catalog_entry.params
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            ) as handler:
+                # Assemble columns.
+                column_df = handler.get_columns(table_name).data
+                table_obj = create_table_catalog_entry_for_data_source(
+                    table_name, database_name, column_df
+                )
+=======
+            )
+            handler.connect()
+
+            # Assemble columns.
+            column_df = handler.get_columns(table_name).data
+            table_obj = create_table_catalog_entry_for_data_source(
+                table_name, column_df
+            )
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-master
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -96,6 +118,10 @@ class StatementBinderContext:
                 table_obj = create_table_catalog_entry_for_data_source(
                     table_name, database_name, column_df
                 )
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
         else:
             table_obj = self._catalog().get_table_catalog_entry(table_name)
 
