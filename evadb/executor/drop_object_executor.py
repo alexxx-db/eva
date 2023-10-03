@@ -89,6 +89,9 @@ class DropObjectExecutor(AbstractExecutor):
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
+        elif self.node.object_type == ObjectType.DATABASE:
+            yield self._handle_drop_database(self.node.name, self.node.if_exists)
+
     def _handle_drop_table(self, table_name: str, if_exists: bool):
         if not self.catalog().check_table_exists(table_name):
             err_msg = "Table: {} does not exist".format(table_name)
