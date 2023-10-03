@@ -78,11 +78,15 @@ This query returns the label of all the images:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
     | objectdetectionvideos.id |          yolo.labels           |          yolo.bboxes           |          yolo.scores           |
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -94,10 +98,13 @@ This query returns the label of all the images:
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
     +-----------------------------------------------------------------------------------------------------+
     | objectdetectionvideos.id              | yolo.labels                                                |
@@ -107,11 +114,16 @@ This query returns the label of all the images:
     +-----------------------------------------------------------------------------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 
 Filtering Based on YOLO Function
 --------------------------------
@@ -122,12 +134,15 @@ In the following query, we use the output of the object detector to retrieve a s
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     SELECT id, Yolo(data).labels
         FROM ObjectDetectionVideos 
         WHERE ['person', 'car'] <@ Yolo(data).labels
@@ -143,15 +158,21 @@ In the following query, we use the output of the object detector to retrieve a s
         WHERE ['pedestrian', 'car'] <@ Yolo(data).label;
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
     SELECT id, Yolo(data).labels
         FROM ObjectDetectionVideos 
         WHERE ['person', 'car'] <@ Yolo(data).labels
         LIMIT 5;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 
 Now, the ``DataFrame`` only contains frames with the desired objects:
 
@@ -162,11 +183,15 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     +--------------------------+--------------------------------------------------------------+
     | objectdetectionvideos.id |                         yolo.labels                          |
     +--------------------------+--------------------------------------------------------------+
@@ -176,6 +201,7 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
     |            3             | ['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car', ... |
     |            4             | ['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car', ... |
     +--------------------------+--------------------------------------------------------------+
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -190,6 +216,8 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 
 .. include:: ../shared/footer.rst
 
@@ -201,6 +229,8 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
     |                            6 |
     |                            6 |
     +------------------------------+
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))

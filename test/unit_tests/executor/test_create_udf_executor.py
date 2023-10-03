@@ -62,11 +62,15 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     def test_should_raise_or_replace_if_not_exists(self):
         plan = type(
             "CreateFunctionPlan",
@@ -91,6 +95,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
         catalog_instance = MagicMock()
         catalog_instance().get_function_catalog_entry_by_name.return_value = True
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
         catalog_instance = MagicMock()
@@ -107,11 +112,16 @@ class CreateFunctionExecutorTest(unittest.TestCase):
         catalog_instance().get_function_catalog_entry_by_name.return_value = None
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         catalog_instance().insert_function_catalog_entry.return_value = "function"
         impl_path = MagicMock()
         abs_path = impl_path.absolute.return_value = MagicMock()
@@ -122,11 +132,15 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         plan = type(
             "CreateFunctionPlan",
             (),
@@ -192,7 +206,11 @@ class CreateFunctionExecutorTest(unittest.TestCase):
             "Function function added to the database.",
         )
 
+<<<<<<< HEAD
         # We create the function again with different parameters
+=======
+        # We create the function again with different paramaters
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         function_entry = MagicMock()
         cache = MagicMock()
         function_entry.dep_caches = [cache]
@@ -282,6 +300,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
             next(create_function_executor.exec())
         self.assertIn(
 <<<<<<< HEAD
+<<<<<<< HEAD
             "Error creating function, input/output definition incorrect:",
 =======
 <<<<<<< HEAD
@@ -294,11 +313,14 @@ class CreateFunctionExecutorTest(unittest.TestCase):
 =======
             "Error creating function, input/output definition incorrect:",
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
             "Error creating Function, input/output definition incorrect:",
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             str(exc.exception),
         )
 

@@ -31,6 +31,7 @@ class Functions:
         function_name = None
         function_output = None
 <<<<<<< HEAD
+<<<<<<< HEAD
         function_args = []
 =======
 <<<<<<< HEAD
@@ -43,11 +44,14 @@ class Functions:
 =======
         function_args = []
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
         function_args = None
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 
         for child in tree.children:
             if isinstance(child, Token):
@@ -78,6 +82,7 @@ class Functions:
     def create_function(self, tree):
         function_name = None
 <<<<<<< HEAD
+<<<<<<< HEAD
         or_replace = False
 =======
 <<<<<<< HEAD
@@ -89,10 +94,13 @@ class Functions:
 =======
         or_replace = False
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         if_not_exists = False
         input_definitions = []
         output_definitions = []
@@ -107,6 +115,7 @@ class Functions:
                 if child.data == "function_name":
                     function_name = self.visit(child)
 <<<<<<< HEAD
+<<<<<<< HEAD
                 elif child.data == "or_replace":
                     or_replace = True
 =======
@@ -121,10 +130,13 @@ class Functions:
                 elif child.data == "or_replace":
                     or_replace = True
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
                 elif child.data == "if_not_exists":
                     if_not_exists = True
                 elif child.data == "create_definitions":
@@ -156,6 +168,7 @@ class Functions:
         return CreateFunctionStatement(
             function_name,
 <<<<<<< HEAD
+<<<<<<< HEAD
             or_replace,
 =======
 <<<<<<< HEAD
@@ -167,10 +180,13 @@ class Functions:
 =======
             or_replace,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             if_not_exists,
             impl_path,
             input_definitions,

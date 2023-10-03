@@ -54,11 +54,15 @@ DummyFeatureExtractor_function_query = """CREATE FUNCTION
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 DummyNoInputFunction_function_query = """CREATE FUNCTION
                   IF NOT EXISTS DummyNoInputFunction
                   IMPL '{}/../test/util.py';
@@ -75,17 +79,23 @@ DummyLLM_function_query = """CREATE FUNCTION
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 fuzzy_function_query = """CREATE FUNCTION IF NOT EXISTS FuzzDistance
                     INPUT (Input_Array1 NDARRAY ANYTYPE, Input_Array2 NDARRAY ANYTYPE)
                     OUTPUT (distance FLOAT(32, 7))
@@ -253,6 +263,7 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
     the function loads a smaller model to accelerate the test suite time.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     Args:G
 =======
 <<<<<<< HEAD
@@ -265,11 +276,14 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
 =======
     Args:G
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
     Args:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         mode (str, optional): The mode for loading functions, either 'debug' or 'release'.
         Defaults to 'debug'.
 
@@ -320,6 +334,7 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
                 DummyMultiObjectDetector_function_query,
                 DummyFeatureExtractor_function_query,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 DummyNoInputFunction_function_query,
                 DummyLLM_function_query,
 =======
@@ -334,10 +349,13 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
                 DummyNoInputFunction_function_query,
                 DummyLLM_function_query,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             ]
         )
 

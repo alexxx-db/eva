@@ -81,6 +81,7 @@ class ChatGPT(AbstractFunction):
         return "ChatGPT"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 =======
 <<<<<<< HEAD
@@ -93,11 +94,14 @@ class ChatGPT(AbstractFunction):
 =======
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
     @setup(cacheable=False, function_type="chat-completion", batchable=True)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     def setup(
         self,
         model="gpt-3.5-turbo",

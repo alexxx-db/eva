@@ -142,11 +142,15 @@ class StatementToOprTest(unittest.TestCase):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     def test_visit_select_without_table_ref(self):
         converter = StatementToPlanConverter()
         converter.visit_table_ref = MagicMock()
@@ -170,17 +174,23 @@ class StatementToOprTest(unittest.TestCase):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     @patch("evadb.optimizer.statement_to_opr_converter.LogicalCreateFunction")
     @patch(
         "evadb.optimizer.\
@@ -368,6 +378,7 @@ statement_to_opr_converter.metadata_definition_to_function_metadata"
             MagicMock(), MagicMock(), MagicMock(), MagicMock()
         )
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -379,10 +390,13 @@ statement_to_opr_converter.metadata_definition_to_function_metadata"
 =======
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         create_plan.append_child(create_function_plan)
 
         plans.append(dummy_plan)

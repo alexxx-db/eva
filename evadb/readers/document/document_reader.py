@@ -16,10 +16,13 @@ from pathlib import Path
 from typing import Dict, Iterator
 
 from evadb.catalog.sql_config import ROW_NUM_COLUMN
+<<<<<<< HEAD
 from evadb.configuration.constants import (
     DEFAULT_DOCUMENT_CHUNK_OVERLAP,
     DEFAULT_DOCUMENT_CHUNK_SIZE,
 )
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.readers.abstract_reader import AbstractReader
 from evadb.readers.document.registry import (
     _lazy_import_loader,

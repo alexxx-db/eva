@@ -30,12 +30,15 @@ class CreateFunctionPlan(AbstractPlan):
             function_name provided by the user required
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         or_replace: bool
             if true should overwrite if function with same name exists
         if_not_exists: bool
@@ -51,15 +54,21 @@ class CreateFunctionPlan(AbstractPlan):
             else will replace the existing
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
         or_replace: bool
             if true should overwrite if function with same name exists
         if_not_exists: bool
             if true should skip if function with same name exists
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         inputs: List[FunctionIOCatalogEntry]
             function inputs, annotated list similar to table columns
         outputs: List[FunctionIOCatalogEntry]
@@ -126,6 +135,7 @@ class CreateFunctionPlan(AbstractPlan):
     def __str__(self):
         return "CreateFunctionPlan(name={}, \
 <<<<<<< HEAD
+<<<<<<< HEAD
             or_replace={}, \
 =======
 <<<<<<< HEAD
@@ -137,10 +147,13 @@ class CreateFunctionPlan(AbstractPlan):
 =======
             or_replace={}, \
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             if_not_exists={}, \
             inputs={}, \
             outputs={}, \

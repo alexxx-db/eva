@@ -21,6 +21,10 @@ from evadb.catalog.catalog_utils import xform_column_definitions_to_catalog_entr
 from evadb.catalog.models.utils import TableCatalogEntry
 from evadb.parser.create_statement import ColumnDefinition
 
+from evadb.catalog.catalog_utils import xform_column_definitions_to_catalog_entries
+from evadb.catalog.models.utils import TableCatalogEntry
+from evadb.parser.create_statement import ColumnDefinition
+
 if TYPE_CHECKING:
     from evadb.catalog.catalog_manager import CatalogManager
 
@@ -209,14 +213,22 @@ def handle_vector_store_params(
 def create_table_catalog_entry_for_native_table(
     table_info: TableInfo, column_list: List[ColumnDefinition]
 ):
+<<<<<<< HEAD
     column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
+=======
+    column_catalog_entires = xform_column_definitions_to_catalog_entries(column_list)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
         name=table_info.table_name,
         file_url=None,
         table_type=TableType.NATIVE_DATA,
+<<<<<<< HEAD
         columns=column_catalog_entries,
+=======
+        columns=column_catalog_entires,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         database_name=table_info.database_name,
     )
     return table_catalog_entry

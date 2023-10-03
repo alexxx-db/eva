@@ -32,10 +32,15 @@ class IndexCatalog(BaseModel):
     `_function_signature:` if the index is created by running function expression on input column, this will store
                       the function signature of the used function. Otherwise, this field is None.
 <<<<<<< HEAD
+<<<<<<< HEAD
     `_index_def:` the original SQL statement that is used to create this index. We record this to rerun create index
                 on updated table.
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    `_index_def:` the original SQL statement that is used to create this index. We record this to rerun create index
+                on updated table.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     """
 
     __tablename__ = "index_catalog"
@@ -48,9 +53,13 @@ class IndexCatalog(BaseModel):
     )
     _function_signature = Column("function", String, default=None)
 <<<<<<< HEAD
+<<<<<<< HEAD
     _index_def = Column("index_def", String, default=None)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    _index_def = Column("index_def", String, default=None)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     _feat_column = relationship(
         "ColumnCatalog",
@@ -65,9 +74,13 @@ class IndexCatalog(BaseModel):
         feat_column_id: int = None,
         function_signature: str = None,
 <<<<<<< HEAD
+<<<<<<< HEAD
         index_def: str = None,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        index_def: str = None,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     ):
         self._name = name
         self._save_file_path = save_file_path
@@ -75,9 +88,13 @@ class IndexCatalog(BaseModel):
         self._feat_column_id = feat_column_id
         self._function_signature = function_signature
 <<<<<<< HEAD
+<<<<<<< HEAD
         self._index_def = index_def
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        self._index_def = index_def
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     def as_dataclass(self) -> "IndexCatalogEntry":
         feat_column = self._feat_column.as_dataclass() if self._feat_column else None
@@ -89,8 +106,12 @@ class IndexCatalog(BaseModel):
             feat_column_id=self._feat_column_id,
             function_signature=self._function_signature,
 <<<<<<< HEAD
+<<<<<<< HEAD
             index_def=self._index_def,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            index_def=self._index_def,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             feat_column=feat_column,
         )

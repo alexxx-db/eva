@@ -91,11 +91,15 @@ This query returns the faces detected in the first ten frames of the video:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     +----------+---------------------+-------------------------+
     | happy.id | facedetector.bboxes |   facedetector.scores   |
     +----------+---------------------+-------------------------+
@@ -117,10 +121,13 @@ This query returns the faces detected in the first ten frames of the video:
     +----------+---------------------+-------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
    +-----------------------------------------------------------------------------------------------------+
    | objectdetectionvideos.id              | yolo.labels                                                |
@@ -130,11 +137,16 @@ This query returns the faces detected in the first ten frames of the video:
    +-----------------------------------------------------------------------------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 
 Chaining Functions in a Single AI Query 
 ---------------------------------------
@@ -159,11 +171,15 @@ Now, the ``DataFrame`` only contains the emotions of the detected faces:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     +----------+-------------------+------------------------+------------------------+
     | happy.id |     Face.bbox     | emotiondetector.labels | emotiondetector.scores |
     +----------+-------------------+------------------------+------------------------+
@@ -191,10 +207,13 @@ Now, the ``DataFrame`` only contains the emotions of the detected faces:
     +----------+-------------------+------------------------+------------------------+
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
     +------------------------------+
     |  objectdetectionvideos.label |
@@ -204,10 +223,15 @@ Now, the ``DataFrame`` only contains the emotions of the detected faces:
     +------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 
 .. include:: ../shared/footer.rst

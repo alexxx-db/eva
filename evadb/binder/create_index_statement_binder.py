@@ -170,7 +170,11 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
                 len(output.array_dimensions) == 2
             ), "Index input needs to be 2 dimensional."
 
+<<<<<<< HEAD
             # Vector type specific check.
+=======
+            # Vector type speciic check.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             if node.vector_store_type == VectorStoreType.FAISS:
                 assert (
                     output.array_type == NdArrayType.FLOAT32

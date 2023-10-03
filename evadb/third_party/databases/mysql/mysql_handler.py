@@ -50,6 +50,7 @@ class MysqlHandler(DBHandler):
             self.connection.close()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     def get_sqlalchmey_uri(self) -> str:
         return f"mysql+mysqlconnector://{self.user}:{self.password}@{self.host}:{self.port}/{self.database}"
 
@@ -67,10 +68,13 @@ class MysqlHandler(DBHandler):
         return f"mysql+mysqlconnector://{self.user}:{self.password}@{self.host}:{self.port}/{self.database}"
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     def check_connection(self) -> DBHandlerStatus:
         if self.connection:
             return DBHandlerStatus(status=True)
@@ -116,6 +120,7 @@ class MysqlHandler(DBHandler):
             if not res:
                 return pd.DataFrame({"status": ["success"]})
 <<<<<<< HEAD
+<<<<<<< HEAD
             res_df = pd.DataFrame(
                 res, columns=[desc[0].lower() for desc in cursor.description]
             )
@@ -134,11 +139,14 @@ class MysqlHandler(DBHandler):
                 res, columns=[desc[0].lower() for desc in cursor.description]
             )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
             res_df = pd.DataFrame(res, columns=[desc[0] for desc in cursor.description])
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             return res_df
         except mysql.connector.ProgrammingError as e:
             if str(e) == "no results to fetch":

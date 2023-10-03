@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 <<<<<<< HEAD
+<<<<<<< HEAD
 import datetime
 =======
 <<<<<<< HEAD
@@ -24,10 +25,13 @@ import datetime
 =======
 import datetime
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 import sqlite3
 
 import pandas as pd
@@ -73,6 +77,7 @@ class SQLiteHandler(DBHandler):
             self.connection.close()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     def get_sqlalchmey_uri(self) -> str:
         return f"sqlite:///{self.database}"
 
@@ -90,10 +95,13 @@ class SQLiteHandler(DBHandler):
         return f"sqlite:///{self.database}"
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
     def check_connection(self) -> DBHandlerStatus:
         """
         Check connection to the handler.
@@ -145,28 +153,38 @@ class SQLiteHandler(DBHandler):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             columns_df["dtype"] = columns_df["dtype"].apply(
                 self._sqlite_to_python_types
             )
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             return DBHandlerResponse(data=columns_df)
         except sqlite3.Error as e:
             return DBHandlerResponse(data=None, error=str(e))
@@ -178,11 +196,15 @@ class SQLiteHandler(DBHandler):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             # Handling case-sensitive databases like SQLite can be tricky. Currently,
             # EvaDB converts all columns to lowercase, which may result in issues with
             # these databases. As we move forward, we are actively working on improving
@@ -190,9 +212,12 @@ class SQLiteHandler(DBHandler):
             # For more information, please refer to https://github.com/georgia-tech-db/evadb/issues/1079.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
             res = cursor.fetchall()
             res_df = pd.DataFrame(
                 res,
@@ -209,15 +234,21 @@ class SQLiteHandler(DBHandler):
                 columns=[desc[0] for desc in cursor.description]
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
             res = cursor.fetchall()
             res_df = pd.DataFrame(
                 res,
                 columns=[desc[0].lower() for desc in cursor.description]
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
                 if cursor.description
                 else [],
             )
@@ -248,11 +279,15 @@ class SQLiteHandler(DBHandler):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 
     def _sqlite_to_python_types(self, sqlite_type: str):
         mapping = {
@@ -295,14 +330,20 @@ class SQLiteHandler(DBHandler):
             )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)

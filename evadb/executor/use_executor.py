@@ -44,9 +44,12 @@ class UseExecutor(AbstractExecutor):
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         handler = get_database_handler(
             db_catalog_entry.engine,
             **db_catalog_entry.params,
@@ -63,7 +66,10 @@ class UseExecutor(AbstractExecutor):
             resp = handler.execute_native_query(self._query_string)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
         with get_database_handler(
             db_catalog_entry.engine, **db_catalog_entry.params
@@ -71,7 +77,10 @@ class UseExecutor(AbstractExecutor):
             resp = handler.execute_native_query(self._query_string)
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
         if resp and resp.error is None:
             yield Batch(resp.data)
         else:
