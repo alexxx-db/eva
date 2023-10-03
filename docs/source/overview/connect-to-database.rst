@@ -11,8 +11,11 @@ Connect to a SQL Database System
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
 
 .. code-block::
@@ -28,6 +31,7 @@ Connect to a SQL Database System
    };
 =======
 1. Use the `CREATE DATABASE` statement to connect to an existing SQL database.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
@@ -47,10 +51,19 @@ Connect to a SQL Database System
 <<<<<<< HEAD
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
+=======
+=======
+1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
-.. code-block:: python
+.. code-block::
 
+<<<<<<< HEAD
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
    cursor.query("""
         CREATE DATABASE restaurant_reviews 
         WITH ENGINE = 'postgres', 
@@ -65,8 +78,11 @@ Connect to a SQL Database System
 <<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
    CREATE DATABASE restaurant_reviews 
    WITH ENGINE = 'postgres', 
    PARAMETERS = {
@@ -77,6 +93,7 @@ Connect to a SQL Database System
        "database": "restaurant_reviews"
    };
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
@@ -85,6 +102,9 @@ Connect to a SQL Database System
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
 .. note::
 
@@ -95,8 +115,11 @@ Connect to a SQL Database System
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 2. Preview the Available Data Using ``SELECT``
 
 You can now preview the available data in the ``restaurant_reviews`` database with a standard :ref:`SELECT<sql-select>` statement.
@@ -121,6 +144,7 @@ You can also run native queries directly in the connected database system by the
 =======
 2. Preview the Available Data Using `SELECT`
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 2. Preview the Available Data Using ``SELECT``
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -159,23 +183,29 @@ You can also run native queries directly in the connected database system by the
 <<<<<<< HEAD
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
+=======
+=======
+2. Preview the Available Data Using ``SELECT``
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
-You can now preview the available data in the `restaurant_reviews` database with a standard :ref:`SELECT<sql-select>` statement.
+You can now preview the available data in the ``restaurant_reviews`` database with a standard :ref:`SELECT<sql-select>` statement.
 
-.. code-block:: python
+.. code-block:: sql
 
-   cursor.query("""
-      SELECT * 
-      FROM restaurant_reviews.food_review;
-      """).df()
+   SELECT * FROM restaurant_reviews.food_review;
 
-3. Run Native Queries in the Connected Database With `USE`
+3. Run Native Queries in the Connected Database With ``USE``
 
 You can also run native queries directly in the connected database system by the :ref:`USE<sql-use>` statement.
 
-.. code-block:: python
+.. code-block::
 
+<<<<<<< HEAD
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
    cursor.query(
       """
         USE restaurant_reviews {
@@ -190,8 +220,11 @@ You can also run native queries directly in the connected database system by the
 <<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
    USE restaurant_reviews {
        INSERT INTO food_review (name, review) 
        VALUES (
@@ -199,6 +232,7 @@ You can also run native queries directly in the connected database system by the
            'I ordered fried rice but it is too salty.'
        )
    };
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -208,6 +242,9 @@ You can also run native queries directly in the connected database system by the
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
 
 Load Unstructured Data
@@ -224,8 +261,11 @@ You can load a collection of images obtained from Reddit from the local filesyst
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 .. code-block:: sql
 
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
@@ -249,6 +289,7 @@ You can load a collection of images obtained from Reddit from the local filesyst
 
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
@@ -259,6 +300,8 @@ You can load a collection of images obtained from Reddit from the local filesyst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
 2. Load Video from Cloud Bucket
 
@@ -269,8 +312,11 @@ You can load a video from an S3 cloud bucket into EvaDB using the :ref:`LOAD<sql
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 .. code-block:: sql
 
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
@@ -294,6 +340,7 @@ You can load a video from an S3 cloud bucket into EvaDB using the :ref:`LOAD<sql
 
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
@@ -304,6 +351,8 @@ You can load a video from an S3 cloud bucket into EvaDB using the :ref:`LOAD<sql
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
 .. note::
 

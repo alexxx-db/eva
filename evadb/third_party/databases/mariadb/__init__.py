@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -29,6 +30,8 @@
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 <<<<<<<< HEAD:evadb/third_party/databases/mariadb/__init__.py
 """mariadb integrations"""
 ========
@@ -37,6 +40,7 @@
 =======
 """mariadb integrations"""
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -63,3 +67,5 @@
 """user defined test functions operating on ndarrays functions"""
 >>>>>>>> 2dacff69 (feat: sync master staging (#1050)):test/integration_tests/long/functions/ndarray/__init__.py
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)

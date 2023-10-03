@@ -85,6 +85,7 @@ DROP UDF
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -101,6 +102,10 @@ DROP UDF
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
 DROP DATABASE
 -------------
@@ -111,12 +116,16 @@ DROP DATABASE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
     DROP DATABASE IF EXISTS postgres_db;
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
     DROP DATABASE IF EXISTS postgres_db;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> eva-master
@@ -200,3 +209,5 @@ DROP FUNCTION
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)

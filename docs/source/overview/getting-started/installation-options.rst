@@ -181,6 +181,9 @@ This installation option enables more efficient query execution on CPUs and GPUs
 * ``pip install evadb[forecasting]`` for installing the statsforecast forecasting framework. It enables use-cases related to time series forecasting.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 * ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tunining AI models.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -189,6 +192,7 @@ This installation option enables more efficient query execution on CPUs and GPUs
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 * ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tunining AI models.
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
@@ -213,6 +217,8 @@ This installation option enables more efficient query execution on CPUs and GPUs
 * ``pip install evadb[ludwig]`` for installing the Ludwig model training framework. It enables use-cases related to training and fine-tuning AI models.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
 * ``pip install evadb[ray]`` for installing the Ray compute engine. It enables EvaDB to do more efficient query execution on CPUs and GPUs.
 

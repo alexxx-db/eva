@@ -130,6 +130,7 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -143,6 +144,8 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 .. include:: ../shared/nlp.rst
 
 .. include:: ../shared/footer.rst
@@ -180,9 +183,12 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 .. include:: ../shared/nlp.rst
 
 .. include:: ../shared/footer.rst
@@ -191,6 +197,9 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
@@ -199,6 +208,7 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 .. include:: ../shared/footer.rst
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
@@ -269,3 +279,5 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)

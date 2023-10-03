@@ -27,13 +27,17 @@ from evadb.plan_nodes.create_index_plan import CreateIndexPlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 from evadb.storage.storage_engine import StorageEngine
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -50,6 +54,9 @@ from evadb.storage.storage_engine import StorageEngine
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 from evadb.third_party.databases.interface import get_database_handler
 from evadb.third_party.vector_stores.types import FeaturePayload
 from evadb.third_party.vector_stores.utils import VectorStoreFactory
@@ -242,10 +249,13 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
         # Get feature column.
         feat_col_name = self.col_list[0].name
         feat_col_catalog_entry = [
@@ -278,6 +288,9 @@ class CreateIndexExecutor(AbstractExecutor):
                     )
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
             # Find function expression.
             function_expression = None
@@ -292,6 +305,7 @@ class CreateIndexExecutor(AbstractExecutor):
             # Add features to index.
             # TODO: batch size is hardcoded for now.
             input_dim = -1
+<<<<<<< HEAD
 <<<<<<< HEAD
             storage_engine = StorageEngine.factory(self.db, feat_catalog_entry)
             for input_batch in storage_engine.read(feat_catalog_entry):
@@ -414,6 +428,8 @@ class CreateIndexExecutor(AbstractExecutor):
             # TODO: batch size is hardcoded for now.
             input_dim = -1
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
             storage_engine = StorageEngine.factory(self.db, feat_catalog_entry)
             for input_batch in storage_engine.read(feat_catalog_entry):
                 if self.node.function:
@@ -477,12 +493,16 @@ class CreateIndexExecutor(AbstractExecutor):
                 feat = input_batch.column_as_numpy_array(feat_col_name)
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
             for input_batch in self.children[0].exec():
                 input_batch.drop_column_alias()
                 feat = input_batch.column_as_numpy_array(feat_col_name)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -502,6 +522,9 @@ class CreateIndexExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
                 row_num = input_batch.column_as_numpy_array(ROW_NUM_COLUMN)
 
                 for i in range(len(input_batch)):

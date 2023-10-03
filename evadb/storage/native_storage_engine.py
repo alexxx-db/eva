@@ -181,8 +181,11 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
     def read(
         self, table: TableCatalogEntry, batch_mem_size: int = 30000000
     ) -> Iterator[Batch]:
@@ -196,6 +199,7 @@ class NativeStorageEngine(AbstractStorageEngine):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
@@ -213,6 +217,9 @@ class NativeStorageEngine(AbstractStorageEngine):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
         try:
             db_catalog_entry = self._get_database_catalog_entry(table.database_name)
             with get_database_handler(
@@ -221,6 +228,9 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
                 handler_response = handler.select(table.name)
                 # we prefer the generator/iterator when available
                 result = []
@@ -232,6 +242,7 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
                 uri = handler.get_sqlalchmey_uri()
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -305,6 +316,8 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
                 uri = handler.get_sqlalchmey_uri()
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
                 if handler.is_sqlalchmey_compatible():
                     # For sql data source, we can deserialize sql rows into numpy array
@@ -333,6 +346,7 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -347,6 +361,8 @@ class NativeStorageEngine(AbstractStorageEngine):
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
 =======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
             if data_batch:
                 yield Batch(pd.DataFrame(data_batch))
 
@@ -376,6 +392,7 @@ class NativeStorageEngine(AbstractStorageEngine):
                         _deserialize_sql_row(row, ordered_columns) for row in result
                     )
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 for data_batch in result:
                     yield Batch(pd.DataFrame([data_batch]))
@@ -393,6 +410,13 @@ class NativeStorageEngine(AbstractStorageEngine):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+                for data_batch in result:
+                    yield Batch(pd.DataFrame([data_batch]))
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
         except Exception as e:
             err_msg = f"Failed to read the table {table.name} in data source {table.database_name} with exception {str(e)}"
             logger.exception(err_msg)

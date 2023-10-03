@@ -35,6 +35,7 @@ class CreateDatabaseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -89,10 +90,19 @@ class CreateDatabaseExecutor(AbstractExecutor):
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 =======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
         # Check if database already exists.
         db_catalog_entry = self.catalog().get_database_catalog_entry(
             self.node.database_name
@@ -113,6 +123,7 @@ class CreateDatabaseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -136,10 +147,15 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
         # TODO: handle if_not_exists
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -163,6 +179,8 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
 =======
         # TODO: handle if_not_exists
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -172,6 +190,7 @@ class CreateDatabaseExecutor(AbstractExecutor):
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
@@ -206,11 +225,14 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
         logger.debug(
             f"Trying to connect to the provided engine {self.node.engine} with params {self.node.param_dict}"
         )
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -252,6 +274,12 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
         # Check the validity of database entry.
         with get_database_handler(self.node.engine, **self.node.param_dict):
             pass
@@ -286,6 +314,7 @@ class CreateDatabaseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
@@ -309,6 +338,10 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
         # Check the validity of database entry.
         with get_database_handler(self.node.engine, **self.node.param_dict):
             pass
@@ -320,10 +353,14 @@ class CreateDatabaseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -364,6 +401,8 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
         logger.debug(f"Creating database {self.node}")
         self.catalog().insert_database_catalog_entry(

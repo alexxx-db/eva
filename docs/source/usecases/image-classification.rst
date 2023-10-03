@@ -287,8 +287,12 @@ To create a custom ``MnistImageClassifier`` function, use the ``CREATE FUNCTION`
 Create Image Classification Function
 ------------------------------------
 
+<<<<<<< HEAD
 To create a custom ``MnistImageClassifier`` function, use the ``CREATE FUNCTION`` statement. The code for the custom classification model is available `here <https://github.com/georgia-tech-db/evadb/blob/master/evadb/udfs/mnist_image_classifier.py>`_.
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+To create a custom ``MnistImageClassifier`` function, use the ``CREATE FUNCTION`` statement. The code for the custom classification model is available `here <https://github.com/georgia-tech-db/evadb/blob/master/evadb/functions/mnist_image_classifier.py>`_.
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
 
 We will assume that the file is downloaded and stored as ``mnist_image_classifier.py``. Now, run the following query to register the AI function:
 
