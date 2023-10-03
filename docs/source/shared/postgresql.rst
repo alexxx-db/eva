@@ -8,7 +8,11 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. code-block::
+=======
+.. code-block:: text
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
     CREATE DATABASE postgres_data 
     WITH ENGINE = 'postgres', 
@@ -53,8 +57,11 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
             }
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 .. code-block:: text
 
     CREATE DATABASE postgres_data 
@@ -66,6 +73,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
         "port": "5432",
         "database": "evadb"
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -103,3 +111,6 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
             }
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)

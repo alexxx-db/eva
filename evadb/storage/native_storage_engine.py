@@ -162,14 +162,25 @@ class NativeStorageEngine(AbstractStorageEngine):
             logger.exception(err_msg)
             raise Exception(err_msg)
 
+<<<<<<< HEAD
     def read(
         self, table: TableCatalogEntry, batch_mem_size: int = 30000000
     ) -> Iterator[Batch]:
+=======
+<<<<<<< HEAD
+    def read(self, table: TableCatalogEntry) -> Iterator[Batch]:
+=======
+    def read(
+        self, table: TableCatalogEntry, batch_mem_size: int = 30000000
+    ) -> Iterator[Batch]:
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         try:
             db_catalog_entry = self._get_database_catalog_entry(table.database_name)
             with get_database_handler(
                 db_catalog_entry.engine, **db_catalog_entry.params
             ) as handler:
+<<<<<<< HEAD
                 handler_response = handler.select(table.name)
                 # we prefer the generator/iterator when available
                 result = []
@@ -177,6 +188,10 @@ class NativeStorageEngine(AbstractStorageEngine):
                     result = handler_response.data_generator
                 elif handler_response.data:
                     result = handler_response.data
+=======
+<<<<<<< HEAD
+                uri = handler.get_sqlalchmey_uri()
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
                 if handler.is_sqlalchmey_compatible():
                     # For sql data source, we can deserialize sql rows into numpy array
@@ -202,6 +217,42 @@ class NativeStorageEngine(AbstractStorageEngine):
                     yield Batch(pd.DataFrame([data_batch]))
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
+<<<<<<< HEAD
+=======
+            if data_batch:
+                yield Batch(pd.DataFrame(data_batch))
+
+            session.close()
+=======
+                handler_response = handler.select(table.name)
+                # we prefer the generator/iterator when available
+                result = []
+                if handler_response.data_generator:
+                    result = handler_response.data_generator
+                elif handler_response.data:
+                    result = handler_response.data
+
+                if handler.is_sqlalchmey_compatible():
+                    # For sql data source, we can deserialize sql rows into numpy array
+                    cols = result[0]._fields
+                    index_dict = {
+                        element.lower(): index for index, element in enumerate(cols)
+                    }
+                    try:
+                        ordered_columns = sorted(
+                            table.columns, key=lambda x: index_dict[x.name.lower()]
+                        )
+                    except KeyError as e:
+                        raise Exception(f"Column mismatch with error {e}")
+                    result = (
+                        _deserialize_sql_row(row, ordered_columns) for row in result
+                    )
+
+                for data_batch in result:
+                    yield Batch(pd.DataFrame([data_batch]))
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         except Exception as e:
             err_msg = f"Failed to read the table {table.name} in data source {table.database_name} with exception {str(e)}"
             logger.exception(err_msg)

@@ -8,12 +8,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <p align="center"><i><b>Database system for AI-powered apps</b></i></p>
 =======
 <p align="center"><i><b>Bring AI inside your database system and build AI-powered apps</b></i></p>
 >>>>>>> cd39ae6e (docs: Update README.md)
+=======
+<p align="center"><i><b>Bring AI inside your database system and build AI-powered apps</b></i></p>
+=======
+<p align="center"><i><b>Database system for AI-powered apps</b></i></p>
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
 <p align="center">
 <a href="https://github.com/georgia-tech-db/evadb/fork" target="blank">
@@ -211,6 +218,7 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 <ul>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <li> ⭐ starring our <a href="https://github.com/georgia-tech-db/evadb">GitHub 🐙 Repo</a>
 =======
   <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
@@ -218,17 +226,12 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 =======
   <li> ⭐ starring our <a href="https://github.com/georgia-tech-db/evadb">GitHub 🐙 Repo</a>
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+  <li> ⭐ starring our <a href="https://github.com/georgia-tech-db/evadb">GitHub 🐙 Repo</a>
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
   <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
   <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
   <li> 📝 following us on <a href="https://medium.com/evadb-blog">Medium</a>
-</ul>
-
-👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by: 
-<ul>
-  <li> 🐙 giving a ⭐ on our <a href="https://github.com/georgia-tech-db/evadb">EvaDB repo on Github</a>
-  <li> 📟 joining our <a href="https://evadb.ai/community">Slack Community</a>
-  <li> 🐦 following us on <a href="https://twitter.com/evadb_ai">Twitter</a>
-  <li> 🐦 following us on <a href="https://medium.com/evadb-blog">Medium</a>
 </ul>
 
 ## Quick Links
@@ -341,6 +344,7 @@ The input row [enterpreneurship, startups, venture capital] must generate the ou
 CREATE INDEX reddit_sift_image_index
     ON reddit_dataset (SiftFeatureExtractor(data))
     USING FAISS
+<<<<<<< HEAD
 
 SELECT name FROM reddit_dataset ORDER BY
     Similarity(
@@ -421,6 +425,9 @@ CREATE INDEX reddit_sift_image_index
     ON reddit_dataset (SiftFeatureExtractor(data))
     USING FAISS
 
+=======
+
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 SELECT name FROM reddit_dataset ORDER BY
     Similarity(
         SiftFeatureExtractor(Open('reddit-images/g1074_d4mxztt.jpg')),
@@ -433,6 +440,7 @@ SELECT name FROM reddit_dataset ORDER BY
 
 Here are some illustrative AI apps built using EvaDB (each notebook can be opened on Google Colab):
 
+<<<<<<< HEAD
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/13-privategpt.html">PrivateGPT</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/08-chatgpt.html">ChatGPT-based Video Question Answering</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/12-query-pdf.html">Querying PDF Documents</a>
@@ -500,6 +508,8 @@ SELECT name FROM reddit_dataset ORDER BY
 
 Here are some illustrative AI apps built using EvaDB (each notebook can be opened on Google Colab):
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/sentiment-analysis.html">Sentiment Analysis using LLM within PostgreSQL</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/question-answering.html">ChatGPT-based Video Question Answering</a>
  * 🔮 <a href="https://evadb.readthedocs.io/en/stable/source/usecases/text-summarization.html">Text Summarization on PDF Documents</a>

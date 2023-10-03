@@ -21,8 +21,11 @@ import pandas as pd
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import setup
 
@@ -38,6 +41,9 @@ from evadb.udfs.decorators.io_descriptors.data_types import PandasDataframe
 class ForecastModel(AbstractUDF):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import setup
@@ -45,8 +51,11 @@ from evadb.functions.decorators.decorators import setup
 
 class ForecastModel(AbstractFunction):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     @property
     def name(self) -> str:
         return "ForecastModel"
@@ -54,10 +63,15 @@ class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     @setup(cacheable=False, function_type="Forecasting", batchable=True)
     def setup(
         self,
@@ -66,8 +80,12 @@ class ForecastModel(AbstractFunction):
         predict_column_rename: str,
         time_column_rename: str,
         id_column_rename: str,
+<<<<<<< HEAD
         horizon: int,
         library: str,
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
     ):
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -78,10 +96,18 @@ class ForecastModel(AbstractFunction):
     def setup(self, model_name: str, model_path: str):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+        horizon: int,
+        library: str,
+    ):
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         f = open(model_path, "rb")
         loaded_model = pickle.load(f)
         f.close()
@@ -90,10 +116,13 @@ class ForecastModel(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         self.predict_column_rename = predict_column_rename
         self.time_column_rename = time_column_rename
         self.id_column_rename = id_column_rename
@@ -129,7 +158,23 @@ class ForecastModel(AbstractFunction):
         ), "Forecast UDF expects integral horizon in parameter."
         forecast_df = self.model.predict(h=horizon)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+        self.predict_column_rename = predict_column_rename
+        self.time_column_rename = time_column_rename
+        self.id_column_rename = id_column_rename
+        self.horizon = int(horizon)
+        self.library = library
+
+    def forward(self, data) -> pd.DataFrame:
+        if self.library == "statsforecast":
+            forecast_df = self.model.predict(h=self.horizon)
+        else:
+            forecast_df = self.model.predict()
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         forecast_df.reset_index(inplace=True)
         forecast_df = forecast_df.rename(
             columns={
@@ -137,7 +182,12 @@ class ForecastModel(AbstractFunction):
                 "ds": self.time_column_rename,
                 self.model_name: self.predict_column_rename,
             }
+<<<<<<< HEAD
         )[: self.horizon * forecast_df["unique_id"].nunique()]
+=======
+<<<<<<< HEAD
+        )
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         return forecast_df
 =======
 <<<<<<< HEAD
@@ -162,6 +212,7 @@ class ForecastModel(AbstractFunction):
         )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         if self.library == "statsforecast":
             forecast_df = self.model.predict(h=self.horizon)
@@ -179,3 +230,9 @@ class ForecastModel(AbstractFunction):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+        )[: self.horizon * forecast_df["unique_id"].nunique()]
+        return forecast_df
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)

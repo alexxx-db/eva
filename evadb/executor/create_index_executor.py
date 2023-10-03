@@ -24,6 +24,13 @@ from evadb.executor.executor_utils import ExecutorError, handle_vector_store_par
 from evadb.expression.function_expression import FunctionExpression
 from evadb.models.storage.batch import Batch
 from evadb.plan_nodes.create_index_plan import CreateIndexPlan
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+from evadb.storage.storage_engine import StorageEngine
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 from evadb.third_party.databases.interface import get_database_handler
 from evadb.third_party.vector_stores.types import FeaturePayload
 from evadb.third_party.vector_stores.utils import VectorStoreFactory
@@ -129,6 +136,7 @@ class CreateIndexExecutor(AbstractExecutor):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         # Get feature column.
         feat_col_name = self.col_list[0].name
         feat_col_catalog_entry = [
@@ -160,9 +168,21 @@ class CreateIndexExecutor(AbstractExecutor):
                         ),
                     )
 =======
+=======
+            # Find function expression.
+            function_expression = None
+            for project_expr in self.node.project_expr_list:
+                if isinstance(project_expr, FunctionExpression):
+                    function_expression = project_expr
+
+            if function_expression is not None:
+                feat_col_name = function_expression.output_objs[0].name
+
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
             # Add features to index.
             # TODO: batch size is hardcoded for now.
             input_dim = -1
+<<<<<<< HEAD
             storage_engine = StorageEngine.factory(self.db, feat_catalog_entry)
             for input_batch in storage_engine.read(feat_catalog_entry):
                 if self.node.function:
@@ -184,6 +204,7 @@ class CreateIndexExecutor(AbstractExecutor):
         else:
             index = None
 
+<<<<<<< HEAD
         try:
             # Add features to index.
 =======
@@ -203,6 +224,13 @@ class CreateIndexExecutor(AbstractExecutor):
             for input_batch in self.children[0].exec():
                 input_batch.drop_column_alias()
                 feat = input_batch.column_as_numpy_array(feat_col_name)
+=======
+=======
+            for input_batch in self.children[0].exec():
+                input_batch.drop_column_alias()
+                feat = input_batch.column_as_numpy_array(feat_col_name)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
                 row_num = input_batch.column_as_numpy_array(ROW_NUM_COLUMN)
 
                 for i in range(len(input_batch)):

@@ -42,8 +42,11 @@ class UseExecutor(AbstractExecutor):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         handler = get_database_handler(
             db_catalog_entry.engine,
             **db_catalog_entry.params,
