@@ -74,6 +74,9 @@ This query returns the label of all the images:
 .. code-block:: 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
     | objectdetectionvideos.id |          yolo.labels           |          yolo.bboxes           |          yolo.scores           |
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
@@ -83,6 +86,7 @@ This query returns the label of all the images:
     |            3             | ['car', 'car', 'car', 'car ... | [[839.319580078125, 279.92 ... | [0.91, 0.84, 0.82, 0.81, 0 ... |
     |            4             | ['car', 'car', 'car', 'car ... | [[843.2254028320312, 280.8 ... | [0.9, 0.85, 0.83, 0.8, 0.7 ... |
     +--------------------------+--------------------------------+--------------------------------+--------------------------------+
+<<<<<<< HEAD
 =======
     +-----------------------------------------------------------------------------------------------------+
     | objectdetectionvideos.id              | yolo.labels                                                |
@@ -91,6 +95,8 @@ This query returns the label of all the images:
     | 1                        | [car, car, car, car, car, car, car, car, car, ...             |
     +-----------------------------------------------------------------------------------------------------+
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 Filtering Based on YOLO Function
 --------------------------------
@@ -99,6 +105,7 @@ In the following query, we use the output of the object detector to retrieve a s
 
 .. code-block:: sql
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     SELECT id, Yolo(data).labels
         FROM ObjectDetectionVideos 
@@ -109,12 +116,21 @@ In the following query, we use the output of the object detector to retrieve a s
         FROM ObjectDetectionVideos 
         WHERE ['pedestrian', 'car'] <@ Yolo(data).label;
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    SELECT id, Yolo(data).labels
+        FROM ObjectDetectionVideos 
+        WHERE ['person', 'car'] <@ Yolo(data).labels
+        LIMIT 5;
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 Now, the ``DataFrame`` only contains frames with the desired objects:
 
 .. code-block:: 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     +--------------------------+--------------------------------------------------------------+
     | objectdetectionvideos.id |                         yolo.labels                          |
     +--------------------------+--------------------------------------------------------------+
@@ -124,6 +140,7 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
     |            3             | ['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car', ... |
     |            4             | ['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car', ... |
     +--------------------------+--------------------------------------------------------------+
+<<<<<<< HEAD
 
 .. include:: ../shared/footer.rst
 
@@ -135,6 +152,8 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
     |                            6 |
     |                            6 |
     +------------------------------+
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))

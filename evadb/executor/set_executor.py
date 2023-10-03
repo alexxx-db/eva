@@ -32,12 +32,20 @@ class SetExecutor(AbstractExecutor):
         https://www.postgresql.org/docs/7.0/sql-set.htm
         https://duckdb.org/docs/sql/configuration.html
 
+<<<<<<< HEAD
         This design change for configuration manager will be taken care of
+=======
+        This design change for configuation manager will be taken care of
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         as a separate PR for the issue #1140, where all instances of config use
         will be replaced
         """
         self._config.update_value(
             category="default",
+<<<<<<< HEAD
             key=self.node.config_name.upper(),
+=======
+            key=self.node.config_name,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             value=self.node.config_value.value,
         )

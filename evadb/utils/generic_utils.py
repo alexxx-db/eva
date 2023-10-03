@@ -293,10 +293,14 @@ def try_to_import_ray():
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 def try_to_import_statsforecast():
 =======
 def try_to_import_forecast():
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+def try_to_import_statsforecast():
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
@@ -307,6 +311,9 @@ def try_to_import_forecast():
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 def try_to_import_neuralforecast():
     try:
         from neuralforecast import NeuralForecast  # noqa: F401
@@ -317,8 +324,11 @@ def try_to_import_neuralforecast():
         )
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 def is_ray_available() -> bool:
     try:
         try_to_import_ray()
@@ -359,6 +369,9 @@ def is_ludwig_available() -> bool:
 def is_forecast_available() -> bool:
     try:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
         return True
@@ -380,6 +393,7 @@ def try_to_import_sklearn():
 def is_sklearn_available() -> bool:
     try:
         try_to_import_sklearn()
+<<<<<<< HEAD
         return True
     except ValueError:  # noqa: E722
         return False
@@ -402,6 +416,8 @@ def is_xgboost_available() -> bool:
 =======
         try_to_import_forecast()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         return True
     except ValueError:  # noqa: E722
         return False
@@ -659,6 +675,7 @@ def string_comparison_case_insensitive(string_1, string_2) -> bool:
         return False
 
     return string_1.lower() == string_2.lower()
+<<<<<<< HEAD
 
 
 def try_to_import_replicate():
@@ -677,3 +694,5 @@ def is_replicate_available():
         return True
     except ValueError:
         return False
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

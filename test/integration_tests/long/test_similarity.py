@@ -407,6 +407,7 @@ class SimilarityTests(unittest.TestCase):
             # Cleanup
             drop_query = "DROP INDEX testFaissIndexImageDataset"
             execute_query_fetch_all(self.evadb, drop_query)
+<<<<<<< HEAD
 
     def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
         create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"
@@ -431,6 +432,8 @@ class SimilarityTests(unittest.TestCase):
 
         res_batch = execute_query_fetch_all(self.evadb, select_query)
         self.assertEqual(res_batch.frames["testindexautoupdate._row_id"][0], 5)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     @qdrant_skip_marker
     def test_end_to_end_index_scan_should_work_correctly_on_image_dataset_qdrant(self):

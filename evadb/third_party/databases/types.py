@@ -89,7 +89,11 @@ class DBHandler:
 
     def is_sqlalchmey_compatible(self) -> bool:
         """
+<<<<<<< HEAD
         Return  whether the data source is sqlaclchemy compatible
+=======
+        Return  whether the data source is sqlaclemy compatible
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
         Returns:
             A True / False boolean value..

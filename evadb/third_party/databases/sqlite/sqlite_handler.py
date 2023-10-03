@@ -13,9 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 <<<<<<< HEAD
+<<<<<<< HEAD
 import datetime
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+import datetime
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 import sqlite3
 
 import pandas as pd
@@ -61,11 +65,17 @@ class SQLiteHandler(DBHandler):
             self.connection.close()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     def get_sqlalchmey_uri(self) -> str:
         return f"sqlite:///{self.database}"
 
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+    def get_sqlalchmey_uri(self) -> str:
+        return f"sqlite:///{self.database}"
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     def check_connection(self) -> DBHandlerStatus:
         """
         Check connection to the handler.
@@ -113,12 +123,18 @@ class SQLiteHandler(DBHandler):
             columns_df = pragma_df[["name", "type"]].copy()
             columns_df.rename(columns={"type": "dtype"}, inplace=True)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             columns_df["dtype"] = columns_df["dtype"].apply(
                 self._sqlite_to_python_types
             )
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             return DBHandlerResponse(data=columns_df)
         except sqlite3.Error as e:
             return DBHandlerResponse(data=None, error=str(e))
@@ -126,12 +142,16 @@ class SQLiteHandler(DBHandler):
     def _fetch_results_as_df(self, cursor):
         try:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             # Handling case-sensitive databases like SQLite can be tricky. Currently,
             # EvaDB converts all columns to lowercase, which may result in issues with
             # these databases. As we move forward, we are actively working on improving
             # this aspect within Binder.
             # For more information, please refer to https://github.com/georgia-tech-db/evadb/issues/1079.
 
+<<<<<<< HEAD
             res = cursor.fetchall()
             res_df = pd.DataFrame(
                 res,
@@ -142,6 +162,12 @@ class SQLiteHandler(DBHandler):
                 res,
                 columns=[desc[0] for desc in cursor.description]
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+            res = cursor.fetchall()
+            res_df = pd.DataFrame(
+                res,
+                columns=[desc[0].lower() for desc in cursor.description]
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
                 if cursor.description
                 else [],
             )
@@ -168,6 +194,9 @@ class SQLiteHandler(DBHandler):
         except sqlite3.Error as e:
             return DBHandlerResponse(data=None, error=str(e))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     def _sqlite_to_python_types(self, sqlite_type: str):
         mapping = {
@@ -208,5 +237,8 @@ class SQLiteHandler(DBHandler):
             raise Exception(
                 f"Unsupported column {sqlite_type} encountered in the sqlite table. Please raise a feature request!"
             )
+<<<<<<< HEAD
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
