@@ -197,16 +197,22 @@ class CatalogManager(object):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
     def get_all_database_catalog_entries(self):
         return self._db_catalog_service.get_all_entries()
 
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
     def get_all_database_catalog_entries(self):
         return self._db_catalog_service.get_all_entries()
 
 >>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
     def drop_database_catalog_entry(self, database_entry: DatabaseCatalogEntry) -> bool:
         """
         This method deletes the database from  catalog.
@@ -637,8 +643,11 @@ class CatalogManager(object):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
@@ -654,15 +663,21 @@ class CatalogManager(object):
             name, save_file_path, vector_store_type, feat_column, function_signature
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
+<<<<<<< HEAD
 =======
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
             name,
             save_file_path,
             vector_store_type,
@@ -670,11 +685,15 @@ class CatalogManager(object):
             function_signature,
             index_def,
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
         )
         return index_catalog_entry
 

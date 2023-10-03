@@ -214,18 +214,26 @@ ChatGPT
 ChatGPTTest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ChromaDB
 ChromaDBVectorStore
 ClickHouseHandler
 ClickHouseNativeStorageEngineTest
 =======
+ChromaDB
+ChromaDBVectorStore
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
 CHROMADB
 ChromaDB
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 ChromaDB
 ChromaDBVectorStore
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 ColConstraintInfo
 Colab
 ColorSpace
@@ -957,6 +965,9 @@ PersistentClient
 PickleSerializer
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
@@ -964,11 +975,14 @@ PipImportRedirectingFinder
 PINECONE
 Pinecone
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 PlanExecutor
 PlanExecutorTest
 PlanGenerator

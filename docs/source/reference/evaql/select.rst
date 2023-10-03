@@ -135,16 +135,22 @@ Compose multiple user-defined functions in a single query to construct semantica
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 SELECT TUPLES WITHOUT TABLE
 ---------------------------
 =======
 SELECT WITHOUT TABLE
 --------------------
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 SELECT TUPLES WITHOUT TABLE
 ---------------------------
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
 In EvaDB, we can compose a query that does not have a table source. This type of queries are usually expressions.
 
@@ -153,24 +159,36 @@ In EvaDB, we can compose a query that does not have a table source. This type of
    SELECT 1;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
    SELECT 1 > 2;
 =======
    SELECT 1>2;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
    SELECT 1 > 2;
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
    SELECT HomeRentalForecast(12);
 
 .. note::
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
    If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
 =======
    Go over :ref:`forecast` for forecasting function support in EvaDB.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
    If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 

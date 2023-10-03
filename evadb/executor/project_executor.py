@@ -20,19 +20,28 @@ from evadb.database import EvaDBDatabase
 from evadb.executor.abstract_executor import AbstractExecutor
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 from evadb.executor.executor_utils import (
     ExecutorError,
     apply_project,
     instrument_function_expression_cost,
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 from evadb.executor.executor_utils import ExecutorError, apply_project
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+=======
+from evadb.executor.executor_utils import ExecutorError, apply_project
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 from evadb.models.storage.batch import Batch
 from evadb.plan_nodes.project_plan import ProjectPlan
 
@@ -51,13 +60,19 @@ class ProjectExecutor(AbstractExecutor):
             dummy_batch = Batch(pd.DataFrame([0]))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
             batch = apply_project(dummy_batch, self.target_list)
 =======
             batch = apply_project(dummy_batch, self.target_list, self.catalog())
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
             batch = apply_project(dummy_batch, self.target_list)
 >>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
             if not batch.empty():
                 yield batch
         # SELECT expr FROM table;
@@ -66,26 +81,38 @@ class ProjectExecutor(AbstractExecutor):
             for batch in child_executor.exec(**kwargs):
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
                 batch = apply_project(batch, self.target_list)
 =======
                 batch = apply_project(batch, self.target_list, self.catalog())
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
                 batch = apply_project(batch, self.target_list)
 >>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
                 if not batch.empty():
                     yield batch
         else:
             raise ExecutorError("ProjectExecutor has more than 1 children.")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
         # instrument required stats
         instrument_function_expression_cost(self.target_list, self.catalog())
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 
         # instrument required stats
         instrument_function_expression_cost(self.target_list, self.catalog())
 >>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)

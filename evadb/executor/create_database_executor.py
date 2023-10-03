@@ -36,6 +36,7 @@ class CreateDatabaseExecutor(AbstractExecutor):
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -49,7 +50,13 @@ class CreateDatabaseExecutor(AbstractExecutor):
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
         # Check if database already exists.
         db_catalog_entry = self.catalog().get_database_catalog_entry(
             self.node.database_name
@@ -64,14 +71,19 @@ class CreateDatabaseExecutor(AbstractExecutor):
                 raise ExecutorError(f"{self.node.database_name} already exists.")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
         # TODO: handle if_not_exists
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -79,7 +91,10 @@ class CreateDatabaseExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
@@ -92,7 +107,12 @@ class CreateDatabaseExecutor(AbstractExecutor):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
         logger.debug(
             f"Trying to connect to the provided engine {self.node.engine} with params {self.node.param_dict}"
@@ -102,11 +122,17 @@ class CreateDatabaseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+        # Check the validity of database entry.
+        with get_database_handler(self.node.engine, **self.node.param_dict):
+            pass
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -134,15 +160,21 @@ class CreateDatabaseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
         # Check the validity of database entry.
         with get_database_handler(self.node.engine, **self.node.param_dict):
             pass
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -154,6 +186,13 @@ class CreateDatabaseExecutor(AbstractExecutor):
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 
         logger.debug(f"Creating database {self.node}")
         self.catalog().insert_database_catalog_entry(

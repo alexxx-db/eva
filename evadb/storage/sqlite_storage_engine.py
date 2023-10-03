@@ -32,16 +32,22 @@ from evadb.storage.abstract_storage_engine import AbstractStorageEngine
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 from evadb.utils.generic_utils import PickleSerializer, rebatch
 =======
 from evadb.utils.generic_utils import PickleSerializer
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 from evadb.utils.generic_utils import PickleSerializer
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 from evadb.utils.generic_utils import PickleSerializer, rebatch
 >>>>>>> 3d009af6 (Reenable batch for release (#1302))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 from evadb.utils.logging_manager import logger
 
 # Leveraging Dynamic schema in SQLAlchemy
@@ -204,8 +210,11 @@ class SQLStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3d009af6 (Reenable batch for release (#1302))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
             result_iter = (
                 self._deserialize_sql_row(row._asdict(), table.columns)
                 for row in result
@@ -213,9 +222,13 @@ class SQLStorageEngine(AbstractStorageEngine):
             for df in rebatch(result_iter, batch_mem_size):
                 yield Batch(pd.DataFrame(df))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
             for row in result:
                 yield Batch(
                     pd.DataFrame(
@@ -223,11 +236,15 @@ class SQLStorageEngine(AbstractStorageEngine):
                     )
                 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 3d009af6 (Reenable batch for release (#1302))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
         except Exception as e:
             err_msg = f"Failed to read the table {table.name} with exception {str(e)}"
             logger.exception(err_msg)

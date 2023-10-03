@@ -23,6 +23,9 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
     is_chromadb_available,
     is_flaml_automl_available,
 =======
@@ -52,24 +55,39 @@ from evadb.utils.generic_utils import (
     is_chromadb_available,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
     is_forecast_available,
     is_gpu_available,
     is_ludwig_available,
     is_pinecone_available,
     is_qdrant_available,
+<<<<<<< HEAD
     is_replicate_available,
     is_sklearn_available,
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
     is_xgboost_available,
+<<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+    is_sklearn_available,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 )
 
 asyncio_skip_marker = pytest.mark.skipif(
@@ -148,10 +166,13 @@ xgboost_skip_marker = pytest.mark.skipif(
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 )
 
+<<<<<<< HEAD
 xgboost_skip_marker = pytest.mark.skipif(
     is_xgboost_available() is False, reason="Run only if xgboost is available"
 )
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 chatgpt_skip_marker = pytest.mark.skip(
     reason="requires chatgpt",
 )
