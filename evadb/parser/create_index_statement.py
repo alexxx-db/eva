@@ -139,7 +139,13 @@ class CreateIndexStatement(AbstractStatement):
         if function_expr is None:
             print_str += f" ({self.col_list[0].name})"
         else:
-            print_str += f" ({function_expr.name}({self.col_list[0].name}))"
+
+            def traverse_create_function_expression_str(expr):
+                if isinstance(expr, TupleValueExpression):
+                    return f"{self.col_list[0].name}"
+                return f"{expr.name}({traverse_create_function_expression_str(expr.children[0])})"
+
+            print_str += f" ({traverse_create_function_expression_str(function_expr)})"
         print_str += f" USING {self._vector_store_type};"
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
