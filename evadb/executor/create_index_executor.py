@@ -80,12 +80,17 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> da04707f (feat: insertion update index (#1246))
+>>>>>>> a590a82c (feat: insertion update index (#1246))
         self.name = self.node.name
         self.if_not_exists = self.node.if_not_exists
         self.table_ref = self.node.table_ref
@@ -105,15 +110,21 @@ class CreateIndexExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
 =======
     def exec(self, *args, **kwargs):
         # Vector type specific creation.
         if self.vector_store_type == VectorStoreType.PGVECTOR:
 >>>>>>> da04707f (feat: insertion update index (#1246))
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
             self._create_native_index()
         else:
             self._create_evadb_index()
@@ -128,14 +139,18 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
         table = self.table_ref.table
 =======
         table = self.node.table_ref.table
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -145,6 +160,11 @@ class CreateIndexExecutor(AbstractExecutor):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+        table = self.table_ref.table
+>>>>>>> da04707f (feat: insertion update index (#1246))
+>>>>>>> a590a82c (feat: insertion update index (#1246))
         db_catalog_entry = self.catalog().get_database_catalog_entry(
             table.database_name
         )
@@ -158,10 +178,13 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
                 f"""CREATE INDEX {self.name} ON {table.table_name}
                     USING hnsw ({self.col_list[0].name} vector_l2_ops)"""
 =======
@@ -170,14 +193,20 @@ class CreateIndexExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
 =======
                 f"""CREATE INDEX {self.name} ON {table.table_name}
                     USING hnsw ({self.col_list[0].name} vector_l2_ops)"""
 >>>>>>> da04707f (feat: insertion update index (#1246))
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
             )
             if resp.error is not None:
                 raise ExecutorError(
@@ -203,12 +232,17 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> da04707f (feat: insertion update index (#1246))
+>>>>>>> a590a82c (feat: insertion update index (#1246))
         # Find function expression.
         function_expression, function_expression_signature = None, None
         for project_expr in self.project_expr_list:
@@ -218,10 +252,13 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
 =======
         if self.catalog().get_index_catalog_entry_by_name(self.node.name):
             msg = f"Index {self.node.name} already exists."
@@ -230,18 +267,61 @@ class CreateIndexExecutor(AbstractExecutor):
                 return
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+
+        # Get feature tables.
+        feat_tb_catalog_entry = self.table_ref.table.table_obj
+
+        # Get feature column.
+        feat_col_name = self.col_list[0].name
+        feat_col_catalog_entry = [
+            col for col in feat_tb_catalog_entry.columns if col.name == feat_col_name
+        ][0]
+
+        if function_expression is not None:
+            feat_col_name = function_expression.output_objs[0].name
+
+        index_catalog_entry = self.catalog().get_index_catalog_entry_by_name(self.name)
+        index_path = self._get_evadb_index_save_path()
+
+        if index_catalog_entry is not None:
+            msg = f"Index {self.name} already exists."
+            if self.if_not_exists:
+                if (
+                    index_catalog_entry.feat_column == feat_col_catalog_entry
+                    and index_catalog_entry.function_signature
+                    == function_expression_signature
+                    and index_catalog_entry.type == self.node.vector_store_type
+                ):
+                    # Only update index if everything matches.
+                    logger.warn(msg + " It will be updated on existing table.")
+                    index = VectorStoreFactory.init_vector_store(
+                        self.vector_store_type,
+                        self.name,
+                        **handle_vector_store_params(
+                            self.vector_store_type, index_path
+                        ),
+                    )
+                else:
+                    # Skip index update if CREATE INDEX runs on a different index.
+                    logger.warn(msg)
+                    return
+>>>>>>> da04707f (feat: insertion update index (#1246))
+>>>>>>> a590a82c (feat: insertion update index (#1246))
             else:
                 logger.error(msg)
                 raise ExecutorError(msg)
-
-        index = None
-        index_path = self._get_evadb_index_save_path()
+        else:
+            index = None
 
         try:
+<<<<<<< HEAD
             # Get feature tables.
             feat_catalog_entry = self.node.table_ref.table.table_obj
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -474,6 +554,9 @@ class CreateIndexExecutor(AbstractExecutor):
                 feat_col_name = function_expression.output_objs[0].name
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
             # Add features to index.
@@ -491,6 +574,7 @@ class CreateIndexExecutor(AbstractExecutor):
 =======
 >>>>>>> a3f66ab5 (feat: insertion update index (#1246))
 >>>>>>> da04707f (feat: insertion update index (#1246))
+<<<<<<< HEAD
 =======
             # Add features to index.
             # TODO: batch size is hardcoded for now.
@@ -505,6 +589,8 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 >>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
             for input_batch in self.children[0].exec():
                 input_batch.drop_column_alias()
                 feat = input_batch.column_as_numpy_array(feat_col_name)
@@ -559,10 +645,13 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
 
                     # Create new index if not exists.
                     if index is None:
@@ -595,18 +684,29 @@ class CreateIndexExecutor(AbstractExecutor):
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
+=======
+
+                    # Create new index if not exists.
+>>>>>>> da04707f (feat: insertion update index (#1246))
                     if index is None:
                         input_dim = row_feat.shape[1]
                         index = VectorStoreFactory.init_vector_store(
-                            self.node.vector_store_type,
-                            self.node.name,
+                            self.vector_store_type,
+                            self.name,
                             **handle_vector_store_params(
+<<<<<<< HEAD
                                 self.node.vector_store_type, index_path
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+                                self.vector_store_type, index_path
+>>>>>>> da04707f (feat: insertion update index (#1246))
+>>>>>>> a590a82c (feat: insertion update index (#1246))
                             ),
                         )
                         index.create(input_dim)
@@ -622,12 +722,17 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> da04707f (feat: insertion update index (#1246))
+>>>>>>> a590a82c (feat: insertion update index (#1246))
             if index_catalog_entry is None:
                 self.catalog().insert_index_catalog_entry(
                     self.name,
@@ -640,6 +745,9 @@ class CreateIndexExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
 =======
             self.catalog().insert_index_catalog_entry(
                 self.node.name,
@@ -654,6 +762,7 @@ class CreateIndexExecutor(AbstractExecutor):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> da04707f (feat: insertion update index (#1246))
+<<<<<<< HEAD
 =======
 =======
             self.catalog().insert_index_catalog_entry(
@@ -682,6 +791,8 @@ class CreateIndexExecutor(AbstractExecutor):
             )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
         except Exception as e:
             # Delete index.
             if index:

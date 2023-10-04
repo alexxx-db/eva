@@ -251,6 +251,7 @@ class CreateIndexStatement(AbstractStatement):
                 return f"{expr.name}({traverse_create_function_expression_str(expr.children[0])})"
 
             print_str += f" ({traverse_create_function_expression_str(function_expr)})"
+<<<<<<< HEAD
         print_str += f" USING {self._vector_store_type};"
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -330,6 +331,8 @@ class CreateIndexStatement(AbstractStatement):
             print_str += f" ({self.col_list[0].name})"
         else:
             print_str += f" ({function_expr.name}({self.col_list[0].name}))"
+=======
+>>>>>>> a590a82c (feat: insertion update index (#1246))
         print_str += f" USING {self._vector_store_type};"
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
