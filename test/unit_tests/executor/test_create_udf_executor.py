@@ -180,7 +180,7 @@ class CreateFunctionExecutorTest(unittest.TestCase):
             "Function function added to the database.",
         )
 
-        # We create the function again with different paramaters
+        # We create the function again with different parameters
         function_entry = MagicMock()
         cache = MagicMock()
         function_entry.dep_caches = [cache]

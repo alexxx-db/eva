@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
 <<<<<<< HEAD
@@ -11,23 +12,31 @@ personal_ws-1.1 en 1467
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+personal_ws-1.1 en 1775 
+>>>>>>> 62080794 (ran spellchecker)
 ABCD
 ABCMeta
 ANYDIM
 ANYTYPE
 ANYdim
 APIs
+ARIMA
 ASC
 ASLActionRecognition
 ASRHFModel
 AST
 AUDIORATE
 AVReader
+AbstractClassifierFunction
 AbstractClassifierUDF
 AbstractExecutor
 AbstractExecutorTest
 AbstractExpression
 AbstractExpressionsTest
+AbstractFunction
+AbstractFunctionTest
+AbstractHFFunction
 AbstractHFUdf
 AbstractJoin
 AbstractMediaStorageEngine
@@ -36,11 +45,17 @@ AbstractReader
 AbstractScan
 AbstractStatement
 AbstractStorageEngine
+AbstractTransformationFunction
 AbstractTransformationUDF
 AbstractUDF
 AbstractUDFTest
 AggregationExpression
 AggregationExpressionsTest
+AirData
+AirDataPanel
+AirForecast
+AirPanelForecast
+AirPassengersPanel
 AliExpress
 Anirudh
 AnnotateTests
@@ -61,19 +76,30 @@ AttributeError
 AudioHFModel
 AudioReader
 AudioStorageEngine
+AutoARIMA
+AutoCES
+AutoETS
 AutoEnum
+AutoML
 AutoModel
+AutoNBEATS
+AutoNHITS
+AutoTheta
 AutoTokenizer
 Autocommit
 AvgPool
 BDD
 BGR
+BH
+BMS
+BQ
 BaseException
 BaseModel
 BaseService
 BatchMemSizeTest
 BatchNorm
 BatchTest
+Benchmarking
 BinderError
 BinderUtilsTest
 BooleanTable
@@ -84,6 +110,8 @@ BottomUpRewrite
 BoundingBox
 BuildJoinExecutor
 ByteTracker
+CHROMADB
+CLOB
 CMDClientTest
 CPUs
 CRM
@@ -104,8 +132,8 @@ CatalogManagerTests
 CatalogModelsTest
 ChatGPT
 ChatGPTTest
-CHROMADB
 ChromaDB
+ChromaDBVectorStore
 ColConstraintInfo
 Colab
 ColorSpace
@@ -128,6 +156,7 @@ ConfigurationFileTests
 ConfigurationManager
 ConfigurationManager's
 ConfigurationManagerTests
+ConstantExpressionsTest
 ConstantValueExpression
 Conv
 CostModel
@@ -137,6 +166,11 @@ CreateDatabaseStatement
 CreateDatabaseTest
 CreateExecutor
 CreateFromSelectPlan
+CreateFunctionExecutor
+CreateFunctionExecutorTest
+CreateFunctionPlan
+CreateFunctionStatement
+CreateIndex
 CreateIndexExecutor
 CreateIndexPlan
 CreateIndexStatement
@@ -161,10 +195,12 @@ DBHandler
 DBHandlerResponse
 DBHandlerStatus
 DDL
+DEFINATION
 DESC
 DETRACVideo
 DFS
 DailyMail
+Dask
 DataFrame
 DataFrameColumn
 DataFrameColumns
@@ -186,6 +222,7 @@ DeleteExecutorTest
 DeletePlan
 DeleteTableStatement
 DemoDB
+DemoFunc
 DemoTable
 DemoUDF
 Deserialize
@@ -209,13 +246,17 @@ DropTable
 DropUDFExecutor
 DropUDFExecutorTest
 DropUDFPlan
+DuckDB
 DummyExecutor
 DummyFeatureExtractor
+DummyLLM
 DummyMultiObjectDetector
+DummyNoInputFunction
 DummyObjectDetector
 DummyObjectDetectorDecorators
 EDGAhab
 EIStakovskii
+ETS
 EXPRESISON
 EmbedFilterIntoDerivedGet
 EmbedFilterIntoGet
@@ -223,6 +264,7 @@ EmbedSampleIntoGet
 EmotionDetector
 EnumInt
 ErrorHandlingRayTests
+Erythro
 EvaArgument
 EvaDB
 EvaDB's
@@ -235,6 +277,7 @@ EvaDBImportTest
 EvaDBQuery
 EvaDBRelation
 EvaDBServerTest
+EvaDBTrackerAbstractFunction
 EvaDBTrackerAbstractUDF
 EvaQL
 EvaServer
@@ -256,6 +299,7 @@ ExpressionUtilsTest
 FAISS
 FFFFFF
 FLV
+FUNCTIONs
 FaceDet
 FaceDetection
 FaceDetector
@@ -279,16 +323,38 @@ FileFormatType
 FileNotFoundError
 Finetuning
 FlipTests
+ForecastModel
 ForeignKey
 FrameInfo
 FrameInfoTest
 FullLoader
+FunctionCacheCatalog
+FunctionCacheCatalogEntry
+FunctionCacheCatalogService
+FunctionCatalog
+FunctionCatalogEntry
+FunctionCatalogService
+FunctionCostCatalog
+FunctionCostCatalogEntry
+FunctionCostCatalogService
+FunctionExecutorTest
 FunctionExpression
 FunctionExpressionCache
 FunctionExpressionTest
+FunctionIO
+FunctionIOCatalog
+FunctionIOCatalogEntry
+FunctionIOCatalogService
+FunctionIODefinitionError
+FunctionIODescriptorsTests
+FunctionMetadataCatalog
+FunctionMetadataCatalogEntry
+FunctionMetadataCatalogService
 FunctionScan
 FunctionScanExecutor
 FunctionScanPlan
+FunctionStats
+FunctionType
 FuzzDistance
 FuzzyJoin
 FuzzyJoinTests
@@ -299,6 +365,10 @@ GaussianBlur
 GaussianBlurTests
 GenericHuggingfaceModel
 GenericLudwigModel
+GenericSklearnModel
+GenericUtilsTests
+GithubDataSourceTest
+GithubHandler
 GroupBy
 GroupByExecutor
 GroupByPlan
@@ -312,18 +382,27 @@ HFObjectDetector
 HFTextClassifier
 HFToxicityClassifier
 HFUnsupportedTask
+HH
 HNSW
 HSV
 HashJoinBuildPlan
 HashJoinExecutor
 HashJoinPlan
 HashJoinProbePlan
+Helvetica
+HomeData
+HomeForecast
+HomeRentalForecast
 HomeRentals
+HomeSale
+HomeSaleForecast
+HomeSalesForecast
 HorizontalFlip
 HuggingFace
 HuggingFaceModel
 HuggingFaceTest
 HuggingFaceTests
+HuggingFae
 IDMap
 IGNORECASE
 IMAGENET
@@ -358,10 +437,12 @@ Jalen
 JoinNode
 JoinType
 Jupyter
+Kaggle
 KeyError
 KeyboardInterrupt
 LEQ
 LLM
+LLMs
 LOGICALCREATEINDEX
 LOGICALCREATEUDF
 LOGICALDELETE
@@ -392,6 +473,7 @@ LikeTest
 LimitExecutor
 LimitExecutorTest
 LimitPlan
+LinearRegression
 LoadCSVExecutor
 LoadDataExecutor
 LoadDataPlan
@@ -407,6 +489,9 @@ LogicalApplyAndMergeToPhysical
 LogicalApplyAndMergeToRayPhysical
 LogicalCreate
 LogicalCreateFromSelectToPhysical
+LogicalCreateFunction
+LogicalCreateFunctionFromSelectToPhysical
+LogicalCreateFunctionToPhysical
 LogicalCreateIndex
 LogicalCreateIndexToVectorIndex
 LogicalCreateMaterializedView
@@ -449,6 +534,7 @@ LogicalLoadToPhysical
 LogicalOrderBy
 LogicalOrderByToPhysical
 LogicalProject
+LogicalProjectNoTableToPhysical
 LogicalProjectToPhysical
 LogicalProjectToRayPhysical
 LogicalQueryDerivedGet
@@ -474,10 +560,13 @@ MVITActionRecognition
 MViT
 MacOS
 MagicMock
+MariaDbHandler
+MariaDbStorageEngineTest
 MaterializedViewTest
 MaxPool
 MemeImages
 MemoTest
+MetaData
 MindsDB
 MiniLM
 MnistImageClassifier
@@ -485,10 +574,12 @@ MnistVideo
 ModelTrainTests
 ModulePathTest
 MyCSV
+MyFunc
 MyImage
 MyImages
 MyLargeScaleImages
 MyMeta
+MyPDF
 MyPDFs
 MySQLNativeStorageEngineTest
 MyTextCSV
@@ -499,6 +590,7 @@ MyVideos
 MydbHandler
 <<<<<<< HEAD
 MysqlHandler
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -509,21 +601,31 @@ MysqlHandler
 MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+NBEATS
+NCHAR
+>>>>>>> 62080794 (ran spellchecker)
 NEQ
+NHITS
 NLP
 NOTNULL
+NVARCHAR
 NaN
 NamedTemporaryFile
+NamedUser
 Namespace
 NativeExecutorTest
 NativePlan
 NativeQueryResponse
 NativeStorageEngine
 NdArrayType
+NdarrayFUNCTION
+NdarrayFunction
 NdarrayUDF
 NestedLoopJoinExecutor
 NestedLoopJoinPlan
 NestedQuery
+NeuralForecast
 NoResultFound
 NorFairTracker
 NotImplementedError
@@ -534,10 +636,12 @@ OCRExtraction
 OCRExtractor
 OGG
 OPENAI
+OPENAIKEY
 OSError
 ObjDetector
 ObjectDet
 ObjectDetection
+ObjectDetectionVideos
 ObjectDetector
 ObjectRef
 ObjectType
@@ -567,6 +671,7 @@ PDFStorageEngine
 PDFs
 PERF
 PIL
+PINECONE
 PPExecutor
 PPScanExecutorTest
 PPScanPlan
@@ -579,10 +684,13 @@ ParallelLogicalGetToSeqScan
 ParserOrderBySortType
 ParserStatementTests
 ParserTests
+PathFinder
 PermissionDenied
+PersistentClient
 PickleSerializer
-PINECONE
 Pinecone
+PineconeVectorStore
+PipImportRedirectingFinder
 PlanExecutor
 PlanExecutorTest
 PlanGenerator
@@ -594,26 +702,34 @@ PostgresNativeStorageEngineTest
 PredicateExecutor
 PredicatePlan
 PredictHouseRent
+PredictHouseRentLudwig
+PredictHouseRentSklearn
 PrivateGPTTest
 ProgrammingError
 ProjectExecutor
+ProjectExecutorTest
 ProjectPlan
 PropertyMock
 PropertyType
 PushDownFilterThroughApplyAndMerge
 PushDownFilterThroughJoin
+PyGithub
 PyMuPDF
 PyPI
 PyTorchTensor
 Pydoc
 Pythonic
+PytorchAbstractClassifierFunction
 PytorchAbstractClassifierUDF
+PytorchAbstractTransformationFunction
 PytorchAbstractTransformationUDF
+PytorchClassifierAbstractFunction
 PytorchClassifierAbstractUDF
 PytorchTest
 QDRANT
 QL
 Qdrant
+Qdrant's
 QdrantClient
 QdrantVectorStore
 Quadro
@@ -694,7 +810,11 @@ SequentialLogicalProjectToPhysical
 SequentialScanExecutor
 SequentialScanPlan
 ServerTests
+SetExecutor
+SetExecutorTest
+SetStatement
 ShowExecutorTest
+ShowFunctionPlan
 ShowInfoExecutor
 ShowInfoPlan
 ShowStatement
@@ -704,7 +824,10 @@ ShowUDFPlan
 SiftFeatureExtractor
 SimilarityFeatureExtractor
 SimilarityTests
+SingleDocumentSimilarityTests
 SingletonMeta
+Sklearn's
+SlackCSV
 SpeechRecognizer
 StageCompleteSignal
 StatementBinder
@@ -716,6 +839,7 @@ StatementToOprTest
 StatementToPlanConverter
 StatementToPlanConvertor
 StatementType
+StatsForecast
 StorageEngine
 StorageExecutor
 StoragePlan
@@ -726,6 +850,7 @@ StreamWriter
 Summarizer
 SyntaxError
 SystemError
+SystemExit
 TAIPAI
 TCP
 TMP
@@ -741,6 +866,7 @@ TableSources
 TableType
 TableTypes
 TableValuedExpression
+TableValuedExpressions
 TableValuedFunction
 Tableinfo
 Taipai
@@ -748,6 +874,7 @@ TemporaryDirectory
 TestBinder
 TestCase
 TestDeleteVideos
+TestFUNCTION
 TestGroup
 TestIndex
 TestOCR
@@ -757,12 +884,14 @@ TestSuite
 TestTable
 TestTextHFModel
 TestUDF
+TextClassifier
 TextFilterKeyword
 TextFilteringTests
 TextHFModel
 TextLoader
 TextPickleType
 TextProcessing
+TextSummarizer
 TextTestRunner
 TimeoutError
 TimerTests
@@ -856,6 +985,7 @@ Xeon
 XformExtractObjectToLinearFlow
 XformLateralJoinToLinearFlow
 YOLO
+YYYY
 Yolo
 YoloDecorators
 YoloObjectDetection
@@ -881,6 +1011,8 @@ agg
 aggr
 ai
 aidb
+airforecast
+airpanelforecast
 amongst
 analytics
 anydim
@@ -909,6 +1041,7 @@ assertIsNone
 assertIsNotNone
 assertLess
 assertNotEqual
+assertNotIn
 assertRaises
 assertTrue
 ast
@@ -920,6 +1053,7 @@ attr
 audioless
 autofunction
 autogenerated
+autoload
 automethod
 automl
 autosummary
@@ -962,6 +1096,7 @@ changelog
 chatgpt
 chdir
 chmod
+chromadb
 chunksize
 ci
 classmethod
@@ -983,11 +1118,13 @@ concat
 conda
 conf
 config
+configs
 conn
 const
 constexpr
 contextlib
 contextmanager
+conversatio
 convertor
 coord
 coords
@@ -1010,6 +1147,7 @@ cwd
 cxt
 dane
 darwin
+dask
 dataclass
 dataclasses
 dataframe
@@ -1019,6 +1157,8 @@ datasets
 datasource
 datatypes
 datefmt
+datesold
+datestamp
 datetime
 dbapi
 dcs
@@ -1026,6 +1166,7 @@ ddl
 decord
 deduplication
 deepcopy
+defhappy
 defs
 del
 dep
@@ -1033,6 +1174,7 @@ deque
 desc
 deserialization
 deserialize
+deserializing
 det
 detections
 detr
@@ -1040,6 +1182,7 @@ detrac
 dev
 devshreebharatia
 df
+dfa
 dfs
 dic
 dicts
@@ -1047,6 +1190,7 @@ dir
 dirname
 diskcache
 distilbart
+distilbert
 dists
 distutils
 dml
@@ -1064,16 +1208,20 @@ ds
 dst
 dtype
 dummyfloat
+dummynoinputfunction
 dummyobjectdetector
 dummypath
 easyocr
+ef
 eg
 elif
 eloyekunle
 embeddings
 eml
+emotiondetector
 endswith
 enex
+english
 enum
 enums
 env
@@ -1091,13 +1239,18 @@ evaql
 evaserver
 exc
 exch
+exog
 expr
 expresssion
 exprs
+extname
 extractOne
+extrator
 f'LOAD
 facebook
+facedetector
 facenet
+fae
 failureException
 faiss
 faq
@@ -1123,6 +1276,7 @@ fetchall
 >>>>>>> eva-master
 ffill
 ffmpeg
+fileFormat
 filepath
 filesystem
 fillna
@@ -1132,6 +1286,9 @@ fmt
 fn
 fname
 folderstructure
+fontname
+fontsize
+forecasted
 formatter
 fourcc
 fpn
@@ -1140,15 +1297,21 @@ frisbee
 fromarray
 fromlist
 frsize
+fruitTable
 fs
+fullname
 func
 funcName
+functionIO
+functionio
+functionmetadata
 functools
 fuzzyjoin
 gaurav
 gaussianBlur
 gb
 gc
+gcp
 gdp
 georgia
 geq
@@ -1164,12 +1327,14 @@ getsourcefile
 getstarted
 gexpr
 gifs
+gists
 github
 githubusercontent
 globals
 gpt
 gpu
 gpus
+gravatar
 grayscale
 grcpio
 greenlet
@@ -1184,6 +1349,12 @@ hashjoin
 hashlib
 hexdigest
 hiddens
+hireable
+hnsw
+homeforecast
+homerental
+homesale
+homesaleforecast
 horizontalFlip
 horovod
 hostname
@@ -1191,7 +1362,10 @@ href
 hstack
 html
 https
+hugGingFaCe
 huggingface
+hyperopt
+hyperparameter
 idx
 ie
 iframe
@@ -1207,6 +1381,8 @@ importlib
 imread
 imwrite
 incrementing
+indexdef
+indexname
 infos
 init
 initdb
@@ -1218,6 +1394,7 @@ integratedTerminal
 integrations
 intp
 invaid
+inviter
 io
 ipynb
 iq
@@ -1268,9 +1445,11 @@ lstrip
 ludwig
 macos
 makedirs
+mariadb
 maxdepth
 maxsize
 md
+mediumint
 mem
 memeimages
 metaclass
@@ -1299,6 +1478,8 @@ mvitactionrecognition
 mxztt
 mydb
 myimages
+mypdf
+mypdfs
 mysql
 myvideo
 myvideocsv
@@ -1313,6 +1494,7 @@ ndarrays
 ndim
 neq
 ner
+neuralforecast
 nexit
 nlp
 nn
@@ -1324,7 +1506,9 @@ np
 nullable
 num
 numpy
+nunique
 nvidia
+objectdetectionvideos
 objs
 ocr
 ocrextractor
@@ -1354,12 +1538,16 @@ pdfs
 perf
 petastorm
 pgrep
+pgvector
 philschmid
+pinecone
 pkill
 pkl
 plangenerator
+pluggable
 png
 poolclass
+popitem
 popleft
 pos
 posix
@@ -1372,6 +1560,7 @@ pptx
 pragma
 pre
 pred
+predicthouserent
 preds
 prepend
 preprocess
@@ -1380,6 +1569,7 @@ privateGPT
 privategpt
 proc
 proj
+propertytype
 prpty
 psutil
 psycopg
@@ -1399,6 +1589,7 @@ pytorch
 qa
 qdrant
 qualname
+randomFunction
 randomUDF
 rb
 rbatch
@@ -1406,10 +1597,13 @@ rdb
 readlines
 readme
 realimport
+rebatch
 recurse
 reddit
+releaser
 relu
 repo
+repos
 repr
 req
 resnet
@@ -1430,10 +1624,13 @@ rstrip
 rtype
 ruletype
 runnable
+runpy
 runtime
 russia
+saledate
 saliency
 samsum
+scikit
 sdist
 sep
 serializer
@@ -1454,6 +1651,10 @@ singledispatch
 singledispatchmethod
 sk
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+sklearn
+>>>>>>> 62080794 (ran spellchecker)
 smallint
 =======
 <<<<<<< HEAD
@@ -1474,12 +1675,15 @@ sqft
 sql
 sqlaclchemy
 sqlalchemy
+sqlalchmey
 sqlengine
 sqlite
 src
 sshleifer
+sst
 statementtoplanconverter
 staticmethod
+statsforecast
 statvfs
 stderr
 stdin
@@ -1511,13 +1715,17 @@ tearDown
 tearDownClass
 tempfile
 tensorflow
+testChromaDBIndexImageDataset
 testCreateIndexFeatTable
 testCreateIndexInputTable
 testCreateIndexName
 testDeleteOne
 testFaissIndexImageDataset
 testFaissIndexScanRewrite
+testIndex
+testIndexAutoUpdate
 testOpenTable
+testQdrantIndexImageDataset
 testRayErrorHandling
 testSimilarityFeatureTable
 testSimilarityImageDataset
@@ -1526,13 +1734,17 @@ testcase
 testcases
 testdeleteone
 testindex
+testindexautoupdate
 testopentable
+testpineconeindeximagedataset
 testsimilarityfeaturetable
 testsimilarityimagedataset
 testsimilaritytable
+textsummarizer
 th
 thefuzz
 timm
+tinyint
 tmp
 toGrayscale
 toc
@@ -1541,6 +1753,7 @@ todo
 tokenizer
 tolist
 torchvision
+tsforecasting
 tup
 tv
 tve
@@ -1557,6 +1770,7 @@ udfIO
 udfio
 udfmetadata
 udfs
+udt
 uid
 uint
 uknown
@@ -1565,6 +1779,7 @@ ultralytics
 un
 unicode
 unittest
+univariate
 unlink
 unnest
 unsqueeze
@@ -1575,6 +1790,7 @@ url
 urllib
 urlparse
 urls
+usecase
 usecases
 usecols
 utf
@@ -1597,6 +1813,7 @@ wal
 warmup
 wb
 weakref
+westbrae
 wget
 whitespaces
 workspaceFolder
@@ -1617,6 +1834,7 @@ xzdandy
 xzr
 yaml
 yc
+ylagged
 ymax
 ymin
 yml

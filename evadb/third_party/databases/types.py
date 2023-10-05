@@ -97,7 +97,7 @@ class DBHandler:
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
     def is_sqlalchmey_compatible(self) -> bool:
         """
-        Return  whether the data source is sqlaclemy compatible
+        Return  whether the data source is sqlaclchemy compatible
 
         Returns:
             A True / False boolean value..

@@ -200,7 +200,11 @@ Install MindsDB
 ~~~~~~~~~~~~~~~
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
+=======
+Follow the `MindsDB installation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
+>>>>>>> 62080794 (ran spellchecker)
 
 .. note::
 
