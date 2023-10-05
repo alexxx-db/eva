@@ -128,6 +128,7 @@ The index can be created on either a column of a table directly or outputs from 
 * [table_name] is the name of the table, on which the index is created.
 * [column_name] is the name of one of the column in the table. We currently only support creating index on single column of a table.
 * [function_name] is an optional parameter that can be added if the index needs to be constructed on results of a function.
+<<<<<<< HEAD
 
 Examples
 ~~~~~~~~
@@ -225,6 +226,8 @@ The index can be created on either a column of a table directly or outputs from 
 * [table_name] is the name of the table, on which the index is created.
 * [column_name] is the name of one of the column in the table. We currently only support creating index on single column of a table.
 * [function_name] is an optional parameter that can be added if the index needs to be construsted on results of a funciton.
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 
 Examples
 ~~~~~~~~
@@ -294,6 +297,7 @@ To register an user-defined function, specify the implementation details of the 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -313,18 +317,29 @@ CREATE FUNCTION via Training
 
 To register an user-defined function by training a predication model.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+=======
+CREATE FUNCTION via Type
+----------------------------
+>>>>>>> fb00f6de (ran spellchecker)
 
 .. code-block:: sql
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 =======
 <<<<<<< HEAD
 >>>>>>> 5b27053e (ran spellchecker)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 CREATE FUNCTION via Type
 ----------------------------
 =======

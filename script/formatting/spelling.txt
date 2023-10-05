@@ -1,5 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+personal_ws-1.1 en 1563 
+=======
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -44,6 +51,7 @@ personal_ws-1.1 en 1467
 =======
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -113,6 +121,8 @@ personal_ws-1.1 en 1563
 =======
 =======
 =======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 personal_ws-1.1 en 1563 
@@ -132,6 +142,7 @@ personal_ws-1.1 en 1467
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
@@ -150,6 +161,14 @@ personal_ws-1.1 en 1563
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> eva-master
+=======
+personal_ws-1.1 en 1775 
+>>>>>>> 62080794 (ran spellchecker)
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 ABCD
 ABCMeta
 ANYDIM
@@ -190,12 +209,17 @@ AggregationExpressionsTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 AirData
 AirDataPanel
 AirForecast
@@ -204,10 +228,14 @@ AirPassengersPanel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -216,6 +244,8 @@ AirPassengersPanel
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 AliExpress
 Anirudh
 AnnotateTests
@@ -302,6 +332,9 @@ ChatGPTTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 ChromaDB
 ChromaDBVectorStore
 ClickHouseHandler
@@ -320,14 +353,20 @@ ChromaDB
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 =======
 ChromaDB
 ChromaDBVectorStore
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 ColConstraintInfo
 Colab
 ColorSpace
@@ -371,12 +410,17 @@ CreateFromSelectPlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 CreateFunctionExecutor
 CreateFunctionExecutorTest
 CreateFunctionPlan
@@ -385,10 +429,14 @@ CreateIndex
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -397,6 +445,8 @@ CreateIndex
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 CreateIndexExecutor
 CreateIndexPlan
 CreateIndexStatement
@@ -430,15 +480,19 @@ DailyMail
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 DallE
 DallEFunction
 DallEFunctionTest
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 Dask
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 Dask
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 Dask
 =======
@@ -449,6 +503,8 @@ Dask
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 DataFrame
 DataFrameColumn
 DataFrameColumns
@@ -474,12 +530,16 @@ DemoDB
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 DemoFunc
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 DemoFunc
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 DemoFunc
 =======
@@ -490,6 +550,8 @@ DemoFunc
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 DemoTable
 DemoUDF
 Deserialize
@@ -640,14 +702,21 @@ GenericLudwigModel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 GenericSklearnModel
 GenericUtilsTests
 GenericXGBoostModel
 GithubDataSourceTest
 GithubHandler
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -667,6 +736,9 @@ GithubHandler
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 GroupBy
 GroupByExecutor
 GroupByPlan
@@ -691,6 +763,7 @@ HashJoinProbePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 HelperFunction
 =======
 >>>>>>> 5b27053e (ran spellchecker)
@@ -698,6 +771,10 @@ HelperFunction
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 Helvetica
 HomeData
 HomeForecast
@@ -709,11 +786,15 @@ HomeSalesForecast
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 =======
 HomeRentals
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 =======
 HomeRentals
@@ -724,6 +805,8 @@ HomeRentals
 HomeRentals
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 HorizontalFlip
 HuggingFace
 HuggingFaceModel
@@ -907,6 +990,7 @@ MemoTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 MetaData
 Milvus
 Milvus's
@@ -927,6 +1011,14 @@ MetaData
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+MetaData
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+MetaData
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 MindsDB
 MiniLM
 MnistImageClassifier
@@ -1020,16 +1112,22 @@ MysqlHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 >>>>>>> eva-master
 =======
 NBEATS
 NCHAR
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 62080794 (ran spellchecker)
 <<<<<<< HEAD
@@ -1087,6 +1185,10 @@ MysqlHandler
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 62080794 (ran spellchecker)
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 NEQ
 NHITS
 NLP
@@ -1176,10 +1278,13 @@ PickleSerializer
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
@@ -1189,15 +1294,21 @@ Pinecone
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 =======
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 PlanExecutor
 PlanExecutorTest
 PlanGenerator
@@ -1212,6 +1323,7 @@ PredicatePlan
 PredictEmployee
 PredictEmployeeXgboost
 PredictHouseRent
+<<<<<<< HEAD
 <<<<<<< HEAD
 PredictHouseRentLudwig
 PredictHouseRentSklearn
@@ -1228,11 +1340,18 @@ PredictHouseRent
 =======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+PredictHouseRentLudwig
+PredictHouseRentSklearn
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 PrivateGPTTest
 ProgrammingError
 ProjectExecutor
@@ -1559,12 +1678,16 @@ TestUDF
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 TextClassifier
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 TextClassifier
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 TextClassifier
 =======
@@ -1575,6 +1698,8 @@ TextClassifier
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 TextFilterKeyword
 TextFilteringTests
 TextHFModel
@@ -1585,12 +1710,16 @@ TextProcessing
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 TextSummarizer
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 TextSummarizer
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 TextSummarizer
 =======
@@ -1601,6 +1730,8 @@ TextSummarizer
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 TextTestRunner
 TimeoutError
 TimerTests
@@ -1914,12 +2045,16 @@ distilbart
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 distilbert
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 distilbert
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 distilbert
 =======
@@ -1930,6 +2065,8 @@ distilbert
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 dists
 distutils
 dml
@@ -1986,10 +2123,13 @@ exprs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 extname
 extractOne
 extrator
@@ -1998,15 +2138,21 @@ extractOne
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 =======
 extname
 extractOne
 extrator
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 f'LOAD
 facebook
 facedetector
@@ -2178,12 +2324,16 @@ gc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 gcp
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 gcp
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 gcp
 =======
@@ -2194,6 +2344,8 @@ gcp
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 gdp
 georgia
 geq
@@ -2286,12 +2438,16 @@ invaid
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 inviter
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 inviter
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 inviter
 =======
@@ -2302,6 +2458,8 @@ inviter
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 io
 ipynb
 iq
@@ -2469,12 +2627,16 @@ poolclass
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 popitem
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 popitem
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 popitem
 =======
@@ -2485,6 +2647,8 @@ popitem
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 popleft
 pos
 posix
@@ -2548,9 +2712,11 @@ releaser
 relu
 repo
 <<<<<<< HEAD
+<<<<<<< HEAD
 repos
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 releaser
@@ -2566,6 +2732,11 @@ repos
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+repos
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 repr
 req
 resnet
@@ -2594,11 +2765,17 @@ russia
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 saledate
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+saledate
+>>>>>>> 5b27053e (ran spellchecker)
 saliency
 samsum
 scalable
@@ -2632,6 +2809,7 @@ simiarity
 singledispatch
 singledispatchmethod
 sk
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2684,7 +2862,15 @@ smallint
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 sklearn
+=======
+=======
+sklearn
+>>>>>>> 62080794 (ran spellchecker)
+smallint
+>>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -2788,6 +2974,7 @@ sshleifer
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 sst
 stablediffusion
 =======
@@ -2805,6 +2992,14 @@ sst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+sst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+sst
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 statementtoplanconverter
 staticmethod
 statsforecast
@@ -2876,12 +3071,16 @@ timm
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 tinyint
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 tinyint
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 tinyint
 =======
@@ -2892,6 +3091,8 @@ tinyint
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 tmp
 toGrayscale
 toc
@@ -2941,12 +3142,16 @@ urls
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 usecase
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 usecase
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 usecase
 =======
@@ -2957,6 +3162,8 @@ usecase
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 usecases
 usecols
 utf

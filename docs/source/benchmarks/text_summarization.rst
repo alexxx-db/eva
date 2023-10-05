@@ -803,6 +803,7 @@ Install MindsDB
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
@@ -830,7 +831,20 @@ Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hoste
 Follow the `MindsDB installation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 >>>>>>> 62080794 (ran spellchecker)
 =======
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 Follow the `MindsDB installation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
+=======
+Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
+=======
+Follow the `MindsDB installation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
+>>>>>>> 62080794 (ran spellchecker)
+
+.. note::
+
+   You will need to manually run ``pip install evaluate`` for the ``HuggingFace`` model to work in MindsDB.
+
+>>>>>>> 5b27053e (ran spellchecker)
 =======
 Follow the `MindsDB nstallation guide <https://docs.mindsdb.com/setup/self-hosted/pip/source>`_ to install it via ``pip``.
 >>>>>>> 53dafecf (feat: sync master staging (#1050))

@@ -36,14 +36,18 @@ class SetExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
         This design change for configuration manager will be taken care of
 =======
         This design change for configuation manager will be taken care of
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
         as a separate PR for the issue #1140, where all instances of config use
         will be replaced
@@ -57,6 +61,11 @@ class SetExecutor(AbstractExecutor):
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+        This design change for configuration manager will be taken care of
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
         as a separate PR for the issue #1140, where all instances of config use
         will be replaced
         """

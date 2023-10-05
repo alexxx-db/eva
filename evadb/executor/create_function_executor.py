@@ -2107,14 +2107,23 @@ class CreateFunctionExecutor(AbstractExecutor):
         ]
         if len(existing_model_files) == 0:
 <<<<<<< HEAD
+<<<<<<< HEAD
             print("Training, please wait...")
 =======
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 <<<<<<< HEAD
             logger.info("Training, please wait...")
 =======
             print("Training, please wait...")
 >>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+<<<<<<< HEAD
 >>>>>>> 8eeef957 (Add support for Neuralforecast (#1115))
+=======
+=======
+            logger.info("Training, please wait...")
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
             if library == "neuralforecast":
                 model.fit(df=data, val_size=horizon)
             else:
@@ -2783,10 +2792,13 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
                 drop_executor = DropObjectExecutor(self.db, None)
                 try:
                     drop_executor._handle_drop_function(self.node.name, if_exists=False)
@@ -2797,15 +2809,21 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 =======
                 drop_executor = DropObjectExecutor(self.db, None)
                 try:
                     drop_executor._handle_drop_function(self.node.name, if_exists=False)
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
                 except RuntimeError:
                     pass
                 else:

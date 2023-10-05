@@ -104,18 +104,27 @@ We set the training time out to be ``3600`` seconds.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c317ee2f (updates)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
    The :ref:`ludwig` page lists all the configurable parameters for the model training framework.
 =======
    The :ref:`ludwig` page lists all the configurable paramters for the model training framework.
 >>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
    The :ref:`ludwig` page lists all the configurable parameters for the model training framework.
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> c317ee2f (updates)
+=======
+=======
+   The :ref:`ludwig` page lists all the configurable parameters for the model training framework.
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 
 This query returns the trained model:
 

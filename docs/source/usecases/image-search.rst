@@ -188,10 +188,13 @@ EvaQL supports the ``ORDER BY`` and ``LIMIT`` clauses to retrieve the ``top-k`` 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
 EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
 
 EvaDB's query optimizer automatically picks the correct vector index to accelerate a given EvaQL query. It uses the vector index created in the prior step to accelerate the following image search query:
@@ -210,6 +213,7 @@ EvaDB's query optimizer automatically picks the correct vector index to accelera
 EvaDB contains a built-in ``Similarity(x, y)`` function that computets the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
 >>>>>>> 5b27053e (ran spellchecker)
@@ -217,6 +221,11 @@ EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclid
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 
 EvaDB's query optimizer automatically picks the correct vector index to accelerate a given EvaQL query. It uses the vector index created in the prior step to accelerate the following image search query:
 

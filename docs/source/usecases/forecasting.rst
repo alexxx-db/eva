@@ -118,18 +118,27 @@ This query returns the trained model:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c317ee2f (updates)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
    The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
 =======
    The :ref:`forecast` page lists all the configurable paramters for the forecasting model.
 >>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
    The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> c317ee2f (updates)
+=======
+=======
+   The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
 
 In the ``home_sales`` dataset, we have two different types of properties -- houses and units, and price gap between them is large. To get better forecasts,
 we specify the ``propertytype`` column as the ``ID`` of the time series data.
