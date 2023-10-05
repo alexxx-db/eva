@@ -236,10 +236,14 @@ def create_table_catalog_entry_for_native_table(
     table_info: TableInfo, column_list: List[ColumnDefinition]
 ):
 <<<<<<< HEAD
+<<<<<<< HEAD
     column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
 =======
     column_catalog_entires = xform_column_definitions_to_catalog_entries(column_list)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+    column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
+>>>>>>> 5b27053e (ran spellchecker)
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
@@ -247,10 +251,14 @@ def create_table_catalog_entry_for_native_table(
         file_url=None,
         table_type=TableType.NATIVE_DATA,
 <<<<<<< HEAD
+<<<<<<< HEAD
         columns=column_catalog_entries,
 =======
         columns=column_catalog_entires,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+        columns=column_catalog_entries,
+>>>>>>> 5b27053e (ran spellchecker)
         database_name=table_info.database_name,
     )
     return table_catalog_entry

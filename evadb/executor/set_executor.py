@@ -33,6 +33,7 @@ class SetExecutor(AbstractExecutor):
         https://duckdb.org/docs/sql/configuration.html
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         This design change for configuration manager will be taken care of
         as a separate PR for the issue #1140, where all instances of config use
         will be replaced
@@ -41,6 +42,9 @@ class SetExecutor(AbstractExecutor):
         self.catalog().upsert_configuration_catalog_entry(
 =======
         This design change for configuation manager will be taken care of
+=======
+        This design change for configuration manager will be taken care of
+>>>>>>> 5b27053e (ran spellchecker)
         as a separate PR for the issue #1140, where all instances of config use
         will be replaced
         """

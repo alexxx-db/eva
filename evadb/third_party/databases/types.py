@@ -110,8 +110,12 @@ class DBHandler:
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
     def is_sqlalchmey_compatible(self) -> bool:
         """
+<<<<<<< HEAD
         Return  whether the data source is sqlaclemy compatible
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+        Return  whether the data source is sqlaclchemy compatible
+>>>>>>> 5b27053e (ran spellchecker)
 
         Returns:
             A True / False boolean value..

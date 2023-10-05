@@ -95,10 +95,14 @@ This query returns the trained model:
 .. note::
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
 =======
    The :ref:`forecast` page lists all the configurable paramters for the forecasting model.
 >>>>>>> 591a8656 (updates)
+=======
+   The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
+>>>>>>> 5b27053e (ran spellchecker)
 
 In the ``home_sales`` dataset, we have two different types of properties -- houses and units, and price gap between them is large. To get better forecasts,
 we specify the ``propertytype`` column as the ``ID`` of the time series data.

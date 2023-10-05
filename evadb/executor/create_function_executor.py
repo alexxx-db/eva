@@ -923,7 +923,7 @@ class CreateFunctionExecutor(AbstractExecutor):
             if int(x.split("horizon")[1].split(".pkl")[0]) >= horizon
         ]
         if len(existing_model_files) == 0:
-            print("Training, please wait...")
+            logger.info("Training, please wait...")
             if library == "neuralforecast":
                 model.fit(df=data, val_size=horizon)
             else:
@@ -1348,6 +1348,7 @@ class CreateFunctionExecutor(AbstractExecutor):
                 from evadb.executor.drop_object_executor import DropObjectExecutor
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 drop_executor = DropObjectExecutor(self.db, None)
                 try:
                     drop_executor._handle_drop_function(self.node.name, if_exists=False)
@@ -1356,6 +1357,11 @@ class CreateFunctionExecutor(AbstractExecutor):
                 try:
                     drop_exectuor._handle_drop_function(self.node.name, if_exists=False)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+                drop_executor = DropObjectExecutor(self.db, None)
+                try:
+                    drop_executor._handle_drop_function(self.node.name, if_exists=False)
+>>>>>>> 5b27053e (ran spellchecker)
                 except RuntimeError:
                     pass
                 else:

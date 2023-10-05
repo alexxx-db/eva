@@ -81,10 +81,14 @@ We set the training time out to be ``3600`` seconds.
 .. note::
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    The :ref:`ludwig` page lists all the configurable parameters for the model training framework.
 =======
    The :ref:`ludwig` page lists all the configurable paramters for the model training framework.
 >>>>>>> 591a8656 (updates)
+=======
+   The :ref:`ludwig` page lists all the configurable parameters for the model training framework.
+>>>>>>> 5b27053e (ran spellchecker)
 
 This query returns the trained model:
 

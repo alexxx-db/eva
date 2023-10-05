@@ -360,10 +360,14 @@ class FunctionExecutorTest(unittest.TestCase):
             )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             # disabling warning for function modification for now
 =======
             # disabling warning for function modificiation for now
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            # disabling warning for function modification for now
+>>>>>>> 5b27053e (ran spellchecker)
             # with self.assertRaises(AssertionError):
             execute_query_fetch_all(self.evadb, select_query)
 
