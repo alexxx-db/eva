@@ -8,6 +8,7 @@ Prediction
     <embed>
     <table align="left">
     <td>
+<<<<<<< HEAD
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -15,6 +16,15 @@ Prediction
     </td>
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 591a8656 (updates)
     </td>
     </table><br><br>
     </embed>
@@ -70,7 +80,11 @@ We set the training time out to be ``3600`` seconds.
 
 .. note::
 
+<<<<<<< HEAD
    The :ref:`ludwig` page lists all the configurable parameters for the model training framework.
+=======
+   The :ref:`ludwig` page lists all the configurable paramters for the model training framework.
+>>>>>>> 591a8656 (updates)
 
 This query returns the trained model:
 
@@ -125,5 +139,8 @@ Here is the query's output:
    +------------------ --------+----------------------------------+
       
 .. include:: ../shared/footer.rst
+<<<<<<< HEAD
 
 .. include:: ../shared/designs/design10.rst
+=======
+>>>>>>> 591a8656 (updates)
