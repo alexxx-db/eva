@@ -8,6 +8,7 @@ Home Sale Forecasting
     <embed>
     <table align="left">
     <td>
+<<<<<<< HEAD
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -15,6 +16,15 @@ Home Sale Forecasting
     </td>
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 591a8656 (updates)
     </td>
     </table><br><br>
     </embed>
@@ -84,7 +94,11 @@ This query returns the trained model:
 
 .. note::
 
+<<<<<<< HEAD
    The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
+=======
+   The :ref:`forecast` page lists all the configurable paramters for the forecasting model.
+>>>>>>> 591a8656 (updates)
 
 In the ``home_sales`` dataset, we have two different types of properties -- houses and units, and price gap between them is large. To get better forecasts,
 we specify the ``propertytype`` column as the ``ID`` of the time series data.
@@ -134,5 +148,8 @@ Here is the query's output:
    +-----------------------|-------------------|----------------|
    
 .. include:: ../shared/footer.rst
+<<<<<<< HEAD
 
 .. include:: ../shared/designs/design11.rst
+=======
+>>>>>>> 591a8656 (updates)
