@@ -38,10 +38,17 @@ parts:
   - caption: Use Cases
     chapters:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
+=======
+      - file: source/usecases/forecasting.rst
+        title: Forecasting
+      - file: source/usecases/prediction.rst
+        title: Classification
+>>>>>>> 17103d35 (updates)
       - file: source/usecases/sentiment-analysis.rst
         title: Sentiment Analysis
       - file: source/usecases/question-answering.rst
@@ -56,6 +63,7 @@ parts:
         title: Object Detection
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
+<<<<<<< HEAD
       - file: source/usecases/homesale-forecast.rst
         title: Home Sale Forecasting
       - file: source/usecases/homerental-predict.rst
@@ -89,6 +97,8 @@ parts:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+>>>>>>> 17103d35 (updates)
 
   - caption: User Reference
     chapters:
