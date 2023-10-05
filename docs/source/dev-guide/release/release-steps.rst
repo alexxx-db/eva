@@ -26,10 +26,14 @@ Setup Credentials
 ~~~~~~~~~~~~~~~~~~
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Please check :ref:`setup_pypi_account` about how to setup PyPI account.
 =======
 Please check :ref:`setup_pypi_account` about how to setup PyPi account.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+Please check :ref:`setup_pypi_account` about how to setup PyPI account.
+>>>>>>> 5b27053e (ran spellchecker)
 
 Setup Github token. You can obtain a personal token from Github.
 

@@ -200,10 +200,14 @@ class CreateFunctionExecutorTest(unittest.TestCase):
         )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         # We create the function again with different parameters
 =======
         # We create the function again with different paramaters
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+        # We create the function again with different parameters
+>>>>>>> 5b27053e (ran spellchecker)
         function_entry = MagicMock()
         cache = MagicMock()
         function_entry.dep_caches = [cache]

@@ -115,6 +115,7 @@ Similar Image Search Powered By Vector Index
 EvaQL supports the ``ORDER BY`` and ``LIMIT`` clauses to retrieve the ``top-k`` most similar images for a given image. 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
 
 EvaDB's query optimizer automatically picks the correct vector index to accelerate a given EvaQL query. It uses the vector index created in the prior step to accelerate the following image search query:
@@ -130,6 +131,9 @@ EvaDB's query optimizer automatically picks the correct vector index to accelera
     LIMIT 5
 =======
 EvaDB contains a built-in ``Similarity(x, y)`` function that computets the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
+=======
+EvaDB contains a built-in ``Similarity(x, y)`` function that computes the Euclidean distance between ``x`` and ``y``. We will use this function to compare the feature vector of image being search (i.e., the given image) and the feature vectors of all the images in the dataset that is stored in the vector index.
+>>>>>>> 5b27053e (ran spellchecker)
 
 EvaDB's query optimizer automatically picks the correct vector index to accelerate a given EvaQL query. It uses the vector index created in the prior step to accelerate the following image search query:
 

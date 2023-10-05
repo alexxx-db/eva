@@ -36,6 +36,16 @@ class CreateExecutor(AbstractExecutor):
     def exec(self, *args, **kwargs):
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        # create a table in the ative database if set
+=======
+        # create a table in the active database if set
+>>>>>>> 62080794 (ran spellchecker)
+        is_native_table = self.node.table_info.database_name is not None
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         # create a table in the active database if set
