@@ -31,9 +31,12 @@ class GithubDataSourceTest(unittest.TestCase):
     def tearDown(self):
         execute_query_fetch_all(self.evadb, "DROP DATABASE IF EXISTS github_data;")
 
+<<<<<<< HEAD
     @pytest.mark.skip(
         reason="Need https://github.com/georgia-tech-db/evadb/pull/1280 for a cost-based rebatch optimization"
     )
+=======
+>>>>>>> 858b8c1c (Collection of fixes for the staging branch (#1253))
     @pytest.mark.xfail(reason="Flaky testcase due to `bad request` error message")
     def test_should_run_select_query_in_github(self):
         # Create database.
