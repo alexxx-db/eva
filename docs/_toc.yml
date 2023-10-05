@@ -97,7 +97,11 @@ parts:
 =======
       - file: source/usecases/forecasting.rst
         title: Forecasting
+<<<<<<< HEAD
       - file: source/usecases/classification.rst
+=======
+      - file: source/usecases/prediction.rst
+>>>>>>> c317ee2f (updates)
         title: Classification
 >>>>>>> 17103d35 (updates)
 >>>>>>> 591a8656 (updates)
@@ -118,6 +122,9 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
 =======
       - file: source/overview/connect-to-database
         title: Connect to Database
@@ -206,9 +213,12 @@ parts:
 =======
 <<<<<<< HEAD
 >>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> c317ee2f (updates)
       - file: source/usecases/homesale-forecast.rst
         title: Home Sale Forecasting
       - file: source/usecases/homerental-predict.rst
@@ -253,6 +263,7 @@ parts:
 >>>>>>> eva-master
 =======
 >>>>>>> 17103d35 (updates)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 591a8656 (updates)
 =======
@@ -439,6 +450,9 @@ parts:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 591a8656 (updates)
+>>>>>>> c317ee2f (updates)
 
   - caption: User Reference
     chapters:

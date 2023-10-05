@@ -10,6 +10,9 @@ Prediction
     <td>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -19,6 +22,7 @@ Prediction
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
 =======
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+<<<<<<< HEAD
 =======
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
 >>>>>>> fbfc3ace (docs: updates)
@@ -33,6 +37,15 @@ Prediction
 =======
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
 >>>>>>> fbfc3ace (docs: updates)
+=======
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/17-home-rental-prediction.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 591a8656 (updates)
+>>>>>>> c317ee2f (updates)
     </td>
     </table><br><br>
     </embed>
@@ -90,13 +103,19 @@ We set the training time out to be ``3600`` seconds.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
    The :ref:`ludwig` page lists all the configurable parameters for the model training framework.
 =======
    The :ref:`ludwig` page lists all the configurable paramters for the model training framework.
 >>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
 =======
    The :ref:`ludwig` page lists all the configurable parameters for the model training framework.
 >>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> c317ee2f (updates)
 
 This query returns the trained model:
 
@@ -153,11 +172,17 @@ Here is the query's output:
 .. include:: ../shared/footer.rst
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
 
 .. include:: ../shared/designs/design10.rst
 =======
 >>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
 =======
 
 .. include:: ../shared/designs/design10.rst
 >>>>>>> e867f37e (docs: updated images)
+=======
+>>>>>>> c317ee2f (updates)
