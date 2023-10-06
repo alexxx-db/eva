@@ -33,7 +33,7 @@ parts:
 =======
       - file: source/usecases/forecasting.rst
         title: Forecasting
-      - file: source/usecases/prediction.rst
+      - file: source/usecases/classification.rst
         title: Classification
 >>>>>>> 17103d35 (updates)
 >>>>>>> 591a8656 (updates)
