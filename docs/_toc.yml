@@ -98,10 +98,14 @@ parts:
       - file: source/usecases/forecasting.rst
         title: Forecasting
 <<<<<<< HEAD
+<<<<<<< HEAD
       - file: source/usecases/classification.rst
 =======
       - file: source/usecases/prediction.rst
 >>>>>>> c317ee2f (updates)
+=======
+      - file: source/usecases/classification.rst
+>>>>>>> 15d82bba (docs: fix classification link)
         title: Classification
 >>>>>>> 17103d35 (updates)
 >>>>>>> 591a8656 (updates)
