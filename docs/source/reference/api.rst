@@ -153,14 +153,18 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 0d46eb7c (docs: updated outdated reference to SHOW UDF)
     print(cursor.query("SHOW FUNCTIONS;").df())
 =======
     print(cursor.query("SHOW UDFS;").df())
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -170,6 +174,11 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+    print(cursor.query("SHOW FUNCTIONS;").df())
+>>>>>>> aed2d9cf (docs: updated outdated reference to SHOW UDF)
+>>>>>>> 0d46eb7c (docs: updated outdated reference to SHOW UDF)
 
 
 .. autosummary:: 

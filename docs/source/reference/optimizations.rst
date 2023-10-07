@@ -20,6 +20,7 @@ EvaDB optimizes the evaluation of *AI functions* using these optimizations:
 
 3️⃣ *Parallel Query Processing*: EvaDB runs AI models in parallel to optimize GPU utilization by leveraging the Ray execution framework. Additionally, an AI pipeline is established for concurrent CPU tasks, such as data loading and decoding. 🎩
 
+<<<<<<< HEAD
 These built-in optimizations ensure superior performance and responsiveness in EvaDB's AI function evaluations. Dive in and experience the EvaDB difference! 🌟🎉
 
 <<<<<<< HEAD
@@ -69,6 +70,7 @@ EvaDB optimizes the evaluation of user-defined functions in three manifolds.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e1643547 (updates)
 =======
@@ -96,3 +98,8 @@ These built-in optimizations ensure superior performance and responsiveness in E
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+These built-in optimizations ensure superior performance and responsiveness in EvaDB's AI function evaluations. Dive in and experience the EvaDB difference! 🌟🎉
+>>>>>>> aed2d9cf (docs: updated outdated reference to SHOW UDF)
+>>>>>>> 0d46eb7c (docs: updated outdated reference to SHOW UDF)
