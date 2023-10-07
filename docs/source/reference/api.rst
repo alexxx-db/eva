@@ -38,10 +38,14 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 
     # List all the built-in functions in EvaDB
 <<<<<<< HEAD
+<<<<<<< HEAD
     print(cursor.query("SHOW FUNCTIONS;").df())
 =======
     print(cursor.query("SHOW UDFS;").df())
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    print(cursor.query("SHOW FUNCTIONS;").df())
+>>>>>>> aed2d9cf (docs: updated outdated reference to SHOW UDF)
 
 
 .. autosummary:: 
