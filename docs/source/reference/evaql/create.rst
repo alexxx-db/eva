@@ -37,6 +37,9 @@ CREATE TABLE
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 25352b39 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 To create a table, we can specify the schema of the table.
 
 .. code-block::
@@ -47,18 +50,24 @@ To create a table, we can specify the schema of the table.
    ] );
 
 Blew is an example:
+<<<<<<< HEAD
 =======
 To create a table, specify the schema of the table.
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 To create a table, specify the schema of the table.
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 25352b39 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 
 .. code:: mysql
 
    CREATE TABLE IF NOT EXISTS MyCSV (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 25352b39 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
      id INTEGER UNIQUE,
      frame_id INTEGER,
      video_id INTEGER,
@@ -406,6 +415,7 @@ Where the `parameter` is ``key value`` pair.
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
+<<<<<<< HEAD
 =======
     IMPL  'evadb/udfs/fastrcnn_object_detector.py';
 =======
@@ -539,3 +549,5 @@ To create a view with materialized results -- like the outputs of deep learning 
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 25352b39 (Remove dimensions from `TEXT` and `FLOAT` (#1261))

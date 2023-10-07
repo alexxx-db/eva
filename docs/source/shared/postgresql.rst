@@ -22,6 +22,7 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
@@ -60,10 +61,16 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 >>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 =======
 =======
+=======
+>>>>>>> 25352b39 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 .. code-block::
 =======
+>>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+=======
 .. code-block:: text
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -72,6 +79,13 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 .. code-block:: text
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+.. code-block::
+>>>>>>> aeb9a3be (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+>>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+>>>>>>> 25352b39 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 
     CREATE DATABASE postgres_data 
     WITH ENGINE = 'postgres', 
