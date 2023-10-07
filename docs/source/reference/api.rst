@@ -55,6 +55,9 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
     ~evadb.EvaDBConnection.cursor
     ~evadb.EvaDBCursor.query
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 173efea8 (Remove table names from column names for `df()` call (#1256))
     ~evadb.EvaDBQuery.df
 
 .. warning::
