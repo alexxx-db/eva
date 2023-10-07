@@ -9,10 +9,19 @@ EvaDB lets you connect to your favorite databases, data warehouses, data lakes, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. code-block::
 =======
+>>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+=======
 .. code-block:: text
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+.. code-block::
+>>>>>>> aeb9a3be (Remove dimensions from `TEXT` and `FLOAT` (#1261))
+>>>>>>> 63510989 (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 
     CREATE DATABASE postgres_data 
     WITH ENGINE = 'postgres', 
