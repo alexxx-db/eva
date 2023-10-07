@@ -6,11 +6,15 @@ We will assume that you have a ``PostgreSQL`` database server running locally th
 EvaDB lets you connect to your favorite databases, data warehouses, data lakes, etc., via the ``CREATE DATABASE`` statement. In this query, we connect EvaDB to an existing ``PostgreSQL`` server:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 .. code-block:: text
+=======
+.. code-block::
+>>>>>>> aeb9a3be (Remove dimensions from `TEXT` and `FLOAT` (#1261))
 
     CREATE DATABASE postgres_data 
     WITH ENGINE = 'postgres', 
