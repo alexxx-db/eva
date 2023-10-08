@@ -189,9 +189,15 @@ This query returns the top-5 most similar images in a ``DataFrame``:
     +---------------------------------+
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/footer.rst
 
 .. include:: ../shared/designs/design8.rst
 =======
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+.. include:: ../shared/footer.rst
+
+.. include:: ../shared/designs/design8.rst
+>>>>>>> e867f37e (docs: updated images)

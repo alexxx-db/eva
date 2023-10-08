@@ -317,6 +317,11 @@ Now, the ``DataFrame`` only contains images of the digit ``6``.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+.. include:: ../shared/footer.rst
+=======
+>>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 <<<<<<< HEAD
 .. include:: ../shared/footer.rst
 
@@ -327,6 +332,7 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 =======
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -341,3 +347,11 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
+=======
+.. include:: ../shared/footer.rst
+
+.. include:: ../shared/designs/design7.rst
+>>>>>>> 08db5ebb (docs: updated images)
+>>>>>>> e867f37e (docs: updated images)

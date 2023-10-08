@@ -152,7 +152,12 @@ Here is the query's output:
       
 .. include:: ../shared/footer.rst
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .. include:: ../shared/designs/design10.rst
 =======
 >>>>>>> 591a8656 (updates)
+=======
+
+.. include:: ../shared/designs/design10.rst
+>>>>>>> e867f37e (docs: updated images)
