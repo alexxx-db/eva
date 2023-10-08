@@ -36,8 +36,11 @@ EvaDB is a **query engine** that makes it easy to:
 ..  rubric:: Bring AI inside your Database System
 =======
 ..  rubric:: Build AI apps in SQL
+<<<<<<< HEAD
 >>>>>>> 528b5434 (docs: updates)
 
+=======
+>>>>>>> c0ae0836 (docs: updates)
 ----------
 
 **EvaDB brings AI inside your database. You can easily build scalable AI apps in SQL.**
@@ -94,6 +97,7 @@ Our target audience is software developers who may not necessarily have a backgr
 - 📝 following us on Medium: https://evadb.ai/blog
 - 🖥️ contributing to EvaDB: https://evadb.ai/github
 
+
 Getting Started
 ----------------
 
@@ -103,10 +107,14 @@ Getting Started
     <a class="no-underline" href="source/overview/getting-started.html" target="_blank"> <div class="info-box" >
             <div class="image-header" style="padding:0px;">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <img src="_static/icons/code.png" width="24px" height="24px" />
                 <h3 style="font-size:20px;">Getting Started</h3>
 =======
                 <img src="_static/icons/code.png" width="44px" height="44px" />
+=======
+                <img src="_static/icons/code.png" width="24px" height="24px" />
+>>>>>>> c0ae0836 (docs: updates)
                 <h3 style="font-size:20px;">Learn Basics</h3>
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
             </div>
@@ -118,6 +126,7 @@ Getting Started
         <div class="info-box" >
             <div class="image-header" style="padding:0px;">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <img src="_static/icons/download.png" width="24px" height="24px" />
                 <h3 style="font-size:20px;">Key Concepts</h3>
             </div>
@@ -127,6 +136,9 @@ Getting Started
             Learn the key concepts related to EvaDB.</p>      
 =======
                 <img src="_static/icons/download.png" width="44px" height="44px" />
+=======
+                <img src="_static/icons/download.png" width="24px" height="24px" />
+>>>>>>> c0ae0836 (docs: updates)
                 <h3 style="font-size:20px;">Key Concepts</h3>
             </div>
             <p class="only-light" style="color:#000000;">Learn the 
@@ -141,7 +153,11 @@ Getting Started
             ><div class="info-box" >
             <div class="image-header" style="padding:0px;">
                 <img src="_static/icons/slack.png" width="24px" height="24px" />
+<<<<<<< HEAD
                 <h3 style="font-size:20px;">Join our Slack</h3>
+=======
+                <h3 style="font-size:20px;">Join Slack</h3>
+>>>>>>> c0ae0836 (docs: updates)
             </div>
             <p class="only-light" style="color:#000000;">Have a question? Join our Slack community.</p> 
             <p class="only-dark" style="color:#FFFFFF;">Have a question? Join our Slack community.</p>   
