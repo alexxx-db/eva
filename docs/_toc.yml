@@ -11,8 +11,11 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> f1e2bddc (docs: updates)
       - file: source/overview/concepts
         title: Concepts
       - file: source/overview/ai-queries
@@ -20,11 +23,16 @@ parts:
       - file: source/overview/connect-to-data-sources
         title: Connect to Data Sources
       - file: source/overview/faq
+<<<<<<< HEAD
       - file: source/overview/roadmap
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f1e2bddc (docs: updates)
       - file: source/overview/connect-to-database
         title: Connect to Database
 <<<<<<< HEAD
@@ -38,11 +46,16 @@ parts:
         title: Model inference
 =======
 >>>>>>> dc9069a2 (docs: updates)
+<<<<<<< HEAD
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
       - file: source/overview/concepts
         title: Concepts
 <<<<<<< HEAD
+=======
+      - file: source/overview/concepts
+        title: Concepts
+>>>>>>> f1e2bddc (docs: updates)
       - file: source/overview/model-inference
         title: AI Models
         sections:
@@ -62,6 +75,7 @@ parts:
 =======
       - file: source/overview/connect-to-database
 <<<<<<< HEAD
+<<<<<<< HEAD
         title: Connect to Database
 >>>>>>> dc9069a2 (docs: updates)
 =======
@@ -79,6 +93,12 @@ parts:
       - file: source/overview/faq
 >>>>>>> c952858c (docs: updates)
 >>>>>>> 35b99c88 (docs: updates)
+=======
+        title: Connect to Database
+>>>>>>> dc9069a2 (docs: updates)
+        #- file: source/overview/faq
+>>>>>>> df4d8a35 (docs: updates)
+>>>>>>> f1e2bddc (docs: updates)
 
   - caption: Use Cases
     chapters:

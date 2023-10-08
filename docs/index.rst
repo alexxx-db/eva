@@ -31,12 +31,15 @@ Welcome to EvaDB!
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 864a7bed (docs: updates)
+=======
+>>>>>>> f1e2bddc (docs: updates)
 .. raw:: html
 
     <br>
@@ -94,7 +97,21 @@ EvaDB's key benefits include:
 - 🐦 following us on Twitter: https://twitter.com/evadb_ai
 - 📝 following us on Medium: https://medium.com/evadb-blog
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+.. raw:: html
+
+   <span style="font-size: 110%;"><b>EvaDB brings AI inside your database. You can easily build scalable AI apps in SQL.</b></span> <br><br>
+
+EvaDB makes it easy to:
+
+- 🔮 Build AI-powered apps over data stored in SQL and vector database systems
+- 🤝 Query data with a pre-trained AI model from Hugging Face, OpenAI, YOLO, PyTorch, and other AI engines
+- 💰 Save time and money spent on AI apps via AI-centric query optimization and execution
+>>>>>>> df4d8a35 (docs: updates)
+>>>>>>> f1e2bddc (docs: updates)
 
 ----------
 
@@ -382,8 +399,15 @@ Getting Started
 =======
 =======
 
+<<<<<<< HEAD
     <br><br><br>
 
 .. include:: source/shared/design1.rst
 >>>>>>> f398c41b (docs: updates)
+<<<<<<< HEAD
 >>>>>>> 864a7bed (docs: updates)
+=======
+=======
+.. include:: source/shared/design1.rst
+>>>>>>> df4d8a35 (docs: updates)
+>>>>>>> f1e2bddc (docs: updates)

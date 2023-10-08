@@ -211,18 +211,24 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/designs/design4.rst
 =======
 =======
 >>>>>>> e867f37e (docs: updated images)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+.. include:: ../shared/designs/design4.rst
+=======
+>>>>>>> f1e2bddc (docs: updates)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> df4d8a35 (docs: updates)
 =======
+<<<<<<< HEAD
 .. include:: ../shared/designs/design4.rst
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
@@ -230,6 +236,8 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 .. include:: ../shared/designs/design4.rst
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> f1e2bddc (docs: updates)
 EvaDBCursor Interface
 ---------------------
 
@@ -346,11 +354,15 @@ EvaDBQuery Interface
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f1e2bddc (docs: updates)
 =======
 >>>>>>> eva-master
 =======
 .. include:: ../shared/design4.rst
 >>>>>>> dc9069a2 (docs: updates)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> df4d8a35 (docs: updates)
 =======
@@ -464,3 +476,6 @@ EvaDBQuery Interface
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> df4d8a35 (docs: updates)
+>>>>>>> f1e2bddc (docs: updates)
