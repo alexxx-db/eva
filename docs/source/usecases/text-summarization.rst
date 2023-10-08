@@ -134,7 +134,12 @@ Here is the query's output ``DataFrame``:
 
 .. include:: ../shared/footer.rst
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .. include:: ../shared/designs/design2.rst
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+
+.. include:: ../shared/design2.rst
+>>>>>>> f398c41b (docs: updates)
