@@ -162,6 +162,9 @@ intersphinx_mapping = {
 html_static_path = ["_static"]
 html_css_files = [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 114c0bdd (docs: updates)
     "custom.css", 
     "algolia.css",
     "https://cdn.jsdelivr.net/npm/@docsearch/css@3",
@@ -169,6 +172,7 @@ html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
 ]
+<<<<<<< HEAD
 =======
                     "custom.css", 
                     "algolia.css",
@@ -177,6 +181,8 @@ html_css_files = [
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"]
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 114c0bdd (docs: updates)
 
 # Check link: https://stackoverflow.com/questions/14492743/have-sphinx-report-broken-links/14735060#14735060
 nitpicky = True
