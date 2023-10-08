@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 061e9d6d (docs: updates)
 <<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
@@ -167,8 +170,17 @@ personal_ws-1.1 en 1563
 =======
 personal_ws-1.1 en 1775 
 >>>>>>> 62080794 (ran spellchecker)
+<<<<<<< HEAD
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 >>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+=======
+personal_ws-1.1 en 1776 
+>>>>>>> 8379a400 (docs: updates)
+>>>>>>> 061e9d6d (docs: updates)
+>>>>>>> 7955cfcb (docs: updates)
 ABCD
 ABCMeta
 ANYDIM
@@ -1038,12 +1050,16 @@ MySQLNativeStorageEngineTest
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7955cfcb (docs: updates)
 MyTable
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 MyTable
 >>>>>>> 061e9d6d (docs: updates)
+<<<<<<< HEAD
 =======
 MyTable
 =======
@@ -1054,6 +1070,8 @@ MyTable
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7955cfcb (docs: updates)
 MyTextCSV
 MyUDF
 MyVideo
