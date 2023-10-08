@@ -8,6 +8,7 @@ parts:
           - file: source/overview/getting-started/installation-options
             title: Installation Options
 <<<<<<< HEAD
+<<<<<<< HEAD
       - file: source/overview/concepts
         title: Concepts
       - file: source/overview/ai-queries
@@ -16,6 +17,45 @@ parts:
         title: Connect to Data Sources
       - file: source/overview/faq
       - file: source/overview/roadmap
+=======
+<<<<<<< HEAD
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+      - file: source/overview/model-inference
+        title: Model inference
+=======
+>>>>>>> dc9069a2 (docs: updates)
+      - file: source/overview/concepts
+        title: Concepts
+      - file: source/overview/model-inference
+        title: AI Models
+        sections:
+          - file: source/overview/concepts/data-sources
+            title: Data Sources
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+      - file: source/overview/concepts
+        title: Concepts
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-master
+=======
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+>>>>>>> dc9069a2 (docs: updates)
+        #- file: source/overview/faq
+>>>>>>> df4d8a35 (docs: updates)
 
   - caption: Use Cases
     chapters:

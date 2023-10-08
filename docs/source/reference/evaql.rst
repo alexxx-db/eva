@@ -47,4 +47,8 @@ EvaDB Query Language (EvaQL) is tailored for AI apps and is derived from SQL. De
 
 .. tableofcontents::
 
+<<<<<<< HEAD
 .. include:: ../shared/designs/design5.rst
+=======
+.. include:: ../shared/design5.rst
+>>>>>>> df4d8a35 (docs: updates)
