@@ -70,12 +70,19 @@ EvaDB is a **query engine** that makes it easy to:
 EvaDB makes it easy to:
 =======
 
-    <span style="font-size: 110%;"><b>EvaDB brings AI inside your database. You can easily build scalable AI apps in SQL.</b></span> <br><br>
+    <span style="font-size: 110%;">
+    <b>
+        EvaDB brings AI inside your database. 
+        Write simpler, scalable AI apps in SQL.
+    </b>
+    </span> 
+    
+    <br><br>
 
 EvaDB is a **query engine** that makes it easy to:
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 
-- 🔮 Build AI-powered apps over data stored in SQL and vector database systems
+- 🔮 Build scalable AI-powered apps over data stored in SQL and vector database systems using a few short, simple SQL queries
 - 🤝 Query data with a pre-trained AI model from Hugging Face, OpenAI, YOLO, PyTorch, and other AI engines
 - 💰 Save time and money spent on AI apps via AI-centric query optimization and execution
 >>>>>>> df4d8a35 (docs: updates)
