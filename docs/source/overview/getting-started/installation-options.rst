@@ -7,10 +7,13 @@ Installation Options
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 87857fed (docs: updates)
 EvaDB supports a wide range of installation options for extending its functionality.
 
 Computer Vision
@@ -70,6 +73,9 @@ This installation option enables more efficient query execution on CPUs and GPUs
 EvaDB provides the following additional installation options for extending its functionality.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 87857fed (docs: updates)
 =======
 EvaDB supports a wide range of installation options for extending its functionality.
 >>>>>>> 5a56b01d (docs: updates)
@@ -110,6 +116,7 @@ This installation option enables use-cases related to vision including image cla
 =======
     pip install evadb[vision]
 >>>>>>> 5a56b01d (docs: updates)
+<<<<<<< HEAD
 
 Natural Language Processing
 ---------------------------
@@ -219,11 +226,62 @@ This installation option enables more efficient query execution on CPUs and GPUs
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 87857fed (docs: updates)
 
-* ``pip install evadb[ray]`` for installing the Ray compute engine. It enables EvaDB to do more efficient query execution on CPUs and GPUs.
+Natural Language Processing
+---------------------------
+>>>>>>> 913548e7 (docs: updates)
 
+<<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+This installation option enables use-cases related to natural language processing including text summarization, question answering, and sentiment analysis.
+
+.. code-block:: python
+
+    pip install evadb[document]
+
+Vector Database Systems
+-----------------------
+
+This installation option enables use-cases related to similarity search based on feature vectors by connecting to vector database systems.
+
+.. code-block:: python
+
+    pip install evadb[qdrant]
+
+AI Engines
+----------
+
+This installation option enables use-cases related to training and fine-tuning AI models using AI engines.
+
+.. code-block:: python
+
+    pip install evadb[ludwig]
+
+Forecasting
+-----------
+
+This installation option enables use-cases related to time-series forecasting.
+
+.. code-block:: python
+
+    pip install evadb[forecasting]
+
+Ray
+----
+
+This installation option enables more efficient query execution on CPUs and GPUs using the Ray compute engine.
+
+.. code-block:: python
+
+    pip install evadb[ray]
+>>>>>>> 5a56b01d (docs: updates)
+>>>>>>> 87857fed (docs: updates)
