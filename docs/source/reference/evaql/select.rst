@@ -1,9 +1,9 @@
-.. _sql-select:
-
 SELECT
 ======
 
-SELECT FRAMES WITH PREDICATES
+.. _select:
+
+SELECT TUPLES WITH PREDICATES
 -----------------------------
 
 Search for frames with a car
@@ -32,6 +32,7 @@ Search for frames containing greater than 3 cars
    ORDER BY id;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 =======
@@ -48,6 +49,10 @@ SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+SELECT TUPLES WITH MULTIPLE PREDICATES
+--------------------------------------
+>>>>>>> c2094b0c (docs: updated sql statement list)
 
 Compose multiple user-defined functions in a single query to construct semantically complex queries.
 
@@ -57,18 +62,18 @@ Compose multiple user-defined functions in a single query to construct semantica
    FROM HAPPY JOIN LATERAL UNNEST(FaceDetector(data)) AS Face(bbox, conf)  
    WHERE id < 15;
 
-SELECT WITHOUT TABLE
---------------------
+SELECT TUPLES WITHOUT TABLE
+---------------------------
 
 In EvaDB, we can compose a query that does not have a table source. This type of queries are usually expressions.
 
 .. code:: sql
 
    SELECT 1;
-   SELECT 1>2;
+   SELECT 1 > 2;
    SELECT HomeRentalForecast(12);
 
 .. note::
 
-   Go over :ref:`forecast` for forecasting function support in EvaDB.
+   If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
 

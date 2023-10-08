@@ -1,9 +1,12 @@
-.. _sql-use:
-
 USE
 ===
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.. _use:
+
+>>>>>>> c2094b0c (docs: updated sql statement list)
 The USE statement allows us to run arbitrary native queries in the connected database.
 =======
 <<<<<<< HEAD

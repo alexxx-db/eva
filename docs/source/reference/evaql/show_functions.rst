@@ -1,3 +1,4 @@
+<<<<<<< HEAD:docs/source/reference/evaql/show.rst
 SHOW 
 ====
 
@@ -18,6 +19,12 @@ SHOW FUNCTIONS
 --------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+SHOW FUNCTIONS
+==============
+
+.. _show_functions:
+>>>>>>> c2094b0c (docs: updated sql statement list):docs/source/reference/evaql/show_functions.rst
 
 List the registered user-defined functions
 
