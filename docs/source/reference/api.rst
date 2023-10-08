@@ -212,16 +212,22 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 .. include:: ../shared/designs/design4.rst
 =======
 =======
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 .. include:: ../shared/designs/design4.rst
 =======
 >>>>>>> f1e2bddc (docs: updates)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -364,11 +370,15 @@ EvaDBQuery Interface
 >>>>>>> dc9069a2 (docs: updates)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 >>>>>>> df4d8a35 (docs: updates)
 =======
 =======
 .. include:: ../shared/designs/design4.rst
 >>>>>>> 08db5ebb (docs: updated images)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e867f37e (docs: updated images)
 =======
@@ -479,3 +489,6 @@ EvaDBQuery Interface
 =======
 >>>>>>> df4d8a35 (docs: updates)
 >>>>>>> f1e2bddc (docs: updates)
+=======
+>>>>>>> e867f37e (docs: updated images)
+>>>>>>> 5678c9a3 (docs: updated images)

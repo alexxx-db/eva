@@ -1014,6 +1014,7 @@ Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <h
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .. include:: ../shared/designs/design2.rst
 =======
@@ -1022,6 +1023,8 @@ Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <h
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> f1e2bddc (docs: updates)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 .. image:: ../../images/reference/mnist.png
 
 .. note::
@@ -1098,11 +1101,15 @@ Try out EvaDB by experimenting with the complete `sentiment analysis notebook on
 >>>>>>> dc9069a2 (docs: updates)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 >>>>>>> df4d8a35 (docs: updates)
 =======
 =======
 .. include:: ../shared/designs/design2.rst
 >>>>>>> 08db5ebb (docs: updated images)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e867f37e (docs: updated images)
 =======
@@ -1200,3 +1207,6 @@ Try out EvaDB by experimenting with the complete `sentiment analysis notebook on
 =======
 >>>>>>> df4d8a35 (docs: updates)
 >>>>>>> f1e2bddc (docs: updates)
+=======
+>>>>>>> e867f37e (docs: updated images)
+>>>>>>> 5678c9a3 (docs: updated images)

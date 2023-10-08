@@ -28,10 +28,13 @@ These built-in optimizations ensure superior performance and responsiveness in E
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 .. include:: ../shared/designs/design6.rst
 =======
 Optimizations
@@ -111,4 +114,10 @@ These built-in optimizations ensure superior performance and responsiveness in E
 
 .. include:: ../shared/design6.rst
 >>>>>>> df4d8a35 (docs: updates)
+<<<<<<< HEAD
 >>>>>>> f1e2bddc (docs: updates)
+=======
+=======
+.. include:: ../shared/designs/design6.rst
+>>>>>>> e867f37e (docs: updated images)
+>>>>>>> 5678c9a3 (docs: updated images)

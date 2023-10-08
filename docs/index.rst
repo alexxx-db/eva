@@ -383,6 +383,7 @@ Getting Started
 =======
 .. include:: source/shared/designs/design1.rst
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 864a7bed (docs: updates)
@@ -413,3 +414,5 @@ Getting Started
 .. include:: source/shared/design1.rst
 >>>>>>> df4d8a35 (docs: updates)
 >>>>>>> f1e2bddc (docs: updates)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)

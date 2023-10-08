@@ -348,6 +348,7 @@ Here is the query's output ``DataFrame``:
 =======
 .. include:: ../shared/designs/design2.rst
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 864a7bed (docs: updates)
@@ -369,3 +370,5 @@ Here is the query's output ``DataFrame``:
 .. include:: ../shared/design2.rst
 >>>>>>> f398c41b (docs: updates)
 >>>>>>> 864a7bed (docs: updates)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)

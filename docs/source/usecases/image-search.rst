@@ -305,10 +305,13 @@ This query returns the top-5 most similar images in a ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 .. include:: ../shared/footer.rst
 
 .. include:: ../shared/designs/design8.rst
@@ -317,12 +320,18 @@ This query returns the top-5 most similar images in a ``DataFrame``:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 =======
 .. include:: ../shared/footer.rst
 
 .. include:: ../shared/designs/design8.rst
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5678c9a3 (docs: updated images)

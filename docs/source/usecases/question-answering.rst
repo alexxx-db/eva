@@ -591,21 +591,30 @@ Here is the query's output ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 
 .. include:: ../shared/designs/design1.rst
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 =======
 
 .. include:: ../shared/designs/design1.rst
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5678c9a3 (docs: updated images)

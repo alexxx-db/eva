@@ -740,6 +740,11 @@ Now, the ``DataFrame`` only contains images of the digit ``6``.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+.. include:: ../shared/footer.rst
+=======
+>>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -785,6 +790,7 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 =======
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -849,6 +855,8 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 =======
 =======
 =======
+>>>>>>> 5678c9a3 (docs: updated images)
+=======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 .. include:: ../shared/footer.rst
@@ -868,6 +876,7 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
@@ -882,3 +891,13 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/m
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> eva-master
+=======
+.. include:: ../shared/footer.rst
+
+.. include:: ../shared/designs/design7.rst
+>>>>>>> 08db5ebb (docs: updated images)
+>>>>>>> e867f37e (docs: updated images)
+>>>>>>> 5678c9a3 (docs: updated images)

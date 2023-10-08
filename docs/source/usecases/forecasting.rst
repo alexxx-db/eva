@@ -191,16 +191,25 @@ Here is the query's output:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c317ee2f (updates)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 
 .. include:: ../shared/designs/design11.rst
 =======
 >>>>>>> 591a8656 (updates)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 =======
 
 .. include:: ../shared/designs/design11.rst
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 =======
 >>>>>>> c317ee2f (updates)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)

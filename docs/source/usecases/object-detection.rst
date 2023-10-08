@@ -699,10 +699,13 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 .. include:: ../shared/designs/design9.rst
 =======
     +------------------------------+
@@ -727,6 +730,7 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 =======
 .. include:: ../shared/designs/design9.rst
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 =======
 
 .. include:: ../shared/footer.rst
@@ -737,3 +741,5 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5678c9a3 (docs: updated images)

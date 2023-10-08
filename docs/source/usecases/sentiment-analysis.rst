@@ -124,6 +124,14 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+.. include:: ../shared/nlp.rst
+
+.. include:: ../shared/footer.rst
+<<<<<<< HEAD
+=======
+>>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,6 +188,9 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -209,14 +220,19 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
 >>>>>>> eva-master
 =======
 
 .. include:: ../shared/designs/design2.rst
 >>>>>>> 08db5ebb (docs: updated images)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> e867f37e (docs: updated images)
 =======
@@ -281,3 +297,6 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> e867f37e (docs: updated images)
+>>>>>>> 5678c9a3 (docs: updated images)
