@@ -256,6 +256,7 @@ Here is an illustrative `ChatGPT-based Sentiment Analysis` AI query focused on r
     WHERE ChatGPT("Is the review positive or negative. Only reply 'positive' or 'negative'.", review) = "negative";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The complete `Sentiment Analysis notebook is available on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`_.
 Try out EvaDB by experimenting with this introductory notebook.
 <<<<<<< HEAD
@@ -276,3 +277,6 @@ Try out EvaDB by experimenting with this introductory notebook.
 =======
 The complete `Sentiment Analysis notebook is available on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`_. Try out EvaDB by experimenting with this notebook :)
 >>>>>>> 8379a400 (docs: updates)
+=======
+Try out EvaDB by experimenting with the complete `sentiment analysis notebook on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`_ 🙂
+>>>>>>> 1291df05 (docs: updates)
