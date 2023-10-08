@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 USE
 ===
 
@@ -13,6 +16,7 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 =======
 .. _sql-use:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
@@ -65,10 +69,24 @@ The USE statement allows us to run arbitrary native queries in the connected dat
 =======
 .. _sql-use:
 
+=======
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 USE
 ===
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.. _use:
+
+>>>>>>> c2094b0c (docs: updated sql statement list)
+The USE statement allows us to run arbitrary native queries in the connected database.
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
 <<<<<<< HEAD
 <<<<<<< HEAD
 The USE statement allows us to run arbitary native queries in the connected database.

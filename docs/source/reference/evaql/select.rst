@@ -1,8 +1,7 @@
-.. _sql-select:
-
 SELECT
 ======
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +10,8 @@ SELECT
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 .. _select:
 
 SELECT TUPLES WITH PREDICATES
@@ -19,15 +20,21 @@ SELECT FRAMES WITH PREDICATES
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 =======
 .. _select:
 
 SELECT TUPLES WITH PREDICATES
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 -----------------------------
 
 Search for frames with a car
@@ -56,6 +63,13 @@ Search for frames containing greater than 3 cars
    ORDER BY id;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -105,6 +119,9 @@ SELECT WITH MULTIPLE FUNCTIONS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -133,14 +150,19 @@ SELECT WITH MULTIPLE FUNCTIONS
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 >>>>>>> eva-master
 =======
 SELECT TUPLES WITH MULTIPLE PREDICATES
 --------------------------------------
 >>>>>>> c2094b0c (docs: updated sql statement list)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 =======
@@ -214,6 +236,9 @@ SELECT WITH MULTIPLE FUNCTIONS
 >>>>>>> 30d7834d (release: merge staging into master (#1032))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 
 Compose multiple user-defined functions in a single query to construct semantically complex queries.
 
@@ -227,10 +252,13 @@ Compose multiple user-defined functions in a single query to construct semantica
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 SELECT TUPLES WITHOUT TABLE
 ---------------------------
 =======
@@ -239,14 +267,20 @@ SELECT WITHOUT TABLE
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 =======
 SELECT TUPLES WITHOUT TABLE
 ---------------------------
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 
 In EvaDB, we can compose a query that does not have a table source. This type of queries are usually expressions.
 
@@ -257,14 +291,18 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
    SELECT 1 > 2;
 =======
    SELECT 1>2;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -274,6 +312,11 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+   SELECT 1 > 2;
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
    SELECT HomeRentalForecast(12);
 
 .. note::
@@ -282,14 +325,18 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
    If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
 =======
    Go over :ref:`forecast` for forecasting function support in EvaDB.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -299,4 +346,9 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+   If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
 
