@@ -9,6 +9,7 @@ Image Search
     <table align="left">
     <td>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/11-similarity-search-for-motif-mining.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -18,13 +19,20 @@ Image Search
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/11-similarity-search-for-motif-mining.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
 =======
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/11-similarity-search-for-motif-mining.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/11-similarity-search-for-motif-mining.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
+>>>>>>> fbfc3ace (docs: updates)
     </td>
     <td>
-        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/11-similarity-search-for-motif-mining.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/11-similarity-search-for-motif-mining.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" width="24px" /> View source on GitHub</a>
     </td>
     <td>
+<<<<<<< HEAD
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/11-similarity-search-for-motif-mining.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/11-similarity-search-for-motif-mining.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
+>>>>>>> fbfc3ace (docs: updates)
     </td>
     </table><br><br>
     </embed>
