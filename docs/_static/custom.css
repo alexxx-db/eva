@@ -9,7 +9,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap');
 
  :root {
+<<<<<<< HEAD
     --black: #15141A;
+=======
+    --orange: #15141A;
+>>>>>>> 5102321c (docs: updates)
 }
 
 /* --------- left and right TOCs --------- */

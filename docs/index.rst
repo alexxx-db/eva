@@ -86,11 +86,11 @@ Our target audience is software developers who may not necessarily have a backgr
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
-👋 If you're excited about our vision of bringing AI inside databases, show some ❤️ by:
+👋 If you are excited about our vision of bringing AI inside databases, consider:
 
-- 🐙 giving a star on Github: https://evadb.ai/github
-- 📟 joining our Slack: https://evadb.ai/community
-- 🐦 following us on Twitter: https://twitter.com/evadb_ai
+- 📟 joining our Slack: https://evadb.ai/slack
+- 🐙 following us on Github: https://evadb.ai/github
+- 🐦 following us on Twitter: https://evadb.ai/twitter
 - 📝 following us on Medium: https://evadb.ai/blog
 - 🖥️ contributing to EvaDB: https://evadb.ai/github
 

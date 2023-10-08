@@ -3,6 +3,7 @@ What's Next?
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 👋 If you are excited about our vision of bringing AI inside databases, consider:
 
 - 📟 joining our Slack: https://evadb.ai/slack
@@ -29,3 +30,12 @@ If you liked this tutorial and are excited about our vision, show some ❤️ by
 - 📝 following us on Medium: https://evadb.ai/blog
 - 🖥️ contributing to EvaDB: https://evadb.ai/github
 >>>>>>> a0d8f172 (docs: updates)
+=======
+👋 If you are excited about our vision of bringing AI inside databases, consider:
+
+- 📟 joining our Slack: https://evadb.ai/slack
+- 🐙 following us on Github: https://evadb.ai/github
+- 🐦 following us on Twitter: https://evadb.ai/twitter
+- 📝 following us on Medium: https://evadb.ai/blog
+- 🖥️ contributing to EvaDB: https://evadb.ai/github
+>>>>>>> 5102321c (docs: updates)
