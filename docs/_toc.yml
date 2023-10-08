@@ -383,10 +383,14 @@ parts:
         title: Text Summarization
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   - caption: Contribution Guide
 =======
   - caption: Developer Reference
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+  - caption: Contribution Guide
+>>>>>>> f398c41b (docs: updates)
     chapters:
       - file: source/dev-guide/contribute
         title: Contributing to EvaDB

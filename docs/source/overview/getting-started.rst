@@ -289,6 +289,7 @@ Illustrative AI Query
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Here is a simple, illustrative `MNIST image classification <https://en.wikipedia.org/wiki/MNIST_database>`_ AI app in EvaDB.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
@@ -300,14 +301,24 @@ Here is an illustrative `ChatGPT-based Sentiment Analysis`_ AI query focused on 
 =======
 Here is an illustrative `ChatGPT-based Sentiment Analysis` AI query focused on restaurant food reviews in EvaDB.
 >>>>>>> 061e9d6d (docs: updates)
+=======
+Here is an illustrative EvaQL query that analyzes the sentiment of restaurant food reviews and responds to them.
+>>>>>>> f398c41b (docs: updates)
 
 .. code-block:: sql
     
     --- This AI query analyses the sentiment of restaurant food reviews stored 
-    --- in a database table and generates a response to negative food reviews --- using another ChatGPT call to address the concerns shared in the review
-    SELECT ChatGPT("Respond the the review with solution to address the reviewer's concern", review)
-    FROM postgres_data.review_table
-    WHERE ChatGPT("Is the review positive or negative. Only reply 'positive' or 'negative'.", review) = "negative";
+    --- in a database table and generates a response to negative food reviews
+    --- using another ChatGPT call to address the concerns shared in the review
+    SELECT
+        ChatGPT("Respond to the review with a solution to address the reviewer's concern",
+        review)     
+    FROM
+        postgres_data.review_table     
+    WHERE
+        ChatGPT("Is the review positive or negative. Only reply 'positive' or 'negative'.", review) = "negative";
+
+More details on this usecase is available in the :ref:`Sentiment Analysis <sentiment-analysis>` page. 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -434,5 +445,13 @@ The complete `Sentiment Analysis notebook is available on Colab <https://colab.r
 =======
 =======
 Try out EvaDB by experimenting with the complete `sentiment analysis notebook on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`_ 🙂
+<<<<<<< HEAD
 >>>>>>> 1291df05 (docs: updates)
+<<<<<<< HEAD
 >>>>>>> b47cd8f9 (docs: updates)
+=======
+=======
+
+.. include:: ../shared/design1.rst
+>>>>>>> 118120e7 (docs: updates)
+>>>>>>> f398c41b (docs: updates)

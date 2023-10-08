@@ -14,6 +14,7 @@ Welcome to EvaDB!
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. raw:: html
 
     <br>
@@ -43,9 +44,11 @@ EvaDB is a **query engine** that makes it easy to:
 >>>>>>> c0ae0836 (docs: updates)
 ----------
 
+=======
+>>>>>>> f398c41b (docs: updates)
 **EvaDB brings AI inside your database. You can easily build scalable AI apps in SQL.**
 
-EvaDB's benefits include:
+EvaDB's key benefits include:
 
 <<<<<<< HEAD
 - 🐙 giving a ⭐ on our EvaDB repo on Github: https://github.com/georgia-tech-db/evadb
@@ -110,6 +113,7 @@ Getting Started
 <<<<<<< HEAD
                 <img src="_static/icons/code.png" width="24px" height="24px" />
                 <h3 style="font-size:20px;">Getting Started</h3>
+<<<<<<< HEAD
 =======
                 <img src="_static/icons/code.png" width="44px" height="44px" />
 =======
@@ -117,6 +121,8 @@ Getting Started
 >>>>>>> c0ae0836 (docs: updates)
                 <h3 style="font-size:20px;">Learn Basics</h3>
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> f398c41b (docs: updates)
             </div>
             <p class="only-light" style="color:#000000;">Understand how to use EvaDB to build AI apps.</p> 
             <p class="only-dark" style="color:#FFFFFF;">Understand how to use EvaDB to build AI apps.</p>    
@@ -132,6 +138,7 @@ Getting Started
             </div>
             <p class="only-light" style="color:#000000;">Learn the 
             key concepts related to EvaDB.</p> 
+<<<<<<< HEAD
             <p class="only-dark" style="color:#FFFFFF;">
             Learn the key concepts related to EvaDB.</p>      
 =======
@@ -146,6 +153,10 @@ Getting Started
             <p class="only-dark" style="color:#FFFFFF;">
             Learn the high-level concepts related to EvaDB.</p>      
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+            <p class="only-dark" style="color:#FFFFFF;">
+            Learn the key concepts related to EvaDB.</p>      
+>>>>>>> f398c41b (docs: updates)
             <p style="font-weight:600;">Learn more > </p>  
         </div> 
     </a>  
@@ -154,10 +165,14 @@ Getting Started
             <div class="image-header" style="padding:0px;">
                 <img src="_static/icons/slack.png" width="24px" height="24px" />
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <h3 style="font-size:20px;">Join our Slack</h3>
 =======
                 <h3 style="font-size:20px;">Join Slack</h3>
 >>>>>>> c0ae0836 (docs: updates)
+=======
+                <h3 style="font-size:20px;">Join our Slack</h3>
+>>>>>>> f398c41b (docs: updates)
             </div>
             <p class="only-light" style="color:#000000;">Have a question? Join our Slack community.</p> 
             <p class="only-dark" style="color:#FFFFFF;">Have a question? Join our Slack community.</p>   
@@ -166,7 +181,14 @@ Getting Started
     </div></a>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .. include:: source/shared/designs/design1.rst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+
+    <br><br><br>
+
+.. include:: source/shared/design1.rst
+>>>>>>> f398c41b (docs: updates)
