@@ -1,10 +1,30 @@
 :orphan:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
 
 Functions
 =========
 
 SHOW FUNCTIONS
 --------------
+<<<<<<< HEAD
+=======
+=======
+
+Functions
+=========
+
+<<<<<<< HEAD
+SHOW UDFS
+---------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+SHOW FUNCTIONS
+--------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
 
 Here is a list of built-in user-defined functions in EvaDB.
 
@@ -23,8 +43,23 @@ FastRCNNObjectDetector is a model for detecting objects. MVITActionRecognition i
 
 ArrayCount and Crop are utility functions for counting the number of objects in an array and cropping a bounding box from an image, respectively.
 
+<<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+=======
+SELECT WITH MULTIPLE UDFS
+-------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
 
 Here is a query that illustrates how to use multiple functions in a single query.
 
