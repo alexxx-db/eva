@@ -208,6 +208,7 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 
 .. include:: ../shared/footer.rst
 
+<<<<<<< HEAD
 .. include:: ../shared/designs/design9.rst
 =======
     +------------------------------+
@@ -221,3 +222,6 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 
 .. include:: ../shared/footer.rst
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+.. include:: ../shared/designs/design9.rst
+>>>>>>> e867f37e (docs: updated images)

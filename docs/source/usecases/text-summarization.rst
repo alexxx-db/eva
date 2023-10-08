@@ -136,6 +136,7 @@ Here is the query's output ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 .. include:: ../shared/designs/design2.rst
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -143,3 +144,6 @@ Here is the query's output ``DataFrame``:
 
 .. include:: ../shared/design2.rst
 >>>>>>> f398c41b (docs: updates)
+=======
+.. include:: ../shared/designs/design2.rst
+>>>>>>> e867f37e (docs: updated images)

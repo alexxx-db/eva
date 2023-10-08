@@ -155,6 +155,7 @@ Getting Started
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 .. include:: source/shared/designs/design1.rst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -168,3 +169,6 @@ Getting Started
 =======
 .. include:: source/shared/design1.rst
 >>>>>>> df4d8a35 (docs: updates)
+=======
+.. include:: source/shared/designs/design1.rst
+>>>>>>> e867f37e (docs: updated images)

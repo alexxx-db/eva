@@ -411,6 +411,7 @@ Try out EvaDB by experimenting with the complete `sentiment analysis notebook on
 Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. image:: ../../images/reference/mnist.png
 
 .. note::
@@ -461,4 +462,10 @@ Try out EvaDB by experimenting with the complete `sentiment analysis notebook on
 =======
 .. include:: ../shared/design2.rst
 >>>>>>> dc9069a2 (docs: updates)
+<<<<<<< HEAD
 >>>>>>> df4d8a35 (docs: updates)
+=======
+=======
+.. include:: ../shared/designs/design2.rst
+>>>>>>> 08db5ebb (docs: updated images)
+>>>>>>> e867f37e (docs: updated images)

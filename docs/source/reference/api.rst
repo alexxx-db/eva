@@ -66,8 +66,11 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/designs/design4.rst
 =======
+=======
+>>>>>>> e867f37e (docs: updated images)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -187,4 +190,10 @@ EvaDBQuery Interface
 =======
 .. include:: ../shared/design4.rst
 >>>>>>> dc9069a2 (docs: updates)
+<<<<<<< HEAD
 >>>>>>> df4d8a35 (docs: updates)
+=======
+=======
+.. include:: ../shared/designs/design4.rst
+>>>>>>> 08db5ebb (docs: updated images)
+>>>>>>> e867f37e (docs: updated images)
