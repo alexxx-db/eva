@@ -7,6 +7,7 @@ parts:
         sections:
           - file: source/overview/getting-started/installation-options
             title: Installation Options
+<<<<<<< HEAD
       - file: source/overview/connect-to-database
         title: Connect to Database
 <<<<<<< HEAD
@@ -18,11 +19,16 @@ parts:
 >>>>>>> eva-master
       - file: source/overview/model-inference
         title: Model inference
+=======
+>>>>>>> dc9069a2 (docs: updates)
       - file: source/overview/concepts
         title: Concepts
+      - file: source/overview/model-inference
+        title: AI Models
         sections:
           - file: source/overview/concepts/data-sources
             title: Data Sources
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -33,6 +39,10 @@ parts:
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+>>>>>>> dc9069a2 (docs: updates)
         #- file: source/overview/faq
 
   - caption: Use Cases

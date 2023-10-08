@@ -45,6 +45,7 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
     
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,3 +95,6 @@ EvaDBQuery Interface
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> eva-master
+=======
+.. include:: ../shared/design4.rst
+>>>>>>> dc9069a2 (docs: updates)
