@@ -96,13 +96,13 @@ To register an user-defined function, we use the :ref:`CREATE FUNCTION<create-fu
     --- Define an AI function that wraps around a speech-to-text model 
     --- This model is hosted on Hugging Face which has built-in support in EvaDB
     --- After creating the function, we can use the function in any future query
-    CREATE UDF SpeechRecognizer 
+    CREATE FUNCTION SpeechRecognizer 
         TYPE HuggingFace 
         TASK 'automatic-speech-recognition' 
         MODEL 'openai/whisper-base';
 
     --  EvaDB automatically extracts the audio from the videos
-    --- We only need to run the SpeechRecognizer UDF on the 'audio' column 
+    --- We only need to run the SpeechRecognizer function on the 'audio' column 
     --- to get the transcript and persist it in a table called 'transcripts'
     CREATE TABLE transcripts AS 
         SELECT SpeechRecognizer(audio) from news_videos;

@@ -48,10 +48,14 @@ To create custom ``FaceDetector`` and ``EmotionDetector`` functions, use the ``C
 .. code-block:: sql
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         CREATE FUNCTION IF NOT EXISTS FaceDetector
 =======
         CREATE UDF IF NOT EXISTS FaceDetector
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        CREATE FUNCTION IF NOT EXISTS FaceDetector
+>>>>>>> ae8238d8 (docs: update references to UDFs)
             INPUT  (frame NDARRAY UINT8(3, ANYDIM, ANYDIM))
             OUTPUT (bboxes NDARRAY FLOAT32(ANYDIM, 4),
                     scores NDARRAY FLOAT32(ANYDIM))

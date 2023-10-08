@@ -152,10 +152,14 @@ parts:
     chapters:
       - file: source/reference/evaql      
 <<<<<<< HEAD
+<<<<<<< HEAD
         title: Query Language
 =======
         title: EvaQL
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        title: Query Language
+>>>>>>> ae8238d8 (docs: update references to UDFs)
         sections:
           - file: source/reference/evaql/load_csv
           - file: source/reference/evaql/load_image
