@@ -108,7 +108,11 @@ class SelectExecutorTest(unittest.TestCase):
         with self.assertRaises(BinderError) as ctx:
             execute_query_fetch_all(self.evadb, select_query)
         self.assertEqual(
+<<<<<<< HEAD
             "Cannot find column b1. Did you mean a1? The feasible columns are ['_row_id', 'a0', 'a1', 'a2'].",
+=======
+            "Cannnot find column b1. Did you mean a1? The feasible columns are ['_row_id', 'a0', 'a1', 'a2'].",
+>>>>>>> c9e64bc8 (Improve the error message when there is a typo in the column name in the query.  (#1267))
             str(ctx.exception),
         )
 

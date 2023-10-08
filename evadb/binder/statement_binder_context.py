@@ -207,10 +207,17 @@ class StatementBinderContext:
             res = process.extractOne(col_name, all_columns)
             if res is not None:
                 guess_column, _ = res
+<<<<<<< HEAD
                 err_msg = f"Cannot find column {col_name}. Did you mean {guess_column}? The feasible columns are {all_columns}."
             else:
                 err_msg = (
                     f"Cannot find column {col_name}. There are no feasible columns."
+=======
+                err_msg = f"Cannnot find column {col_name}. Did you mean {guess_column}? The feasible columns are {all_columns}."
+            else:
+                err_msg = (
+                    f"Cannnot find column {col_name}. There are no feasible columns."
+>>>>>>> c9e64bc8 (Improve the error message when there is a typo in the column name in the query.  (#1267))
                 )
             logger.error(err_msg)
             raise BinderError(err_msg)
