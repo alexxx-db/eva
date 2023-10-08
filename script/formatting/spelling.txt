@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
 <<<<<<< HEAD
@@ -15,6 +16,9 @@ personal_ws-1.1 en 1563
 =======
 personal_ws-1.1 en 1775 
 >>>>>>> 62080794 (ran spellchecker)
+=======
+personal_ws-1.1 en 1776 
+>>>>>>> 8379a400 (docs: updates)
 ABCD
 ABCMeta
 ANYDIM
@@ -582,6 +586,7 @@ MyMeta
 MyPDF
 MyPDFs
 MySQLNativeStorageEngineTest
+MyTable
 MyTextCSV
 MyUDF
 MyVideo
