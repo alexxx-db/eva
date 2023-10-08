@@ -335,6 +335,7 @@ Here is the query's output ``DataFrame``:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 .. include:: ../shared/designs/design2.rst
@@ -348,10 +349,13 @@ Here is the query's output ``DataFrame``:
 .. include:: ../shared/designs/design2.rst
 >>>>>>> e867f37e (docs: updated images)
 =======
+=======
+>>>>>>> 864a7bed (docs: updates)
 
 .. include:: ../shared/designs/design2.rst
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 
@@ -359,3 +363,9 @@ Here is the query's output ``DataFrame``:
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+
+.. include:: ../shared/design2.rst
+>>>>>>> f398c41b (docs: updates)
+>>>>>>> 864a7bed (docs: updates)

@@ -1195,14 +1195,18 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 864a7bed (docs: updates)
   - caption: Contribution Guide
 =======
   - caption: Developer Reference
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1212,6 +1216,11 @@ parts:
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+  - caption: Contribution Guide
+>>>>>>> f398c41b (docs: updates)
+>>>>>>> 864a7bed (docs: updates)
     chapters:
       - file: source/dev-guide/contribute
         title: Contributing to EvaDB
