@@ -108,4 +108,4 @@ Here is the query's output ``DataFrame``:
 
 .. include:: ../shared/footer.rst
 
-.. include:: ../shared/design2.rst
+.. include:: ../shared/designs/design2.rst

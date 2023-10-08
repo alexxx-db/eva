@@ -157,3 +157,5 @@ Now, the ``DataFrame`` only contains frames with the desired objects:
 >>>>>>> eva-master
 
 .. include:: ../shared/footer.rst
+
+.. include:: ../shared/designs/design9.rst
