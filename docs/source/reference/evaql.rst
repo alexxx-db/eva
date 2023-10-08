@@ -38,4 +38,8 @@ This page presents a list of all the EvaDB statements that you can leverage in y
 
 .. tableofcontents::
 
+<<<<<<< HEAD
 .. include:: ../shared/designs/design5.rst
+=======
+.. include:: ../shared/design5.rst
+>>>>>>> df4d8a35 (docs: updates)

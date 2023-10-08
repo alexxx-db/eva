@@ -65,7 +65,14 @@ To begin a querying session in EvaDB, obtain a connection with a cursor using ``
     
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. include:: ../shared/designs/design4.rst
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> df4d8a35 (docs: updates)
 =======
 EvaDBCursor Interface
 ---------------------
@@ -121,6 +128,7 @@ EvaDBQuery Interface
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -174,3 +182,9 @@ EvaDBQuery Interface
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
+=======
+.. include:: ../shared/design4.rst
+>>>>>>> dc9069a2 (docs: updates)
+>>>>>>> df4d8a35 (docs: updates)
