@@ -288,6 +288,7 @@ Illustrative AI Query
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Here is a simple, illustrative `MNIST image classification <https://en.wikipedia.org/wiki/MNIST_database>`_ AI app in EvaDB.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
@@ -296,19 +297,24 @@ Here is an illustrative `MNIST image classification <https://en.wikipedia.org/wi
 =======
 Here is an illustrative `ChatGPT-based Sentiment Analysis`_ AI query focused on restaurant food reviews in EvaDB.
 >>>>>>> 91f726f0 (docs: update getting started AI query)
+=======
+Here is an illustrative `ChatGPT-based Sentiment Analysis` AI query focused on restaurant food reviews in EvaDB.
+>>>>>>> 061e9d6d (docs: updates)
 
 .. code-block:: sql
     
     --- This AI query analyses the sentiment of restaurant food reviews stored 
     --- in a database table and generates a response to negative food reviews --- using another ChatGPT call to address the concerns shared in the review
-    SELECT ChatGPT(
-            "Respond the the review with solution to address the review's concern",
-            review)
+    SELECT ChatGPT("Respond the the review with solution to address the reviewer's concern", review)
     FROM postgres_data.review_table
-    WHERE ChatGPT(
-        "Is the review positive or negative. Only reply 'positive' or 'negative'. Here are examples. The food is very bad: negative. The food is very good: positive.",
-        review) = "negative";
+    WHERE ChatGPT("Is the review positive or negative. Only reply 'positive' or 'negative'.", review) = "negative";
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+The complete `Sentiment Analysis notebook is available on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`_.
+Try out EvaDB by experimenting with this introductory notebook.
+>>>>>>> 061e9d6d (docs: updates)
 <<<<<<< HEAD
 =======
 The complete `Sentiment Analysis notebook is available on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`_.
@@ -401,6 +407,7 @@ Try out EvaDB by experimenting with this introductory notebook.
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <https://colab.research.google.com/github/georgia-tech-db/evadb/blob/master/tutorials/01-mnist.ipynb>`_.
@@ -414,3 +421,9 @@ Try out EvaDB by experimenting with the introductory `MNIST notebook on Colab <h
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
+=======
+The complete `Sentiment Analysis notebook is available on Colab <https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`_. Try out EvaDB by experimenting with this notebook :)
+>>>>>>> 8379a400 (docs: updates)
+>>>>>>> 061e9d6d (docs: updates)
