@@ -23,6 +23,7 @@ parts:
 >>>>>>> dc9069a2 (docs: updates)
       - file: source/overview/concepts
         title: Concepts
+<<<<<<< HEAD
       - file: source/overview/model-inference
         title: AI Models
         sections:
@@ -48,6 +49,13 @@ parts:
         title: Connect to Data Sources
 >>>>>>> a53a7d46 (docs: updates)
         #- file: source/overview/faq
+=======
+      - file: source/overview/ai-queries
+        title: AI Queries
+      - file: source/overview/connect-to-data-sources
+        title: Connect to Data Sources
+      - file: source/overview/faq
+>>>>>>> c952858c (docs: updates)
 
   - caption: Use Cases
     chapters:
@@ -229,9 +237,15 @@ parts:
             title: OpenAI 
           - file: source/reference/ai/yolo
             title: YOLO 
+<<<<<<< HEAD
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
+=======
+
+      - file: source/reference/ai/custom-ai-function
+        title: Bring Your Own AI Function
+>>>>>>> c952858c (docs: updates)
 
       - file: source/reference/optimizations
         title: Optimizations

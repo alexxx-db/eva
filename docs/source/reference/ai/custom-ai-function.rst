@@ -1,5 +1,6 @@
-.. _udf:
+.. _custom_ai_function:
 
+<<<<<<< HEAD:docs/source/reference/ai/custom.rst
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -12,6 +13,10 @@
 >>>>>>> eva-master
 Functions
 ======================
+=======
+Bring Your Own AI Function
+==========================
+>>>>>>> c952858c (docs: updates):docs/source/reference/ai/custom-ai-function.rst
 
 This section provides an overview of how you can create and use a custom function in your queries. For example, you could write an function that wraps around your custom PyTorch model.
 
