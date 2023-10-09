@@ -51,8 +51,12 @@ parts:
 >>>>>>> eva-master
 =======
       - file: source/overview/connect-to-database
+<<<<<<< HEAD
         title: Connect to Database
 >>>>>>> dc9069a2 (docs: updates)
+=======
+        title: Connect to Data Sources
+>>>>>>> a53a7d46 (docs: updates)
         #- file: source/overview/faq
 >>>>>>> df4d8a35 (docs: updates)
 
