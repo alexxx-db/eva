@@ -18,7 +18,7 @@ Getting Started
 Install EvaDB 
 -------------
 
-To install EvaDB, we recommend using the `pip` package manager.
+To install EvaDB, we recommend using the `pip` package manager. EvaDB only supports Python versions greater than or equal to `3.9`.
 
 1. Create a new `virtual environment <https://docs.python-guide.org
 /dev/virtualenvs/>`_ called `evadb-venv`.
@@ -31,6 +31,10 @@ To install EvaDB, we recommend using the `pip` package manager.
 <<<<<<< HEAD
 =======
 >>>>>>> eva-master
+
+.. warning::
+
+    EvaDB only supports Python versions greater than or equal to `3.9`. You can check the version of your Python interpreter by running `python --version` on the terminal.
 
 Now, activate the virtual environment:
 
@@ -48,7 +52,11 @@ Now, activate the virtual environment:
 
 .. code-block:: bash
 
-   pip install evadb
+   pip install evadb --upgrade
+
+.. note::
+
+    The `--upgrade` option ensure that the latest version of EvaDB is installed.
 
 4. Verify EvaDB installation
 
@@ -65,7 +73,7 @@ You should see a list of installed packages including but not limited to the fol
    aenum             3.1.15
    decorator         5.1.1
    diskcache         5.6.3
-   evadb             0.3.3
+   evadb             0.3.7
    greenlet          2.0.2
    lark              1.1.7
    numpy             1.25.2
@@ -74,7 +82,7 @@ You should see a list of installed packages including but not limited to the fol
 
 5. Run EvaDB
 
-Copy the following Python program to a file called `run_evadb.py`.
+Copy the following Python code to a file called `run_evadb.py`.
 
 The program runs a SQL query for listing all the built-in functions in EvaDB. It consists of importing and connecting to EvaDB, and then running the query. The query's result is returned as a Dataframe.
 
@@ -104,18 +112,19 @@ Now, run the Python program:
 
     python -m run_evadb.py
 
-You should see a list of built-in functions including but not limited to the following:
+You should see a list of built-in functions (with different filenames) including but not limited to the following:
 
 .. code-block:: bash
 
             name                                             inputs  ...                                               impl metadata
-    0  ArrayCount   [Input_Array NDARRAY ANYTYPE (), Search_Key ANY]  ...  /home/jarulraj3/evadb/evadb/functions/ndarray/array...       []
-    1        Crop  [Frame_Array NDARRAY UINT8 (3, None, None), bb...  ...   /home/jarulraj3/evadb/evadb/functions/ndarray/crop.py       []
-    2     ChatGPT  [query NDARRAY STR (1,), content NDARRAY STR (...  ...        /home/jarulraj3/evadb/evadb/functions/chatgpt.py       []
+    0  ArrayCount   [Input_Array NDARRAY ANYTYPE (), Search_Key ANY]  ...  /home/username/evadb/evadb-venv/functions/ndarray/array...       []
+    1        Crop  [Frame_Array NDARRAY UINT8 (3, None, None), bb...  ...   /home/username/evadb/evadb-venv/functions/ndarray/crop.py       []
+    2     ChatGPT  [query NDARRAY STR (1,), content NDARRAY STR (...  ...        /home/username/evadb/evadb/evadb-venv/chatgpt.py       []
 
     [3 rows x 6 columns]
 
 .. note::
+<<<<<<< HEAD
     Go over the :ref:`Python API<python-api>` to learn more about `connect()` and `cursor`.
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
@@ -237,10 +246,13 @@ You should see a list of built-in functions including but not limited to the fol
 
 .. note::
     Go over the :ref:`Python API<python-api>` to learn more about `connect()` and `cursor`.
+=======
+    Go over the :ref:`Python API<python-api>` page to learn more about `connect()` and `cursor`.
+>>>>>>> ad7bb302 (docs: updates)
 
 .. note::
 
-    EvaDB supports additional installation options for extending its functionality. Go over the :doc:`Installation Options <getting-started/installation-options>` for all the available options.
+    EvaDB supports additional installation options for extending its functionality. Go over the :doc:`Installation Options <getting-started/installation-options>` page for all the available options.
 
 Illustrative AI Query
 ---------------------
@@ -258,7 +270,7 @@ Here is an illustrative EvaQL query that analyzes the sentiment of restaurant fo
     FROM
         postgres_data.review_table     
     WHERE
-        ChatGPT("Is the review positive or negative. Only reply 'positive' or 'negative'.", review) = "negative";
+        ChatGPT("Is the review positive or negative?", review) = "negative";
 
 More details on this usecase is available in the :ref:`Sentiment Analysis <sentiment-analysis>` page. 
 
