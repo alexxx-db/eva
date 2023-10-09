@@ -103,6 +103,7 @@ EvaDB has built-in support for ``ChatGPT`` function from ``OpenAI``. You will ne
 .. note::
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`custom AI function<custom_ai_function>`.
 =======
 <<<<<<< HEAD
@@ -117,6 +118,7 @@ EvaDB has built-in support for ``ChatGPT`` function from ``OpenAI``. You will ne
 =======
     EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`custom AI function<custom_ai_function>`.
 >>>>>>> 35b99c88 (docs: updates)
+<<<<<<< HEAD
 =======
     EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`Custom function<udf>`.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -127,6 +129,8 @@ EvaDB has built-in support for ``ChatGPT`` function from ``OpenAI``. You will ne
     EvaDB has built-in support for a wide range of :ref:`OpenAI<openai>` models. You can also switch to another large language models that runs locally by defining a :ref:`Custom function<udf>`.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 32e513d7 (docs: updates)
 
 
     ChatGPT function is a wrapper around OpenAI API call. You can also switch to other LLM models that can run locally.

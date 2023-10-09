@@ -250,22 +250,31 @@ Now, activate the virtual environment:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
 >>>>>>> 899a029b (docs: updates)
+=======
+>>>>>>> 32e513d7 (docs: updates)
    pip install --upgrade evadb
 =======
    pip install evadb --upgrade
 >>>>>>> 572f347e (docs: updates)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
    pip install --upgrade evadb
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> 899a029b (docs: updates)
+=======
+=======
+   pip install --upgrade evadb
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> 32e513d7 (docs: updates)
 
 .. note::
 

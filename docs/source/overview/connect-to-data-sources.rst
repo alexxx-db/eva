@@ -7,6 +7,7 @@ Connect to an Existing SQL Database System
 ------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database server. For example, here is the SQL command to connect EvaDB with a locally running :ref:`PostgreSQL<postgresql>` database server running on port ``5432``.
 =======
 <<<<<<< HEAD
@@ -19,6 +20,20 @@ Connect to an Existing SQL Database System
 1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
 =======
 1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
+=======
+1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9cc72b7b (docs: updates)
+<<<<<<< HEAD
+1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
+=======
+1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
+>>>>>>> 32e513d7 (docs: updates)
 >>>>>>> 5f27824c (docs: updates)
 >>>>>>> 35b99c88 (docs: updates)
 
@@ -34,6 +49,7 @@ Connect to an Existing SQL Database System
        "database": "restaurant_reviews"
    };
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 For quick prototyping, you can use an embedded :ref:`SQLite<sqlite>` database. Here, the SQLite database file is called ``evadb.db``.
 
@@ -44,6 +60,8 @@ For quick prototyping, you can use an embedded :ref:`SQLite<sqlite>` database. H
    PARAMETERS = {
        "database": "evadb.db"
    };
+=======
+>>>>>>> 32e513d7 (docs: updates)
 =======
 =======
 1. Use the `CREATE DATABASE` statement to connect to an existing SQL database.
@@ -83,7 +101,10 @@ For quick prototyping, you can use an embedded :ref:`SQLite<sqlite>` database. H
    Go over the :ref:`CREATE DATABASE<create-database>` statement for more details. The :ref:`Databases<databases>` page lists all the database systems that EvaDB currently supports.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 32e513d7 (docs: updates)
 2. Preview the data using ``SELECT``
 =======
 <<<<<<< HEAD

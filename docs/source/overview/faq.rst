@@ -2,8 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 32e513d7 (docs: updates)
 Frequently Asked Questions
 ==========================
 =======
@@ -22,6 +25,7 @@ Here are some frequently asked questions that we have seen pop up for EvaDB.
 .. note::
 
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 Frequently Asked Questions
@@ -33,12 +37,19 @@ Frequently Asked Questions
 FAQ
 ===
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Frequently Asked Questions
+==========================
+>>>>>>> 32e513d7 (docs: updates)
 
 .. _faq:
 
 Here are some frequently asked questions that we have seen pop up for EvaDB.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 32e513d7 (docs: updates)
 .. note::
 
 >>>>>>> 35b99c88 (docs: updates)
@@ -55,14 +66,18 @@ Ensure that the Python interpreter's version is >= `3.9`.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
 =======
+>>>>>>> 32e513d7 (docs: updates)
+=======
 Why am I not able to install EvaDB in my Python environment?
 ============================================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -71,6 +86,10 @@ Why am I not able to install EvaDB in my Python environment?
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> 32e513d7 (docs: updates)
 
 
 Where does EvaDB store all the data?
@@ -83,14 +102,18 @@ Why do I see no output from the server?
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 32e513d7 (docs: updates)
 ---------------------------------------
 =======
 =======================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -100,6 +123,11 @@ Why do I see no output from the server?
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+---------------------------------------
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> 32e513d7 (docs: updates)
 
 If a query runs a complex AI task (e.g., sentiment analysis) on a large table, the query is expected to take a non-trivial amount of time to finish. You can check the status of the server by running ``top`` or ``pgrep``:
 
@@ -112,10 +140,13 @@ If a query runs a complex AI task (e.g., sentiment analysis) on a large table, t
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 32e513d7 (docs: updates)
 =======
 pip install ray fails because of grpcio
 =======================================
@@ -125,9 +156,14 @@ https://github.com/ray-project/ray/issues/33039
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> 32e513d7 (docs: updates)
