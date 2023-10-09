@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Frequently Asked Questions
 ==========================
 =======
@@ -16,6 +17,17 @@ Here are some frequently asked questions that we have seen pop up for EvaDB.
 <<<<<<< HEAD
 .. note::
 
+=======
+Frequently Asked Questions
+==========================
+
+.. _faq:
+
+Here are some frequently asked questions that we have seen pop up for EvaDB.
+
+.. note::
+
+>>>>>>> 35b99c88 (docs: updates)
     Have another question or want to give feedback? Ask us on `Slack <https://evadb.ai/community>`__!
 
 Why am I not able to install EvaDB?
@@ -26,10 +38,13 @@ Ensure that the Python interpreter's version is >= `3.9`.
 .. note::
 
     If you are using the `evadb[ray]` installation option, ensure that the Python  version is <= `3.10` due to a `Ray issue <https://github.com/autogluon/autogluon/issues/2687>`_. Follow `these instructions <https://github.com/ray-project/ray/issues/33039>`_ to install `ray`.
+<<<<<<< HEAD
 =======
 Why am I not able to install EvaDB in my Python environment?
 ============================================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 35b99c88 (docs: updates)
 
 
 Where does EvaDB store all the data?
@@ -39,10 +54,14 @@ By default, EvaDB connects to **existing** data sources like SQL database system
 
 Why do I see no output from the server?
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---------------------------------------
 =======
 =======================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+---------------------------------------
+>>>>>>> 35b99c88 (docs: updates)
 
 If a query runs a complex AI task (e.g., sentiment analysis) on a large table, the query is expected to take a non-trivial amount of time to finish. You can check the status of the server by running ``top`` or ``pgrep``:
 
@@ -52,6 +71,7 @@ If a query runs a complex AI task (e.g., sentiment analysis) on a large table, t
     pgrep evadb_server
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 pip install ray fails because of grpcio
 =======================================
@@ -59,3 +79,5 @@ pip install ray fails because of grpcio
 Follow these instructions to install ``ray``:
 https://github.com/ray-project/ray/issues/33039
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 35b99c88 (docs: updates)

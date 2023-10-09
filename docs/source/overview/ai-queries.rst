@@ -9,7 +9,11 @@ This page details how you can use AI models in different ways to construct AI qu
 
 .. note::
 
+<<<<<<< HEAD
    EvaDB ships with a wide range of built-in functions listed in the :ref:`models` page. If your desired AI model is not available, you can also bring your own AI function by referring to the :ref:`custom_ai_function` page.
+=======
+   EvaDB ships with a wide range of built-in functions listed in the :ref:`models` page. If your desired AI model is not available, you can also bring your own AI function by referrring to the :ref:`custom_ai_function` page.
+>>>>>>> 35b99c88 (docs: updates)
 
 SELECT Clause
 -------------

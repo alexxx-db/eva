@@ -34,6 +34,7 @@ parts:
 >>>>>>> dc9069a2 (docs: updates)
       - file: source/overview/concepts
         title: Concepts
+<<<<<<< HEAD
       - file: source/overview/model-inference
         title: AI Models
         sections:
@@ -59,7 +60,17 @@ parts:
         title: Connect to Data Sources
 >>>>>>> a53a7d46 (docs: updates)
         #- file: source/overview/faq
+<<<<<<< HEAD
 >>>>>>> df4d8a35 (docs: updates)
+=======
+=======
+      - file: source/overview/ai-queries
+        title: AI Queries
+      - file: source/overview/connect-to-data-sources
+        title: Connect to Data Sources
+      - file: source/overview/faq
+>>>>>>> c952858c (docs: updates)
+>>>>>>> 35b99c88 (docs: updates)
 
   - caption: Use Cases
     chapters:
@@ -383,6 +394,7 @@ parts:
             title: YOLO 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           - file: source/reference/ai/stablediffusion
             title: Stable Diffusion
 
@@ -397,6 +409,16 @@ parts:
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+          - file: source/reference/ai/custom
+            title: Custom Model
+<<<<<<< HEAD
+=======
+
+      - file: source/reference/ai/custom-ai-function
+        title: Bring Your Own AI Function
+>>>>>>> c952858c (docs: updates)
+>>>>>>> 35b99c88 (docs: updates)
 
       - file: source/reference/optimizations
         title: Optimizations

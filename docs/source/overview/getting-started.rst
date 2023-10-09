@@ -79,10 +79,14 @@ Now, activate the virtual environment:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    pip install --upgrade evadb
 =======
    pip install evadb --upgrade
 >>>>>>> 572f347e (docs: updates)
+=======
+   pip install --upgrade evadb
+>>>>>>> 35b99c88 (docs: updates)
 
 .. note::
 
