@@ -76,6 +76,7 @@ parts:
       - file: source/overview/connect-to-database
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         title: Connect to Database
 >>>>>>> dc9069a2 (docs: updates)
 =======
@@ -94,8 +95,13 @@ parts:
 >>>>>>> c952858c (docs: updates)
 >>>>>>> 35b99c88 (docs: updates)
 =======
+=======
+>>>>>>> af11cdd5 (docs: updates)
         title: Connect to Database
 >>>>>>> dc9069a2 (docs: updates)
+=======
+        title: Connect to Data Sources
+>>>>>>> a53a7d46 (docs: updates)
         #- file: source/overview/faq
 >>>>>>> df4d8a35 (docs: updates)
 >>>>>>> f1e2bddc (docs: updates)
