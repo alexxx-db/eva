@@ -21,12 +21,18 @@ Required:
 * `port` is the port used to make the TCP/IP connection.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9ef5071 (docs: updates)
 .. warning:: 
          
      Provide the parameters of an already running ``MariaDB`` server. EvaDB only connects to an existing ``MariaDB`` database.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a9ef5071 (docs: updates)
 
 Create Connection
 -----------------

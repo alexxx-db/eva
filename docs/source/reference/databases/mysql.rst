@@ -9,9 +9,12 @@ Dependency
 * mysql-connector-python
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> a9ef5071 (docs: updates)
 Parameters
 ----------
 
@@ -24,11 +27,17 @@ Required:
 * `database` is the database name.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. warning:: 
 
      Provide the parameters of an already running ``MySQL`` server. EvaDB only connects to an existing ``MySQL`` database.
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+.. warning:: 
+
+     Provide the parameters of an already running ``MySQL`` server. EvaDB only connects to an existing ``MySQL`` database.
+>>>>>>> a9ef5071 (docs: updates)
 
 Create Connection
 -----------------

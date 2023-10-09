@@ -26,11 +26,17 @@ Required:
 * `database` is the database name.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. warning:: 
          
      Provide the parameters of an already running ``PostgreSQL`` server. EvaDB only connects to an existing ``PostgreSQL`` database.
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+.. warning:: 
+         
+     Provide the parameters of an already running ``PostgreSQL`` server. EvaDB only connects to an existing ``PostgreSQL`` database.
+>>>>>>> a9ef5071 (docs: updates)
 
 Create Connection
 -----------------
