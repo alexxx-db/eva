@@ -156,6 +156,7 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 .. include:: ../shared/nlp.rst
 
+<<<<<<< HEAD
 .. include:: ../shared/footer.rst
 <<<<<<< HEAD
 =======
@@ -234,11 +235,15 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 >>>>>>> 08db5ebb (docs: updated images)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 899a029b (docs: updates)
 >>>>>>> e867f37e (docs: updated images)
 =======
 =======
 .. include:: ../shared/designs/design3.rst
 >>>>>>> ad7bb302 (docs: updates)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 572f347e (docs: updates)
 =======
@@ -300,3 +305,6 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 =======
 >>>>>>> e867f37e (docs: updated images)
 >>>>>>> 5678c9a3 (docs: updated images)
+=======
+>>>>>>> 572f347e (docs: updates)
+>>>>>>> 899a029b (docs: updates)
