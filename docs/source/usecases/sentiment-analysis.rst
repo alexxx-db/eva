@@ -105,6 +105,7 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
 <<<<<<< HEAD
 .. include:: ../shared/nlp.rst
 
+<<<<<<< HEAD
 .. include:: ../shared/footer.rst
 
 .. include:: ../shared/designs/design3.rst
@@ -141,4 +142,10 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 
 .. include:: ../shared/designs/design2.rst
 >>>>>>> 08db5ebb (docs: updated images)
+<<<<<<< HEAD
 >>>>>>> e867f37e (docs: updated images)
+=======
+=======
+.. include:: ../shared/designs/design3.rst
+>>>>>>> ad7bb302 (docs: updates)
+>>>>>>> 572f347e (docs: updates)
