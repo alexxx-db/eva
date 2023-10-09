@@ -19,14 +19,20 @@ import pandas as pd
 from evadb.database import EvaDBDatabase
 from evadb.executor.abstract_executor import AbstractExecutor
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
 from evadb.executor.executor_utils import (
     ExecutorError,
     apply_project,
     instrument_function_expression_cost,
 )
+<<<<<<< HEAD
 =======
 from evadb.executor.executor_utils import ExecutorError, apply_project
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
 from evadb.models.storage.batch import Batch
 from evadb.plan_nodes.project_plan import ProjectPlan
 
@@ -44,10 +50,14 @@ class ProjectExecutor(AbstractExecutor):
             # Create a dummy batch with size 1
             dummy_batch = Batch(pd.DataFrame([0]))
 <<<<<<< HEAD
+<<<<<<< HEAD
             batch = apply_project(dummy_batch, self.target_list)
 =======
             batch = apply_project(dummy_batch, self.target_list, self.catalog())
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+            batch = apply_project(dummy_batch, self.target_list)
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
             if not batch.empty():
                 yield batch
         # SELECT expr FROM table;
@@ -55,17 +65,27 @@ class ProjectExecutor(AbstractExecutor):
             child_executor = self.children[0]
             for batch in child_executor.exec(**kwargs):
 <<<<<<< HEAD
+<<<<<<< HEAD
                 batch = apply_project(batch, self.target_list)
 =======
                 batch = apply_project(batch, self.target_list, self.catalog())
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+                batch = apply_project(batch, self.target_list)
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
                 if not batch.empty():
                     yield batch
         else:
             raise ExecutorError("ProjectExecutor has more than 1 children.")
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         # instrument required stats
         instrument_function_expression_cost(self.target_list, self.catalog())
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+
+        # instrument required stats
+        instrument_function_expression_cost(self.target_list, self.catalog())
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))

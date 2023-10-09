@@ -16,10 +16,13 @@ import glob
 import os
 from pathlib import Path
 from typing import TYPE_CHECKING, Generator, List, Union
+<<<<<<< HEAD
 
 from evadb.catalog.catalog_utils import xform_column_definitions_to_catalog_entries
 from evadb.catalog.models.utils import TableCatalogEntry
 from evadb.parser.create_statement import ColumnDefinition
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
 
 from evadb.catalog.catalog_utils import xform_column_definitions_to_catalog_entries
 from evadb.catalog.models.utils import TableCatalogEntry
@@ -74,6 +77,7 @@ def apply_project(batch: Batch, project_list: List[AbstractExpression]):
         batch = Batch.merge_column_wise(batches)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         # persist stats of function expression
         for expr in project_list:
@@ -86,6 +90,8 @@ def apply_project(batch: Batch, project_list: List[AbstractExpression]):
                         func_expr._stats.prev_cost,
                     )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
     return batch
 
 
@@ -96,6 +102,7 @@ def apply_predicate(batch: Batch, predicate: AbstractExpression) -> Batch:
         batch.reset_index()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         # persist stats of function expression
         for func_expr in predicate.find_all(FunctionExpression):
@@ -105,6 +112,8 @@ def apply_predicate(batch: Batch, predicate: AbstractExpression) -> Batch:
                     function_id, func_expr.function_obj.name, func_expr._stats.prev_cost
                 )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
     return batch
 
 
