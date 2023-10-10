@@ -360,7 +360,7 @@ class StatementToPlanConverter:
         self._plan = load_data_opr
 
     def visit_show(self, statement: ShowStatement):
-        show_opr = LogicalShow(statement.show_type)
+        show_opr = LogicalShow(statement.show_type, statement.show_val)
         self._plan = show_opr
 
     def visit_explain(self, statement: ExplainStatement):
