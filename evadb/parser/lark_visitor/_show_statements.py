@@ -24,6 +24,7 @@ class Show:
         token = tree.children[1]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if isinstance(token, str) and str.upper(token) == "FUNCTIONS":
             return ShowStatement(show_type=ShowType.FUNCTIONS)
         elif isinstance(token, str) and str.upper(token) == "TABLES":
@@ -35,5 +36,11 @@ class Show:
             return ShowStatement(show_type=ShowType.TABLES)
         elif isinstance(token, str) and str.upper(token) == "DATABASES":
             return ShowStatement(show_type=ShowType.DATABASES)
+=======
+        if isinstance(token, str) and str.upper(token) == "FUNCTIONS":
+            return ShowStatement(show_type=ShowType.FUNCTIONS)
+        elif isinstance(token, str) and str.upper(token) == "TABLES":
+            return ShowStatement(show_type=ShowType.TABLES)
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
         elif token is not None:
             return ShowStatement(show_type=ShowType.CONFIG, show_val=self.visit(token))

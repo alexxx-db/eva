@@ -40,9 +40,13 @@ from evadb.parser.rename_statement import RenameTableStatement
 from evadb.parser.select_statement import SelectStatement
 from evadb.parser.set_statement import SetStatement
 <<<<<<< HEAD
+<<<<<<< HEAD
 from evadb.parser.show_statement import ShowStatement
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+from evadb.parser.show_statement import ShowStatement
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
 from evadb.parser.statement import AbstractStatement, StatementType
 from evadb.parser.table_ref import JoinNode, TableInfo, TableRef, TableValuedExpression
 from evadb.parser.types import (
@@ -995,6 +999,9 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(set_stmt, expected_stmt)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
     def test_show_config_statement(self):
         parser = Parser()
         show_config_statement = """SHOW OPENAIKEY"""
@@ -1010,8 +1017,11 @@ class ParserTests(unittest.TestCase):
 
         self.assertEqual(show_config_stmt, expected_stmt)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
     def test_create_predict_function_statement(self):
         parser = Parser()
         create_func_query = """

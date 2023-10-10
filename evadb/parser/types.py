@@ -75,7 +75,10 @@ class ShowType(EvaDBEnum):
     FUNCTIONS  # noqa: F821
     TABLES  # noqa: F821
     CONFIG  # noqa: F821
+<<<<<<< HEAD
     DATABASES  # noqa: F821
+=======
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
 
 
 class FunctionType(EvaDBEnum):

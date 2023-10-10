@@ -254,10 +254,14 @@ describe_statement: DESCRIBE table_name
 help_statement: HELP STRING_LITERAL
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 show_statement: SHOW (FUNCTIONS | TABLES | uid | DATABASES)
 =======
 show_statement: SHOW (FUNCTIONS | TABLES)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+show_statement: SHOW (FUNCTIONS | TABLES | uid)
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
 
 explain_statement: EXPLAIN explainable_statement
 

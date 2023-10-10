@@ -50,7 +50,11 @@ class SetExecutor(AbstractExecutor):
         """
         self._config.update_value(
             category="default",
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
             key=self.node.config_name,
+=======
+            key=self.node.config_name.upper(),
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
             value=self.node.config_value.value,
         )

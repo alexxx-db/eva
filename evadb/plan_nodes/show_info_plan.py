@@ -37,12 +37,16 @@ class ShowInfoPlan(AbstractPlan):
         if self._show_type == ShowType.FUNCTIONS:
             return "ShowFunctionPlan"
 <<<<<<< HEAD
+<<<<<<< HEAD
         if self._show_type == ShowType.DATABASES:
             return "ShowDatabasePlan"
         elif self._show_type == ShowType.TABLES:
 =======
         else:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        elif self._show_type == ShowType.TABLES:
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
             return "ShowTablePlan"
         elif self._show_type == ShowType.CONFIG:
             return "ShowConfigPlan"
