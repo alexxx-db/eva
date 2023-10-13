@@ -166,6 +166,7 @@ parts:
 =======
 >>>>>>> eva-master
           - file: source/reference/databases/mariadb
+          - file: source/reference/databases/clickhouse
           - file: source/reference/databases/github
 <<<<<<< HEAD
 

@@ -72,6 +72,8 @@ def _get_database_handler(engine: str, **kwargs):
 >>>>>>> eva-master
     elif engine == "mariadb":
         return mod.MariaDbHandler(engine, **kwargs)
+    elif engine == "clickhouse":
+        return mod.ClickHouseHandler(engine, **kwargs)
     elif engine == "github":
         return mod.GithubHandler(engine, **kwargs)
 <<<<<<< HEAD
