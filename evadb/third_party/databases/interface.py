@@ -89,6 +89,8 @@ def _get_database_handler(engine: str, **kwargs):
 =======
     elif engine == "mariadb":
         return mod.MariaDbHandler(engine, **kwargs)
+    elif engine == "clickhouse":
+        return mod.ClickHouseHandler(engine, **kwargs)
     elif engine == "github":
         return mod.GithubHandler(engine, **kwargs)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
