@@ -15,15 +15,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> a378db4a (Clickhouse integration (#1281))
 <<<<<<<< HEAD:evadb/third_party/databases/clickhouse/__init__.py
 """Clickhouse integrations"""
 ========
 """user defined test functions operating on ndarrays functions"""
 >>>>>>>> 2dacff69 (feat: sync master staging (#1050)):test/integration_tests/long/functions/ndarray/__init__.py
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -33,3 +37,8 @@
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+"""Clickhouse integrations"""
+>>>>>>> df079bda (Clickhouse integration (#1281))
+>>>>>>> a378db4a (Clickhouse integration (#1281))
