@@ -237,6 +237,9 @@ stablediffusion_function_query = """CREATE FUNCTION IF NOT EXISTS StableDiffusio
 )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 dalle_function_query = """CREATE FUNCTION IF NOT EXISTS DallE
         IMPL '{}/functions/dalle.py';
         """.format(
@@ -317,10 +320,15 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
         Sift_function_query,
         Yolo_function_query,
 <<<<<<< HEAD
+<<<<<<< HEAD
         stablediffusion_function_query,
         dalle_function_query,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        stablediffusion_function_query,
+        dalle_function_query,
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
     ]
 
     # if mode is 'debug', add debug functions

@@ -45,6 +45,9 @@ from evadb.utils.generic_utils import (
     is_pinecone_available,
     is_qdrant_available,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
     is_replicate_available,
     is_sklearn_available,
     is_xgboost_available,
@@ -129,9 +132,15 @@ forecast_skip_marker = pytest.mark.skipif(
     reason="Run only if forecasting packages available",
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 
 stable_diffusion_skip_marker = pytest.mark.skipif(
     is_replicate_available() is False, reason="requires replicate"
 )
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))

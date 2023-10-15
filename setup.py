@@ -172,6 +172,10 @@ forecasting_libs = [
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
 ]
 
+imagegen_libs = [
+    "replicate"
+]
+
 ### NEEDED FOR DEVELOPER TESTING ONLY
 
 dev_libs = [
@@ -221,7 +225,14 @@ EXTRA_REQUIRES = {
     "xgboost": xgboost_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
+<<<<<<< HEAD
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
+=======
+<<<<<<< HEAD
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 =======
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
@@ -240,6 +251,7 @@ EXTRA_REQUIRES = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
     "forecasting": forecasting_libs,
@@ -250,6 +262,12 @@ EXTRA_REQUIRES = {
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs,
+>>>>>>> bf022329 (Add stable diffusion integration (#1240))
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 }
 
 setup(

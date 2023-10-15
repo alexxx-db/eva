@@ -713,6 +713,9 @@ def string_comparison_case_insensitive(string_1, string_2) -> bool:
 
     return string_1.lower() == string_2.lower()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 
 
 def try_to_import_replicate():
@@ -731,5 +734,8 @@ def is_replicate_available():
         return True
     except ValueError:
         return False
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))

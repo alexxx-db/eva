@@ -28,6 +28,10 @@ third_party:
   PINECONE_API_KEY: ""
   PINECONE_ENV: ""
 <<<<<<< HEAD
+<<<<<<< HEAD
   REPLICATE_API_TOKEN: ""
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+  REPLICATE_API_TOKEN: ""
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
