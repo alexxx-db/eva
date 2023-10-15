@@ -239,10 +239,15 @@ parts:
           - file: source/reference/ai/yolo
             title: YOLO 
 <<<<<<< HEAD
+<<<<<<< HEAD
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
 =======
+=======
+          - file: source/reference/ai/stablediffusion
+            title: Stable Diffusion
+>>>>>>> bf022329 (Add stable diffusion integration (#1240))
 
       - file: source/reference/ai/custom-ai-function
         title: Bring Your Own AI Function
