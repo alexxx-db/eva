@@ -279,7 +279,6 @@ class NativeExecutorTest(unittest.TestCase):
         self._execute_native_query()
         self._execute_evadb_query()
 
-
     def test_should_run_query_in_sqlite(self):
         # Create database.
         import os
