@@ -231,6 +231,9 @@ yolo8n_query = """CREATE FUNCTION IF NOT EXISTS Yolo
         """
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 stablediffusion_function_query = """CREATE FUNCTION IF NOT EXISTS StableDiffusion
         IMPL '{}/functions/stable_diffusion.py';
         """.format(
@@ -243,6 +246,7 @@ dalle_function_query = """CREATE FUNCTION IF NOT EXISTS DallE
     EvaDB_INSTALLATION_DIR
 )
 
+<<<<<<< HEAD
 Upper_function_query = """CREATE FUNCTION IF NOT EXISTS UPPER
         INPUT  (input ANYTYPE)
         OUTPUT (output NDARRAY STR(ANYDIM))
@@ -269,6 +273,8 @@ Concat_function_query = """CREATE FUNCTION IF NOT EXISTS CONCAT
 
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 
 def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
     """Load the built-in functions into the system during system bootstrapping.
@@ -338,6 +344,7 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
         Sift_function_query,
         Yolo_function_query,
 <<<<<<< HEAD
+<<<<<<< HEAD
         stablediffusion_function_query,
         dalle_function_query,
         Upper_function_query,
@@ -345,6 +352,10 @@ def init_builtin_functions(db: EvaDBDatabase, mode: str = "debug") -> None:
         Concat_function_query,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        stablediffusion_function_query,
+        dalle_function_query,
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
     ]
 
     # if mode is 'debug', add debug functions

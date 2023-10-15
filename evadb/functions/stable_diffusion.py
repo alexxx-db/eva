@@ -22,6 +22,10 @@ import requests
 from PIL import Image
 
 from evadb.catalog.catalog_type import NdArrayType
+<<<<<<< HEAD
+=======
+from evadb.configuration.configuration_manager import ConfigurationManager
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import forward
 from evadb.functions.decorators.io_descriptors.data_types import PandasDataframe
@@ -33,8 +37,15 @@ class StableDiffusion(AbstractFunction):
     def name(self) -> str:
         return "StableDiffusion"
 
+<<<<<<< HEAD
     def setup(self, replicate_api_token="") -> None:
         self.replicate_api_token = replicate_api_token
+=======
+    def setup(
+        self,
+    ) -> None:
+        pass
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 
     @forward(
         input_signatures=[
@@ -61,6 +72,7 @@ class StableDiffusion(AbstractFunction):
         try_to_import_replicate()
         import replicate
 
+<<<<<<< HEAD
         replicate_api_key = self.replicate_api_token
         # If not found, try OS Environment Variable
         if replicate_api_key is None:
@@ -68,6 +80,18 @@ class StableDiffusion(AbstractFunction):
         assert (
             len(replicate_api_key) != 0
         ), "Please set your Replicate API key using SET REPLICATE_API_TOKEN = '' or set the environment variable (REPLICATE_API_TOKEN)"
+=======
+        # Register API key, try configuration manager first
+        replicate_api_key = ConfigurationManager().get_value(
+            "third_party", "REPLICATE_API_TOKEN"
+        )
+        # If not found, try OS Environment Variable
+        if len(replicate_api_key) == 0:
+            replicate_api_key = os.environ.get("REPLICATE_API_TOKEN", "")
+        assert (
+            len(replicate_api_key) != 0
+        ), "Please set your Replicate API key in evadb.yml file (third_party, replicate_api_token) or environment variable (REPLICATE_API_TOKEN)"
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
         os.environ["REPLICATE_API_TOKEN"] = replicate_api_key
 
         model_id = (
