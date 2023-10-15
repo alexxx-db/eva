@@ -1018,12 +1018,17 @@ def string_comparison_case_insensitive(string_1, string_2) -> bool:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
 
 
 def try_to_import_replicate():
@@ -1045,10 +1050,14 @@ def is_replicate_available():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -1057,3 +1066,5 @@ def is_replicate_available():
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))

@@ -1042,12 +1042,15 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 =======
 >>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
           - file: source/reference/ai/stablediffusion
             title: Stable Diffusion
 
@@ -1065,10 +1068,16 @@ parts:
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
 =======
+=======
+          - file: source/reference/ai/stablediffusion
+            title: Stable Diffusion
+>>>>>>> bf022329 (Add stable diffusion integration (#1240))
 
       - file: source/reference/ai/custom-ai-function
         title: Bring Your Own AI Function

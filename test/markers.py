@@ -143,6 +143,9 @@ from evadb.utils.generic_utils import (
     is_pinecone_available,
     is_qdrant_available,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
     is_replicate_available,
     is_sklearn_available,
 <<<<<<< HEAD
@@ -260,12 +263,17 @@ forecast_skip_marker = pytest.mark.skipif(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
 
 stable_diffusion_skip_marker = pytest.mark.skipif(
     is_replicate_available() is False, reason="requires replicate"
@@ -273,10 +281,14 @@ stable_diffusion_skip_marker = pytest.mark.skipif(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -285,3 +297,5 @@ stable_diffusion_skip_marker = pytest.mark.skipif(
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))

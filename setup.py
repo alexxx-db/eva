@@ -303,6 +303,10 @@ forecasting_libs = [
 ]
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
 
+imagegen_libs = [
+    "replicate"
+]
+
 ### NEEDED FOR DEVELOPER TESTING ONLY
 
 dev_libs = [
@@ -391,19 +395,28 @@ EXTRA_REQUIRES = {
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 <<<<<<< HEAD
+=======
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
+=======
+<<<<<<< HEAD
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
 <<<<<<< HEAD
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs,
@@ -430,6 +443,7 @@ EXTRA_REQUIRES = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
     "forecasting": forecasting_libs,
@@ -519,6 +533,7 @@ EXTRA_REQUIRES = {
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
@@ -533,6 +548,14 @@ EXTRA_REQUIRES = {
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs,
+>>>>>>> bf022329 (Add stable diffusion integration (#1240))
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
 }
 
 setup(

@@ -82,7 +82,11 @@ class DallEFunction(AbstractFunction):
         # Register API key, try configuration manager first
         openai.api_key = ConfigurationManager().get_value("third_party", "OPENAI_KEY")
         # If not found, try OS Environment Variable
+<<<<<<< HEAD
         if openai.api_key is None or len(openai.api_key) == 0:
+=======
+        if len(openai.api_key) == 0:
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
             openai.api_key = os.environ.get("OPENAI_KEY", "")
         assert (
             len(openai.api_key) != 0
