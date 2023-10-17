@@ -44,6 +44,7 @@ from evadb.catalog.catalog_type import ColumnType, TableType
 from evadb.catalog.catalog_type import ColumnType, TableType
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 from evadb.catalog.catalog_utils import get_metadata_properties, is_document_table
+from evadb.catalog.sql_config import RESTRICTED_COL_NAMES
 from evadb.configuration.constants import EvaDB_INSTALLATION_DIR
 from evadb.expression.abstract_expression import AbstractExpression, ExpressionType
 from evadb.expression.function_expression import FunctionExpression
@@ -366,6 +367,12 @@ class StatementBinder:
 
     @bind.register(CreateTableStatement)
     def _bind_create_statement(self, node: CreateTableStatement):
+        # we don't allow certain keywords in the column_names
+        for col in node.column_list:
+            assert (
+                col.name.lower() not in RESTRICTED_COL_NAMES
+            ), f"EvaDB does not allow to create a table with column name {col.name}"
+
         if node.query is not None:
             self.bind(node.query)
 
