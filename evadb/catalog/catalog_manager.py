@@ -537,12 +537,16 @@ class CatalogManager(object):
         checksum = get_file_checksum(impl_file_path)
         function_entry = self._function_service.insert_entry(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
             name,
             impl_file_path,
             type,
             checksum,
             function_io_list,
             function_metadata_list,
+<<<<<<< HEAD
         )
 =======
             name, impl_file_path, type, checksum
@@ -554,6 +558,9 @@ class CatalogManager(object):
             function_metadata.function_id = function_entry.row_id
         self._function_metadata_service.insert_entries(function_metadata_list)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        )
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
         return function_entry
 
     def get_function_catalog_entry_by_name(self, name: str) -> FunctionCatalogEntry:
