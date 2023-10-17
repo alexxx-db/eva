@@ -259,6 +259,7 @@ help_statement: HELP STRING_LITERAL
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 show_statement: SHOW (FUNCTIONS | TABLES | uid | DATABASES)
 =======
 show_statement: SHOW (FUNCTIONS | TABLES)
@@ -266,6 +267,9 @@ show_statement: SHOW (FUNCTIONS | TABLES)
 =======
 show_statement: SHOW (FUNCTIONS | TABLES | uid)
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+show_statement: SHOW (FUNCTIONS | TABLES | uid | DATABASES)
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
 
 explain_statement: EXPLAIN explainable_statement
 

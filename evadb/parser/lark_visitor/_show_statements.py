@@ -41,6 +41,11 @@ class Show:
             return ShowStatement(show_type=ShowType.FUNCTIONS)
         elif isinstance(token, str) and str.upper(token) == "TABLES":
             return ShowStatement(show_type=ShowType.TABLES)
+<<<<<<< HEAD
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+        elif isinstance(token, str) and str.upper(token) == "DATABASES":
+            return ShowStatement(show_type=ShowType.DATABASES)
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
         elif token is not None:
             return ShowStatement(show_type=ShowType.CONFIG, show_val=self.visit(token))

@@ -196,11 +196,17 @@ class CatalogManager(object):
         return table_entry
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     def get_all_database_catalog_entries(self):
         return self._db_catalog_service.get_all_entries()
 
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+    def get_all_database_catalog_entries(self):
+        return self._db_catalog_service.get_all_entries()
+
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
     def drop_database_catalog_entry(self, database_entry: DatabaseCatalogEntry) -> bool:
         """
         This method deletes the database from  catalog.

@@ -42,6 +42,7 @@ class ShowInfoExecutor(AbstractExecutor):
 =======
             self.node.show_type is ShowType.FUNCTIONS
             or ShowType.TABLES
+            or ShowType.DATABASES
             or ShowType.CONFIG
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
         ), f"Show command does not support type {self.node.show_type}"
@@ -57,13 +58,19 @@ class ShowInfoExecutor(AbstractExecutor):
                     show_entries.append(table.name)
             show_entries = {"name": show_entries}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
         elif self.node.show_type is ShowType.DATABASES:
             databases = self.catalog().get_all_database_catalog_entries()
             for db in databases:
                 show_entries.append(db.display_format())
+<<<<<<< HEAD
         elif self.node.show_type is ShowType.CONFIG:
             value = self.catalog().get_configuration_catalog_value(
 =======
+=======
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
         elif self.node.show_type is ShowType.CONFIG:
             value = self._config.get_value(
                 category="default",

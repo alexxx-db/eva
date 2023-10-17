@@ -76,9 +76,13 @@ class ShowType(EvaDBEnum):
     TABLES  # noqa: F821
     CONFIG  # noqa: F821
 <<<<<<< HEAD
+<<<<<<< HEAD
     DATABASES  # noqa: F821
 =======
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+    DATABASES  # noqa: F821
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
 
 
 class FunctionType(EvaDBEnum):

@@ -38,6 +38,9 @@ class ShowInfoPlan(AbstractPlan):
             return "ShowFunctionPlan"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
         if self._show_type == ShowType.DATABASES:
             return "ShowDatabasePlan"
         elif self._show_type == ShowType.TABLES:

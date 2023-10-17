@@ -43,11 +43,16 @@ class ShowStatement(AbstractStatement):
         elif self.show_type == ShowType.CONFIG:
             show_str = self.show_val
 <<<<<<< HEAD
+<<<<<<< HEAD
         elif self.show_type == ShowType.DATABASES:
             show_str = "DATABASES"
 =======
 
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+        elif self.show_type == ShowType.DATABASES:
+            show_str = "DATABASES"
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
         return f"SHOW {show_str}"
 
     def __eq__(self, other: object) -> bool:

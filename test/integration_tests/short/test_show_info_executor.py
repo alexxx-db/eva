@@ -128,6 +128,9 @@ class ShowExecutorTest(unittest.TestCase):
         with self.assertRaises(Exception):
             execute_query_fetch_all(self.evadb, "SHOW BADCONFIG")
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
 
     # integration test
     def test_show_databases(self):
@@ -142,5 +145,8 @@ class ShowExecutorTest(unittest.TestCase):
         expected_df = pd.DataFrame(expected)
         self.assertTrue(all(expected_df.name == result.frames.name))
         self.assertTrue(all(expected_df.engine == result.frames.engine))
+<<<<<<< HEAD
 =======
 >>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
