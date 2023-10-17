@@ -228,15 +228,21 @@ class FunctionExecutorTest(unittest.TestCase):
                   TYPE  Classification
                   IMPL  'test/util.py'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e0596f63 (feat: function_metadata supports boolean and float  (#1296))
                   CACHE TRUE
                   BATCH FALSE
                   INT_VAL 1
                   FLOAT_VAL 1.5
                   STR_VAL "gg";
+<<<<<<< HEAD
 =======
                   CACHE 'TRUE'
                   BATCH 'FALSE';
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> e0596f63 (feat: function_metadata supports boolean and float  (#1296))
         """
         execute_query_fetch_all(self.evadb, create_function_query.format(function_name))
 
@@ -244,6 +250,7 @@ class FunctionExecutorTest(unittest.TestCase):
         entries = self.evadb.catalog().get_function_metadata_entries_by_function_name(
             function_name
         )
+<<<<<<< HEAD
 <<<<<<< HEAD
         self.assertEqual(len(entries), 5)
         metadata = [(entry.key, entry.value) for entry in entries]
@@ -263,6 +270,19 @@ class FunctionExecutorTest(unittest.TestCase):
         # metadata ultimately stored as lowercase string literals in metadata
         expected_metadata = [("cache", "TRUE"), ("batch", "FALSE")]
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        self.assertEqual(len(entries), 5)
+        metadata = [(entry.key, entry.value) for entry in entries]
+
+        # metadata ultimately stored as lowercase string literals in metadata
+        expected_metadata = [
+            ("cache", True),
+            ("batch", False),
+            ("int_val", 1),
+            ("float_val", 1.5),
+            ("str_val", "gg"),
+        ]
+>>>>>>> e0596f63 (feat: function_metadata supports boolean and float  (#1296))
         self.assertEqual(set(metadata), set(expected_metadata))
 
     def test_should_return_empty_metadata_list_for_missing_function(self):

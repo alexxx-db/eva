@@ -111,10 +111,14 @@ function_metadata: function_metadata_key function_metadata_value
 function_metadata_key: uid
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function_metadata_value: constant
 =======
 function_metadata_value: string_literal | decimal_literal
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+function_metadata_value: constant
+>>>>>>> e0596f63 (feat: function_metadata supports boolean and float  (#1296))
 
 <<<<<<< HEAD
 vector_store_type: USING (FAISS | QDRANT | PINECONE | PGVECTOR | CHROMADB | MILVUS)
