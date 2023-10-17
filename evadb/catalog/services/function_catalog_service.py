@@ -16,24 +16,33 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 from typing import List
 
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 from typing import List
 
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import select
 
@@ -42,12 +51,17 @@ from evadb.catalog.models.function_catalog import FunctionCatalog, FunctionCatal
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 from evadb.catalog.models.utils import (
     FunctionIOCatalogEntry,
     FunctionMetadataCatalogEntry,
@@ -61,11 +75,15 @@ from evadb.utils.errors import CatalogError
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 from evadb.catalog.services.base_service import BaseService
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 =======
 from evadb.catalog.services.base_service import BaseService
@@ -76,6 +94,8 @@ from evadb.catalog.services.base_service import BaseService
 from evadb.catalog.services.base_service import BaseService
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 from evadb.utils.logging_manager import logger
 
 
@@ -86,10 +106,13 @@ class FunctionCatalogService(BaseService):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
         self._function_io_service = FunctionIOCatalogService(db_session)
         self._function_metadata_service = FunctionMetadataCatalogService(db_session)
 
@@ -108,6 +131,9 @@ class FunctionCatalogService(BaseService):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 =======
         self._function_io_service = FunctionIOCatalogService(db_session)
         self._function_metadata_service = FunctionMetadataCatalogService(db_session)
@@ -121,10 +147,13 @@ class FunctionCatalogService(BaseService):
         function_io_list: List[FunctionIOCatalogEntry],
         function_metadata_list: List[FunctionMetadataCatalogEntry],
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
     ) -> FunctionCatalogEntry:
         """Insert a new function entry
 
@@ -143,12 +172,17 @@ class FunctionCatalogService(BaseService):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 
         for function_io in function_io_list:
             function_io.function_id = function_obj._row_id
@@ -177,11 +211,15 @@ class FunctionCatalogService(BaseService):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 =======
         return function_obj.as_dataclass()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 =======
         return function_obj.as_dataclass()
@@ -192,6 +230,8 @@ class FunctionCatalogService(BaseService):
         return function_obj.as_dataclass()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 
     def get_entry_by_name(self, name: str) -> FunctionCatalogEntry:
         """return the function entry that matches the name provided.

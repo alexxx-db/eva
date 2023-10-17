@@ -34,10 +34,13 @@ class FunctionMetadataCatalogService(BaseService):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
     def create_entries(self, entries: List[FunctionMetadataCatalogEntry]):
         metadata_objs = []
 =======
@@ -45,14 +48,20 @@ class FunctionMetadataCatalogService(BaseService):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
 =======
     def create_entries(self, entries: List[FunctionMetadataCatalogEntry]):
         metadata_objs = []
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
         try:
             for entry in entries:
                 metadata_obj = FunctionMetadataCatalog(
@@ -65,15 +74,19 @@ class FunctionMetadataCatalogService(BaseService):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 =======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
             logger.exception(
                 f"Failed to insert entry {entry} into function metadata catalog with exception {str(e)}"
             )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -82,6 +95,10 @@ class FunctionMetadataCatalogService(BaseService):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
             raise CatalogError(e)
 
     def get_entries_by_function_id(
