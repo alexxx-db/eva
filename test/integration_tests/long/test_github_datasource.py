@@ -32,11 +32,17 @@ class GithubDataSourceTest(unittest.TestCase):
         execute_query_fetch_all(self.evadb, "DROP DATABASE IF EXISTS github_data;")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     @pytest.mark.skip(
         reason="Need https://github.com/georgia-tech-db/evadb/pull/1280 for a cost-based rebatch optimization"
     )
 =======
 >>>>>>> 858b8c1c (Collection of fixes for the staging branch (#1253))
+=======
+    @pytest.mark.skip(
+        reason="Need https://github.com/georgia-tech-db/evadb/pull/1280 for a cost-based rebatch optimization"
+    )
+>>>>>>> 3d009af6 (Reenable batch for release (#1302))
     @pytest.mark.xfail(reason="Flaky testcase due to `bad request` error message")
     def test_should_run_select_query_in_github(self):
         # Create database.
