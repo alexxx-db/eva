@@ -2,6 +2,7 @@ _MAJOR = "0"
 _MINOR = "3"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 _REVISION = "8+dev"
 =======
 <<<<<<< HEAD
@@ -21,6 +22,9 @@ _REVISION = "8+dev"
 =======
 _REVISION = "8+dev"
 >>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
+=======
+_REVISION = "8"
+>>>>>>> c3b45b61 (v0.3.8 - new release (#1303))
 
 VERSION_SHORT = f"{_MAJOR}.{_MINOR}"
 VERSION = f"{_MAJOR}.{_MINOR}.{_REVISION}"
