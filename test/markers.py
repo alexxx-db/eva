@@ -51,9 +51,12 @@ from evadb.utils.generic_utils import (
     is_replicate_available,
     is_sklearn_available,
     is_xgboost_available,
+<<<<<<< HEAD
 =======
     is_sklearn_available,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 )
 
 asyncio_skip_marker = pytest.mark.skipif(
@@ -117,12 +120,18 @@ sklearn_skip_marker = pytest.mark.skipif(
 )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 xgboost_skip_marker = pytest.mark.skipif(
     is_xgboost_available() is False, reason="Run only if xgboost is available"
 )
 
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 chatgpt_skip_marker = pytest.mark.skip(
     reason="requires chatgpt",
 )
