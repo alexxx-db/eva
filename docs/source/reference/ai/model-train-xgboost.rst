@@ -23,6 +23,7 @@ To use the `Flaml XGBoost AutoML framework <https://microsoft.github.io/FLAML/do
    PREDICT 'rental_price';
 
 In the above query, you are creating a new customized function by training a model from the ``HomeRentals`` table using the ``Flaml XGBoost`` framework.
+<<<<<<< HEAD
 The ``rental_price`` column will be the target column for predication, while the rest columns from the ``SELECT`` query are the inputs.
 
 3. Model Training Parameters
@@ -62,3 +63,6 @@ Below are the example queries specifying the aboe parameters
    TIME_LIMIT 180
    METRIC 'accuracy'
    TASK 'classification';
+=======
+The ``rental_price`` column will be the target column for predication, while the rest columns from the ``SELET`` query are the inputs. 
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))

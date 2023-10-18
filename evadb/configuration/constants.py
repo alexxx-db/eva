@@ -39,9 +39,13 @@ DEFAULT_TRAIN_TIME_LIMIT = 120
 DEFAULT_DOCUMENT_CHUNK_SIZE = 4000
 DEFAULT_DOCUMENT_CHUNK_OVERLAP = 200
 <<<<<<< HEAD
+<<<<<<< HEAD
 DEFAULT_TRAIN_REGRESSION_METRIC = "rmse"
 DEFAULT_XGBOOST_TASK = "regression"
 DEFAULT_SKLEARN_TRAIN_MODEL = "rf"
 SKLEARN_SUPPORTED_MODELS = ["rf", "extra_tree", "kneighbor"]
 =======
 >>>>>>> f9e9f8b3 (fix: improve testcase (#1294))
+=======
+DEFAULT_TRAIN_REGRESSION_METRIC = "rmse"
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))

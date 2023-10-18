@@ -434,6 +434,11 @@ def is_sklearn_available() -> bool:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
 def try_to_import_flaml_automl():
     try:
         import flaml  # noqa: F401
@@ -468,14 +473,40 @@ def try_to_import_sklearn():
 def is_sklearn_available() -> bool:
     try:
         try_to_import_sklearn()
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+def try_to_import_xgboost():
+    try:
+        import flaml  # noqa: F401
+        from flaml import AutoML  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import Flaml AutoML.
+                Please install it with `pip install "flaml[automl]"`."""
+        )
+
+
+def is_xgboost_available() -> bool:
+    try:
+        try_to_import_xgboost()
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
         return True
     except ValueError:  # noqa: E722
         return False
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 ##############################
 ## VISION
 ##############################

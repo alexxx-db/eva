@@ -14,10 +14,14 @@
 # limitations under the License.
 import unittest
 <<<<<<< HEAD
+<<<<<<< HEAD
 from test.markers import ludwig_skip_marker, sklearn_skip_marker, xgboost_skip_marker
 =======
 from test.markers import ludwig_skip_marker, sklearn_skip_marker
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+from test.markers import ludwig_skip_marker, sklearn_skip_marker, xgboost_skip_marker
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 from test.util import get_evadb_for_testing, shutdown_ray
 
 import pytest
@@ -211,6 +215,25 @@ class ModelTrainTests(unittest.TestCase):
             SELECT PredictEmployeeXgboost(payment_tier, age, gender, experience_in_current_domain, leave_or_not) FROM Employee LIMIT 10;
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+        """
+        result = execute_query_fetch_all(self.evadb, predict_query)
+        self.assertEqual(len(result.columns), 1)
+        self.assertEqual(len(result), 10)
+
+    @xgboost_skip_marker
+    def test_xgboost_regression(self):
+        create_predict_function = """
+            CREATE FUNCTION IF NOT EXISTS PredictRent FROM
+            ( SELECT number_of_rooms, number_of_bathrooms, days_on_market, rental_price FROM HomeRentals )
+            TYPE XGBoost
+            PREDICT 'rental_price'
+            TIME_LIMIT 180
+            METRIC 'r2';
+        """
+        execute_query_fetch_all(self.evadb, create_predict_function)
+
+        predict_query = """
+            SELECT PredictRent(number_of_rooms, number_of_bathrooms, days_on_market, rental_price) FROM HomeRentals LIMIT 10;
         """
         result = execute_query_fetch_all(self.evadb, predict_query)
         self.assertEqual(len(result.columns), 1)

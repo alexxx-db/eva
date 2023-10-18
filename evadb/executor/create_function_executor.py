@@ -57,7 +57,10 @@ from evadb.catalog.models.function_io_catalog import FunctionIOCatalogEntry
 from evadb.catalog.models.function_metadata_catalog import FunctionMetadataCatalogEntry
 from evadb.configuration.constants import (
 <<<<<<< HEAD
+<<<<<<< HEAD
     DEFAULT_SKLEARN_TRAIN_MODEL,
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
     DEFAULT_TRAIN_REGRESSION_METRIC,
     DEFAULT_TRAIN_TIME_LIMIT,
     DEFAULT_XGBOOST_TASK,
@@ -126,6 +129,7 @@ from evadb.utils.generic_utils import (
 >>>>>>> ca239aea (Add support for Neuralforecast (#1115))
     try_to_import_torch,
     try_to_import_ultralytics,
+    try_to_import_xgboost,
 )
 from evadb.utils.logging_manager import logger
 
@@ -488,6 +492,10 @@ class CreateFunctionExecutor(AbstractExecutor):
         self.node.metadata.append(
             FunctionMetadataCatalogEntry("model_path", model_path)
         )
+        # Pass the prediction column name to sklearn.py
+        self.node.metadata.append(
+            FunctionMetadataCatalogEntry("predict_col", arg_map["predict"])
+        )
 
         impl_path = Path(f"{self.function_dir}/sklearn.py").absolute().as_posix()
         io_list = self._resolve_function_io(None)
@@ -500,6 +508,64 @@ class CreateFunctionExecutor(AbstractExecutor):
         )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    def handle_xgboost_function(self):
+        """Handle xgboost functions
+
+        We use the Flaml AutoML model for training xgboost models.
+        """
+        try_to_import_xgboost()
+
+        assert (
+            len(self.children) == 1
+        ), "Create sklearn function expects 1 child, finds {}.".format(
+            len(self.children)
+        )
+
+        aggregated_batch_list = []
+        child = self.children[0]
+        for batch in child.exec():
+            aggregated_batch_list.append(batch)
+        aggregated_batch = Batch.concat(aggregated_batch_list, copy=False)
+        aggregated_batch.drop_column_alias()
+
+        arg_map = {arg.key: arg.value for arg in self.node.metadata}
+        from flaml import AutoML
+
+        model = AutoML()
+        settings = {
+            "time_budget": arg_map.get("time_limit", DEFAULT_TRAIN_TIME_LIMIT),
+            "metric": arg_map.get("metric", DEFAULT_TRAIN_REGRESSION_METRIC),
+            "estimator_list": ["xgboost"],
+            "task": "regression",
+        }
+        model.fit(
+            dataframe=aggregated_batch.frames, label=arg_map["predict"], **settings
+        )
+        model_path = os.path.join(
+            self.db.config.get_value("storage", "model_dir"), self.node.name
+        )
+        pickle.dump(model, open(model_path, "wb"))
+        self.node.metadata.append(
+            FunctionMetadataCatalogEntry("model_path", model_path)
+        )
+        # Pass the prediction column to xgboost.py.
+        self.node.metadata.append(
+            FunctionMetadataCatalogEntry("predict_col", arg_map["predict"])
+        )
+
+        impl_path = Path(f"{self.function_dir}/xgboost.py").absolute().as_posix()
+        io_list = self._resolve_function_io(None)
+        return (
+            self.node.name,
+            impl_path,
+            self.node.function_type,
+            io_list,
+            self.node.metadata,
+        )
+
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
     def handle_ultralytics_function(self):
 <<<<<<< HEAD
         """Handle Ultralytics Functions"""
@@ -1506,12 +1572,16 @@ class CreateFunctionExecutor(AbstractExecutor):
                 function_type,
                 io_list,
                 metadata,
+<<<<<<< HEAD
                 best_score,
                 train_time,
             ) = self.handle_xgboost_function()
 =======
             ) = self.handle_sklearn_function()
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+            ) = self.handle_xgboost_function()
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
         elif string_comparison_case_insensitive(self.node.function_type, "Forecasting"):
             (
                 name,
