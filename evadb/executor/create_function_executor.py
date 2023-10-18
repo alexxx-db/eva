@@ -171,6 +171,7 @@ from evadb.configuration.constants import (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     DEFAULT_SKLEARN_TRAIN_MODEL,
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
@@ -178,9 +179,14 @@ from evadb.configuration.constants import (
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
     DEFAULT_TRAIN_REGRESSION_METRIC,
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+    DEFAULT_TRAIN_REGRESSION_METRIC,
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
     DEFAULT_TRAIN_TIME_LIMIT,
     DEFAULT_XGBOOST_TASK,
     SKLEARN_SUPPORTED_MODELS,
@@ -373,6 +379,7 @@ from evadb.utils.generic_utils import (
     try_to_import_torch,
     try_to_import_ultralytics,
     try_to_import_xgboost,
+<<<<<<< HEAD
 =======
 =======
     string_comparison_case_insensitive,
@@ -398,6 +405,8 @@ from evadb.utils.generic_utils import (
     try_to_import_ultralytics,
 >>>>>>> b87af508 (feat: sync master staging (#1050))
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 )
 from evadb.utils.logging_manager import logger
 
@@ -1107,12 +1116,18 @@ class CreateFunctionExecutor(AbstractExecutor):
             FunctionMetadataCatalogEntry("model_path", model_path)
         )
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
         # Pass the prediction column name to sklearn.py
         self.node.metadata.append(
             FunctionMetadataCatalogEntry("predict_col", arg_map["predict"])
         )
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 
         impl_path = Path(f"{self.function_dir}/sklearn.py").absolute().as_posix()
         io_list = self._resolve_function_io(None)
@@ -1130,6 +1145,7 @@ class CreateFunctionExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
@@ -1139,6 +1155,72 @@ class CreateFunctionExecutor(AbstractExecutor):
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+=======
+    def handle_xgboost_function(self):
+        """Handle xgboost functions
+
+        We use the Flaml AutoML model for training xgboost models.
+        """
+        try_to_import_xgboost()
+
+        assert (
+            len(self.children) == 1
+        ), "Create sklearn function expects 1 child, finds {}.".format(
+            len(self.children)
+        )
+
+        aggregated_batch_list = []
+        child = self.children[0]
+        for batch in child.exec():
+            aggregated_batch_list.append(batch)
+        aggregated_batch = Batch.concat(aggregated_batch_list, copy=False)
+        aggregated_batch.drop_column_alias()
+
+        arg_map = {arg.key: arg.value for arg in self.node.metadata}
+        from flaml import AutoML
+
+        model = AutoML()
+        settings = {
+            "time_budget": arg_map.get("time_limit", DEFAULT_TRAIN_TIME_LIMIT),
+            "metric": arg_map.get("metric", DEFAULT_TRAIN_REGRESSION_METRIC),
+            "estimator_list": ["xgboost"],
+            "task": "regression",
+        }
+        model.fit(
+            dataframe=aggregated_batch.frames, label=arg_map["predict"], **settings
+        )
+        model_path = os.path.join(
+            self.db.config.get_value("storage", "model_dir"), self.node.name
+        )
+        pickle.dump(model, open(model_path, "wb"))
+        self.node.metadata.append(
+            FunctionMetadataCatalogEntry("model_path", model_path)
+        )
+        # Pass the prediction column to xgboost.py.
+        self.node.metadata.append(
+            FunctionMetadataCatalogEntry("predict_col", arg_map["predict"])
+        )
+
+        impl_path = Path(f"{self.function_dir}/xgboost.py").absolute().as_posix()
+        io_list = self._resolve_function_io(None)
+        return (
+            self.node.name,
+            impl_path,
+            self.node.function_type,
+            io_list,
+            self.node.metadata,
+        )
+
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+    def handle_ultralytics_function(self):
+        """Handle Ultralytics functions"""
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
     def handle_xgboost_function(self):
         """Handle xgboost functions
 
@@ -3455,6 +3537,9 @@ class CreateFunctionExecutor(AbstractExecutor):
                 train_time,
             ) = self.handle_sklearn_function()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
         elif string_comparison_case_insensitive(self.node.function_type, "XGBoost"):
             (
                 name,
@@ -3466,12 +3551,14 @@ class CreateFunctionExecutor(AbstractExecutor):
                 best_score,
                 train_time,
             ) = self.handle_xgboost_function()
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
             ) = self.handle_sklearn_function()
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
             ) = self.handle_xgboost_function()
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
@@ -3480,6 +3567,9 @@ class CreateFunctionExecutor(AbstractExecutor):
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
         elif string_comparison_case_insensitive(self.node.function_type, "Forecasting"):
             (
                 name,

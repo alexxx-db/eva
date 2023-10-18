@@ -572,6 +572,12 @@ def is_sklearn_available() -> bool:
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 def try_to_import_sklearn():
     try:
         import sklearn  # noqa: F401
@@ -587,16 +593,21 @@ def is_sklearn_available() -> bool:
     try:
         try_to_import_sklearn()
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
         return True
     except ValueError:  # noqa: E722
         return False
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 def try_to_import_sklearn():
     try:
@@ -667,6 +678,11 @@ def is_sklearn_available() -> bool:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 =======
+=======
+=======
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
 def try_to_import_xgboost():
     try:
         import flaml  # noqa: F401
@@ -683,11 +699,14 @@ def is_xgboost_available() -> bool:
         try_to_import_xgboost()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
 <<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 =======
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
         try_to_import_forecast()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -700,6 +719,7 @@ def is_xgboost_available() -> bool:
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -711,6 +731,11 @@ def is_xgboost_available() -> bool:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
         return True
     except ValueError:  # noqa: E722
         return False
@@ -719,6 +744,9 @@ def is_xgboost_available() -> bool:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -726,6 +754,7 @@ def is_xgboost_available() -> bool:
 >>>>>>> eva-master
 =======
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
@@ -738,6 +767,9 @@ def is_xgboost_available() -> bool:
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
 ##############################
 ## VISION
 ##############################

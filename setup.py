@@ -273,6 +273,8 @@ forecasting_libs = [
 <<<<<<< HEAD
 sklearn_libs = ["scikit-learn"]
 
+xgboost_libs = ["flaml[automl]"]
+
 forecasting_libs = [
     "statsforecast", # MODEL TRAIN AND FINE TUNING
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
@@ -396,8 +398,13 @@ EXTRA_REQUIRES = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
 =======
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 <<<<<<< HEAD
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
@@ -554,8 +561,17 @@ EXTRA_REQUIRES = {
 =======
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs,
 >>>>>>> bf022329 (Add stable diffusion integration (#1240))
+<<<<<<< HEAD
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+<<<<<<< HEAD
 >>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
+=======
+=======
+=======
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
 }
 
 setup(
