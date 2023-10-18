@@ -21,6 +21,7 @@ _MINOR = "3"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 _REVISION = "9"
 =======
 _REVISION = "8+dev"
@@ -66,6 +67,8 @@ _REVISION = "7"
 >>>>>>> ae08f806 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
+=======
+>>>>>>> 8565e9b7 (v0.3.8 - new release (#1303))
 _REVISION = "8"
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
@@ -74,6 +77,9 @@ _REVISION = "7"
 =======
 _REVISION = "8+dev"
 >>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
+=======
+_REVISION = "8+dev"
+>>>>>>> bcb19939 (v0.3.8 - new release (#1303))
 =======
 _REVISION = "7"
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -237,8 +243,17 @@ _REVISION = "4+dev"
 =======
 _REVISION = "8+dev"
 >>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
+<<<<<<< HEAD
 >>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
+<<<<<<< HEAD
 >>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
+=======
+=======
+=======
+_REVISION = "8"
+>>>>>>> c3b45b61 (v0.3.8 - new release (#1303))
+>>>>>>> bcb19939 (v0.3.8 - new release (#1303))
+>>>>>>> 8565e9b7 (v0.3.8 - new release (#1303))
 
 VERSION_SHORT = f"{_MAJOR}.{_MINOR}"
 VERSION = f"{_MAJOR}.{_MINOR}.{_REVISION}"
