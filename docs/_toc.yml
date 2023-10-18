@@ -214,6 +214,7 @@ parts:
           - file: source/reference/ai/model-train-sklearn
             title: Model Training with Sklearn
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
       - file: source/reference/ai/index
@@ -230,6 +231,10 @@ parts:
             title: Model Training with Sklearn
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
+=======
+          - file: source/reference/ai/model-train-xgboost
+            title: Model Training with XGBoost
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
           - file: source/reference/ai/model-forecasting
             title: Time Series Forecasting
           - file: source/reference/ai/hf

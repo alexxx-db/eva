@@ -143,6 +143,8 @@ forecasting_libs = [
 
 sklearn_libs = ["scikit-learn"]
 
+xgboost_libs = ["flaml[automl]"]
+
 forecasting_libs = [
     "statsforecast", # MODEL TRAIN AND FINE TUNING
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
@@ -197,8 +199,10 @@ EXTRA_REQUIRES = {
 <<<<<<< HEAD
 >>>>>>> eva-master
     "sklearn": sklearn_libs,
+    "xgboost": xgboost_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
+<<<<<<< HEAD
 <<<<<<< HEAD
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
 <<<<<<< HEAD
@@ -218,6 +222,9 @@ EXTRA_REQUIRES = {
 =======
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs,
 >>>>>>> bf022329 (Add stable diffusion integration (#1240))
+=======
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
 }
 
 setup(
