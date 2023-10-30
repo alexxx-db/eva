@@ -4,12 +4,30 @@ SELECT
 ======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 .. _select:
 
 SELECT TUPLES WITH PREDICATES
 =======
 SELECT FRAMES WITH PREDICATES
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.. _select:
+
+SELECT TUPLES WITH PREDICATES
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 -----------------------------
 
 Search for frames with a car
@@ -43,6 +61,7 @@ Search for frames containing greater than 3 cars
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 =======
@@ -50,6 +69,27 @@ SELECT WITH MULTIPLE FUNCTIONS
 <<<<<<< HEAD
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
+=======
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+SELECT TUPLES WITH MULTIPLE PREDICATES
+--------------------------------------
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -65,11 +105,41 @@ SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+=======
+SELECT WITH MULTIPLE UDFS
+-------------------------
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+=======
+SELECT WITH MULTIPLE FUNCTIONS
+------------------------------
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 SELECT TUPLES WITH MULTIPLE PREDICATES
 --------------------------------------
 >>>>>>> c2094b0c (docs: updated sql statement list)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
@@ -90,15 +160,33 @@ SELECT WITH MULTIPLE UDFS
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -108,6 +196,10 @@ SELECT WITH MULTIPLE FUNCTIONS
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 
 Compose multiple user-defined functions in a single query to construct semantically complex queries.
 
@@ -118,12 +210,29 @@ Compose multiple user-defined functions in a single query to construct semantica
    WHERE id < 15;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 SELECT TUPLES WITHOUT TABLE
 ---------------------------
 =======
 SELECT WITHOUT TABLE
 --------------------
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+SELECT TUPLES WITHOUT TABLE
+---------------------------
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
 In EvaDB, we can compose a query that does not have a table source. This type of queries are usually expressions.
 
@@ -131,17 +240,49 @@ In EvaDB, we can compose a query that does not have a table source. This type of
 
    SELECT 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
    SELECT 1 > 2;
 =======
    SELECT 1>2;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+   SELECT 1 > 2;
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
    SELECT HomeRentalForecast(12);
 
 .. note::
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
    If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
 =======
    Go over :ref:`forecast` for forecasting function support in EvaDB.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+   If you are interested in forecasting with EvaDB, go over the :ref:`forecast` page.
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 

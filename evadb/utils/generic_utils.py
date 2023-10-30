@@ -295,16 +295,46 @@ def try_to_import_ray():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 def try_to_import_statsforecast():
 =======
 def try_to_import_forecast():
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-source
 =======
 def try_to_import_statsforecast():
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 def try_to_import_statsforecast():
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+def try_to_import_statsforecast():
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
@@ -317,10 +347,30 @@ def try_to_import_statsforecast():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 def try_to_import_neuralforecast():
     try:
         from neuralforecast import NeuralForecast  # noqa: F401
@@ -333,12 +383,39 @@ def try_to_import_neuralforecast():
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 def is_ray_available() -> bool:
     try:
         try_to_import_ray()
@@ -381,11 +458,32 @@ def is_forecast_available() -> bool:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+        try_to_import_statsforecast()
+        try_to_import_neuralforecast()
+=======
+>>>>>>> eva-source
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
         return True
@@ -408,6 +506,10 @@ def is_sklearn_available() -> bool:
     try:
         try_to_import_sklearn()
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         return True
     except ValueError:  # noqa: E722
         return False
@@ -429,6 +531,13 @@ def is_sklearn_available() -> bool:
     try:
         try_to_import_sklearn()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         return True
     except ValueError:  # noqa: E722
         return False
@@ -438,6 +547,12 @@ def is_sklearn_available() -> bool:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> eva-source
 def try_to_import_sklearn():
     try:
         import sklearn  # noqa: F401
@@ -452,7 +567,20 @@ def try_to_import_sklearn():
 def is_sklearn_available() -> bool:
     try:
         try_to_import_sklearn()
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        return True
+    except ValueError:  # noqa: E722
+        return False
+
+
+=======
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> eva-source
 def try_to_import_xgboost():
     try:
         import flaml  # noqa: F401
@@ -468,6 +596,19 @@ def is_xgboost_available() -> bool:
     try:
         try_to_import_xgboost()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        try_to_import_forecast()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> eva-source
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 =======
@@ -475,10 +616,20 @@ def is_xgboost_available() -> bool:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         return True
     except ValueError:  # noqa: E722
         return False
@@ -488,13 +639,28 @@ def is_xgboost_available() -> bool:
 <<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> eva-source
+=======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 ##############################
 ## VISION
 ##############################
@@ -748,6 +914,15 @@ def string_comparison_case_insensitive(string_1, string_2) -> bool:
 
     return string_1.lower() == string_2.lower()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
 
 def try_to_import_replicate():
@@ -766,5 +941,18 @@ def is_replicate_available():
         return True
     except ValueError:
         return False
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source

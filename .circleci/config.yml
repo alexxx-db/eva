@@ -488,19 +488,37 @@ jobs:
               pip debug --verbose
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> eva-source
               pip install ".[dev,ludwig,qdrant,forecasting]"
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
               pip install ".[dev,ludwig,qdrant,forecasting,pinecone,chromadb]"
 =======
               pip install ".[dev,ludwig,qdrant,forecasting]"
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
               source test_evadb/bin/activate
               bash script/test/test.sh -m "<< parameters.mode >>"
 

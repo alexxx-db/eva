@@ -2,7 +2,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> eva-source
 
 Functions
 =========
@@ -24,7 +28,11 @@ SHOW UDFS
 SHOW FUNCTIONS
 --------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> eva-source
 
 Here is a list of built-in user-defined functions in EvaDB.
 
@@ -59,7 +67,11 @@ SELECT WITH MULTIPLE UDFS
 SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> eva-source
 
 Here is a query that illustrates how to use multiple functions in a single query.
 

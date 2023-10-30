@@ -93,10 +93,13 @@ Below is an example:
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 CREATE INDEX
 ------------
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> eva-source
 <<<<<<< HEAD
 <<<<<<< HEAD
 CREATE INDEX
@@ -109,7 +112,10 @@ CREATE UDF
 CREATE INDEX
 ------------
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> eva-source
 
 The CREATE INDEX statement allows us to construct an EvaDB based index to accelerate semantic based searching.
 The index can be created on either a column of a table directly or outputs from a function running on a column of a table.
@@ -148,13 +154,19 @@ CREATE FUNCTION
 ---------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eva-source
 =======
 CREATE FUNCTION
 ---------------
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> eva-source
 To register an user-defined function, specify the implementation details of the function.
 
 .. code-block:: sql
@@ -248,7 +260,16 @@ To register an user-defined function, specify the implementation details of the 
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 CREATE FUNCTION via Type
 ----------------------------
 =======
@@ -266,6 +287,10 @@ To register an user-defined function by training a predication model.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> eva-source
 <<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
@@ -291,7 +316,14 @@ CREATE FUNCTION via Type
 
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> eva-master
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
    CREATE [OR REPALCE] FUNCTION [IF NOT EXISTS] function_name
 =======
    CREATE [OR REPLACE] FUNCTION [IF NOT EXISTS] function_name
@@ -312,7 +344,10 @@ Where the `parameter` is ``key value`` pair.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> eva-source
    CREATE FUNCTION IF NOT EXISTS PredictHouseRent FROM
    (SELECT * FROM HomeRentals)
    TYPE Ludwig
@@ -322,7 +357,10 @@ Where the `parameter` is ``key value`` pair.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> eva-source
 
 =======
     IMPL  'evadb/udfs/fastrcnn_object_detector.py';

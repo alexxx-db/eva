@@ -5,11 +5,34 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 personal_ws-1.1 en 1563 
+=======
+=======
+=======
+>>>>>>> 061e9d6d (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+personal_ws-1.1 en 1563 
+=======
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+personal_ws-1.1 en 1776 
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -22,13 +45,46 @@ personal_ws-1.1 en 1467
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+personal_ws-1.1 en 1563 
+=======
+personal_ws-1.1 en 1467 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+=======
+personal_ws-1.1 en 1563 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 personal_ws-1.1 en 1775 
 >>>>>>> 62080794 (ran spellchecker)
+<<<<<<< HEAD
 =======
 personal_ws-1.1 en 1776 
 >>>>>>> 8379a400 (docs: updates)
+=======
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+personal_ws-1.1 en 1776 
+>>>>>>> 8379a400 (docs: updates)
+<<<<<<< HEAD
+>>>>>>> 061e9d6d (docs: updates)
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
@@ -38,11 +94,23 @@ personal_ws-1.1 en 1467
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 =======
@@ -55,6 +123,12 @@ personal_ws-1.1 en 1467
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 =======
@@ -62,6 +136,10 @@ personal_ws-1.1 en 1563
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 ABCD
 ABCMeta
 ANYDIM
@@ -99,13 +177,35 @@ AbstractUDFTest
 AggregationExpression
 AggregationExpressionsTest
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 AirData
 AirDataPanel
 AirForecast
 AirPanelForecast
 AirPassengersPanel
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 AliExpress
 Anirudh
 AnnotateTests
@@ -183,12 +283,29 @@ CatalogModelsTest
 ChatGPT
 ChatGPTTest
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 ChromaDB
 ChromaDBVectorStore
 =======
 CHROMADB
 ChromaDB
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+ChromaDB
+ChromaDBVectorStore
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 ColConstraintInfo
 Colab
 ColorSpace
@@ -222,13 +339,35 @@ CreateDatabaseTest
 CreateExecutor
 CreateFromSelectPlan
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 CreateFunctionExecutor
 CreateFunctionExecutorTest
 CreateFunctionPlan
 CreateFunctionStatement
 CreateIndex
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 CreateIndexExecutor
 CreateIndexPlan
 CreateIndexStatement
@@ -259,9 +398,25 @@ DETRACVideo
 DFS
 DailyMail
 <<<<<<< HEAD
+<<<<<<< HEAD
 Dask
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Dask
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+Dask
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+Dask
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 DataFrame
 DataFrameColumn
 DataFrameColumns
@@ -284,9 +439,25 @@ DeletePlan
 DeleteTableStatement
 DemoDB
 <<<<<<< HEAD
+<<<<<<< HEAD
 DemoFunc
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+DemoFunc
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+DemoFunc
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+DemoFunc
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 DemoTable
 DemoUDF
 Deserialize
@@ -430,12 +601,34 @@ GaussianBlurTests
 GenericHuggingfaceModel
 GenericLudwigModel
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 GenericSklearnModel
 GenericUtilsTests
 GithubDataSourceTest
 GithubHandler
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 GroupBy
 GroupByExecutor
 GroupByPlan
@@ -457,6 +650,15 @@ HashJoinExecutor
 HashJoinPlan
 HashJoinProbePlan
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 Helvetica
 HomeData
 HomeForecast
@@ -465,9 +667,24 @@ HomeRentals
 HomeSale
 HomeSaleForecast
 HomeSalesForecast
+<<<<<<< HEAD
 =======
 HomeRentals
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+HomeRentals
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+HomeRentals
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 HorizontalFlip
 HuggingFace
 HuggingFaceModel
@@ -638,9 +855,25 @@ MaxPool
 MemeImages
 MemoTest
 <<<<<<< HEAD
+<<<<<<< HEAD
 MetaData
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+MetaData
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+MetaData
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+MetaData
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 MindsDB
 MiniLM
 MnistImageClassifier
@@ -657,9 +890,25 @@ MyPDF
 MyPDFs
 MySQLNativeStorageEngineTest
 <<<<<<< HEAD
+<<<<<<< HEAD
 MyTable
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+MyTable
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+MyTable
+>>>>>>> 061e9d6d (docs: updates)
+=======
+MyTable
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 MyTextCSV
 MyUDF
 MyVideo
@@ -670,11 +919,38 @@ MydbHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 MysqlHandler
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+MysqlHandler
+NBEATS
+NCHAR
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+MysqlHandler
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+MysqlHandler
+<<<<<<< HEAD
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 MysqlHandler
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -683,18 +959,45 @@ MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 NBEATS
 NCHAR
 <<<<<<< HEAD
 >>>>>>> 62080794 (ran spellchecker)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 MysqlHandler
@@ -703,6 +1006,12 @@ MysqlHandler
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 MysqlHandler
@@ -713,6 +1022,10 @@ MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 NEQ
 NHITS
 NLP
@@ -797,6 +1110,13 @@ PermissionDenied
 PersistentClient
 PickleSerializer
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
@@ -804,6 +1124,17 @@ PipImportRedirectingFinder
 PINECONE
 Pinecone
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+Pinecone
+PineconeVectorStore
+PipImportRedirectingFinder
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 PlanExecutor
 PlanExecutorTest
 PlanGenerator
@@ -816,10 +1147,27 @@ PredicateExecutor
 PredicatePlan
 PredictHouseRent
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 PredictHouseRentLudwig
 PredictHouseRentSklearn
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+PredictHouseRentLudwig
+PredictHouseRentSklearn
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 PrivateGPTTest
 ProgrammingError
 ProjectExecutor
@@ -897,47 +1245,126 @@ SamplePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 SampleTable
 SampleVideoTable
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+SampleTable
+SampleVideoTable
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 SampleTable
 SampleVideoTable
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 SampleTable
 SampleVideoTable
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 Scalability
 ScanPlan
 SchemaUtils
@@ -1031,9 +1458,25 @@ TestTable
 TestTextHFModel
 TestUDF
 <<<<<<< HEAD
+<<<<<<< HEAD
 TextClassifier
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+TextClassifier
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+TextClassifier
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+TextClassifier
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 TextFilterKeyword
 TextFilteringTests
 TextHFModel
@@ -1041,9 +1484,25 @@ TextLoader
 TextPickleType
 TextProcessing
 <<<<<<< HEAD
+<<<<<<< HEAD
 TextSummarizer
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+TextSummarizer
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+TextSummarizer
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+TextSummarizer
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 TextTestRunner
 TimeoutError
 TimerTests
@@ -1343,9 +1802,25 @@ dirname
 diskcache
 distilbart
 <<<<<<< HEAD
+<<<<<<< HEAD
 distilbert
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+distilbert
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+distilbert
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+distilbert
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 dists
 distutils
 dml
@@ -1399,12 +1874,30 @@ expr
 expresssion
 exprs
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 extname
 extractOne
 extrator
 =======
 extractOne
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+extname
+extractOne
+extrator
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 f'LOAD
 facebook
 facedetector
@@ -1425,6 +1918,7 @@ feedstock
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 fetchall
@@ -1432,6 +1926,27 @@ fetchall
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+fetchall
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -1441,12 +1956,42 @@ fetchall
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+fetchall
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -1457,10 +2002,20 @@ fetchall
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 ffill
 ffmpeg
 fileFormat
@@ -1499,9 +2054,25 @@ gaussianBlur
 gb
 gc
 <<<<<<< HEAD
+<<<<<<< HEAD
 gcp
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+gcp
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+gcp
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+gcp
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 gdp
 georgia
 geq
@@ -1585,9 +2156,25 @@ integrations
 intp
 invaid
 <<<<<<< HEAD
+<<<<<<< HEAD
 inviter
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+inviter
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+inviter
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+inviter
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 io
 ipynb
 iq
@@ -1741,9 +2328,25 @@ pluggable
 png
 poolclass
 <<<<<<< HEAD
+<<<<<<< HEAD
 popitem
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+popitem
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+popitem
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+popitem
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 popleft
 pos
 posix
@@ -1800,9 +2403,25 @@ releaser
 relu
 repo
 <<<<<<< HEAD
+<<<<<<< HEAD
 repos
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+repos
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+repos
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+repos
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 repr
 req
 resnet
@@ -1827,9 +2446,25 @@ runpy
 runtime
 russia
 <<<<<<< HEAD
+<<<<<<< HEAD
 saledate
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+saledate
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+saledate
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+saledate
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 saliency
 samsum
 scikit
@@ -1858,6 +2493,22 @@ sk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+sklearn
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -1868,15 +2519,32 @@ sk
 sklearn
 >>>>>>> 62080794 (ran spellchecker)
 smallint
+<<<<<<< HEAD
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> eva-source
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 sklearn
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 smallint
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -1886,12 +2554,42 @@ smallint
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+smallint
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -1902,10 +2600,20 @@ smallint
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 smi
 softmax
 spacy
@@ -1921,9 +2629,25 @@ sqlite
 src
 sshleifer
 <<<<<<< HEAD
+<<<<<<< HEAD
 sst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+sst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+sst
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+sst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 statementtoplanconverter
 staticmethod
 statsforecast
@@ -1988,9 +2712,25 @@ th
 thefuzz
 timm
 <<<<<<< HEAD
+<<<<<<< HEAD
 tinyint
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+tinyint
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+tinyint
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+tinyint
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 tmp
 toGrayscale
 toc
@@ -2037,9 +2777,25 @@ urllib
 urlparse
 urls
 <<<<<<< HEAD
+<<<<<<< HEAD
 usecase
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+usecase
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+usecase
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+usecase
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 usecases
 usecols
 utf

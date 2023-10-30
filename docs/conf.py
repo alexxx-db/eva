@@ -100,6 +100,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/ref
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -108,6 +109,30 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "README.md", "images/ref
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -182,8 +207,16 @@ html_css_files = [
 ]
 =======
                     "custom.css", 
+<<<<<<< HEAD
+<<<<<<< HEAD
                     "algolia.css",
                     "https://cdn.jsdelivr.net/npm/@docsearch/css@3",
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+                    "algolia.css",
+                    "https://cdn.jsdelivr.net/npm/@docsearch/css@3",
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"]
@@ -258,8 +291,33 @@ for i in os.listdir("../tutorials"):
 
 nb_execution_mode = "off"
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-master
 
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+for i in os.listdir("../tutorials"):
+    if i in [
+        "13-privategpt.ipynb",
+        "08-chatgpt.ipynb",
+        "12-query-pdf.ipynb",
+        "02-object-detection.ipynb",
+        "03-emotion-analysis.ipynb",
+        "07-object-segmentation-huggingface.ipynb",
+        "chatgpt.png",
+    ]:
+        shutil.copy(f"../tutorials/{i}", "./source/usecases/")
+
+nb_execution_mode = "off"
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> eva-source
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
@@ -279,44 +337,123 @@ def setup(app):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+    app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
+    app.add_js_file("js/algolia.js",defer="defer")
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
     app.add_js_file("https://cdn.jsdelivr.net/npm/@docsearch/js@3.3.3/dist/umd/index.js",defer="defer")
     app.add_js_file("js/algolia.js",defer="defer")
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source

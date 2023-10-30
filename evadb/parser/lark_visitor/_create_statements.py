@@ -260,8 +260,24 @@ class CreateIndex:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         # Projection list of child of index creation.
         project_expr_list = []
 
@@ -269,6 +285,13 @@ class CreateIndex:
         if not isinstance(index_elem, list):
             project_expr_list += [index_elem]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 =======
 =======
         # Projection list of child of index creation.
@@ -285,6 +308,31 @@ class CreateIndex:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+        # Projection list of child of index creation.
+        project_expr_list = []
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+        # Parse either a single function call or column list.
+        if not isinstance(index_elem, list):
+<<<<<<< HEAD
+            function = index_elem
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+            project_expr_list += [index_elem]
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
             # Traverse to the tuple value expression.
             while not isinstance(index_elem, TupleValueExpression):
@@ -308,10 +356,65 @@ class CreateIndex:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+            index_name,
+            if_not_exists,
+            table_ref,
+            col_list,
+            vector_store_type,
+            project_expr_list,
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
             index_name, if_not_exists, table_ref, col_list, vector_store_type, function
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
@@ -326,6 +429,12 @@ class CreateIndex:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> eva-source
             index_name,
             if_not_exists,
             table_ref,
@@ -336,16 +445,34 @@ class CreateIndex:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 =======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+>>>>>>> eva-source
+=======
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
             index_name, table_ref, col_list, vector_store_type, function
@@ -354,6 +481,12 @@ class CreateIndex:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
 =======
 =======
 =======
@@ -366,6 +499,12 @@ class CreateIndex:
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 =======
@@ -378,6 +517,10 @@ class CreateIndex:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         )
 
     def vector_store_type(self, tree):

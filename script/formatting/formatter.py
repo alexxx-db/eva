@@ -462,6 +462,13 @@ if __name__ == "__main__":
         # CODESPELL
         #LOG.info("Codespell")
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
         subprocess.check_output(""" codespell "evadb/*.py" """, 
                 shell=True, 
                 universal_newlines=True)
@@ -480,6 +487,31 @@ if __name__ == "__main__":
         subprocess.check_output(""" codespell "evadb/*.md" """, 
 =======
         subprocess.check_output("codespell 'evadb/*.py'", 
+<<<<<<< HEAD
+=======
+        subprocess.check_output(""" codespell "evadb/*.py" """, 
+>>>>>>> 5b27053e (ran spellchecker)
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output(""" codespell "evadb/*/*.py" """, 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output(""" codespell "docs/source/*/*.rst" """, 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output(""" codespell "docs/source/*.rst" """, 
+                shell=True, 
+                universal_newlines=True)
+        subprocess.check_output(""" codespell "*.md" """, 
+                shell=True, 
+                universal_newlines=True)
+<<<<<<< HEAD
+        subprocess.check_output("codespell 'evadb/*.md'", 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        subprocess.check_output(""" codespell "evadb/*.md" """, 
+>>>>>>> 5b27053e (ran spellchecker)
+=======
                 shell=True, 
                 universal_newlines=True)
         subprocess.check_output("codespell 'evadb/*/*.py'", 
@@ -496,6 +528,10 @@ if __name__ == "__main__":
                 universal_newlines=True)
         subprocess.check_output("codespell 'evadb/*.md'", 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
                 shell=True, 
                 universal_newlines=True)
 

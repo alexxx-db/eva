@@ -113,7 +113,16 @@ qdrant_libs = ["qdrant_client"]  # cannot install on 3.11 due to grcpio
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 
 pinecone_libs = ["pinecone-client"]
 
@@ -121,6 +130,24 @@ chromadb_libs = ["chromadb"]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+
+pinecone_libs = ["pinecone-client"]
+
+chromadb_libs = ["chromadb"]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -128,6 +155,10 @@ chromadb_libs = ["chromadb"]
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 
 pinecone_libs = ["pinecone-client"]
 
@@ -149,12 +180,37 @@ ludwig_libs = ["ludwig[hyperopt,distributed]"]  # MODEL TRAIN AND FINE TUNING
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+
+sklearn_libs = ["scikit-learn"]
+
+xgboost_libs = ["flaml[automl]"]
+
+forecasting_libs = [
+    "statsforecast", # MODEL TRAIN AND FINE TUNING
+    "neuralforecast" # MODEL TRAIN AND FINE TUNING
+<<<<<<< HEAD
+]
+
+imagegen_libs = [
+    "replicate"
+]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 
 sklearn_libs = ["scikit-learn"]
 
 forecasting_libs = [
     "statsforecast", # MODEL TRAIN AND FINE TUNING
     "neuralforecast" # MODEL TRAIN AND FINE TUNING
+<<<<<<< HEAD
 ]
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -163,6 +219,24 @@ forecasting_libs = [
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> ca239aea (Add support for Neuralforecast (#1115))
+]
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 
 sklearn_libs = ["scikit-learn"]
 
@@ -240,6 +314,19 @@ EXTRA_REQUIRES = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,6 +334,7 @@ EXTRA_REQUIRES = {
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
@@ -254,15 +342,46 @@ EXTRA_REQUIRES = {
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
     "sklearn": sklearn_libs,
     "xgboost": xgboost_libs,
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
 <<<<<<< HEAD
 =======
+=======
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
+=======
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+<<<<<<< HEAD
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+>>>>>>> eva-source
 =======
     "forecasting": forecasting_libs,
     # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
@@ -283,14 +402,61 @@ EXTRA_REQUIRES = {
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+    "forecasting": forecasting_libs,
+    # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+    "sklearn": sklearn_libs,
+    "forecasting": forecasting_libs,
+    # everything except ray, qdrant, ludwig and postgres. The first three fail on pyhton 3.11.
+    "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs,
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs,
 >>>>>>> bf022329 (Add stable diffusion integration (#1240))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+>>>>>>> eva-source
 =======
     "dev": dev_libs + vision_libs + document_libs + function_libs + notebook_libs + forecasting_libs + sklearn_libs + imagegen_libs + xgboost_libs
 <<<<<<< HEAD
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> eva-source
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
@@ -301,17 +467,38 @@ EXTRA_REQUIRES = {
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 }
 
 setup(

@@ -93,11 +93,20 @@ class DBHandler:
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
     def is_sqlalchmey_compatible(self) -> bool:
         """
 <<<<<<< HEAD
@@ -108,10 +117,43 @@ class DBHandler:
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+    def is_sqlalchmey_compatible(self) -> bool:
+        """
+<<<<<<< HEAD
+<<<<<<< HEAD
+        Return  whether the data source is sqlaclemy compatible
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+        Return  whether the data source is sqlaclchemy compatible
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+        Return  whether the data source is sqlaclchemy compatible
+=======
+        Return  whether the data source is sqlaclemy compatible
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
     def is_sqlalchmey_compatible(self) -> bool:
         """
         Return  whether the data source is sqlaclemy compatible
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
         Returns:
             A True / False boolean value..
@@ -128,14 +170,30 @@ class DBHandler:
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
     def check_connection(self) -> DBHandlerStatus:
         """
         Checks the status of the database connection.

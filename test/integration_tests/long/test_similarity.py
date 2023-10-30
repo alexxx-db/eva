@@ -408,6 +408,38 @@ class SimilarityTests(unittest.TestCase):
             drop_query = "DROP INDEX testFaissIndexImageDataset"
             execute_query_fetch_all(self.evadb, drop_query)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+    def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
+        create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"
+        execute_query_fetch_all(self.evadb, create_query)
+
+        for i, img_path in enumerate(self.img_path_list):
+            insert_query = (
+                f"INSERT INTO testIndexAutoUpdate (img_path) VALUES ('{img_path}')"
+            )
+            execute_query_fetch_all(self.evadb, insert_query)
+            if i == 0:
+                create_index_query = "CREATE INDEX testIndex ON testIndexAutoUpdate(DummyFeatureExtractor(Open(img_path))) USING FAISS"
+                execute_query_fetch_all(self.evadb, create_index_query)
+
+        select_query = """SELECT _row_id FROM testIndexAutoUpdate
+                                ORDER BY Similarity(DummyFeatureExtractor(Open("{}")), DummyFeatureExtractor(Open(img_path)))
+                                LIMIT 1;""".format(
+            self.img_path
+        )
+        explain_batch = execute_query_fetch_all(self.evadb, f"EXPLAIN {select_query}")
+        self.assertTrue("VectorIndexScan" in explain_batch.frames[0][0])
+
+        res_batch = execute_query_fetch_all(self.evadb, select_query)
+        self.assertEqual(res_batch.frames["testindexautoupdate._row_id"][0], 5)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
     def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
         create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"

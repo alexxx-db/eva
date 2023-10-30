@@ -8,14 +8,30 @@ Connect to an Existing SQL Database System
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
+=======
+1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9cc72b7b (docs: updates)
+<<<<<<< HEAD
+>>>>>>> eva-source
 1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
 =======
 1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
 >>>>>>> 5f27824c (docs: updates)
+<<<<<<< HEAD
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> eva-source
 
 .. code-block::
 
@@ -61,7 +77,11 @@ Connect to an Existing SQL Database System
        "database": "restaurant_reviews"
    };
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> eva-source
 
 .. note::
 
@@ -69,14 +89,30 @@ Connect to an Existing SQL Database System
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
+=======
+2. Preview the data using ``SELECT``
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9cc72b7b (docs: updates)
+<<<<<<< HEAD
+>>>>>>> eva-source
 2. Preview the Available Data Using ``SELECT``
 =======
 2. Preview the data using ``SELECT``
 >>>>>>> 5f27824c (docs: updates)
+<<<<<<< HEAD
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> eva-source
 
 You can now preview the data stored in the ``food_review`` table in the ``restaurant_reviews`` database with a :ref:`SELECT<select>` statement.
 
@@ -138,12 +174,26 @@ You can also run native queries directly in the connected database system by the
        )
    };
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> eva-source
 
 Connect to Object Store
 ------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You can load a video from an S3 cloud bucket into EvaDB using the :ref:`LOAD<load-video>` statement.
+
+.. code-block:: sql
+
+   LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
+=======
+<<<<<<< HEAD
+>>>>>>> eva-source
 Load Unstructured Data
 -----------------------
 
@@ -154,11 +204,14 @@ EvaDB supports diverse types of unstructured data. Here are some examples:
 You can load a collection of images obtained from Reddit from the local filesystem into EvaDB using the :ref:`LOAD<sql-load>` statement.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. code-block:: sql
 
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> eva-source
 <<<<<<< HEAD
 .. code-block:: sql
 
@@ -176,7 +229,10 @@ You can load a collection of images obtained from Reddit from the local filesyst
 
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> eva-source
 
 2. Load Video from Cloud Bucket
 
@@ -186,11 +242,14 @@ EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You ca
 >>>>>>> c2094b0c (docs: updated sql statement list)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. code-block:: sql
 
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> eva-source
 <<<<<<< HEAD
 .. code-block:: sql
 
@@ -208,7 +267,11 @@ EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You ca
 
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-master
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> eva-source
 
 .. note::
 

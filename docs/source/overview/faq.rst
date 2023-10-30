@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-source
 Frequently Asked Questions
 ==========================
 =======
@@ -16,6 +21,30 @@ Here are some frequently asked questions that we have seen pop up for EvaDB.
 <<<<<<< HEAD
 .. note::
 
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+Frequently Asked Questions
+==========================
+=======
+:orphan:
+
+===
+FAQ
+===
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+
+.. _faq:
+
+Here are some frequently asked questions that we have seen pop up for EvaDB.
+
+<<<<<<< HEAD
+.. note::
+
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> eva-source
     Have another question or want to give feedback? Ask us on `Slack <https://evadb.ai/community>`__!
 
 Why am I not able to install EvaDB?
@@ -26,10 +55,25 @@ Ensure that the Python interpreter's version is >= `3.9`.
 .. note::
 
     If you are using the `evadb[ray]` installation option, ensure that the Python  version is <= `3.10` due to a `Ray issue <https://github.com/autogluon/autogluon/issues/2687>`_. Follow `these instructions <https://github.com/ray-project/ray/issues/33039>`_ to install `ray`.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 =======
 Why am I not able to install EvaDB in my Python environment?
 ============================================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 35b99c88 (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 
 
 Where does EvaDB store all the data?
@@ -39,10 +83,26 @@ By default, EvaDB connects to **existing** data sources like SQL database system
 
 Why do I see no output from the server?
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 ---------------------------------------
 =======
 =======================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+---------------------------------------
+>>>>>>> 35b99c88 (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 
 If a query runs a complex AI task (e.g., sentiment analysis) on a large table, the query is expected to take a non-trivial amount of time to finish. You can check the status of the server by running ``top`` or ``pgrep``:
 
@@ -52,6 +112,13 @@ If a query runs a complex AI task (e.g., sentiment analysis) on a large table, t
     pgrep evadb_server
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 =======
 pip install ray fails because of grpcio
 =======================================
@@ -59,3 +126,11 @@ pip install ray fails because of grpcio
 Follow these instructions to install ``ray``:
 https://github.com/ray-project/ray/issues/33039
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 35b99c88 (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source

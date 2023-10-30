@@ -31,11 +31,28 @@ class FunctionMetadataCatalogService(BaseService):
         super().__init__(FunctionMetadataCatalog, db_session)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
     def create_entries(self, entries: List[FunctionMetadataCatalogEntry]):
         metadata_objs = []
 =======
     def insert_entries(self, entries: List[FunctionMetadataCatalogEntry]):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    def create_entries(self, entries: List[FunctionMetadataCatalogEntry]):
+        metadata_objs = []
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
         try:
             for entry in entries:
                 metadata_obj = FunctionMetadataCatalog(
@@ -45,11 +62,26 @@ class FunctionMetadataCatalogService(BaseService):
             return metadata_objs
         except Exception as e:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 =======
             logger.exception(
                 f"Failed to insert entry {entry} into function metadata catalog with exception {str(e)}"
             )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
             raise CatalogError(e)
 
     def get_entries_by_function_id(

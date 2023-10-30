@@ -27,10 +27,26 @@ class MariaDbHandler(DBHandler):
     """
     Class for implementing the Maria DB handler as a backend store for
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
     EvaDB.
 =======
     EvaDb.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    EvaDB.
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
     """
 
     def __init__(self, name: str, **kwargs):

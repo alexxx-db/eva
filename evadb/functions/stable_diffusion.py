@@ -69,7 +69,15 @@ class StableDiffusion(AbstractFunction):
             "third_party", "REPLICATE_API_TOKEN"
         )
         # If not found, try OS Environment Variable
+<<<<<<< HEAD
         if replicate_api_key is None:
+=======
+<<<<<<< HEAD
+        if replicate_api_key is None:
+=======
+        if len(replicate_api_key) == 0:
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+>>>>>>> eva-source
             replicate_api_key = os.environ.get("REPLICATE_API_TOKEN", "")
         assert (
             len(replicate_api_key) != 0

@@ -24,10 +24,26 @@ class GenericUtilsTests(unittest.TestCase):
     def test_string_matching_case_insensitive(self):
         """
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         A simple test for string_matching_case_insensitive in generic_utils
 =======
         A simple test for string_matching_case_insensitve in generic_utils
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        A simple test for string_matching_case_insensitive in generic_utils
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         used by statement_binder
         """
 

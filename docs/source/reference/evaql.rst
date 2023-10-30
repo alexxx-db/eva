@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-source
 EvaDB Query Language (EvaQL)
 ============================
 =======
@@ -7,11 +12,35 @@ EvaDB Query Language Reference
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+EvaDB Query Language (EvaQL)
+============================
+=======
+EvaDB Query Language Reference
+===============================
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+
+>>>>>>> e867f37e (docs: updated images)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 EvaDB Query Language (EvaQL) is tailored for AI apps and is derived from SQL. 
 
 AI models are simply function calls in a EvaQL query. 
 
 This page lists all the EvaDB statements that you can leverage in your AI applications and notebooks. Get started by copying these SQL queries into a `.py` file or a Jupyter notebook.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 =======
 EvaDB Query Language (EvaDB) is derived from SQL. It is tailored for AI-driven analytics. EvaDB allows users to invoke deep learning models in the form
 of functions.
@@ -38,4 +67,18 @@ This page presents a list of all the EvaDB statements that you can leverage in y
 
 .. tableofcontents::
 
+<<<<<<< HEAD
 .. include:: ../shared/designs/design5.rst
+=======
+<<<<<<< HEAD
+.. include:: ../shared/designs/design5.rst
+=======
+.. include:: ../shared/design5.rst
+>>>>>>> df4d8a35 (docs: updates)
+=======
+
+.. tableofcontents::
+
+.. include:: ../shared/designs/design5.rst
+>>>>>>> e867f37e (docs: updated images)
+>>>>>>> eva-source

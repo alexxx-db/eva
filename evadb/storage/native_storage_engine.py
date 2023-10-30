@@ -29,10 +29,26 @@ from evadb.models.storage.batch import Batch
 from evadb.storage.abstract_storage_engine import AbstractStorageEngine
 from evadb.third_party.databases.interface import get_database_handler
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 from evadb.utils.generic_utils import PickleSerializer, rebatch
 =======
 from evadb.utils.generic_utils import PickleSerializer
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+from evadb.utils.generic_utils import PickleSerializer, rebatch
+>>>>>>> 3d009af6 (Reenable batch for release (#1302))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 from evadb.utils.logging_manager import logger
 
 
@@ -179,20 +195,39 @@ class NativeStorageEngine(AbstractStorageEngine):
     ) -> Iterator[Batch]:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
     def read(
         self, table: TableCatalogEntry, batch_mem_size: int = 30000000
     ) -> Iterator[Batch]:
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         try:
             db_catalog_entry = self._get_database_catalog_entry(table.database_name)
             with get_database_handler(
                 db_catalog_entry.engine, **db_catalog_entry.params
             ) as handler:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -207,7 +242,31 @@ class NativeStorageEngine(AbstractStorageEngine):
                     result = handler_response.data_generator
                 elif handler_response.data:
                     result = handler_response.data
+=======
+<<<<<<< HEAD
+                uri = handler.get_sqlalchmey_uri()
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                uri = handler.get_sqlalchmey_uri()
+>>>>>>> eva-source
+=======
+                handler_response = handler.select(table.name)
+                # we prefer the generator/iterator when available
+                result = []
+                if handler_response.data_generator:
+                    result = handler_response.data_generator
+                elif handler_response.data:
+                    result = handler_response.data
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
+=======
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> eva-source
 
                 if handler.is_sqlalchmey_compatible():
                     # For sql data source, we can deserialize sql rows into numpy array
@@ -225,18 +284,47 @@ class NativeStorageEngine(AbstractStorageEngine):
                         _deserialize_sql_row(row, ordered_columns) for row in result
                     )
 
+<<<<<<< HEAD
                 for data_batch in result:
                     yield Batch(pd.DataFrame([data_batch]))
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                for df in rebatch(result, batch_mem_size):
+                    yield Batch(pd.DataFrame(df))
+=======
+                for data_batch in result:
+                    yield Batch(pd.DataFrame([data_batch]))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+
+<<<<<<< HEAD
+=======
+=======
+                for data_batch in result:
+                    yield Batch(pd.DataFrame([data_batch]))
+
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> eva-source
             if data_batch:
                 yield Batch(pd.DataFrame(data_batch))
 
             session.close()
 =======
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
                 handler_response = handler.select(table.name)
                 # we prefer the generator/iterator when available
                 result = []
@@ -276,10 +364,26 @@ class NativeStorageEngine(AbstractStorageEngine):
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> eva-source
 =======
             if data_batch:
                 yield Batch(pd.DataFrame(data_batch))
@@ -316,6 +420,10 @@ class NativeStorageEngine(AbstractStorageEngine):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         except Exception as e:
             err_msg = f"Failed to read the table {table.name} in data source {table.database_name} with exception {str(e)}"
             logger.exception(err_msg)

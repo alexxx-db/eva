@@ -33,10 +33,26 @@ class SetExecutor(AbstractExecutor):
         https://duckdb.org/docs/sql/configuration.html
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         This design change for configuration manager will be taken care of
 =======
         This design change for configuation manager will be taken care of
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        This design change for configuration manager will be taken care of
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         as a separate PR for the issue #1140, where all instances of config use
         will be replaced
         """

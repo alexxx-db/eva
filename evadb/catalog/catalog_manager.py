@@ -211,13 +211,31 @@ class CatalogManager(object):
                 raise Exception(resp.error)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
                 raise Exception(resp.error)
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
             # Check table existence.
             table_df = resp.data
@@ -366,12 +384,25 @@ class CatalogManager(object):
         checksum = get_file_checksum(impl_file_path)
         function_entry = self._function_service.insert_entry(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
             name,
             impl_file_path,
             type,
             checksum,
             function_io_list,
             function_metadata_list,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eva-source
         )
 =======
             name, impl_file_path, type, checksum
@@ -383,6 +414,15 @@ class CatalogManager(object):
             function_metadata.function_id = function_entry.row_id
         self._function_metadata_service.insert_entries(function_metadata_list)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        )
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
         return function_entry
 
     def get_function_catalog_entry_by_name(self, name: str) -> FunctionCatalogEntry:
@@ -452,6 +492,18 @@ class CatalogManager(object):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
@@ -466,15 +518,37 @@ class CatalogManager(object):
         index_catalog_entry = self._index_service.insert_entry(
             name, save_file_path, vector_store_type, feat_column, function_signature
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 =======
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 =======
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
             name,
             save_file_path,
             vector_store_type,
@@ -482,9 +556,27 @@ class CatalogManager(object):
             function_signature,
             index_def,
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         )
         return index_catalog_entry
 

@@ -14,10 +14,25 @@ DROP TABLE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> eva-source
 DROP FUNCTION
 -------------
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 <<<<<<< HEAD
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -32,6 +47,13 @@ DROP FUNCTION
 -------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 DROP FUNCTION
@@ -41,14 +63,31 @@ DROP UDF
 --------
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 
 .. code:: mysql
 
     DROP FUNCTION FastRCNNObjectDetector;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> eva-source
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -58,6 +97,10 @@ DROP UDF
 >>>>>>> eva-master
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 
 DROP DATABASE
 -------------
@@ -70,12 +113,20 @@ DROP DATABASE
     DROP DATABASE IF EXISTS postgres_db;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     DROP DATABASE IF EXISTS postgres_db;
 =======
+=======
+>>>>>>> eva-source
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
     DROP DATABASE IF EXISTS postgres_db;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 DROP UDF
@@ -85,6 +136,12 @@ DROP UDF
 
     DROP UDF FastRCNNObjectDetector;
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 DROP FUNCTION
 -------------
@@ -94,6 +151,12 @@ DROP FUNCTION
     DROP FUNCTION FastRCNNObjectDetector;
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -108,14 +171,30 @@ DROP DATABASE
 <<<<<<< HEAD
     DROP DATABASE IF EXISTS postgres_db;
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
 =======
     DROP DATABASE IF EXISTS postgres_db;
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
     DROP DATABASE IF EXISTS postgres_db;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source

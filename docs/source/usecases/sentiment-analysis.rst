@@ -95,18 +95,39 @@ While running this query, EvaDB first retrieves the negative reviews and then ap
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 .. include:: ../shared/nlp.rst
 
 .. include:: ../shared/footer.rst
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e867f37e (docs: updated images)
+>>>>>>> eva-source
+<<<<<<< HEAD
 <<<<<<< HEAD
 .. include:: ../shared/nlp.rst
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 .. include:: ../shared/footer.rst
+<<<<<<< HEAD
+=======
+
+.. include:: ../shared/designs/design3.rst
+>>>>>>> eva-source
 =======
 Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`__ for working example.
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -116,14 +137,51 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 .. include:: ../shared/footer.rst
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+.. include:: ../shared/nlp.rst
+
+.. include:: ../shared/footer.rst
+=======
+Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`__ for working example.
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+.. include:: ../shared/nlp.rst
+
+.. include:: ../shared/footer.rst
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
 
 .. include:: ../shared/designs/design2.rst
 >>>>>>> 08db5ebb (docs: updated images)
+<<<<<<< HEAD
 =======
 .. include:: ../shared/designs/design3.rst
 >>>>>>> ad7bb302 (docs: updates)
+=======
+<<<<<<< HEAD
+>>>>>>> e867f37e (docs: updated images)
+=======
+=======
+.. include:: ../shared/designs/design3.rst
+>>>>>>> ad7bb302 (docs: updates)
+<<<<<<< HEAD
+>>>>>>> 572f347e (docs: updates)
+=======
+>>>>>>> eva-source
 =======
 .. include:: ../shared/designs/design3.rst
 =======
@@ -131,6 +189,12 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -143,6 +207,12 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
 =======
 =======
 Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/staging/tutorials/14-food-review-tone-analysis-and-response.ipynb>`__ for working example.
@@ -151,6 +221,12 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 =======
@@ -160,3 +236,7 @@ Check out our `Jupyter Notebook <https://github.com/georgia-tech-db/evadb/blob/s
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source

@@ -9,6 +9,14 @@ Welcome to EvaDB!
 =================
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 .. raw:: html
 
     <br>
@@ -39,6 +47,14 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 - ⚡️ Faster queries thanks to AI-centric query optimization
 - 💰 Save money spent on running models by efficient CPU/GPU use
 - 🔧 Fine-tune your AI models to achieve better results
+<<<<<<< HEAD
+=======
+**EvaDB brings AI inside your database. You can easily build scalable AI apps in SQL.**
+
+EvaDB's key benefits include:
+>>>>>>> f398c41b (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
 
 👋 Hey! If you're excited about our vision of bringing AI inside database systems, show some ❤️ by:
 
@@ -47,6 +63,25 @@ EvaDB enables software developers to build AI apps in a few lines of code. Its p
 - 🐦 following us on Twitter: https://twitter.com/evadb_ai
 - 📝 following us on Medium: https://medium.com/evadb-blog
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.. raw:: html
+
+    <br>
+
+    <span style="font-size: 110%;"><b>EvaDB brings AI inside your database. You can easily build scalable AI apps in SQL.</b></span> <br><br>
+
+EvaDB is a **query engine** that makes it easy to:
+
+- 🔮 Build AI-powered apps over data stored in SQL and vector database systems
+- 🤝 Query data with a pre-trained AI model from Hugging Face, OpenAI, YOLO, PyTorch, and other AI engines
+- 💰 Save time and money spent on AI apps via AI-centric query optimization and execution
+>>>>>>> df4d8a35 (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 
 Why EvaDB?
 ----------
@@ -80,10 +115,25 @@ Getting Started
 <<<<<<< HEAD
                 <img src="_static/icons/code.png" width="24px" height="24px" />
                 <h3 style="font-size:20px;">Getting Started</h3>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
 =======
                 <img src="_static/icons/code.png" width="44px" height="44px" />
                 <h3 style="font-size:20px;">Learn Basics</h3>
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f398c41b (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
             </div>
             <p class="only-light" style="color:#000000;">Understand how to use EvaDB to build AI apps.</p> 
             <p class="only-dark" style="color:#FFFFFF;">Understand how to use EvaDB to build AI apps.</p>    
@@ -98,6 +148,10 @@ Getting Started
             </div>
             <p class="only-light" style="color:#000000;">Learn the 
             key concepts related to EvaDB.</p> 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eva-source
             <p class="only-dark" style="color:#FFFFFF;">
             Learn the key concepts related to EvaDB.</p>      
 =======
@@ -109,6 +163,16 @@ Getting Started
             <p class="only-dark" style="color:#FFFFFF;">
             Learn the high-level concepts related to EvaDB.</p>      
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            <p class="only-dark" style="color:#FFFFFF;">
+            Learn the key concepts related to EvaDB.</p>      
+>>>>>>> f398c41b (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
             <p style="font-weight:600;">Learn more > </p>  
         </div> 
     </a>  
@@ -125,7 +189,35 @@ Getting Started
     </div></a>
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+.. include:: source/shared/designs/design1.rst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+
+<<<<<<< HEAD
+    <br><br><br>
+
+.. include:: source/shared/design1.rst
+>>>>>>> f398c41b (docs: updates)
+=======
+.. include:: source/shared/design1.rst
+>>>>>>> df4d8a35 (docs: updates)
+=======
+.. include:: source/shared/designs/design1.rst
+>>>>>>> e867f37e (docs: updated images)
+=======
+>>>>>>> eva-source
 
 .. include:: source/shared/designs/design1.rst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source

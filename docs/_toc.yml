@@ -9,6 +9,7 @@ parts:
             title: Installation Options
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       - file: source/overview/connect-to-database
         title: Connect to Database
 <<<<<<< HEAD
@@ -26,6 +27,37 @@ parts:
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
       - file: source/overview/concepts
         title: Concepts
+=======
+<<<<<<< HEAD
+      - file: source/overview/concepts
+        title: Concepts
+      - file: source/overview/ai-queries
+        title: AI Queries
+      - file: source/overview/connect-to-data-sources
+        title: Connect to Data Sources
+      - file: source/overview/faq
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+      - file: source/overview/model-inference
+        title: Model inference
+=======
+>>>>>>> dc9069a2 (docs: updates)
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+      - file: source/overview/concepts
+        title: Concepts
+>>>>>>> eva-source
 <<<<<<< HEAD
       - file: source/overview/model-inference
         title: AI Models
@@ -52,6 +84,12 @@ parts:
         title: Connect to Data Sources
 >>>>>>> a53a7d46 (docs: updates)
         #- file: source/overview/faq
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> df4d8a35 (docs: updates)
+=======
+>>>>>>> eva-source
 =======
       - file: source/overview/ai-queries
         title: AI Queries
@@ -59,10 +97,23 @@ parts:
         title: Connect to Data Sources
       - file: source/overview/faq
 >>>>>>> c952858c (docs: updates)
+<<<<<<< HEAD
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> eva-source
 
   - caption: Use Cases
     chapters:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      - file: source/usecases/forecasting.rst
+        title: Forecasting
+      - file: source/usecases/classification.rst
+        title: Classification
+=======
+<<<<<<< HEAD
+>>>>>>> eva-source
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -74,6 +125,10 @@ parts:
       - file: source/usecases/classification.rst
         title: Classification
 >>>>>>> 17103d35 (updates)
+<<<<<<< HEAD
+=======
+>>>>>>> 591a8656 (updates)
+>>>>>>> eva-source
       - file: source/usecases/sentiment-analysis.rst
         title: Sentiment Analysis
       - file: source/usecases/question-answering.rst
@@ -90,6 +145,61 @@ parts:
         title: Emotion Analysis
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+      - file: source/overview/model-inference
+        title: Model inference
+      - file: source/overview/concepts
+        title: Concepts
+        sections:
+          - file: source/overview/concepts/data-sources
+            title: Data Sources
+<<<<<<< HEAD
+=======
+      - file: source/overview/concepts
+        title: Concepts
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+        #- file: source/overview/faq
+
+  - caption: Use Cases
+    chapters:
+<<<<<<< HEAD
+<<<<<<< HEAD
+      - file: source/usecases/sentiment-analysis.rst
+        title: Sentiment Analysis
+      - file: source/usecases/question-answering.rst
+        title: Question Answering
+      - file: source/usecases/text-summarization.rst
+        title: Text Summarization
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/image-search.rst
+        title: Image Search
+      - file: source/usecases/object-detection.rst
+        title: Object Detection
+      - file: source/usecases/emotion-analysis.rst
+        title: Emotion Analysis
+<<<<<<< HEAD
+      - file: source/usecases/privategpt.rst
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 591a8656 (updates)
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> eva-source
       - file: source/usecases/homesale-forecast.rst
         title: Home Sale Forecasting
       - file: source/usecases/homerental-predict.rst
@@ -97,8 +207,16 @@ parts:
       # - file: source/usecases/privategpt.rst
       #   title: PrivateGPT
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 =======
       - file: source/usecases/food-review.rst
 =======
@@ -120,11 +238,28 @@ parts:
       - file: source/usecases/privategpt.rst
         title: PrivateGPT
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 17103d35 (updates)
+=======
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 17103d35 (updates)
+<<<<<<< HEAD
+>>>>>>> 591a8656 (updates)
+=======
+>>>>>>> eva-source
 =======
 =======
       - file: source/overview/connect-to-database
@@ -173,6 +308,12 @@ parts:
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
       - file: source/usecases/homesale-forecast.rst
@@ -186,6 +327,12 @@ parts:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
 =======
 =======
 =======
@@ -215,12 +362,22 @@ parts:
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
 =======
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
   - caption: User Reference
     chapters:
@@ -231,6 +388,38 @@ parts:
           - file: source/reference/evaql/load_csv
           - file: source/reference/evaql/load_image
           - file: source/reference/evaql/load_video
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          - file: source/reference/evaql/select
+          - file: source/reference/evaql/explain
+          - file: source/reference/evaql/show_functions
+          - file: source/reference/evaql/create_database
+          - file: source/reference/evaql/create_function
+          - file: source/reference/evaql/create_index
+          - file: source/reference/evaql/create_table
+          - file: source/reference/evaql/drop_database
+          - file: source/reference/evaql/drop_function
+          - file: source/reference/evaql/drop_table
+          - file: source/reference/evaql/insert_table
+          - file: source/reference/evaql/delete_table
+          - file: source/reference/evaql/rename
+          - file: source/reference/evaql/use
+
+      - file: source/reference/api
+        title: Python API
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+      - file: source/reference/evaql      
+        title: EvaQL
+        sections:
+          - file: source/reference/evaql/load
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> eva-source
           - file: source/reference/evaql/select
           - file: source/reference/evaql/explain
           - file: source/reference/evaql/show_functions
@@ -248,8 +437,11 @@ parts:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
+=======
+>>>>>>> eva-source
 
       - file: source/reference/api
         title: Python API
@@ -320,9 +512,17 @@ parts:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-master
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> eva-source
           - file: source/reference/databases/mariadb
           - file: source/reference/databases/clickhouse
           - file: source/reference/databases/github
@@ -337,6 +537,7 @@ parts:
           - file: source/reference/vector_stores/pgvector
           - file: source/reference/vector_stores/pinecone
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
@@ -344,16 +545,84 @@ parts:
       - file: source/reference/api
         title: Python API
 
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+      - file: source/reference/api
+        title: Python API
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> eva-source
       - file: source/reference/databases/index
         title: Data Sources
         sections: 
           - file: source/reference/databases/postgres
           - file: source/reference/databases/sqlite
           - file: source/reference/databases/mysql
+<<<<<<< HEAD
           - file: source/reference/databases/mariadb
 >>>>>>> eva-master
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+          - file: source/reference/databases/mariadb
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          - file: source/reference/databases/mariadb
+<<<<<<< HEAD
+>>>>>>> eva-source
+          - file: source/reference/databases/clickhouse
+          - file: source/reference/databases/github
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> eva-source
+=======
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/github
+
+      - file: source/reference/vector_stores/index
+        title: Vector Stores
+        sections: 
+          - file: source/reference/vector_stores/faiss
+          - file: source/reference/vector_stores/chromadb
+          - file: source/reference/vector_stores/qdrant
+          - file: source/reference/vector_stores/pgvector
+          - file: source/reference/vector_stores/pinecone
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+
+<<<<<<< HEAD
+      - file: source/reference/vector_databases/index
+        title: Vector Databases
+        sections: 
+          - file: source/reference/vector_databases/faiss
+          - file: source/reference/vector_databases/chromadb
+          - file: source/reference/vector_databases/qdrant
+          - file: source/reference/vector_databases/pgvector
+          - file: source/reference/vector_databases/pinecone
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+=======
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
@@ -364,6 +633,9 @@ parts:
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
 =======
 =======
           - file: source/reference/databases/mariadb
@@ -379,6 +651,8 @@ parts:
           - file: source/reference/vector_stores/pinecone
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
 <<<<<<< HEAD
       - file: source/reference/vector_databases/index
@@ -400,7 +674,20 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+          - file: source/reference/ai/model-train-xgboost
+            title: Model Training with XGBoost
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> eva-source
 =======
           - file: source/reference/ai/model-train-xgboost
             title: Model Training with XGBoost
@@ -414,8 +701,21 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -427,12 +727,35 @@ parts:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          - file: source/reference/ai/model-train
+            title: Model Training
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
           - file: source/reference/ai/model-train-xgboost
             title: Model Training with XGBoost
 <<<<<<< HEAD
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> eva-source
 =======
 =======
       - file: source/reference/ai/index
@@ -444,6 +767,12 @@ parts:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
           - file: source/reference/ai/model-train-ludwig
@@ -452,6 +781,12 @@ parts:
             title: Model Training with Sklearn
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
@@ -462,10 +797,20 @@ parts:
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
           - file: source/reference/ai/model-forecasting
             title: Time Series Forecasting
           - file: source/reference/ai/hf
@@ -478,9 +823,38 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          - file: source/reference/ai/stablediffusion
+            title: Stable Diffusion
+
+      - file: source/reference/ai/custom-ai-function
+        title: Bring Your Own AI Function
+=======
+          - file: source/reference/ai/custom
+            title: Custom Model
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+          - file: source/reference/ai/custom
+            title: Custom Model
+<<<<<<< HEAD
+>>>>>>> eva-source
 =======
 =======
 =======
@@ -495,6 +869,12 @@ parts:
         title: Bring Your Own AI Function
 <<<<<<< HEAD
 >>>>>>> c952858c (docs: updates)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 35b99c88 (docs: updates)
+=======
+>>>>>>> eva-source
 =======
 =======
           - file: source/reference/ai/custom
@@ -504,16 +884,33 @@ parts:
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 
       - file: source/reference/optimizations
         title: Optimizations
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          - file: source/reference/ai/custom
+            title: Custom Model
+=======
+>>>>>>> eva-source
 =======
 <<<<<<< HEAD
           - file: source/reference/ai/custom
@@ -522,10 +919,22 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eva-source
 
       - file: source/reference/optimizations
         title: Optimizations
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 
@@ -534,6 +943,21 @@ parts:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
 >>>>>>> eva-master
 =======
           - file: source/reference/ai/custom
@@ -542,6 +966,12 @@ parts:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 
@@ -549,11 +979,23 @@ parts:
         title: Optimizations
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-source
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -561,6 +1003,10 @@ parts:
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-source
         
       # - file: source/reference/io
       #   title: IO Descriptors
@@ -577,10 +1023,26 @@ parts:
         title: Text Summarization
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
   - caption: Contribution Guide
 =======
   - caption: Developer Reference
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  - caption: Contribution Guide
+>>>>>>> f398c41b (docs: updates)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> eva-source
     chapters:
       - file: source/dev-guide/contribute
         title: Contributing to EvaDB
