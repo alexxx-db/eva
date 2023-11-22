@@ -1,9 +1,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 Frequently Asked Questions
 ==========================
 =======
@@ -22,8 +35,16 @@ Here are some frequently asked questions that we have seen pop up for EvaDB.
 .. note::
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 Frequently Asked Questions
@@ -35,16 +56,38 @@ Frequently Asked Questions
 FAQ
 ===
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+Frequently Asked Questions
+==========================
+>>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 
 .. _faq:
 
 Here are some frequently asked questions that we have seen pop up for EvaDB.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. note::
 
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+.. note::
+
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> georgia-tech-db-main
     Have another question or want to give feedback? Ask us on `Slack <https://evadb.ai/community>`__!
 
 Why am I not able to install EvaDB?
@@ -56,24 +99,60 @@ Ensure that the Python interpreter's version is >= `3.9`.
 
     If you are using the `evadb[ray]` installation option, ensure that the Python  version is <= `3.10` due to a `Ray issue <https://github.com/autogluon/autogluon/issues/2687>`_. Follow `these instructions <https://github.com/ray-project/ray/issues/33039>`_ to install `ray`.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 32e513d7 (docs: updates)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 Why am I not able to install EvaDB in my Python environment?
 ============================================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 
 
 Where does EvaDB store all the data?
@@ -84,25 +163,62 @@ By default, EvaDB connects to **existing** data sources like SQL database system
 Why do I see no output from the server?
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 32e513d7 (docs: updates)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 ---------------------------------------
 =======
 =======================================
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 ---------------------------------------
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+---------------------------------------
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 
 If a query runs a complex AI task (e.g., sentiment analysis) on a large table, the query is expected to take a non-trivial amount of time to finish. You can check the status of the server by running ``top`` or ``pgrep``:
 
@@ -113,12 +229,28 @@ If a query runs a complex AI task (e.g., sentiment analysis) on a large table, t
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 32e513d7 (docs: updates)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 pip install ray fails because of grpcio
 =======================================
@@ -127,10 +259,30 @@ Follow these instructions to install ``ray``:
 https://github.com/ray-project/ray/issues/33039
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main

@@ -34,34 +34,99 @@ class SetExecutor(AbstractExecutor):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         This design change for configuration manager will be taken care of
 =======
         This design change for configuation manager will be taken care of
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        as a separate PR for the issue #1140, where all instances of config use
+        will be replaced
+        """
+
+        self.catalog().upsert_configuration_catalog_entry(
+=======
+        This design change for configuation manager will be taken care of
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
         This design change for configuration manager will be taken care of
 >>>>>>> 5b27053e (ran spellchecker)
 =======
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+        This design change for configuration manager will be taken care of
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         as a separate PR for the issue #1140, where all instances of config use
         will be replaced
         """
         self._config.update_value(
             category="default",
 <<<<<<< HEAD
+<<<<<<< HEAD
             key=self.node.config_name.upper(),
 =======
             key=self.node.config_name,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+            key=self.node.config_name,
+=======
+            key=self.node.config_name.upper(),
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+            key=self.node.config_name.upper(),
+=======
+            key=self.node.config_name,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+            key=self.node.config_name.upper(),
+=======
+            key=self.node.config_name,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             value=self.node.config_value.value,
         )

@@ -1,11 +1,21 @@
 // Top Level Description
 
-start: (sql_statement? ";")+
+// create_job is intentionally not treated as an sql_statement to keep the parser clean 
+// because we assume that inside the job, the user can specify multiple sql_statements
+// but not a create_job within a create_job.
+
+start: (sql_statement? ";")+ | (create_job ";")
 
 sql_statement: ddl_statement | dml_statement | utility_statement | context_statement
+<<<<<<< HEAD
+
+ddl_statement: create_database | create_table | create_index | create_function |  drop_database
+    | drop_table | drop_function | drop_index | drop_job | rename_table
+=======
         
 ddl_statement: create_database | create_table | create_index | create_function
     | drop_database | drop_table | drop_function | drop_index | rename_table
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     
 dml_statement: select_statement | insert_statement | update_statement
     | delete_statement | load_statement | set_statement
@@ -13,6 +23,9 @@ dml_statement: select_statement | insert_statement | update_statement
 utility_statement: describe_statement | show_statement | help_statement | explain_statement
 
 context_statement: use_statement
+
+job_sql_statements: query_string (";" query_string)* ";"?
+
 
 // Data Definition Language
 
@@ -29,7 +42,18 @@ create_database_engine_clause: WITH ENGINE "=" string_literal "," PARAMETERS "="
 create_index: CREATE INDEX if_not_exists? uid ON table_name index_elem vector_store_type?
 
 create_table: CREATE TABLE if_not_exists? table_name (create_definitions | (AS select_statement))
-    
+
+create_job: CREATE JOB if_not_exists? uid AS "{" job_sql_statements "}" (start_time)? (end_time)? (repeat_clause)?
+
+start_time: START string_literal
+
+end_time: END string_literal
+
+repeat_clause: EVERY decimal_literal simple_id
+
+
+
+
 // Rename statements
 
 rename_table: RENAME TABLE table_name TO table_name
@@ -41,6 +65,7 @@ rename_table: RENAME TABLE table_name TO table_name
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
@@ -49,7 +74,27 @@ rename_table: RENAME TABLE table_name TO table_name
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
@@ -61,12 +106,27 @@ rename_table: RENAME TABLE table_name TO table_name
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-master
@@ -81,10 +141,14 @@ rename_table: RENAME TABLE table_name TO table_name
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -94,15 +158,81 @@ rename_table: RENAME TABLE table_name TO table_name
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 create_function: CREATE or_replace? FUNCTION if_not_exists? function_name INPUT create_definitions OUTPUT create_definitions TYPE function_type IMPL function_impl function_metadata*
 	| CREATE or_replace? FUNCTION if_not_exists? function_name IMPL function_impl function_metadata* 
 	| CREATE or_replace? FUNCTION if_not_exists? function_name TYPE function_type function_metadata*
@@ -120,24 +250,85 @@ create_function: CREATE or_replace? FUNCTION if_not_exists? function_name INPUT 
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> georgia-tech-db-main
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_definitions OUTPUT create_definitions TYPE function_type IMPL function_impl function_metadata*
 	| CREATE FUNCTION if_not_exists? function_name IMPL function_impl function_metadata* 
 	| CREATE FUNCTION if_not_exists? function_name TYPE function_type function_metadata*
@@ -148,30 +339,89 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -179,9 +429,18 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -190,6 +449,18 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 >>>>>>> eva-source
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -198,11 +469,16 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -210,9 +486,53 @@ create_function: CREATE FUNCTION if_not_exists? function_name INPUT create_defin
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
 // Details
 function_name: uid
@@ -226,12 +546,38 @@ function_metadata: function_metadata_key function_metadata_value
 function_metadata_key: uid
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 function_metadata_value: constant
 =======
 function_metadata_value: string_literal | decimal_literal
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+function_metadata_value: constant
+>>>>>>> e0596f63 (feat: function_metadata supports boolean and float  (#1296))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 
+<<<<<<< HEAD
+vector_store_type: USING (FAISS | QDRANT | PINECONE | PGVECTOR | CHROMADB | MILVUS)
+=======
 vector_store_type: USING (FAISS | QDRANT | PINECONE | PGVECTOR | CHROMADB)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 index_elem: ("(" uid_list ")"
           | "(" function_call ")")
@@ -256,13 +602,22 @@ drop_index: DROP INDEX if_exists? uid
 drop_table: DROP TABLE if_exists? uid
     
 drop_function: DROP FUNCTION if_exists? uid
+<<<<<<< HEAD
+
+drop_job: DROP JOB if_exists? uid
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     
 // SET statements (configuration)
 set_statement: SET config_name (EQUAL_SYMBOL | TO) config_value
 
 config_name: uid
 
+<<<<<<< HEAD
+config_value: constant
+=======
 config_value: (string_literal | decimal_literal | boolean_literal | real_literal)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 // Data Manipulation Language
 
@@ -356,10 +711,36 @@ describe_statement: DESCRIBE table_name
 help_statement: HELP STRING_LITERAL
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 show_statement: SHOW (FUNCTIONS | TABLES | uid | DATABASES)
 =======
 show_statement: SHOW (FUNCTIONS | TABLES)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+show_statement: SHOW (FUNCTIONS | TABLES | uid)
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+show_statement: SHOW (FUNCTIONS | TABLES | uid | DATABASES)
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 
 explain_statement: EXPLAIN explainable_statement
 
@@ -465,26 +846,60 @@ function_call: function         ->function_call
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 =======
@@ -500,6 +915,48 @@ function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 =======
 function: simple_id "(" (STAR | function_args) ")" dotted_id?
@@ -507,22 +964,56 @@ function: simple_id "(" (STAR | function_args) ")" dotted_id?
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -531,32 +1022,66 @@ function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 function: simple_id "(" (STAR | function_args) ")" dotted_id?
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -566,6 +1091,14 @@ function: simple_id "(" (STAR | function_args) ")" dotted_id?
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
 function: simple_id "(" (STAR | function_args)? ")" dotted_id?
@@ -573,9 +1106,66 @@ function: simple_id "(" (STAR | function_args)? ")" dotted_id?
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+=======
+function: simple_id "(" (STAR | function_args) ")" dotted_id?
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+=======
+function: simple_id "(" (STAR | function_args)? ")" dotted_id?
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     
 aggregate_windowed_function: aggregate_function_name "(" function_arg ")"
                            | COUNT "(" (STAR | function_arg) ")"
@@ -645,7 +1235,9 @@ DESC:                                "DESC"i
 DESCRIBE:                            "DESCRIBE"i
 DISTINCT:                            "DISTINCT"i
 DROP:                                "DROP"i
+END:                                 "END"i
 ENGINE:                              "ENGINE"i
+EVERY:                               "EVERY"i
 EXIT:                                "EXIT"i
 EXISTS:                              "EXISTS"i
 EXPLAIN:                             "EXPLAIN"i
@@ -661,6 +1253,7 @@ INTO:                                "INTO"i
 INDEX:                               "INDEX"i
 INSERT:                              "INSERT"i
 IS:                                  "IS"i
+JOB:                                 "JOB"i
 JOIN:                                "JOIN"i
 KEY:                                 "KEY"i
 LATERAL:                             "LATERAL"i
@@ -689,6 +1282,7 @@ SET:                                 "SET"i
 SHUTDOWN:                            "SHUTDOWN"i
 SHOW:                                "SHOW"i
 SOME:                                "SOME"i
+START:                               "START"i
 TABLE:                               "TABLE"i
 TABLES:                              "TABLES"i
 TO:                                  "TO"i
@@ -721,6 +1315,10 @@ QDRANT:                              "QDRANT"i
 PINECONE:                            "PINECONE"i
 PGVECTOR:                            "PGVECTOR"i
 CHROMADB:                            "CHROMADB"i
+<<<<<<< HEAD
+MILVUS:                              "MILVUS"i
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 // Computer vision tasks
 
@@ -863,7 +1461,6 @@ REAL_LITERAL:                        (DEC_DIGIT+)? "." DEC_DIGIT+
 DOT_ID:                              "." ID_LITERAL
 
 
-
 // Identifiers
 
 ID:                                  ID_LITERAL
@@ -876,8 +1473,8 @@ GLOBAL_ID:                           "@" "@" (/[A-Z0-9._$]+/ | BQUOTA_STRING)
 
 EXPONENT_NUM_PART:          /"E" "-"? DEC_DIGIT+/
 ID_LITERAL:                 /[A-Za-z_$0-9]*?[A-Za-z_$]+?[A-Za-z_$0-9]*/
-DQUOTA_STRING:              /"[^";]*"/
-SQUOTA_STRING:              /'[^';]*'/
+DQUOTA_STRING:              "\"" /(?:[^"\\]|\\.)*"/
+SQUOTA_STRING:              "'" /(?:[^'\\]|\\.)*'/
 BQUOTA_STRING:              /`[^'`]*`/
 QUERY_STRING:               /[^{};]+/
 DEC_DIGIT:                  /[0-9]/

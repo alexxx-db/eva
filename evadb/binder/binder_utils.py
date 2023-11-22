@@ -62,26 +62,60 @@ def check_data_source_and_table_are_valid(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
@@ -99,11 +133,65 @@ def check_data_source_and_table_are_valid(
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+    error = None
+    if catalog.get_database_catalog_entry(database_name) is None:
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    error = None
+    if catalog.get_database_catalog_entry(database_name) is None:
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
     db_catalog_entry = catalog.get_database_catalog_entry(database_name)
 
     if db_catalog_entry is not None:
@@ -137,16 +225,47 @@ def check_data_source_and_table_are_valid(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
@@ -154,14 +273,42 @@ def check_data_source_and_table_are_valid(
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     error = None
     if catalog.get_database_catalog_entry(database_name) is None:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -169,29 +316,79 @@ def check_data_source_and_table_are_valid(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -199,9 +396,18 @@ def check_data_source_and_table_are_valid(
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -209,15 +415,48 @@ def check_data_source_and_table_are_valid(
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         error = "{} data source does not exist. Create the new database source using CREATE DATABASE.".format(
             database_name,
         )
@@ -239,26 +478,60 @@ def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
     table_name: str, database_name: str, column_info: pd.DataFrame
 =======
@@ -274,6 +547,48 @@ def create_table_catalog_entry_for_data_source(
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+    table_name: str, database_name: str, column_info: pd.DataFrame
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+    table_name: str, database_name: str, column_info: pd.DataFrame
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
     table_name: str, database_name: str, column_info: pd.DataFrame
 =======
     table_name: str, column_info: pd.DataFrame
@@ -281,22 +596,56 @@ def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     table_name: str, database_name: str, column_info: pd.DataFrame
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -305,32 +654,66 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
     table_name: str, column_info: pd.DataFrame
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -340,6 +723,14 @@ def create_table_catalog_entry_for_data_source(
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
     table_name: str, database_name: str, column_info: pd.DataFrame
@@ -347,9 +738,66 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+    table_name: str, database_name: str, column_info: pd.DataFrame
+=======
+    table_name: str, column_info: pd.DataFrame
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+    table_name: str, database_name: str, column_info: pd.DataFrame
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+    table_name: str, database_name: str, column_info: pd.DataFrame
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+=======
+    table_name: str, database_name: str, column_info: pd.DataFrame
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+    table_name: str, database_name: str, column_info: pd.DataFrame
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 ):
     column_name_list = list(column_info["name"])
     column_type_list = [
@@ -363,26 +811,60 @@ def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
 =======
@@ -398,6 +880,48 @@ def create_table_catalog_entry_for_data_source(
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
 =======
         column_list.append(ColumnCatalogEntry(name, dtype))
@@ -405,22 +929,56 @@ def create_table_catalog_entry_for_data_source(
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
@@ -429,32 +987,66 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
         column_list.append(ColumnCatalogEntry(name, dtype))
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -464,6 +1056,14 @@ def create_table_catalog_entry_for_data_source(
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
         column_list.append(ColumnCatalogEntry(name.lower(), dtype))
@@ -471,9 +1071,66 @@ def create_table_catalog_entry_for_data_source(
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+=======
+        column_list.append(ColumnCatalogEntry(name, dtype))
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+=======
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+        column_list.append(ColumnCatalogEntry(name.lower(), dtype))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
@@ -515,6 +1172,7 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -523,7 +1181,27 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
@@ -535,12 +1213,27 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-master
@@ -555,10 +1248,14 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -568,15 +1265,81 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     with get_database_handler(
         db_catalog_entry.engine, **db_catalog_entry.params
     ) as handler:
@@ -598,24 +1361,85 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> georgia-tech-db-main
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     handler = get_database_handler(db_catalog_entry.engine, **db_catalog_entry.params)
     handler.connect()
 
@@ -630,30 +1454,89 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -661,9 +1544,18 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -672,6 +1564,18 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 >>>>>>> eva-source
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -680,11 +1584,16 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -692,9 +1601,53 @@ def bind_native_table_info(catalog: CatalogManager, table_info: TableInfo):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
 
 def bind_evadb_table_info(catalog: CatalogManager, table_info: TableInfo):

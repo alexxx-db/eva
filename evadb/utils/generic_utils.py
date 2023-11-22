@@ -75,15 +75,30 @@ def load_function_class_from_file(filepath, classname=None):
         The class instance.
 
     Raises:
-        RuntimeError: If the class name is not found or there is more than one class in the file.
+        ImportError: If the module cannot be loaded.
+        FileNotFoundError: If the file cannot be found.
+        RuntimeError: Any othe type of runtime error.
     """
     try:
         abs_path = Path(filepath).resolve()
         spec = importlib.util.spec_from_file_location(abs_path.stem, abs_path)
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
+    except ImportError as e:
+        # ImportError in the case when we are able to find the file but not able to load the module
+        err_msg = f"ImportError : Couldn't load function from {filepath} : {str(e)}. Not able to load the code provided in the file {abs_path}. Please ensure that the file contains the implementation code for the function."
+        raise ImportError(err_msg)
+    except FileNotFoundError as e:
+        # FileNotFoundError in the case when we are not able to find the file at all at the path.
+        err_msg = f"FileNotFoundError : Couldn't load function from {filepath} : {str(e)}. This might be because the function implementation file does not exist. Please ensure the file exists at {abs_path}"
+        raise FileNotFoundError(err_msg)
     except Exception as e:
+<<<<<<< HEAD
+        # Default exception, we don't know what exactly went wrong so we just output the error message
+        err_msg = f"Couldn't load function from {filepath} : {str(e)}."
+=======
         err_msg = f"Couldn't load function from {filepath} : {str(e)}. This might be due to a missing Python package, or because the function implementation file does not exist, or it is not a valid Python file."
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         raise RuntimeError(err_msg)
 
     # Try to load the specified class by name
@@ -97,7 +112,11 @@ def load_function_class_from_file(filepath, classname=None):
         if obj.__module__ == module.__name__
     ]
     if len(classes) != 1:
+<<<<<<< HEAD
+        raise ImportError(
+=======
         raise RuntimeError(
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
             f"{filepath} contains {len(classes)} classes, please specify the correct class to load by naming the function with the same name in the CREATE query."
         )
     return classes[0]
@@ -296,26 +315,76 @@ def try_to_import_ray():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 def try_to_import_statsforecast():
 =======
 def try_to_import_forecast():
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 def try_to_import_statsforecast():
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -323,8 +392,16 @@ def try_to_import_statsforecast():
 def try_to_import_statsforecast():
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -332,9 +409,35 @@ def try_to_import_statsforecast():
 def try_to_import_statsforecast():
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+def try_to_import_statsforecast():
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     try:
         from statsforecast import StatsForecast  # noqa: F401
     except ImportError:
@@ -348,29 +451,83 @@ def try_to_import_statsforecast():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 def try_to_import_neuralforecast():
     try:
         from neuralforecast import NeuralForecast  # noqa: F401
@@ -384,38 +541,107 @@ def try_to_import_neuralforecast():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 def is_ray_available() -> bool:
     try:
         try_to_import_ray()
@@ -459,31 +685,85 @@ def is_forecast_available() -> bool:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+        try_to_import_statsforecast()
+        try_to_import_neuralforecast()
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+        try_to_import_statsforecast()
+        try_to_import_neuralforecast()
+=======
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+        try_to_import_statsforecast()
+        try_to_import_neuralforecast()
+=======
+>>>>>>> georgia-tech-db-main
         try_to_import_statsforecast()
         try_to_import_neuralforecast()
         return True
@@ -506,10 +786,14 @@ def is_sklearn_available() -> bool:
     try:
         try_to_import_sklearn()
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         return True
     except ValueError:  # noqa: E722
         return False
@@ -532,12 +816,84 @@ def is_sklearn_available() -> bool:
         try_to_import_sklearn()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+        return True
+    except ValueError:  # noqa: E722
+        return False
+
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+def try_to_import_sklearn():
+    try:
+        import sklearn  # noqa: F401
+        from sklearn.linear_model import LinearRegression  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import sklearn.
+                Please install it with `pip install scikit-learn`."""
+        )
+
+
+def is_sklearn_available() -> bool:
+    try:
+        try_to_import_sklearn()
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+        return True
+    except ValueError:  # noqa: E722
+        return False
+
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+def try_to_import_sklearn():
+    try:
+        import sklearn  # noqa: F401
+        from sklearn.linear_model import LinearRegression  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import sklearn.
+                Please install it with `pip install scikit-learn`."""
+        )
+
+
+def is_sklearn_available() -> bool:
+    try:
+        try_to_import_sklearn()
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
         return True
     except ValueError:  # noqa: E722
         return False
@@ -548,11 +904,37 @@ def is_sklearn_available() -> bool:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+def try_to_import_flaml_automl():
+    try:
+        import flaml  # noqa: F401
+        from flaml import AutoML  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import Flaml AutML.
+                Please install it with `pip install "flaml[automl]"`."""
+        )
+
+
+def is_flaml_automl_available() -> bool:
+    try:
+        try_to_import_flaml_automl()
+=======
+        try_to_import_forecast()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 def try_to_import_sklearn():
     try:
         import sklearn  # noqa: F401
@@ -568,6 +950,7 @@ def is_sklearn_available() -> bool:
     try:
         try_to_import_sklearn()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -581,6 +964,16 @@ def is_sklearn_available() -> bool:
 =======
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 >>>>>>> eva-source
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> georgia-tech-db-main
 def try_to_import_xgboost():
     try:
         import flaml  # noqa: F401
@@ -597,6 +990,7 @@ def is_xgboost_available() -> bool:
         try_to_import_xgboost()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -609,6 +1003,51 @@ def is_xgboost_available() -> bool:
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+        try_to_import_forecast()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+        try_to_import_forecast()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 =======
@@ -617,19 +1056,32 @@ def is_xgboost_available() -> bool:
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         return True
     except ValueError:  # noqa: E722
         return False
@@ -637,6 +1089,7 @@ def is_xgboost_available() -> bool:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -646,21 +1099,56 @@ def is_xgboost_available() -> bool:
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> eva-master
 =======
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 ##############################
 ## VISION
 ##############################
@@ -846,6 +1334,19 @@ def try_to_import_chromadb_client():
         )
 
 
+<<<<<<< HEAD
+def try_to_import_milvus_client():
+    try:
+        import pymilvus  # noqa: F401
+    except ImportError:
+        raise ValueError(
+            """Could not import pymilvus python package.
+                Please install it with 'pip install pymilvus`."""
+        )
+
+
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 def is_qdrant_available() -> bool:
     try:
         try_to_import_qdrant_client()
@@ -870,6 +1371,17 @@ def is_chromadb_available() -> bool:
         return False
 
 
+<<<<<<< HEAD
+def is_milvus_available() -> bool:
+    try:
+        try_to_import_milvus_client()
+        return True
+    except ValueError:
+        return False
+
+
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 ##############################
 ## UTILS
 ##############################
@@ -915,14 +1427,35 @@ def string_comparison_case_insensitive(string_1, string_2) -> bool:
     return string_1.lower() == string_2.lower()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
 
 def try_to_import_replicate():
@@ -942,17 +1475,47 @@ def is_replicate_available():
     except ValueError:
         return False
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main

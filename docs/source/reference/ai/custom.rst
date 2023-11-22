@@ -2,11 +2,55 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 Functions
 ======================
 

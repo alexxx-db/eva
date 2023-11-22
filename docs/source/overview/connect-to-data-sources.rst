@@ -9,6 +9,7 @@ Connect to an Existing SQL Database System
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,12 +17,30 @@ Connect to an Existing SQL Database System
 =======
 1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
 =======
+=======
+1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database server. For example, here is the SQL command to connect EvaDB with a locally running :ref:`PostgreSQL<postgresql>` database server running on port ``5432``.
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 9cc72b7b (docs: updates)
+<<<<<<< HEAD
+1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
+=======
+1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
+=======
+1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
+=======
+>>>>>>> georgia-tech-db-main
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9cc72b7b (docs: updates)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-source
 1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
@@ -32,6 +51,14 @@ Connect to an Existing SQL Database System
 =======
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> eva-source
+=======
+1. Use the ``CREATE DATABASE`` statement to connect to an existing SQL database.
+=======
+1. Use the :ref:`CREATE DATABASE<create-database>` statement to connect to an **existing** SQL database.
+>>>>>>> 32e513d7 (docs: updates)
+>>>>>>> 5f27824c (docs: updates)
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> georgia-tech-db-main
 
 .. code-block::
 
@@ -45,6 +72,22 @@ Connect to an Existing SQL Database System
        "database": "restaurant_reviews"
    };
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+For quick prototyping, you can use an embedded :ref:`SQLite<sqlite>` database. Here, the SQLite database file is called ``evadb.db``.
+
+.. code-block::
+
+   CREATE DATABASE restaurant_reviews 
+   WITH ENGINE = 'sqlite', 
+   PARAMETERS = {
+       "database": "evadb.db"
+   };
+=======
+>>>>>>> 32e513d7 (docs: updates)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 1. Use the `CREATE DATABASE` statement to connect to an existing SQL database.
@@ -78,10 +121,14 @@ Connect to an Existing SQL Database System
    };
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> eva-source
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> georgia-tech-db-main
 
 .. note::
 
@@ -90,11 +137,17 @@ Connect to an Existing SQL Database System
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
+=======
+
+=======
+>>>>>>> 32e513d7 (docs: updates)
+>>>>>>> georgia-tech-db-main
 2. Preview the data using ``SELECT``
 =======
 <<<<<<< HEAD
@@ -104,15 +157,22 @@ Connect to an Existing SQL Database System
 =======
 >>>>>>> 9cc72b7b (docs: updates)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 2. Preview the Available Data Using ``SELECT``
 =======
 2. Preview the data using ``SELECT``
 >>>>>>> 5f27824c (docs: updates)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> eva-source
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> georgia-tech-db-main
 
 You can now preview the data stored in the ``food_review`` table in the ``restaurant_reviews`` database with a :ref:`SELECT<select>` statement.
 
@@ -175,17 +235,24 @@ You can also run native queries directly in the connected database system by the
    };
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> eva-source
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> georgia-tech-db-main
 
 Connect to Object Store
 ------------------------
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> georgia-tech-db-main
 EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You can load a video from an S3 cloud bucket into EvaDB using the :ref:`LOAD<load-video>` statement.
 
 .. code-block:: sql
@@ -193,7 +260,10 @@ EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You ca
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 Load Unstructured Data
 -----------------------
 
@@ -210,6 +280,7 @@ You can load a collection of images obtained from Reddit from the local filesyst
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 <<<<<<< HEAD
@@ -217,6 +288,8 @@ You can load a collection of images obtained from Reddit from the local filesyst
 
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
 =======
+=======
+>>>>>>> georgia-tech-db-main
 .. code-block:: python
    
    cursor.query("""
@@ -230,9 +303,12 @@ You can load a collection of images obtained from Reddit from the local filesyst
    LOAD IMAGE 'reddit-images/*.jpg' INTO reddit_dataset;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 
 2. Load Video from Cloud Bucket
 
@@ -248,6 +324,7 @@ EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You ca
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 <<<<<<< HEAD
@@ -255,6 +332,8 @@ EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You ca
 
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 =======
+=======
+>>>>>>> georgia-tech-db-main
 .. code-block:: python
 
    cursor.query("""
@@ -268,10 +347,14 @@ EvaDB supports diverse types of `unstructured data` (e.g., PDFs, videos). You ca
    LOAD VIDEO 's3://bucket/eva_videos/mnist.mp4' INTO MNISTVid;
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> eva-source
+=======
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> georgia-tech-db-main
 
 .. note::
 
@@ -300,6 +383,10 @@ You can use the ``CREATE INDEX`` statement to connect to an existing vector data
 
 .. note::
 
+<<<<<<< HEAD
+   Go over the :ref:`CREATE INDEX<create-index>` statement for more details. The :ref:`Vector Databases<vector_databases>` page lists all the vector database systems that EvaDB currently supports.
+=======
    Go over the :ref:`CREATE INDEX<create-index>` statement for more details. The :ref:`Vector Databases<databases>` page lists all the vector database systems that EvaDB currently supports.
+>>>>>>> 35b99c88 (docs: updates)
 
 .. include:: ../shared/designs/design3.rst

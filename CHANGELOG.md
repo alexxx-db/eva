@@ -17,16 +17,76 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+##  [0.3.8] - 2023-10-18
+
+* PR #1303: v0.3.8 - new release 
+* PR #1302: Reenable batch for release 
+* PR #1301: Add Documentation for UDF Unit Testing and Mocking 
+* PR #1232: Starting the change for XGBoost integration into EVADb. 
+* PR #1294: fix: improve testcase 
+* PR #1293: fix: make the table/function catalog insert operation atomic 
+* PR #1295: feat: add support for show databases 
+* PR #1296: feat: function_metadata supports boolean and float  
+* PR #1290: fix: text_summarization uses drop udf 
+* PR #1240: Add stable diffusion integration 
+* PR #1285: Update custom-ai-function.rst 
+* PR #1234: Added basic functionalities of REST apis 
+* PR #1281: Clickhouse integration 
+* PR #1273: Update custom-ai-function.rst 
+* PR #1274: Fix Notebook and Ray testcases at staging 
+* PR #1264: SHOW command for retrieveing configurations 
+* PR #1270: fix: Catalog init introduces significant overhead  
+* PR #1267: Improve the error message when there is a typo in the column name in the query.  
+* PR #1261: Remove dimensions from `TEXT` and `FLOAT` 
+* PR #1256: Remove table names from column names for `df
+* PR #1253: Collection of fixes for the staging branch 
+* PR #1246: feat: insertion update index 
+* PR #1245: Documentation on vector stores + vector benchmark 
+* PR #1244: feat: create index from projection 
+* PR #1233: GitHub Data Source Integration 
+* PR #1115: Add support for Neuralforecast 
+* PR #1241: Bump Version to v0.3.8+dev 
+* PR #1239: release 0.3.7 
+
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 =======
@@ -35,19 +95,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+>>>>>>> georgia-tech-db-main
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> a4989c0a ([RELEASE]: v0.3.3 (#984))
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
 =======
 =======
@@ -55,11 +125,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
 =======
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -69,6 +143,83 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+>>>>>>> fb7418af ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
+=======
+>>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 08ce15ce ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
+<<<<<<< HEAD
+>>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
+<<<<<<< HEAD
+>>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
+=======
+=======
+=======
+>>>>>>> a4989c0a ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
+>>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
+>>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -76,9 +227,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 ##  [0.3.7] - 2023-09-30
 
 * PR #1239: release 0.3.7 
@@ -117,6 +273,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -124,10 +281,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
@@ -136,11 +310,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 >>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -149,15 +327,59 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 >>>>>>> eva-source
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
+=======
+>>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+>>>>>>> fb7418af ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 567ab492 (Bump Version to v0.3.8+dev (#1241))
+>>>>>>> dbfef8c7 (Bump Version to v0.3.8+dev (#1241))
+>>>>>>> 0239ab6d (Bump Version to v0.3.8+dev (#1241))
+=======
+>>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 ##  [0.3.6] - 2023-09-21
 
 * PR #1181: releass: bump a version further to skip cached wheel 
@@ -248,7 +470,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
@@ -259,14 +495,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb7418af ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -274,43 +536,115 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb7418af ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 >>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 =======
 >>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
 >>>>>>> a4989c0a ([RELEASE]: v0.3.3 (#984))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 =======
@@ -319,19 +653,68 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <<<<<<< HEAD
 >>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
+>>>>>>> 08ce15ce ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb7418af ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 00cf1584 ([RELEASE]: v0.3.3 (#984))
+>>>>>>> 71dab656 ([RELEASE]: v0.3.3 (#984))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9c0af83d ([RELEASE]: v0.3.3 (#984))
+>>>>>>> d562016d ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
+>>>>>>> 7c76583a ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
+>>>>>>> ff795625 ([RELEASE]: v0.3.3 (#984))
+<<<<<<< HEAD
+>>>>>>> d182fcb8 ([RELEASE]: v0.3.3 (#984))
+=======
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 ##  [0.3.3] - 2023-08-29
 
 * PR #983: doc: fix nav bar 

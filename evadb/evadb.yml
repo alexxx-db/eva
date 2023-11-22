@@ -29,11 +29,14 @@ third_party:
   PINECONE_ENV: ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   REPLICATE_API_TOKEN: ""
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
   REPLICATE_API_TOKEN: ""
 =======
@@ -46,4 +49,7 @@ third_party:
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main

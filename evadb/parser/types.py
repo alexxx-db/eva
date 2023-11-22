@@ -42,6 +42,10 @@ class StatementType(EvaDBEnum):
     CREATE_DATABASE  # noqa: F821
     USE  # noqa: F821
     SET  # noqa: F821
+<<<<<<< HEAD
+    CREATE_JOB  # noqa: F821
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     # add other types
 
 
@@ -71,7 +75,14 @@ class ShowType(EvaDBEnum):
     FUNCTIONS  # noqa: F821
     TABLES  # noqa: F821
     CONFIG  # noqa: F821
+<<<<<<< HEAD
+<<<<<<< HEAD
     DATABASES  # noqa: F821
+=======
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+    DATABASES  # noqa: F821
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
 
 
 class FunctionType(EvaDBEnum):
@@ -83,3 +94,7 @@ class ObjectType(EvaDBEnum):
     FUNCTION  # noqa: F821
     INDEX  # noqa: F821
     DATABASE  # noqa: F821
+<<<<<<< HEAD
+    JOB  # noqa: F821
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

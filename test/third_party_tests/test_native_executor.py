@@ -78,17 +78,34 @@ class NativeExecutorTest(unittest.TestCase):
         )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
     def _create_evadb_table_using_select_query(self):
         execute_query_fetch_all(
@@ -122,17 +139,31 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
     def _create_evadb_table_using_select_query(self):
         execute_query_fetch_all(
@@ -184,6 +215,7 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         self._create_native_table_using_select_query()
@@ -212,6 +244,71 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+        self._create_native_table_using_select_query()
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+        self._create_native_table_using_select_query()
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
         self._create_native_table_using_select_query()
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -222,37 +319,97 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
         self._create_native_table_using_select_query()
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -261,10 +418,31 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         self._create_native_table_using_select_query()
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -274,13 +452,60 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+        self._create_native_table_using_select_query()
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         self._drop_table_in_native_database()
         self._drop_table_in_evadb_database()
 
@@ -358,19 +583,127 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    def test_should_run_query_in_mariadb(self):
+        # Create database.
+        params = {
+            "user": "eva",
+            "password": "password",
+            "database": "evadb",
+        }
+        query = f"""CREATE DATABASE test_data_source
+                    WITH ENGINE = "mariadb",
+                    PARAMETERS = {params};"""
+        execute_query_fetch_all(self.evadb, query)
+
+        # Test executions.
+        self._execute_native_query()
+        self._execute_evadb_query()
+
+    def test_should_run_query_in_clickhouse(self):
+        # Create database.
+        params = {
+            "user": "eva",
+            "password": "password",
+            "host": "localhost",
+            "port": "9000",
+            "database": "evadb",
+        }
+        query = f"""CREATE DATABASE test_data_source
+                    WITH ENGINE = "clickhouse",
+                    PARAMETERS = {params};"""
+        execute_query_fetch_all(self.evadb, query)
+
+        # Test executions.
+        self._execute_native_query()
+        self._execute_evadb_query()
+
+    @pytest.mark.skip(
+        reason="Snowflake does not come with a free version of account, so integration test is not feasible"
+    )
+    def test_should_run_query_in_snowflake(self):
+        # Create database.
+        params = {
+            "user": "eva",
+            "password": "password",
+            "account": "account_number",
+            "database": "EVADB",
+            "schema": "SAMPLE_DATA",
+            "warehouse": "warehouse",
+        }
+        query = f"""CREATE DATABASE test_data_source
+                    WITH ENGINE = "snowflake",
+                    PARAMETERS = {params};"""
+        execute_query_fetch_all(self.evadb, query)
+
+        # Test executions.
+        self._execute_native_query()
+        self._execute_evadb_query()
+
+    def test_should_run_query_in_sqlite(self):
+        # Create database.
+        import os
+
+        current_file_dir = os.path.dirname(os.path.abspath(__file__))
+
+        params = {
+            "database": f"{current_file_dir}/evadb.db",
+=======
+    def test_should_run_query_in_sqlite(self):
+        # Create database.
+        params = {
+            "database": "evadb.db",
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -378,6 +711,7 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
@@ -386,22 +720,65 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     def test_should_run_query_in_mariadb(self):
         # Create database.
         params = {
@@ -447,13 +824,41 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
     def test_should_run_query_in_sqlite(self):
         # Create database.
         params = {
             "database": "evadb.db",
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -505,10 +910,37 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -521,11 +953,77 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+    def test_should_run_query_in_mariadb(self):
+        # Create database.
+        params = {
+            "user": "eva",
+            "password": "password",
+            "database": "evadb",
+        }
+        query = f"""CREATE DATABASE test_data_source
+                    WITH ENGINE = "mariadb",
+                    PARAMETERS = {params};"""
+        execute_query_fetch_all(self.evadb, query)
+
+        # Test executions.
+        self._execute_native_query()
+        self._execute_evadb_query()
+
+    def test_should_run_query_in_sqlite(self):
+        # Create database.
+        import os
+
+        current_file_dir = os.path.dirname(os.path.abspath(__file__))
+
+        params = {
+            "database": f"{current_file_dir}/evadb.db",
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+    def test_should_run_query_in_sqlite(self):
+        # Create database.
+        params = {
+            "database": "evadb.db",
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
@@ -533,7 +1031,10 @@ class NativeExecutorTest(unittest.TestCase):
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -568,29 +1069,53 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -604,11 +1129,19 @@ class NativeExecutorTest(unittest.TestCase):
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -640,9 +1173,14 @@ class NativeExecutorTest(unittest.TestCase):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         }
         query = f"""CREATE DATABASE test_data_source
                     WITH ENGINE = "sqlite",

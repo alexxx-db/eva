@@ -94,24 +94,59 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -129,8 +164,26 @@ class StatementBinderContext:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -142,6 +195,52 @@ class StatementBinderContext:
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -154,10 +253,24 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -171,6 +284,16 @@ class StatementBinderContext:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -189,11 +312,34 @@ class StatementBinderContext:
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
             )
             handler.connect()
 
@@ -208,26 +354,72 @@ class StatementBinderContext:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             ) as handler:
                 # Assemble columns.
                 response = handler.get_columns(table_name)
@@ -239,12 +431,15 @@ class StatementBinderContext:
                 )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -255,11 +450,15 @@ class StatementBinderContext:
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -268,6 +467,18 @@ class StatementBinderContext:
 >>>>>>> eva-source
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -276,11 +487,75 @@ class StatementBinderContext:
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+            ) as handler:
+                # Assemble columns.
+                response = handler.get_columns(table_name)
+                if response.error is not None:
+                    raise BinderError(response.error)
+                column_df = response.data
+                table_obj = create_table_catalog_entry_for_data_source(
+                    table_name, database_name, column_df
+                )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -297,9 +572,14 @@ class StatementBinderContext:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         else:
             table_obj = self._catalog().get_table_catalog_entry(table_name)
 
@@ -354,10 +634,17 @@ class StatementBinderContext:
             res = process.extractOne(col_name, all_columns)
             if res is not None:
                 guess_column, _ = res
+<<<<<<< HEAD
+                err_msg = f"Cannot find column {col_name}. Did you mean {guess_column}? The feasible columns are {all_columns}."
+            else:
+                err_msg = (
+                    f"Cannot find column {col_name}. There are no feasible columns."
+=======
                 err_msg = f"Cannnot find column {col_name}. Did you mean {guess_column}? The feasible columns are {all_columns}."
             else:
                 err_msg = (
                     f"Cannnot find column {col_name}. There are no feasible columns."
+>>>>>>> c9e64bc8 (Improve the error message when there is a typo in the column name in the query.  (#1267))
                 )
             logger.error(err_msg)
             raise BinderError(err_msg)

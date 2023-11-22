@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import contextlib
+import datetime
 import json
 from dataclasses import dataclass, field
 from typing import List, Tuple
@@ -61,7 +62,7 @@ def init_db(engine: Engine):
     BaseModel.metadata.create_all(bind=engine)
 
 
-def truncate_catalog_tables(engine: Engine):
+def truncate_catalog_tables(engine: Engine, tables_not_to_truncate: List[str] = []):
     """Truncate all the catalog tables"""
     # https://stackoverflow.com/questions/4763472/sqlalchemy-clear-database-content-but-dont-drop-the-schema/5003705#5003705 #noqa
     # reflect to refresh the metadata
@@ -71,8 +72,9 @@ def truncate_catalog_tables(engine: Engine):
         with contextlib.closing(engine.connect()) as con:
             trans = con.begin()
             for table in reversed(BaseModel.metadata.sorted_tables):
-                if insp.has_table(table.name):
-                    con.execute(table.delete())
+                if table.name not in tables_not_to_truncate:
+                    if insp.has_table(table.name):
+                        con.execute(table.delete())
             trans.commit()
 
 
@@ -205,15 +207,44 @@ class IndexCatalogEntry:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     index_def: str = None
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -221,12 +252,24 @@ class IndexCatalogEntry:
     index_def: str = None
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     index_def: str = None
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
     index_def: str = None
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
@@ -235,6 +278,11 @@ class IndexCatalogEntry:
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -242,7 +290,31 @@ class IndexCatalogEntry:
     index_def: str = None
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+    index_def: str = None
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+    index_def: str = None
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     feat_column: ColumnCatalogEntry = None
 
 
@@ -297,4 +369,75 @@ class DatabaseCatalogEntry:
             "name": self.name,
             "engine": self.engine,
             "params": self.params,
+        }
+
+
+@dataclass(unsafe_hash=True)
+class ConfigurationCatalogEntry:
+    """Dataclass representing an entry in the `ConfigurationCatalog`.
+    This is done to ensure we don't expose the sqlalchemy dependencies beyond catalog service. Further, sqlalchemy does not allow sharing of objects across threads.
+    """
+
+    key: str
+    value: str
+    row_id: int = None
+
+    def display_format(self):
+        return {
+            "key": self.key,
+            "value": self.value,
+        }
+
+
+@dataclass(unsafe_hash=True)
+class JobCatalogEntry:
+    """Dataclass representing an entry in the `JobCatalog`."""
+
+    name: str
+    queries: list
+    start_time: datetime
+    end_time: datetime
+    repeat_interval: int
+    active: bool
+    next_scheduled_run: datetime
+    created_at: datetime
+    updated_at: datetime
+    row_id: int = None
+
+    def display_format(self):
+        return {
+            "row_id": self.row_id,
+            "name": self.name,
+            "queries": self.queries,
+            "start_time": self.start_time,
+            "end_time": self.end_time,
+            "repeat_interval": self.repeat_interval,
+            "active": self.active,
+            "next_schedule_run": self.next_scheduled_run,
+            "created_at": self.created_at,
+            "updated_at": self.updated_at,
+        }
+
+
+@dataclass(unsafe_hash=True)
+class JobHistoryCatalogEntry:
+    """Dataclass representing an entry in the `JobHistoryCatalog`."""
+
+    job_id: int
+    job_name: str
+    execution_start_time: datetime
+    execution_end_time: datetime
+    created_at: datetime
+    updated_at: datetime
+    row_id: int = None
+
+    def display_format(self):
+        return {
+            "row_id": self.row_id,
+            "job_id": self.job_name,
+            "job_name": self.job_name,
+            "execution_start_time": self.execution_start_time,
+            "execution_end_time": self.execution_end_time,
+            "created_at": self.created_at,
+            "updated_at": self.updated_at,
         }

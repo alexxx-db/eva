@@ -20,7 +20,10 @@ import pandas as pd
 from retry import retry
 
 from evadb.catalog.catalog_type import NdArrayType
+<<<<<<< HEAD
+=======
 from evadb.configuration.configuration_manager import ConfigurationManager
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import forward, setup
 from evadb.functions.decorators.io_descriptors.data_types import PandasDataframe
@@ -85,26 +88,60 @@ class ChatGPT(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 =======
@@ -120,6 +157,48 @@ class ChatGPT(AbstractFunction):
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+    @setup(cacheable=True, function_type="chat-completion", batchable=True)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+    @setup(cacheable=True, function_type="chat-completion", batchable=True)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 =======
     @setup(cacheable=False, function_type="chat-completion", batchable=True)
@@ -127,22 +206,56 @@ class ChatGPT(AbstractFunction):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -151,32 +264,66 @@ class ChatGPT(AbstractFunction):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
     @setup(cacheable=False, function_type="chat-completion", batchable=True)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -186,6 +333,14 @@ class ChatGPT(AbstractFunction):
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
     @setup(cacheable=True, function_type="chat-completion", batchable=True)
@@ -193,17 +348,76 @@ class ChatGPT(AbstractFunction):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+    @setup(cacheable=True, function_type="chat-completion", batchable=True)
+=======
+    @setup(cacheable=False, function_type="chat-completion", batchable=True)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+    @setup(cacheable=True, function_type="chat-completion", batchable=True)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+    @setup(cacheable=True, function_type="chat-completion", batchable=True)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+=======
+    @setup(cacheable=True, function_type="chat-completion", batchable=True)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+=======
+    @setup(cacheable=True, function_type="chat-completion", batchable=True)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     def setup(
         self,
         model="gpt-3.5-turbo",
         temperature: float = 0,
+        openai_api_key="",
     ) -> None:
         assert model in _VALID_CHAT_COMPLETION_MODEL, f"Unsupported ChatGPT {model}"
         self.model = model
         self.temperature = temperature
+        self.openai_api_key = openai_api_key
 
     @forward(
         input_signatures=[
@@ -229,20 +443,20 @@ class ChatGPT(AbstractFunction):
     )
     def forward(self, text_df):
         try_to_import_openai()
-        import openai
+        from openai import OpenAI
+
+        api_key = self.openai_api_key
+        if len(self.openai_api_key) == 0:
+            api_key = os.environ.get("OPENAI_API_KEY", "")
+        assert (
+            len(api_key) != 0
+        ), "Please set your OpenAI API key using SET OPENAI_API_KEY = 'sk-' or environment variable (OPENAI_API_KEY)"
+
+        client = OpenAI(api_key=api_key)
 
         @retry(tries=6, delay=20)
         def completion_with_backoff(**kwargs):
-            return openai.ChatCompletion.create(**kwargs)
-
-        # Register API key, try configuration manager first
-        openai.api_key = ConfigurationManager().get_value("third_party", "OPENAI_KEY")
-        # If not found, try OS Environment Variable
-        if len(openai.api_key) == 0:
-            openai.api_key = os.environ.get("OPENAI_KEY", "")
-        assert (
-            len(openai.api_key) != 0
-        ), "Please set your OpenAI API key in evadb.yml file (third_party, open_api_key) or environment variable (OPENAI_KEY)"
+            return client.chat.completions.create(**kwargs)
 
         queries = text_df[text_df.columns[0]]
         content = text_df[text_df.columns[0]]

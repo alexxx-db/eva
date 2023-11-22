@@ -32,27 +32,68 @@ class FunctionMetadataCatalogService(BaseService):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
     def create_entries(self, entries: List[FunctionMetadataCatalogEntry]):
         metadata_objs = []
 =======
     def insert_entries(self, entries: List[FunctionMetadataCatalogEntry]):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
     def create_entries(self, entries: List[FunctionMetadataCatalogEntry]):
         metadata_objs = []
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         try:
             for entry in entries:
                 metadata_obj = FunctionMetadataCatalog(
@@ -63,25 +104,61 @@ class FunctionMetadataCatalogService(BaseService):
         except Exception as e:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
             logger.exception(
                 f"Failed to insert entry {entry} into function metadata catalog with exception {str(e)}"
             )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
             raise CatalogError(e)
 
     def get_entries_by_function_id(

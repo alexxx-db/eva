@@ -10,6 +10,7 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       - file: source/overview/connect-to-database
         title: Connect to Database
 <<<<<<< HEAD
@@ -29,6 +30,17 @@ parts:
         title: Concepts
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> f1e2bddc (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
       - file: source/overview/concepts
         title: Concepts
       - file: source/overview/ai-queries
@@ -36,10 +48,25 @@ parts:
       - file: source/overview/connect-to-data-sources
         title: Connect to Data Sources
       - file: source/overview/faq
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      - file: source/overview/roadmap
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f1e2bddc (docs: updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
       - file: source/overview/connect-to-database
         title: Connect to Database
 <<<<<<< HEAD
@@ -53,12 +80,30 @@ parts:
         title: Model inference
 =======
 >>>>>>> dc9069a2 (docs: updates)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
       - file: source/overview/concepts
         title: Concepts
+<<<<<<< HEAD
 >>>>>>> eva-source
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      - file: source/overview/concepts
+        title: Concepts
+>>>>>>> f1e2bddc (docs: updates)
+=======
+>>>>>>> 32e513d7 (docs: updates)
+>>>>>>> georgia-tech-db-main
       - file: source/overview/model-inference
         title: AI Models
         sections:
@@ -78,6 +123,11 @@ parts:
 =======
       - file: source/overview/connect-to-database
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
         title: Connect to Database
 >>>>>>> dc9069a2 (docs: updates)
 =======
@@ -85,11 +135,16 @@ parts:
 >>>>>>> a53a7d46 (docs: updates)
         #- file: source/overview/faq
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> df4d8a35 (docs: updates)
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> df4d8a35 (docs: updates)
+=======
+>>>>>>> georgia-tech-db-main
 =======
       - file: source/overview/ai-queries
         title: AI Queries
@@ -98,22 +153,56 @@ parts:
       - file: source/overview/faq
 >>>>>>> c952858c (docs: updates)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 35b99c88 (docs: updates)
 >>>>>>> eva-source
+=======
+>>>>>>> 35b99c88 (docs: updates)
+=======
+=======
+>>>>>>> af11cdd5 (docs: updates)
+        title: Connect to Database
+>>>>>>> dc9069a2 (docs: updates)
+=======
+        title: Connect to Data Sources
+>>>>>>> a53a7d46 (docs: updates)
+        #- file: source/overview/faq
+<<<<<<< HEAD
+>>>>>>> df4d8a35 (docs: updates)
+<<<<<<< HEAD
+>>>>>>> f1e2bddc (docs: updates)
+=======
+=======
+=======
+      - file: source/overview/ai-queries
+        title: AI Queries
+      - file: source/overview/connect-to-data-sources
+        title: Connect to Data Sources
+      - file: source/overview/faq
+>>>>>>> c952858c (docs: updates)
+>>>>>>> 35b99c88 (docs: updates)
+>>>>>>> 32e513d7 (docs: updates)
+>>>>>>> georgia-tech-db-main
 
   - caption: Use Cases
     chapters:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> georgia-tech-db-main
       - file: source/usecases/forecasting.rst
         title: Forecasting
       - file: source/usecases/classification.rst
         title: Classification
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -122,6 +211,7 @@ parts:
 =======
       - file: source/usecases/forecasting.rst
         title: Forecasting
+<<<<<<< HEAD
       - file: source/usecases/classification.rst
         title: Classification
 >>>>>>> 17103d35 (updates)
@@ -129,6 +219,20 @@ parts:
 =======
 >>>>>>> 591a8656 (updates)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      - file: source/usecases/classification.rst
+=======
+      - file: source/usecases/prediction.rst
+>>>>>>> c317ee2f (updates)
+=======
+      - file: source/usecases/classification.rst
+>>>>>>> 15d82bba (docs: fix classification link)
+        title: Classification
+>>>>>>> 17103d35 (updates)
+>>>>>>> 591a8656 (updates)
+>>>>>>> georgia-tech-db-main
       - file: source/usecases/sentiment-analysis.rst
         title: Sentiment Analysis
       - file: source/usecases/question-answering.rst
@@ -146,14 +250,35 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
       - file: source/overview/connect-to-database
         title: Connect to Database
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
       - file: source/overview/model-inference
         title: Model inference
       - file: source/overview/concepts
@@ -162,18 +287,60 @@ parts:
           - file: source/overview/concepts/data-sources
             title: Data Sources
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
       - file: source/overview/concepts
         title: Concepts
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+=======
+      - file: source/overview/connect-to-database
+        title: Connect to Database
+      - file: source/overview/concepts
+        title: Concepts
+<<<<<<< HEAD
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+        sections:
+          - file: source/overview/concepts/data-sources
+            title: Data Sources
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         #- file: source/overview/faq
 
   - caption: Use Cases
     chapters:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
       - file: source/usecases/sentiment-analysis.rst
         title: Sentiment Analysis
       - file: source/usecases/question-answering.rst
@@ -189,6 +356,10 @@ parts:
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
       - file: source/usecases/privategpt.rst
         title: PrivateGPT
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -196,10 +367,25 @@ parts:
 =======
 <<<<<<< HEAD
 >>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> c317ee2f (updates)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
       - file: source/usecases/homesale-forecast.rst
         title: Home Sale Forecasting
       - file: source/usecases/homerental-predict.rst
@@ -208,15 +394,21 @@ parts:
       #   title: PrivateGPT
 <<<<<<< HEAD
 <<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
       - file: source/usecases/food-review.rst
 =======
@@ -239,6 +431,7 @@ parts:
         title: PrivateGPT
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
@@ -246,6 +439,8 @@ parts:
 >>>>>>> 17103d35 (updates)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 =======
@@ -257,17 +452,45 @@ parts:
 =======
 >>>>>>> 17103d35 (updates)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 591a8656 (updates)
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> 591a8656 (updates)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
       - file: source/overview/connect-to-database
         title: Connect to Database
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
       - file: source/overview/model-inference
         title: Model inference
       - file: source/overview/concepts
@@ -276,18 +499,62 @@ parts:
           - file: source/overview/concepts/data-sources
             title: Data Sources
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
       - file: source/overview/concepts
         title: Concepts
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+      - file: source/overview/concepts
+        title: Concepts
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         #- file: source/overview/faq
 
   - caption: Use Cases
     chapters:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
       - file: source/usecases/sentiment-analysis.rst
         title: Sentiment Analysis
       - file: source/usecases/question-answering.rst
@@ -303,11 +570,16 @@ parts:
       - file: source/usecases/emotion-analysis.rst
         title: Emotion Analysis
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
       - file: source/usecases/privategpt.rst
         title: PrivateGPT
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -316,6 +588,17 @@ parts:
 >>>>>>> eva-source
 =======
 =======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+=======
+      - file: source/usecases/privategpt.rst
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
       - file: source/usecases/homesale-forecast.rst
         title: Home Sale Forecasting
       - file: source/usecases/homerental-predict.rst
@@ -324,15 +607,26 @@ parts:
       #   title: PrivateGPT
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -363,11 +657,16 @@ parts:
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -375,22 +674,262 @@ parts:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+      - file: source/usecases/food-review.rst
+=======
+      - file: source/usecases/sentiment-analysis.rst
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+        title: Sentiment Analysis
+      - file: source/usecases/question-answering.rst
+        title: Question Answering
+      - file: source/usecases/text-summarization.rst
+        title: Text Summarization
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/image-search.rst
+        title: Image Search
+      - file: source/usecases/object-detection.rst
+        title: Object Detection
+      - file: source/usecases/emotion-analysis.rst
+        title: Emotion Analysis
+      - file: source/usecases/privategpt.rst
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+      - file: source/usecases/food-review.rst
+=======
+      - file: source/usecases/sentiment-analysis.rst
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+        title: Sentiment Analysis
+      - file: source/usecases/question-answering.rst
+        title: Question Answering
+      - file: source/usecases/text-summarization.rst
+        title: Text Summarization
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/image-search.rst
+        title: Image Search
+      - file: source/usecases/object-detection.rst
+        title: Object Detection
+      - file: source/usecases/emotion-analysis.rst
+        title: Emotion Analysis
+      - file: source/usecases/privategpt.rst
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 591a8656 (updates)
+>>>>>>> c317ee2f (updates)
+=======
+      - file: source/usecases/food-review.rst
+=======
+      - file: source/usecases/sentiment-analysis.rst
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+        title: Sentiment Analysis
+      - file: source/usecases/question-answering.rst
+        title: Question Answering
+      - file: source/usecases/text-summarization.rst
+        title: Text Summarization
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/image-search.rst
+        title: Image Search
+      - file: source/usecases/object-detection.rst
+        title: Object Detection
+      - file: source/usecases/emotion-analysis.rst
+        title: Emotion Analysis
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+      - file: source/usecases/privategpt.rst
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+      - file: source/usecases/homesale-forecast.rst
+        title: Home Sale Forecasting
+      - file: source/usecases/homerental-predict.rst
+        title: Home Rental Prediction
+      # - file: source/usecases/privategpt.rst
+      #   title: PrivateGPT
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+      - file: source/usecases/food-review.rst
+=======
+      - file: source/usecases/sentiment-analysis.rst
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+        title: Sentiment Analysis
+      - file: source/usecases/question-answering.rst
+        title: Question Answering
+      - file: source/usecases/text-summarization.rst
+        title: Text Summarization
+      - file: source/usecases/image-classification.rst
+        title: Image Classification
+      - file: source/usecases/image-search.rst
+        title: Image Search
+      - file: source/usecases/object-detection.rst
+        title: Object Detection
+      - file: source/usecases/emotion-analysis.rst
+        title: Emotion Analysis
+      - file: source/usecases/privategpt.rst
+        title: PrivateGPT
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
   - caption: User Reference
     chapters:
 <<<<<<< HEAD
       - file: source/reference/evaql      
+<<<<<<< HEAD
+<<<<<<< HEAD
         title: Query Language
+=======
+        title: EvaQL
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+        title: Query Language
+>>>>>>> ae8238d8 (docs: update references to UDFs)
         sections:
           - file: source/reference/evaql/load_csv
           - file: source/reference/evaql/load_image
           - file: source/reference/evaql/load_video
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          - file: source/reference/evaql/load_pdf
+=======
+>>>>>>> 5651b7e2 (docs: updated sql statement list)
+          - file: source/reference/evaql/select
+          - file: source/reference/evaql/explain
+          - file: source/reference/evaql/show_functions
+          - file: source/reference/evaql/show_config
+          - file: source/reference/evaql/set_config
+=======
+          - file: source/reference/evaql/select
+          - file: source/reference/evaql/explain
+          - file: source/reference/evaql/show_functions
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+          - file: source/reference/evaql/create_database
+          - file: source/reference/evaql/create_function
+          - file: source/reference/evaql/create_index
+          - file: source/reference/evaql/create_table
+          - file: source/reference/evaql/drop_database
+          - file: source/reference/evaql/drop_function
+          - file: source/reference/evaql/drop_table
+          - file: source/reference/evaql/insert_table
+          - file: source/reference/evaql/delete_table
+          - file: source/reference/evaql/rename
+          - file: source/reference/evaql/use
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+      - file: source/reference/api
+        title: Python API
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+      - file: source/reference/evaql      
+        title: EvaQL
+        sections:
+          - file: source/reference/evaql/load
+          - file: source/reference/evaql/select
+          - file: source/reference/evaql/explain
+          - file: source/reference/evaql/show
+          - file: source/reference/evaql/create
+          - file: source/reference/evaql/drop
+          - file: source/reference/evaql/insert
+          - file: source/reference/evaql/delete
+          - file: source/reference/evaql/rename
+          - file: source/reference/evaql/use
+<<<<<<< HEAD
+=======
+
+      - file: source/reference/api
+        title: Python API
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+      - file: source/reference/evaql      
+        title: EvaQL
+        sections:
+          - file: source/reference/evaql/load
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> georgia-tech-db-main
           - file: source/reference/evaql/select
           - file: source/reference/evaql/explain
           - file: source/reference/evaql/show_functions
@@ -405,6 +944,31 @@ parts:
           - file: source/reference/evaql/delete_table
           - file: source/reference/evaql/rename
           - file: source/reference/evaql/use
+<<<<<<< HEAD
+=======
+
+      - file: source/reference/api
+        title: Python API
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+      - file: source/reference/evaql      
+        title: EvaQL
+        sections:
+          - file: source/reference/evaql/load
+          - file: source/reference/evaql/select
+          - file: source/reference/evaql/explain
+          - file: source/reference/evaql/show
+          - file: source/reference/evaql/create
+          - file: source/reference/evaql/drop
+          - file: source/reference/evaql/insert
+          - file: source/reference/evaql/delete
+          - file: source/reference/evaql/rename
+          - file: source/reference/evaql/use
+<<<<<<< HEAD
+=======
 
       - file: source/reference/api
         title: Python API
@@ -513,16 +1077,22 @@ parts:
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-master
 =======
 =======
+>>>>>>> georgia-tech-db-main
+=======
 <<<<<<< HEAD
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
           - file: source/reference/databases/mariadb
           - file: source/reference/databases/clickhouse
           - file: source/reference/databases/github
@@ -538,6 +1108,7 @@ parts:
           - file: source/reference/vector_stores/pinecone
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
@@ -546,6 +1117,8 @@ parts:
         title: Python API
 
 =======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
 <<<<<<< HEAD
@@ -558,13 +1131,17 @@ parts:
         title: Python API
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
       - file: source/reference/databases/index
         title: Data Sources
         sections: 
           - file: source/reference/databases/postgres
           - file: source/reference/databases/sqlite
           - file: source/reference/databases/mysql
+<<<<<<< HEAD
 <<<<<<< HEAD
           - file: source/reference/databases/mariadb
 >>>>>>> eva-master
@@ -591,6 +1168,19 @@ parts:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          - file: source/reference/databases/mariadb
+<<<<<<< HEAD
+          - file: source/reference/databases/clickhouse
+          - file: source/reference/databases/github
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
+=======
           - file: source/reference/databases/mariadb
           - file: source/reference/databases/github
 
@@ -604,10 +1194,179 @@ parts:
           - file: source/reference/vector_stores/pinecone
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 
 <<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+      - file: source/reference/api
+        title: Python API
+
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+      - file: source/reference/databases/index
+        title: Data Sources
+        sections: 
+          - file: source/reference/databases/postgres
+          - file: source/reference/databases/sqlite
+          - file: source/reference/databases/mysql
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+=======
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/clickhouse
+          - file: source/reference/databases/github
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/clickhouse
+          - file: source/reference/databases/github
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/github
+
+      - file: source/reference/vector_stores/index
+        title: Vector Stores
+        sections: 
+          - file: source/reference/vector_stores/faiss
+          - file: source/reference/vector_stores/chromadb
+          - file: source/reference/vector_stores/qdrant
+          - file: source/reference/vector_stores/pgvector
+          - file: source/reference/vector_stores/pinecone
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+
+<<<<<<< HEAD
+      - file: source/reference/vector_stores/index
+        title: Vector Stores
+        sections: 
+          - file: source/reference/vector_stores/faiss
+          - file: source/reference/vector_stores/chromadb
+          - file: source/reference/vector_stores/qdrant
+          - file: source/reference/vector_stores/pgvector
+          - file: source/reference/vector_stores/pinecone
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+
+<<<<<<< HEAD
+      - file: source/reference/api
+        title: Python API
+
+      - file: source/reference/databases/index
+        title: Data Sources
+        sections: 
+          - file: source/reference/databases/postgres
+          - file: source/reference/databases/sqlite
+          - file: source/reference/databases/mysql
+<<<<<<< HEAD
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+          - file: source/reference/databases/mariadb
+<<<<<<< HEAD
+          - file: source/reference/databases/github
+
+      - file: source/reference/vector_stores/index
+        title: Vector Stores
+        sections: 
+          - file: source/reference/vector_stores/faiss
+          - file: source/reference/vector_stores/chromadb
+          - file: source/reference/vector_stores/qdrant
+          - file: source/reference/vector_stores/pgvector
+          - file: source/reference/vector_stores/pinecone
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+
+<<<<<<< HEAD
+      - file: source/reference/api
+        title: Python API
+      
+      - file: source/reference/rest_api
+        title: REST API
+
+      - file: source/reference/databases/index
+        title: Data Sources
+        sections: 
+          - file: source/reference/databases/postgres
+          - file: source/reference/databases/sqlite
+          - file: source/reference/databases/mysql
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/clickhouse
+          - file: source/reference/databases/github
+          - file: source/reference/databases/snowflake
+
+      - file: source/reference/vector_databases/index
+        title: Vector Databases
+        sections: 
+          - file: source/reference/vector_databases/faiss
+          - file: source/reference/vector_databases/chromadb
+          - file: source/reference/vector_databases/qdrant
+          - file: source/reference/vector_databases/pgvector
+          - file: source/reference/vector_databases/pinecone
+          - file: source/reference/vector_databases/milvus
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+=======
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/clickhouse
+          - file: source/reference/databases/github
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+=======
+          - file: source/reference/databases/mariadb
+          - file: source/reference/databases/github
+
+      - file: source/reference/vector_stores/index
+        title: Vector Stores
+        sections: 
+          - file: source/reference/vector_stores/faiss
+          - file: source/reference/vector_stores/chromadb
+          - file: source/reference/vector_stores/qdrant
+          - file: source/reference/vector_stores/pgvector
+          - file: source/reference/vector_stores/pinecone
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
       - file: source/reference/vector_databases/index
         title: Vector Databases
         sections: 
@@ -652,7 +1411,10 @@ parts:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 
 <<<<<<< HEAD
       - file: source/reference/vector_databases/index
@@ -675,24 +1437,59 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
           - file: source/reference/ai/model-train-xgboost
             title: Model Training with XGBoost
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 >>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
           - file: source/reference/ai/model-train-xgboost
             title: Model Training with XGBoost
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+          - file: source/reference/ai/model-train-xgboost
+            title: Model Training with XGBoost
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
       - file: source/reference/ai/index
@@ -702,20 +1499,53 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -728,26 +1558,68 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
           - file: source/reference/ai/model-train-xgboost
             title: Model Training with XGBoost
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
 <<<<<<< HEAD
@@ -757,22 +1629,39 @@ parts:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
       - file: source/reference/ai/index
         title: AI Engines
         sections:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
           - file: source/reference/ai/model-train-ludwig
@@ -781,6 +1670,7 @@ parts:
             title: Model Training with Sklearn
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -791,10 +1681,27 @@ parts:
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
           - file: source/reference/ai/model-train
             title: Model Training
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -804,13 +1711,103 @@ parts:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+      - file: source/reference/ai/index
+        title: AI Engines
+        sections:
+<<<<<<< HEAD
+          - file: source/reference/ai/model-train
+            title: Model Training
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+          - file: source/reference/ai/model-train-ludwig
+            title: Model Training with Ludwig
+          - file: source/reference/ai/model-train-sklearn
+            title: Model Training with Sklearn
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> 201f901b (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
+<<<<<<< HEAD
+>>>>>>> dda3558c (Starting the change for XGBoost integration into EVADb. (#1232))
+=======
+=======
+=======
+=======
+      - file: source/reference/ai/index
+        title: AI Engines
+        sections:
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+          - file: source/reference/ai/model-train
+            title: Model Training
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+          - file: source/reference/ai/model-train-ludwig
+            title: Model Training with Ludwig
+          - file: source/reference/ai/model-train-sklearn
+            title: Model Training with Sklearn
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
           - file: source/reference/ai/model-forecasting
             title: Time Series Forecasting
           - file: source/reference/ai/hf
@@ -824,17 +1821,44 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 32e513d7 (docs: updates)
+=======
+>>>>>>> 8a8a90aa (Add stable diffusion integration (#1240))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
           - file: source/reference/ai/stablediffusion
             title: Stable Diffusion
 
       - file: source/reference/ai/custom-ai-function
         title: Bring Your Own AI Function
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 =======
           - file: source/reference/ai/custom
             title: Custom Model
@@ -854,7 +1878,10 @@ parts:
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -870,11 +1897,16 @@ parts:
 <<<<<<< HEAD
 >>>>>>> c952858c (docs: updates)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 35b99c88 (docs: updates)
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 35b99c88 (docs: updates)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
           - file: source/reference/ai/custom
@@ -885,16 +1917,22 @@ parts:
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
@@ -912,10 +1950,24 @@ parts:
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+
+      - file: source/reference/optimizations
+        title: Optimizations
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          - file: source/reference/ai/custom
+            title: Custom Model
+=======
+>>>>>>> georgia-tech-db-main
+=======
 <<<<<<< HEAD
           - file: source/reference/ai/custom
             title: Custom Model
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -927,14 +1979,95 @@ parts:
 =======
 <<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+          - file: source/reference/ai/custom
+            title: Custom Model
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+          - file: source/reference/ai/stablediffusion
+            title: Stable Diffusion
+>>>>>>> bf022329 (Add stable diffusion integration (#1240))
+
+      - file: source/reference/ai/custom-ai-function
+        title: Bring Your Own AI Function
+<<<<<<< HEAD
+>>>>>>> c952858c (docs: updates)
+<<<<<<< HEAD
+>>>>>>> 35b99c88 (docs: updates)
+=======
+=======
+=======
+          - file: source/reference/ai/custom
+            title: Custom Model
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
       - file: source/reference/optimizations
         title: Optimizations
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          - file: source/reference/ai/custom
+            title: Custom Model
+=======
+=======
+<<<<<<< HEAD
+          - file: source/reference/ai/custom
+            title: Custom Model
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+
+      - file: source/reference/optimizations
+        title: Optimizations
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 
@@ -944,34 +2077,82 @@ parts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
           - file: source/reference/ai/custom
             title: Custom Model
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 
@@ -980,22 +2161,36 @@ parts:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -1004,9 +2199,61 @@ parts:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+          - file: source/reference/ai/custom
+            title: Custom Model
+<<<<<<< HEAD
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+
+      - file: source/reference/optimizations
+        title: Optimizations
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+
+      - file: source/reference/optimizations
+        title: Optimizations
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         
       # - file: source/reference/io
       #   title: IO Descriptors
@@ -1024,25 +2271,62 @@ parts:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 864a7bed (docs: updates)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
   - caption: Contribution Guide
 =======
   - caption: Developer Reference
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
   - caption: Contribution Guide
 >>>>>>> f398c41b (docs: updates)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+  - caption: Contribution Guide
+>>>>>>> f398c41b (docs: updates)
+>>>>>>> 864a7bed (docs: updates)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
     chapters:
       - file: source/dev-guide/contribute
         title: Contributing to EvaDB

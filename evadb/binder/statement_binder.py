@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from functools import singledispatchmethod
-from pathlib import Path
 from typing import Callable
 
 from evadb.binder.binder_utils import (
@@ -26,16 +25,36 @@ from evadb.binder.binder_utils import (
     extend_star,
     get_bound_func_expr_outputs_as_tuple_value_expr,
     get_column_definition_from_select_target_list,
-    handle_bind_extract_object_function,
-    resolve_alias_table_value_expression,
 )
 from evadb.binder.statement_binder_context import StatementBinderContext
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 from evadb.catalog.catalog_type import ColumnType, TableType
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+from evadb.catalog.catalog_type import ColumnType, TableType
+<<<<<<< HEAD
+from evadb.catalog.catalog_utils import is_document_table
+from evadb.catalog.sql_config import RESTRICTED_COL_NAMES
+=======
+=======
+from evadb.catalog.catalog_type import ColumnType, TableType
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 from evadb.catalog.catalog_type import ColumnType, TableType, VideoColumnName
@@ -44,33 +63,71 @@ from evadb.catalog.catalog_type import ColumnType, TableType
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 from evadb.catalog.catalog_type import ColumnType, TableType
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.catalog.catalog_utils import get_metadata_properties, is_document_table
 from evadb.catalog.sql_config import RESTRICTED_COL_NAMES
 from evadb.configuration.constants import EvaDB_INSTALLATION_DIR
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.expression.abstract_expression import AbstractExpression, ExpressionType
 from evadb.expression.function_expression import FunctionExpression
 from evadb.expression.tuple_value_expression import TupleValueExpression
@@ -81,26 +138,60 @@ from evadb.parser.create_index_statement import CreateIndexStatement
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 =======
@@ -116,6 +207,48 @@ from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 =======
 from evadb.parser.create_statement import CreateTableStatement
@@ -123,22 +256,56 @@ from evadb.parser.create_statement import CreateTableStatement
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -147,32 +314,66 @@ from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 from evadb.parser.create_statement import CreateTableStatement
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -182,6 +383,14 @@ from evadb.parser.create_statement import CreateTableStatement
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
 from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
@@ -189,15 +398,75 @@ from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+=======
+from evadb.parser.create_statement import CreateTableStatement
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+=======
+from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+=======
+from evadb.parser.create_statement import ColumnDefinition, CreateTableStatement
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.parser.delete_statement import DeleteTableStatement
 from evadb.parser.explain_statement import ExplainStatement
 from evadb.parser.rename_statement import RenameTableStatement
 from evadb.parser.select_statement import SelectStatement
 from evadb.parser.statement import AbstractStatement
 from evadb.parser.table_ref import TableRef
+<<<<<<< HEAD
+from evadb.utils.generic_utils import string_comparison_case_insensitive
+=======
 from evadb.parser.types import FunctionType
 from evadb.third_party.huggingface.binder import assign_hf_function
 <<<<<<< HEAD
@@ -206,15 +475,44 @@ from evadb.third_party.huggingface.binder import assign_hf_function
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
@@ -230,10 +528,17 @@ from evadb.third_party.huggingface.binder import assign_hf_function
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
@@ -246,10 +551,14 @@ from evadb.third_party.huggingface.binder import assign_hf_function
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -259,15 +568,80 @@ from evadb.third_party.huggingface.binder import assign_hf_function
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.utils.generic_utils import (
     load_function_class_from_file,
     string_comparison_case_insensitive,
@@ -281,6 +655,7 @@ from evadb.utils.generic_utils import (
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
@@ -293,6 +668,98 @@ from evadb.utils.generic_utils import (
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+from evadb.utils.generic_utils import load_function_class_from_file
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> eva-master
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+=======
+from evadb.utils.generic_utils import load_function_class_from_file
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+from evadb.utils.generic_utils import load_function_class_from_file
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
@@ -308,10 +775,26 @@ from evadb.utils.generic_utils import load_function_class_from_file
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -321,7 +804,11 @@ from evadb.utils.generic_utils import load_function_class_from_file
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
@@ -332,6 +819,7 @@ from evadb.utils.generic_utils import load_function_class_from_file
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
@@ -340,23 +828,48 @@ from evadb.utils.generic_utils import load_function_class_from_file
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -364,14 +877,27 @@ from evadb.utils.generic_utils import load_function_class_from_file
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.utils.logging_manager import logger
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 
 
 class StatementBinder:
@@ -413,20 +939,71 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -434,22 +1011,37 @@ class StatementBinder:
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -457,13 +1049,25 @@ class StatementBinder:
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             inputs, outputs = [], []
             if string_comparison_case_insensitive(node.function_type, "ludwig"):
                 assert (
@@ -474,6 +1078,7 @@ class StatementBinder:
                 for column in all_column_list:
                     if column.name in predict_columns:
                         column.name = column.name + "_predictions"
+
                         outputs.append(column)
                     else:
                         inputs.append(column)
@@ -507,6 +1112,22 @@ class StatementBinder:
                 assert (
                     len(required_columns) == 0
                 ), f"Missing required {required_columns} columns for forecasting function."
+                outputs.extend(
+                    [
+                        ColumnDefinition(
+                            arg_map.get("predict", "y") + "-lo",
+                            ColumnType.FLOAT,
+                            None,
+                            None,
+                        ),
+                        ColumnDefinition(
+                            arg_map.get("predict", "y") + "-hi",
+                            ColumnType.FLOAT,
+                            None,
+                            None,
+                        ),
+                    ]
+                )
             else:
                 raise BinderError(
                     f"Unsupported type of function: {node.function_type}."
@@ -519,12 +1140,29 @@ class StatementBinder:
             predict_columns = set([arg_map["predict"]])
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             inputs, outputs = [], []
             if string_comparison_case_insensitive(node.function_type, "ludwig"):
                 assert (
@@ -541,8 +1179,11 @@ class StatementBinder:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 =======
@@ -565,18 +1206,46 @@ class StatementBinder:
 <<<<<<< HEAD
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 <<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+            inputs, outputs = [], []
+            if string_comparison_case_insensitive(node.function_type, "ludwig"):
+                assert (
+                    "predict" in arg_map
+                ), f"Creating {node.function_type} functions expects 'predict' metadata."
+                # We only support a single predict column for now
+                predict_columns = set([arg_map["predict"]])
+                for column in all_column_list:
+                    if column.name in predict_columns:
+                        column.name = column.name + "_predictions"
+                        outputs.append(column)
+                    else:
+<<<<<<< HEAD
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
                         column.name = column.name
                     outputs.append(column)
                 else:
@@ -584,20 +1253,31 @@ class StatementBinder:
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
                         inputs.append(column)
             elif string_comparison_case_insensitive(node.function_type, "sklearn"):
                 assert (
@@ -635,6 +1315,7 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
@@ -644,6 +1325,8 @@ class StatementBinder:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 =======
@@ -674,15 +1357,199 @@ class StatementBinder:
                         outputs.append(column)
                     else:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+            inputs, outputs = [], []
+            if string_comparison_case_insensitive(node.function_type, "ludwig"):
+                assert (
+                    "predict" in arg_map
+                ), f"Creating {node.function_type} functions expects 'predict' metadata."
+                # We only support a single predict column for now
+                predict_columns = set([arg_map["predict"]])
+                for column in all_column_list:
+                    if column.name in predict_columns:
+                        column.name = column.name + "_predictions"
+                        outputs.append(column)
+                    else:
+<<<<<<< HEAD
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
                         column.name = column.name
                     outputs.append(column)
                 else:
                     inputs.append(column)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+                        inputs.append(column)
+            elif string_comparison_case_insensitive(node.function_type, "sklearn"):
+                assert (
+                    "predict" in arg_map
+                ), f"Creating {node.function_type} functions expects 'predict' metadata."
+                # We only support a single predict column for now
+                predict_columns = set([arg_map["predict"]])
+                for column in all_column_list:
+                    if column.name in predict_columns:
+                        outputs.append(column)
+                    else:
+                        inputs.append(column)
+            elif string_comparison_case_insensitive(node.function_type, "forecasting"):
+                # Forecasting models have only one input column which is horizon
+                inputs = [ColumnDefinition("horizon", ColumnType.INTEGER, None, None)]
+                # Currently, we only support univariate forecast which should have three output columns, unique_id, ds, and y.
+                # The y column is required. unique_id and ds will be auto generated if not found.
+                required_columns = set([arg_map.get("predict", "y")])
+                for column in all_column_list:
+                    if column.name == arg_map.get("id", "unique_id"):
+                        outputs.append(column)
+                    elif column.name == arg_map.get("time", "ds"):
+                        outputs.append(column)
+                    elif column.name == arg_map.get("predict", "y"):
+                        outputs.append(column)
+                        required_columns.remove(column.name)
+                assert (
+                    len(required_columns) == 0
+                ), f"Missing required {required_columns} columns for forecasting function."
+            else:
+                raise BinderError(
+                    f"Unsupported type of function: {node.function_type}."
+                )
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+            assert (
+                "predict" in arg_map
+            ), f"Creating {node.function_type} functions expects 'predict' metadata."
+            # We only support a single predict column for now
+            predict_columns = set([arg_map["predict"]])
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+            inputs, outputs = [], []
+            if string_comparison_case_insensitive(node.function_type, "ludwig"):
+                assert (
+                    "predict" in arg_map
+                ), f"Creating {node.function_type} functions expects 'predict' metadata."
+                # We only support a single predict column for now
+                predict_columns = set([arg_map["predict"]])
+                for column in all_column_list:
+                    if column.name in predict_columns:
+                        column.name = column.name + "_predictions"
+                        outputs.append(column)
+                    else:
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+            inputs, outputs = [], []
+            if string_comparison_case_insensitive(node.function_type, "ludwig"):
+                assert (
+                    "predict" in arg_map
+                ), f"Creating {node.function_type} functions expects 'predict' metadata."
+                # We only support a single predict column for now
+                predict_columns = set([arg_map["predict"]])
+                for column in all_column_list:
+                    if column.name in predict_columns:
+                        column.name = column.name + "_predictions"
+                        outputs.append(column)
+                    else:
+<<<<<<< HEAD
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+                        column.name = column.name
+                    outputs.append(column)
+                else:
+                    inputs.append(column)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
                         inputs.append(column)
             elif string_comparison_case_insensitive(node.function_type, "sklearn"):
                 assert (
@@ -718,20 +1585,50 @@ class StatementBinder:
                 )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
@@ -766,11 +1663,19 @@ class StatementBinder:
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -811,14 +1716,20 @@ class StatementBinder:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             assert (
                 len(node.inputs) == 0 and len(node.outputs) == 0
             ), f"{node.function_type} functions' input and output are auto assigned"
             node.inputs, node.outputs = inputs, outputs
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -834,6 +1745,40 @@ class StatementBinder:
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
@@ -845,6 +1790,7 @@ class StatementBinder:
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -858,12 +1804,53 @@ class StatementBinder:
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     @bind.register(CreateIndexStatement)
     def _bind_create_index_statement(self, node: CreateIndexStatement):
         self.bind(node.table_ref)
@@ -914,30 +1901,89 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -945,9 +1991,18 @@ class StatementBinder:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -956,6 +2011,18 @@ class StatementBinder:
 >>>>>>> eva-source
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
@@ -964,11 +2031,16 @@ class StatementBinder:
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -976,9 +2048,53 @@ class StatementBinder:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     @bind.register(SelectStatement)
     def _bind_select_statement(self, node: SelectStatement):
         if node.from_table:
@@ -1111,6 +2227,11 @@ class StatementBinder:
 
     @bind.register(FunctionExpression)
     def _bind_func_expr(self, node: FunctionExpression):
+<<<<<<< HEAD
+        from evadb.binder.function_expression_binder import bind_func_expr
+
+        bind_func_expr(self, node)
+=======
         # handle the special case of "extract_object"
         if node.name.upper() == str(FunctionType.EXTRACT_OBJECT):
             handle_bind_extract_object_function(node, self)
@@ -1141,6 +2262,7 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1151,10 +2273,26 @@ class StatementBinder:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1163,10 +2301,13 @@ class StatementBinder:
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
@@ -1174,6 +2315,7 @@ class StatementBinder:
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -1187,12 +2329,87 @@ class StatementBinder:
 >>>>>>> eva-source
 =======
 =======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
+=======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         if string_comparison_case_insensitive(function_obj.type, "HuggingFace"):
             node.function = assign_hf_function(function_obj)
 
@@ -1201,15 +2418,29 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
         if function_obj.type == "HuggingFace":
             node.function = assign_hf_function(function_obj)
@@ -1221,6 +2452,7 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
@@ -1228,6 +2460,39 @@ class StatementBinder:
 <<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -1238,7 +2503,10 @@ class StatementBinder:
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
@@ -1255,29 +2523,66 @@ class StatementBinder:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1285,9 +2590,18 @@ class StatementBinder:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1295,15 +2609,66 @@ class StatementBinder:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             function_class = load_function_class_from_file(
                 function_obj.impl_file_path,
                 "GenericLudwigModel",
@@ -1373,3 +2738,4 @@ class StatementBinder:
             node.projection_columns = [obj.name.lower() for obj in output_objs]
 
         resolve_alias_table_value_expression(node)
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))

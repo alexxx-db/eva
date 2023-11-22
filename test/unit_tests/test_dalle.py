@@ -16,13 +16,35 @@
 import unittest
 from io import BytesIO
 from test.util import get_evadb_for_testing
+<<<<<<< HEAD
+from typing import List, Optional
+from unittest.mock import MagicMock, patch
+
+from PIL import Image as PILImage
+from pydantic import AnyUrl, BaseModel
+=======
 from unittest.mock import MagicMock, patch
 
 from PIL import Image
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 
 from evadb.server.command_handler import execute_query_fetch_all
 
 
+<<<<<<< HEAD
+class Image(BaseModel):
+    b64_json: Optional[str]  # Replace with the actual type if different
+    revised_prompt: Optional[str]  # Replace with the actual type if different
+    url: AnyUrl
+
+
+class ImagesResponse(BaseModel):
+    created: Optional[int]  # Replace with the actual type if different
+    data: List[Image]
+
+
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 class DallEFunctionTest(unittest.TestCase):
     def setUp(self) -> None:
         self.evadb = get_evadb_for_testing()
@@ -41,12 +63,21 @@ class DallEFunctionTest(unittest.TestCase):
     def tearDown(self) -> None:
         execute_query_fetch_all(self.evadb, "DROP TABLE IF EXISTS ImageGen;")
 
+<<<<<<< HEAD
+    @patch.dict("os.environ", {"OPENAI_API_KEY": "mocked_openai_key"})
+    @patch("requests.get")
+    @patch("openai.OpenAI")
+    def test_dalle_image_generation(self, mock_openai, mock_requests_get):
+        # Generate a 1x1 white pixel PNG image in memory
+        img = PILImage.new("RGB", (1, 1), color="white")
+=======
     @patch.dict("os.environ", {"OPENAI_KEY": "mocked_openai_key"})
     @patch("requests.get")
     @patch("openai.Image.create", return_value={"data": [{"url": "mocked_url"}]})
     def test_dalle_image_generation(self, mock_openai_create, mock_requests_get):
         # Generate a 1x1 white pixel PNG image in memory
         img = Image.new("RGB", (1, 1), color="white")
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
         img_byte_array = BytesIO()
         img.save(img_byte_array, format="PNG")
         mock_image_content = img_byte_array.getvalue()
@@ -55,6 +86,21 @@ class DallEFunctionTest(unittest.TestCase):
         mock_response.content = mock_image_content
         mock_requests_get.return_value = mock_response
 
+<<<<<<< HEAD
+        # Set up the mock for OpenAI instance
+        mock_openai_instance = mock_openai.return_value
+        mock_openai_instance.images.generate.return_value = ImagesResponse(
+            data=[
+                Image(
+                    b64_json=None,
+                    revised_prompt=None,
+                    url="https://images.openai.com/1234.png",
+                )
+            ]
+        )
+
+=======
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
         function_name = "DallE"
 
         execute_query_fetch_all(self.evadb, f"DROP FUNCTION IF EXISTS {function_name};")
@@ -67,6 +113,10 @@ class DallEFunctionTest(unittest.TestCase):
         gpt_query = f"SELECT {function_name}(prompt) FROM ImageGen;"
         execute_query_fetch_all(self.evadb, gpt_query)
 
+<<<<<<< HEAD
+        mock_openai_instance.images.generate.assert_called_once_with(
+=======
         mock_openai_create.assert_called_once_with(
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
             prompt="a surreal painting of a cat", n=1, size="1024x1024"
         )

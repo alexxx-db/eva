@@ -16,6 +16,21 @@ import glob
 import os
 from pathlib import Path
 from typing import TYPE_CHECKING, Generator, List, Union
+<<<<<<< HEAD
+
+from evadb.catalog.catalog_utils import xform_column_definitions_to_catalog_entries
+from evadb.catalog.models.utils import TableCatalogEntry
+from evadb.parser.create_statement import ColumnDefinition
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+
+from evadb.catalog.catalog_utils import xform_column_definitions_to_catalog_entries
+from evadb.catalog.models.utils import TableCatalogEntry
+from evadb.parser.create_statement import ColumnDefinition
+
+from evadb.catalog.catalog_utils import xform_column_definitions_to_catalog_entries
+from evadb.catalog.models.utils import TableCatalogEntry
+from evadb.parser.create_statement import ColumnDefinition
 
 from evadb.catalog.catalog_utils import xform_column_definitions_to_catalog_entries
 from evadb.catalog.models.utils import TableCatalogEntry
@@ -74,6 +89,16 @@ def apply_project(batch: Batch, project_list: List[AbstractExpression]):
         batch = Batch.merge_column_wise(batches)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
         # persist stats of function expression
         for expr in project_list:
@@ -86,6 +111,17 @@ def apply_project(batch: Batch, project_list: List[AbstractExpression]):
                         func_expr._stats.prev_cost,
                     )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
     return batch
 
 
@@ -96,6 +132,16 @@ def apply_predicate(batch: Batch, predicate: AbstractExpression) -> Batch:
         batch.reset_index()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
         # persist stats of function expression
         for func_expr in predicate.find_all(FunctionExpression):
@@ -105,6 +151,17 @@ def apply_predicate(batch: Batch, predicate: AbstractExpression) -> Batch:
                     function_id, func_expr.function_obj.name, func_expr._stats.prev_cost
                 )
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
     return batch
 
 
@@ -183,7 +240,7 @@ def validate_media(file_path: Path, media_type: FileFormatType) -> bool:
 
 
 def handle_vector_store_params(
-    vector_store_type: VectorStoreType, index_path: str
+    vector_store_type: VectorStoreType, index_path: str, catalog
 ) -> dict:
     """Handle vector store parameters based on the vector store type and index path.
 
@@ -205,7 +262,29 @@ def handle_vector_store_params(
     elif vector_store_type == VectorStoreType.CHROMADB:
         return {"index_path": str(Path(index_path).parent)}
     elif vector_store_type == VectorStoreType.PINECONE:
+<<<<<<< HEAD
+        # add the required API_KEYS
+        return {
+            "PINECONE_API_KEY": catalog().get_configuration_catalog_value(
+                "PINECONE_API_KEY"
+            ),
+            "PINECONE_ENV": catalog().get_configuration_catalog_value("PINECONE_ENV"),
+        }
+    elif vector_store_type == VectorStoreType.MILVUS:
+        return {
+            "MILVUS_URI": catalog().get_configuration_catalog_value("MILVUS_URI"),
+            "MILVUS_USER": catalog().get_configuration_catalog_value("MILVUS_USER"),
+            "MILVUS_PASSWORD": catalog().get_configuration_catalog_value(
+                "MILVUS_PASSWORD"
+            ),
+            "MILVUS_DB_NAME": catalog().get_configuration_catalog_value(
+                "MILVUS_DB_NAME"
+            ),
+            "MILVUS_TOKEN": catalog().get_configuration_catalog_value("MILVUS_TOKEN"),
+        }
+=======
         return {}
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     else:
         raise ValueError("Unsupported vector store type: {}".format(vector_store_type))
 
@@ -215,25 +294,62 @@ def create_table_catalog_entry_for_native_table(
 ):
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
 =======
     column_catalog_entires = xform_column_definitions_to_catalog_entries(column_list)
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
     column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+    column_catalog_entries = xform_column_definitions_to_catalog_entries(column_list)
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
     # Assemble table.
     table_catalog_entry = TableCatalogEntry(
@@ -242,25 +358,62 @@ def create_table_catalog_entry_for_native_table(
         table_type=TableType.NATIVE_DATA,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         columns=column_catalog_entries,
 =======
         columns=column_catalog_entires,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
         columns=column_catalog_entries,
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+        columns=column_catalog_entries,
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         database_name=table_info.database_name,
     )
     return table_catalog_entry

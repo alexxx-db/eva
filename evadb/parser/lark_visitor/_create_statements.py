@@ -22,6 +22,7 @@ from evadb.parser.create_statement import (
     ColConstraintInfo,
     ColumnDefinition,
     CreateDatabaseStatement,
+    CreateJobStatement,
     CreateTableStatement,
 )
 from evadb.parser.table_ref import TableRef
@@ -261,23 +262,65 @@ class CreateIndex:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         # Projection list of child of index creation.
         project_expr_list = []
 
@@ -286,12 +329,29 @@ class CreateIndex:
             project_expr_list += [index_elem]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
         # Projection list of child of index creation.
@@ -309,8 +369,16 @@ class CreateIndex:
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -332,7 +400,58 @@ class CreateIndex:
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+        # Projection list of child of index creation.
+        project_expr_list = []
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+        # Parse either a single function call or column list.
+        if not isinstance(index_elem, list):
+<<<<<<< HEAD
+            function = index_elem
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+            project_expr_list += [index_elem]
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+        # Projection list of child of index creation.
+        project_expr_list = []
+
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+        # Parse either a single function call or column list.
+        if not isinstance(index_elem, list):
+<<<<<<< HEAD
+            function = index_elem
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+=======
+            project_expr_list += [index_elem]
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
             # Traverse to the tuple value expression.
             while not isinstance(index_elem, TupleValueExpression):
@@ -357,7 +476,23 @@ class CreateIndex:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 <<<<<<< HEAD
@@ -379,17 +514,72 @@ class CreateIndex:
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             index_name,
             if_not_exists,
             table_ref,
@@ -400,20 +590,54 @@ class CreateIndex:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             index_name, if_not_exists, table_ref, col_list, vector_store_type, function
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> eva-master
@@ -435,6 +659,15 @@ class CreateIndex:
 =======
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> georgia-tech-db-main
             index_name,
             if_not_exists,
             table_ref,
@@ -446,6 +679,7 @@ class CreateIndex:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> eva-master
@@ -455,18 +689,36 @@ class CreateIndex:
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -474,11 +726,20 @@ class CreateIndex:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
             index_name, table_ref, col_list, vector_store_type, function
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -488,9 +749,21 @@ class CreateIndex:
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
             index_name, if_not_exists, table_ref, col_list, vector_store_type, function
 =======
             index_name, table_ref, col_list, vector_store_type, function
@@ -499,6 +772,7 @@ class CreateIndex:
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -506,6 +780,10 @@ class CreateIndex:
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 =======
             index_name,
@@ -518,9 +796,73 @@ class CreateIndex:
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+            index_name, if_not_exists, table_ref, col_list, vector_store_type, function
+=======
+            index_name, table_ref, col_list, vector_store_type, function
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+=======
+            index_name,
+            if_not_exists,
+            table_ref,
+            col_list,
+            vector_store_type,
+            project_expr_list,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         )
 
     def vector_store_type(self, tree):
@@ -537,6 +879,11 @@ class CreateIndex:
             vector_store_type = VectorStoreType.PGVECTOR
         elif str.upper(token) == "CHROMADB":
             vector_store_type = VectorStoreType.CHROMADB
+<<<<<<< HEAD
+        elif str.upper(token) == "MILVUS":
+            vector_store_type = VectorStoreType.MILVUS
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         return vector_store_type
 
 
@@ -572,3 +919,49 @@ class CreateDatabase:
                     param_dict = self.visit(child)
 
         return engine, param_dict
+
+
+class CreateJob:
+    def create_job(self, tree):
+        job_name = None
+        queries = []
+        start_time = None
+        end_time = None
+        repeat_interval = None
+        repeat_period = None
+        if_not_exists = False
+        for child in tree.children:
+            if isinstance(child, Tree):
+                if child.data == "if_not_exists":
+                    if_not_exists = True
+                if child.data == "uid":
+                    job_name = self.visit(child)
+                if child.data == "job_sql_statements":
+                    queries = self.visit(child)
+                elif child.data == "start_time":
+                    start_time = self.visit(child)
+                elif child.data == "end_time":
+                    end_time = self.visit(child)
+                elif child.data == "repeat_clause":
+                    repeat_interval, repeat_period = self.visit(child)
+
+        create_job = CreateJobStatement(
+            job_name,
+            queries,
+            if_not_exists,
+            start_time,
+            end_time,
+            repeat_interval,
+            repeat_period,
+        )
+
+        return create_job
+
+    def start_time(self, tree):
+        return self.visit(tree.children[1]).value
+
+    def end_time(self, tree):
+        return self.visit(tree.children[1]).value
+
+    def repeat_clause(self, tree):
+        return self.visit(tree.children[1]), self.visit(tree.children[2])

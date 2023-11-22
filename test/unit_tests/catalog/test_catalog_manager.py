@@ -44,7 +44,7 @@ class CatalogManagerTests(unittest.TestCase):
 
     @mock.patch("evadb.catalog.catalog_manager.init_db")
     def test_catalog_bootstrap(self, mocked_db):
-        x = CatalogManager(MagicMock(), MagicMock())
+        x = CatalogManager(MagicMock())
         x._bootstrap_catalog()
         mocked_db.assert_called()
 
@@ -52,7 +52,7 @@ class CatalogManagerTests(unittest.TestCase):
         "evadb.catalog.catalog_manager.CatalogManager.create_and_insert_table_catalog_entry"
     )
     def test_create_multimedia_table_catalog_entry(self, mock):
-        x = CatalogManager(MagicMock(), MagicMock())
+        x = CatalogManager(MagicMock())
         name = "myvideo"
         x.create_and_insert_multimedia_table_catalog_entry(
             name=name, format_type=FileFormatType.VIDEO
@@ -71,7 +71,7 @@ class CatalogManagerTests(unittest.TestCase):
     def test_insert_table_catalog_entry_should_create_table_and_columns(
         self, ds_mock, initdb_mock
     ):
-        catalog = CatalogManager(MagicMock(), MagicMock())
+        catalog = CatalogManager(MagicMock())
         file_url = "file1"
         table_name = "name"
 
@@ -88,7 +88,7 @@ class CatalogManagerTests(unittest.TestCase):
     @mock.patch("evadb.catalog.catalog_manager.init_db")
     @mock.patch("evadb.catalog.catalog_manager.TableCatalogService")
     def test_get_table_catalog_entry_when_table_exists(self, ds_mock, initdb_mock):
-        catalog = CatalogManager(MagicMock(), MagicMock())
+        catalog = CatalogManager(MagicMock())
         table_name = "name"
         database_name = "database"
         row_id = 1
@@ -110,7 +110,7 @@ class CatalogManagerTests(unittest.TestCase):
     def test_get_table_catalog_entry_when_table_doesnot_exists(
         self, dcs_mock, ds_mock, initdb_mock
     ):
-        catalog = CatalogManager(MagicMock(), MagicMock())
+        catalog = CatalogManager(MagicMock())
         table_name = "name"
 
         database_name = "database"
@@ -132,7 +132,11 @@ class CatalogManagerTests(unittest.TestCase):
     def test_insert_function(
         self, checksum_mock, functionmetadata_mock, functionio_mock, function_mock
     ):
+<<<<<<< HEAD
+        catalog = CatalogManager(MagicMock())
+=======
         catalog = CatalogManager(MagicMock(), MagicMock())
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         function_io_list = [MagicMock()]
         function_metadata_list = [MagicMock()]
         actual = catalog.insert_function_catalog_entry(
@@ -144,12 +148,28 @@ class CatalogManagerTests(unittest.TestCase):
         )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         function_mock.return_value.insert_entry.assert_called_with(
             "function",
             "sample.py",
@@ -166,8 +186,18 @@ class CatalogManagerTests(unittest.TestCase):
             "function", "sample.py", "classification", checksum_mock.return_value
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
         function_mock.return_value.insert_entry.assert_called_with(
             "function",
@@ -177,20 +207,60 @@ class CatalogManagerTests(unittest.TestCase):
             function_io_list,
             function_metadata_list,
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         )
         checksum_mock.assert_called_with("sample.py")
         self.assertEqual(actual, function_mock.return_value.insert_entry.return_value)
 
     @mock.patch("evadb.catalog.catalog_manager.FunctionCatalogService")
     def test_get_function_catalog_entry_by_name(self, function_mock):
+<<<<<<< HEAD
+        catalog = CatalogManager(MagicMock())
+=======
         catalog = CatalogManager(MagicMock(), MagicMock())
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         actual = catalog.get_function_catalog_entry_by_name("name")
         function_mock.return_value.get_entry_by_name.assert_called_with("name")
         self.assertEqual(
             actual, function_mock.return_value.get_entry_by_name.return_value
+<<<<<<< HEAD
+        )
+
+    @mock.patch("evadb.catalog.catalog_manager.FunctionCatalogService")
+    def test_delete_function(self, function_mock):
+        CatalogManager(MagicMock()).delete_function_catalog_entry_by_name("name")
+        function_mock.return_value.delete_entry_by_name.assert_called_with("name")
+
+    @mock.patch("evadb.catalog.catalog_manager.FunctionIOCatalogService")
+    def test_get_function_outputs(self, function_mock):
+        mock_func = function_mock.return_value.get_output_entries_by_function_id
+        function_obj = MagicMock(spec=FunctionCatalogEntry)
+        CatalogManager(MagicMock()).get_function_io_catalog_output_entries(function_obj)
+        mock_func.assert_called_once_with(function_obj.row_id)
+
+    @mock.patch("evadb.catalog.catalog_manager.FunctionIOCatalogService")
+    def test_get_function_inputs(self, function_mock):
+        mock_func = function_mock.return_value.get_input_entries_by_function_id
+        function_obj = MagicMock(spec=FunctionCatalogEntry)
+        CatalogManager(MagicMock()).get_function_io_catalog_input_entries(function_obj)
+=======
         )
 
     @mock.patch("evadb.catalog.catalog_manager.FunctionCatalogService")
@@ -216,4 +286,5 @@ class CatalogManagerTests(unittest.TestCase):
         CatalogManager(MagicMock(), MagicMock()).get_function_io_catalog_input_entries(
             function_obj
         )
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         mock_func.assert_called_once_with(function_obj.row_id)

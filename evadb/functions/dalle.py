@@ -22,7 +22,10 @@ import requests
 from PIL import Image
 
 from evadb.catalog.catalog_type import NdArrayType
+<<<<<<< HEAD
+=======
 from evadb.configuration.configuration_manager import ConfigurationManager
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 from evadb.functions.abstract.abstract_function import AbstractFunction
 from evadb.functions.decorators.decorators import forward
 from evadb.functions.decorators.io_descriptors.data_types import PandasDataframe
@@ -34,8 +37,13 @@ class DallEFunction(AbstractFunction):
     def name(self) -> str:
         return "DallE"
 
+<<<<<<< HEAD
+    def setup(self, openai_api_key="") -> None:
+        self.openai_api_key = openai_api_key
+=======
     def setup(self) -> None:
         pass
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 
     @forward(
         input_signatures=[
@@ -57,6 +65,18 @@ class DallEFunction(AbstractFunction):
     )
     def forward(self, text_df):
         try_to_import_openai()
+<<<<<<< HEAD
+        from openai import OpenAI
+
+        api_key = self.openai_api_key
+        if len(self.openai_api_key) == 0:
+            api_key = os.environ.get("OPENAI_API_KEY", "")
+        assert (
+            len(api_key) != 0
+        ), "Please set your OpenAI API key using SET OPENAI_API_KEY = 'sk-' or environment variable (OPENAI_API_KEY)"
+
+        client = OpenAI(api_key=api_key)
+=======
         import openai
 
         # Register API key, try configuration manager first
@@ -66,24 +86,37 @@ class DallEFunction(AbstractFunction):
         if openai.api_key is None or len(openai.api_key) == 0:
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
         if openai.api_key is None or len(openai.api_key) == 0:
 =======
         if len(openai.api_key) == 0:
 >>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 >>>>>>> eva-source
+=======
+        if len(openai.api_key) == 0:
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
+>>>>>>> georgia-tech-db-main
             openai.api_key = os.environ.get("OPENAI_KEY", "")
         assert (
             len(openai.api_key) != 0
         ), "Please set your OpenAI API key in evadb.yml file (third_party, open_api_key) or environment variable (OPENAI_KEY)"
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
 
         def generate_image(text_df: PandasDataframe):
             results = []
             queries = text_df[text_df.columns[0]]
             for query in queries:
+<<<<<<< HEAD
+                response = client.images.generate(prompt=query, n=1, size="1024x1024")
+
+                # Download the image from the link
+                image_response = requests.get(response.data[0].url)
+=======
                 response = openai.Image.create(prompt=query, n=1, size="1024x1024")
 
                 # Download the image from the link
                 image_response = requests.get(response["data"][0]["url"])
+>>>>>>> 2b924b76 (Add stable diffusion integration (#1240))
                 image = Image.open(BytesIO(image_response.content))
 
                 # Convert the image to an array format suitable for the DataFrame

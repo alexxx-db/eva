@@ -13,7 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from evadb.parser.create_function_statement import CreateFunctionStatement
+<<<<<<< HEAD
+from evadb.parser.create_statement import (
+    CreateDatabaseStatement,
+    CreateJobStatement,
+    CreateTableStatement,
+)
+=======
 from evadb.parser.create_statement import CreateDatabaseStatement, CreateTableStatement
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.parser.drop_object_statement import DropObjectStatement
 from evadb.parser.explain_statement import ExplainStatement
 from evadb.parser.insert_statement import InsertTableStatement
@@ -30,6 +38,10 @@ from evadb.parser.use_statement import UseStatement
 # directly to the executor.
 SKIP_BINDER_AND_OPTIMIZER_STATEMENTS = (
     CreateDatabaseStatement,
+<<<<<<< HEAD
+    CreateJobStatement,
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     UseStatement,
     SetStatement,
 )

@@ -3,10 +3,14 @@
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 >>>>>>> eva-source
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> georgia-tech-db-main
 
 Functions
 =========
@@ -29,10 +33,14 @@ SHOW FUNCTIONS
 --------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 >>>>>>> eva-source
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> georgia-tech-db-main
 
 Here is a list of built-in user-defined functions in EvaDB.
 
@@ -68,10 +76,14 @@ SELECT WITH MULTIPLE FUNCTIONS
 ------------------------------
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7e60bf69 (docs: updated sql statement list)
 >>>>>>> eva-source
+=======
+>>>>>>> 7e60bf69 (docs: updated sql statement list)
+>>>>>>> georgia-tech-db-main
 
 Here is a query that illustrates how to use multiple functions in a single query.
 

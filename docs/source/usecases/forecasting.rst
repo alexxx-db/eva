@@ -9,9 +9,16 @@ Home Sale Forecasting
     <table align="left">
     <td>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
+>>>>>>> georgia-tech-db-main
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
     </td>
     <td>
@@ -20,9 +27,30 @@ Home Sale Forecasting
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
         <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+=======
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" /> Run on Google Colab</a>
+<<<<<<< HEAD
+=======
+        <a target="_blank" href="https://colab.research.google.com/github/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" width="24px" /> Run on Google Colab</a>
+>>>>>>> fbfc3ace (docs: updates)
+    </td>
+    <td>
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" width="24px" /> View source on GitHub</a>
+    </td>
+    <td>
+<<<<<<< HEAD
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
+>>>>>>> 591a8656 (updates)
+=======
+        <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" width="24px" /> Download notebook</a>
+>>>>>>> fbfc3ace (docs: updates)
+=======
+>>>>>>> georgia-tech-db-main
     </td>
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/blob/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" /> View source on GitHub</a>
@@ -30,7 +58,11 @@ Home Sale Forecasting
     <td>
         <a target="_blank" href="https://github.com/georgia-tech-db/eva/raw/staging/tutorials/16-homesale-forecasting.ipynb"><img src="https://www.tensorflow.org/images/download_logo_32px.png" /> Download notebook</a>
 >>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> c317ee2f (updates)
+>>>>>>> georgia-tech-db-main
     </td>
     </table><br><br>
     </embed>
@@ -101,6 +133,7 @@ This query returns the trained model:
 .. note::
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
 =======
 <<<<<<< HEAD
@@ -113,6 +146,31 @@ This query returns the trained model:
    The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
 >>>>>>> 5b27053e (ran spellchecker)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+   The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
+=======
+   The :ref:`forecast` page lists all the configurable paramters for the forecasting model.
+>>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+   The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> c317ee2f (updates)
+=======
+=======
+   The :ref:`forecast` page lists all the configurable parameters for the forecasting model.
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+>>>>>>> georgia-tech-db-main
 
 In the ``home_sales`` dataset, we have two different types of properties -- houses and units, and price gap between them is large. To get better forecasts,
 we specify the ``propertytype`` column as the ``ID`` of the time series data.
@@ -163,6 +221,7 @@ Here is the query's output:
    
 .. include:: ../shared/footer.rst
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .. include:: ../shared/designs/design11.rst
 =======
@@ -173,7 +232,32 @@ Here is the query's output:
 =======
 >>>>>>> 591a8656 (updates)
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
+
+.. include:: ../shared/designs/design11.rst
+=======
+>>>>>>> 591a8656 (updates)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
+>>>>>>> georgia-tech-db-main
+=======
 
 .. include:: ../shared/designs/design11.rst
 >>>>>>> e867f37e (docs: updated images)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c317ee2f (updates)
+=======
+>>>>>>> 5678c9a3 (docs: updated images)
+>>>>>>> georgia-tech-db-main

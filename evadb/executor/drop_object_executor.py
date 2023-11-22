@@ -45,6 +45,7 @@ class DropObjectExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,11 +54,38 @@ class DropObjectExecutor(AbstractExecutor):
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+        elif self.node.object_type == ObjectType.DATABASE:
+            yield self._handle_drop_database(self.node.name, self.node.if_exists)
+
+        elif self.node.object_type == ObjectType.JOB:
+            yield self._handle_drop_job(self.node.name, self.node.if_exists)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 
         elif self.node.object_type == ObjectType.DATABASE:
             yield self._handle_drop_database(self.node.name, self.node.if_exists)
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> eva-master
 =======
@@ -65,6 +93,41 @@ class DropObjectExecutor(AbstractExecutor):
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+
+        elif self.node.object_type == ObjectType.DATABASE:
+            yield self._handle_drop_database(self.node.name, self.node.if_exists)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+
+        elif self.node.object_type == ObjectType.DATABASE:
+            yield self._handle_drop_database(self.node.name, self.node.if_exists)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+
+        elif self.node.object_type == ObjectType.DATABASE:
+            yield self._handle_drop_database(self.node.name, self.node.if_exists)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
@@ -83,7 +146,10 @@ class DropObjectExecutor(AbstractExecutor):
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 
         elif self.node.object_type == ObjectType.DATABASE:
             yield self._handle_drop_database(self.node.name, self.node.if_exists)
@@ -172,7 +238,9 @@ class DropObjectExecutor(AbstractExecutor):
             index = VectorStoreFactory.init_vector_store(
                 index_obj.type,
                 index_obj.name,
-                **handle_vector_store_params(index_obj.type, index_obj.save_file_path),
+                **handle_vector_store_params(
+                    index_obj.type, index_obj.save_file_path, self.catalog
+                ),
             )
             assert (
                 index is not None
@@ -212,3 +280,27 @@ class DropObjectExecutor(AbstractExecutor):
                 index=[0],
             )
         )
+<<<<<<< HEAD
+
+    def _handle_drop_job(self, job_name: str, if_exists: bool):
+        job_catalog_entry = self.catalog().get_job_catalog_entry(job_name)
+        if not job_catalog_entry:
+            err_msg = f"Job {job_name} does not exist, therefore cannot be dropped."
+            if if_exists:
+                logger.warning(err_msg)
+                return Batch(pd.DataFrame([err_msg]))
+            else:
+                raise RuntimeError(err_msg)
+
+        logger.debug(f"Dropping Job {job_name}")
+
+        self.catalog().drop_job_catalog_entry(job_catalog_entry)
+
+        return Batch(
+            pd.DataFrame(
+                {f"Job {job_name} successfully dropped"},
+                index=[0],
+            )
+        )
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

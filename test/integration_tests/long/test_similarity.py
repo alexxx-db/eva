@@ -15,7 +15,16 @@
 import os
 import time
 import unittest
+<<<<<<< HEAD
+from test.markers import (
+    chromadb_skip_marker,
+    milvus_skip_marker,
+    pinecone_skip_marker,
+    qdrant_skip_marker,
+)
+=======
 from test.markers import chromadb_skip_marker, pinecone_skip_marker, qdrant_skip_marker
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from test.util import (
     create_sample_image,
     get_evadb_for_testing,
@@ -107,7 +116,7 @@ class SimilarityTests(unittest.TestCase):
 
             # Create an actual image dataset.
             img_save_path = os.path.join(
-                self.evadb.config.get_value("storage", "tmp_dir"),
+                self.evadb.catalog().get_configuration_catalog_value("tmp_dir"),
                 f"test_similar_img{i}.jpg",
             )
             try_to_import_cv2()
@@ -130,6 +139,16 @@ class SimilarityTests(unittest.TestCase):
         os.environ["PINECONE_API_KEY"] = "657e4fae-7208-4555-b0f2-9847dfa5b818"
         os.environ["PINECONE_ENV"] = "gcp-starter"
 
+<<<<<<< HEAD
+        self.original_milvus_uri = os.environ.get("MILVUS_URI")
+        self.original_milvus_db_name = os.environ.get("MILVUS_DB_NAME")
+
+        os.environ["MILVUS_URI"] = "http://localhost:19530"
+        # use default Milvus database for testing
+        os.environ["MILVUS_DB_NAME"] = "default"
+
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     def tearDown(self):
         shutdown_ray()
 
@@ -148,6 +167,17 @@ class SimilarityTests(unittest.TestCase):
             os.environ["PINECONE_ENV"] = self.original_pinecone_env
         else:
             del os.environ["PINECONE_ENV"]
+<<<<<<< HEAD
+        if self.original_milvus_uri:
+            os.environ["MILVUS_URI"] = self.original_milvus_uri
+        else:
+            del os.environ["MILVUS_URI"]
+        if self.original_milvus_db_name:
+            os.environ["MILVUS_DB_NAME"] = self.original_milvus_db_name
+        else:
+            del os.environ["MILVUS_DB_NAME"]
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
     def test_similarity_should_work_in_order(self):
         ###############################################
@@ -409,8 +439,52 @@ class SimilarityTests(unittest.TestCase):
             execute_query_fetch_all(self.evadb, drop_query)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    def _helper_for_auto_update_during_insertion_with_faiss(self, if_exists: bool):
+        for i, img_path in enumerate(self.img_path_list):
+            insert_query = (
+                f"INSERT INTO testIndexAutoUpdate (img_path) VALUES ('{img_path}')"
+            )
+            execute_query_fetch_all(self.evadb, insert_query)
+            if i == 0:
+                if_exists_str = "IF NOT EXISTS " if if_exists else ""
+                create_index_query = f"CREATE INDEX {if_exists_str}testIndex ON testIndexAutoUpdate(DummyFeatureExtractor(Open(img_path))) USING FAISS"
+                execute_query_fetch_all(self.evadb, create_index_query)
+
+        select_query = """SELECT _row_id FROM testIndexAutoUpdate
+                                ORDER BY Similarity(DummyFeatureExtractor(Open("{}")), DummyFeatureExtractor(Open(img_path)))
+                                LIMIT 1;""".format(
+            self.img_path
+        )
+        explain_batch = execute_query_fetch_all(self.evadb, f"EXPLAIN {select_query}")
+        self.assertTrue("VectorIndexScan" in explain_batch.frames[0][0])
+
+        res_batch = execute_query_fetch_all(self.evadb, select_query)
+        self.assertEqual(res_batch.frames["testindexautoupdate._row_id"][0], 5)
+
+    def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
+        create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"
+        drop_query = "DROP TABLE testIndexAutoUpdate"
+        execute_query_fetch_all(self.evadb, create_query)
+        self._helper_for_auto_update_during_insertion_with_faiss(False)
+        execute_query_fetch_all(self.evadb, drop_query)
+        execute_query_fetch_all(self.evadb, create_query)
+        self._helper_for_auto_update_during_insertion_with_faiss(True)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
     def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
         create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"
@@ -439,7 +513,10 @@ class SimilarityTests(unittest.TestCase):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 
     def test_index_auto_update_on_structured_table_during_insertion_with_faiss(self):
         create_query = "CREATE TABLE testIndexAutoUpdate (img_path TEXT(100))"
@@ -558,3 +635,36 @@ class SimilarityTests(unittest.TestCase):
 
             drop_index_query = "DROP INDEX testpineconeindeximagedataset;"
             execute_query_fetch_all(self.evadb, drop_index_query)
+<<<<<<< HEAD
+
+    @pytest.mark.skip(reason="Requires running local Milvus instance")
+    @milvus_skip_marker
+    def test_end_to_end_index_scan_should_work_correctly_on_image_dataset_milvus(
+        self,
+    ):
+        for _ in range(2):
+            create_index_query = """CREATE INDEX testMilvusIndexImageDataset
+                                    ON testSimilarityImageDataset (DummyFeatureExtractor(data))
+                                    USING MILVUS;"""
+            execute_query_fetch_all(self.evadb, create_index_query)
+
+            select_query = """SELECT _row_id FROM testSimilarityImageDataset
+                                ORDER BY Similarity(DummyFeatureExtractor(Open("{}")), DummyFeatureExtractor(data))
+                                LIMIT 1;""".format(
+                self.img_path
+            )
+            explain_batch = execute_query_fetch_all(
+                self.evadb, f"EXPLAIN {select_query}"
+            )
+            self.assertTrue("VectorIndexScan" in explain_batch.frames[0][0])
+
+            res_batch = execute_query_fetch_all(self.evadb, select_query)
+            self.assertEqual(
+                res_batch.frames["testsimilarityimagedataset._row_id"][0], 5
+            )
+
+            # Cleanup
+            drop_query = "DROP INDEX testMilvusIndexImageDataset"
+            execute_query_fetch_all(self.evadb, drop_query)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)

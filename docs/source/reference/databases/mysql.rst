@@ -9,9 +9,30 @@ Dependency
 * mysql-connector-python
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> a9ef5071 (docs: updates)
+=======
+=======
+
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 Parameters
 ----------
 
@@ -24,11 +45,35 @@ Required:
 * `database` is the database name.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 .. warning:: 
 
      Provide the parameters of an already running ``MySQL`` server. EvaDB only connects to an existing ``MySQL`` database.
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.. warning:: 
+
+     Provide the parameters of an already running ``MySQL`` server. EvaDB only connects to an existing ``MySQL`` database.
+>>>>>>> a9ef5071 (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 
 Create Connection
 -----------------

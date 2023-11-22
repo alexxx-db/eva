@@ -15,7 +15,10 @@
 import os
 from typing import List
 
+<<<<<<< HEAD
+=======
 from evadb.configuration.configuration_manager import ConfigurationManager
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.third_party.vector_stores.types import (
     FeaturePayload,
     VectorIndexQuery,
@@ -30,34 +33,53 @@ _pinecone_init_done = False
 
 
 class PineconeVectorStore(VectorStore):
+<<<<<<< HEAD
+    def __init__(self, index_name: str, **kwargs) -> None:
+=======
     def __init__(self, index_name: str) -> None:
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         try_to_import_pinecone_client()
         global _pinecone_init_done
         # pinecone only allows index names with lower alpha-numeric characters and '-'
         self._index_name = index_name.strip().lower()
 
         # Get the API key.
+<<<<<<< HEAD
+        self._api_key = kwargs.get("PINECONE_API_KEY")
+=======
         self._api_key = ConfigurationManager().get_value(
             "third_party", "PINECONE_API_KEY"
         )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
         if not self._api_key:
             self._api_key = os.environ.get("PINECONE_API_KEY")
 
         assert (
             self._api_key
+<<<<<<< HEAD
+        ), "Please set your `PINECONE_API_KEY` using set command or environment variable (PINECONE_KEY). It can be found at Pinecone Dashboard > API Keys > Value"
+
+        # Get the environment name.
+        self._environment = kwargs.get("PINECONE_ENV")
+=======
         ), "Please set your Pinecone API key in evadb.yml file (third_party, pinecone_api_key) or environment variable (PINECONE_KEY). It can be found at Pinecone Dashboard > API Keys > Value"
 
         # Get the environment name.
         self._environment = ConfigurationManager().get_value(
             "third_party", "PINECONE_ENV"
         )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
         if not self._environment:
             self._environment = os.environ.get("PINECONE_ENV")
 
         assert (
             self._environment
+<<<<<<< HEAD
+        ), "Please set your `PINECONE_ENV` or environment variable (PINECONE_ENV). It can be found Pinecone Dashboard > API Keys > Environment."
+=======
         ), "Please set the Pinecone environment key in evadb.yml file (third_party, pinecone_env) or environment variable (PINECONE_ENV). It can be found Pinecone Dashboard > API Keys > Environment."
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 
         if not _pinecone_init_done:
             # Initialize pinecone.

@@ -24,6 +24,14 @@ class Show:
         token = tree.children[1]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         if isinstance(token, str) and str.upper(token) == "FUNCTIONS":
             return ShowStatement(show_type=ShowType.FUNCTIONS)
         elif isinstance(token, str) and str.upper(token) == "TABLES":
@@ -35,5 +43,23 @@ class Show:
             return ShowStatement(show_type=ShowType.TABLES)
         elif isinstance(token, str) and str.upper(token) == "DATABASES":
             return ShowStatement(show_type=ShowType.DATABASES)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+        if isinstance(token, str) and str.upper(token) == "FUNCTIONS":
+            return ShowStatement(show_type=ShowType.FUNCTIONS)
+        elif isinstance(token, str) and str.upper(token) == "TABLES":
+=======
+        if str.upper(token) == "FUNCTIONS":
+            return ShowStatement(show_type=ShowType.FUNCTIONS)
+        elif str.upper(token) == "TABLES":
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+            return ShowStatement(show_type=ShowType.TABLES)
+<<<<<<< HEAD
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+        elif isinstance(token, str) and str.upper(token) == "DATABASES":
+            return ShowStatement(show_type=ShowType.DATABASES)
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
         elif token is not None:
             return ShowStatement(show_type=ShowType.CONFIG, show_val=self.visit(token))

@@ -6,12 +6,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 personal_ws-1.1 en 1563 
 =======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 061e9d6d (docs: updates)
@@ -31,8 +34,47 @@ personal_ws-1.1 en 1563
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 personal_ws-1.1 en 1776 
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 061e9d6d (docs: updates)
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+personal_ws-1.1 en 1563 
+=======
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+personal_ws-1.1 en 1845 
+=======
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+personal_ws-1.1 en 1776 
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
@@ -46,36 +88,70 @@ personal_ws-1.1 en 1563
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 personal_ws-1.1 en 1563 
 =======
 personal_ws-1.1 en 1467 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 =======
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 personal_ws-1.1 en 1775 
 >>>>>>> 62080794 (ran spellchecker)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 personal_ws-1.1 en 1776 
 >>>>>>> 8379a400 (docs: updates)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 =======
@@ -84,14 +160,31 @@ personal_ws-1.1 en 1776
 <<<<<<< HEAD
 >>>>>>> 061e9d6d (docs: updates)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 personal_ws-1.1 en 1776 
 =======
 personal_ws-1.1 en 1467 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -101,10 +194,20 @@ personal_ws-1.1 en 1467
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 personal_ws-1.1 en 1563 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -115,20 +218,119 @@ personal_ws-1.1 en 1563
 =======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 personal_ws-1.1 en 1563 
 =======
 personal_ws-1.1 en 1467 
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+personal_ws-1.1 en 1563 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+personal_ws-1.1 en 1776 
+=======
+personal_ws-1.1 en 1467 
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+personal_ws-1.1 en 1563 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> eva-master
+=======
+personal_ws-1.1 en 1775 
+>>>>>>> 62080794 (ran spellchecker)
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+=======
+personal_ws-1.1 en 1776 
+>>>>>>> 8379a400 (docs: updates)
+>>>>>>> 061e9d6d (docs: updates)
+>>>>>>> 7955cfcb (docs: updates)
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+personal_ws-1.1 en 1563 
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -137,9 +339,14 @@ personal_ws-1.1 en 1563
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 ABCD
 ABCMeta
 ANYDIM
@@ -178,34 +385,85 @@ AggregationExpression
 AggregationExpressionsTest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 AirData
 AirDataPanel
 AirForecast
 AirPanelForecast
 AirPassengersPanel
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 AliExpress
 Anirudh
 AnnotateTests
@@ -238,6 +496,7 @@ AutoTheta
 AutoTokenizer
 Autocommit
 AvgPool
+BADCONFIG
 BDD
 BGR
 BH
@@ -260,6 +519,10 @@ BottomUpRewrite
 BoundingBox
 BuildJoinExecutor
 ByteTracker
+<<<<<<< HEAD
+BytesIO
+=======
+>>>>>>> 5b27053e (ran spellchecker)
 CHROMADB
 CLOB
 CMDClientTest
@@ -274,6 +537,7 @@ CVImageReader
 CacheFunctionExpressionInApply
 CacheFunctionExpressionInFilter
 CacheFunctionExpressionInProject
+Cannnot
 CascadeOptimizer
 CatalogColumnType
 CatalogError
@@ -284,6 +548,7 @@ ChatGPT
 ChatGPTTest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -292,20 +557,69 @@ ChatGPTTest
 >>>>>>> eva-source
 ChromaDB
 ChromaDBVectorStore
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+ChromaDB
+ChromaDBVectorStore
+ClickHouseHandler
+ClickHouseNativeStorageEngineTest
+=======
+ChromaDB
+ChromaDBVectorStore
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+ChromaDB
+ChromaDBVectorStore
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 CHROMADB
 ChromaDB
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 ChromaDB
 ChromaDBVectorStore
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 ColConstraintInfo
 Colab
 ColorSpace
@@ -324,6 +638,13 @@ CommandHandlerTests
 CommonClauses
 ComparisonExpression
 ComparisonExpressionsTest
+<<<<<<< HEAD
+Concats
+ConfigurationCatalog
+ConfigurationCatalogEntry
+ConfigurationCatalogService
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ConfigurationFileTests
 ConfigurationManager
 ConfigurationManager's
@@ -340,34 +661,85 @@ CreateExecutor
 CreateFromSelectPlan
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 CreateFunctionExecutor
 CreateFunctionExecutorTest
 CreateFunctionPlan
 CreateFunctionStatement
 CreateIndex
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 CreateIndexExecutor
 CreateIndexPlan
 CreateIndexStatement
@@ -399,10 +771,25 @@ DFS
 DailyMail
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+DallE
+DallEFunction
+DallEFunctionTest
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 Dask
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Dask
@@ -413,10 +800,31 @@ Dask
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 Dask
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
+=======
+Dask
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+Dask
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 DataFrame
 DataFrameColumn
 DataFrameColumns
@@ -440,10 +848,22 @@ DeleteTableStatement
 DemoDB
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 DemoFunc
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 DemoFunc
@@ -454,10 +874,31 @@ DemoFunc
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 DemoFunc
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+DemoFunc
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+DemoFunc
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 DemoTable
 DemoUDF
 Deserialize
@@ -557,6 +998,10 @@ FileExistsError
 FileFormatType
 FileNotFoundError
 Finetuning
+<<<<<<< HEAD
+Flaml
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 FlipTests
 ForecastModel
 ForeignKey
@@ -602,19 +1047,51 @@ GenericHuggingfaceModel
 GenericLudwigModel
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+GenericSklearnModel
+GenericUtilsTests
+GenericXGBoostModel
+GithubDataSourceTest
+GithubHandler
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 GenericSklearnModel
 GenericUtilsTests
 GithubDataSourceTest
 GithubHandler
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
@@ -623,12 +1100,28 @@ GithubHandler
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 GroupBy
 GroupByExecutor
 GroupByPlan
@@ -651,14 +1144,36 @@ HashJoinPlan
 HashJoinProbePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+HelperFunction
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 Helvetica
 HomeData
 HomeForecast
@@ -668,23 +1183,54 @@ HomeSale
 HomeSaleForecast
 HomeSalesForecast
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 HomeRentals
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 HomeRentals
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 HomeRentals
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+HomeRentals
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 HorizontalFlip
 HuggingFace
 HuggingFaceModel
@@ -697,10 +1243,16 @@ IMAGENET
 INFILE
 IOArgument
 IOColumnArgument
+IODescriptors
 IOs
 ImageColumnName
+ImageDownloadUDF
 ImageDraw
 ImageFeatureExtractor
+<<<<<<< HEAD
+ImageGen
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 ImageHFModel
 ImageStorageEngine
 ImportError
@@ -837,6 +1389,10 @@ LogicalVectorIndexScan
 LogicalVectorIndexScanToPhysical
 LordDarkula
 LudwigModel
+<<<<<<< HEAD
+MILVUS
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 MLP
 MNIST
 MNISTVid
@@ -856,6 +1412,7 @@ MemeImages
 MemoTest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 MetaData
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -863,6 +1420,17 @@ MetaData
 <<<<<<< HEAD
 <<<<<<< HEAD
 MetaData
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+MetaData
+Milvus
+Milvus's
+MilvusClient
+MilvusVectorStore
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
@@ -873,7 +1441,33 @@ MetaData
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+MetaData
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+MetaData
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+MetaData
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+MetaData
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 MindsDB
 MiniLM
 MnistImageClassifier
@@ -891,10 +1485,22 @@ MyPDFs
 MySQLNativeStorageEngineTest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7955cfcb (docs: updates)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 MyTable
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 MyTable
@@ -905,10 +1511,31 @@ MyTable
 >>>>>>> 061e9d6d (docs: updates)
 =======
 MyTable
+>>>>>>> 061e9d6d (docs: updates)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+MyTable
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+MyTable
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 7955cfcb (docs: updates)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 MyTextCSV
 MyUDF
 MyVideo
@@ -920,6 +1547,7 @@ MydbHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 MysqlHandler
 <<<<<<< HEAD
 =======
@@ -929,28 +1557,83 @@ MysqlHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 MysqlHandler
 NBEATS
 NCHAR
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 MysqlHandler
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 MysqlHandler
 <<<<<<< HEAD
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 MysqlHandler
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -960,19 +1643,47 @@ MysqlHandler
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 NBEATS
 NCHAR
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 62080794 (ran spellchecker)
 <<<<<<< HEAD
@@ -982,28 +1693,56 @@ NCHAR
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 62080794 (ran spellchecker)
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
 =======
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 MysqlHandler
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -1012,6 +1751,70 @@ MysqlHandler
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+MysqlHandler
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+MysqlHandler
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+MysqlHandler
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> 62080794 (ran spellchecker)
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 MysqlHandler
@@ -1023,9 +1826,14 @@ MysqlHandler
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 NEQ
 NHITS
 NLP
@@ -1068,6 +1876,8 @@ ObjectRef
 ObjectType
 OpenAI
 OpenAIChatCompletion
+OpenAICompletion
+OpenAPI
 OpenCV
 OpenTests
 OperatorType
@@ -1111,12 +1921,28 @@ PersistentClient
 PickleSerializer
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
@@ -1125,16 +1951,41 @@ PINECONE
 Pinecone
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 Pinecone
 PineconeVectorStore
 PipImportRedirectingFinder
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 PlanExecutor
 PlanExecutorTest
 PlanGenerator
@@ -1145,7 +1996,11 @@ PostgresHandler
 PostgresNativeStorageEngineTest
 PredicateExecutor
 PredicatePlan
+<<<<<<< HEAD
+PredictEmployee
+PredictEmployeeXgboost
 PredictHouseRent
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1162,12 +2017,51 @@ PredictHouseRentSklearn
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+PredictHouseRentLudwig
+PredictHouseRentSklearn
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+PredictRent
+PredictRentXgboost
+=======
+PredictHouseRent
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
+=======
 PredictHouseRentLudwig
 PredictHouseRentSklearn
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 PrivateGPTTest
 ProgrammingError
 ProjectExecutor
@@ -1180,6 +2074,7 @@ PushDownFilterThroughJoin
 PyGithub
 PyMuPDF
 PyPI
+PyTesseract
 PyTorchTensor
 Pydoc
 Pythonic
@@ -1200,6 +2095,7 @@ Quadro
 QuerySpecification
 QueueReaderExecutor
 REUSEADDR
+RMSE
 Rajoria
 RayError
 RayTaskError
@@ -1207,6 +2103,7 @@ ReLU
 ReadTheDocs
 RecursiveCharacterTextSplitter
 Reddit
+Rekognition
 RelationalAPI
 RenameExecutor
 RenameExecutorTest
@@ -1246,26 +2143,60 @@ SamplePlan
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 SampleTable
 SampleVideoTable
@@ -1283,6 +2214,49 @@ SampleVideoTable
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+SampleTable
+SampleVideoTable
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 SampleTable
 SampleVideoTable
 =======
@@ -1290,22 +2264,58 @@ SampleVideoTable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 SampleTable
 SampleVideoTable
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -1313,48 +2323,119 @@ SampleVideoTable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -1362,9 +2443,39 @@ SampleVideoTable
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+SampleTable
+SampleVideoTable
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 Scalability
 ScanPlan
 SchemaUtils
@@ -1386,6 +2497,11 @@ ServerTests
 SetExecutor
 SetExecutorTest
 SetStatement
+<<<<<<< HEAD
+ShowConfigPlan
+ShowDatabasePlan
+=======
+>>>>>>> 5b27053e (ran spellchecker)
 ShowExecutorTest
 ShowFunctionPlan
 ShowInfoExecutor
@@ -1401,7 +2517,15 @@ SingleDocumentSimilarityTests
 SingletonMeta
 Sklearn's
 SlackCSV
+<<<<<<< HEAD
+SnowFlake
+SnowFlakeDbHandler
+SnowFlakeNativeStorageEngineTest
+=======
+>>>>>>> 5b27053e (ran spellchecker)
 SpeechRecognizer
+StableDiffusion
+StableDiffusionTest
 StageCompleteSignal
 StatementBinder
 StatementBinderContext
@@ -1416,6 +2540,7 @@ StatsForecast
 StorageEngine
 StorageExecutor
 StoragePlan
+StrHelperTest
 StreamHandler
 StreamReader
 StreamReaderProtocol
@@ -1459,10 +2584,22 @@ TestTextHFModel
 TestUDF
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 TextClassifier
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 TextClassifier
@@ -1473,10 +2610,31 @@ TextClassifier
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 TextClassifier
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+TextClassifier
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+TextClassifier
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 TextFilterKeyword
 TextFilteringTests
 TextHFModel
@@ -1485,10 +2643,22 @@ TextPickleType
 TextProcessing
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 TextSummarizer
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 TextSummarizer
@@ -1499,10 +2669,31 @@ TextSummarizer
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 TextSummarizer
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+TextSummarizer
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+TextSummarizer
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 TextTestRunner
 TimeoutError
 TimerTests
@@ -1588,9 +2779,11 @@ VideoFormat
 VideoStorageEngineTest
 VideoWriter
 VisionEncoderDecoderModel
+WH
 WIP
 WMV
 WeakValueDictionary
+XGBoost
 XdistTests
 Xeon
 XformExtractObjectToLinearFlow
@@ -1610,6 +2803,7 @@ aaaa
 aaequality
 abc
 abdfdsfds
+aboe
 abspath
 abstractmethod
 abstractmethods
@@ -1630,6 +2824,7 @@ anydim
 api
 apis
 appply
+arXiv
 arange
 arg
 argmax
@@ -1660,6 +2855,7 @@ astype
 async
 asyncio
 atleast
+atof
 attr
 audioless
 autofunction
@@ -1713,6 +2909,10 @@ ci
 classmethod
 classname
 cli
+<<<<<<< HEAD
+clickhouse
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 cln
 clna
 clova
@@ -1756,6 +2956,7 @@ cv
 cvtColor
 cwd
 cxt
+dalle
 dane
 darwin
 dask
@@ -1763,6 +2964,7 @@ dataclass
 dataclasses
 dataframe
 dataframes
+datapoint
 dataset
 datasets
 datasource
@@ -1803,10 +3005,22 @@ diskcache
 distilbart
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 distilbert
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 distilbert
@@ -1817,10 +3031,31 @@ distilbert
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 distilbert
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
+=======
+distilbert
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+distilbert
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 dists
 distutils
 dml
@@ -1875,12 +3110,28 @@ expresssion
 exprs
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 extname
 extractOne
 extrator
@@ -1888,16 +3139,41 @@ extrator
 extractOne
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 extname
 extractOne
 extrator
 >>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 f'LOAD
 facebook
 facedetector
@@ -1919,6 +3195,7 @@ feedstock
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 fetchall
@@ -1947,6 +3224,71 @@ fetchall
 =======
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+fetchall
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+fetchall
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -1957,37 +3299,97 @@ fetchall
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -1996,10 +3398,31 @@ fetchall
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 fetchall
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -2009,13 +3432,60 @@ fetchall
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+fetchall
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 ffill
 ffmpeg
 fileFormat
@@ -2024,6 +3494,7 @@ filesystem
 fillna
 finetuned
 fitz
+flaml
 fmt
 fn
 fname
@@ -2055,10 +3526,22 @@ gb
 gc
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 gcp
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 gcp
@@ -2069,10 +3552,31 @@ gcp
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 gcp
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+gcp
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+gcp
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 gdp
 georgia
 geq
@@ -2086,7 +3590,10 @@ getsizeof
 getsockname
 getsourcefile
 getstarted
+getvalue
 gexpr
+gg
+gif
 gifs
 gists
 github
@@ -2105,6 +3612,7 @@ grp
 grpcio
 gw
 hardcoded
+hardcoding
 hasattr
 hashjoin
 hashlib
@@ -2122,6 +3630,7 @@ hostname
 href
 hstack
 html
+http
 https
 hugGingFaCe
 huggingface
@@ -2153,14 +3662,27 @@ insp
 insrt
 integratedTerminal
 integrations
+intergration
 intp
 invaid
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 inviter
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 inviter
@@ -2171,10 +3693,31 @@ inviter
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 inviter
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+inviter
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+inviter
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 io
 ipynb
 iq
@@ -2215,6 +3758,7 @@ lhs
 lineno
 linux
 listdir
+llamadb
 loc
 localhost
 logi
@@ -2235,6 +3779,10 @@ memeimages
 metaclass
 metafile
 metainfo
+<<<<<<< HEAD
+milvus
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 mindsdb
 miniconda
 mins
@@ -2257,6 +3805,10 @@ mvit
 mvitactionrecognition
 mxztt
 mydb
+<<<<<<< HEAD
+myfiles
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 myimages
 mypdf
 mypdfs
@@ -2299,6 +3851,7 @@ openaichatcompletion
 opencv
 opr
 optimizers
+optuna
 oq
 orderby
 orm
@@ -2323,16 +3876,29 @@ philschmid
 pinecone
 pkill
 pkl
+pks
 plangenerator
 pluggable
 png
 poolclass
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 popitem
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 popitem
@@ -2343,10 +3909,31 @@ popitem
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 popitem
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+popitem
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+popitem
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 popleft
 pos
 posix
@@ -2378,6 +3965,10 @@ ptype
 pushdown
 px
 py
+<<<<<<< HEAD
+pymilvus
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 pymupdfs
 pypi
 pypirc
@@ -2394,14 +3985,18 @@ rb
 rbatch
 rdb
 readlines
+readlink
 readme
 realimport
 rebatch
 recurse
 reddit
+<<<<<<< HEAD
+reindex
 releaser
 relu
 repo
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 repos
@@ -2417,11 +4012,44 @@ repos
 repos
 >>>>>>> 5b27053e (ran spellchecker)
 =======
+<<<<<<< HEAD
+repos
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+releaser
+relu
+repo
+<<<<<<< HEAD
+repos
+<<<<<<< HEAD
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+repos
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> georgia-tech-db-main
+=======
 repos
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 repr
 req
 resnet
@@ -2431,6 +4059,7 @@ return
 rf
 rgb
 rhs
+rmse
 rmtree
 roadmap
 roberta
@@ -2447,16 +4076,32 @@ runtime
 russia
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 saledate
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 saledate
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
+=======
+>>>>>>> georgia-tech-db-main
 saledate
 >>>>>>> 5b27053e (ran spellchecker)
 =======
@@ -2464,9 +4109,23 @@ saledate
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 saliency
 samsum
+scalable
+schemas
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+saledate
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+saliency
+samsum
+>>>>>>> 5b27053e (ran spellchecker)
 scikit
 sdist
 sep
@@ -2494,10 +4153,30 @@ sk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 sklearn
 =======
 =======
@@ -2508,7 +4187,10 @@ sklearn
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
@@ -2520,13 +4202,20 @@ sklearn
 >>>>>>> 62080794 (ran spellchecker)
 smallint
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 <<<<<<< HEAD
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
+>>>>>>> georgia-tech-db-main
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2537,14 +4226,77 @@ smallint
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+sklearn
+=======
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+=======
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+=======
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+sklearn
+>>>>>>> 62080794 (ran spellchecker)
+smallint
+>>>>>>> 5b27053e (ran spellchecker)
+=======
+<<<<<<< HEAD
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+sklearn
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
 sklearn
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 smallint
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -2555,37 +4307,97 @@ smallint
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 smallint
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
@@ -2594,10 +4406,31 @@ smallint
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 smallint
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 065f25fb (release: merge staging into master (#1032))
 <<<<<<< HEAD
@@ -2607,13 +4440,59 @@ smallint
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 smi
 softmax
 spacy
@@ -2630,6 +4509,7 @@ src
 sshleifer
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 sst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
@@ -2637,6 +4517,14 @@ sst
 <<<<<<< HEAD
 <<<<<<< HEAD
 sst
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+sst
+stablediffusion
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 =======
@@ -2647,7 +4535,33 @@ sst
 =======
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+sst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+sst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+=======
+sst
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+sst
+=======
+>>>>>>> 8c5b63dc (release: merge staging into master (#1032))
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 statementtoplanconverter
 staticmethod
 statsforecast
@@ -2691,6 +4605,10 @@ testFaissIndexImageDataset
 testFaissIndexScanRewrite
 testIndex
 testIndexAutoUpdate
+<<<<<<< HEAD
+testMilvusIndexImageDataset
+=======
+>>>>>>> 5b27053e (ran spellchecker)
 testOpenTable
 testQdrantIndexImageDataset
 testRayErrorHandling
@@ -2713,10 +4631,22 @@ thefuzz
 timm
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 tinyint
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 tinyint
@@ -2727,10 +4657,31 @@ tinyint
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 tinyint
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+tinyint
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+tinyint
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 tmp
 toGrayscale
 toc
@@ -2778,10 +4729,22 @@ urlparse
 urls
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 usecase
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 usecase
@@ -2792,10 +4755,31 @@ usecase
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 usecase
+>>>>>>> 5b27053e (ran spellchecker)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+usecase
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+usecase
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 usecases
 usecols
 utf
@@ -2830,6 +4814,7 @@ xc
 xdist
 xform
 xformed
+xgboost
 xlm
 xmax
 xmin

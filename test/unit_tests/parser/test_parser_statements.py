@@ -81,9 +81,31 @@ class ParserStatementTests(unittest.TestCase):
             "SHOW TABLES;",
             "SHOW FUNCTIONS;",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "SHOW DATABASES;",
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "SHOW DATABASES;",
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            "SHOW DATABASES;",
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
+=======
+            "SHOW DATABASES;",
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+            "SHOW DATABASES;",
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
             "EXPLAIN SELECT a FROM foo;",
             "SELECT HomeRentalForecast(12);",
             """SELECT data FROM MyVideo WHERE id < 5

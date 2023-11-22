@@ -41,20 +41,42 @@ class UseExecutor(AbstractExecutor):
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> eva-source
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,10 +86,13 @@ class UseExecutor(AbstractExecutor):
 
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> f028c383 (release: merge staging into master (#1032))
 =======
 =======
@@ -75,6 +100,7 @@ class UseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 >>>>>>> c63abee7 (release: merge staging into master (#1032))
@@ -88,12 +114,76 @@ class UseExecutor(AbstractExecutor):
 >>>>>>> eva-source
 =======
 =======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> c63abee7 (release: merge staging into master (#1032))
+>>>>>>> 30d7834d (release: merge staging into master (#1032))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7dd70375 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+=======
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 065f25fb (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 28d8bad1 (release: merge staging into master (#1032))
+<<<<<<< HEAD
+>>>>>>> 66bd4f55 (release: merge staging into master (#1032))
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
+=======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         handler = get_database_handler(
             db_catalog_entry.engine,
             **db_catalog_entry.params,
@@ -101,17 +191,31 @@ class UseExecutor(AbstractExecutor):
 >>>>>>> 8c5b63dc (release: merge staging into master (#1032))
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
+=======
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7dd70375 (release: merge staging into master (#1032))
 >>>>>>> f028c383 (release: merge staging into master (#1032))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> a9124e1e (release: merge staging into master (#1032))
+=======
+>>>>>>> 54907d3e (release: merge staging into master (#1032))
+>>>>>>> georgia-tech-db-main
 
         with get_database_handler(
             db_catalog_entry.engine, **db_catalog_entry.params
@@ -122,15 +226,29 @@ class UseExecutor(AbstractExecutor):
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
         with get_database_handler(
             db_catalog_entry.engine, **db_catalog_entry.params
@@ -140,17 +258,31 @@ class UseExecutor(AbstractExecutor):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         if resp and resp.error is None:
             yield Batch(resp.data)
         else:

@@ -90,23 +90,45 @@ class DBHandler:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     def is_sqlalchmey_compatible(self) -> bool:
         """
 <<<<<<< HEAD
@@ -114,12 +136,25 @@ class DBHandler:
 =======
         Return  whether the data source is sqlaclemy compatible
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 =======
@@ -129,6 +164,10 @@ class DBHandler:
 =======
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
     def is_sqlalchmey_compatible(self) -> bool:
         """
 <<<<<<< HEAD
@@ -144,16 +183,55 @@ class DBHandler:
         Return  whether the data source is sqlaclemy compatible
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+    def is_sqlalchmey_compatible(self) -> bool:
+        """
+<<<<<<< HEAD
+        Return  whether the data source is sqlaclemy compatible
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+        Return  whether the data source is sqlaclchemy compatible
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
     def is_sqlalchmey_compatible(self) -> bool:
         """
         Return  whether the data source is sqlaclemy compatible
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
         Returns:
             A True / False boolean value..
@@ -168,6 +246,7 @@ class DBHandler:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -176,6 +255,16 @@ class DBHandler:
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
@@ -184,16 +273,47 @@ class DBHandler:
 <<<<<<< HEAD
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     def check_connection(self) -> DBHandlerStatus:
         """
         Checks the status of the database connection.

@@ -43,6 +43,16 @@ class FunctionScanExecutor(AbstractExecutor):
             res = self.func_expr.evaluate(lateral_input)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
             # persist stats of function expression
             if self.func_expr.function_obj and self.func_expr._stats:
@@ -54,6 +64,17 @@ class FunctionScanExecutor(AbstractExecutor):
                 )
 
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 842cc5f8 (fix: Catalog init introduces significant overhead  (#1270))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
             if not res.empty():
                 if self.do_unnest:
                     res.unnest(res.columns)

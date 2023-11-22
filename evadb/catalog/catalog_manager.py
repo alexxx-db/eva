@@ -12,9 +12,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import datetime
 import shutil
 from pathlib import Path
-from typing import List
+from typing import Any, List
 
 from evadb.catalog.catalog_type import (
     ColumnType,
@@ -23,7 +24,10 @@ from evadb.catalog.catalog_type import (
     VideoColumnName,
 )
 from evadb.catalog.catalog_utils import (
+<<<<<<< HEAD
+=======
     cleanup_storage,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
     construct_function_cache_catalog_entry,
     get_document_table_column_definitions,
     get_image_table_column_definitions,
@@ -40,12 +44,20 @@ from evadb.catalog.models.utils import (
     FunctionIOCatalogEntry,
     FunctionMetadataCatalogEntry,
     IndexCatalogEntry,
+    JobCatalogEntry,
+    JobHistoryCatalogEntry,
     TableCatalogEntry,
     drop_all_tables_except_catalog,
     init_db,
     truncate_catalog_tables,
 )
 from evadb.catalog.services.column_catalog_service import ColumnCatalogService
+<<<<<<< HEAD
+from evadb.catalog.services.configuration_catalog_service import (
+    ConfigurationCatalogService,
+)
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.catalog.services.database_catalog_service import DatabaseCatalogService
 from evadb.catalog.services.function_cache_catalog_service import (
     FunctionCacheCatalogService,
@@ -59,25 +71,43 @@ from evadb.catalog.services.function_metadata_catalog_service import (
     FunctionMetadataCatalogService,
 )
 from evadb.catalog.services.index_catalog_service import IndexCatalogService
+<<<<<<< HEAD
+from evadb.catalog.services.job_catalog_service import JobCatalogService
+from evadb.catalog.services.job_history_catalog_service import JobHistoryCatalogService
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
 from evadb.catalog.services.table_catalog_service import TableCatalogService
 from evadb.catalog.sql_config import IDENTIFIER_COLUMN, SQLConfig
-from evadb.configuration.configuration_manager import ConfigurationManager
 from evadb.expression.function_expression import FunctionExpression
 from evadb.parser.create_statement import ColumnDefinition
 from evadb.parser.table_ref import TableInfo
 from evadb.parser.types import FileFormatType
 from evadb.third_party.databases.interface import get_database_handler
+<<<<<<< HEAD
+from evadb.utils.generic_utils import (
+    generate_file_path,
+    get_file_checksum,
+    remove_directory_contents,
+)
+=======
 from evadb.utils.generic_utils import generate_file_path, get_file_checksum
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 from evadb.utils.logging_manager import logger
 
 
 class CatalogManager(object):
-    def __init__(self, db_uri: str, config: ConfigurationManager):
+    def __init__(self, db_uri: str):
         self._db_uri = db_uri
         self._sql_config = SQLConfig(db_uri)
-        self._config = config
         self._bootstrap_catalog()
         self._db_catalog_service = DatabaseCatalogService(self._sql_config.session)
+        self._config_catalog_service = ConfigurationCatalogService(
+            self._sql_config.session
+        )
+        self._job_catalog_service = JobCatalogService(self._sql_config.session)
+        self._job_history_catalog_service = JobHistoryCatalogService(
+            self._sql_config.session
+        )
         self._table_catalog_service = TableCatalogService(self._sql_config.session)
         self._column_service = ColumnCatalogService(self._sql_config.session)
         self._function_service = FunctionCatalogService(self._sql_config.session)
@@ -130,10 +160,14 @@ class CatalogManager(object):
         logger.info("Clearing catalog")
         # drop tables which are not part of catalog
         drop_all_tables_except_catalog(self._sql_config.engine)
-        # truncate the catalog tables
-        truncate_catalog_tables(self._sql_config.engine)
+        # truncate the catalog tables except configuration_catalog
+        # We do not remove the configuration entries
+        truncate_catalog_tables(
+            self._sql_config.engine, tables_not_to_truncate=["configuration_catalog"]
+        )
         # clean up the dataset, index, and cache directories
-        cleanup_storage(self._config)
+        for folder in ["cache_dir", "index_dir", "datasets_dir"]:
+            remove_directory_contents(self.get_configuration_catalog_value(folder))
 
     "Database catalog services"
 
@@ -162,11 +196,35 @@ class CatalogManager(object):
         return table_entry
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     def get_all_database_catalog_entries(self):
         return self._db_catalog_service.get_all_entries()
 
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    def get_all_database_catalog_entries(self):
+        return self._db_catalog_service.get_all_entries()
+
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     def drop_database_catalog_entry(self, database_entry: DatabaseCatalogEntry) -> bool:
         """
         This method deletes the database from  catalog.
@@ -201,8 +259,24 @@ class CatalogManager(object):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
                 raise Exception(resp.error)
 =======
 <<<<<<< HEAD
@@ -212,30 +286,67 @@ class CatalogManager(object):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
                 raise Exception(resp.error)
 >>>>>>> 495ce7d7 (GitHub Data Source Integration (#1233))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 374a5b02 (GitHub Data Source Integration (#1233))
+>>>>>>> ae3b0364 (GitHub Data Source Integration (#1233))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
             # Check table existence.
             table_df = resp.data
@@ -244,6 +355,140 @@ class CatalogManager(object):
 
         return True
 
+<<<<<<< HEAD
+    "Job catalog services"
+
+    def insert_job_catalog_entry(
+        self,
+        name: str,
+        queries: str,
+        start_time: datetime,
+        end_time: datetime,
+        repeat_interval: int,
+        active: bool,
+        next_schedule_run: datetime,
+    ) -> JobCatalogEntry:
+        """A new entry is persisted in the job catalog.
+
+        Args:
+            name: job name
+            queries: job's queries
+            start_time: job start time
+            end_time: job end time
+            repeat_interval: job repeat interval
+            active: job status
+            next_schedule_run: next run time as per schedule
+        """
+        job_entry = self._job_catalog_service.insert_entry(
+            name,
+            queries,
+            start_time,
+            end_time,
+            repeat_interval,
+            active,
+            next_schedule_run,
+        )
+
+        return job_entry
+
+    def get_job_catalog_entry(self, job_name: str) -> JobCatalogEntry:
+        """
+        Returns the job catalog entry for the given database_name
+        Arguments:
+            job_name (str): name of the job
+
+        Returns:
+            JobCatalogEntry
+        """
+
+        table_entry = self._job_catalog_service.get_entry_by_name(job_name)
+
+        return table_entry
+
+    def drop_job_catalog_entry(self, job_entry: JobCatalogEntry) -> bool:
+        """
+        This method deletes the job from  catalog.
+
+        Arguments:
+           job_entry: job catalog entry to remove
+
+        Returns:
+           True if successfully deleted else False
+        """
+        return self._job_catalog_service.delete_entry(job_entry)
+
+    def get_next_executable_job(self, only_past_jobs: bool = False) -> JobCatalogEntry:
+        """Get the oldest job that is ready to be triggered by trigger time
+        Arguments:
+            only_past_jobs: boolean flag to denote if only jobs with trigger time in
+                past should be considered
+        Returns:
+            Returns the first job to be triggered
+        """
+        return self._job_catalog_service.get_next_executable_job(only_past_jobs)
+
+    def update_job_catalog_entry(
+        self, job_name: str, next_scheduled_run: datetime, active: bool
+    ):
+        """Update the next_scheduled_run and active column as per the provided values
+        Arguments:
+            job_name (str): job which should be updated
+
+            next_run_time (datetime): the next trigger time for the job
+
+            active (bool): the active status for the job
+        """
+        self._job_catalog_service.update_next_scheduled_run(
+            job_name, next_scheduled_run, active
+        )
+
+    "Job history catalog services"
+
+    def insert_job_history_catalog_entry(
+        self,
+        job_id: str,
+        job_name: str,
+        execution_start_time: datetime,
+        execution_end_time: datetime,
+    ) -> JobCatalogEntry:
+        """A new entry is persisted in the job history catalog.
+
+        Args:
+            job_id: job id for the execution entry
+            job_name: job name for the execution entry
+            execution_start_time: job execution start time
+            execution_end_time: job execution end time
+        """
+        job_history_entry = self._job_history_catalog_service.insert_entry(
+            job_id, job_name, execution_start_time, execution_end_time
+        )
+
+        return job_history_entry
+
+    def get_job_history_by_job_id(self, job_id: int) -> List[JobHistoryCatalogEntry]:
+        """Returns all the entries present for this job_id on in the history.
+
+        Args:
+            job_id: the id of job whose history should be fetched
+        """
+        return self._job_history_catalog_service.get_entry_by_job_id(job_id)
+
+    def update_job_history_end_time(
+        self, job_id: int, execution_start_time: datetime, execution_end_time: datetime
+    ) -> List[JobHistoryCatalogEntry]:
+        """Updates the execution_end_time for this job history matching job_id and execution_start_time.
+
+        Args:
+            job_id: id of the job whose history entry which should be updated
+            execution_start_time: the start time for the job history entry
+            execution_end_time: the end time for the job history entry
+        """
+        return self._job_history_catalog_service.update_entry_end_time(
+            job_id, execution_start_time, execution_end_time
+        )
+
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
     "Table catalog services"
 
     def insert_table_catalog_entry(
@@ -385,14 +630,35 @@ class CatalogManager(object):
         function_entry = self._function_service.insert_entry(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
             name,
             impl_file_path,
             type,
@@ -400,9 +666,12 @@ class CatalogManager(object):
             function_io_list,
             function_metadata_list,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
         )
 =======
             name, impl_file_path, type, checksum
@@ -415,14 +684,35 @@ class CatalogManager(object):
         self._function_metadata_service.insert_entries(function_metadata_list)
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
         )
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+        )
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         return function_entry
 
     def get_function_catalog_entry_by_name(self, name: str) -> FunctionCatalogEntry:
@@ -493,17 +783,55 @@ class CatalogManager(object):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
@@ -519,36 +847,92 @@ class CatalogManager(object):
             name, save_file_path, vector_store_type, feat_column, function_signature
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
         index_def: str,
     ) -> IndexCatalogEntry:
         index_catalog_entry = self._index_service.insert_entry(
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             name,
             save_file_path,
             vector_store_type,
@@ -557,17 +941,34 @@ class CatalogManager(object):
             index_def,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
@@ -576,7 +977,30 @@ class CatalogManager(object):
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         )
         return index_catalog_entry
 
@@ -599,7 +1023,11 @@ class CatalogManager(object):
     """ Function Cache related"""
 
     def insert_function_cache_catalog_entry(self, func_expr: FunctionExpression):
+<<<<<<< HEAD
+        cache_dir = self.get_configuration_catalog_value("cache_dir")
+=======
         cache_dir = self._config.get_value("storage", "cache_dir")
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
         entry = construct_function_cache_catalog_entry(func_expr, cache_dir=cache_dir)
         return self._function_cache_service.insert_entry(entry)
 
@@ -662,7 +1090,7 @@ class CatalogManager(object):
         table_name = table_info.table_name
         column_catalog_entries = xform_column_definitions_to_catalog_entries(columns)
 
-        dataset_location = self._config.get_value("core", "datasets_dir")
+        dataset_location = self.get_configuration_catalog_value("datasets_dir")
         file_url = str(generate_file_path(dataset_location, table_name))
         table_catalog_entry = self.insert_table_catalog_entry(
             table_name,
@@ -762,14 +1190,28 @@ class CatalogManager(object):
         )
         return obj
 
+    "Configuration catalog services"
 
-#### get catalog instance
-# This function plays a crucial role in ensuring that different threads do
-# not share the same catalog object, as it can result in serialization issues and
-# incorrect behavior with SQLAlchemy. Therefore, whenever a catalog instance is
-# required, we create a new one. One possible optimization is to share the catalog
-# instance across all objects within the same thread. It is worth investigating whether
-# SQLAlchemy already handles this optimization for us, which will be explored at a
-# later time.
-def get_catalog_instance(db_uri: str, config: ConfigurationManager):
-    return CatalogManager(db_uri, config)
+    def upsert_configuration_catalog_entry(self, key: str, value: any):
+        """Upserts configuration catalog entry"
+
+        Args:
+            key: key name
+            value: value name
+        """
+        self._config_catalog_service.upsert_entry(key, value)
+
+    def get_configuration_catalog_value(self, key: str, default: Any = None) -> Any:
+        """
+        Returns the value entry for the given key
+        Arguments:
+            key (str): key name
+
+        Returns:
+            ConfigurationCatalogEntry
+        """
+
+        table_entry = self._config_catalog_service.get_entry_by_name(key)
+        if table_entry:
+            return table_entry.value
+        return default

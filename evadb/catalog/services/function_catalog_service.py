@@ -14,40 +14,102 @@
 # limitations under the License.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 from typing import List
 
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 from typing import List
 
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import select
 
 from evadb.catalog.models.function_catalog import FunctionCatalog, FunctionCatalogEntry
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 from evadb.catalog.models.utils import (
     FunctionIOCatalogEntry,
     FunctionMetadataCatalogEntry,
@@ -59,23 +121,54 @@ from evadb.catalog.services.function_metadata_catalog_service import (
 )
 from evadb.utils.errors import CatalogError
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 from evadb.catalog.services.base_service import BaseService
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 from evadb.catalog.services.base_service import BaseService
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 =======
 from evadb.catalog.services.base_service import BaseService
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+from evadb.catalog.services.base_service import BaseService
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 from evadb.utils.logging_manager import logger
 
 
@@ -84,12 +177,28 @@ class FunctionCatalogService(BaseService):
         super().__init__(FunctionCatalog, db_session)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         self._function_io_service = FunctionIOCatalogService(db_session)
         self._function_metadata_service = FunctionMetadataCatalogService(db_session)
 
@@ -107,8 +216,18 @@ class FunctionCatalogService(BaseService):
         self, name: str, impl_path: str, type: str, checksum: str
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
         self._function_io_service = FunctionIOCatalogService(db_session)
         self._function_metadata_service = FunctionMetadataCatalogService(db_session)
@@ -122,9 +241,24 @@ class FunctionCatalogService(BaseService):
         function_io_list: List[FunctionIOCatalogEntry],
         function_metadata_list: List[FunctionMetadataCatalogEntry],
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
     ) -> FunctionCatalogEntry:
         """Insert a new function entry
 
@@ -141,14 +275,35 @@ class FunctionCatalogService(BaseService):
         function_obj = function_obj.save(self.session)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 
         for function_io in function_io_list:
             function_io.function_id = function_obj._row_id
@@ -175,23 +330,54 @@ class FunctionCatalogService(BaseService):
         else:
             return function_obj.as_dataclass()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         return function_obj.as_dataclass()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
         return function_obj.as_dataclass()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 =======
 >>>>>>> d4c650b6 (fix: make the table/function catalog insert operation atomic (#1293))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 =======
         return function_obj.as_dataclass()
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+=======
+        return function_obj.as_dataclass()
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> bc98b4af (fix: make the table/function catalog insert operation atomic (#1293))
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 
     def get_entry_by_name(self, name: str) -> FunctionCatalogEntry:
         """return the function entry that matches the name provided.

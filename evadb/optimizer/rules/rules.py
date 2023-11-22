@@ -23,6 +23,7 @@ from evadb.catalog.catalog_utils import is_video_table
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 from evadb.catalog.models.utils import IndexCatalogEntry
@@ -51,6 +52,71 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+from evadb.catalog.models.utils import IndexCatalogEntry
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+from evadb.catalog.models.utils import IndexCatalogEntry
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -61,37 +127,97 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -100,10 +226,31 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 <<<<<<< HEAD
@@ -113,13 +260,60 @@ from evadb.catalog.models.utils import IndexCatalogEntry
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+from evadb.catalog.models.utils import IndexCatalogEntry
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.constants import CACHEABLE_FUNCTIONS
 from evadb.executor.execution_context import Context
 from evadb.expression.expression_utils import (
@@ -677,35 +871,83 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 53dafecf (feat: sync master staging (#1050))
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
@@ -721,13 +963,66 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 =======
 >>>>>>> eva-source
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+>>>>>>> georgia-tech-db-main
+=======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+=======
+=======
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -762,21 +1057,49 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 2eef5e8f (feat: sync master staging (#1050))
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
@@ -786,6 +1109,30 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 >>>>>>> eva-master
 =======
 >>>>>>> eva-source
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -796,13 +1143,15 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
                 else base_func_expr.signature()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
-<<<<<<< HEAD
->>>>>>> 7cac771f (Bump v0.3.4+ dev)
-=======
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 
@@ -819,7 +1168,63 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 =======
 >>>>>>> 7cac771f (Bump v0.3.4+ dev)
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+=======
+=======
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> f75511e6 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7cac771f (Bump v0.3.4+ dev)
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 
         # Only check the index existence when building on EvaDB data.
         if not is_postgres_data_source:
@@ -837,9 +1242,13 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
 >>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 >>>>>>> eva-source
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
             )
 <<<<<<< HEAD
 =======
@@ -859,6 +1268,7 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
             index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
                 column_catalog_entry, function_signature
 <<<<<<< HEAD
+<<<<<<< HEAD
             )
 =======
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
@@ -867,6 +1277,14 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
 <<<<<<< HEAD
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 03a6c555 (feat: sync master staging (#1050))
+            )
+<<<<<<< HEAD
+=======
+>>>>>>> georgia-tech-db-main
             if not index_catalog_entry:
                 return
         else:
@@ -877,11 +1295,16 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
                 feat_column=column_catalog_entry,
             )
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 =======
 =======
 =======
@@ -909,11 +1332,17 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
             )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 70850a8b (feat: sync master staging (#1050))
 =======
 <<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 =======
             if not index_catalog_entry:
                 return
@@ -926,9 +1355,117 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
             )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+                column_catalog_entry, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+            )
+<<<<<<< HEAD
+=======
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+                column_catalog_entry, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 5d9d82f0 (feat: sync master staging (#1050))
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+            )
+<<<<<<< HEAD
+=======
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+                column_catalog_entry, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+            )
+<<<<<<< HEAD
+=======
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+<<<<<<< HEAD
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+
+        # Only check the index existence when building on EvaDB data.
+        if not is_postgres_data_source:
+            # Get function_signature.
+            function_signature = (
+                None
+                if isinstance(base_func_expr, TupleValueExpression)
+                else base_func_expr.signature()
+            )
+
+            # Get index catalog. Check if an index exists for matching
+            # function signature and table columns.
+            index_catalog_entry = catalog_manager().get_index_catalog_entry_by_column_and_function_signature(
+                column_catalog_entry, function_signature
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+>>>>>>> 53dafecf (feat: sync master staging (#1050))
+>>>>>>> 2eef5e8f (feat: sync master staging (#1050))
+            )
+<<<<<<< HEAD
+>>>>>>> 70850a8b (feat: sync master staging (#1050))
+=======
+<<<<<<< HEAD
+=======
+            if not index_catalog_entry:
+                return
+        else:
+            index_catalog_entry = IndexCatalogEntry(
+                name="",
+                save_file_path="",
+                type=VectorStoreType.PGVECTOR,
+                feat_column=column_catalog_entry,
+            )
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
             # Get index catalog. Check if an index exists for matching
             # function signature and table columns.
@@ -949,9 +1486,12 @@ class CombineSimilarityOrderByAndLimitToVectorIndexScan(Rule):
             )
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
 
         # Construct the Vector index scan plan.
         vector_index_scan_node = LogicalVectorIndexScan(
@@ -1193,6 +1733,7 @@ class LogicalCreateIndexToVectorIndex(Rule):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1204,11 +1745,22 @@ class LogicalCreateIndexToVectorIndex(Rule):
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
             before.project_expr_list,
             before.index_def,
 =======
             before.function,
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1217,9 +1769,50 @@ class LogicalCreateIndexToVectorIndex(Rule):
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
 =======
+        )
+        child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
+
+        batch_mem_size = context.db.catalog().get_configuration_catalog_value(
+            "batch_mem_size"
+        )
+=======
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+>>>>>>> f431fb09 (feat: sync master staging (#1050))
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+            before.project_expr_list,
+            before.index_def,
+=======
+            before.function,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
+=======
             before.project_expr_list,
             before.index_def,
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1227,6 +1820,11 @@ class LogicalCreateIndexToVectorIndex(Rule):
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
             before.project_expr_list,
             before.index_def,
@@ -1234,16 +1832,47 @@ class LogicalCreateIndexToVectorIndex(Rule):
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> 9fe75f29 (feat: sync master staging (#1050))
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> georgia-tech-db-main
         )
         child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
         batch_mem_size = context.db.config.get_value("executor", "batch_mem_size")
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+            before.project_expr_list,
+            before.index_def,
+=======
+            before.function,
+>>>>>>> 2dacff69 (feat: sync master staging (#1050))
+=======
+            before.project_expr_list,
+            before.index_def,
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+=======
+            before.project_expr_list,
+            before.index_def,
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+        )
+        child = SeqScanPlan(None, before.project_expr_list, before.table_ref.alias)
+        batch_mem_size = context.db.config.get_value("executor", "batch_mem_size")
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
         child.append_child(
             StoragePlan(
                 before.table_ref.table.table_obj,
@@ -1340,7 +1969,9 @@ class LogicalGetToSeqScan(Rule):
         # read in a batch from storage engine.
         # Todo: Experiment heuristics.
         after = SeqScanPlan(None, before.target_list, before.alias)
-        batch_mem_size = context.db.config.get_value("executor", "batch_mem_size")
+        batch_mem_size = context.db.catalog().get_configuration_catalog_value(
+            "batch_mem_size"
+        )
         after.append_child(
             StoragePlan(
                 before.table_obj,

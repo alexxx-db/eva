@@ -17,7 +17,11 @@ import pickle
 import pandas as pd
 
 from evadb.functions.abstract.abstract_function import AbstractFunction
+<<<<<<< HEAD
+from evadb.utils.generic_utils import try_to_import_flaml_automl
+=======
 from evadb.utils.generic_utils import try_to_import_xgboost
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 
 
 class GenericXGBoostModel(AbstractFunction):
@@ -26,7 +30,11 @@ class GenericXGBoostModel(AbstractFunction):
         return "GenericXGBoostModel"
 
     def setup(self, model_path: str, predict_col: str, **kwargs):
+<<<<<<< HEAD
+        try_to_import_flaml_automl()
+=======
         try_to_import_xgboost()
+>>>>>>> 4771bdec (Starting the change for XGBoost integration into EVADb. (#1232))
 
         self.model = pickle.load(open(model_path, "rb"))
         self.predict_col = predict_col

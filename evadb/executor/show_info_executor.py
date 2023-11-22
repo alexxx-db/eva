@@ -31,6 +31,16 @@ class ShowInfoExecutor(AbstractExecutor):
 
         assert (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
             self.node.show_type is ShowType.FUNCTIONS
             or ShowType.TABLES
             or ShowType.DATABASES
@@ -38,6 +48,21 @@ class ShowInfoExecutor(AbstractExecutor):
 =======
             self.node.show_type is ShowType.FUNCTIONS or ShowType.TABLES
 >>>>>>> 2dacff69 (feat: sync master staging (#1050))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            self.node.show_type is ShowType.FUNCTIONS
+            or ShowType.TABLES
+            or ShowType.DATABASES
+            or ShowType.CONFIG
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
+=======
+>>>>>>> 9fe75f29 (feat: sync master staging (#1050))
+=======
+>>>>>>> b87af508 (feat: sync master staging (#1050))
+>>>>>>> georgia-tech-db-main
         ), f"Show command does not support type {self.node.show_type}"
 
         if self.node.show_type is ShowType.FUNCTIONS:
@@ -50,13 +75,24 @@ class ShowInfoExecutor(AbstractExecutor):
                 if table.table_type != TableType.SYSTEM_STRUCTURED_DATA:
                     show_entries.append(table.name)
             show_entries = {"name": show_entries}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
         elif self.node.show_type is ShowType.DATABASES:
             databases = self.catalog().get_all_database_catalog_entries()
             for db in databases:
                 show_entries.append(db.display_format())
+<<<<<<< HEAD
+        elif self.node.show_type is ShowType.CONFIG:
+            value = self.catalog().get_configuration_catalog_value(
+=======
+=======
+>>>>>>> 9db09fc0 (feat: add support for show databases (#1295))
         elif self.node.show_type is ShowType.CONFIG:
             value = self._config.get_value(
                 category="default",
+>>>>>>> 7dce1d6d (SHOW command for retrieveing configurations (#1264))
                 key=self.node.show_val.upper(),
             )
             show_entries = {}

@@ -16,46 +16,86 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.binder.binder_utils import BinderError, create_row_num_tv_expr
 from evadb.binder.statement_binder import StatementBinder
 from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
 from evadb.expression.function_expression import FunctionExpression
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 <<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+<<<<<<< HEAD
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+>>>>>>> georgia-tech-db-main
 from evadb.binder.binder_utils import BinderError
 from evadb.binder.statement_binder import StatementBinder
 from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.binder.binder_utils import BinderError, create_row_num_tv_expr
 from evadb.binder.statement_binder import StatementBinder
 from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
 from evadb.expression.function_expression import FunctionExpression
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,7 +105,57 @@ from evadb.expression.function_expression import FunctionExpression
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> eva-master
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+from evadb.binder.binder_utils import BinderError
+from evadb.binder.statement_binder import StatementBinder
+from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+from evadb.binder.binder_utils import BinderError, create_row_num_tv_expr
+from evadb.binder.statement_binder import StatementBinder
+from evadb.catalog.catalog_type import NdArrayType, VectorStoreType
+from evadb.expression.function_expression import FunctionExpression
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 =======
@@ -82,19 +172,32 @@ from evadb.expression.function_expression import FunctionExpression
 <<<<<<< HEAD
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+<<<<<<< HEAD
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 from evadb.parser.create_index_statement import CreateIndexStatement
 from evadb.third_party.databases.interface import get_database_handler
 
@@ -104,25 +207,60 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
     if node.function:
         binder.bind(node.function)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
+<<<<<<< HEAD
 =======
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
@@ -130,9 +268,21 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
     # Bind all projection expressions.
     func_project_expr = None
@@ -146,6 +296,7 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
@@ -154,6 +305,16 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 >>>>>>> eva-master
@@ -162,16 +323,47 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 
     # TODO: create index currently only supports single numpy column.
     assert len(node.col_list) == 1, "Index cannot be created on more than 1 column"
@@ -207,7 +399,18 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     # Index can be only created on single column.
     assert (
         len(node.col_list) == 1
@@ -218,13 +421,31 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
         # Feature table type needs to be float32 numpy array.
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 <<<<<<< HEAD
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
 =======
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+<<<<<<< HEAD
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+>>>>>>> georgia-tech-db-main
     if not node.function:
         # Feature table type needs to be float32 numpy array.
         assert (
@@ -234,17 +455,25 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eva-master
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 =======
 >>>>>>> eva-master
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
     # Index can be only created on single column.
     assert (
         len(node.col_list) == 1
@@ -256,9 +485,12 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 =======
+=======
+>>>>>>> georgia-tech-db-main
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -268,7 +500,65 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+>>>>>>> eva-master
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+    if not node.function:
+        # Feature table type needs to be float32 numpy array.
+        assert (
+            len(node.col_list) == 1
+        ), f"Index can be only created on one column, but instead {len(node.col_list)} are provided"
+        col_def = node.col_list[0]
+
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> eva-master
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+    # Index can be only created on single column.
+    assert (
+        len(node.col_list) == 1
+    ), f"Index can be only created on one column, but instead {len(node.col_list)} are provided"
+    col_def = node.col_list[0]
+
+    if func_project_expr is None:
+        # Feature table type needs to be float32 numpy array.
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+=======
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+=======
+>>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+=======
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
 =======
@@ -293,19 +583,32 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 >>>>>>> eva-source
 =======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+<<<<<<< HEAD
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+=======
+>>>>>>> georgia-tech-db-main
+=======
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
 >>>>>>> eva-source
+=======
+>>>>>>> 22e78346 (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         table_ref_obj = node.table_ref.table.table_obj
         col_list = [col for col in table_ref_obj.columns if col.name == col_def.name]
         assert (
@@ -326,8 +629,24 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+=======
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+=======
+>>>>>>> 8da6decc (Bump v0.3.4+ dev)
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             func_project_expr.name
 =======
 <<<<<<< HEAD
@@ -337,30 +656,67 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 =======
 =======
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> eva-master
 =======
             func_project_expr.name
 >>>>>>> 277161e7 (feat: create index from projection (#1244))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 >>>>>>> a6ef863c (feat: create index from projection (#1244))
 =======
 =======
 >>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
 >>>>>>> 8da6decc (Bump v0.3.4+ dev)
 >>>>>>> 22e78346 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 6d6a14c8 (Bump v0.3.4+ dev)
+>>>>>>> ae08f806 (Bump v0.3.4+ dev)
+=======
+>>>>>>> a6ef863c (feat: create index from projection (#1244))
+>>>>>>> a747c7e3 (feat: create index from projection (#1244))
+=======
+>>>>>>> 922824b7 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
         )
         for output in function_obj.outputs:
             assert (
@@ -369,25 +725,62 @@ def bind_create_index(binder: StatementBinder, node: CreateIndexStatement):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> georgia-tech-db-main
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+=======
+>>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             # Vector type specific check.
 =======
             # Vector type speciic check.
 >>>>>>> 40a10ce1 (Bump v0.3.4+ dev)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
 =======
             # Vector type specific check.
 >>>>>>> 5b27053e (ran spellchecker)
 =======
 >>>>>>> 2170a7a9 (Bump v0.3.4+ dev)
+<<<<<<< HEAD
 >>>>>>> eva-source
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f43c65 (Bump v0.3.4+ dev)
+=======
+=======
+            # Vector type specific check.
+>>>>>>> 5b27053e (ran spellchecker)
+>>>>>>> fb00f6de (ran spellchecker)
+=======
+>>>>>>> bf18bc80 (Bump v0.3.4+ dev)
+>>>>>>> georgia-tech-db-main
             if node.vector_store_type == VectorStoreType.FAISS:
                 assert (
                     output.array_type == NdArrayType.FLOAT32
